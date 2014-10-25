@@ -4,7 +4,7 @@
     <value value="1" nick="sixteen"/>
   </enum>
 
-  <schema id="org.gnome.taquin" path="/org/gnome/taquin/" gettext-domain="taquin">
+  <schema id="org.gnome.taquin" path="/org/gnome/taquin/" gettext-domain="gnome-taquin">
     <key name="type" enum="org.gnome.taquin.GameType">
       <default>'fifteen'</default>
     </key>
