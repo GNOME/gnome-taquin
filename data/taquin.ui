@@ -1,0 +1,265 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<interface>
+  <requires lib="gtk+" version="3.12"/>
+  <object class="GtkImage" id="15-Puzzle">
+    <property name="resource">/org/gnome/taquin/images/15-Puzzle.png</property>
+    <property name="visible">True</property>
+    <property name="pixel-size">150</property>
+  </object>
+  <object class="GtkImage" id="16-Puzzle">
+    <property name="resource">/org/gnome/taquin/images/16-Puzzle.png</property>
+    <property name="visible">True</property>
+    <property name="pixel-size">150</property>
+  </object>
+  <menu id="size-menu">
+    <section>
+      <item>
+        <attribute name="label" translatable="yes">3 × 3</attribute>
+        <attribute name="action">win.change-size</attribute>
+        <attribute name="target">3</attribute>
+      </item>
+      <item>
+        <attribute name="label" translatable="yes">4 × 4</attribute>
+        <attribute name="action">win.change-size</attribute>
+        <attribute name="target">4</attribute>
+      </item>
+      <item>
+        <attribute name="label" translatable="yes">5 × 5</attribute>
+        <attribute name="action">win.change-size</attribute>
+        <attribute name="target">5</attribute>
+      </item>
+    </section>
+  </menu>
+  <menu id="theme-menu">
+    <section>
+      <item>
+        <attribute name="label" translatable="yes">Cats</attribute>
+        <attribute name="action">win.change-theme</attribute>
+        <attribute name="target">cats</attribute>
+      </item>
+      <item>
+        <attribute name="label" translatable="yes">Numbers</attribute>
+        <attribute name="action">win.change-theme</attribute>
+        <attribute name="target">numbers</attribute>
+      </item>
+    </section>
+  </menu>
+  <object class="GtkApplicationWindow" id="taquin-window">
+    <property name="title" translatable="yes">Taquin</property>
+    <property name="border-width">25</property>
+    <child type="titlebar">
+      <object class="GtkHeaderBar" id="headerbar">
+        <property name="visible">True</property>
+        <property name="can-focus">False</property>
+        <property name="show-close-button">True</property>
+        <property name="title" translatable="yes">Taquin</property>
+        <child>
+          <object class="GtkButton" id="undo-button">
+            <property name="visible">True</property>
+            <property name="sensitive">False</property>
+            <property name="valign">center</property>
+            <property name="tooltip-text" translatable="yes">Undo your most recent move</property>
+            <property name="can-focus">True</property>
+            <property name="focus-on-click">False</property>
+            <property name="action-name">win.undo</property>
+            <style><class name="image-button"/></style>
+            <child>
+              <object class="GtkImage">
+                <property name="icon-name">edit-undo-symbolic</property>
+                <property name="visible">True</property>
+                <property name="icon-size">1</property>
+              </object>
+            </child>
+          </object>
+        </child>
+        <child>
+          <object class="GtkButton" id="back-button">
+            <property name="visible">False</property>
+            <property name="halign">center</property>
+            <property name="valign">center</property>
+            <property name="tooltip-text" translatable="yes">Go back to the current game</property>
+            <property name="use-underline">True</property>
+            <property name="action-name">win.back</property>
+            <style>
+              <class name="image-button"/>
+            </style>
+            <child>
+              <object class="GtkImage">
+                <property name="icon-name">go-previous-symbolic</property>
+                <property name="visible">True</property>
+                <property name="icon-size">1</property>
+              </object>
+            </child>
+          </object>
+        </child>
+      </object>
+    </child>
+    <child>
+      <object class="GtkStack" id="main-stack">
+        <property name="visible">True</property>
+        <property name="homogeneous">True</property>
+        <child>
+          <object class="GtkBox">
+            <property name="orientation">vertical</property>
+            <property name="visible">True</property>
+            <property name="halign">center</property>
+            <property name="valign">center</property>
+            <property name="margin">0</property>
+            <property name="width-request">350</property>
+            <property name="height-request">350</property>
+            <child>
+              <object class="GtkBox">
+                <property name="orientation">horizontal</property>
+                <property name="visible">True</property>
+                <property name="homogeneous">True</property>
+                <child>
+                  <object class="GtkRadioButton" id="radio-fifteen">
+                    <property name="visible">True</property>
+                    <property name="label">15-Puzzle</property>
+                    <property name="always-show-image">True</property>
+                    <property name="focus-on-click">False</property>
+                    <property name="image">15-Puzzle</property>
+                    <property name="image-position">bottom</property>
+                    <property name="relief">none</property>
+                    <property name="action-name">win.change-type</property>
+                    <property name="action-target">'fifteen'</property>
+                    <!-- <property name="draw-indicator">False</property> TODO readds a theme on hover...-->
+                  </object>
+                </child>
+                <child>
+                  <object class="GtkRadioButton" id="radio-sixteen">
+                    <property name="visible">True</property>
+                    <property name="label">16-Puzzle</property>
+                    <property name="always-show-image">True</property>
+                    <property name="focus-on-click">False</property>
+                    <property name="image">16-Puzzle</property>
+                    <property name="image-position">bottom</property>
+                    <property name="relief">none</property>
+                    <property name="action-name">win.change-type</property>
+                    <property name="action-target">'sixteen'</property>
+                    <property name="group">radio-fifteen</property>
+                    <!-- <property name="draw-indicator">False</property> TODO readds a theme on hover...-->
+                  </object>
+                </child>
+              </object>
+              <packing>
+                <property name="expand">True</property>
+                <property name="fill">True</property>
+              </packing>
+            </child>
+            <child>
+              <object class="GtkBox">
+                <property name="orientation">horizontal</property>
+                <property name="visible">True</property>
+                <property name="homogeneous">True</property>
+                <child>
+                  <object class="GtkMenuButton" id="size-button">
+                    <property name="visible">True</property>
+                    <property name="use-underline">True</property>
+                    <property name="menu-model">size-menu</property>
+                    <property name="height-request">60</property>
+                    <property name="relief">none</property>
+                  </object>
+                  <packing>
+                    <property name="expand">True</property>
+                    <property name="fill">True</property>
+                  </packing>
+                </child>
+                <child>
+                  <object class="GtkMenuButton" id="theme-button">
+                    <property name="visible">True</property>
+                    <property name="use-underline">True</property>
+                    <property name="menu-model">theme-menu</property>
+                    <property name="height-request">60</property>
+                    <property name="relief">none</property>
+                  </object>
+                  <packing>
+                    <property name="expand">True</property>
+                    <property name="fill">True</property>
+                  </packing>
+                </child>
+              </object>
+              <packing>
+                <property name="expand">True</property>
+                <property name="fill">True</property>
+              </packing>
+            </child>
+            <child>
+              <object class="GtkButton">
+                <property name="visible">True</property>
+                <property name="use-underline">True</property>
+                <property name="label" translatable="yes">_Start Game</property>
+                <property name="action-name">win.start-game</property>
+                <property name="width-request">222</property>
+                <property name="height-request">60</property>
+                <property name="halign">center</property>
+                <style><class name="suggested-action"/></style>
+              </object>
+              <packing>
+                <property name="expand">False</property>
+                <property name="fill">False</property>
+              </packing>
+            </child>
+          </object>
+          <packing>
+            <property name="name">start-box</property>
+          </packing>
+        </child>
+        <child>
+          <object class="GtkAspectFrame">
+            <property name="visible">True</property>
+            <property name="shadow-type">GTK_SHADOW_NONE</property>
+            <property name="obey-child">false</property>
+            <property name="ratio">1.4</property>
+            <child>
+              <object class="GtkBox" id="game-box">
+                <property name="visible">True</property>
+                <property name="orientation">horizontal</property>
+                <property name="spacing">25</property>
+                <child>
+                  <placeholder/>
+                </child>
+                <child>
+                  <object class="GtkBox">
+                    <property name="visible">True</property>
+                    <property name="orientation">vertical</property>
+                    <property name="spacing">6</property>
+                    <child>
+                      <object class="GtkButton">
+                        <property name="visible">True</property>
+                        <property name="use-underline">True</property>
+                        <property name="label" translatable="yes">_Start Over</property>
+                        <property name="halign">center</property>
+                        <property name="valign">center</property>
+                        <property name="action-name">win.new-game</property>
+                        <property name="tooltip-text" translatable="yes">Start a new game</property>
+                        <property name="width-request">120</property>
+                        <property name="height-request">60</property>
+                      </object>
+                      <packing>
+                        <property name="pack-type">end</property>
+                        <property name="expand">False</property>
+                        <property name="fill">False</property>
+                        <property name="padding">0</property>
+                        <property name="position">1</property>
+                      </packing>
+                    </child>
+                  </object>
+                  <packing>
+                    <property name="pack-type">end</property>
+                    <property name="expand">False</property>
+                    <property name="fill">True</property>
+                    <property name="padding">0</property>
+                  </packing>
+                </child>
+              </object>
+            </child>
+          </object>
+          <packing>
+            <property name="name">frame</property>
+          </packing>
+        </child>
+      </object>
+    </child>
+  </object>
+</interface>

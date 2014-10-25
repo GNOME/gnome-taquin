@@ -1,0 +1,72 @@
+<page xmlns="http://projectmallard.org/1.0/"
+      type="topic" style="task"
+      id="15-Puzzle">
+
+  <info>
+    <link type="guide" xref="index#play" />
+    <revision pkgversion="3.15" version="0.1" date="2014-09-11" status="final"/>
+
+    <credit type="author copyright">
+      <name>Arnaud Bonatti</name>
+      <email>arnaud.bonatti@gmail.com</email>
+      <years>2014</years>
+    </credit>
+
+    <desc></desc>
+  </info>
+
+  <title>15-Puzzle</title>
+
+  <p>The <em>15-Puzzle</em> is the default puzzle of <app>Taquin</app>. It is displayed at the first opening of the application, but you can launch it at every moment from the <link xref="start-screen">Start Screen</link>.</p>
+
+  <section id="15-play">
+    <title>Gameplay</title>
+
+    <p>The goal is to move all the tiles at their own place.</p>
+
+    <p>There’s an empty space where you can move adjacent tiles by pushing them on it. You can push in the empty space’s direction more than one tile at the same time.</p>
+
+  </section>
+  <section id="15-end">
+    <title>End of the game</title>
+    <p>At the end of the game, <app>Taquin</app> notifies you and displays the complete image.</p>
+    <p>You can click the <gui>Start Over</gui> button to go to the <link xref="start-screen">Start Screen</link>.</p>
+  </section>
+
+  <section id="15-mouse">
+    <title>How to play with mouse</title>
+
+    <p>To make a move:</p>
+    <steps>
+      <item><p>Click on a tile on the same row or column than the empty space.</p>
+      <note><p>If you click on a tile that cannot move, the game notifies you the move is impossible.</p>
+      </note>
+      </item>
+      <item><p>You can always undo a move by clicking the <gui>Undo</gui> button at the left of the headerbar.</p>
+      </item>
+      <item><p>At the end of the game, or when you want to switch game, click the <gui>Start Over</gui> button to go to the <link xref="start-screen">Start Screen</link>.</p>
+      </item>
+    </steps>
+
+    <p>You can at every moment use the keyboard.</p>
+  </section>
+
+  <section id="15-keyboard">
+    <title>How to play with keyboard</title>
+
+    <p>To make a move:</p>
+    <steps>
+      <item><p>Use the <key>Left</key>, <key>Right</key>, <key>Up</key> and <key>Down</key> arrows to go at the tile you want to move. The currently selected tile is indicated with four arrows around the board, on each side of its row and column.</p></item>
+      <item><p>Use the <key>Space</key> key to move the selected tile in the direction of the empty space.</p>
+      <note><p>If you click on a tile that cannot move, the game notifies you the move is impossible.</p>
+      </note>
+      </item>
+      <item><p>You can always undo a move with the <keyseq><key>Ctrl</key><key>Z</key></keyseq> keys.</p>
+      </item>
+      <item><p>At the end of the game, or when you want to switch game, use the the <keyseq><key>Ctrl</key><key>N</key></keyseq> keys to go to the <link xref="start-screen">Start Screen</link>.</p>
+      </item>
+    </steps>
+
+    <p>You can at every moment use the mouse.</p>
+  </section>
+</page>

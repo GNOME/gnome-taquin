@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Copyright 2014 Arnaud Bonatti and contributors -->
+<application>
+  <id type="desktop">gnome-taquin.desktop</id>
+  <metadata_license>CC0-1.0</metadata_license>
+  <project_license>GPL-3.0+, CC-By-SA-2.0 and CC-BY-SA-3.0</project_license>
+  <description>
+    <_p>
+      Taquin is a computer version of the 15-puzzle and other sliding puzzles.
+    </_p>
+    <_p>
+      The object of Taquin is to move tiles so that they reach their places,
+      either indicated with numbers, or with parts of a great image.
+    </_p>
+  </description>
+  <!-- <screenshots>
+    <screenshot type="default" width="748" height="398"></screenshot>
+  </screenshots> -->
+  <url type="homepage">https://wiki.gnome.org/Apps/Taquin</url>
+  <updatecontact>games-list_at_gnome.org</updatecontact>
+  <project_group>GNOME</project_group>
+</application>

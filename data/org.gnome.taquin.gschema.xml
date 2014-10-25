@@ -1,0 +1,35 @@
+<schemalist>
+  <enum id="org.gnome.taquin.GameType">
+    <value value="0" nick="fifteen"/>
+    <value value="1" nick="sixteen"/>
+  </enum>
+
+  <schema id="org.gnome.taquin" path="/org/gnome/taquin/" gettext-domain="taquin">
+    <key name="type" enum="org.gnome.taquin.GameType">
+      <default>'fifteen'</default>
+    </key>
+    <key name="theme" type="s">
+      <default>'cats'</default>
+      <summary>Name of the theme folder.</summary>
+      <description>Taquin has two default themes: 'cats' and 'numbers'.</description>
+    </key>
+    <key name="size" type="i">
+      <default>4</default>
+      <range min="2" max="9"/>
+      <summary>Number of tiles on each edge.</summary>
+      <description>The game is tested and offers to select a size from 3 to 5. There is a human-understandable maximum value to avoid some bugs. Maximum size is 9 as the image files are randomly selected depending on the first character of their filename.</description>
+    </key>
+    <key name="window-width" type="i">
+      <default>540</default>
+      <summary>Width of the window in pixels.</summary>
+    </key>
+    <key name="window-height" type="i">
+      <default>500</default>
+      <summary>Height of the window in pixels.</summary>
+    </key>
+    <key name="window-is-maximized" type="b">
+      <default>false</default>
+      <summary>true if the window is maximized.</summary>
+    </key>
+  </schema>
+</schemalist>

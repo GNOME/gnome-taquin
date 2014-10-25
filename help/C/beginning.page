@@ -1,0 +1,37 @@
+<page xmlns="http://projectmallard.org/1.0/"
+      type="topic" style="task"
+      id="beginning">
+
+  <info>
+    <link type="guide" xref="index#play" />
+    <revision pkgversion="3.15" version="0.1" date="2014-09-11" status="final"/>
+
+    <credit type="author copyright">
+      <name>Arnaud Bonatti</name>
+      <email>arnaud.bonatti@gmail.com</email>
+      <years>2014</years>
+    </credit>
+
+    <desc></desc>
+  </info>
+
+  <title>Beginning</title>
+
+  <p>When <app>Taquin</app> is opened for the first time, you have a traditionnal <link xref="15-Puzzle">15-Puzzle</link> game.</p>
+
+  <p>The game is played using the mouse. To make a move:</p>
+
+  <steps>
+    <item><p>Click on a tile on the same row or column than the empty space.</p>
+    <note><p>If you click on a tile that cannot move, the game notifies you the move is impossible.</p>
+    </note>
+    </item>
+    <item><p>You can always undo a move by clicking the <gui>Undo</gui> button at the left of the headerbar.</p>
+    </item>
+    <item><p>At the end of the game, or when you want to switch game, click the <gui>Start Over</gui> button to go to the <link xref="start-screen">Start Screen</link>.</p>
+    </item>
+  </steps>
+
+  <p>The other times <app>Taquin</app> is opened, it displays a puzzle with the same rules and dimensions as the last one played, so it could be a <link xref="16-Puzzle">16-Puzzle</link> game.</p>
+
+</page>

@@ -1,0 +1,68 @@
+<page xmlns="http://projectmallard.org/1.0/"
+      type="topic" style="task"
+      id="16-Puzzle">
+
+  <info>
+    <link type="guide" xref="index#play" />
+    <revision pkgversion="3.15" version="0.1" date="2014-09-11" status="final"/>
+
+    <credit type="author copyright">
+      <name>Arnaud Bonatti</name>
+      <email>arnaud.bonatti@gmail.com</email>
+      <years>2014</years>
+    </credit>
+
+    <desc></desc>
+  </info>
+
+  <title>16-Puzzle</title>
+
+  <p>The <em>16-Puzzle</em> is the variant puzzle of <app>Taquin</app>. You can launch it at every moment from the <link xref="start-screen">Start Screen</link>.</p>
+
+  <section id="16-play">
+    <title>Gameplay</title>
+
+    <p>The goal is to move all the tiles at their own place.</p>
+
+    <p>You move all the tiles of a row or a column in one direction. The tile that is pushed out of the board is placed at the opposite side of the row or column.</p>
+
+  </section>
+  <section id="16-end">
+    <title>End of the game</title>
+    <p>At the end of the game, <app>Taquin</app> notifies you and displays the complete image.</p>
+    <p>You can click the <gui>Start Over</gui> button to go to the <link xref="start-screen">Start Screen</link>.</p>
+  </section>
+
+  <section id="16-mouse">
+    <title>How to play with mouse</title>
+
+    <p>To make a move:</p>
+    <steps>
+      <item><p>Click on one of the arrows displayed around the board. The row or column at the end of which this arrow is moves in this direction, and the tile that was next to the arrow is placed at the opposite side.</p>
+      </item>
+      <item><p>You can always undo a move by clicking the <gui>Undo</gui> button at the left of the headerbar.</p>
+      </item>
+      <item><p>At the end of the game, or when you want to switch game, click the <gui>Start Over</gui> button to go to the <link xref="start-screen">Start Screen</link>.</p>
+      </item>
+    </steps>
+
+    <p>You can at every moment use the keyboard.</p>
+  </section>
+
+  <section id="16-keyboard">
+    <title>How to play with keyboard</title>
+
+    <p>To make a move:</p>
+    <steps>
+      <item><p>Use the <key>Left</key>, <key>Right</key>, <key>Up</key> and <key>Down</key> arrows to go at the row or the column you want to move. The currently selected row and column are indicated with two lights around the board.</p></item>
+      <item><p>Use the <keyseq><key>Ctrl</key><key>Left</key></keyseq> or <keyseq><key>Ctrl</key><key>Right</key></keyseq> keys to move a row, or the <keyseq><key>Ctrl</key><key>Up</key></keyseq> and <keyseq><key>Ctrl</key><key>Down</key></keyseq> keys to move a column.</p>
+      </item>
+      <item><p>You can always undo a move with the <keyseq><key>Ctrl</key><key>Z</key></keyseq> keys.</p>
+      </item>
+      <item><p>At the end of the game, or when you want to switch game, use the the <keyseq><key>Ctrl</key><key>N</key></keyseq> keys to go to the <link xref="start-screen">Start Screen</link>.</p>
+      </item>
+    </steps>
+
+    <p>You can at every moment use the mouse.</p>
+  </section>
+</page>

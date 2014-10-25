@@ -1,0 +1,3 @@
+src/taquin-main.c
+src/taquin-game.c
+src/taquin-view.c

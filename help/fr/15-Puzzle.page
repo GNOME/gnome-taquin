@@ -1,0 +1,72 @@
+<page xmlns="http://projectmallard.org/1.0/"
+      type="topic" style="task"
+      id="15-Puzzle">
+
+  <info>
+    <link type="guide" xref="index#play" />
+    <revision pkgversion="3.15" version="0.1" date="2014-10-25" status="final"/>
+
+    <credit type="author copyright">
+      <name>Arnaud Bonatti</name>
+      <email>arnaud.bonatti@gmail.com</email>
+      <years>2014</years>
+    </credit>
+
+    <desc></desc>
+  </info>
+
+  <title>Puzzle classique</title>
+
+  <p>Le <em>pousse-pousse classique</em> est le puzzle principal de <app>Taquin</app>. Il est affiché à la première ouverture de l’application, mais vous pouvez le lancer à tout moment depuis l’<link xref="start-screen">écran de démarrage</link>.</p>
+
+  <section id="15-play">
+    <title>But du jeu</title>
+
+    <p>Le but est de remettre toutes les tuiles à leur place.</p>
+
+    <p>Il y a une case vide sur laquelle vous pouvez faire glisser les tuiles adjacentes. Vous pouvez pousser plus d’une tuile dans la direction de la case vide.</p>
+
+  </section>
+  <section id="15-end">
+    <title>Fin du jeu</title>
+    <p>Lorsque le jeu est fini, <app>Taquin</app> vous le signale et affiche l’image complète.</p>
+    <p>Vous pouvez cliquer le bouton <gui>Recommencer</gui> pour vous rendre à l’<link xref="start-screen">écran de démarrage</link>.</p>
+  </section>
+
+  <section id="15-mouse">
+    <title>Comment jouer à la souris</title>
+
+    <p>Pour faire un mouvement :</p>
+    <steps>
+      <item><p>Cliquez sur une tuile située sur la même ligne ou la même colonne que la case vide.</p>
+      <note><p>Si vous cliquez sur une tuile qui ne peut pas bouger, le jeu vous signale que le mouvement est impossible.</p>
+      </note>
+      </item>
+      <item><p>Vous pouvez toujours annuler un mouvement en cliquant le bouton <gui>Annuler</gui> à gauche de la barre d’en-tête.</p>
+      </item>
+      <item><p>À la fin du jeu, ou lorsque vous voulez changer de jeu, cliquez le bouton <gui>Recommencer</gui> pour vous rendre à l’<link xref="start-screen">écran de démarrage</link>.</p>
+      </item>
+    </steps>
+
+    <p>Vous pouvez à tout moment utiliser le clavier.</p>
+  </section>
+
+  <section id="15-keyboard">
+    <title>Comment jouer au clavier</title>
+
+    <p>Pour faire un mouvement :</p>
+    <steps>
+      <item><p>Utilisez les flèches <key>Gauche</key>, <key>Droite</key>, <key>Haut</key> et <key>Bas</key> pour vous déplacer sur la tuile que vous désirez faire glisser. La ligne et la colonne de la case sélectionnée sont indiquées avec deux flèches de chaque côté du plateau.</p></item>
+      <item><p>Utilisez la touche <key>Space</key> pour déplacer la tuile sélectionnée dans la direction de la case vide.</p>
+      <note><p>Si vous actionnez la touche <key>Space</key> sur une tuile qui ne peut pas bouger, le jeu vous signale que le mouvement est impossible.</p>
+      </note>
+      </item>
+      <item><p>Vous pouvez toujours annuler un mouvement en utilisant la combinaison de touches <keyseq><key>Ctrl</key><key>Z</key></keyseq>.</p>
+      </item>
+      <item><p>À la fin du jeu, ou lorsque vous voulez changer de jeu, utilisez la combinaison de touches <keyseq><key>Ctrl</key><key>N</key></keyseq> pour vous rendre à l’<link xref="start-screen">écran de démarrage</link>.</p>
+      </item>
+    </steps>
+
+    <p>Vous pouvez à tout moment utiliser la souris.</p>
+  </section>
+</page>

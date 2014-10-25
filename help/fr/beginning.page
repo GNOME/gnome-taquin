@@ -1,0 +1,37 @@
+<page xmlns="http://projectmallard.org/1.0/"
+      type="topic" style="task"
+      id="beginning">
+
+  <info>
+    <link type="guide" xref="index#play" />
+    <revision pkgversion="3.15" version="0.1" date="2014-11-25" status="final"/>
+
+    <credit type="author copyright">
+      <name>Arnaud Bonatti</name>
+      <email>arnaud.bonatti@gmail.com</email>
+      <years>2014</years>
+    </credit>
+
+    <desc></desc>
+  </info>
+
+  <title>Démarrage</title>
+
+  <p>Lorsque <app>Taquin</app> est ouvert pour la première fois, il vous affiche un <link xref="15-Puzzle">puzzle classique</link>.</p>
+
+  <p>Le jeu se joue à la souris. Pour faire un mouvement :</p>
+
+  <steps>
+    <item><p>Cliquez sur une tuile située sur la même ligne ou la même colonne que la case vide.</p>
+    <note><p>Si vous cliquez sur une tuile qui ne peut pas bouger, le jeu vous signale que le mouvement est impossible.</p>
+    </note>
+    </item>
+    <item><p>Vous pouvez toujours annuler un mouvement en cliquant le bouton <gui>Annuler</gui> à gauche de la barre d’en-tête.</p>
+    </item>
+    <item><p>À la fin du jeu, ou lorsque vous voulez changer de jeu, cliquez le bouton <gui>Recommencer</gui> pour vous rendre à l’<link xref="start-screen">écran de démarrage</link>.</p>
+    </item>
+  </steps>
+
+  <p>Les fois suivant où <app>Taquin</app> est lancé, il affiche un puzzle des mêmes règles et de la même taille que celui que vous aviez jouer auparavant ; ce peut donc être une <link xref="16-Puzzle">version moderne</link>.</p>
+
+</page>

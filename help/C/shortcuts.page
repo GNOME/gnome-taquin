@@ -1,0 +1,78 @@
+<page xmlns="http://projectmallard.org/1.0/"
+      type="topic" style="task"
+      id="shortcuts">
+
+  <info>
+    <link type="guide" xref="index#advanced" />
+    <revision pkgversion="3.15" version="0.1" date="2014-09-11" status="final"/>
+
+    <credit type="author copyright">
+      <name>Arnaud Bonatti</name>
+      <email>arnaud.bonatti@gmail.com</email>
+      <years>2014</years>
+    </credit>
+
+    <desc></desc>
+  </info>
+
+  <title>Keyboard shortcuts</title>
+
+  <p><app>Taquin</app> could easily be used with keyboard. The <link xref="15-Puzzle#15-keyboard">15-Puzzle</link> and <link xref="16-Puzzle#16-keyboard">16-Puzzle</link> both have specific shortcuts.</p>
+
+  <section id="game">
+    <title>In-game shortcuts</title>
+    <table frame="all" rules="cols" shade="rows">
+      <tr>
+        <td><p>Show new-game screen</p></td>
+        <td><p><keyseq><key>Ctrl</key><key>N</key></keyseq></p></td>
+      </tr>
+      <tr>
+        <td><p>Undo last move</p></td>
+        <td><p><keyseq><key>Ctrl</key><key>Z</key></keyseq></p></td>
+      </tr>
+    </table>
+  </section>
+  <section id="15-Puzzle">
+    <title>15-Puzzle shortcuts</title>
+    <table frame="all" rules="cols" shade="rows">
+      <tr>
+        <td><p>Change selected tile</p></td>
+        <td><p><key>Left</key>, <key>Right</key>, <key>Up</key> and <key>Down</key></p></td>
+      </tr>
+      <tr>
+        <td><p>Push tile in empty space’s direction</p></td>
+        <td><p><key>Space</key> or <key>KP_Enter</key></p></td>
+      </tr>
+    </table>
+  </section>
+  <section id="16-Puzzle">
+    <title>16-Puzzle shortcuts</title>
+    <table frame="all" rules="cols" shade="rows">
+      <tr>
+        <td><p>Change selected tile</p></td>
+        <td><p><key>Left</key>, <key>Right</key>, <key>Up</key> and <key>Down</key></p></td>
+      </tr>
+      <tr>
+        <td><p>Move row</p></td>
+        <td><p><keyseq><key>Ctrl</key><key>Left</key></keyseq> and <keyseq><key>Ctrl</key><key>Right</key></keyseq></p></td>
+      </tr>
+      <tr>
+        <td><p>Move column</p></td>
+        <td><p><keyseq><key>Ctrl</key><key>Up</key></keyseq> and <keyseq><key>Ctrl</key><key>Down</key></keyseq></p></td>
+      </tr>
+    </table>
+  </section>
+  <section id="general">
+    <title>General shortcuts</title>
+    <table frame="all" rules="cols" shade="rows">
+      <tr>
+        <td><p>Help</p></td>
+        <td><p><key>F1</key></p></td>
+      </tr>
+      <tr>
+        <td><p>Quit</p></td>
+        <td><p><keyseq><key>Ctrl</key><key>Q</key></keyseq></p></td>
+      </tr>
+    </table>
+  </section>
+</page>

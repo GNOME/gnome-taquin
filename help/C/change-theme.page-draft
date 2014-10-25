@@ -1,0 +1,21 @@
+<page xmlns="http://projectmallard.org/1.0/"
+      type="topic" style="task"
+      id="change-theme">
+
+  <info>
+    <link type="guide" xref="index#advanced" />
+    <revision pkgversion="3.15" version="0.1" date="2014-09-11" status="final"/>
+
+    <credit type="author copyright">
+      <name>Arnaud Bonatti</name>
+      <email>arnaud.bonatti@gmail.com</email>
+      <years>2014</years>
+    </credit>
+
+    <desc></desc>
+  </info>
+
+  <title>Change theme</title>
+  <p><app>Taquin</app> has several command-line options.</p>
+
+</page>

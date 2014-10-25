@@ -1,0 +1,28 @@
+GtkApplicationWindow GtkRadioButton {
+    -GtkButton-image-spacing:0;
+    -GtkCheckButton-indicator-size:0;
+    -gtk-icon-source:none;
+    padding-top:15px;
+    border-radius:15px;
+}
+GtkApplicationWindow GtkRadioButton:checked {
+    background-color:shade(#ededed, 0.85);
+}
+GtkApplicationWindow GtkMenuButton:hover,
+GtkApplicationWindow GtkMenuButton:checked {
+    background:-gtk-gradient (radial, center center, 0, center center, 0.5, from(white), to(#e8e8e8));
+}
+GtkApplicationWindow GtkMenuButton:hover:backdrop,
+GtkApplicationWindow GtkMenuButton:checked:backdrop {
+    background:-gtk-gradient (radial, center center, 0, center center, 0.5, from(white), to(@theme_bg_color));
+}
+GtkApplicationWindow GtkMenuButton:hover,
+GtkApplicationWindow GtkMenuButton:checked,
+GtkApplicationWindow GtkRadioButton:checked {
+    color:shade(#2e3436, 0.85);
+}
+GtkApplicationWindow GtkMenuButton:hover:backdrop,
+GtkApplicationWindow GtkMenuButton:checked:backdrop,
+GtkApplicationWindow GtkRadioButton:checked:backdrop {
+    color:@theme_unfocused_fg_color;
+}

@@ -1,0 +1,60 @@
+.\" Copyright (C) 2014 Arnaud Bonatti <arnaud.bonatti@gmail.com>
+.\"
+.\" This file is part of Taquin.
+.\"
+.\" Taquin is free software: you can redistribute it and/or modify
+.\" it under the terms of the GNU General Public License as published by
+.\" the Free Software Foundation, either version 3 of the License, or
+.\" (at your option) any later version.
+.\"
+.\" Taquin is distributed in the hope that it will be useful,
+.\" but WITHOUT ANY WARRANTY; without even the implied warranty of
+.\" MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+.\" GNU General Public License for more details.
+.\"
+.\" You should have received a copy of the GNU General Public License
+.\" along with Taquin. If not, see <http://www.gnu.org/licenses/>.
+.TH TAQUIN 6 "2014\-09\-05" "GNOME"
+.SH NAME
+Taquin \- A sliding puzzle game for GNOME.
+.SH SYNOPSIS
+.B gnome-taquin
+.RI [ OPTION... ]
+.SH DESCRIPTION
+Taquin is a computer version of the 15-puzzle and other sliding puzzles.
+.br
+The object of Taquin is to move tiles so that they reach their places,
+.br
+either indicated with numbers, or with parts of a great image.
+.SH OPTIONS
+.TP
+.B \-h, \-\-help
+Prints the command line options and exits.
+.PP
+.B \-\-fifteen
+.br
+.B \-\-sixteen
+.RS 7
+Sets the puzzle game launched.
+.br
+The option --fifteen is for a classical 15-Puzzle, whereas
+the --sixteen option is for a more contemporary puzzle.
+.br
+You should only use one of these options at the same time.
+.RE
+.TP
+.B \-s, \-\-size=<size>
+Sets the puzzle edges' size.
+.br
+It accepts value from 2 to 9; 2 is for debug only.
+.TP
+.B \-v, \-\-version
+Prints the program version and exits.
+.P
+This program also accepts the standard GTK+ options.
+.SH AUTHORS
+.B Taquin
+was written by Arnaud Bonatti.
+.P
+This manual page was written by Arnaud Bonatti <arnaud.bonatti@gmail.com>,
+for the GNOME project.
