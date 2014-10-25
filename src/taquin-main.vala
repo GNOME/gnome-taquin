@@ -326,7 +326,7 @@ public class Taquin : Gtk.Application
                            "authors", authors,
                            "documenters", documenters,
                            "translator-credits", _("translator-credits"),
-                           "logo-icon-name", "taquin",
+                           "logo-icon-name", "gnome-taquin",
                            "website", "https://wiki.gnome.org/Apps/Taquin", // TODO
                            null);
     }
