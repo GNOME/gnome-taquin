@@ -390,7 +390,7 @@ public class Taquin : Gtk.Application
     }
     private void update_size_button_label (int size)
     {
-        size_button.set_label (_("Size: %d × %d").printf (size, size));
+        size_button.set_label (_("Size: %d × %d ▾").printf (size, size));
     }
 
     private void change_theme_cb (SimpleAction action, Variant? variant)
@@ -404,8 +404,8 @@ public class Taquin : Gtk.Application
     {
         switch (theme)
         {
-            case "cats":    theme_button.set_label (_("Theme: Cats")); break;
-            case "numbers": theme_button.set_label (_("Theme: Numbers")); break;
+            case "cats":    theme_button.set_label (_("Theme: Cats ▾")); break;
+            case "numbers": theme_button.set_label (_("Theme: Numbers ▾")); break;
             default: warn_if_reached (); break;
         }
 
