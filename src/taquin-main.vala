@@ -91,7 +91,7 @@ public class Taquin : Gtk.Application
 
         Environment.set_application_name (_("Taquin"));
 
-        Window.set_default_icon_name ("taquin");
+        Window.set_default_icon_name ("gnome-taquin");
 
         return new Taquin ().run (args);
     }
@@ -335,7 +335,7 @@ public class Taquin : Gtk.Application
     {
         try
         {
-            show_uri (window.get_screen (), "help:taquin", get_current_event_time ());
+            show_uri (window.get_screen (), "help:gnome-taquin", get_current_event_time ());
         }
         catch (Error e)
         {
