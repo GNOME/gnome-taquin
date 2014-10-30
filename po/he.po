@@ -8,9 +8,9 @@ msgid ""
 msgstr ""
 "Project-Id-Version: taquin master\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2014-10-30 20:28+0200\n"
-"PO-Revision-Date: 2014-10-30 20:51+0200\n"
-"Last-Translator: Yosef Or Boczko <yoseforb@gnome.org>\n"
+"POT-Creation-Date: 2014-10-30 20:53+0200\n"
+"PO-Revision-Date: 2014-10-30 20:53+0200\n"
+"Last-Translator: Yosef Or Boczko <yoseforb@gmail.com>\n"
 "Language-Team: עברית <>\n"
 "Language: he\n"
 "MIME-Version: 1.0\n"
@@ -99,7 +99,7 @@ msgstr "ה_תחלת משחק"
 
 #: ../data/taquin.ui.h:10
 msgid "_Start Over"
-msgstr "ה_תחה מחדש"
+msgstr "ה_תחלה מחדש"
 
 #: ../data/taquin.ui.h:11
 msgid "Start a new game"
