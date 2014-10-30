@@ -115,7 +115,7 @@
                 <child>
                   <object class="GtkRadioButton" id="radio-fifteen">
                     <property name="visible">True</property>
-                    <property name="label">15-Puzzle</property>
+                    <property name="label" translatable="yes">15-Puzzle</property>
                     <property name="always-show-image">True</property>
                     <property name="focus-on-click">False</property>
                     <property name="image">15-Puzzle</property>
@@ -129,7 +129,7 @@
                 <child>
                   <object class="GtkRadioButton" id="radio-sixteen">
                     <property name="visible">True</property>
-                    <property name="label">16-Puzzle</property>
+                    <property name="label" translatable="yes">16-Puzzle</property>
                     <property name="always-show-image">True</property>
                     <property name="focus-on-click">False</property>
                     <property name="image">16-Puzzle</property>
