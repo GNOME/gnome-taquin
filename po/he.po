@@ -8,8 +8,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: taquin master\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2014-10-30 20:53+0200\n"
-"PO-Revision-Date: 2014-10-30 20:53+0200\n"
+"POT-Creation-Date: 2014-10-30 21:01+0200\n"
+"PO-Revision-Date: 2014-10-30 21:00+0200\n"
 "Last-Translator: Yosef Or Boczko <yoseforb@gmail.com>\n"
 "Language-Team: עברית <>\n"
 "Language: he\n"
@@ -94,14 +94,22 @@ msgid "Go back to the current game"
 msgstr "חזרה למשחק הנוכחי"
 
 #: ../data/taquin.ui.h:9
+msgid "15-Puzzle"
+msgstr "לוח 15"
+
+#: ../data/taquin.ui.h:10
+msgid "16-Puzzle"
+msgstr "לוח 16"
+
+#: ../data/taquin.ui.h:11
 msgid "_Start Game"
 msgstr "ה_תחלת משחק"
 
-#: ../data/taquin.ui.h:10
+#: ../data/taquin.ui.h:12
 msgid "_Start Over"
 msgstr "ה_תחלה מחדש"
 
-#: ../data/taquin.ui.h:11
+#: ../data/taquin.ui.h:13
 msgid "Start a new game"
 msgstr "התחלת משחק חדש"
 
@@ -159,12 +167,8 @@ msgid "Print release version and exit"
 msgstr "Print release version and exit"
 
 #: ../src/taquin-main.vala:325
-msgid ""
-"A classic 15-puzzle game.\n"
-"\n"
-msgstr ""
-"משחק חידת ה־15 הקלאסי.\n"
-"\n"
+msgid "A classic 15-puzzle game."
+msgstr "משחק חידת ה־15 הקלאסי."
 
 #: ../src/taquin-main.vala:328
 msgid "translator-credits"
