@@ -25,7 +25,7 @@ gnome_taquin_VALAFLAGS = \
 
 gnome_taquin_LDADD = $(GNOME_TAQUIN_LIBS)
 
-taquin-resources.c: taquin.gresource.xml $(shell $(GLIB_COMPILE_RESOURCES) --generate-dependencies taquin.gresource.xml)
+taquin-resources.c: $(shell $(GLIB_COMPILE_RESOURCES) --generate-dependencies taquin.gresource.xml)
 	$(AM_V_GEN) $(GLIB_COMPILE_RESOURCES) --target=$@ --sourcedir=$(srcdir) --generate-source $<
 
 CLEANFILES = \
