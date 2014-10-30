@@ -322,7 +322,7 @@ public class Taquin : Gtk.Application
                            "version", VERSION,
                            "copyright", "Copyright © 2014 Arnaud Bonatti",
                            "license-type", License.GPL_3_0,
-                           "comments", _("A classic 15-puzzle game.\n\n"),
+                           "comments", _("A classic 15-puzzle game."),
                            "authors", authors,
                            "documenters", documenters,
                            "translator-credits", _("translator-credits"),
