@@ -33,4 +33,7 @@ CLEANFILES = \
 	*_vala.stamp \
 	taquin-resources.c
 
+EXTRA_DIST = \
+	taquin.gresource.xml
+
 -include $(top_srcdir)/git.mk
