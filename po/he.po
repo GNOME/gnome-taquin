@@ -8,8 +8,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: taquin master\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2014-10-30 21:01+0200\n"
-"PO-Revision-Date: 2014-10-30 21:00+0200\n"
+"POT-Creation-Date: 2014-10-31 08:31+0200\n"
+"PO-Revision-Date: 2014-10-31 08:31+0200\n"
 "Last-Translator: Yosef Or Boczko <yoseforb@gmail.com>\n"
 "Language-Team: עברית <>\n"
 "Language: he\n"
@@ -167,8 +167,8 @@ msgid "Print release version and exit"
 msgstr "Print release version and exit"
 
 #: ../src/taquin-main.vala:325
-msgid "A classic 15-puzzle game."
-msgstr "משחק חידת ה־15 הקלאסי."
+msgid "A classic 15-puzzle game"
+msgstr "משחק חידת ה־15 הקלאסי"
 
 #: ../src/taquin-main.vala:328
 msgid "translator-credits"
