@@ -1,3 +1,18 @@
+3.15.2 - November 24, 2014
+=========================
+
+Main changes since 3.15.1:
+* hebrew, brazilian portuguese and greek translations
+* string corrections
+* [external] wiki page at https://wiki.gnome.org/Apps/Taquin
+
+All contributors to this release:
+* Arnaud Bonatti <arnaud.bonatti@gmail.com>
+* Yosef Or Boczko <yoseforb@gnome.org>
+* Michael Catanzaro <mcatanzaro@gnome.org>
+* Rafael Ferreira <rafael.f.f1@gmail.com>
+* Dimitris Spingos <dmtrs32@gmail.com>
+
 3.15.1 - October 30, 2014
 =========================
 
