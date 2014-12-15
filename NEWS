@@ -1,3 +1,16 @@
+3.15.3 - December 15, 2014
+=========================
+
+Main changes since 3.15.2:
+* czech and turkish translations
+* port to appstream-util
+* add git.mk
+
+All contributors to this release:
+* Michael Catanzaro <mcatanzaro@gnome.org>
+* Marek Černocký <marek@manet.cz>
+* Muhammet Kara <muhammetk@gmail.com>
+
 3.15.2 - November 24, 2014
 =========================
 
