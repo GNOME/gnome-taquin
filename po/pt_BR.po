@@ -8,8 +8,8 @@ msgstr ""
 "Project-Id-Version: gnome-taquin master\n"
 "Report-Msgid-Bugs-To: http://bugzilla.gnome.org/enter_bug.cgi?product=gnome-"
 "taquin&keywords=I18N+L10N&component=general\n"
-"POT-Creation-Date: 2014-11-03 21:02+0000\n"
-"PO-Revision-Date: 2014-11-04 06:53-0300\n"
+"POT-Creation-Date: 2014-11-25 00:16+0000\n"
+"PO-Revision-Date: 2014-12-24 04:31-0300\n"
 "Last-Translator: Rafael Ferreira <rafael.f.f1@gmail.com>\n"
 "Language-Team: Brazilian Portuguese <gnome-pt_br-list@gnome.org>\n"
 "Language: pt_BR\n"
@@ -17,16 +17,25 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n > 1);\n"
-"X-Generator: Poedit 1.6.10\n"
+"X-Generator: Poedit 1.7.1\n"
 
 #: ../data/gnome-taquin.appdata.xml.in.h:1
+#| msgid "Taquin"
+msgid "GNOME Taquin"
+msgstr "GNOME Taquin"
+
+#: ../data/gnome-taquin.appdata.xml.in.h:2 ../data/gnome-taquin.desktop.in.h:2
+msgid "Slide tiles to their correct places"
+msgstr "Deslize peças para seu devido lugar"
+
+#: ../data/gnome-taquin.appdata.xml.in.h:3
 msgid ""
 "Taquin is a computer version of the 15-puzzle and other sliding puzzles."
 msgstr ""
 "Taquin é uma versão de computador do quebra-cabeça de 15 peças e outros "
 "quebra-cabeças deslizantes."
 
-#: ../data/gnome-taquin.appdata.xml.in.h:2
+#: ../data/gnome-taquin.appdata.xml.in.h:4
 msgid ""
 "The object of Taquin is to move tiles so that they reach their places, "
 "either indicated with numbers, or with parts of a great image."
@@ -38,10 +47,6 @@ msgstr ""
 #: ../src/taquin-main.vala:92 ../src/taquin-main.vala:321
 msgid "Taquin"
 msgstr "Taquin"
-
-#: ../data/gnome-taquin.desktop.in.h:2
-msgid "Slide tiles on their correct place."
-msgstr "Deslize peças para seu devido lugar."
 
 #: ../data/gnome-taquin.desktop.in.h:3
 msgid "puzzle;"
