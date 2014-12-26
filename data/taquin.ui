@@ -45,8 +45,8 @@
     </section>
   </menu>
   <object class="GtkApplicationWindow" id="taquin-window">
+    <!-- <initial-focus name="view"> -->
     <property name="title" translatable="yes">Taquin</property>
-    <property name="border-width">25</property>
     <child type="titlebar">
       <object class="GtkHeaderBar" id="headerbar">
         <property name="visible">True</property>
@@ -103,7 +103,7 @@
             <property name="visible">True</property>
             <property name="halign">center</property>
             <property name="valign">center</property>
-            <property name="margin">0</property>
+            <property name="margin">25</property>
             <property name="width-request">350</property>
             <property name="height-request">350</property>
             <child>
@@ -210,6 +210,7 @@
             <property name="shadow-type">GTK_SHADOW_NONE</property>
             <property name="obey-child">false</property>
             <property name="ratio">1.4</property>
+            <property name="margin">25</property>
             <child>
               <object class="GtkBox" id="game-box">
                 <property name="visible">True</property>
