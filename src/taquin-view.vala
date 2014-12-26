@@ -428,7 +428,7 @@ public class TaquinView : Gtk.DrawingArea
                 default: return false;
             }
         }
-        if (k_name == "space" || k_name == "KP_Enter" || k_name == "Return")
+        if (k_name == "space" || k_name == "KP_Enter" || k_name == "Return")        // TODO even if game.game_type == GameType.SIXTEEN ??
         {
             game.request_move (x_arrow, y_arrow);
             return true;

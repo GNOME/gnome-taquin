@@ -40,6 +40,8 @@ public class Taquin : Gtk.Application
     private HeaderBar headerbar;
     private Button back_button;
     private Button undo_button;
+    private Button start_game_button;
+    private Button start_over_button;
     private Stack stack;
     private MenuButton size_button;
     private MenuButton theme_button;
@@ -49,6 +51,7 @@ public class Taquin : Gtk.Application
     private Game? game = null;
     private SimpleAction undo_action;
     List<string> theme_dirlist;
+    private bool game_finished = false;
 
     private static const OptionEntry[] option_entries =
     {
@@ -169,7 +172,9 @@ public class Taquin : Gtk.Application
 
         headerbar = builder.get_object ("headerbar") as HeaderBar;
         back_button = builder.get_object ("back-button") as Button;
-        undo_button = builder.get_object ("undo-button") as Button; 
+        undo_button = builder.get_object ("undo-button") as Button;
+        start_game_button = builder.get_object ("start-game-button") as Button;
+        start_over_button = builder.get_object ("start-over-button") as Button;
         stack = builder.get_object ("main-stack") as Stack;
 
         size_button = builder.get_object ("size-button") as MenuButton;
@@ -265,6 +270,10 @@ public class Taquin : Gtk.Application
         undo_button.hide ();
         stack.set_visible_child_name ("start-box");
         back_button.show ();
+        if (undo_action.enabled)
+            back_button.grab_focus ();
+        else
+            start_game_button.grab_focus ();
     }
 
     private void back_cb ()
@@ -274,6 +283,10 @@ public class Taquin : Gtk.Application
         back_button.hide ();
         stack.set_visible_child_name ("frame");
         undo_button.show ();
+        if (game_finished)
+            start_over_button.grab_focus ();    // TODO change headerbar subtitle?
+        else
+            view.grab_focus ();
     }
 
     private void start_game_cb ()
@@ -283,6 +296,7 @@ public class Taquin : Gtk.Application
         back_button.hide ();
         start_game ();
         undo_button.show ();
+        view.grab_focus ();
     }
 
     /*\
@@ -295,11 +309,13 @@ public class Taquin : Gtk.Application
             SignalHandler.disconnect_by_func (game, null, this);
 
         undo_action.set_enabled (false);
+        game_finished = false;
 
         var type = (GameType) settings.get_enum ("type");
         var size = settings.get_int ("size");
         game = new Game (type, size);
         view.game = game;
+        view.grab_focus ();
 
         var filename = "";
         var dirlist = theme_dirlist.copy ();
@@ -338,7 +354,7 @@ public class Taquin : Gtk.Application
                            "documenters", documenters,
                            "translator-credits", _("translator-credits"),
                            "logo-icon-name", "gnome-taquin",
-                           "website", "https://wiki.gnome.org/Apps/Taquin", // TODO
+                           "website", "https://wiki.gnome.org/Apps/Taquin",
                            null);
     }
 
@@ -367,6 +383,7 @@ public class Taquin : Gtk.Application
     private void cannot_undo_more_cb ()
     {
         undo_action.set_enabled (false);
+        view.grab_focus ();
     }
     private void move_cb ()
     {
@@ -380,6 +397,8 @@ public class Taquin : Gtk.Application
     }
     private void game_complete_cb ()
     {
+        game_finished = true;
+        start_over_button.grab_focus ();
         headerbar.set_subtitle (_("Bravo! You finished the game!"));
         undo_action.set_enabled (false);
         play_sound ("gameover");

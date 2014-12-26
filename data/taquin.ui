@@ -185,7 +185,7 @@
               </packing>
             </child>
             <child>
-              <object class="GtkButton">
+              <object class="GtkButton" id="start-game-button">
                 <property name="visible">True</property>
                 <property name="use-underline">True</property>
                 <property name="label" translatable="yes">_Start Game</property>
@@ -225,7 +225,7 @@
                     <property name="orientation">vertical</property>
                     <property name="spacing">6</property>
                     <child>
-                      <object class="GtkButton">
+                      <object class="GtkButton" id="start-over-button">
                         <property name="visible">True</property>
                         <property name="use-underline">True</property>
                         <property name="label" translatable="yes">_Start Over</property>
