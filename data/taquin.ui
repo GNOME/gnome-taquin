@@ -50,7 +50,6 @@
     <child type="titlebar">
       <object class="GtkHeaderBar" id="headerbar">
         <property name="visible">True</property>
-        <property name="can-focus">False</property>
         <property name="show-close-button">True</property>
         <property name="title" translatable="yes">Taquin</property>
         <child>

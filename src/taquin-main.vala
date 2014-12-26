@@ -296,7 +296,6 @@ public class Taquin : Gtk.Application
         back_button.hide ();
         start_game ();
         undo_button.show ();
-        view.grab_focus ();
     }
 
     /*\
@@ -343,6 +342,13 @@ public class Taquin : Gtk.Application
     private void about_cb ()
     {
         string[] authors = { "Arnaud Bonatti", null };
+        string[] artists = { "Ola Einang (Flickr)",
+                             "Ruskis (Wikimedia)",
+                             "Alvesgaspar (Wikimedia)",
+                             "Mark J. Sebastian (Flickr)",
+                             "Mueller-rech.muenchen (Wikimedia)",
+                             "(see COPYING.themes for informations)",
+                             null };
         string[] documenters = { "Arnaud Bonatti", null };
         show_about_dialog (window,
                            "name", _("Taquin"),
@@ -351,6 +357,7 @@ public class Taquin : Gtk.Application
                            "license-type", License.GPL_3_0,
                            "comments", _("A classic 15-puzzle game"),
                            "authors", authors,
+                           "artists", artists,
                            "documenters", documenters,
                            "translator-credits", _("translator-credits"),
                            "logo-icon-name", "gnome-taquin",
