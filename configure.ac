@@ -20,11 +20,13 @@ dnl ###########################################################################
 GLIB_REQUIRED=2.40.0
 GTK_REQUIRED=3.15.0
 RSVG_REQUIRED=2.32.0
+CANBERRA_GTK_REQUIRED=0.26
 
 PKG_CHECK_MODULES(GNOME_TAQUIN, [
   glib-2.0 >= $GLIB_REQUIRED
   gtk+-3.0 >= $GTK_REQUIRED
   librsvg-2.0 >= $RSVG_REQUIRED
+  libcanberra-gtk3 >= $CANBERRA_GTK_REQUIRED
 ])
 
 AC_PATH_PROG([DESKTOP_FILE_VALIDATE], [desktop-file-validate], [/bin/true])

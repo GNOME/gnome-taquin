@@ -33,6 +33,7 @@ public class Taquin : Gtk.Application
     private bool type_changed = false;
     private bool size_changed = false;
     private bool theme_changed = false;
+    private static bool? sound = null;
 
     /* Widgets */
     private ApplicationWindow window;
@@ -54,7 +55,9 @@ public class Taquin : Gtk.Application
         /* { "no-gtk", 0, 0, OptionArg.NONE, null, N_("Begins a console game"), null}, TODO */
         { "fifteen", 0, 0, OptionArg.NONE, null, N_("Play the classical 1880s’ 15-puzzle"), null},
         { "sixteen", 0, 0, OptionArg.NONE, null, N_("Try this fun alternative 16-puzzle"), null},
-        { "size", 's', 0, OptionArg.INT, ref tmp_size, N_("Sets the puzzle edges’ size (2-9, 2 for debug only)"), null},
+        { "size", 's', 0, OptionArg.INT, ref tmp_size, N_("Sets the puzzle edges’ size (3-5, 2-9 for debug)"), null},
+        { "mute", 0, 0, OptionArg.NONE, null, N_("Turn off the sound"), null},
+        { "unmute", 0, 0, OptionArg.NONE, null, N_("Turn on the sound"), null},
         { "version", 'v', 0, OptionArg.NONE, null, N_("Print release version and exit"), null},
         { null }
     };
@@ -115,6 +118,11 @@ public class Taquin : Gtk.Application
         if (tmp_size != 0 && tmp_size < 2)
             tmp_size = 2;
 
+        if (options.contains ("unmute"))
+            sound = true;
+        if (options.contains ("mute"))
+            sound = false;
+
         if (options.contains ("fifteen"))
             tmp_type = "fifteen";
         else if (options.contains ("sixteen"))
@@ -132,6 +140,8 @@ public class Taquin : Gtk.Application
         StyleContext.add_provider_for_screen (Gdk.Screen.get_default (), css_provider, STYLE_PROVIDER_PRIORITY_APPLICATION);
 
         settings = new GLib.Settings ("org.gnome.taquin");
+        if (sound != null)
+            settings.set_boolean ("sound", sound);
         if (tmp_size > 1)
             settings.set_int ("size", tmp_size);
         if (tmp_type != null)
@@ -155,6 +165,7 @@ public class Taquin : Gtk.Application
         set_accels_for_action ("app.quit", {"<Primary>q"});
         set_accels_for_action ("win.new-game", {"<Primary>n"});
         set_accels_for_action ("win.undo", {"<Primary>z"});
+        add_action (settings.create_action ("sound"));
 
         headerbar = builder.get_object ("headerbar") as HeaderBar;
         back_button = builder.get_object ("back-button") as Button;
@@ -350,6 +361,7 @@ public class Taquin : Gtk.Application
     private void undo_cb ()
     {
         game.undo ();
+        play_sound ("sliding-1");
     }
 
     private void cannot_undo_more_cb ()
@@ -360,6 +372,7 @@ public class Taquin : Gtk.Application
     {
         headerbar.set_subtitle (null);
         undo_action.set_enabled (true);
+        play_sound ("sliding-1");
     }
     private void cannot_move_cb ()
     {
@@ -369,6 +382,7 @@ public class Taquin : Gtk.Application
     {
         headerbar.set_subtitle (_("Bravo! You finished the game!"));
         undo_action.set_enabled (false);
+        play_sound ("gameover");
     }
 
     /*\
@@ -426,5 +440,19 @@ public class Taquin : Gtk.Application
         {
             warning ("Failed to load images: %s", e.message);
         }
+    }
+
+    /*\
+    * * Sound
+    \*/
+
+    private void play_sound (string name)
+    {
+        if (!settings.get_boolean ("sound"))
+            return;
+
+        CanberraGtk.play_for_widget (view, 0,
+                                     Canberra.PROP_MEDIA_NAME, name,
+                                     Canberra.PROP_MEDIA_FILENAME, Path.build_filename (SOUND_DIRECTORY, "%s.ogg".printf (name)));
     }
 }

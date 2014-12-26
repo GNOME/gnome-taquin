@@ -4,6 +4,12 @@
   <menu id="app-menu">
     <section>
       <item>
+        <attribute name="label" translatable="yes">_Sound</attribute>
+        <attribute name="action">app.sound</attribute>
+      </item>
+    </section>
+    <section>
+      <item>
         <attribute name="label" translatable="yes">_Help</attribute>
         <attribute name="action">app.help</attribute>
       </item>

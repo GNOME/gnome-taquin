@@ -1,0 +1,10 @@
+data/sliding-1.ogg
+data/sliding-n.ogg
+    distributed under GPL v. 3 (see COPYING)
+    originated from Wildfire Games’ data of 0 A.D. (under GPL v. 2 or later)
+    originally named “ui_button_click.ogg” and “ui_button_longclick.ogg”
+    see http://trac.wildfiregames.com/browser/ps/trunk/binaries/data/mods/mod/audio/interface/ui?order=name
+
+data/gameover.ogg
+    distributed under GPL v. 3 (see COPYING)
+    originated from GNOME games (under GPL v. 2 or later)

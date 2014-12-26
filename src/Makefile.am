@@ -13,6 +13,7 @@ gnome_taquin_CFLAGS = \
 	-DVERSION=\"$(VERSION)\" \
 	-DGETTEXT_PACKAGE=\"$(GETTEXT_PACKAGE)\" \
 	-DDATA_DIRECTORY=\"$(datadir)/gnome-taquin\" \
+	-DSOUND_DIRECTORY=\"$(datadir)/gnome-taquin/sounds\" \
 	-DLOCALEDIR=\"$(datadir)/locale\" \
 	-w \
 	$(GNOME_TAQUIN_CFLAGS)
@@ -21,6 +22,8 @@ gnome_taquin_VALAFLAGS = \
 	--pkg posix \
 	--pkg gtk+-3.0 \
 	--pkg librsvg-2.0 \
+	--pkg libcanberra \
+	--pkg libcanberra-gtk \
 	--target-glib 2.40
 
 gnome_taquin_LDADD = $(GNOME_TAQUIN_LIBS)
