@@ -2,31 +2,20 @@ GtkApplicationWindow GtkRadioButton {
     -GtkButton-image-spacing:0;
     -GtkCheckButton-indicator-size:0;
     -gtk-icon-source:none;
-    padding-top:15px;
+    padding:15px 0 0 0;
     border-radius:15px;
+    outline-radius:13px;
 }
-GtkApplicationWindow GtkRadioButton:checked {
-    background-color:shade(#ededed, 0.85);
+GtkApplicationWindow GtkMenuButton {
+    outline-radius:15px;
 }
 GtkApplicationWindow GtkMenuButton:checked,
-GtkApplicationWindow GtkMenuButton:focused,
 GtkApplicationWindow GtkMenuButton:prelight {
-    background:-gtk-gradient (radial, center center, 0, center center, 0.5, from(white), to(#e8e8e8));
+    color:#2e3436; /* gtk-contained.css’ theme_fg_color */
+    background:-gtk-gradient (radial, center center, 0, center center, 0.5, from(rgba (255, 255, 255, 1)), to(rgba (255, 255, 255, 0)));
 }
 GtkApplicationWindow GtkMenuButton:checked:backdrop,
-GtkApplicationWindow GtkMenuButton:focused:backdrop,
 GtkApplicationWindow GtkMenuButton:prelight:backdrop {
-    background:-gtk-gradient (radial, center center, 0, center center, 0.5, from(white), to(@theme_bg_color));
-}
-GtkApplicationWindow GtkMenuButton:checked,
-GtkApplicationWindow GtkMenuButton:focused,
-GtkApplicationWindow GtkMenuButton:prelight,
-GtkApplicationWindow GtkRadioButton:checked {
-    color:shade(#2e3436, 0.85);
-}
-GtkApplicationWindow GtkMenuButton:checked:backdrop,
-GtkApplicationWindow GtkMenuButton:focused:backdrop,
-GtkApplicationWindow GtkMenuButton:prelight:backdrop,
-GtkApplicationWindow GtkRadioButton:checked:backdrop {
     color:@theme_unfocused_fg_color;
+    background:-gtk-gradient (radial, center center, 0, center center, 0.5, from(rgba (255, 255, 255, 0.3)), to(rgba (255, 255, 255, 0)));
 }

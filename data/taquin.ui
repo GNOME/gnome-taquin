@@ -1,16 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <interface>
   <requires lib="gtk+" version="3.12"/>
-  <object class="GtkImage" id="15-Puzzle">
-    <property name="resource">/org/gnome/taquin/images/15-Puzzle.png</property>
-    <property name="visible">True</property>
-    <property name="pixel-size">150</property>
-  </object>
-  <object class="GtkImage" id="16-Puzzle">
-    <property name="resource">/org/gnome/taquin/images/16-Puzzle.png</property>
-    <property name="visible">True</property>
-    <property name="pixel-size">150</property>
-  </object>
   <menu id="size-menu">
     <section>
       <item>
@@ -106,38 +96,70 @@
             <property name="margin">25</property>
             <property name="width-request">350</property>
             <property name="height-request">350</property>
+            <property name="spacing">4</property>
             <child>
               <object class="GtkBox">
                 <property name="orientation">horizontal</property>
                 <property name="visible">True</property>
                 <property name="homogeneous">True</property>
+                <property name="spacing">6</property>
                 <child>
                   <object class="GtkRadioButton" id="radio-fifteen">
                     <property name="visible">True</property>
-                    <property name="label" translatable="yes">15-Puzzle</property>
-                    <property name="always-show-image">True</property>
                     <property name="focus-on-click">False</property>
-                    <property name="image">15-Puzzle</property>
-                    <property name="image-position">bottom</property>
                     <property name="relief">none</property>
                     <property name="action-name">win.change-type</property>
                     <property name="action-target">'fifteen'</property>
-                    <!-- <property name="draw-indicator">False</property> TODO readds a theme on hover...-->
+                    <property name="draw-indicator">False</property>
+                    <child>
+                      <object class="GtkBox">
+                        <property name="visible">True</property>
+                        <property name="orientation">vertical</property>
+                        <child>
+                          <object class="GtkLabel">
+                            <property name="visible">True</property>
+                            <property name="label" translatable="yes">15-Puzzle</property>
+                          </object>
+                        </child>
+                        <child>
+                          <object class="GtkImage">
+                            <property name="resource">/org/gnome/taquin/images/15-Puzzle.png</property>
+                            <property name="visible">True</property>
+                            <property name="pixel-size">150</property>
+                          </object>
+                        </child>
+                      </object>
+                    </child>
                   </object>
                 </child>
                 <child>
                   <object class="GtkRadioButton" id="radio-sixteen">
                     <property name="visible">True</property>
-                    <property name="label" translatable="yes">16-Puzzle</property>
-                    <property name="always-show-image">True</property>
                     <property name="focus-on-click">False</property>
-                    <property name="image">16-Puzzle</property>
-                    <property name="image-position">bottom</property>
                     <property name="relief">none</property>
                     <property name="action-name">win.change-type</property>
                     <property name="action-target">'sixteen'</property>
                     <property name="group">radio-fifteen</property>
-                    <!-- <property name="draw-indicator">False</property> TODO readds a theme on hover...-->
+                    <property name="draw-indicator">False</property>
+                    <child>
+                      <object class="GtkBox">
+                        <property name="visible">True</property>
+                        <property name="orientation">vertical</property>
+                        <child>
+                          <object class="GtkLabel">
+                            <property name="visible">True</property>
+                            <property name="label" translatable="yes">16-Puzzle</property>
+                          </object>
+                        </child>
+                        <child>
+                          <object class="GtkImage">
+                            <property name="resource">/org/gnome/taquin/images/16-Puzzle.png</property>
+                            <property name="visible">True</property>
+                            <property name="pixel-size">150</property>
+                          </object>
+                        </child>
+                      </object>
+                    </child>
                   </object>
                 </child>
               </object>
