@@ -35,7 +35,7 @@
     </section>
   </menu>
   <object class="GtkApplicationWindow" id="taquin-window">
-    <!-- <initial-focus name="view"> -->
+    <!-- <initial-focus name="view"/> -->
     <property name="title" translatable="yes">Taquin</property>
     <child type="titlebar">
       <object class="GtkHeaderBar" id="headerbar">
@@ -69,9 +69,7 @@
             <property name="tooltip-text" translatable="yes">Go back to the current game</property>
             <property name="use-underline">True</property>
             <property name="action-name">win.back</property>
-            <style>
-              <class name="image-button"/>
-            </style>
+            <style><class name="image-button"/></style>
             <child>
               <object class="GtkImage">
                 <property name="icon-name">go-previous-symbolic</property>
@@ -96,7 +94,7 @@
             <property name="margin">25</property>
             <property name="width-request">350</property>
             <property name="height-request">350</property>
-            <property name="spacing">4</property>
+            <property name="spacing">6</property>
             <child>
               <object class="GtkBox">
                 <property name="orientation">horizontal</property>
@@ -173,13 +171,14 @@
                 <property name="orientation">horizontal</property>
                 <property name="visible">True</property>
                 <property name="homogeneous">True</property>
+                <property name="spacing">6</property>
                 <child>
                   <object class="GtkMenuButton" id="size-button">
                     <property name="visible">True</property>
                     <property name="use-underline">True</property>
                     <property name="menu-model">size-menu</property>
                     <property name="height-request">60</property>
-                    <property name="relief">none</property>
+                    <style><class name="flat"/></style>
                   </object>
                   <packing>
                     <property name="expand">True</property>
@@ -192,7 +191,7 @@
                     <property name="use-underline">True</property>
                     <property name="menu-model">theme-menu</property>
                     <property name="height-request">60</property>
-                    <property name="relief">none</property>
+                    <style><class name="flat"/></style>
                   </object>
                   <packing>
                     <property name="expand">True</property>

@@ -184,10 +184,6 @@ public class Taquin : Gtk.Application
             size_changed = false;
         });
         update_size_button_label (settings.get_int ("size"));
-        var context = size_button.get_style_context ();
-        context.remove_class ("flat");
-        context.remove_class ("text-button");
-        context.remove_class ("button");
 
         theme_button = builder.get_object ("theme-button") as MenuButton;
         settings.changed["theme"].connect (() => {
@@ -196,10 +192,6 @@ public class Taquin : Gtk.Application
             theme_changed = false;
         });
         update_theme (settings.get_string ("theme"));
-        context = theme_button.get_style_context ();
-        context.remove_class ("flat");
-        context.remove_class ("text-button");
-        context.remove_class ("button");
 
         settings.changed["type"].connect (() => {
             if (!type_changed)
@@ -347,7 +339,7 @@ public class Taquin : Gtk.Application
                              "Alvesgaspar (Wikimedia)",
                              "Mark J. Sebastian (Flickr)",
                              "Mueller-rech.muenchen (Wikimedia)",
-                             "(see COPYING.themes for informations)",
+                             _("(see COPYING.themes for informations)"),
                              null };
         string[] documenters = { "Arnaud Bonatti", null };
         show_about_dialog (window,

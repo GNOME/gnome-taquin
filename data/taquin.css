@@ -3,11 +3,11 @@ GtkApplicationWindow GtkRadioButton {
     -GtkCheckButton-indicator-size:0;
     -gtk-icon-source:none;
     padding:15px 0 0 0;
+}
+GtkApplicationWindow GtkMenuButton,
+GtkApplicationWindow GtkRadioButton {
     border-radius:15px;
     outline-radius:13px;
-}
-GtkApplicationWindow GtkMenuButton {
-    outline-radius:15px;
 }
 GtkApplicationWindow GtkMenuButton:checked,
 GtkApplicationWindow GtkMenuButton:prelight {
