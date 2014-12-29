@@ -1,16 +1,16 @@
-# French translation of taquin.
+# French translation of gnome-taquin.
 # Copyright (C) 2014 Arnaud Bonatti
-# This file is distributed under the same license as the taquin package.
+# This file is distributed under the same license as the gnome-taquin package.
 #
 # Arnaud Bonatti <arnaud.bonatti@gmail.com>, 2014.
 #
 msgid ""
 msgstr ""
 "Project-Id-Version: taquin master\n"
-"Report-Msgid-Bugs-To: http://bugzilla.gnome.org/enter_bug.cgi?"
-"product=taquin&keywords=I18N+L10N&component=general\n"
-"POT-Creation-Date: 2014-09-08 00:00+0000\n"
-"PO-Revision-Date: 2014-09-08 00:00+0000\n"
+"Report-Msgid-Bugs-To: http://bugzilla.gnome.org/enter_bug.cgi?product=gnome-"
+"taquin&keywords=I18N+L10N&component=general\n"
+"POT-Creation-Date: 2014-12-28 08:43+0000\n"
+"PO-Revision-Date: 2014-12-29 00:46+0100\n"
 "Last-Translator: Arnaud Bonatti <arnaud.bonatti@gmail.com>\n"
 "Language-Team: GNOME French Team <gnomefr@traduc.org>\n"
 "Language: fr\n"
@@ -19,86 +19,211 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n>1;\n"
 
-#: ../data/taquin.appdata.xml.in.h:1
+#: ../data/gnome-taquin.appdata.xml.in.h:1
+msgid "GNOME Taquin"
+msgstr "GNOME Taquin"
+
+#: ../data/gnome-taquin.appdata.xml.in.h:2 ../data/gnome-taquin.desktop.in.h:2
+msgid "Slide tiles to their correct places"
+msgstr "Glisser les pièces jusqu’à leur position correcte"
+
+#: ../data/gnome-taquin.appdata.xml.in.h:3
+#, fuzzy
 msgid ""
 "Taquin is a computer version of the 15-puzzle and other sliding puzzles."
 msgstr ""
-"Taquin est une version informatique du taquin et d’autres puzzles du genre."
+"Taquin est une version informatisée du taquin et d’autres puzzles du genre."
 
-#: ../data/taquin.appdata.xml.in.h:2
+#: ../data/gnome-taquin.appdata.xml.in.h:4
 msgid ""
 "The object of Taquin is to move tiles so that they reach their places, "
 "either indicated with numbers, or with parts of a great image."
 msgstr ""
-"L’objectif de Taquin est de bouger les tuiles pour qu’elles atteignent "
-"leur place, soit indiquée par leur numéro, soit par les morceaux d’une "
+"L’objectif de Taquin est de déplacer les pièces pour qu’elles atteignent leur "
+"position correcte, devinable soit par un nombre, soit par les morceaux d’une "
 "chouette image."
 
-#: ../data/taquin.desktop.in.h:1 ../src/taquin-main.vala:89 ../src/taquin-main.vala:115
-#: ../src/taquin-main.vala:304 ../src/taquin-main.vala:671
+#: ../data/gnome-taquin.desktop.in.h:1 ../data/taquin.ui.h:6
+#: ../src/taquin-main.vala:98 ../src/taquin-main.vala:346
 msgid "Taquin"
 msgstr "Taquin"
 
-#: ../data/taquin.desktop.in.h:2
-msgid "Slide tiles on their correct place."
-msgstr "Faire glisser les tuiles à leur place."
-
-#: ../data/taquin.desktop.in.h:3
+#: ../data/gnome-taquin.desktop.in.h:3
 msgid "puzzle;"
-msgstr "puzzle;"
+msgstr "puzzle; pousse-pousse; taquin;"
 
-#: ../data/taquin-menus.ui.h:3
+#: ../data/gnome-taquin.desktop.in.h:4
+msgid "15-Puzzle with hole"
+msgstr "Pousse-pousse, avec un trou"
+
+#: ../data/gnome-taquin.desktop.in.h:5
+msgid "Puzzle with arrays"
+msgstr "Puzzle avec des flèches"
+
+#: ../data/taquin-menus.ui.h:1
+msgid "_Sound"
+msgstr "_Son"
+
+#: ../data/taquin-menus.ui.h:2
 msgid "_Help"
 msgstr "Aid_e"
 
-#: ../data/taquin-menus.ui.h:4
+#: ../data/taquin-menus.ui.h:3
 msgid "_About"
 msgstr "À _propos"
 
-#: ../data/taquin-menus.ui.h:5
+#: ../data/taquin-menus.ui.h:4
 msgid "_Quit"
 msgstr "_Quitter"
 
-#: ../data/org.gnome.taquin.gschema.xml.h:1
-msgid "Width of the window in pixels"
-msgstr "Largeur de la fenêtre en pixels"
+#: ../data/taquin.ui.h:1
+msgid "3 × 3"
+msgstr "3 × 3"
 
-#: ../data/org.gnome.taquin.gschema.xml.h:2
-msgid "Height of the window in pixels"
-msgstr "Hauteur de la fenêtre en pixels"
+#: ../data/taquin.ui.h:2
+msgid "4 × 4"
+msgstr "4 × 4"
 
-#: ../data/org.gnome.taquin.gschema.xml.h:3
-msgid "true if the window is maximized"
-msgstr "true si la fenêtre est maximisée"
+#: ../data/taquin.ui.h:3
+msgid "5 × 5"
+msgstr "5 × 5"
 
-#: ../src/taquin-main.vala:110
+#: ../data/taquin.ui.h:4
+msgid "Cats"
+msgstr "Chats"
+
+#: ../data/taquin.ui.h:5
+msgid "Numbers"
+msgstr "Nombres"
+
+#: ../data/taquin.ui.h:7
 msgid "Undo your most recent move"
-msgstr "Annule votre plus récente action"
+msgstr "Annule votre dernier déplacement"
 
-#: ../src/taquin-main.vala:164
+#: ../data/taquin.ui.h:8
+msgid "Go back to the current game"
+msgstr "Revenir au jeu en cours"
+
+#: ../data/taquin.ui.h:9
+msgid "15-Puzzle"
+msgstr "Pousse-pousse"
+
+#: ../data/taquin.ui.h:10
+msgid "16-Puzzle"
+msgstr "Glisse-glisse"
+
+#: ../data/taquin.ui.h:11
+msgid "_Start Game"
+msgstr "_Lancer le jeu"
+
+#: ../data/taquin.ui.h:12
+msgid "_Start Over"
+msgstr "_Recommencer"
+
+#: ../data/taquin.ui.h:13
 msgid "Start a new game"
 msgstr "Commence une nouvelle partie"
 
-#: ../src/taquin-main.vala:309
-msgid ""
-"A classic 15-puzzle game.\n\n"
-msgstr ""
-"Un taquin classique.\n\n"
+#: ../data/org.gnome.taquin.gschema.xml.h:1
+msgid "Number of tiles on each edge."
+msgstr "Nombre de pièces sur chaque côté."
 
-#: ../src/taquin-main.vala:312
+#: ../data/org.gnome.taquin.gschema.xml.h:2
+msgid ""
+"The game is tested and offers to select a size from 3 to 5. There is a human-"
+"understandable maximum value to avoid some bugs. Maximum size is 9 as the "
+"image files are randomly selected depending on the first character of their "
+"filename."
+msgstr ""
+"Le jeu est testé et propose de choisir une taille entre 3 et 5. Il faut une "
+"valeur maximale à tailles humaine pour éviter certains bugs. La taille "
+"maximale est de 9 car les images sont sélectionnées au hasard selon le "
+"premier caractère de leur nom de fichier."
+
+#: ../data/org.gnome.taquin.gschema.xml.h:3
+msgid "Name of the theme folder."
+msgstr "Nom du dossier de thèmes."
+
+#: ../data/org.gnome.taquin.gschema.xml.h:4
+msgid "Taquin has two default themes: 'cats' and 'numbers'."
+msgstr ""
+"Taquin a deux thèmes proposés par défaut : « cats » et "
+"« numbers » (littéralement « chats » et « nombres »)"
+
+#: ../data/org.gnome.taquin.gschema.xml.h:5
+msgid "Sound"
+msgstr "Son"
+
+#: ../data/org.gnome.taquin.gschema.xml.h:6
+msgid "Whether or not to play event sounds."
+msgstr "S’il faut ou non jouer les sons du jeu."
+
+#: ../data/org.gnome.taquin.gschema.xml.h:7
+msgid "Width of the window in pixels."
+msgstr "Largeur de la fenêtre en pixels."
+
+#: ../data/org.gnome.taquin.gschema.xml.h:8
+msgid "Height of the window in pixels."
+msgstr "Hauteur de la fenêtre en pixels."
+
+#: ../data/org.gnome.taquin.gschema.xml.h:9
+msgid "true if the window is maximized."
+msgstr "Vrai si la fenêtre est maximisée."
+
+#: ../src/taquin-main.vala:59
+msgid "Play the classical 1880s’ 15-puzzle"
+msgstr "Jouer au pousse-pousse classique des années 1880."
+
+#: ../src/taquin-main.vala:60
+msgid "Try this fun alternative 16-puzzle"
+msgstr "Essaye cet amusant puzzle alternatif à 16 pièces"
+
+#: ../src/taquin-main.vala:61
+msgid "Sets the puzzle edges’ size (3-5, 2-9 for debug)"
+msgstr "Configure la taille du côté du puzzle (3 à 5, 2 à 9 pour débugger)"
+
+#: ../src/taquin-main.vala:62
+msgid "Turn off the sound"
+msgstr "Coupe le son"
+
+#: ../src/taquin-main.vala:63
+msgid "Turn on the sound"
+msgstr "Active le son"
+
+#: ../src/taquin-main.vala:64
+msgid "Print release version and exit"
+msgstr "Affiche le numéro de version et quitte"
+
+#: ../src/taquin-main.vala:342
+msgid "(see COPYING.themes for informations)"
+msgstr "(voir COPYING.themes pour plus d’informations)"
+
+#: ../src/taquin-main.vala:350
+msgid "A classic 15-puzzle game"
+msgstr "Un taquin classique"
+
+#: ../src/taquin-main.vala:354
 msgid "translator-credits"
 msgstr "Arnaud Bonatti <arnaud.bonatti@gmail.com>"
 
-#. Message to display when the player tries to make an illegal move
-#: ../src/taquin-main.vala:440
+#: ../src/taquin-main.vala:395
 msgid "You can’t move this tile!"
-msgstr "Impossible de déplacer cette tuile !"
+msgstr "Impossible de déplacer cette pièce !"
 
-#: ../src/taquin-main.vala:497
-msgid "_Close"
-msgstr "_Fermer"
+#: ../src/taquin-main.vala:401
+msgid "Bravo! You finished the game!"
+msgstr "Bravo ! Vous avez terminé le jeu !"
 
-#. Help string for command line --version flag
-#: ../src/taquin-main.vala:639
-msgid "Print release version and exit"
-msgstr "Affiche le numéro de version et quitte"
+#: ../src/taquin-main.vala:425
+#, c-format
+msgid "Size: %d × %d ▾"
+msgstr "Taille : %d × %d ▾"
+
+#: ../src/taquin-main.vala:439
+msgid "Theme: Cats ▾"
+msgstr "Thème : Chats ▾"
+
+#: ../src/taquin-main.vala:440
+msgid "Theme: Numbers ▾"
+msgstr "Thème : Nombres ▾"
+

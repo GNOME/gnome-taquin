@@ -55,13 +55,13 @@ public class Taquin : Gtk.Application
 
     private static const OptionEntry[] option_entries =
     {
-        /* { "no-gtk", 0, 0, OptionArg.NONE, null, N_("Begins a console game"), null}, TODO */
         { "fifteen", 0, 0, OptionArg.NONE, null, N_("Play the classical 1880s’ 15-puzzle"), null},
         { "sixteen", 0, 0, OptionArg.NONE, null, N_("Try this fun alternative 16-puzzle"), null},
         { "size", 's', 0, OptionArg.INT, ref tmp_size, N_("Sets the puzzle edges’ size (3-5, 2-9 for debug)"), null},
         { "mute", 0, 0, OptionArg.NONE, null, N_("Turn off the sound"), null},
         { "unmute", 0, 0, OptionArg.NONE, null, N_("Turn on the sound"), null},
         { "version", 'v', 0, OptionArg.NONE, null, N_("Print release version and exit"), null},
+        /* { "no-gtk", 0, 0, OptionArg.NONE, null, N_("Begins a console game"), null}, TODO */
         { null }
     };
 
