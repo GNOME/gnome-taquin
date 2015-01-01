@@ -2,15 +2,15 @@
 # Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
 # This file is distributed under the same license as the PACKAGE package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
-# Yosef Or Boczko <yoseforb@gnome.org>, 2014.
+# Yosef Or Boczko <yoseforb@gnome.org>, 2014, 2015.
 #
 msgid ""
 msgstr ""
 "Project-Id-Version: taquin master\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2014-10-31 08:31+0200\n"
-"PO-Revision-Date: 2014-10-31 08:31+0200\n"
-"Last-Translator: Yosef Or Boczko <yoseforb@gmail.com>\n"
+"POT-Creation-Date: 2015-01-01 17:45+0200\n"
+"PO-Revision-Date: 2015-01-01 17:47+0200\n"
+"Last-Translator: Yosef Or Boczko <yoseforb@gnome.org>\n"
 "Language-Team: עברית <>\n"
 "Language: he\n"
 "MIME-Version: 1.0\n"
@@ -20,11 +20,19 @@ msgstr ""
 "X-Generator: Gtranslator 2.91.6\n"
 
 #: ../data/gnome-taquin.appdata.xml.in.h:1
+msgid "GNOME Taquin"
+msgstr "GNOME Taquin"
+
+#: ../data/gnome-taquin.appdata.xml.in.h:2 ../data/gnome-taquin.desktop.in.h:2
+msgid "Slide tiles to their correct places"
+msgstr "להחליק אריחים למקום הנכון שלהם"
+
+#: ../data/gnome-taquin.appdata.xml.in.h:3
 msgid ""
 "Taquin is a computer version of the 15-puzzle and other sliding puzzles."
 msgstr "‏Taquin זו גרסה ממוחשבת של חידת ה־15 ותצרפי הזזה נוספים."
 
-#: ../data/gnome-taquin.appdata.xml.in.h:2
+#: ../data/gnome-taquin.appdata.xml.in.h:4
 msgid ""
 "The object of Taquin is to move tiles so that they reach their places, "
 "either indicated with numbers, or with parts of a great image."
@@ -33,13 +41,9 @@ msgstr ""
 "כחלק של תמונה גדולה."
 
 #: ../data/gnome-taquin.desktop.in.h:1 ../data/taquin.ui.h:6
-#: ../src/taquin-main.vala:92 ../src/taquin-main.vala:321
+#: ../src/taquin-main.vala:98 ../src/taquin-main.vala:346
 msgid "Taquin"
 msgstr "Taquin"
-
-#: ../data/gnome-taquin.desktop.in.h:2
-msgid "Slide tiles on their correct place."
-msgstr "להחליק אריחים למקום הנכון שלהם."
 
 #: ../data/gnome-taquin.desktop.in.h:3
 msgid "puzzle;"
@@ -54,14 +58,18 @@ msgid "Puzzle with arrays"
 msgstr "תצרף עם מערכים"
 
 #: ../data/taquin-menus.ui.h:1
+msgid "_Sound"
+msgstr "_שמע"
+
+#: ../data/taquin-menus.ui.h:2
 msgid "_Help"
 msgstr "_עזרה"
 
-#: ../data/taquin-menus.ui.h:2
+#: ../data/taquin-menus.ui.h:3
 msgid "_About"
 msgstr "על _אודות"
 
-#: ../data/taquin-menus.ui.h:3
+#: ../data/taquin-menus.ui.h:4
 msgid "_Quit"
 msgstr "_יציאה"
 
@@ -114,18 +122,10 @@ msgid "Start a new game"
 msgstr "התחלת משחק חדש"
 
 #: ../data/org.gnome.taquin.gschema.xml.h:1
-msgid "Name of the theme folder."
-msgstr "Name of the theme folder."
-
-#: ../data/org.gnome.taquin.gschema.xml.h:2
-msgid "Taquin has two default themes: 'cats' and 'numbers'."
-msgstr "Taquin has two default themes: 'cats' and 'numbers'."
-
-#: ../data/org.gnome.taquin.gschema.xml.h:3
 msgid "Number of tiles on each edge."
 msgstr "Number of tiles on each edge."
 
-#: ../data/org.gnome.taquin.gschema.xml.h:4
+#: ../data/org.gnome.taquin.gschema.xml.h:2
 msgid ""
 "The game is tested and offers to select a size from 3 to 5. There is a human-"
 "understandable maximum value to avoid some bugs. Maximum size is 9 as the "
@@ -137,60 +137,87 @@ msgstr ""
 "image files are randomly selected depending on the first character of their "
 "filename."
 
+#: ../data/org.gnome.taquin.gschema.xml.h:3
+msgid "Name of the theme folder."
+msgstr "Name of the theme folder."
+
+#: ../data/org.gnome.taquin.gschema.xml.h:4
+msgid "Taquin has two default themes: 'cats' and 'numbers'."
+msgstr "Taquin has two default themes: 'cats' and 'numbers'."
+
 #: ../data/org.gnome.taquin.gschema.xml.h:5
+msgid "Sound"
+msgstr "Sound"
+
+#: ../data/org.gnome.taquin.gschema.xml.h:6
+msgid "Whether or not to play event sounds."
+msgstr "Whether or not to play event sounds."
+
+#: ../data/org.gnome.taquin.gschema.xml.h:7
 msgid "Width of the window in pixels."
 msgstr "Width of the window in pixels."
 
-#: ../data/org.gnome.taquin.gschema.xml.h:6
+#: ../data/org.gnome.taquin.gschema.xml.h:8
 msgid "Height of the window in pixels."
 msgstr "Height of the window in pixels."
 
-#: ../data/org.gnome.taquin.gschema.xml.h:7
+#: ../data/org.gnome.taquin.gschema.xml.h:9
 msgid "true if the window is maximized."
 msgstr "true if the window is maximized."
 
-#. { "no-gtk", 0, 0, OptionArg.NONE, null, N_("Begins a console game"), null}, TODO
-#: ../src/taquin-main.vala:55
+#: ../src/taquin-main.vala:58
 msgid "Play the classical 1880s’ 15-puzzle"
 msgstr "Play the classical 1880s’ 15-puzzle"
 
-#: ../src/taquin-main.vala:56
+#: ../src/taquin-main.vala:59
 msgid "Try this fun alternative 16-puzzle"
 msgstr "Try this fun alternative 16-puzzle"
 
-#: ../src/taquin-main.vala:57
-msgid "Sets the puzzle edges’ size (2-9, 2 for debug only)"
-msgstr "Sets the puzzle edges’ size (2-9, 2 for debug only)"
+#: ../src/taquin-main.vala:60
+msgid "Sets the puzzle edges’ size (3-5, 2-9 for debug)"
+msgstr "Sets the puzzle edges’ size (3-5, 2-9 for debug)"
 
-#: ../src/taquin-main.vala:58
+#: ../src/taquin-main.vala:61
+msgid "Turn off the sound"
+msgstr "Turn off the sound"
+
+#: ../src/taquin-main.vala:62
+msgid "Turn on the sound"
+msgstr "Turn on the sound"
+
+#: ../src/taquin-main.vala:63
 msgid "Print release version and exit"
 msgstr "Print release version and exit"
 
-#: ../src/taquin-main.vala:325
+#: ../src/taquin-main.vala:342
+msgid "(see COPYING.themes for informations)"
+msgstr "(‏COPYING.themes עבור מידע)"
+
+#: ../src/taquin-main.vala:350
 msgid "A classic 15-puzzle game"
 msgstr "משחק חידת ה־15 הקלאסי"
 
-#: ../src/taquin-main.vala:328
+#: ../src/taquin-main.vala:354
 msgid "translator-credits"
 msgstr "יוסף אור בוצ׳קו <yoseforb@gnome.org>"
 
-#: ../src/taquin-main.vala:366
+#: ../src/taquin-main.vala:395
 msgid "You can’t move this tile!"
 msgstr "לא ניתן להזיז אריח זה!"
 
-#: ../src/taquin-main.vala:370
+#: ../src/taquin-main.vala:401
 msgid "Bravo! You finished the game!"
 msgstr "הידד! סיימת את המשחק!"
 
-#: ../src/taquin-main.vala:393
+#: ../src/taquin-main.vala:425
 #, c-format
 msgid "Size: %d × %d ▾"
 msgstr "גודל: %d × %d ▾"
 
-#: ../src/taquin-main.vala:407
+#: ../src/taquin-main.vala:439
 msgid "Theme: Cats ▾"
 msgstr "ערכת נושא: חתולים ▾"
 
-#: ../src/taquin-main.vala:408
+#: ../src/taquin-main.vala:440
 msgid "Theme: Numbers ▾"
 msgstr "ערכת נושא: מספרים ▾"
