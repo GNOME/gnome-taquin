@@ -15,9 +15,9 @@
     <desc></desc>
   </info>
 
-  <title>Keyboard shortcuts</title>
+  <title>Keyboard Shortcuts</title>
 
-  <p><app>Taquin</app> could easily be used with keyboard. The <link xref="15-Puzzle#15-keyboard">15-Puzzle</link> and <link xref="16-Puzzle#16-keyboard">16-Puzzle</link> both have specific shortcuts.</p>
+  <p><app>Taquin</app> can easily be used with keyboard. The <link xref="15-Puzzle#15-keyboard">15-Puzzle</link> and <link xref="16-Puzzle#16-keyboard">16-Puzzle</link> both have specific shortcuts.</p>
 
   <section id="game">
     <title>In-game shortcuts</title>

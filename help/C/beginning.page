@@ -17,21 +17,21 @@
 
   <title>Beginning</title>
 
-  <p>When <app>Taquin</app> is opened for the first time, you have a traditionnal <link xref="15-Puzzle">15-Puzzle</link> game.</p>
+  <p>When <app>Taquin</app> is opened for the first time, it displays a traditional <link xref="15-Puzzle">15-Puzzle</link> game.</p>
 
   <p>The game is played using the mouse. To make a move:</p>
 
   <steps>
-    <item><p>Click on a tile on the same row or column than the empty space.</p>
-    <note><p>If you click on a tile that cannot move, the game notifies you the move is impossible.</p>
+    <item><p>Click on a tile on the same row or column as the empty space.</p>
+    <note><p>If you click on a tile that cannot move, the game notifies you that the move is impossible.</p>
     </note>
     </item>
-    <item><p>You can always undo a move by clicking the <gui>Undo</gui> button at the left of the headerbar.</p>
+    <item><p>You can always undo a move by clicking the <gui>Undo</gui> button on the left of the header bar.</p>
     </item>
-    <item><p>At the end of the game, or when you want to switch game, click the <gui>Start Over</gui> button to go to the <link xref="start-screen">Start Screen</link>.</p>
+    <item><p>At the end of the game, or when you want to switch games, click the <gui>Start Over</gui> button to go to the <link xref="start-screen">Start Screen</link>.</p>
     </item>
   </steps>
 
-  <p>The other times <app>Taquin</app> is opened, it displays a puzzle with the same rules and dimensions as the last one played, so it could be a <link xref="16-Puzzle">16-Puzzle</link> game.</p>
+  <p>After the first time it is opened, <app>Taquin</app> displays a puzzle with the same rules and dimensions as the last one played when it is opened, so it could be a <link xref="16-Puzzle">16-Puzzle</link> game.</p>
 
 </page>

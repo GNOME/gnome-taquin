@@ -19,7 +19,7 @@
 
 <!-- <title><media type="image" src="figures/logo32.png" its:translate="no"><span its:translate="yes">Taquin logo</span></media> Taquin</title> TODO -->
 
-  <p><app>Taquin</app> is a sliding puzzles game. It includes the traditionnal 15-Puzzle invented in the early 1880s, and a more recent variant.
+  <p><app>Taquin</app> is a sliding-block puzzle game. It includes the traditional 15-Puzzle invented in the early 1880s, and the more recent 16-Puzzle variant.
   </p>
 
   <section id="play" style="2column">

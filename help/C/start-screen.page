@@ -17,6 +17,6 @@
 
   <title>Start Screen</title>
   <p>The <em>Start Screen</em> is the place to select your options and launch a new game, either a <link xref="15-Puzzle">15-Puzzle</link> or a <link xref="16-Puzzle">16-Puzzle</link>.</p>
-  <p>It could be accessed at any time from a game by pressing the <gui>Start Over</gui> button.</p>
+  <p>It can be accessed at any time from a game by pressing the <gui>Start Over</gui> button.</p>
 
 </page>

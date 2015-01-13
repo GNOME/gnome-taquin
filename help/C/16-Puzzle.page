@@ -17,12 +17,12 @@
 
   <title>16-Puzzle</title>
 
-  <p>The <em>16-Puzzle</em> is the variant puzzle of <app>Taquin</app>. You can launch it at every moment from the <link xref="start-screen">Start Screen</link>.</p>
+  <p>The <em>16-Puzzle</em> is the variant puzzle of <app>Taquin</app>. You can launch it at any time from the <link xref="start-screen">Start Screen</link>.</p>
 
   <section id="16-play">
     <title>Gameplay</title>
 
-    <p>The goal is to move all the tiles at their own place.</p>
+    <p>The goal is to move all the tiles to their proper places.</p>
 
     <p>You move all the tiles of a row or a column in one direction. The tile that is pushed out of the board is placed at the opposite side of the row or column.</p>
 
@@ -34,23 +34,23 @@
   </section>
 
   <section id="16-mouse">
-    <title>How to play with mouse</title>
+    <title>How to play with a mouse</title>
 
     <p>To make a move:</p>
     <steps>
       <item><p>Click on one of the arrows displayed around the board. The row or column at the end of which this arrow is moves in this direction, and the tile that was next to the arrow is placed at the opposite side.</p>
       </item>
-      <item><p>You can always undo a move by clicking the <gui>Undo</gui> button at the left of the headerbar.</p>
+      <item><p>You can always undo a move by clicking the <gui>Undo</gui> button at the left of the header bar.</p>
       </item>
-      <item><p>At the end of the game, or when you want to switch game, click the <gui>Start Over</gui> button to go to the <link xref="start-screen">Start Screen</link>.</p>
+      <item><p>At the end of the game, or when you want to switch games, click the <gui>Start Over</gui> button to go to the <link xref="start-screen">Start Screen</link>.</p>
       </item>
     </steps>
 
-    <p>You can at every moment use the keyboard.</p>
+    <p>You can also use the keyboard.</p>
   </section>
 
   <section id="16-keyboard">
-    <title>How to play with keyboard</title>
+    <title>How to play with the keyboard</title>
 
     <p>To make a move:</p>
     <steps>
@@ -59,10 +59,10 @@
       </item>
       <item><p>You can always undo a move with the <keyseq><key>Ctrl</key><key>Z</key></keyseq> keys.</p>
       </item>
-      <item><p>At the end of the game, or when you want to switch game, use the the <keyseq><key>Ctrl</key><key>N</key></keyseq> keys to go to the <link xref="start-screen">Start Screen</link>.</p>
+      <item><p>At the end of the game, or when you want to switch games, use the the <keyseq><key>Ctrl</key><key>N</key></keyseq> keys to go to the <link xref="start-screen">Start Screen</link>.</p>
       </item>
     </steps>
 
-    <p>You can at every moment use the mouse.</p>
+    <p>You can also use a mouse.</p>
   </section>
 </page>

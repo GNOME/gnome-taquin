@@ -17,14 +17,14 @@
 
   <title>15-Puzzle</title>
 
-  <p>The <em>15-Puzzle</em> is the default puzzle of <app>Taquin</app>. It is displayed at the first opening of the application, but you can launch it at every moment from the <link xref="start-screen">Start Screen</link>.</p>
+  <p>The <em>15-Puzzle</em> is the default puzzle of <app>Taquin</app>. It is displayed the first time the application is opened. You can start one at any time from the <link xref="start-screen">Start Screen</link>.</p>
 
   <section id="15-play">
     <title>Gameplay</title>
 
-    <p>The goal is to move all the tiles at their own place.</p>
+    <p>The goal is to move all the tiles to their proper places.</p>
 
-    <p>There’s an empty space where you can move adjacent tiles by pushing them on it. You can push in the empty space’s direction more than one tile at the same time.</p>
+    <p>There’s an empty space where you can move adjacent tiles by pushing them onto it. You can push more than one tile at the same time in the empty space’s direction.</p>
 
   </section>
   <section id="15-end">
@@ -34,39 +34,39 @@
   </section>
 
   <section id="15-mouse">
-    <title>How to play with mouse</title>
+    <title>How to play with a mouse</title>
 
     <p>To make a move:</p>
     <steps>
-      <item><p>Click on a tile on the same row or column than the empty space.</p>
-      <note><p>If you click on a tile that cannot move, the game notifies you the move is impossible.</p>
+      <item><p>Click on a tile on the same row or column as the empty space.</p>
+      <note><p>If you click on a tile that cannot move, the game notifies you that the move is impossible.</p>
       </note>
       </item>
-      <item><p>You can always undo a move by clicking the <gui>Undo</gui> button at the left of the headerbar.</p>
+      <item><p>You can always undo a move by clicking the <gui>Undo</gui> button at the left of the header bar.</p>
       </item>
-      <item><p>At the end of the game, or when you want to switch game, click the <gui>Start Over</gui> button to go to the <link xref="start-screen">Start Screen</link>.</p>
+      <item><p>At the end of the game, or when you want to switch games, click the <gui>Start Over</gui> button to go to the <link xref="start-screen">Start Screen</link>.</p>
       </item>
     </steps>
 
-    <p>You can at every moment use the keyboard.</p>
+    <p>You can also use the keyboard.</p>
   </section>
 
   <section id="15-keyboard">
-    <title>How to play with keyboard</title>
+    <title>How to play with the keyboard</title>
 
     <p>To make a move:</p>
     <steps>
       <item><p>Use the <key>Left</key>, <key>Right</key>, <key>Up</key> and <key>Down</key> arrows to go at the tile you want to move. The currently selected tile is indicated with four arrows around the board, on each side of its row and column.</p></item>
       <item><p>Use the <key>Space</key> key to move the selected tile in the direction of the empty space.</p>
-      <note><p>If you click on a tile that cannot move, the game notifies you the move is impossible.</p>
+      <note><p>If you click on a tile that cannot move, the game notifies you that the move is impossible.</p>
       </note>
       </item>
       <item><p>You can always undo a move with the <keyseq><key>Ctrl</key><key>Z</key></keyseq> keys.</p>
       </item>
-      <item><p>At the end of the game, or when you want to switch game, use the the <keyseq><key>Ctrl</key><key>N</key></keyseq> keys to go to the <link xref="start-screen">Start Screen</link>.</p>
+      <item><p>At the end of the game, or when you want to switch games, use the the <keyseq><key>Ctrl</key><key>N</key></keyseq> keys to go to the <link xref="start-screen">Start Screen</link>.</p>
       </item>
     </steps>
 
-    <p>You can at every moment use the mouse.</p>
+    <p>You can also use a mouse.</p>
   </section>
 </page>
