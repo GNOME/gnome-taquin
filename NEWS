@@ -1,3 +1,29 @@
+3.15.4 - January 19, 2014
+=========================
+
+Main changes since 3.15.3:
+* add sound
+* better focus
+* rework start-screen and animations
+* new hungarian and french translations
+* updated brazilian portuguese, czech, serbian and hebrew translations
+* better help
+* [external] bugzilla page at https://bugzilla.gnome.org/browse.cgi?product=gnome-taquin
+* [external] added to the apps moduleset and the meta-gnome-apps-tested metamodule
+
+All contributors to this release:
+* Balázs Úr <urbalazs@src.gnome.org>
+* Rafael Ferreira <rafael.f.f1@gmail.com>
+* Arnaud Bonatti <arnaud.bonatti@gmail.com>
+* Marek Černocký <marek@manet.cz>
+* Мирослав Николић <miroslavnikolic@rocketmail.com>
+* Yosef Or Boczko <yoseforb@src.gnome.org>
+* Marcin Kolny <marcin.kolny@gmail.com>
+* Yanko Kaneti <yaneti@declera.com>
+* Michael Catanzaro <mcatanzaro@gnome.org>
+* André Klapper <a9016009@gmx.de>
+* Matthias Clasen <mclasen@redhat.com>
+
 3.15.3 - December 15, 2014
 =========================
 
