@@ -24,7 +24,7 @@ public class Taquin : Gtk.Application
 {
     /* Settings */
     private GLib.Settings settings;
-    private bool is_fullscreen;
+    private bool is_fullscreen_or_tiled;
     private bool is_maximized;
     private int window_width;
     private int window_height;
@@ -152,7 +152,7 @@ public class Taquin : Gtk.Application
 
         var builder = new Builder.from_resource ("/org/gnome/taquin/ui/taquin.ui");
         window = builder.get_object ("taquin-window") as ApplicationWindow;
-        window.configure_event.connect (window_configure_event_cb);
+        window.size_allocate.connect (size_allocate_cb);
         window.window_state_event.connect (window_state_event_cb);
         window.set_default_size (settings.get_int ("window-width"), settings.get_int ("window-height"));
         if (settings.get_boolean ("window-is-maximized"))
@@ -223,6 +223,7 @@ public class Taquin : Gtk.Application
     {
         base.shutdown ();
 
+        /* Don’t try to save state here */
         settings.set_int ("window-width", window_width);
         settings.set_int ("window-height", window_height);
         settings.set_boolean ("window-is-maximized", is_maximized);
@@ -232,22 +233,22 @@ public class Taquin : Gtk.Application
     * * Window events
     \*/
 
-    private bool window_configure_event_cb (Gdk.EventConfigure event)
+    private void size_allocate_cb (Allocation allocation)
     {
-        if (is_maximized || is_fullscreen)
-            return false;
-        window_width = event.width;
-        window_height = event.height;
-        return false;
+        if (is_maximized || is_fullscreen_or_tiled)
+            return;
+        window_width = allocation.width;
+        window_height = allocation.height;
     }
 
     private bool window_state_event_cb (Gdk.EventWindowState event)
     {
         if ((event.changed_mask & Gdk.WindowState.MAXIMIZED) != 0)
             is_maximized = (event.new_window_state & Gdk.WindowState.MAXIMIZED) != 0;
-        if ((event.changed_mask & Gdk.WindowState.FULLSCREEN) != 0)
-            is_fullscreen = (event.new_window_state & Gdk.WindowState.FULLSCREEN) != 0;
-        return false;
+        /* We don’t save these states, but track them for saving size allocation */
+        if ((event.changed_mask & (Gdk.WindowState.FULLSCREEN | Gdk.WindowState.TILED)) != 0)
+            is_fullscreen_or_tiled = (event.new_window_state & (Gdk.WindowState.FULLSCREEN | Gdk.WindowState.TILED)) != 0;
+        return true;    /* or false ? */
     }
 
     /*\
