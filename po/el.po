@@ -2,14 +2,14 @@
 # Copyright (C) 2014 gnome-taquin's COPYRIGHT HOLDER
 # This file is distributed under the same license as the gnome-taquin package.
 # Dimitris Spingos <dmtrs32@gmail.com>, 2014.
-# Dimitris Spingos (Δημήτρης Σπίγγος) <dmtrs32@gmail.com>, 2014.
+# Dimitris Spingos (Δημήτρης Σπίγγος) <dmtrs32@gmail.com>, 2014, 2015.
 msgid ""
 msgstr ""
 "Project-Id-Version: gnome-taquin master\n"
 "Report-Msgid-Bugs-To: http://bugzilla.gnome.org/enter_bug.cgi?product=gnome-"
 "taquin&keywords=I18N+L10N&component=general\n"
-"POT-Creation-Date: 2014-11-14 08:37+0000\n"
-"PO-Revision-Date: 2014-11-17 00:07+0300\n"
+"POT-Creation-Date: 2014-12-29 01:21+0000\n"
+"PO-Revision-Date: 2015-01-24 01:44+0300\n"
 "Last-Translator: Dimitris Spingos (Δημήτρης Σπίγγος) <dmtrs32@gmail.com>\n"
 "Language-Team: team@lists.gnome.gr\n"
 "Language: el\n"
@@ -21,13 +21,23 @@ msgstr ""
 "X-Project-Style: gnome\n"
 
 #: ../data/gnome-taquin.appdata.xml.in.h:1
+#| msgid "Taquin"
+msgid "GNOME Taquin"
+msgstr "GNOME Taquin"
+
+#: ../data/gnome-taquin.appdata.xml.in.h:2 ../data/gnome-taquin.desktop.in.h:2
+#| msgid "Slide tiles on their correct place."
+msgid "Slide tiles to their correct places"
+msgstr "Μετακινήστε τα πλακίδια στις σωστές τους θέσεις."
+
+#: ../data/gnome-taquin.appdata.xml.in.h:3
 msgid ""
 "Taquin is a computer version of the 15-puzzle and other sliding puzzles."
 msgstr ""
-"Το Taquin (ο κατεργάρης) είναι μια έκδοση για υπολογιστή και άλλους "
-"συρόμενους γρίφους."
+"Το Taquin (ο κατεργάρης) είναι μια έκδοση για υπολογιστή του γρίφου-15 και "
+"άλλων συρόμενων γρίφων."
 
-#: ../data/gnome-taquin.appdata.xml.in.h:2
+#: ../data/gnome-taquin.appdata.xml.in.h:4
 msgid ""
 "The object of Taquin is to move tiles so that they reach their places, "
 "either indicated with numbers, or with parts of a great image."
@@ -37,17 +47,13 @@ msgstr ""
 "εικόνας."
 
 #: ../data/gnome-taquin.desktop.in.h:1 ../data/taquin.ui.h:6
-#: ../src/taquin-main.vala:92 ../src/taquin-main.vala:321
+#: ../src/taquin-main.vala:98 ../src/taquin-main.vala:346
 msgid "Taquin"
 msgstr "Taquin"
 
-#: ../data/gnome-taquin.desktop.in.h:2
-msgid "Slide tiles on their correct place."
-msgstr "Μετακινήστε τα πλακίδια στη σωστή τους θέση."
-
 #: ../data/gnome-taquin.desktop.in.h:3
 msgid "puzzle;"
-msgstr "γρίφος;"
+msgstr "γρίφος;puzzle;"
 
 #: ../data/gnome-taquin.desktop.in.h:4
 msgid "15-Puzzle with hole"
@@ -58,14 +64,18 @@ msgid "Puzzle with arrays"
 msgstr "Γρίφος με πίνακες"
 
 #: ../data/taquin-menus.ui.h:1
+msgid "_Sound"
+msgstr "Ή_χος"
+
+#: ../data/taquin-menus.ui.h:2
 msgid "_Help"
 msgstr "_Βοήθεια"
 
-#: ../data/taquin-menus.ui.h:2
+#: ../data/taquin-menus.ui.h:3
 msgid "_About"
 msgstr "_Περί"
 
-#: ../data/taquin-menus.ui.h:3
+#: ../data/taquin-menus.ui.h:4
 msgid "_Quit"
 msgstr "Έ_ξοδος"
 
@@ -118,18 +128,10 @@ msgid "Start a new game"
 msgstr "Έναρξη ενός νέου παιχνιδιού"
 
 #: ../data/org.gnome.taquin.gschema.xml.h:1
-msgid "Name of the theme folder."
-msgstr "Όνομα του φακέλου του θέματος."
-
-#: ../data/org.gnome.taquin.gschema.xml.h:2
-msgid "Taquin has two default themes: 'cats' and 'numbers'."
-msgstr "Το Taquin έχει δύο προεπιλεγμένα θέματα: 'γάτες' και 'αριθμοί'."
-
-#: ../data/org.gnome.taquin.gschema.xml.h:3
 msgid "Number of tiles on each edge."
 msgstr "Αριθμός των πλακιδίων σε κάθε άκρη."
 
-#: ../data/org.gnome.taquin.gschema.xml.h:4
+#: ../data/org.gnome.taquin.gschema.xml.h:2
 msgid ""
 "The game is tested and offers to select a size from 3 to 5. There is a human-"
 "understandable maximum value to avoid some bugs. Maximum size is 9 as the "
@@ -141,63 +143,93 @@ msgstr ""
 "σφαλμάτων. Το μέγιστο μέγεθος είναι 9 καθώς τα αρχεία εικόνας επιλέγονται "
 "τυχαία ανάλογα με τον πρώτο χαρακτήρα του ονόματος του αρχείου τους."
 
+#: ../data/org.gnome.taquin.gschema.xml.h:3
+msgid "Name of the theme folder."
+msgstr "Όνομα του φακέλου του θέματος."
+
+#: ../data/org.gnome.taquin.gschema.xml.h:4
+msgid "Taquin has two default themes: 'cats' and 'numbers'."
+msgstr "Το Taquin έχει δύο προεπιλεγμένα θέματα: 'γάτες' και 'αριθμοί'."
+
 #: ../data/org.gnome.taquin.gschema.xml.h:5
+msgid "Sound"
+msgstr "Ήχος"
+
+#: ../data/org.gnome.taquin.gschema.xml.h:6
+msgid "Whether or not to play event sounds."
+msgstr "Αν θα παίζονται ή όχι ήχοι συμβάντων."
+
+#: ../data/org.gnome.taquin.gschema.xml.h:7
 msgid "Width of the window in pixels."
 msgstr "Πλάτος του παραθύρου σε εικονοστοιχεία."
 
-#: ../data/org.gnome.taquin.gschema.xml.h:6
+#: ../data/org.gnome.taquin.gschema.xml.h:8
 msgid "Height of the window in pixels."
 msgstr "Ύψος του παραθύρου σε εικονοστοιχεία."
 
-#: ../data/org.gnome.taquin.gschema.xml.h:7
+#: ../data/org.gnome.taquin.gschema.xml.h:9
 msgid "true if the window is maximized."
 msgstr "αληθές αν το παράθυρο είναι μεγιστοποιημένο."
 
-#. { "no-gtk", 0, 0, OptionArg.NONE, null, N_("Begins a console game"), null}, TODO
-#: ../src/taquin-main.vala:55
+#: ../src/taquin-main.vala:58
 msgid "Play the classical 1880s’ 15-puzzle"
 msgstr "Παίξτε τον κλασικό γρίφο 15 του 1880"
 
-#: ../src/taquin-main.vala:56
+#: ../src/taquin-main.vala:59
 msgid "Try this fun alternative 16-puzzle"
 msgstr "Δοκιμάστε αυτόν τον διασκεδαστικό εναλλακτικό γρίφο 16"
 
-#: ../src/taquin-main.vala:57
-msgid "Sets the puzzle edges’ size (2-9, 2 for debug only)"
-msgstr "Ορίζει το μέγεθος των άκρων του γρίφου (2-9, 2 μόνο για αποσφαλμάτωση)"
+#: ../src/taquin-main.vala:60
+#| msgid "Sets the puzzle edges’ size (2-9, 2 for debug only)"
+msgid "Sets the puzzle edges’ size (3-5, 2-9 for debug)"
+msgstr "Ορίζει το μέγεθος των άκρων του γρίφου (3-5, 2-9 για αποσφαλμάτωση)"
 
-#: ../src/taquin-main.vala:58
+#: ../src/taquin-main.vala:61
+msgid "Turn off the sound"
+msgstr "Απενεργοποίηση του ήχου"
+
+#: ../src/taquin-main.vala:62
+msgid "Turn on the sound"
+msgstr "Ενεργοποίηση του ήχου"
+
+#: ../src/taquin-main.vala:63
 msgid "Print release version and exit"
 msgstr "Εμφάνιση της έκδοσης και έξοδος"
 
-#: ../src/taquin-main.vala:325
+#: ../src/taquin-main.vala:342
+msgid "(see COPYING.themes for informations)"
+msgstr "(δείτε COPYING.themes για πληροφορίες)"
+
+#: ../src/taquin-main.vala:350
 msgid "A classic 15-puzzle game"
 msgstr "Ένα κλασικό παιχνίδι γρίφου 15"
 
-#: ../src/taquin-main.vala:328
+#: ../src/taquin-main.vala:354
 msgid "translator-credits"
 msgstr ""
 "Ελληνική μεταφραστική ομάδα του GNOME\n"
 " Δημήτρης Σπίγγος <dmtrs32@gmail.com>\n"
-"Για περισσότερα δείτε: http://gnome.gr"
+"\n"
+"Για περισσότερες πληροφορίες, επισκεφθείτε τη σελίδα\n"
+"http://gnome.gr/"
 
-#: ../src/taquin-main.vala:366
+#: ../src/taquin-main.vala:395
 msgid "You can’t move this tile!"
 msgstr "Δεν μπορείτε να μετακινήσετε αυτό το πλακίδιο!"
 
-#: ../src/taquin-main.vala:370
+#: ../src/taquin-main.vala:401
 msgid "Bravo! You finished the game!"
 msgstr "Μπράβο! Τελειώσατε το παιχνίδι!"
 
-#: ../src/taquin-main.vala:393
+#: ../src/taquin-main.vala:425
 #, c-format
 msgid "Size: %d × %d ▾"
 msgstr "Μέγεθος: %d × %d ▾"
 
-#: ../src/taquin-main.vala:407
+#: ../src/taquin-main.vala:439
 msgid "Theme: Cats ▾"
 msgstr "Θέμα: Γάτες ▾"
 
-#: ../src/taquin-main.vala:408
+#: ../src/taquin-main.vala:440
 msgid "Theme: Numbers ▾"
 msgstr "Θέμα: Αριθμοί ▾"
