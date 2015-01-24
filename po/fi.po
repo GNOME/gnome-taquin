@@ -1,0 +1,222 @@
+# Finnish translation for gnome-taquin.
+# Copyright (C) 2015 gnome-taquin's COPYRIGHT HOLDER
+# This file is distributed under the same license as the gnome-taquin package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+# Jiri Grönroos <jiri.gronroos+l10n@iki.fi>, 2015.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: gnome-taquin master\n"
+"Report-Msgid-Bugs-To: http://bugzilla.gnome.org/enter_bug.cgi?product=gnome-"
+"taquin&keywords=I18N+L10N&component=general\n"
+"POT-Creation-Date: 2015-01-12 08:41+0000\n"
+"PO-Revision-Date: 2015-01-12 15:37+0200\n"
+"Last-Translator: Jiri Grönroos <jiri.gronroos+l10n@iki.fi>\n"
+"Language-Team: suomi <gnome-fi-laatu@lists.sourceforge.net>\n"
+"Language: fi\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"X-Generator: Gtranslator 2.91.6\n"
+
+#: ../data/gnome-taquin.appdata.xml.in.h:1
+msgid "GNOME Taquin"
+msgstr "Gnomen Taquin"
+
+#: ../data/gnome-taquin.appdata.xml.in.h:2 ../data/gnome-taquin.desktop.in.h:2
+msgid "Slide tiles to their correct places"
+msgstr "Liu'uta laatat oikeille kohdilleen"
+
+#: ../data/gnome-taquin.appdata.xml.in.h:3
+msgid ""
+"Taquin is a computer version of the 15-puzzle and other sliding puzzles."
+msgstr ""
+"Taquin on tietokoneversio 15-pelistä ja muista liu'utuksella ratkaistavista "
+"pulmapeleistä."
+
+#: ../data/gnome-taquin.appdata.xml.in.h:4
+msgid ""
+"The object of Taquin is to move tiles so that they reach their places, "
+"either indicated with numbers, or with parts of a great image."
+msgstr ""
+"Tavoite Taquinissa on siirtää laatat oikeille kohdilleen siten, että ne "
+"muodostavat numerojatkumon tai kuvan."
+
+#: ../data/gnome-taquin.desktop.in.h:1 ../data/taquin.ui.h:6
+#: ../src/taquin-main.vala:98 ../src/taquin-main.vala:346
+msgid "Taquin"
+msgstr "Taquin"
+
+#: ../data/gnome-taquin.desktop.in.h:3
+msgid "puzzle;"
+msgstr "puzzle;pulma;"
+
+#: ../data/gnome-taquin.desktop.in.h:4
+msgid "15-Puzzle with hole"
+msgstr ""
+
+#: ../data/gnome-taquin.desktop.in.h:5
+msgid "Puzzle with arrays"
+msgstr ""
+
+#: ../data/taquin-menus.ui.h:1
+msgid "_Sound"
+msgstr "_Ääni"
+
+#: ../data/taquin-menus.ui.h:2
+msgid "_Help"
+msgstr "_Ohje"
+
+#: ../data/taquin-menus.ui.h:3
+msgid "_About"
+msgstr "_Tietoja"
+
+#: ../data/taquin-menus.ui.h:4
+msgid "_Quit"
+msgstr "_Lopeta"
+
+#: ../data/taquin.ui.h:1
+msgid "3 × 3"
+msgstr "3 × 3"
+
+#: ../data/taquin.ui.h:2
+msgid "4 × 4"
+msgstr "4 × 4"
+
+#: ../data/taquin.ui.h:3
+msgid "5 × 5"
+msgstr "5 × 5"
+
+#: ../data/taquin.ui.h:4
+msgid "Cats"
+msgstr "Kissat"
+
+#: ../data/taquin.ui.h:5
+msgid "Numbers"
+msgstr "Numerot"
+
+#: ../data/taquin.ui.h:7
+msgid "Undo your most recent move"
+msgstr "Kumoa viimeisin siirtosi"
+
+#: ../data/taquin.ui.h:8
+msgid "Go back to the current game"
+msgstr "Siirry takaisin nykyiseen peliisi"
+
+#: ../data/taquin.ui.h:9
+msgid "15-Puzzle"
+msgstr "15-peli"
+
+#: ../data/taquin.ui.h:10
+msgid "16-Puzzle"
+msgstr "16-peli"
+
+#: ../data/taquin.ui.h:11
+msgid "_Start Game"
+msgstr "_Aloita peli"
+
+#: ../data/taquin.ui.h:12
+msgid "_Start Over"
+msgstr "Aloita _uudelleen"
+
+#: ../data/taquin.ui.h:13
+msgid "Start a new game"
+msgstr "Käynnistä uusi peli"
+
+#: ../data/org.gnome.taquin.gschema.xml.h:1
+msgid "Number of tiles on each edge."
+msgstr ""
+
+#: ../data/org.gnome.taquin.gschema.xml.h:2
+msgid ""
+"The game is tested and offers to select a size from 3 to 5. There is a human-"
+"understandable maximum value to avoid some bugs. Maximum size is 9 as the "
+"image files are randomly selected depending on the first character of their "
+"filename."
+msgstr ""
+
+#: ../data/org.gnome.taquin.gschema.xml.h:3
+msgid "Name of the theme folder."
+msgstr "Teemakansion nimi."
+
+#: ../data/org.gnome.taquin.gschema.xml.h:4
+msgid "Taquin has two default themes: 'cats' and 'numbers'."
+msgstr "Taquin sisältää kaksi oletusteemaa: 'cats' ja 'numbers'."
+
+#: ../data/org.gnome.taquin.gschema.xml.h:5
+msgid "Sound"
+msgstr "Ääni"
+
+#: ../data/org.gnome.taquin.gschema.xml.h:6
+msgid "Whether or not to play event sounds."
+msgstr "Toistetaanko peliäänet."
+
+#: ../data/org.gnome.taquin.gschema.xml.h:7
+msgid "Width of the window in pixels."
+msgstr "Ikkunan leveys pikseleissä."
+
+#: ../data/org.gnome.taquin.gschema.xml.h:8
+msgid "Height of the window in pixels."
+msgstr "Ikkunan korkeus pikseleissä."
+
+#: ../data/org.gnome.taquin.gschema.xml.h:9
+msgid "true if the window is maximized."
+msgstr ""
+
+#: ../src/taquin-main.vala:58
+msgid "Play the classical 1880s’ 15-puzzle"
+msgstr "Pelaa klassista 1870-luvun 15-peliä"
+
+#: ../src/taquin-main.vala:59
+msgid "Try this fun alternative 16-puzzle"
+msgstr "Kokeile tätä hauskaa vaihtoehtoista 16-peliä"
+
+#: ../src/taquin-main.vala:60
+msgid "Sets the puzzle edges’ size (3-5, 2-9 for debug)"
+msgstr ""
+
+#: ../src/taquin-main.vala:61
+msgid "Turn off the sound"
+msgstr "Poista äänet käytöstä"
+
+#: ../src/taquin-main.vala:62
+msgid "Turn on the sound"
+msgstr "Ota äänet käyttöön"
+
+#: ../src/taquin-main.vala:63
+msgid "Print release version and exit"
+msgstr "Tulosta julkaisuversio ja poistu"
+
+#: ../src/taquin-main.vala:342
+msgid "(see COPYING.themes for informations)"
+msgstr "(lisätietoja tiedostossa COPYING.themes)"
+
+#: ../src/taquin-main.vala:350
+msgid "A classic 15-puzzle game"
+msgstr "Klassinen 15-pulmapeli"
+
+#: ../src/taquin-main.vala:354
+msgid "translator-credits"
+msgstr "Jiri Grönroos"
+
+#: ../src/taquin-main.vala:395
+msgid "You can’t move this tile!"
+msgstr "Et voi siirtää tätä laattaa!"
+
+#: ../src/taquin-main.vala:401
+msgid "Bravo! You finished the game!"
+msgstr "Onnittelut, läpäisit pelin!"
+
+#: ../src/taquin-main.vala:425
+#, c-format
+msgid "Size: %d × %d ▾"
+msgstr "Koko: %d × %d ▾"
+
+#: ../src/taquin-main.vala:439
+msgid "Theme: Cats ▾"
+msgstr "Teema: kissat ▾"
+
+#: ../src/taquin-main.vala:440
+msgid "Theme: Numbers ▾"
+msgstr "Teema: numerot ▾"
