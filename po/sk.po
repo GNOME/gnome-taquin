@@ -1,0 +1,224 @@
+# Slovak translation for gnome-taquin.
+# Copyright (C) 2015 gnome-taquin's COPYRIGHT HOLDER
+# This file is distributed under the same license as the gnome-taquin package.
+# Dušan Kazik <prescott66@gmail.com>, 2015.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: gnome-taquin master\n"
+"Report-Msgid-Bugs-To: http://bugzilla.gnome.org/enter_bug.cgi?product=gnome-"
+"taquin&keywords=I18N+L10N&component=general\n"
+"POT-Creation-Date: 2015-01-27 08:44+0000\n"
+"PO-Revision-Date: 2015-01-27 11:01+0100\n"
+"Last-Translator: Dušan Kazik <prescott66@gmail.com>\n"
+"Language-Team: Slovak <gnome-sk-list@gnome.org>\n"
+"Language: sk\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=3; plural=(n==1) ? 1 : (n>=2 && n<=4) ? 2 : 0;\n"
+"X-Generator: Poedit 1.7.3\n"
+
+#: ../data/gnome-taquin.appdata.xml.in.h:1
+msgid "GNOME Taquin"
+msgstr "Taquin GNOME"
+
+#: ../data/gnome-taquin.appdata.xml.in.h:2 ../data/gnome-taquin.desktop.in.h:2
+msgid "Slide tiles to their correct places"
+msgstr "Posúvajte diely na ich správne miesto"
+
+#: ../data/gnome-taquin.appdata.xml.in.h:3
+msgid ""
+"Taquin is a computer version of the 15-puzzle and other sliding puzzles."
+msgstr ""
+"Hra Taquin je počítačovou verziou hlavolamu s 15 dielmi a inými posuvnými "
+"hlavolamami."
+
+#: ../data/gnome-taquin.appdata.xml.in.h:4
+msgid ""
+"The object of Taquin is to move tiles so that they reach their places, "
+"either indicated with numbers, or with parts of a great image."
+msgstr ""
+"Cieľom hry Taquin je presunúť diely tak, aby bol každý na správnom mieste. "
+"Diely sú označené buď číslami, alebo ich tvoria časti obrázku."
+
+#: ../data/gnome-taquin.desktop.in.h:1 ../data/taquin.ui.h:6
+#: ../src/taquin-main.vala:98 ../src/taquin-main.vala:347
+msgid "Taquin"
+msgstr "Taquin"
+
+#: ../data/gnome-taquin.desktop.in.h:3
+msgid "puzzle;"
+msgstr "puzzle;hlavolam;"
+
+#: ../data/gnome-taquin.desktop.in.h:4
+msgid "15-Puzzle with hole"
+msgstr "Hlavolam s 15 dielmi a voľným dielom"
+
+#: ../data/gnome-taquin.desktop.in.h:5
+msgid "Puzzle with arrays"
+msgstr "Hlavolam s dielmi"
+
+#: ../data/taquin-menus.ui.h:1
+msgid "_Sound"
+msgstr "_Zvuk"
+
+#: ../data/taquin-menus.ui.h:2
+msgid "_Help"
+msgstr "_Pomocník"
+
+#: ../data/taquin-menus.ui.h:3
+msgid "_About"
+msgstr "_O programe"
+
+#: ../data/taquin-menus.ui.h:4
+msgid "_Quit"
+msgstr "_Ukončiť"
+
+#: ../data/taquin.ui.h:1
+msgid "3 × 3"
+msgstr "3 × 3"
+
+#: ../data/taquin.ui.h:2
+msgid "4 × 4"
+msgstr "4 × 4"
+
+#: ../data/taquin.ui.h:3
+msgid "5 × 5"
+msgstr "5 × 5"
+
+#: ../data/taquin.ui.h:4
+msgid "Cats"
+msgstr "Mačky"
+
+#: ../data/taquin.ui.h:5
+msgid "Numbers"
+msgstr "Čísla"
+
+#: ../data/taquin.ui.h:7
+msgid "Undo your most recent move"
+msgstr "Vráti späť váš posledný posun"
+
+#: ../data/taquin.ui.h:8
+msgid "Go back to the current game"
+msgstr "Prejde späť na aktuálnu hru"
+
+#: ../data/taquin.ui.h:9
+msgid "15-Puzzle"
+msgstr "Hlavolam s 15 dielmi"
+
+#: ../data/taquin.ui.h:10
+msgid "16-Puzzle"
+msgstr "Hlavolam s 16 dielmi"
+
+#: ../data/taquin.ui.h:11
+msgid "_Start Game"
+msgstr "_Začať hru"
+
+#: ../data/taquin.ui.h:12
+msgid "_Start Over"
+msgstr "_Začať odznovu"
+
+#: ../data/taquin.ui.h:13
+msgid "Start a new game"
+msgstr "Začne novú hru"
+
+#: ../data/org.gnome.taquin.gschema.xml.h:1
+msgid "Number of tiles on each edge."
+msgstr "Počet dielov na každej strane."
+
+#: ../data/org.gnome.taquin.gschema.xml.h:2
+msgid ""
+"The game is tested and offers to select a size from 3 to 5. There is a human-"
+"understandable maximum value to avoid some bugs. Maximum size is 9 as the "
+"image files are randomly selected depending on the first character of their "
+"filename."
+msgstr ""
+"Hra je overená a umožňuje vybrať veľkosť od 3 po 5. Je vytvorená tak, aby ju "
+"pochopil každý bez problémov. Maximálna veľkosť je 9, podľa prvého znaku "
+"názvu súboru obrázku, ktorý je náhodne vybratý."
+
+#: ../data/org.gnome.taquin.gschema.xml.h:3
+msgid "Name of the theme folder."
+msgstr "Názov priečinku s témami."
+
+#: ../data/org.gnome.taquin.gschema.xml.h:4
+msgid "Taquin has two default themes: 'cats' and 'numbers'."
+msgstr "Hra Taquin obsahuje dve predvolené témy: „mačky“ a „čísla“"
+
+#: ../data/org.gnome.taquin.gschema.xml.h:5
+msgid "Sound"
+msgstr "Zvuk"
+
+#: ../data/org.gnome.taquin.gschema.xml.h:6
+msgid "Whether or not to play event sounds."
+msgstr "Určuje, či prehrávať alebo neprehrávať zvuky."
+
+#: ../data/org.gnome.taquin.gschema.xml.h:7
+msgid "Width of the window in pixels."
+msgstr "Šírka okna v pixeloch."
+
+#: ../data/org.gnome.taquin.gschema.xml.h:8
+msgid "Height of the window in pixels."
+msgstr "Výška okna v pixeloch."
+
+#: ../data/org.gnome.taquin.gschema.xml.h:9
+msgid "true if the window is maximized."
+msgstr "hodnota „true“ ak je okno maximalizované"
+
+#: ../src/taquin-main.vala:58
+msgid "Play the classical 1880s’ 15-puzzle"
+msgstr "Spustí klasický hlavolam s 15 dielmi z roku 1880"
+
+#: ../src/taquin-main.vala:59
+msgid "Try this fun alternative 16-puzzle"
+msgstr "Skúsi zábavnú alternatívu hlavolamu  s 16 dielmi"
+
+#: ../src/taquin-main.vala:60
+msgid "Sets the puzzle edges’ size (3-5, 2-9 for debug)"
+msgstr "Nastaví veľkosť strán hlavolamu (3-5, 2-9 pre ladenie)"
+
+#: ../src/taquin-main.vala:61
+msgid "Turn off the sound"
+msgstr "Vypne zvuk"
+
+#: ../src/taquin-main.vala:62
+msgid "Turn on the sound"
+msgstr "Zapne zvuk"
+
+#: ../src/taquin-main.vala:63
+msgid "Print release version and exit"
+msgstr "Vypíše verziu vydania a skončí"
+
+#: ../src/taquin-main.vala:343
+msgid "(see COPYING.themes for informations)"
+msgstr "(pozrite COPYING.themes pre viac informácií)"
+
+#: ../src/taquin-main.vala:351
+msgid "A classic 15-puzzle game"
+msgstr "Klasický hlavolam s 15 dielmi"
+
+#: ../src/taquin-main.vala:355
+msgid "translator-credits"
+msgstr "Dušan Kazik <prescott66@gmail.com>"
+
+#: ../src/taquin-main.vala:396
+msgid "You can’t move this tile!"
+msgstr "Nemôžete posunúť tento diel!"
+
+#: ../src/taquin-main.vala:402
+msgid "Bravo! You finished the game!"
+msgstr "Gratulujeme! Dokončili ste hru!"
+
+#: ../src/taquin-main.vala:426
+#, c-format
+msgid "Size: %d × %d ▾"
+msgstr "Veľkosť: %d × %d ▾"
+
+#: ../src/taquin-main.vala:440
+msgid "Theme: Cats ▾"
+msgstr "Téma: Mačky ▾"
+
+#: ../src/taquin-main.vala:441
+msgid "Theme: Numbers ▾"
+msgstr "Téma: Čísla ▾"
