@@ -1,21 +1,31 @@
-GtkApplicationWindow GtkRadioButton {
-    -GtkButton-image-spacing:0;
-    -GtkCheckButton-indicator-size:0;
-    -gtk-icon-source:none;
-    padding:15px 0 0 0;
+GtkRadioButton.radio-like-toggle#radio-fifteen {
+    background-image: url("resource://org/gnome/taquin/images/15-Puzzle.png");
 }
-GtkApplicationWindow GtkMenuButton,
-GtkApplicationWindow GtkRadioButton {
+GtkRadioButton.radio-like-toggle#radio-sixteen {
+    background-image: url("resource://org/gnome/taquin/images/16-Puzzle.png");
+}
+
+GtkRadioButton.radio-like-toggle {
+    background-repeat: no-repeat;
+    /* width is requested by the widget: 200 */
+    padding-top: 15px;
+    padding-bottom: 185px;
+    background-position: center 25px;
+}
+
+GtkRadioButton.radio-like-toggle,
+GtkMenuButton.menubutton-like-combo {
     border-radius:15px;
     outline-radius:13px;
 }
-GtkApplicationWindow GtkMenuButton:checked,
-GtkApplicationWindow GtkMenuButton:prelight {
+
+GtkMenuButton.menubutton-like-combo:checked,
+GtkMenuButton.menubutton-like-combo:prelight {
     color:#2e3436; /* gtk-contained.css’ theme_fg_color */
     background:-gtk-gradient (radial, center center, 0, center center, 0.5, from(rgba (255, 255, 255, 1)), to(rgba (255, 255, 255, 0)));
 }
-GtkApplicationWindow GtkMenuButton:checked:backdrop,
-GtkApplicationWindow GtkMenuButton:prelight:backdrop {
+GtkMenuButton.menubutton-like-combo:checked:backdrop,
+GtkMenuButton.menubutton-like-combo:prelight:backdrop {
     color:@theme_unfocused_fg_color;
     background:-gtk-gradient (radial, center center, 0, center center, 0.5, from(rgba (255, 255, 255, 0.3)), to(rgba (255, 255, 255, 0)));
 }

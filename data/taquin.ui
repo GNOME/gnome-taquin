@@ -104,60 +104,30 @@
                 <child>
                   <object class="GtkRadioButton" id="radio-fifteen">
                     <property name="visible">True</property>
+                    <property name="name">radio-fifteen</property>
+                    <style><class name="radio-like-toggle"/></style>
                     <property name="focus-on-click">False</property>
-                    <property name="relief">none</property>
+                    <property name="relief">none</property> <!-- could probably be replaced by a use of the "flat" style-class -->
                     <property name="action-name">win.change-type</property>
                     <property name="action-target">'fifteen'</property>
                     <property name="draw-indicator">False</property>
-                    <child>
-                      <object class="GtkBox">
-                        <property name="visible">True</property>
-                        <property name="orientation">vertical</property>
-                        <child>
-                          <object class="GtkLabel">
-                            <property name="visible">True</property>
-                            <property name="label" translatable="yes">15-Puzzle</property>
-                          </object>
-                        </child>
-                        <child>
-                          <object class="GtkImage">
-                            <property name="resource">/org/gnome/taquin/images/15-Puzzle.png</property>
-                            <property name="visible">True</property>
-                            <property name="pixel-size">150</property>
-                          </object>
-                        </child>
-                      </object>
-                    </child>
+                    <property name="label" translatable="yes">15-Puzzle</property>
+                    <property name="width-request">200</property>
                   </object>
                 </child>
                 <child>
                   <object class="GtkRadioButton" id="radio-sixteen">
                     <property name="visible">True</property>
+                    <property name="name">radio-sixteen</property>
+                    <style><class name="radio-like-toggle"/></style>
                     <property name="focus-on-click">False</property>
                     <property name="relief">none</property>
                     <property name="action-name">win.change-type</property>
                     <property name="action-target">'sixteen'</property>
                     <property name="group">radio-fifteen</property>
                     <property name="draw-indicator">False</property>
-                    <child>
-                      <object class="GtkBox">
-                        <property name="visible">True</property>
-                        <property name="orientation">vertical</property>
-                        <child>
-                          <object class="GtkLabel">
-                            <property name="visible">True</property>
-                            <property name="label" translatable="yes">16-Puzzle</property>
-                          </object>
-                        </child>
-                        <child>
-                          <object class="GtkImage">
-                            <property name="resource">/org/gnome/taquin/images/16-Puzzle.png</property>
-                            <property name="visible">True</property>
-                            <property name="pixel-size">150</property>
-                          </object>
-                        </child>
-                      </object>
-                    </child>
+                    <property name="label" translatable="yes">16-Puzzle</property>
+                    <property name="width-request">200</property>
                   </object>
                 </child>
               </object>
@@ -178,7 +148,8 @@
                     <property name="use-underline">True</property>
                     <property name="menu-model">size-menu</property>
                     <property name="height-request">60</property>
-                    <style><class name="flat"/></style>
+                    <style><class name="menubutton-like-combo"/></style>
+                    <property name="relief">none</property> <!-- could probably be replaced by a use of the "flat" style-class -->
                   </object>
                   <packing>
                     <property name="expand">True</property>
@@ -191,7 +162,8 @@
                     <property name="use-underline">True</property>
                     <property name="menu-model">theme-menu</property>
                     <property name="height-request">60</property>
-                    <style><class name="flat"/></style>
+                    <style><class name="menubutton-like-combo"/></style>
+                    <property name="relief">none</property>
                   </object>
                   <packing>
                     <property name="expand">True</property>
