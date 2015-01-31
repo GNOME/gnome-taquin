@@ -6,7 +6,7 @@ _Keywords=puzzle;
 Exec=gnome-taquin
 Terminal=false
 Type=Application
-Categories=GNOME;GTK;Game;
+Categories=GNOME;GTK;Game;LogicGame;
 StartupNotify=true
 Actions=Fifteen;Sixteen;
 
