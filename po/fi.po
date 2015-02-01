@@ -20,22 +20,22 @@ msgstr ""
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
 "X-Generator: Gtranslator 2.91.6\n"
 
-#: ../data/gnome-taquin.appdata.xml.in.h:1
+#: ../data/org.gnome.taquin.appdata.xml.in.h:1
 msgid "GNOME Taquin"
 msgstr "Gnomen Taquin"
 
-#: ../data/gnome-taquin.appdata.xml.in.h:2 ../data/gnome-taquin.desktop.in.h:2
+#: ../data/org.gnome.taquin.appdata.xml.in.h:2 ../data/org.gnome.taquin.desktop.in.h:2
 msgid "Slide tiles to their correct places"
 msgstr "Liu'uta laatat oikeille kohdilleen"
 
-#: ../data/gnome-taquin.appdata.xml.in.h:3
+#: ../data/org.gnome.taquin.appdata.xml.in.h:3
 msgid ""
 "Taquin is a computer version of the 15-puzzle and other sliding puzzles."
 msgstr ""
 "Taquin on tietokoneversio 15-pelistä ja muista liu'utuksella ratkaistavista "
 "pulmapeleistä."
 
-#: ../data/gnome-taquin.appdata.xml.in.h:4
+#: ../data/org.gnome.taquin.appdata.xml.in.h:4
 msgid ""
 "The object of Taquin is to move tiles so that they reach their places, "
 "either indicated with numbers, or with parts of a great image."
@@ -43,20 +43,20 @@ msgstr ""
 "Tavoite Taquinissa on siirtää laatat oikeille kohdilleen siten, että ne "
 "muodostavat numerojatkumon tai kuvan."
 
-#: ../data/gnome-taquin.desktop.in.h:1 ../data/taquin.ui.h:6
+#: ../data/org.gnome.taquin.desktop.in.h:1 ../data/taquin.ui.h:6
 #: ../src/taquin-main.vala:98 ../src/taquin-main.vala:346
 msgid "Taquin"
 msgstr "Taquin"
 
-#: ../data/gnome-taquin.desktop.in.h:3
+#: ../data/org.gnome.taquin.desktop.in.h:3
 msgid "puzzle;"
 msgstr "puzzle;pulma;"
 
-#: ../data/gnome-taquin.desktop.in.h:4
+#: ../data/org.gnome.taquin.desktop.in.h:4
 msgid "15-Puzzle with hole"
 msgstr ""
 
-#: ../data/gnome-taquin.desktop.in.h:5
+#: ../data/org.gnome.taquin.desktop.in.h:5
 msgid "Puzzle with arrays"
 msgstr ""
 

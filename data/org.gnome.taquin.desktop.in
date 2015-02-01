@@ -8,6 +8,7 @@ Terminal=false
 Type=Application
 Categories=GNOME;GTK;Game;LogicGame;
 StartupNotify=true
+DBusActivatable=true
 Actions=Fifteen;Sixteen;
 
 [Desktop Action Fifteen]
@@ -17,4 +18,3 @@ Exec=gnome-taquin --fifteen
 [Desktop Action Sixteen]
 _Name=Puzzle with arrays
 Exec=gnome-taquin --sixteen
-

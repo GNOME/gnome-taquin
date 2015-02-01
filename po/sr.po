@@ -19,22 +19,22 @@ msgstr ""
 "n%10>=2 && n%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2;\n"
 "X-Project-Style: gnome\n"
 
-#: ../data/gnome-taquin.appdata.xml.in.h:1
+#: ../data/org.gnome.taquin.appdata.xml.in.h:1
 #| msgid "Taquin"
 msgid "GNOME Taquin"
 msgstr "Гномово Пецкало"
 
-#: ../data/gnome-taquin.appdata.xml.in.h:2 ../data/gnome-taquin.desktop.in.h:2
+#: ../data/org.gnome.taquin.appdata.xml.in.h:2 ../data/org.gnome.taquin.desktop.in.h:2
 #| msgid "Slide tiles on their correct place."
 msgid "Slide tiles to their correct places"
 msgstr "Догурајте плочице на њихова одговарајућа места."
 
-#: ../data/gnome-taquin.appdata.xml.in.h:3
+#: ../data/org.gnome.taquin.appdata.xml.in.h:3
 msgid ""
 "Taquin is a computer version of the 15-puzzle and other sliding puzzles."
 msgstr "Пецкало је рачунарско издање 15-слагалица и других клизних слагалица."
 
-#: ../data/gnome-taquin.appdata.xml.in.h:4
+#: ../data/org.gnome.taquin.appdata.xml.in.h:4
 msgid ""
 "The object of Taquin is to move tiles so that they reach their places, "
 "either indicated with numbers, or with parts of a great image."
@@ -42,20 +42,20 @@ msgstr ""
 "Предмет Пецкала је премештање плочица тако да стигну до својих места, било "
 "назначених бројевима, или деловима велике слике."
 
-#: ../data/gnome-taquin.desktop.in.h:1 ../data/taquin.ui.h:6
+#: ../data/org.gnome.taquin.desktop.in.h:1 ../data/taquin.ui.h:6
 #: ../src/taquin-main.vala:98 ../src/taquin-main.vala:346
 msgid "Taquin"
 msgstr "Пецкало"
 
-#: ../data/gnome-taquin.desktop.in.h:3
+#: ../data/org.gnome.taquin.desktop.in.h:3
 msgid "puzzle;"
 msgstr "слагалица;"
 
-#: ../data/gnome-taquin.desktop.in.h:4
+#: ../data/org.gnome.taquin.desktop.in.h:4
 msgid "15-Puzzle with hole"
 msgstr "15-слагалица са празнином"
 
-#: ../data/gnome-taquin.desktop.in.h:5
+#: ../data/org.gnome.taquin.desktop.in.h:5
 msgid "Puzzle with arrays"
 msgstr "Слагалица са стрелицама"
 

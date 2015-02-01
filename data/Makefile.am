@@ -16,11 +16,19 @@ sounds_DATA = \
 	gameover.ogg
 
 desktopdir = $(datadir)/applications
-desktop_in_files = gnome-taquin.desktop.in
+desktop_in_files = org.gnome.taquin.desktop.in
 desktop_DATA = $(desktop_in_files:.desktop.in=.desktop)
 @INTLTOOL_DESKTOP_RULE@
 
-appstream_in_files = gnome-taquin.appdata.xml.in
+dbusservicedir = $(datadir)/dbus-1/services
+dbusservice_DATA = org.gnome.taquin.service
+org.gnome.taquin.service: Makefile
+	$(AM_V_GEN) (echo '[D-BUS Service]'; \
+		         echo 'Name=org.gnome.taquin'; \
+		         echo 'Exec=${bindir}/gnome-taquin --gapplication-service') > $@.tmp && \
+		         mv $@.tmp $@
+
+appstream_in_files = org.gnome.taquin.appdata.xml.in
 appstream_XML = $(appstream_in_files:.xml.in=.xml)
 @APPSTREAM_XML_RULES@
 @INTLTOOL_XML_RULE@
@@ -39,6 +47,7 @@ EXTRA_DIST = \
 
 CLEANFILES = \
 	$(appstream_XML) \
+	$(dbusservice_DATA) \
 	$(desktop_DATA)
 
 check-local: $(desktop_DATA)

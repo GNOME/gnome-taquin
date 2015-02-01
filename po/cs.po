@@ -19,21 +19,21 @@ msgstr ""
 "Plural-Forms: nplurals=3; plural=(n==1) ? 0 : (n>=2 && n<=4) ? 1 : 2;\n"
 "X-Generator: Gtranslator 2.91.6\n"
 
-#: ../data/gnome-taquin.appdata.xml.in.h:1
+#: ../data/org.gnome.taquin.appdata.xml.in.h:1
 msgid "GNOME Taquin"
 msgstr "Taquin GNOME"
 
-#: ../data/gnome-taquin.appdata.xml.in.h:2 ../data/gnome-taquin.desktop.in.h:2
+#: ../data/org.gnome.taquin.appdata.xml.in.h:2 ../data/org.gnome.taquin.desktop.in.h:2
 msgid "Slide tiles to their correct places"
 msgstr "Presuňte kameny na jejich správné místo"
 
-#: ../data/gnome-taquin.appdata.xml.in.h:3
+#: ../data/org.gnome.taquin.appdata.xml.in.h:3
 msgid ""
 "Taquin is a computer version of the 15-puzzle and other sliding puzzles."
 msgstr ""
 "Taquin je počítačová verze posuvného puzzle s 15 nebo i jiným počtem dílů."
 
-#: ../data/gnome-taquin.appdata.xml.in.h:4
+#: ../data/org.gnome.taquin.appdata.xml.in.h:4
 msgid ""
 "The object of Taquin is to move tiles so that they reach their places, "
 "either indicated with numbers, or with parts of a great image."
@@ -41,20 +41,20 @@ msgstr ""
 "Cílem hlavolamu Taquin je přesunout kameny na jejich správná místa, která "
 "jsou daná buď číslem nebo částí celkového obrázku."
 
-#: ../data/gnome-taquin.desktop.in.h:1 ../data/taquin.ui.h:6
+#: ../data/org.gnome.taquin.desktop.in.h:1 ../data/taquin.ui.h:6
 #: ../src/taquin-main.vala:98 ../src/taquin-main.vala:346
 msgid "Taquin"
 msgstr "Taquin"
 
-#: ../data/gnome-taquin.desktop.in.h:3
+#: ../data/org.gnome.taquin.desktop.in.h:3
 msgid "puzzle;"
 msgstr "posuvné;puzzle;hlavolam;"
 
-#: ../data/gnome-taquin.desktop.in.h:4
+#: ../data/org.gnome.taquin.desktop.in.h:4
 msgid "15-Puzzle with hole"
 msgstr "Posuvné puzzle s 15 díly"
 
-#: ../data/gnome-taquin.desktop.in.h:5
+#: ../data/org.gnome.taquin.desktop.in.h:5
 msgid "Puzzle with arrays"
 msgstr "Hlavolam s mřížkou"
 
