@@ -24,7 +24,7 @@ public class Taquin : Gtk.Application
 {
     /* Settings */
     private GLib.Settings settings;
-    private bool is_fullscreen_or_tiled;
+    private bool is_tiled;
     private bool is_maximized;
     private int window_width;
     private int window_height;
@@ -223,7 +223,7 @@ public class Taquin : Gtk.Application
     {
         base.shutdown ();
 
-        /* Don’t try to save state here */
+        /* Save window state; don’t try to query it here */
         settings.set_int ("window-width", window_width);
         settings.set_int ("window-height", window_height);
         settings.set_boolean ("window-is-maximized", is_maximized);
@@ -235,7 +235,7 @@ public class Taquin : Gtk.Application
 
     private void size_allocate_cb (Allocation allocation)
     {
-        if (is_maximized || is_fullscreen_or_tiled)
+        if (is_maximized || is_tiled)
             return;
         window_width = allocation.width;
         window_height = allocation.height;
@@ -245,10 +245,10 @@ public class Taquin : Gtk.Application
     {
         if ((event.changed_mask & Gdk.WindowState.MAXIMIZED) != 0)
             is_maximized = (event.new_window_state & Gdk.WindowState.MAXIMIZED) != 0;
-        /* We don’t save these states, but track them for saving size allocation */
-        if ((event.changed_mask & (Gdk.WindowState.FULLSCREEN | Gdk.WindowState.TILED)) != 0)
-            is_fullscreen_or_tiled = (event.new_window_state & (Gdk.WindowState.FULLSCREEN | Gdk.WindowState.TILED)) != 0;
-        return true;    /* or false ? */
+        /* We don’t save this state, but track it for saving size allocation */
+        if ((event.changed_mask & Gdk.WindowState.TILED) != 0)
+            is_tiled = (event.new_window_state & Gdk.WindowState.TILED) != 0;
+        return false;
     }
 
     /*\
