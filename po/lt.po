@@ -1,0 +1,229 @@
+# Lithuanian translation for gnome-taquin.
+# Copyright (C) 2015 gnome-taquin's COPYRIGHT HOLDER
+# This file is distributed under the same license as the gnome-taquin package.
+# FULL NAME <EMAIL@ADDRESS>, 2015.
+# Aurimas Černius <aurisc4@gmail.com>, 2015.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: gnome-taquin master\n"
+"Report-Msgid-Bugs-To: http://bugzilla.gnome.org/enter_bug.cgi?product=gnome-"
+"taquin&keywords=I18N+L10N&component=general\n"
+"POT-Creation-Date: 2015-02-07 08:49+0000\n"
+"PO-Revision-Date: 2015-02-07 14:47+0200\n"
+"Last-Translator: Aurimas Černius <aurisc4@gmail.com>\n"
+"Language-Team: Lithuanian <gnome-lt@lists.akl.lt>\n"
+"Language: lt\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=3; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && (n"
+"%100<10 || n%100>=20) ? 1 : 2);\n"
+"X-Generator: Gtranslator 2.91.6\n"
+
+#: ../data/taquin-menus.ui.h:1
+msgid "_Sound"
+msgstr "_Garsas"
+
+#: ../data/taquin-menus.ui.h:2
+msgid "_Help"
+msgstr "_Žinynas"
+
+#: ../data/taquin-menus.ui.h:3
+msgid "_About"
+msgstr "_Apie"
+
+#: ../data/taquin-menus.ui.h:4
+msgid "_Quit"
+msgstr "_Išeiti"
+
+#: ../data/taquin.ui.h:1
+msgid "3 × 3"
+msgstr "3 × 3"
+
+#: ../data/taquin.ui.h:2
+msgid "4 × 4"
+msgstr "4 × 4"
+
+#: ../data/taquin.ui.h:3
+msgid "5 × 5"
+msgstr "5 × 5"
+
+#: ../data/taquin.ui.h:4
+msgid "Cats"
+msgstr "Katinai"
+
+#: ../data/taquin.ui.h:5
+msgid "Numbers"
+msgstr "Skaičiai"
+
+#: ../data/taquin.ui.h:6 ../data/org.gnome.taquin.desktop.in.h:1
+#: ../src/taquin-main.vala:98 ../src/taquin-main.vala:347
+msgid "Taquin"
+msgstr "Taquin"
+
+#: ../data/taquin.ui.h:7
+msgid "Undo your most recent move"
+msgstr "Atšaukti paskutinį ėjimą"
+
+#: ../data/taquin.ui.h:8
+msgid "Go back to the current game"
+msgstr "Grįžti į dabartinį žaidimą"
+
+#: ../data/taquin.ui.h:9
+msgid "15-Puzzle"
+msgstr "15-galvosūkis"
+
+#: ../data/taquin.ui.h:10
+msgid "16-Puzzle"
+msgstr "16-galvosūkis"
+
+#: ../data/taquin.ui.h:11
+msgid "_Start Game"
+msgstr "_Pradėti žaidimą"
+
+#: ../data/taquin.ui.h:12
+msgid "_Start Over"
+msgstr "Žaisti iš _naujo"
+
+#: ../data/taquin.ui.h:13
+msgid "Start a new game"
+msgstr "Pradėti naują žaidimą"
+
+#: ../data/org.gnome.taquin.appdata.xml.in.h:1
+msgid "GNOME Taquin"
+msgstr "GNOME Taquin"
+
+#: ../data/org.gnome.taquin.appdata.xml.in.h:2
+#: ../data/org.gnome.taquin.desktop.in.h:2
+msgid "Slide tiles to their correct places"
+msgstr "Tempkite koklius į jų teisingas vietas"
+
+#: ../data/org.gnome.taquin.appdata.xml.in.h:3
+msgid ""
+"Taquin is a computer version of the 15-puzzle and other sliding puzzles."
+msgstr ""
+"Taquin yra 15-galvosūkio ir kitų tempimo galvosūkių kompiuterinė versija."
+
+#: ../data/org.gnome.taquin.appdata.xml.in.h:4
+msgid ""
+"The object of Taquin is to move tiles so that they reach their places, "
+"either indicated with numbers, or with parts of a great image."
+msgstr ""
+"Taquin tikslas yra perkelti koklius taip, kad kiekvienas atsidurtų savo "
+"vietoje, nurodytoje skaičiais arba didesnio paveikslėlio dalimis."
+
+#: ../data/org.gnome.taquin.desktop.in.h:3
+msgid "puzzle;"
+msgstr "galvosūkis;"
+
+#: ../data/org.gnome.taquin.desktop.in.h:4
+msgid "15-Puzzle with hole"
+msgstr "15-galvosūkis su skyle"
+
+#: ../data/org.gnome.taquin.desktop.in.h:5
+msgid "Puzzle with arrays"
+msgstr "Galvosūkis su masyvais"
+
+#: ../data/org.gnome.taquin.gschema.xml.h:1
+msgid "Number of tiles on each edge."
+msgstr "Koklių skaičius kiekviename pakraštyje."
+
+#: ../data/org.gnome.taquin.gschema.xml.h:2
+msgid ""
+"The game is tested and offers to select a size from 3 to 5. There is a human-"
+"understandable maximum value to avoid some bugs. Maximum size is 9 as the "
+"image files are randomly selected depending on the first character of their "
+"filename."
+msgstr ""
+"Žaidimas yra testuojamas ir siūlo rinktis dydį nuo 3 iki 5. Yra didžiausia "
+"žmogui suvokiama vertė siekiant išvengti kai kurių klaidų. Didžiausias dydis "
+"yra 9, kadangi paveikslėlių failai yra pasirenkami atsitiktinai pagal "
+"pirmąjį failo pavadinimo simbolį."
+
+#: ../data/org.gnome.taquin.gschema.xml.h:3
+msgid "Name of the theme folder."
+msgstr "Temos aplanko pavadinimas."
+
+#: ../data/org.gnome.taquin.gschema.xml.h:4
+msgid "Taquin has two default themes: 'cats' and 'numbers'."
+msgstr "Taquin turi dvi numatytasias temas: „katinai“ ir „skaičiai“."
+
+#: ../data/org.gnome.taquin.gschema.xml.h:5
+msgid "Sound"
+msgstr "Garsas"
+
+#: ../data/org.gnome.taquin.gschema.xml.h:6
+msgid "Whether or not to play event sounds."
+msgstr "Ar groti įvykių garsus."
+
+#: ../data/org.gnome.taquin.gschema.xml.h:7
+msgid "Width of the window in pixels."
+msgstr "Lango plotis pikseliais."
+
+#: ../data/org.gnome.taquin.gschema.xml.h:8
+msgid "Height of the window in pixels."
+msgstr "Lango aukštis pikseliais."
+
+#: ../data/org.gnome.taquin.gschema.xml.h:9
+msgid "true if the window is maximized."
+msgstr "Teigiama, jei langas yra išdidintas."
+
+#: ../src/taquin-main.vala:58
+msgid "Play the classical 1880s’ 15-puzzle"
+msgstr "Žaisti klasikinį 1880-ųjų 15-galvosūkį"
+
+#: ../src/taquin-main.vala:59
+msgid "Try this fun alternative 16-puzzle"
+msgstr "Bandyti šį smagų alternatyvų 16-galvosūkį"
+
+#: ../src/taquin-main.vala:60
+msgid "Sets the puzzle edges’ size (3-5, 2-9 for debug)"
+msgstr "Nustato galvosūkio pakraščių dydį (3-5, 2-9 derinimui)"
+
+#: ../src/taquin-main.vala:61
+msgid "Turn off the sound"
+msgstr "Išjungti garsą"
+
+#: ../src/taquin-main.vala:62
+msgid "Turn on the sound"
+msgstr "Įjungti garsą"
+
+#: ../src/taquin-main.vala:63
+msgid "Print release version and exit"
+msgstr "Atspausdinti leidimo versiją ir išeiti"
+
+#: ../src/taquin-main.vala:343
+msgid "(see COPYING.themes for informations)"
+msgstr "(daugiau informacijos rasite faile COPYING.themes)"
+
+#: ../src/taquin-main.vala:351
+msgid "A classic 15-puzzle game"
+msgstr "Klasikinis 15-galvosūkio žaidimas"
+
+#: ../src/taquin-main.vala:355
+msgid "translator-credits"
+msgstr ""
+"Išvertė:\n"
+"Aurimas Černius <aurisc4@gmail.com>"
+
+#: ../src/taquin-main.vala:396
+msgid "You can’t move this tile!"
+msgstr "Negalima perkelti šio koklio!"
+
+#: ../src/taquin-main.vala:402
+msgid "Bravo! You finished the game!"
+msgstr "Sveikiname! Jūs užbaigėte žaidimą!"
+
+#: ../src/taquin-main.vala:426
+#, c-format
+msgid "Size: %d × %d ▾"
+msgstr "Dydis: %d × %d ▾"
+
+#: ../src/taquin-main.vala:440
+msgid "Theme: Cats ▾"
+msgstr "Tema: katinai ▾"
+
+#: ../src/taquin-main.vala:441
+msgid "Theme: Numbers ▾"
+msgstr "Tema: skaičiai ▾"
