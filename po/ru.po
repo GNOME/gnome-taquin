@@ -3,16 +3,17 @@
 # This file is distributed under the same license as the gnome-taquin package.
 # Иван <vantu5z@mail.ru>, 2015.
 # Stas Solovey <whats_up@tut.by>, 2015.
+# Yuri Myasoedov <ymyasoedov@yandex.ru>, 2015.
 #
 msgid ""
 msgstr ""
 "Project-Id-Version: gnome-taquin master\n"
 "Report-Msgid-Bugs-To: http://bugzilla.gnome.org/enter_bug.cgi?product=gnome-"
 "taquin&keywords=I18N+L10N&component=general\n"
-"POT-Creation-Date: 2015-02-11 08:49+0000\n"
-"PO-Revision-Date: 2015-02-11 23:54+0300\n"
-"Last-Translator: Stas Solovey <whats_up@tut.by>\n"
-"Language-Team: Русский <gnome-cyr@gnome.org>\n"
+"POT-Creation-Date: 2015-02-11 21:06+0000\n"
+"PO-Revision-Date: 2015-02-15 16:29+0300\n"
+"Last-Translator: Yuri Myasoedov <ymyasoedov@yandex.ru>\n"
+"Language-Team: русский <gnome-cyr@gnome.org>\n"
 "Language: ru\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -23,7 +24,7 @@ msgstr ""
 
 #: ../data/taquin-menus.ui.h:1
 msgid "_Sound"
-msgstr "_Звук"
+msgstr "З_вук"
 
 #: ../data/taquin-menus.ui.h:2
 msgid "_Help"
@@ -131,17 +132,16 @@ msgid "Number of tiles on each edge."
 msgstr "Количество фишек по каждой стороне."
 
 #: ../data/org.gnome.taquin.gschema.xml.h:2
-#, fuzzy
 msgid ""
 "The game is tested and offers to select a size from 3 to 5. There is a human-"
 "understandable maximum value to avoid some bugs. Maximum size is 9 as the "
 "image files are randomly selected depending on the first character of their "
 "filename."
 msgstr ""
-"Игра проверена и предлагает выбор размера от 3 до 5. Это максимальное "
-"значение доступное пониманию человека, чтобы избежать некоторых ошибок. "
-"Максимальный размер 9, так как файлы изображений выбираются случайным "
-"образом в зависимости от первого символа их имени."
+"Игра проверена и предлагает на выбор размер от 3 до 5. Это — максимальное "
+"значение, доступное пониманию человека, чтобы избежать некоторых ошибок. "
+"Максимальный размер — 9, так как файлы изображений выбираются случайным "
+"образом в зависимости от первого символа в имени их файла."
 
 #: ../data/org.gnome.taquin.gschema.xml.h:3
 msgid "Name of the theme folder."
