@@ -403,7 +403,7 @@ public class TaquinView : Gtk.DrawingArea
     {
         if (animate || animate_end)
             return true;
-        if (event.button == 1 || event.button == 3)
+        if (event.button == Gdk.BUTTON_PRIMARY || event.button == Gdk.BUTTON_SECONDARY)
         {
             draw_lights = false;
             game.request_move ((int) (event.x - x_offset - grid_border_main + tile_size) / tile_size - 1,
