@@ -8,9 +8,9 @@ msgid ""
 msgstr ""
 "Project-Id-Version: taquin master\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2015-01-01 17:45+0200\n"
-"PO-Revision-Date: 2015-01-01 17:47+0200\n"
-"Last-Translator: Yosef Or Boczko <yoseforb@gnome.org>\n"
+"POT-Creation-Date: 2015-02-17 00:45+0200\n"
+"PO-Revision-Date: 2015-02-17 00:45+0200\n"
+"Last-Translator: Yosef Or Boczko <yoseforb@gmail.com>\n"
 "Language-Team: עברית <>\n"
 "Language: he\n"
 "MIME-Version: 1.0\n"
@@ -18,44 +18,6 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural= (n!=1);\n"
 "X-Generator: Gtranslator 2.91.6\n"
-
-#: ../data/org.gnome.taquin.appdata.xml.in.h:1
-msgid "GNOME Taquin"
-msgstr "GNOME Taquin"
-
-#: ../data/org.gnome.taquin.appdata.xml.in.h:2 ../data/org.gnome.taquin.desktop.in.h:2
-msgid "Slide tiles to their correct places"
-msgstr "להחליק אריחים למקום הנכון שלהם"
-
-#: ../data/org.gnome.taquin.appdata.xml.in.h:3
-msgid ""
-"Taquin is a computer version of the 15-puzzle and other sliding puzzles."
-msgstr "‏Taquin זו גרסה ממוחשבת של חידת ה־15 ותצרפי הזזה נוספים."
-
-#: ../data/org.gnome.taquin.appdata.xml.in.h:4
-msgid ""
-"The object of Taquin is to move tiles so that they reach their places, "
-"either indicated with numbers, or with parts of a great image."
-msgstr ""
-"הרעיון של Taquin הוא להזיז אריחים כך שהם יגיעו למקומם, המצוינים במספרים, או "
-"כחלק של תמונה גדולה."
-
-#: ../data/org.gnome.taquin.desktop.in.h:1 ../data/taquin.ui.h:6
-#: ../src/taquin-main.vala:98 ../src/taquin-main.vala:346
-msgid "Taquin"
-msgstr "Taquin"
-
-#: ../data/org.gnome.taquin.desktop.in.h:3
-msgid "puzzle;"
-msgstr "לוח;תצרף;פאזל;"
-
-#: ../data/org.gnome.taquin.desktop.in.h:4
-msgid "15-Puzzle with hole"
-msgstr "חידת ה־15 עם חור"
-
-#: ../data/org.gnome.taquin.desktop.in.h:5
-msgid "Puzzle with arrays"
-msgstr "תצרף עם מערכים"
 
 #: ../data/taquin-menus.ui.h:1
 msgid "_Sound"
@@ -93,6 +55,11 @@ msgstr "חתולים"
 msgid "Numbers"
 msgstr "מספרים"
 
+#: ../data/taquin.ui.h:6 ../data/org.gnome.taquin.desktop.in.h:1
+#: ../src/taquin-main.vala:98 ../src/taquin-main.vala:347
+msgid "Taquin"
+msgstr "Taquin"
+
 #: ../data/taquin.ui.h:7
 msgid "Undo your most recent move"
 msgstr "ביטול המהלך האחרון שלך"
@@ -101,11 +68,11 @@ msgstr "ביטול המהלך האחרון שלך"
 msgid "Go back to the current game"
 msgstr "חזרה למשחק הנוכחי"
 
-#: ../data/taquin.ui.h:9
+#: ../data/taquin.ui.h:9 ../data/org.gnome.taquin.desktop.in.h:4
 msgid "15-Puzzle"
 msgstr "לוח 15"
 
-#: ../data/taquin.ui.h:10
+#: ../data/taquin.ui.h:10 ../data/org.gnome.taquin.desktop.in.h:5
 msgid "16-Puzzle"
 msgstr "לוח 16"
 
@@ -121,21 +88,43 @@ msgstr "ה_תחלה מחדש"
 msgid "Start a new game"
 msgstr "התחלת משחק חדש"
 
+#: ../data/org.gnome.taquin.appdata.xml.in.h:1
+msgid "GNOME Taquin"
+msgstr "GNOME Taquin"
+
+#: ../data/org.gnome.taquin.appdata.xml.in.h:2
+#: ../data/org.gnome.taquin.desktop.in.h:2
+msgid "Slide tiles to their correct places"
+msgstr "להחליק אריחים למקום הנכון שלהם"
+
+#: ../data/org.gnome.taquin.appdata.xml.in.h:3
+msgid ""
+"Taquin is a computer version of the 15-puzzle and other sliding puzzles."
+msgstr "‏Taquin זו גרסה ממוחשבת של חידת ה־15 ותצרפי הזזה נוספים."
+
+#: ../data/org.gnome.taquin.appdata.xml.in.h:4
+msgid ""
+"The object of Taquin is to move tiles so that they reach their places, "
+"either indicated with numbers, or with parts of a great image."
+msgstr ""
+"הרעיון של Taquin הוא להזיז אריחים כך שהם יגיעו למקומם, המצוינים במספרים, או "
+"כחלק של תמונה גדולה."
+
+#: ../data/org.gnome.taquin.desktop.in.h:3
+msgid "puzzle;"
+msgstr "לוח;תצרף;פאזל;"
+
 #: ../data/org.gnome.taquin.gschema.xml.h:1
 msgid "Number of tiles on each edge."
 msgstr "Number of tiles on each edge."
 
 #: ../data/org.gnome.taquin.gschema.xml.h:2
 msgid ""
-"The game is tested and offers to select a size from 3 to 5. There is a human-"
-"understandable maximum value to avoid some bugs. Maximum size is 9 as the "
-"image files are randomly selected depending on the first character of their "
-"filename."
+"The game offers to play with a board size from 3 to 5. The setting could be "
+"set from 2 (good for testing) to 9, limited by the way files are selected."
 msgstr ""
-"The game is tested and offers to select a size from 3 to 5. There is a human-"
-"understandable maximum value to avoid some bugs. Maximum size is 9 as the "
-"image files are randomly selected depending on the first character of their "
-"filename."
+"The game offers to play with a board size from 3 to 5. The setting could be "
+"set from 2 (good for testing) to 9, limited by the way files are selected."
 
 #: ../data/org.gnome.taquin.gschema.xml.h:3
 msgid "Name of the theme folder."
@@ -189,35 +178,52 @@ msgstr "Turn on the sound"
 msgid "Print release version and exit"
 msgstr "Print release version and exit"
 
-#: ../src/taquin-main.vala:342
+#: ../src/taquin-main.vala:343
 msgid "(see COPYING.themes for informations)"
 msgstr "(‏COPYING.themes עבור מידע)"
 
-#: ../src/taquin-main.vala:350
+#: ../src/taquin-main.vala:351
 msgid "A classic 15-puzzle game"
 msgstr "משחק חידת ה־15 הקלאסי"
 
-#: ../src/taquin-main.vala:354
+#: ../src/taquin-main.vala:355
 msgid "translator-credits"
 msgstr "יוסף אור בוצ׳קו <yoseforb@gnome.org>"
 
-#: ../src/taquin-main.vala:395
+#: ../src/taquin-main.vala:396
 msgid "You can’t move this tile!"
 msgstr "לא ניתן להזיז אריח זה!"
 
-#: ../src/taquin-main.vala:401
+#: ../src/taquin-main.vala:402
 msgid "Bravo! You finished the game!"
 msgstr "הידד! סיימת את המשחק!"
 
-#: ../src/taquin-main.vala:425
+#: ../src/taquin-main.vala:426
 #, c-format
 msgid "Size: %d × %d ▾"
 msgstr "גודל: %d × %d ▾"
 
-#: ../src/taquin-main.vala:439
+#: ../src/taquin-main.vala:440
 msgid "Theme: Cats ▾"
 msgstr "ערכת נושא: חתולים ▾"
 
-#: ../src/taquin-main.vala:440
+#: ../src/taquin-main.vala:441
 msgid "Theme: Numbers ▾"
 msgstr "ערכת נושא: מספרים ▾"
+
+#~ msgid "15-Puzzle with hole"
+#~ msgstr "חידת ה־15 עם חור"
+
+#~ msgid "Puzzle with arrays"
+#~ msgstr "תצרף עם מערכים"
+
+#~ msgid ""
+#~ "The game is tested and offers to select a size from 3 to 5. There is a "
+#~ "human-understandable maximum value to avoid some bugs. Maximum size is 9 "
+#~ "as the image files are randomly selected depending on the first character "
+#~ "of their filename."
+#~ msgstr ""
+#~ "The game is tested and offers to select a size from 3 to 5. There is a "
+#~ "human-understandable maximum value to avoid some bugs. Maximum size is 9 "
+#~ "as the image files are randomly selected depending on the first character "
+#~ "of their filename."
