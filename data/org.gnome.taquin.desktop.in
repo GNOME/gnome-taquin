@@ -12,9 +12,9 @@ DBusActivatable=true
 Actions=Fifteen;Sixteen;
 
 [Desktop Action Fifteen]
-_Name=15-Puzzle with hole
+_Name=15-Puzzle
 Exec=gnome-taquin --fifteen
 
 [Desktop Action Sixteen]
-_Name=Puzzle with arrays
+_Name=16-Puzzle
 Exec=gnome-taquin --sixteen
