@@ -12,7 +12,7 @@
       <default>4</default>
       <range min="2" max="9"/>
       <summary>Number of tiles on each edge.</summary>
-      <description>The game offers to play with a board size from 3 to 5. The setting could be set from 2 (good for testing) to 9, limitated by the way files are selected.</description>
+      <description>The game offers to play with a board size from 3 to 5. The setting could be set from 2 (good for testing) to 9, limited by the way files are selected.</description>
     </key>
     <key name="theme" type="s">
       <default>'cats'</default>
