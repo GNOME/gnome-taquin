@@ -24,7 +24,7 @@ gnome_taquin_VALAFLAGS = \
 	--pkg librsvg-2.0 \
 	--pkg libcanberra \
 	--pkg libcanberra-gtk \
-	--target-glib 2.40
+	--target-glib $(GLIB_REQUIRED)
 
 gnome_taquin_LDADD = $(GNOME_TAQUIN_LIBS)
 

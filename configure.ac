@@ -29,6 +29,8 @@ PKG_CHECK_MODULES(GNOME_TAQUIN, [
   libcanberra-gtk3 >= $CANBERRA_GTK_REQUIRED
 ])
 
+AC_SUBST([GLIB_REQUIRED])
+
 AC_PATH_PROG([DESKTOP_FILE_VALIDATE], [desktop-file-validate], [/bin/true])
 
 dnl ###########################################################################
