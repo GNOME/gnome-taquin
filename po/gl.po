@@ -7,8 +7,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2015-02-03 22:33+0100\n"
-"PO-Revision-Date: 2015-02-03 22:43+0200\n"
+"POT-Creation-Date: 2015-02-19 10:31+0100\n"
+"PO-Revision-Date: 2015-02-19 10:32+0200\n"
 "Last-Translator: Fran Dieguez <frandieguez@gnome.org>\n"
 "Language-Team: gnome-l10n-gl@gnome.org\n"
 "Language: en_GB\n"
@@ -67,11 +67,11 @@ msgstr "Desfacer o movemento máis recente"
 msgid "Go back to the current game"
 msgstr "Volver ao xogo actual"
 
-#: ../data/taquin.ui.h:9
+#: ../data/taquin.ui.h:9 ../data/org.gnome.taquin.desktop.in.h:4
 msgid "15-Puzzle"
 msgstr "Quebracabezas 15"
 
-#: ../data/taquin.ui.h:10
+#: ../data/taquin.ui.h:10 ../data/org.gnome.taquin.desktop.in.h:5
 msgid "16-Puzzle"
 msgstr "Quebracabezas 16"
 
@@ -115,29 +115,18 @@ msgstr ""
 msgid "puzzle;"
 msgstr "quebracabezas;"
 
-#: ../data/org.gnome.taquin.desktop.in.h:4
-msgid "15-Puzzle with hole"
-msgstr "Quebracabezas 15 con buraco"
-
-#: ../data/org.gnome.taquin.desktop.in.h:5
-msgid "Puzzle with arrays"
-msgstr "Quebracabezas con matriz"
-
 #: ../data/org.gnome.taquin.gschema.xml.h:1
 msgid "Number of tiles on each edge."
 msgstr "Número de teselas en cada bordo."
 
 #: ../data/org.gnome.taquin.gschema.xml.h:2
 msgid ""
-"The game is tested and offers to select a size from 3 to 5. There is a human-"
-"understandable maximum value to avoid some bugs. Maximum size is 9 as the "
-"image files are randomly selected depending on the first character of their "
-"filename."
+"The game offers to play with a board size from 3 to 5. The setting could be "
+"set from 2 (good for testing) to 9, limited by the way files are selected."
 msgstr ""
-"O xogo próbase e ofrece para seleccionar un tama;o desde 3 a 5. Hay un valor "
-"máximo entendíbel por persoas para evitar algúns erros. O tamaño máximo é 9 "
-"xa que seleccionan de forma aleatoria ficheiros de imaxe dependendo do "
-"primeiro caracter do seu nome de ficheiro."
+"O xogo permítelle xogar en taboleiros de tamaño desde 3 a 5. A opción pode "
+"estabelecerse desde 2 (boa para facer probas) a 9, limitada pola forma que "
+"os ficheiros se seleccionan."
 
 #: ../data/org.gnome.taquin.gschema.xml.h:3
 msgid "Name of the theme folder."
@@ -224,3 +213,20 @@ msgstr "Tema: Gatos ▾"
 #: ../src/taquin-main.vala:441
 msgid "Theme: Numbers ▾"
 msgstr "Tema: Números ▾"
+
+#~ msgid "15-Puzzle with hole"
+#~ msgstr "Quebracabezas 15 con buraco"
+
+#~ msgid "Puzzle with arrays"
+#~ msgstr "Quebracabezas con matriz"
+
+#~ msgid ""
+#~ "The game is tested and offers to select a size from 3 to 5. There is a "
+#~ "human-understandable maximum value to avoid some bugs. Maximum size is 9 "
+#~ "as the image files are randomly selected depending on the first character "
+#~ "of their filename."
+#~ msgstr ""
+#~ "O xogo próbase e ofrece para seleccionar un tama;o desde 3 a 5. Hay un "
+#~ "valor máximo entendíbel por persoas para evitar algúns erros. O tamaño "
+#~ "máximo é 9 xa que seleccionan de forma aleatoria ficheiros de imaxe "
+#~ "dependendo do primeiro caracter do seu nome de ficheiro."
