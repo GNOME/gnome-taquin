@@ -8,8 +8,8 @@ msgstr ""
 "Project-Id-Version: gnome-taquin master\n"
 "Report-Msgid-Bugs-To: http://bugzilla.gnome.org/enter_bug.cgi?product=gnome-"
 "taquin&keywords=I18N+L10N&component=general\n"
-"POT-Creation-Date: 2015-01-27 08:44+0000\n"
-"PO-Revision-Date: 2015-01-27 11:01+0100\n"
+"POT-Creation-Date: 2015-02-16 22:45+0000\n"
+"PO-Revision-Date: 2015-02-21 18:39+0100\n"
 "Last-Translator: Dušan Kazik <prescott66@gmail.com>\n"
 "Language-Team: Slovak <gnome-sk-list@gnome.org>\n"
 "Language: sk\n"
@@ -17,47 +17,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=3; plural=(n==1) ? 1 : (n>=2 && n<=4) ? 2 : 0;\n"
-"X-Generator: Poedit 1.7.3\n"
-
-#: ../data/org.gnome.taquin.appdata.xml.in.h:1
-msgid "GNOME Taquin"
-msgstr "Taquin GNOME"
-
-#: ../data/org.gnome.taquin.appdata.xml.in.h:2 ../data/org.gnome.taquin.desktop.in.h:2
-msgid "Slide tiles to their correct places"
-msgstr "Posúvajte diely na ich správne miesto"
-
-#: ../data/org.gnome.taquin.appdata.xml.in.h:3
-msgid ""
-"Taquin is a computer version of the 15-puzzle and other sliding puzzles."
-msgstr ""
-"Hra Taquin je počítačovou verziou hlavolamu s 15 dielmi a inými posuvnými "
-"hlavolamami."
-
-#: ../data/org.gnome.taquin.appdata.xml.in.h:4
-msgid ""
-"The object of Taquin is to move tiles so that they reach their places, "
-"either indicated with numbers, or with parts of a great image."
-msgstr ""
-"Cieľom hry Taquin je presunúť diely tak, aby bol každý na správnom mieste. "
-"Diely sú označené buď číslami, alebo ich tvoria časti obrázku."
-
-#: ../data/org.gnome.taquin.desktop.in.h:1 ../data/taquin.ui.h:6
-#: ../src/taquin-main.vala:98 ../src/taquin-main.vala:347
-msgid "Taquin"
-msgstr "Taquin"
-
-#: ../data/org.gnome.taquin.desktop.in.h:3
-msgid "puzzle;"
-msgstr "puzzle;hlavolam;"
-
-#: ../data/org.gnome.taquin.desktop.in.h:4
-msgid "15-Puzzle with hole"
-msgstr "Hlavolam s 15 dielmi a voľným dielom"
-
-#: ../data/org.gnome.taquin.desktop.in.h:5
-msgid "Puzzle with arrays"
-msgstr "Hlavolam s dielmi"
+"X-Generator: Poedit 1.7.4\n"
 
 #: ../data/taquin-menus.ui.h:1
 msgid "_Sound"
@@ -95,6 +55,11 @@ msgstr "Mačky"
 msgid "Numbers"
 msgstr "Čísla"
 
+#: ../data/taquin.ui.h:6 ../data/org.gnome.taquin.desktop.in.h:1
+#: ../src/taquin-main.vala:98 ../src/taquin-main.vala:347
+msgid "Taquin"
+msgstr "Taquin"
+
 #: ../data/taquin.ui.h:7
 msgid "Undo your most recent move"
 msgstr "Vráti späť váš posledný posun"
@@ -103,11 +68,11 @@ msgstr "Vráti späť váš posledný posun"
 msgid "Go back to the current game"
 msgstr "Prejde späť na aktuálnu hru"
 
-#: ../data/taquin.ui.h:9
+#: ../data/taquin.ui.h:9 ../data/org.gnome.taquin.desktop.in.h:4
 msgid "15-Puzzle"
 msgstr "Hlavolam s 15 dielmi"
 
-#: ../data/taquin.ui.h:10
+#: ../data/taquin.ui.h:10 ../data/org.gnome.taquin.desktop.in.h:5
 msgid "16-Puzzle"
 msgstr "Hlavolam s 16 dielmi"
 
@@ -123,20 +88,45 @@ msgstr "_Začať odznovu"
 msgid "Start a new game"
 msgstr "Začne novú hru"
 
+#: ../data/org.gnome.taquin.appdata.xml.in.h:1
+msgid "GNOME Taquin"
+msgstr "Taquin GNOME"
+
+#: ../data/org.gnome.taquin.appdata.xml.in.h:2
+#: ../data/org.gnome.taquin.desktop.in.h:2
+msgid "Slide tiles to their correct places"
+msgstr "Posúvajte diely na ich správne miesto"
+
+#: ../data/org.gnome.taquin.appdata.xml.in.h:3
+msgid ""
+"Taquin is a computer version of the 15-puzzle and other sliding puzzles."
+msgstr ""
+"Hra Taquin je počítačovou verziou hlavolamu s 15 dielmi a inými posuvnými "
+"hlavolamami."
+
+#: ../data/org.gnome.taquin.appdata.xml.in.h:4
+msgid ""
+"The object of Taquin is to move tiles so that they reach their places, "
+"either indicated with numbers, or with parts of a great image."
+msgstr ""
+"Cieľom hry Taquin je presunúť diely tak, aby bol každý na správnom mieste. "
+"Diely sú označené buď číslami, alebo ich tvoria časti obrázku."
+
+#: ../data/org.gnome.taquin.desktop.in.h:3
+msgid "puzzle;"
+msgstr "puzzle;hlavolam;"
+
 #: ../data/org.gnome.taquin.gschema.xml.h:1
 msgid "Number of tiles on each edge."
 msgstr "Počet dielov na každej strane."
 
 #: ../data/org.gnome.taquin.gschema.xml.h:2
 msgid ""
-"The game is tested and offers to select a size from 3 to 5. There is a human-"
-"understandable maximum value to avoid some bugs. Maximum size is 9 as the "
-"image files are randomly selected depending on the first character of their "
-"filename."
+"The game offers to play with a board size from 3 to 5. The setting could be "
+"set from 2 (good for testing) to 9, limited by the way files are selected."
 msgstr ""
-"Hra je overená a umožňuje vybrať veľkosť od 3 po 5. Je vytvorená tak, aby ju "
-"pochopil každý bez problémov. Maximálna veľkosť je 9, podľa prvého znaku "
-"názvu súboru obrázku, ktorý je náhodne vybratý."
+"Hra ponúka hraciu plochu o veľkosti od 3 do 5. Nastavenie môže byť nastavené "
+"od 2 (vhodné pre skúšobnú hru) do 9, obmedzené spôsobom výberu súborov."
 
 #: ../data/org.gnome.taquin.gschema.xml.h:3
 msgid "Name of the theme folder."
@@ -222,3 +212,19 @@ msgstr "Téma: Mačky ▾"
 #: ../src/taquin-main.vala:441
 msgid "Theme: Numbers ▾"
 msgstr "Téma: Čísla ▾"
+
+#~ msgid "15-Puzzle with hole"
+#~ msgstr "Hlavolam s 15 dielmi a voľným dielom"
+
+#~ msgid "Puzzle with arrays"
+#~ msgstr "Hlavolam s dielmi"
+
+#~ msgid ""
+#~ "The game is tested and offers to select a size from 3 to 5. There is a "
+#~ "human-understandable maximum value to avoid some bugs. Maximum size is 9 "
+#~ "as the image files are randomly selected depending on the first character "
+#~ "of their filename."
+#~ msgstr ""
+#~ "Hra je overená a umožňuje vybrať veľkosť od 3 po 5. Je vytvorená tak, aby "
+#~ "ju pochopil každý bez problémov. Maximálna veľkosť je 9, podľa prvého "
+#~ "znaku názvu súboru obrázku, ktorý je náhodne vybratý."
