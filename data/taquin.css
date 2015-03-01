@@ -7,7 +7,7 @@ GtkRadioButton.radio-like-toggle#radio-sixteen {
 
 GtkRadioButton.radio-like-toggle {
     background-repeat: no-repeat;
-    /* width is requested by the widget: 200 */
+    /* width is requested by the widget: 197 */
     padding-top: 15px;
     padding-bottom: 185px;
     background-position: center 25px;

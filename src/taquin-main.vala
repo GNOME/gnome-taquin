@@ -1,6 +1,6 @@
 /* -*- Mode: vala; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*-
  *
- * Copyright (C) 2014 Arnaud Bonatti <arnaud.bonatti@gmail.com>
+ * Copyright (C) 2014-2015 Arnaud Bonatti <arnaud.bonatti@gmail.com>
  *
  * This file is part of Taquin.
  *
@@ -24,34 +24,22 @@ public class Taquin : Gtk.Application
 {
     /* Settings */
     private GLib.Settings settings;
-    private bool is_tiled;
-    private bool is_maximized;
-    private int window_width;
-    private int window_height;
     private static int tmp_size = 0;
-    private string tmp_type;
+    private GameType? tmp_type = null;
     private bool type_changed = false;
     private bool size_changed = false;
     private bool theme_changed = false;
     private static bool? sound = null;
 
     /* Widgets */
-    private ApplicationWindow window;
-    private HeaderBar headerbar;
-    private Button back_button;
-    private Button undo_button;
-    private Button start_game_button;
-    private Button start_over_button;
-    private Stack stack;
+    private GameWindow window;
     private MenuButton size_button;
     private MenuButton theme_button;
     private TaquinView view;
 
     /* The game being played */
     private Game? game = null;
-    private SimpleAction undo_action;
     List<string> theme_dirlist;
-    private bool game_finished = false;
 
     private static const OptionEntry[] option_entries =
     {
@@ -67,16 +55,6 @@ public class Taquin : Gtk.Application
 
     private const GLib.ActionEntry app_actions[] =
     {
-        {"help", help_cb},
-        {"about", about_cb},
-        {"quit", quit}
-    };
-    private const GLib.ActionEntry win_actions[] =
-    {
-        {"new-game", new_game_cb},
-        {"start-game", start_game_cb},
-        {"back", back_cb},
-
         /* {"change-type", null, "s", null, null, change_type_cb},  TODO SimpleActionChangeStateCallback is deprecated...
         {"change-size", null, "s", null, null, change_size_cb},     http://valadoc.org/#!api=gio-2.0/GLib.SimpleActionChangeStateCallback
         {"change-theme", null, "s", null, null, change_theme_cb},   see comments about window.add_action (settings.create_action (…)) */
@@ -85,7 +63,9 @@ public class Taquin : Gtk.Application
         {"change-size", change_size_cb, "s"},
         {"change-theme", change_theme_cb, "s"},
 
-        {"undo", undo_cb}
+        {"help", help_cb},
+        {"about", about_cb},
+        {"quit", quit}
     };
 
     public static int main (string[] args)
@@ -96,7 +76,6 @@ public class Taquin : Gtk.Application
         Intl.textdomain (GETTEXT_PACKAGE);
 
         Environment.set_application_name (_("Taquin"));
-
         Window.set_default_icon_name ("gnome-taquin");
 
         return new Taquin ().run (args);
@@ -121,15 +100,15 @@ public class Taquin : Gtk.Application
         if (tmp_size != 0 && tmp_size < 2)
             tmp_size = 2;
 
-        if (options.contains ("unmute"))
-            sound = true;
         if (options.contains ("mute"))
             sound = false;
+        else if (options.contains ("unmute"))
+            sound = true;
 
         if (options.contains ("fifteen"))
-            tmp_type = "fifteen";
+            tmp_type = GameType.FIFTEEN;
         else if (options.contains ("sixteen"))
-            tmp_type = "sixteen";
+            tmp_type = GameType.SIXTEEN;
 
         return -1;
     }
@@ -138,7 +117,7 @@ public class Taquin : Gtk.Application
     {
         base.startup ();
 
-        var css_provider = new CssProvider ();
+        CssProvider css_provider = new CssProvider ();
         css_provider.load_from_resource ("/org/gnome/taquin/ui/taquin.css");
         StyleContext.add_provider_for_screen (Gdk.Screen.get_default (), css_provider, STYLE_PROVIDER_PRIORITY_APPLICATION);
 
@@ -148,36 +127,34 @@ public class Taquin : Gtk.Application
         if (tmp_size > 1)
             settings.set_int ("size", tmp_size);
         if (tmp_type != null)
-            settings.set_string ("type", tmp_type);
+            settings.set_string ("type", tmp_type.to_string());     // TODO better?
 
-        var builder = new Builder.from_resource ("/org/gnome/taquin/ui/taquin.ui");
-        window = builder.get_object ("taquin-window") as ApplicationWindow;
-        window.size_allocate.connect (size_allocate_cb);
-        window.window_state_event.connect (window_state_event_cb);
-        window.set_default_size (settings.get_int ("window-width"), settings.get_int ("window-height"));
-        if (settings.get_boolean ("window-is-maximized"))
-            window.maximize ();
+        /* UI parts */
+        view = new TaquinView ();
 
-        add_action_entries (app_actions, this);
-        window.add_action_entries (win_actions, this);
-        undo_action = (SimpleAction) window.lookup_action ("undo");
-        // TODO window.add_action (settings.create_action ("type"));        // Problem: same bug as in Iagno, the settings are resetted to the first radiobutton found
-        // TODO window.add_action (settings.create_action ("size"));        // Problem: cannot use this way for an integer from a menu; works for radiobuttons in Iagno
-        // TODO window.add_action (settings.create_action ("theme"));       // Problem: a bug that exists in the three tries, and in Iagno: you cannot manually change the gsetting or it bugs completely (gsetting between two states)
-        set_accels_for_action ("app.help", {"F1"});
-        set_accels_for_action ("app.quit", {"<Primary>q"});
+        Builder builder = new Builder.from_resource ("/org/gnome/taquin/ui/taquin-screens.ui");
+
+        /* Window */
+        window = new GameWindow (_("Taquin"),
+                                 settings.get_int ("window-width"),
+                                 settings.get_int ("window-height"),
+                                 settings.get_boolean ("window-is-maximized"),
+                                 true,     // TODO add an option to go to new-game screen?
+                                 GameWindowFlags.SHOW_UNDO,
+                                 (Box) builder.get_object ("new-game-screen"),
+                                 view);
+        window.play.connect (start_game);
+        window.undo.connect (undo_cb);
+
+        // TODO use UI file?
         set_accels_for_action ("win.new-game", {"<Primary>n"});
+        set_accels_for_action ("win.start-game", {"<Primary><Shift>n"});
         set_accels_for_action ("win.undo", {"<Primary>z"});
-        add_action (settings.create_action ("sound"));
+        set_accels_for_action ("win.redo", {"<Primary><Shift>z"});
+        set_accels_for_action ("win.back", {"Escape"});
 
-        headerbar = builder.get_object ("headerbar") as HeaderBar;
-        back_button = builder.get_object ("back-button") as Button;
-        undo_button = builder.get_object ("undo-button") as Button;
-        start_game_button = builder.get_object ("start-game-button") as Button;
-        start_over_button = builder.get_object ("start-over-button") as Button;
-        stack = builder.get_object ("main-stack") as Stack;
-
-        size_button = builder.get_object ("size-button") as MenuButton;
+        /* New-game screen signals */
+        size_button = (MenuButton) builder.get_object ("size-button");
         settings.changed["size"].connect (() => {
             if (!size_changed)
                 update_size_button_label (settings.get_int ("size"));
@@ -185,7 +162,7 @@ public class Taquin : Gtk.Application
         });
         update_size_button_label (settings.get_int ("size"));
 
-        theme_button = builder.get_object ("theme-button") as MenuButton;
+        theme_button = (MenuButton) builder.get_object ("theme-button");
         settings.changed["theme"].connect (() => {
             if (!theme_changed)
                 update_theme (settings.get_string ("theme"));
@@ -204,14 +181,15 @@ public class Taquin : Gtk.Application
         var button_name = "radio-" + settings.get_string ("type");
         ((RadioButton) builder.get_object (button_name)).set_active (true);
 
-        var game_box = builder.get_object ("game-box") as Box;
-        view = new TaquinView ();
-        view.halign = Align.FILL;
-        view.show ();
-        game_box.pack_start (view, true, true, 0);
+        add_action_entries (app_actions, this);
+        add_action (settings.create_action ("sound"));
+        // TODO window.add_action (settings.create_action ("type"));        // Problem: same bug as in Iagno, the settings are resetted to the first radiobutton found
+        // TODO window.add_action (settings.create_action ("size"));        // Problem: cannot use this way for an integer from a menu; works for radiobuttons in Iagno
+        // TODO window.add_action (settings.create_action ("theme"));       // Problem: a bug that exists in the three tries, and in Iagno: you cannot manually change the gsetting or it bugs completely (gsetting between two states)
+
+        start_game ();
 
         add_window (window);
-        start_game ();
     }
 
     protected override void activate ()
@@ -222,73 +200,7 @@ public class Taquin : Gtk.Application
     protected override void shutdown ()
     {
         base.shutdown ();
-
-        /* Save window state; don’t try to query it here */
-        settings.set_int ("window-width", window_width);
-        settings.set_int ("window-height", window_height);
-        settings.set_boolean ("window-is-maximized", is_maximized);
-    }
-
-    /*\
-    * * Window events
-    \*/
-
-    private void size_allocate_cb (Allocation allocation)
-    {
-        if (is_maximized || is_tiled)
-            return;
-        window_width = allocation.width;
-        window_height = allocation.height;
-    }
-
-    private bool window_state_event_cb (Gdk.EventWindowState event)
-    {
-        if ((event.changed_mask & Gdk.WindowState.MAXIMIZED) != 0)
-            is_maximized = (event.new_window_state & Gdk.WindowState.MAXIMIZED) != 0;
-        /* We don’t save this state, but track it for saving size allocation */
-        if ((event.changed_mask & Gdk.WindowState.TILED) != 0)
-            is_tiled = (event.new_window_state & Gdk.WindowState.TILED) != 0;
-        return false;
-    }
-
-    /*\
-    * * Switching the Stack
-    \*/
-
-    private void new_game_cb ()
-    {
-        headerbar.set_subtitle (null);
-        stack.set_transition_type (StackTransitionType.SLIDE_LEFT);
-        stack.set_transition_duration (800);
-        undo_button.hide ();
-        stack.set_visible_child_name ("start-box");
-        back_button.show ();
-        if (undo_action.enabled)
-            back_button.grab_focus ();
-        else
-            start_game_button.grab_focus ();
-    }
-
-    private void back_cb ()
-    {
-        stack.set_transition_type (StackTransitionType.SLIDE_RIGHT);
-        stack.set_transition_duration (800);
-        back_button.hide ();
-        stack.set_visible_child_name ("frame");
-        undo_button.show ();
-        if (game_finished)
-            start_over_button.grab_focus ();    // TODO change headerbar subtitle?
-        else
-            view.grab_focus ();
-    }
-
-    private void start_game_cb ()
-    {
-        stack.set_transition_type (StackTransitionType.SLIDE_DOWN);
-        stack.set_transition_duration (1500);
-        back_button.hide ();
-        start_game ();
-        undo_button.show ();
+        window.save_state (settings);
     }
 
     /*\
@@ -300,32 +212,27 @@ public class Taquin : Gtk.Application
         if (game != null)
             SignalHandler.disconnect_by_func (game, null, this);
 
-        undo_action.set_enabled (false);
-        game_finished = false;
-
-        var type = (GameType) settings.get_enum ("type");
-        var size = settings.get_int ("size");
+        GameType type = (GameType) settings.get_enum ("type");
+        int size = settings.get_int ("size");
         game = new Game (type, size);
         view.game = game;
-        view.grab_focus ();
 
-        var filename = "";
+        string filename = "";
         var dirlist = theme_dirlist.copy ();
         do
         {
-            var random = Random.int_range (0, (int) dirlist.length());
+            int random = Random.int_range (0, (int) dirlist.length());
             filename = dirlist.nth_data(random);
             unowned List<string> entry = dirlist.find_custom (filename, strcmp);
             dirlist.remove_link (entry);
         } while (filename[0] == '0' || (filename[0] != '1' && filename[0] != size.to_string ()[0] && dirlist.length () != 0));
         view.theme = Path.build_filename (DATA_DIRECTORY, "themes", settings.get_string ("theme"), filename);
+        view.realize ();        // TODO does that help?
 
         game.complete.connect (game_complete_cb);
         game.cannot_move.connect (cannot_move_cb);
-        game.cannot_undo_more.connect (cannot_undo_more_cb);
+        game.cannot_undo_more.connect (window.cannot_undo_more);
         game.move.connect (move_cb);
-
-        stack.set_visible_child_name ("frame"); // FIXME lag…
     }
 
     /*\
@@ -346,7 +253,7 @@ public class Taquin : Gtk.Application
         show_about_dialog (window,
                            "name", _("Taquin"),
                            "version", VERSION,
-                           "copyright", "Copyright © 2014 Arnaud Bonatti",
+                           "copyright", "Copyright © 2014-2015 Arnaud Bonatti",
                            "license-type", License.GPL_3_0,
                            "comments", _("A classic 15-puzzle game"),
                            "authors", authors,
@@ -371,7 +278,7 @@ public class Taquin : Gtk.Application
     }
 
     /*\
-    * * Undoing and signals from game
+    * * Signals from window
     \*/
 
     private void undo_cb ()
@@ -380,27 +287,27 @@ public class Taquin : Gtk.Application
         play_sound ("sliding-1");
     }
 
-    private void cannot_undo_more_cb ()
-    {
-        undo_action.set_enabled (false);
-        view.grab_focus ();
-    }
+    /*\
+    * * Signals from game
+    \*/
+
     private void move_cb ()
     {
-        headerbar.set_subtitle (null);
-        undo_action.set_enabled (true);
-        play_sound ("sliding-1");
+        window.set_subtitle (null);
+        window.undo_action.set_enabled (true);
+        play_sound ("sliding-1");       // TODO sliding-n??
     }
+
     private void cannot_move_cb ()
     {
-        headerbar.set_subtitle (_("You can’t move this tile!"));
+        window.set_subtitle (_("You can’t move this tile!"));
     }
+
     private void game_complete_cb ()
     {
-        game_finished = true;
-        start_over_button.grab_focus ();
-        headerbar.set_subtitle (_("Bravo! You finished the game!"));
-        undo_action.set_enabled (false);
+        window.finish_game ();
+        window.set_subtitle (_("Bravo! You finished the game!"));
+        window.undo_action.set_enabled (false);    // Taquin specific
         play_sound ("gameover");
     }
 
@@ -417,7 +324,7 @@ public class Taquin : Gtk.Application
     private void change_size_cb (SimpleAction action, Variant? variant)
     {
         size_changed = true;
-        var size = int.parse (variant.get_string ());
+        int size = int.parse (variant.get_string ());
         update_size_button_label (size);
         settings.set_int ("size", size);
     }
@@ -429,7 +336,7 @@ public class Taquin : Gtk.Application
     private void change_theme_cb (SimpleAction action, Variant? variant)
     {
         theme_changed = true;
-        var name = variant.get_string ();
+        string name = variant.get_string ();
         update_theme (name);
         settings.set_string ("theme", name);
     }

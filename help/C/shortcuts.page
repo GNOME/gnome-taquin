@@ -62,6 +62,19 @@
       </tr>
     </table>
   </section>
+  <section id="start-screen">
+    <title>Start Screen shortcuts</title>
+    <table frame="all" rules="cols" shade="rows">
+      <tr>
+        <td><p>New Game</p></td>
+        <td><p><keyseq><key>Ctrl</key><key>Shift</key><key>N</key></keyseq></p></td>
+      </tr>
+      <tr>
+        <td><p>Back to previous game (if any)</p></td>
+        <td><p><key>Escape</key></p></td>
+      </tr>
+    </table>
+  </section>
   <section id="general">
     <title>General shortcuts</title>
     <table frame="all" rules="cols" shade="rows">

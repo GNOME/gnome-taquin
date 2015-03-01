@@ -3,6 +3,7 @@ bin_PROGRAMS = gnome-taquin
 BUILT_SOURCES = taquin-resources.c
 
 gnome_taquin_SOURCES = \
+	game-window.vala \
 	taquin-main.vala \
 	taquin-view.vala \
 	taquin-game.vala \
@@ -24,6 +25,7 @@ gnome_taquin_VALAFLAGS = \
 	--pkg librsvg-2.0 \
 	--pkg libcanberra \
 	--pkg libcanberra-gtk \
+	--gresources taquin.gresource.xml \
 	--target-glib $(GLIB_REQUIRED)
 
 gnome_taquin_LDADD = $(GNOME_TAQUIN_LIBS)

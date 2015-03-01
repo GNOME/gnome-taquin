@@ -4,6 +4,7 @@ SUBDIRS = \
 
 dist_noinst_DATA = \
 	taquin-menus.ui \
+	taquin-screens.ui \
 	taquin.ui \
 	taquin.css \
 	schema-15.png \

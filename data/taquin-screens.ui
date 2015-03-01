@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<interface>
+  <requires lib="gtk+" version="3.12"/>
+  <menu id="size-menu"><!-- TODO 3/4/5 accels? -->
+    <section>
+      <item>
+        <attribute name="label" translatable="yes">3 × 3</attribute>
+        <attribute name="action">app.change-size</attribute>
+        <attribute name="target">3</attribute>
+      </item>
+      <item>
+        <attribute name="label" translatable="yes">4 × 4</attribute>
+        <attribute name="action">app.change-size</attribute>
+        <attribute name="target">4</attribute>
+      </item>
+      <item>
+        <attribute name="label" translatable="yes">5 × 5</attribute>
+        <attribute name="action">app.change-size</attribute>
+        <attribute name="target">5</attribute>
+      </item>
+    </section>
+  </menu>
+  <menu id="theme-menu">
+    <section>
+      <item>
+        <attribute name="label" translatable="yes">Cats</attribute>
+        <attribute name="action">app.change-theme</attribute>
+        <attribute name="target">cats</attribute>
+      </item>
+      <item>
+        <attribute name="label" translatable="yes">Numbers</attribute>
+        <attribute name="action">app.change-theme</attribute>
+        <attribute name="target">numbers</attribute>
+      </item>
+    </section>
+  </menu>
+  <object class="GtkBox" id="new-game-screen">
+    <property name="orientation">vertical</property>
+    <property name="visible">True</property>
+    <property name="spacing">6</property>
+    <child>
+      <object class="GtkBox">
+        <property name="orientation">horizontal</property>
+        <property name="visible">True</property>
+        <property name="homogeneous">True</property>
+        <property name="spacing">6</property>
+        <child>
+          <object class="GtkRadioButton" id="radio-fifteen">
+            <property name="visible">True</property>
+            <property name="name">radio-fifteen</property>
+            <style><class name="radio-like-toggle"/></style>
+            <property name="focus-on-click">False</property>
+            <property name="relief">none</property> <!-- could probably be replaced by a use of the "flat" style-class -->
+            <property name="action-name">app.change-type</property>
+            <property name="action-target">'fifteen'</property>
+            <property name="draw-indicator">False</property>
+            <property name="label" translatable="yes">15-Puzzle</property>
+            <property name="width-request">197</property>
+          </object>
+        </child>
+        <child>
+          <object class="GtkRadioButton" id="radio-sixteen">
+            <property name="visible">True</property>
+            <property name="name">radio-sixteen</property>
+            <style><class name="radio-like-toggle"/></style>
+            <property name="focus-on-click">False</property>
+            <property name="relief">none</property>
+            <property name="action-name">app.change-type</property>
+            <property name="action-target">'sixteen'</property>
+            <property name="group">radio-fifteen</property>
+            <property name="draw-indicator">False</property>
+            <property name="label" translatable="yes">16-Puzzle</property>
+            <property name="width-request">197</property>
+          </object>
+        </child>
+      </object>
+      <packing>
+        <property name="expand">True</property>
+        <property name="fill">True</property>
+      </packing>
+    </child>
+    <child>
+      <object class="GtkBox">
+        <property name="orientation">horizontal</property>
+        <property name="visible">True</property>
+        <property name="homogeneous">True</property>
+        <property name="spacing">6</property>
+        <child>
+          <object class="GtkMenuButton" id="size-button">
+            <property name="visible">True</property>
+            <property name="use-underline">True</property>
+            <property name="menu-model">size-menu</property>
+            <property name="height-request">60</property>
+            <style><class name="menubutton-like-combo"/></style>
+            <property name="relief">none</property> <!-- could probably be replaced by a use of the "flat" style-class -->
+          </object>
+          <packing>
+            <property name="expand">True</property>
+            <property name="fill">True</property>
+          </packing>
+        </child>
+        <child>
+          <object class="GtkMenuButton" id="theme-button">
+            <property name="visible">True</property>
+            <property name="use-underline">True</property>
+            <property name="menu-model">theme-menu</property>
+            <property name="height-request">60</property>
+            <style><class name="menubutton-like-combo"/></style>
+            <property name="relief">none</property>
+          </object>
+          <packing>
+            <property name="expand">True</property>
+            <property name="fill">True</property>
+          </packing>
+        </child>
+      </object>
+      <packing>
+        <property name="expand">True</property>
+        <property name="fill">True</property>
+      </packing>
+    </child>
+  </object>
+</interface>

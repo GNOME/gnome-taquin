@@ -22,6 +22,19 @@ public enum GameType
 {
     FIFTEEN,
     SIXTEEN;
+
+    public string to_string ()
+    {
+        switch (this)
+        {
+            case FIFTEEN:
+                return "fifteen";
+            case SIXTEEN:
+                return "sixteen";
+            default:
+                assert_not_reached ();
+        }
+    }
 }
 
 public class Game : Object
