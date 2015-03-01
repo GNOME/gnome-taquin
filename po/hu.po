@@ -2,16 +2,16 @@
 # Copyright (C) 2014 gnome-taquin's COPYRIGHT HOLDER
 # This file is distributed under the same license as the gnome-taquin package.
 #
-# Balázs Úr <urbalazs@gmail.com>, 2014.
+# Balázs Úr <urbalazs@gmail.com>, 2014, 2015.
 msgid ""
 msgstr ""
 "Project-Id-Version: gnome-taquin master\n"
 "Report-Msgid-Bugs-To: http://bugzilla.gnome.org/enter_bug.cgi?product=gnome-"
 "taquin&keywords=I18N+L10N&component=general\n"
-"POT-Creation-Date: 2014-12-27 05:05+0000\n"
-"PO-Revision-Date: 2014-12-29 21:27+0100\n"
+"POT-Creation-Date: 2015-03-01 04:45+0000\n"
+"PO-Revision-Date: 2015-03-01 16:12+0100\n"
 "Last-Translator: Balázs Úr <urbalazs@gmail.com>\n"
-"Language-Team: Hungarian <gnome-hu-list@gnome.org>\n"
+"Language-Team: Hungarian <openscope at gmail dot com>\n"
 "Language: hu\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -19,11 +19,82 @@ msgstr ""
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
 "X-Generator: Lokalize 1.2\n"
 
+#: ../data/taquin-menus.ui.h:1
+msgid "_Sound"
+msgstr "_Hang"
+
+#: ../data/taquin-menus.ui.h:2
+msgid "_Help"
+msgstr "_Súgó"
+
+#: ../data/taquin-menus.ui.h:3
+msgid "_About"
+msgstr "_Névjegy"
+
+#: ../data/taquin-menus.ui.h:4
+msgid "_Quit"
+msgstr "_Kilépés"
+
+#: ../data/taquin-screens.ui.h:1
+msgid "3 × 3"
+msgstr "3 × 3"
+
+#: ../data/taquin-screens.ui.h:2
+msgid "4 × 4"
+msgstr "4 × 4"
+
+#: ../data/taquin-screens.ui.h:3
+msgid "5 × 5"
+msgstr "5 × 5"
+
+#: ../data/taquin-screens.ui.h:4
+msgid "Cats"
+msgstr "Macskák"
+
+#: ../data/taquin-screens.ui.h:5
+msgid "Numbers"
+msgstr "Számok"
+
+#: ../data/taquin-screens.ui.h:6 ../data/org.gnome.taquin.desktop.in.h:4
+msgid "15-Puzzle"
+msgstr "15-ös kirakó"
+
+#: ../data/taquin-screens.ui.h:7 ../data/org.gnome.taquin.desktop.in.h:5
+msgid "16-Puzzle"
+msgstr "16-os kirakó"
+
+#: ../data/taquin.ui.h:1
+msgid "Go back to the current game"
+msgstr "Vissza a jelenlegi játékhoz"
+
+#: ../data/taquin.ui.h:2
+msgid "_Start Game"
+msgstr "Játék _indítása"
+
+#: ../data/taquin.ui.h:3
+#| msgid "Start a new game"
+msgid "Start a new game as configured"
+msgstr "Új játék indítása a beállítás szerint"
+
+#: ../data/taquin.ui.h:4
+msgid "_Start Over"
+msgstr "Újra_kezdés"
+
+#: ../data/taquin.ui.h:5
+#| msgid "Start a new game"
+msgid "Configure a new game"
+msgstr "Új játék beállítása"
+
+#: ../data/taquin.ui.h:6
+msgid "Start a new game"
+msgstr "Új játék indítása"
+
 #: ../data/org.gnome.taquin.appdata.xml.in.h:1
 msgid "GNOME Taquin"
 msgstr "GNOME Taquin"
 
-#: ../data/org.gnome.taquin.appdata.xml.in.h:2 ../data/org.gnome.taquin.desktop.in.h:2
+#: ../data/org.gnome.taquin.appdata.xml.in.h:2
+#: ../data/org.gnome.taquin.desktop.in.h:2
 msgid "Slide tiles to their correct places"
 msgstr "Csúsztassa a csempéket a megfelelő helyükre"
 
@@ -42,8 +113,9 @@ msgstr ""
 "A Taquin lényege a csempék mozgatása, hogy azok elérjenek saját helyükre, "
 "amelyek vagy számokkal vannak jelölve, vagy egy nagy kép részleteivel."
 
-#: ../data/org.gnome.taquin.desktop.in.h:1 ../data/taquin.ui.h:6
-#: ../src/taquin-main.vala:98 ../src/taquin-main.vala:346
+#. Window
+#: ../data/org.gnome.taquin.desktop.in.h:1 ../src/taquin-main.vala:78
+#: ../src/taquin-main.vala:138 ../src/taquin-main.vala:254
 msgid "Taquin"
 msgstr "Taquin"
 
@@ -51,93 +123,17 @@ msgstr "Taquin"
 msgid "puzzle;"
 msgstr "puzzle;kirakó;fejtörő;"
 
-#: ../data/org.gnome.taquin.desktop.in.h:4
-msgid "15-Puzzle with hole"
-msgstr "15-ös kirakó lyukkal"
-
-#: ../data/org.gnome.taquin.desktop.in.h:5
-msgid "Puzzle with arrays"
-msgstr "Kirakó tömbökkel"
-
-#: ../data/taquin-menus.ui.h:1
-msgid "_Sound"
-msgstr "_Hang"
-
-#: ../data/taquin-menus.ui.h:2
-msgid "_Help"
-msgstr "_Súgó"
-
-#: ../data/taquin-menus.ui.h:3
-msgid "_About"
-msgstr "_Névjegy"
-
-#: ../data/taquin-menus.ui.h:4
-msgid "_Quit"
-msgstr "_Kilépés"
-
-#: ../data/taquin.ui.h:1
-msgid "3 × 3"
-msgstr "3 × 3"
-
-#: ../data/taquin.ui.h:2
-msgid "4 × 4"
-msgstr "4 × 4"
-
-#: ../data/taquin.ui.h:3
-msgid "5 × 5"
-msgstr "5 × 5"
-
-#: ../data/taquin.ui.h:4
-msgid "Cats"
-msgstr "Macskák"
-
-#: ../data/taquin.ui.h:5
-msgid "Numbers"
-msgstr "Számok"
-
-#: ../data/taquin.ui.h:7
-msgid "Undo your most recent move"
-msgstr "A legutóbbi lépés visszavonása"
-
-#: ../data/taquin.ui.h:8
-msgid "Go back to the current game"
-msgstr "Vissza a jelenlegi játékhoz"
-
-#: ../data/taquin.ui.h:9
-msgid "15-Puzzle"
-msgstr "15-ös kirakó"
-
-#: ../data/taquin.ui.h:10
-msgid "16-Puzzle"
-msgstr "16-os kirakó"
-
-#: ../data/taquin.ui.h:11
-msgid "_Start Game"
-msgstr "Játék _indítása"
-
-#: ../data/taquin.ui.h:12
-msgid "_Start Over"
-msgstr "Újra_kezdés"
-
-#: ../data/taquin.ui.h:13
-msgid "Start a new game"
-msgstr "Új játék indítása"
-
 #: ../data/org.gnome.taquin.gschema.xml.h:1
 msgid "Number of tiles on each edge."
 msgstr "Csempék száma minden szélen."
 
 #: ../data/org.gnome.taquin.gschema.xml.h:2
 msgid ""
-"The game is tested and offers to select a size from 3 to 5. There is a human-"
-"understandable maximum value to avoid some bugs. Maximum size is 9 as the "
-"image files are randomly selected depending on the first character of their "
-"filename."
+"The game offers to play with a board size from 3 to 5. The setting could be "
+"set from 2 (good for testing) to 9, limited by the way files are selected."
 msgstr ""
-"A játék ellenőrzött és 3-5 méretű választást javasol. Létezik egy ember "
-"által megérthető legnagyobb érték a hibák elkerülése érdekében. A legnagyobb "
-"méret 9, mivel a képfájlok véletlenszerűen kerülnek kiválasztásra a "
-"fájlnevük első karakterétől függően."
+"A játék 3 és 5 közötti táblaméreten kínálja a játékot. A beállítás 2-től "
+"(teszteléshez jó) 9-ig állítható a kiválasztott fájlok alapján korlátozva."
 
 #: ../data/org.gnome.taquin.gschema.xml.h:3
 msgid "Name of the theme folder."
@@ -168,62 +164,80 @@ msgstr "Az ablak magassága képpontban."
 msgid "true if the window is maximized."
 msgstr "igaz, ha az ablak teljes méretű."
 
-#. { "no-gtk", 0, 0, OptionArg.NONE, null, N_("Begins a console game"), null}, TODO
-#: ../src/taquin-main.vala:59
+#: ../src/game-window.vala:134
+msgid "Undo your most recent move"
+msgstr "A legutóbbi lépés visszavonása"
+
+#: ../src/taquin-main.vala:46
 msgid "Play the classical 1880s’ 15-puzzle"
 msgstr "Az 1880-as klasszikus 15-ös kirakó indítása"
 
-#: ../src/taquin-main.vala:60
+#: ../src/taquin-main.vala:47
 msgid "Try this fun alternative 16-puzzle"
 msgstr "Próbálja ki ezt a vicces alternatív 16-os kirakót"
 
-#: ../src/taquin-main.vala:61
-#| msgid "Sets the puzzle edges’ size (2-9, 2 for debug only)"
+#: ../src/taquin-main.vala:48
 msgid "Sets the puzzle edges’ size (3-5, 2-9 for debug)"
 msgstr "Beállítja a kirakó széleinek méretét (3-5, 2-9 a hibakereséshez)"
 
-#: ../src/taquin-main.vala:62
+#: ../src/taquin-main.vala:49
 msgid "Turn off the sound"
 msgstr "Hang kikapcsolása"
 
-#: ../src/taquin-main.vala:63
+#: ../src/taquin-main.vala:50
 msgid "Turn on the sound"
 msgstr "Hang bekapcsolása"
 
-#: ../src/taquin-main.vala:64
+#: ../src/taquin-main.vala:51
 msgid "Print release version and exit"
 msgstr "Kiadási verzió kiírása és kilépés"
 
-#: ../src/taquin-main.vala:342
+#: ../src/taquin-main.vala:250
 msgid "(see COPYING.themes for informations)"
 msgstr "(további információkért lásd a COPYING.themes fájlt)"
 
-#: ../src/taquin-main.vala:350
+#: ../src/taquin-main.vala:258
 msgid "A classic 15-puzzle game"
 msgstr "Egy klasszikus 15-ös kirakós játék"
 
-#: ../src/taquin-main.vala:354
+#: ../src/taquin-main.vala:262
 msgid "translator-credits"
 msgstr "Úr Balázs <urbalazs@gmail.com>, 2014."
 
-#: ../src/taquin-main.vala:395
+#: ../src/taquin-main.vala:303
 msgid "You can’t move this tile!"
 msgstr "Ezt a csempét nem mozdíthatja!"
 
-#: ../src/taquin-main.vala:401
+#: ../src/taquin-main.vala:309
 msgid "Bravo! You finished the game!"
 msgstr "Bravó! Befejezte a játékot!"
 
-#: ../src/taquin-main.vala:425
+#: ../src/taquin-main.vala:333
 #, c-format
 msgid "Size: %d × %d ▾"
 msgstr "Méret: %d × %d ▾"
 
-#: ../src/taquin-main.vala:439
+#: ../src/taquin-main.vala:347
 msgid "Theme: Cats ▾"
 msgstr "Téma: Macskák ▾"
 
-#: ../src/taquin-main.vala:440
+#: ../src/taquin-main.vala:348
 msgid "Theme: Numbers ▾"
 msgstr "Téma: Számok ▾"
 
+#~ msgid "15-Puzzle with hole"
+#~ msgstr "15-ös kirakó lyukkal"
+
+#~ msgid "Puzzle with arrays"
+#~ msgstr "Kirakó tömbökkel"
+
+#~ msgid ""
+#~ "The game is tested and offers to select a size from 3 to 5. There is a "
+#~ "human-understandable maximum value to avoid some bugs. Maximum size is 9 "
+#~ "as the image files are randomly selected depending on the first character "
+#~ "of their filename."
+#~ msgstr ""
+#~ "A játék ellenőrzött és 3-5 méretű választást javasol. Létezik egy ember "
+#~ "által megérthető legnagyobb érték a hibák elkerülése érdekében. A "
+#~ "legnagyobb méret 9, mivel a képfájlok véletlenszerűen kerülnek "
+#~ "kiválasztásra a fájlnevük első karakterétől függően."
