@@ -8,8 +8,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: taquin master\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2015-02-17 00:45+0200\n"
-"PO-Revision-Date: 2015-02-17 00:45+0200\n"
+"POT-Creation-Date: 2015-03-02 16:08+0200\n"
+"PO-Revision-Date: 2015-03-02 16:10+0200\n"
 "Last-Translator: Yosef Or Boczko <yoseforb@gmail.com>\n"
 "Language-Team: עברית <>\n"
 "Language: he\n"
@@ -35,56 +35,55 @@ msgstr "על _אודות"
 msgid "_Quit"
 msgstr "_יציאה"
 
-#: ../data/taquin.ui.h:1
+#: ../data/taquin-screens.ui.h:1
 msgid "3 × 3"
 msgstr "3 × 3"
 
-#: ../data/taquin.ui.h:2
+#: ../data/taquin-screens.ui.h:2
 msgid "4 × 4"
 msgstr "4 × 4"
 
-#: ../data/taquin.ui.h:3
+#: ../data/taquin-screens.ui.h:3
 msgid "5 × 5"
 msgstr "5 × 5"
 
-#: ../data/taquin.ui.h:4
+#: ../data/taquin-screens.ui.h:4
 msgid "Cats"
 msgstr "חתולים"
 
-#: ../data/taquin.ui.h:5
+#: ../data/taquin-screens.ui.h:5
 msgid "Numbers"
 msgstr "מספרים"
 
-#: ../data/taquin.ui.h:6 ../data/org.gnome.taquin.desktop.in.h:1
-#: ../src/taquin-main.vala:98 ../src/taquin-main.vala:347
-msgid "Taquin"
-msgstr "Taquin"
-
-#: ../data/taquin.ui.h:7
-msgid "Undo your most recent move"
-msgstr "ביטול המהלך האחרון שלך"
-
-#: ../data/taquin.ui.h:8
-msgid "Go back to the current game"
-msgstr "חזרה למשחק הנוכחי"
-
-#: ../data/taquin.ui.h:9 ../data/org.gnome.taquin.desktop.in.h:4
+#: ../data/taquin-screens.ui.h:6 ../data/org.gnome.taquin.desktop.in.h:4
 msgid "15-Puzzle"
 msgstr "לוח 15"
 
-#: ../data/taquin.ui.h:10 ../data/org.gnome.taquin.desktop.in.h:5
+#: ../data/taquin-screens.ui.h:7 ../data/org.gnome.taquin.desktop.in.h:5
 msgid "16-Puzzle"
 msgstr "לוח 16"
 
-#: ../data/taquin.ui.h:11
+#: ../data/taquin.ui.h:1
+msgid "Go back to the current game"
+msgstr "חזרה למשחק הנוכחי"
+
+#: ../data/taquin.ui.h:2
 msgid "_Start Game"
 msgstr "ה_תחלת משחק"
 
-#: ../data/taquin.ui.h:12
+#: ../data/taquin.ui.h:3
+msgid "Start a new game as configured"
+msgstr "התחלת משחק חדש כפי שהוגדר"
+
+#: ../data/taquin.ui.h:4
 msgid "_Start Over"
 msgstr "ה_תחלה מחדש"
 
-#: ../data/taquin.ui.h:13
+#: ../data/taquin.ui.h:5
+msgid "Configure a new game"
+msgstr "הגדרת משחק חדש"
+
+#: ../data/taquin.ui.h:6
 msgid "Start a new game"
 msgstr "התחלת משחק חדש"
 
@@ -109,6 +108,12 @@ msgid ""
 msgstr ""
 "הרעיון של Taquin הוא להזיז אריחים כך שהם יגיעו למקומם, המצוינים במספרים, או "
 "כחלק של תמונה גדולה."
+
+#. Window
+#: ../data/org.gnome.taquin.desktop.in.h:1 ../src/taquin-main.vala:78
+#: ../src/taquin-main.vala:138 ../src/taquin-main.vala:254
+msgid "Taquin"
+msgstr "Taquin"
 
 #: ../data/org.gnome.taquin.desktop.in.h:3
 msgid "puzzle;"
@@ -154,60 +159,64 @@ msgstr "Height of the window in pixels."
 msgid "true if the window is maximized."
 msgstr "true if the window is maximized."
 
-#: ../src/taquin-main.vala:58
+#: ../src/game-window.vala:134
+msgid "Undo your most recent move"
+msgstr "ביטול המהלך האחרון שלך"
+
+#: ../src/taquin-main.vala:46
 msgid "Play the classical 1880s’ 15-puzzle"
 msgstr "Play the classical 1880s’ 15-puzzle"
 
-#: ../src/taquin-main.vala:59
+#: ../src/taquin-main.vala:47
 msgid "Try this fun alternative 16-puzzle"
 msgstr "Try this fun alternative 16-puzzle"
 
-#: ../src/taquin-main.vala:60
+#: ../src/taquin-main.vala:48
 msgid "Sets the puzzle edges’ size (3-5, 2-9 for debug)"
 msgstr "Sets the puzzle edges’ size (3-5, 2-9 for debug)"
 
-#: ../src/taquin-main.vala:61
+#: ../src/taquin-main.vala:49
 msgid "Turn off the sound"
 msgstr "Turn off the sound"
 
-#: ../src/taquin-main.vala:62
+#: ../src/taquin-main.vala:50
 msgid "Turn on the sound"
 msgstr "Turn on the sound"
 
-#: ../src/taquin-main.vala:63
+#: ../src/taquin-main.vala:51
 msgid "Print release version and exit"
 msgstr "Print release version and exit"
 
-#: ../src/taquin-main.vala:343
+#: ../src/taquin-main.vala:250
 msgid "(see COPYING.themes for informations)"
 msgstr "(‏COPYING.themes עבור מידע)"
 
-#: ../src/taquin-main.vala:351
+#: ../src/taquin-main.vala:258
 msgid "A classic 15-puzzle game"
 msgstr "משחק חידת ה־15 הקלאסי"
 
-#: ../src/taquin-main.vala:355
+#: ../src/taquin-main.vala:262
 msgid "translator-credits"
 msgstr "יוסף אור בוצ׳קו <yoseforb@gnome.org>"
 
-#: ../src/taquin-main.vala:396
+#: ../src/taquin-main.vala:303
 msgid "You can’t move this tile!"
 msgstr "לא ניתן להזיז אריח זה!"
 
-#: ../src/taquin-main.vala:402
+#: ../src/taquin-main.vala:309
 msgid "Bravo! You finished the game!"
 msgstr "הידד! סיימת את המשחק!"
 
-#: ../src/taquin-main.vala:426
+#: ../src/taquin-main.vala:333
 #, c-format
 msgid "Size: %d × %d ▾"
 msgstr "גודל: %d × %d ▾"
 
-#: ../src/taquin-main.vala:440
+#: ../src/taquin-main.vala:347
 msgid "Theme: Cats ▾"
 msgstr "ערכת נושא: חתולים ▾"
 
-#: ../src/taquin-main.vala:441
+#: ../src/taquin-main.vala:348
 msgid "Theme: Numbers ▾"
 msgstr "ערכת נושא: מספרים ▾"
 
