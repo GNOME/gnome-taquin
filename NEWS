@@ -1,3 +1,15 @@
+3.15.91.1 - March 2, 2015
+=========================
+
+Changes since 3.15.91
+* Correct a weird bug that hides the app-menu
+* Czech and polish translations updates
+
+All contributors to this release:
+* Arnaud Bonatti <arnaud.bonatti@gmail.com>
+* Marek Černocký <marek@manet.cz>
+* Piotr Drąg <piotrdrag@gmail.com>
+
 3.15.91 - March 2, 2015
 =========================
 
