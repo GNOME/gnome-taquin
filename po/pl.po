@@ -5,14 +5,15 @@
 # gnomepl@aviary.pl
 # -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-
 # Joanna Lisek <jlisek@gmail.com>, 2015.
+# Piotr Drąg <piotrdrag@gmail.com>, 2015.
 # Aviary.pl <gnomepl@aviary.pl>, 2015.
 msgid ""
 msgstr ""
 "Project-Id-Version: gnome-taquin\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2015-02-10 15:48+0100\n"
-"PO-Revision-Date: 2015-02-10 15:28+0100\n"
-"Last-Translator: Joanna Lisek <jlisek@gmail.com>\n"
+"POT-Creation-Date: 2015-03-02 21:40+0100\n"
+"PO-Revision-Date: 2015-03-02 21:44+0100\n"
+"Last-Translator: Piotr Drąg <piotrdrag@gmail.com>\n"
 "Language-Team: Polish <gnomepl@aviary.pl>\n"
 "Language: pl\n"
 "MIME-Version: 1.0\n"
@@ -39,56 +40,55 @@ msgstr "_O grze"
 msgid "_Quit"
 msgstr "Za_kończ"
 
-#: ../data/taquin.ui.h:1
+#: ../data/taquin-screens.ui.h:1
 msgid "3 × 3"
-msgstr "3 × 3"
+msgstr "3×3"
 
-#: ../data/taquin.ui.h:2
+#: ../data/taquin-screens.ui.h:2
 msgid "4 × 4"
-msgstr "4 × 4"
+msgstr "4×4"
 
-#: ../data/taquin.ui.h:3
+#: ../data/taquin-screens.ui.h:3
 msgid "5 × 5"
-msgstr "5 × 5"
+msgstr "5×5"
 
-#: ../data/taquin.ui.h:4
+#: ../data/taquin-screens.ui.h:4
 msgid "Cats"
 msgstr "Koty"
 
-#: ../data/taquin.ui.h:5
+#: ../data/taquin-screens.ui.h:5
 msgid "Numbers"
 msgstr "Liczby"
 
-#: ../data/taquin.ui.h:6 ../data/org.gnome.taquin.desktop.in.h:1
-#: ../src/taquin-main.vala:98 ../src/taquin-main.vala:347
-msgid "Taquin"
-msgstr "Taquin"
-
-#: ../data/taquin.ui.h:7
-msgid "Undo your most recent move"
-msgstr "Cofa ostatni ruch"
-
-#: ../data/taquin.ui.h:8
-msgid "Go back to the current game"
-msgstr "Wraca do gry"
-
-#: ../data/taquin.ui.h:9
+#: ../data/taquin-screens.ui.h:6 ../data/org.gnome.taquin.desktop.in.h:4
 msgid "15-Puzzle"
 msgstr "15-częściowe puzzle"
 
-#: ../data/taquin.ui.h:10
+#: ../data/taquin-screens.ui.h:7 ../data/org.gnome.taquin.desktop.in.h:5
 msgid "16-Puzzle"
 msgstr "16-częściowe puzzle"
 
-#: ../data/taquin.ui.h:11
+#: ../data/taquin.ui.h:1
+msgid "Go back to the current game"
+msgstr "Wraca do gry"
+
+#: ../data/taquin.ui.h:2
 msgid "_Start Game"
 msgstr "_Rozpocznij grę"
 
-#: ../data/taquin.ui.h:12
+#: ../data/taquin.ui.h:3
+msgid "Start a new game as configured"
+msgstr "Rozpoczyna nową grę tak, jak skonfigurowano"
+
+#: ../data/taquin.ui.h:4
 msgid "_Start Over"
 msgstr "_Nowa gra"
 
-#: ../data/taquin.ui.h:13
+#: ../data/taquin.ui.h:5
+msgid "Configure a new game"
+msgstr "Konfiguruje nową grę"
+
+#: ../data/taquin.ui.h:6
 msgid "Start a new game"
 msgstr "Rozpoczyna nową grę"
 
@@ -114,33 +114,27 @@ msgstr ""
 "Taquin polega na przesuwaniu poszczególnych elementów tak, aby każdy z nich "
 "znalazł się na właściwym miejscu, według numeru lub obrazka."
 
+#. Window
+#: ../data/org.gnome.taquin.desktop.in.h:1 ../src/taquin-main.vala:78
+#: ../src/taquin-main.vala:138 ../src/taquin-main.vala:254
+msgid "Taquin"
+msgstr "Taquin"
+
 #: ../data/org.gnome.taquin.desktop.in.h:3
 msgid "puzzle;"
-msgstr "puzzle;"
-
-#: ../data/org.gnome.taquin.desktop.in.h:4
-msgid "15-Puzzle with hole"
-msgstr "15-częściowe puzzle z pustym miejscem"
-
-#: ../data/org.gnome.taquin.desktop.in.h:5
-msgid "Puzzle with arrays"
-msgstr "Puzzle z siatką"
+msgstr "puzzle;puzle;"
 
 #: ../data/org.gnome.taquin.gschema.xml.h:1
 msgid "Number of tiles on each edge."
 msgstr "Liczba elementów z każdej strony układanki."
 
-# FIXME https://bugzilla.gnome.org/show_bug.cgi?id=743417
 #: ../data/org.gnome.taquin.gschema.xml.h:2
 msgid ""
-"The game is tested and offers to select a size from 3 to 5. There is a human-"
-"understandable maximum value to avoid some bugs. Maximum size is 9 as the "
-"image files are randomly selected depending on the first character of their "
-"filename."
+"The game offers to play with a board size from 3 to 5. The setting could be "
+"set from 2 (good for testing) to 9, limited by the way files are selected."
 msgstr ""
-"Gra oferuje do wyboru rozmiar od 3 do 5. Dla takiego rozmiaru przetestowano "
-"poprawne działanie gry. Maksymalny rozmiar to 9, dostępny dla obrazka z "
-"pliku, który jest losowo wybrany według pierwszej litery jego nazwy."
+"Gra oferuje do wyboru rozmiar planszy od 3 do 5. Może być ustawione na od 2 "
+"(dobre do testowania) do 9, ograniczone przez sposób wyboru plików."
 
 #: ../data/org.gnome.taquin.gschema.xml.h:3
 msgid "Name of the theme folder."
@@ -170,61 +164,66 @@ msgstr "Wysokość okna w pikselach."
 msgid "true if the window is maximized."
 msgstr "Wartość \"true\" oznacza, że okno jest zmaksymalizowane."
 
-#: ../src/taquin-main.vala:58
+#: ../src/game-window.vala:134
+msgid "Undo your most recent move"
+msgstr "Cofa ostatni ruch"
+
+#: ../src/taquin-main.vala:46
 msgid "Play the classical 1880s’ 15-puzzle"
 msgstr "Włącza klasyczne 15-częściowe puzzle z lat 80-tych XIX wieku"
 
-#: ../src/taquin-main.vala:59
+#: ../src/taquin-main.vala:47
 msgid "Try this fun alternative 16-puzzle"
 msgstr "Włącza zabawną wersję 16-częściowych puzzli"
 
-#: ../src/taquin-main.vala:60
+#: ../src/taquin-main.vala:48
 msgid "Sets the puzzle edges’ size (3-5, 2-9 for debug)"
 msgstr "Ustawia wielkość krawędzi układanki (2-9, 2 tylko do debugowania)"
 
-#: ../src/taquin-main.vala:61
+#: ../src/taquin-main.vala:49
 msgid "Turn off the sound"
 msgstr "Wyłącza dźwięk"
 
-#: ../src/taquin-main.vala:62
+#: ../src/taquin-main.vala:50
 msgid "Turn on the sound"
 msgstr "Włącza dźwięk"
 
-#: ../src/taquin-main.vala:63
+#: ../src/taquin-main.vala:51
 msgid "Print release version and exit"
 msgstr "Wyświetla wersję wydania i kończy działanie"
 
-#: ../src/taquin-main.vala:343
+#: ../src/taquin-main.vala:250
 msgid "(see COPYING.themes for informations)"
 msgstr "(Plik COPYING.themes zawiera więcej informacji)"
 
-#: ../src/taquin-main.vala:351
+#: ../src/taquin-main.vala:258
 msgid "A classic 15-puzzle game"
 msgstr "Klasyczne 15-częściowe puzzle"
 
-#: ../src/taquin-main.vala:355
+#: ../src/taquin-main.vala:262
 msgid "translator-credits"
 msgstr ""
 "Joanna Lisek <jlisek@gmail.com>, 2015\n"
+"Piotr Drąg <piotrdrag@gmail.com>, 2015\n"
 "Aviary.pl <gnomepl@aviary.pl>, 2015"
 
-#: ../src/taquin-main.vala:396
+#: ../src/taquin-main.vala:303
 msgid "You can’t move this tile!"
 msgstr "Nie można przesunąć tego elementu"
 
-#: ../src/taquin-main.vala:402
+#: ../src/taquin-main.vala:309
 msgid "Bravo! You finished the game!"
 msgstr "Gratulacje! Ukończono grę!"
 
-#: ../src/taquin-main.vala:426
+#: ../src/taquin-main.vala:333
 #, c-format
 msgid "Size: %d × %d ▾"
-msgstr "Rozmiar: %d × %d ▾"
+msgstr "Rozmiar: %d×%d ▾"
 
-#: ../src/taquin-main.vala:440
+#: ../src/taquin-main.vala:347
 msgid "Theme: Cats ▾"
 msgstr "Motyw: Koty ▾"
 
-#: ../src/taquin-main.vala:441
+#: ../src/taquin-main.vala:348
 msgid "Theme: Numbers ▾"
 msgstr "Motyw: Liczby ▾"
