@@ -187,9 +187,8 @@ public class Taquin : Gtk.Application
         // TODO window.add_action (settings.create_action ("size"));        // Problem: cannot use this way for an integer from a menu; works for radiobuttons in Iagno
         // TODO window.add_action (settings.create_action ("theme"));       // Problem: a bug that exists in the three tries, and in Iagno: you cannot manually change the gsetting or it bugs completely (gsetting between two states)
 
-        start_game ();
-
         add_window (window);
+        start_game ();
     }
 
     protected override void activate ()
