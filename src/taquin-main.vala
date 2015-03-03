@@ -81,7 +81,7 @@ public class Taquin : Gtk.Application
         return new Taquin ().run (args);
     }
 
-    public Taquin ()
+    private Taquin ()
     {
         Object (application_id: "org.gnome.taquin", flags: ApplicationFlags.FLAGS_NONE);
 
@@ -198,8 +198,8 @@ public class Taquin : Gtk.Application
 
     protected override void shutdown ()
     {
+        window.shutdown (settings);
         base.shutdown ();
-        window.save_state (settings);
     }
 
     /*\
