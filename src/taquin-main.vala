@@ -117,10 +117,6 @@ public class Taquin : Gtk.Application
     {
         base.startup ();
 
-        CssProvider css_provider = new CssProvider ();
-        css_provider.load_from_resource ("/org/gnome/taquin/ui/taquin.css");
-        StyleContext.add_provider_for_screen (Gdk.Screen.get_default (), css_provider, STYLE_PROVIDER_PRIORITY_APPLICATION);
-
         settings = new GLib.Settings ("org.gnome.taquin");
         if (sound != null)
             settings.set_boolean ("sound", sound);
@@ -135,7 +131,8 @@ public class Taquin : Gtk.Application
         Builder builder = new Builder.from_resource ("/org/gnome/taquin/ui/taquin-screens.ui");
 
         /* Window */
-        window = new GameWindow (_("Taquin"),
+        window = new GameWindow ("/org/gnome/taquin/ui/taquin.css",
+                                 _("Taquin"),
                                  settings.get_int ("window-width"),
                                  settings.get_int ("window-height"),
                                  settings.get_boolean ("window-is-maximized"),
