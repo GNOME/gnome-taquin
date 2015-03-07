@@ -10,7 +10,7 @@ msgstr ""
 "Project-Id-Version: gnome-taquin master\n"
 "Report-Msgid-Bugs-To: http://bugzilla.gnome.org/enter_bug.cgi?product=gnome-taquin&keywords=I18N+L10N&component=general\n"
 "POT-Creation-Date: 2015-03-07 08:53+0000\n"
-"PO-Revision-Date: 2015-03-08 04:40+0900\n"
+"PO-Revision-Date: 2015-03-08 04:42+0900\n"
 "Last-Translator: Changwoo Ryu <cwryu@debian.org>\n"
 "Language-Team: GNOME Korea <gnome-kr@googlegroups.com>\n"
 "Language: ko\n"
@@ -99,13 +99,13 @@ msgstr "타일을 밀어서 올바른 위치에 놓습니다"
 #: ../data/org.gnome.taquin.appdata.xml.in.h:3
 msgid ""
 "Taquin is a computer version of the 15-puzzle and other sliding puzzles."
-msgstr ""
+msgstr "타킨은 컴퓨터 버전의 15-퍼즐 및 기타 타일 밀기 퍼즐입니다."
 
 #: ../data/org.gnome.taquin.appdata.xml.in.h:4
 msgid ""
 "The object of Taquin is to move tiles so that they reach their places, "
 "either indicated with numbers, or with parts of a great image."
-msgstr ""
+msgstr "타킨의 목표는 타일을 움직여서 자기 위치에 놓는 것입니다. 숫자로 표시된 위치에 놓거나, 전체 그림을 맞추는 방식으로 놓습니다."
 
 #: ../data/org.gnome.taquin.desktop.in.h:1 ../src/taquin-main.vala:78
 #: ../src/taquin-main.vala:135 ../src/taquin-main.vala:250
