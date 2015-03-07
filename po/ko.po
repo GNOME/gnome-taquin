@@ -1,0 +1,216 @@
+# -*- compile-command: "ko-po-check ko.po" -*-
+#
+# Korean translation for gnome-taquin.
+# This file is distributed under the same license as the gnome-taquin package.
+#
+# Changwoo Ryu <cwryu@debian.org>, 2015.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: gnome-taquin master\n"
+"Report-Msgid-Bugs-To: http://bugzilla.gnome.org/enter_bug.cgi?product=gnome-taquin&keywords=I18N+L10N&component=general\n"
+"POT-Creation-Date: 2015-03-07 08:53+0000\n"
+"PO-Revision-Date: 2015-03-08 04:40+0900\n"
+"Last-Translator: Changwoo Ryu <cwryu@debian.org>\n"
+"Language-Team: GNOME Korea <gnome-kr@googlegroups.com>\n"
+"Language: ko\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+
+#: ../data/taquin-menus.ui.h:1
+msgid "_Sound"
+msgstr "소리(_S)"
+
+#: ../data/taquin-menus.ui.h:2
+msgid "_Help"
+msgstr "도움말(_H)"
+
+#: ../data/taquin-menus.ui.h:3
+msgid "_About"
+msgstr "정보(_A)"
+
+#: ../data/taquin-menus.ui.h:4
+msgid "_Quit"
+msgstr "끝내기(_Q)"
+
+#: ../data/taquin-screens.ui.h:1
+msgid "3 × 3"
+msgstr "3 × 3"
+
+#: ../data/taquin-screens.ui.h:2
+msgid "4 × 4"
+msgstr "4 × 4"
+
+#: ../data/taquin-screens.ui.h:3
+msgid "5 × 5"
+msgstr "5 × 5"
+
+#: ../data/taquin-screens.ui.h:4
+msgid "Cats"
+msgstr "고양이"
+
+#: ../data/taquin-screens.ui.h:5
+msgid "Numbers"
+msgstr "숫자"
+
+#: ../data/taquin-screens.ui.h:6 ../data/org.gnome.taquin.desktop.in.h:4
+msgid "15-Puzzle"
+msgstr "15-퍼즐"
+
+#: ../data/taquin-screens.ui.h:7 ../data/org.gnome.taquin.desktop.in.h:5
+msgid "16-Puzzle"
+msgstr "16-퍼즐"
+
+#: ../data/taquin.ui.h:1
+msgid "Go back to the current game"
+msgstr "현재 게임으로 돌아가기"
+
+#: ../data/taquin.ui.h:2
+msgid "_Start Game"
+msgstr "게임 시작(_S)"
+
+#: ../data/taquin.ui.h:3
+msgid "Start a new game as configured"
+msgstr "설정한 대로 새 게임을 시작합니다"
+
+#: ../data/taquin.ui.h:4
+msgid "_Start Over"
+msgstr "처음부터 시작(_S)"
+
+#: ../data/taquin.ui.h:5
+msgid "Configure a new game"
+msgstr "새 게임을 설정합니다"
+
+#: ../data/taquin.ui.h:6
+msgid "Start a new game"
+msgstr "새 게임을 시작합니다"
+
+#: ../data/org.gnome.taquin.appdata.xml.in.h:1
+msgid "GNOME Taquin"
+msgstr "그놈 타킨"
+
+#: ../data/org.gnome.taquin.appdata.xml.in.h:2
+#: ../data/org.gnome.taquin.desktop.in.h:2
+msgid "Slide tiles to their correct places"
+msgstr "타일을 밀어서 올바른 위치에 놓습니다"
+
+#: ../data/org.gnome.taquin.appdata.xml.in.h:3
+msgid ""
+"Taquin is a computer version of the 15-puzzle and other sliding puzzles."
+msgstr ""
+
+#: ../data/org.gnome.taquin.appdata.xml.in.h:4
+msgid ""
+"The object of Taquin is to move tiles so that they reach their places, "
+"either indicated with numbers, or with parts of a great image."
+msgstr ""
+
+#: ../data/org.gnome.taquin.desktop.in.h:1 ../src/taquin-main.vala:78
+#: ../src/taquin-main.vala:135 ../src/taquin-main.vala:250
+msgid "Taquin"
+msgstr "타킨"
+
+#: ../data/org.gnome.taquin.desktop.in.h:3
+msgid "puzzle;"
+msgstr "puzzle;퍼즐;"
+
+#: ../data/org.gnome.taquin.gschema.xml.h:1
+msgid "Number of tiles on each edge."
+msgstr "각 가장자리의 타일 수."
+
+#: ../data/org.gnome.taquin.gschema.xml.h:2
+msgid ""
+"The game offers to play with a board size from 3 to 5. The setting could be "
+"set from 2 (good for testing) to 9, limited by the way files are selected."
+msgstr "게임에서는 3에서 5까지 크기로 게임할 수 있습니다. 설정은 2(테스트용)에서 9까지 할 수 있습니다. 파일 선택 방식에 따라서 제한될 수 잇습니다."
+
+#: ../data/org.gnome.taquin.gschema.xml.h:3
+msgid "Name of the theme folder."
+msgstr "테마 폴더의 이름."
+
+#: ../data/org.gnome.taquin.gschema.xml.h:4
+msgid "Taquin has two default themes: 'cats' and 'numbers'."
+msgstr "타킨에 두 개의 기본 테마가 있습니다: 'cats' 및 'numbers'."
+
+#: ../data/org.gnome.taquin.gschema.xml.h:5
+msgid "Sound"
+msgstr "소리"
+
+#: ../data/org.gnome.taquin.gschema.xml.h:6
+msgid "Whether or not to play event sounds."
+msgstr "이벤트 소리를 낼지 여부."
+
+#: ../data/org.gnome.taquin.gschema.xml.h:7
+msgid "Width of the window in pixels."
+msgstr "창의 너비, 픽셀 단위."
+
+#: ../data/org.gnome.taquin.gschema.xml.h:8
+msgid "Height of the window in pixels."
+msgstr "창의 높이, 픽셀 단위."
+
+#: ../data/org.gnome.taquin.gschema.xml.h:9
+msgid "true if the window is maximized."
+msgstr "참이면 창을 최대화."
+
+#: ../src/game-window.vala:141
+msgid "Undo your most recent move"
+msgstr "가장 최근의 움직임을 실행 취소합니다"
+
+#: ../src/taquin-main.vala:46
+msgid "Play the classical 1880s’ 15-puzzle"
+msgstr "전통적인 1880년대 스타일 15-퍼즐을 플레이합니다"
+
+#: ../src/taquin-main.vala:47
+msgid "Try this fun alternative 16-puzzle"
+msgstr "새로운 16-퍼즐을 해 보십시오"
+
+#: ../src/taquin-main.vala:48
+msgid "Sets the puzzle edges’ size (3-5, 2-9 for debug)"
+msgstr "퍼즐 가장자리 크기를 설정합니다 (3-5, 디버깅용으로 2-9)"
+
+#: ../src/taquin-main.vala:49
+msgid "Turn off the sound"
+msgstr "소리를 끕니다"
+
+#: ../src/taquin-main.vala:50
+msgid "Turn on the sound"
+msgstr "소리를 켭니다"
+
+#: ../src/taquin-main.vala:51
+msgid "Print release version and exit"
+msgstr "릴리스 버전을 표시하고 끝납니다"
+
+#: ../src/taquin-main.vala:246
+msgid "(see COPYING.themes for informations)"
+msgstr "(정보는 COPYING.themes 파일을 참고하십시오)"
+
+#: ../src/taquin-main.vala:254
+msgid "A classic 15-puzzle game"
+msgstr "전통적인 15-퍼즐 게임"
+
+#: ../src/taquin-main.vala:258
+msgid "translator-credits"
+msgstr "류창우 <cwryu@debian.org>"
+
+#: ../src/taquin-main.vala:299
+msgid "You can’t move this tile!"
+msgstr "이 타일을 움직일 수 없습니다!"
+
+#: ../src/taquin-main.vala:305
+msgid "Bravo! You finished the game!"
+msgstr "만세! 게임을 마쳤습니다!"
+
+#: ../src/taquin-main.vala:329
+#, c-format
+msgid "Size: %d × %d ▾"
+msgstr "크기: %d × %d ▾"
+
+#: ../src/taquin-main.vala:343
+msgid "Theme: Cats ▾"
+msgstr "테마: Cats ▾"
+
+#: ../src/taquin-main.vala:344
+msgid "Theme: Numbers ▾"
+msgstr "테마: 숫자 ▾"
