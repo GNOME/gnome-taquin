@@ -9,8 +9,8 @@ msgstr ""
 "Project-Id-Version: gnome-taquin master\n"
 "Report-Msgid-Bugs-To: http://bugzilla.gnome.org/enter_bug.cgi?product=gnome-"
 "taquin&keywords=I18N+L10N&component=general\n"
-"POT-Creation-Date: 2015-02-15 13:33+0000\n"
-"PO-Revision-Date: 2015-02-15 20:30+0100\n"
+"POT-Creation-Date: 2015-03-09 08:54+0000\n"
+"PO-Revision-Date: 2015-03-09 21:15+0100\n"
 "Last-Translator: Matej Urbančič <mateju@svn.gnome.org>\n"
 "Language-Team: Slovenian <gnome-si@googlegroups.com>\n"
 "Language: sl\n"
@@ -37,71 +37,66 @@ msgstr "_About"
 msgid "_Quit"
 msgstr "_Quit"
 
-#: ../data/taquin.ui.h:1
+#: ../data/taquin-screens.ui.h:1
 msgid "3 × 3"
 msgstr "3 × 3"
 
-#: ../data/taquin.ui.h:2
+#: ../data/taquin-screens.ui.h:2
 msgid "4 × 4"
 msgstr "4 × 4"
 
-#: ../data/taquin.ui.h:3
+#: ../data/taquin-screens.ui.h:3
 msgid "5 × 5"
 msgstr "5 × 5"
 
-#: ../data/taquin.ui.h:4
+#: ../data/taquin-screens.ui.h:4
 msgid "Cats"
-msgstr ""
+msgstr "Mačke"
 
-#: ../data/taquin.ui.h:5
+#: ../data/taquin-screens.ui.h:5
 msgid "Numbers"
 msgstr "Numbers"
 
-#: ../data/taquin.ui.h:6 ../data/org.gnome.taquin.desktop.in.h:1
-#: ../src/taquin-main.vala:98 ../src/taquin-main.vala:347
-msgid "Taquin"
-msgstr ""
+#: ../data/taquin-screens.ui.h:6 ../data/org.gnome.taquin.desktop.in.h:4
+msgid "15-Puzzle"
+msgstr "15 drsečih ploščic"
 
-#: ../data/taquin.ui.h:7
-msgid "Undo your most recent move"
-msgstr ""
+#: ../data/taquin-screens.ui.h:7 ../data/org.gnome.taquin.desktop.in.h:5
+msgid "16-Puzzle"
+msgstr "16 drsečih ploščic"
 
-#: ../data/taquin.ui.h:8
+#: ../data/taquin.ui.h:1
 msgid "Go back to the current game"
 msgstr "Skoči na začetek trenutne igre"
 
-#: ../data/taquin.ui.h:9
-#, fuzzy
-msgid "15-Puzzle"
-msgstr "Dokončaj sestavljanko"
-
-#: ../data/taquin.ui.h:10
-#, fuzzy
-msgid "16-Puzzle"
-msgstr "Dokončaj sestavljanko"
-
-#: ../data/taquin.ui.h:11
+#: ../data/taquin.ui.h:2
 msgid "_Start Game"
 msgstr "_Start Game"
 
-#: ../data/taquin.ui.h:12
-#, fuzzy
-msgid "_Start Over"
-msgstr "Konec igre!"
+#: ../data/taquin.ui.h:3
+msgid "Start a new game as configured"
+msgstr "Začni novo igro kot nastavljeno"
 
-#: ../data/taquin.ui.h:13
+#: ../data/taquin.ui.h:4
+msgid "_Start Over"
+msgstr "_Začni znova"
+
+#: ../data/taquin.ui.h:5
+msgid "Configure a new game"
+msgstr "Začni novo igro"
+
+#: ../data/taquin.ui.h:6
 msgid "Start a new game"
 msgstr "Start a new game"
 
 #: ../data/org.gnome.taquin.appdata.xml.in.h:1
-#, fuzzy
 msgid "GNOME Taquin"
-msgstr "GNOME Pasjansa"
+msgstr "Slikovna sestavljanka GNOME"
 
 #: ../data/org.gnome.taquin.appdata.xml.in.h:2
 #: ../data/org.gnome.taquin.desktop.in.h:2
 msgid "Slide tiles to their correct places"
-msgstr ""
+msgstr "Premakni ploščice na ustrezna mesta"
 
 #: ../data/org.gnome.taquin.appdata.xml.in.h:3
 msgid ""
@@ -114,18 +109,14 @@ msgid ""
 "either indicated with numbers, or with parts of a great image."
 msgstr ""
 
+#: ../data/org.gnome.taquin.desktop.in.h:1 ../src/taquin-main.vala:78
+#: ../src/taquin-main.vala:135 ../src/taquin-main.vala:250
+msgid "Taquin"
+msgstr ""
+
 #: ../data/org.gnome.taquin.desktop.in.h:3
 msgid "puzzle;"
 msgstr "sestavljanka;"
-
-#: ../data/org.gnome.taquin.desktop.in.h:4
-msgid "15-Puzzle with hole"
-msgstr ""
-
-#: ../data/org.gnome.taquin.desktop.in.h:5
-#, fuzzy
-msgid "Puzzle with arrays"
-msgstr "Odpri _del z %s"
 
 #: ../data/org.gnome.taquin.gschema.xml.h:1
 msgid "Number of tiles on each edge."
@@ -133,16 +124,13 @@ msgstr ""
 
 #: ../data/org.gnome.taquin.gschema.xml.h:2
 msgid ""
-"The game is tested and offers to select a size from 3 to 5. There is a human-"
-"understandable maximum value to avoid some bugs. Maximum size is 9 as the "
-"image files are randomly selected depending on the first character of their "
-"filename."
+"The game offers to play with a board size from 3 to 5. The setting could be "
+"set from 2 (good for testing) to 9, limited by the way files are selected."
 msgstr ""
 
 #: ../data/org.gnome.taquin.gschema.xml.h:3
-#, fuzzy
 msgid "Name of the theme folder."
-msgstr "_Novo ime mape:"
+msgstr "Ime mape teme."
 
 #: ../data/org.gnome.taquin.gschema.xml.h:4
 msgid "Taquin has two default themes: 'cats' and 'numbers'."
@@ -153,86 +141,82 @@ msgid "Sound"
 msgstr "Zvok"
 
 #: ../data/org.gnome.taquin.gschema.xml.h:6
-#, fuzzy
 msgid "Whether or not to play event sounds."
 msgstr "Ali naj se ob dogodkih predvajajo zvoki."
 
 #: ../data/org.gnome.taquin.gschema.xml.h:7
-#, fuzzy
 msgid "Width of the window in pixels."
 msgstr "Širina okna v točkah."
 
 #: ../data/org.gnome.taquin.gschema.xml.h:8
-#, fuzzy
 msgid "Height of the window in pixels."
 msgstr "Višina okna v točkah."
 
 #: ../data/org.gnome.taquin.gschema.xml.h:9
-#, fuzzy
 msgid "true if the window is maximized."
 msgstr "prav, če je okno razpeto."
 
-#: ../src/taquin-main.vala:58
+#: ../src/game-window.vala:141
+msgid "Undo your most recent move"
+msgstr "Razveljavi  zadnjo potezo"
+
+#: ../src/taquin-main.vala:46
 msgid "Play the classical 1880s’ 15-puzzle"
 msgstr ""
 
-#: ../src/taquin-main.vala:59
+#: ../src/taquin-main.vala:47
 msgid "Try this fun alternative 16-puzzle"
 msgstr ""
 
-#: ../src/taquin-main.vala:60
+#: ../src/taquin-main.vala:48
 msgid "Sets the puzzle edges’ size (3-5, 2-9 for debug)"
 msgstr ""
 
-#: ../src/taquin-main.vala:61
-#, fuzzy
+#: ../src/taquin-main.vala:49
 msgid "Turn off the sound"
-msgstr "Izklapljanje računalnika"
+msgstr "Izklopi zvok"
 
-#: ../src/taquin-main.vala:62
-#, fuzzy
+#: ../src/taquin-main.vala:50
 msgid "Turn on the sound"
-msgstr "Vklopi Bluetooth"
+msgstr "Vklopi zvok"
 
-#: ../src/taquin-main.vala:63
-#, fuzzy
+#: ../src/taquin-main.vala:51
 msgid "Print release version and exit"
-msgstr "Izpiši različico programa NetworkManager in končaj z delom"
+msgstr "Izpiši različico programa in končaj"
 
-#: ../src/taquin-main.vala:343
+#: ../src/taquin-main.vala:246
 msgid "(see COPYING.themes for informations)"
 msgstr ""
 
-#: ../src/taquin-main.vala:351
-#, fuzzy
+#: ../src/taquin-main.vala:254
 msgid "A classic 15-puzzle game"
-msgstr "Sestavljanka z drsečimi bloki"
+msgstr "Običajna sestavljanka s 15 drsečimi bloki"
 
-#: ../src/taquin-main.vala:355
-#, fuzzy
+#: ../src/taquin-main.vala:258
 msgid "translator-credits"
-msgstr "Matej Urbančič"
+msgstr "Matej Urbančič <matej.u@svn.gnome.org>"
 
-#: ../src/taquin-main.vala:396
+#: ../src/taquin-main.vala:299
 msgid "You can’t move this tile!"
-msgstr ""
+msgstr "Te ploščice ni mogoče premakniti!"
 
-#: ../src/taquin-main.vala:402
-#, fuzzy
+#: ../src/taquin-main.vala:305
 msgid "Bravo! You finished the game!"
-msgstr "Igre ni mogoče označiti kot končane."
+msgstr "Bravo! Igra je končana!"
 
-#: ../src/taquin-main.vala:426
+#: ../src/taquin-main.vala:329
 #, c-format
 msgid "Size: %d × %d ▾"
 msgstr "Velikost: %d × %d ▾"
 
-#: ../src/taquin-main.vala:440
-#, fuzzy
+#: ../src/taquin-main.vala:343
 msgid "Theme: Cats ▾"
-msgstr "Trenutna tema"
+msgstr "Tema: mačke ▾"
 
-#: ../src/taquin-main.vala:441
-#, fuzzy
+#: ../src/taquin-main.vala:344
 msgid "Theme: Numbers ▾"
-msgstr "Številke vrstic"
+msgstr "Tema: številke ▾"
+
+#, fuzzy
+#~ msgid "Puzzle with arrays"
+#~ msgstr "Odpri _del z %s"
