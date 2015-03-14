@@ -1,0 +1,224 @@
+# Danish translation for gnome-taquin.
+# Copyright (C) 2015 gnome-taquin's COPYRIGHT HOLDER
+# This file is distributed under the same license as the gnome-taquin package.
+# Ask Hjorth Larsen <asklarsen@gmail.com>, 2015.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: gnome-taquin master\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2015-03-14 19:46+0100\n"
+"PO-Revision-Date: 2015-03-14 01:07+0100\n"
+"Last-Translator: Ask Hjorth Larsen <asklarsen@gmail.com>\n"
+"Language-Team: Danish <dansk@dansk-gruppen.dk>\n"
+"Language: da\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+
+#: ../data/taquin-menus.ui.h:1
+msgid "_Sound"
+msgstr "_Lyd"
+
+#: ../data/taquin-menus.ui.h:2
+msgid "_Help"
+msgstr "_Hjælp"
+
+#: ../data/taquin-menus.ui.h:3
+msgid "_About"
+msgstr "_Om"
+
+#: ../data/taquin-menus.ui.h:4
+msgid "_Quit"
+msgstr "_Afslut"
+
+#: ../data/taquin-screens.ui.h:1
+msgid "3 × 3"
+msgstr "3 × 3"
+
+#: ../data/taquin-screens.ui.h:2
+msgid "4 × 4"
+msgstr "4 × 4"
+
+#: ../data/taquin-screens.ui.h:3
+msgid "5 × 5"
+msgstr "5 × 5"
+
+#: ../data/taquin-screens.ui.h:4
+msgid "Cats"
+msgstr "Katte"
+
+#: ../data/taquin-screens.ui.h:5
+msgid "Numbers"
+msgstr "Tal"
+
+#: ../data/taquin-screens.ui.h:6 ../data/org.gnome.taquin.desktop.in.h:4
+msgid "15-Puzzle"
+msgstr "15-spil"
+
+#: ../data/taquin-screens.ui.h:7 ../data/org.gnome.taquin.desktop.in.h:5
+msgid "16-Puzzle"
+msgstr "16-spil"
+
+#: ../data/taquin.ui.h:1
+msgid "Go back to the current game"
+msgstr "Gå tilbage til nuværende spil"
+
+#: ../data/taquin.ui.h:2
+msgid "_Start Game"
+msgstr "_Start spil"
+
+#: ../data/taquin.ui.h:3
+msgid "Start a new game as configured"
+msgstr "Start et nyt spil ifølge opsætning"
+
+#: ../data/taquin.ui.h:4
+msgid "_Start Over"
+msgstr "_Start forfra"
+
+#: ../data/taquin.ui.h:5
+msgid "Configure a new game"
+msgstr "Sæt nyt spil op"
+
+#: ../data/taquin.ui.h:6
+msgid "Start a new game"
+msgstr "Start et nyt spil"
+
+#: ../data/org.gnome.taquin.appdata.xml.in.h:1
+msgid "GNOME Taquin"
+msgstr "GNOME Taquin"
+
+#: ../data/org.gnome.taquin.appdata.xml.in.h:2
+#: ../data/org.gnome.taquin.desktop.in.h:2
+msgid "Slide tiles to their correct places"
+msgstr "Flyt brikker til deres rigtige pladser"
+
+#: ../data/org.gnome.taquin.appdata.xml.in.h:3
+msgid ""
+"Taquin is a computer version of the 15-puzzle and other sliding puzzles."
+msgstr "Taquin er en computerudgave af 15-spillet og andre brikflyttespil."
+
+#: ../data/org.gnome.taquin.appdata.xml.in.h:4
+msgid ""
+"The object of Taquin is to move tiles so that they reach their places, "
+"either indicated with numbers, or with parts of a great image."
+msgstr ""
+"Målet med Taquin er at flytte brikker, så de når deres pladser angivet enten "
+"ved tal eller dele af et stort billede."
+
+#: ../data/org.gnome.taquin.desktop.in.h:1 ../src/taquin-main.vala:78
+#: ../src/taquin-main.vala:135 ../src/taquin-main.vala:250
+msgid "Taquin"
+msgstr "Taquin"
+
+#: ../data/org.gnome.taquin.desktop.in.h:3
+msgid "puzzle;"
+msgstr "spil;opgave;tænkespil;puslespil;"
+
+#: ../data/org.gnome.taquin.gschema.xml.h:1
+msgid "Number of tiles on each edge."
+msgstr "Antal felter på hver kant."
+
+# ? Virker lidt mystisk.  Men det er GConf så ikke så vigtigt
+#: ../data/org.gnome.taquin.gschema.xml.h:2
+msgid ""
+"The game offers to play with a board size from 3 to 5. The setting could be "
+"set from 2 (good for testing) to 9, limited by the way files are selected."
+msgstr ""
+"Spillet tilbyder en brætstørrelse fra 3 til 5. Indstillingen kunne angives "
+"fra 2 (god til test) til 9, begrænset af måden hvorpå der vælges filer."
+
+#: ../data/org.gnome.taquin.gschema.xml.h:3
+msgid "Name of the theme folder."
+msgstr "Navnet på temamappen."
+
+#: ../data/org.gnome.taquin.gschema.xml.h:4
+msgid "Taquin has two default themes: 'cats' and 'numbers'."
+msgstr "Taquin har to standardtemaer: \"katte\" og \"tal\"."
+
+#: ../data/org.gnome.taquin.gschema.xml.h:5
+msgid "Sound"
+msgstr "Lyd"
+
+#: ../data/org.gnome.taquin.gschema.xml.h:6
+msgid "Whether or not to play event sounds."
+msgstr "Om der skal afspilles lyde ved begivenheder."
+
+#: ../data/org.gnome.taquin.gschema.xml.h:7
+msgid "Width of the window in pixels."
+msgstr "Bredden af vinduet i pixler."
+
+#: ../data/org.gnome.taquin.gschema.xml.h:8
+msgid "Height of the window in pixels."
+msgstr "Højden af vinduet i pixler."
+
+#: ../data/org.gnome.taquin.gschema.xml.h:9
+msgid "true if the window is maximized."
+msgstr "true hvis vinduet er maksimeret."
+
+#: ../src/game-window.vala:141
+msgid "Undo your most recent move"
+msgstr "Fortryd dit seneste træk"
+
+#: ../src/taquin-main.vala:46
+msgid "Play the classical 1880s’ 15-puzzle"
+msgstr "Spil det klassiske 15-spil fra 1880'erne"
+
+#: ../src/taquin-main.vala:47
+msgid "Try this fun alternative 16-puzzle"
+msgstr "Prøv dette underholdende 16-spil som alternativ"
+
+#: ../src/taquin-main.vala:48
+msgid "Sets the puzzle edges’ size (3-5, 2-9 for debug)"
+msgstr "Angiver spillets kantstørrelse (3-5, eller 2-9 for fejlsøgning)"
+
+#: ../src/taquin-main.vala:49
+msgid "Turn off the sound"
+msgstr "Slå lyden fra"
+
+#: ../src/taquin-main.vala:50
+msgid "Turn on the sound"
+msgstr "Slå lyden til"
+
+#: ../src/taquin-main.vala:51
+msgid "Print release version and exit"
+msgstr "Udskriv versionsinformation og afslut"
+
+#: ../src/taquin-main.vala:246
+msgid "(see COPYING.themes for informations)"
+msgstr "(se COPYING.themes for oplysninger)"
+
+#: ../src/taquin-main.vala:254
+msgid "A classic 15-puzzle game"
+msgstr "Et klassisk 15-spil"
+
+#: ../src/taquin-main.vala:258
+msgid "translator-credits"
+msgstr ""
+"Ask Hjorth Larsen <asklarsen@gmail.com>\n"
+"\n"
+"Dansk-gruppen <dansk@dansk-gruppen.dk>\n"
+"\n"
+"Mere info: http://www.dansk-gruppen.dk"
+
+#: ../src/taquin-main.vala:299
+msgid "You can’t move this tile!"
+msgstr "Du kan ikke flytte denne brik!"
+
+#: ../src/taquin-main.vala:305
+msgid "Bravo! You finished the game!"
+msgstr "Bravo! Du har gennemført spillet!"
+
+#: ../src/taquin-main.vala:329
+#, c-format
+msgid "Size: %d × %d ▾"
+msgstr "Størrelse: %d × %d ▾"
+
+#: ../src/taquin-main.vala:343
+msgid "Theme: Cats ▾"
+msgstr "Tema: Katte ▾"
+
+#: ../src/taquin-main.vala:344
+msgid "Theme: Numbers ▾"
+msgstr "Tema: Tal ▾"
