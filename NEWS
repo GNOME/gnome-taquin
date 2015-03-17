@@ -1,3 +1,23 @@
+3.15.92 - March 16, 2015
+=========================
+
+Changes since 3.15.91.1
+* Add symbolic icon
+* Don’t crash on closing
+* New danish, bosnian and korean translations
+* Galician, serbian, lithuanian, slovenian, and swedish translations updates
+
+All contributors to this release:
+* Arnaud Bonatti <arnaud.bonatti@gmail.com>
+* Fran Dieguez <fran.dieguez@mabishu.com>
+* Мирослав Николић <miroslavnikolic@rocketmail.com>
+* Changwoo Ryu <cwryu@debian.org>
+* Aurimas Černius <aurisc4@gmail.com>
+* Matej Urbančič <mateju@svn.gnome.org>
+* Anders Jonsson <anders.jonsson@norsjovallen.se>
+* Samir Ribic <samir.ribic@etf.unsa.ba>
+* Ask Hjorth Larsen <asklarsen@gmail.com>
+
 3.15.91.1 - March 2, 2015
 =========================
 
