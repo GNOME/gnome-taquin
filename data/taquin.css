@@ -12,6 +12,7 @@ GtkRadioButton.radio-like-toggle {
     padding-bottom: 185px;
     background-position: center 25px;
     color: @theme_fg_color;
+    background-color: transparent;
 }
 GtkRadioButton.radio-like-toggle:backdrop {
     color: @theme_unfocused_fg_color;
