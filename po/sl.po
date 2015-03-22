@@ -10,7 +10,7 @@ msgstr ""
 "Report-Msgid-Bugs-To: http://bugzilla.gnome.org/enter_bug.cgi?product=gnome-"
 "taquin&keywords=I18N+L10N&component=general\n"
 "POT-Creation-Date: 2015-03-09 08:54+0000\n"
-"PO-Revision-Date: 2015-03-09 21:15+0100\n"
+"PO-Revision-Date: 2015-03-22 10:07+0100\n"
 "Last-Translator: Matej Urbančič <mateju@svn.gnome.org>\n"
 "Language-Team: Slovenian <gnome-si@googlegroups.com>\n"
 "Language: sl\n"
@@ -102,17 +102,22 @@ msgstr "Premakni ploščice na ustrezna mesta"
 msgid ""
 "Taquin is a computer version of the 15-puzzle and other sliding puzzles."
 msgstr ""
+"Igra Taquin je računalniška različica Igre petnajst in drugih podobnih "
+"premičnic."
 
 #: ../data/org.gnome.taquin.appdata.xml.in.h:4
 msgid ""
 "The object of Taquin is to move tiles so that they reach their places, "
 "either indicated with numbers, or with parts of a great image."
 msgstr ""
+"Cilj premičnice Taquin, znane tudi kot igre petnajst, je premakniti ploščice "
+"na prava (urejena) mesta. Ploščice so lahko označene s številkami, lahko pa "
+"skupaj sestavljajo sliko."
 
 #: ../data/org.gnome.taquin.desktop.in.h:1 ../src/taquin-main.vala:78
 #: ../src/taquin-main.vala:135 ../src/taquin-main.vala:250
 msgid "Taquin"
-msgstr ""
+msgstr "Premičnica Taquin ali Igra 15"
 
 #: ../data/org.gnome.taquin.desktop.in.h:3
 msgid "puzzle;"
@@ -120,13 +125,16 @@ msgstr "sestavljanka;"
 
 #: ../data/org.gnome.taquin.gschema.xml.h:1
 msgid "Number of tiles on each edge."
-msgstr ""
+msgstr "Število ploščic na vsakem robu."
 
 #: ../data/org.gnome.taquin.gschema.xml.h:2
 msgid ""
 "The game offers to play with a board size from 3 to 5. The setting could be "
 "set from 2 (good for testing) to 9, limited by the way files are selected."
 msgstr ""
+"Igra omogoča velikosti plošče s stranicami od 3 do 5, je pa mogoče nastaviti "
+"vrednosti od 2 (za preizkušanje) do 9. Velikosti so omejene z izbranimi "
+"datotekami."
 
 #: ../data/org.gnome.taquin.gschema.xml.h:3
 msgid "Name of the theme folder."
@@ -134,7 +142,7 @@ msgstr "Ime mape teme."
 
 #: ../data/org.gnome.taquin.gschema.xml.h:4
 msgid "Taquin has two default themes: 'cats' and 'numbers'."
-msgstr ""
+msgstr "Premičnica ima dve privzeti temi: 'mačne' in 'številke'."
 
 #: ../data/org.gnome.taquin.gschema.xml.h:5
 msgid "Sound"
@@ -162,15 +170,15 @@ msgstr "Razveljavi  zadnjo potezo"
 
 #: ../src/taquin-main.vala:46
 msgid "Play the classical 1880s’ 15-puzzle"
-msgstr ""
+msgstr "Začni klasično igro iz leta 1880 s 15 polji."
 
 #: ../src/taquin-main.vala:47
 msgid "Try this fun alternative 16-puzzle"
-msgstr ""
+msgstr "Preizkusite to drugačno sestavljanko s 16 polji."
 
 #: ../src/taquin-main.vala:48
 msgid "Sets the puzzle edges’ size (3-5, 2-9 for debug)"
-msgstr ""
+msgstr "Nastavi velikost plošče (3-5, 2-9 za razhroščevanje)"
 
 #: ../src/taquin-main.vala:49
 msgid "Turn off the sound"
@@ -186,7 +194,7 @@ msgstr "Izpiši različico programa in končaj"
 
 #: ../src/taquin-main.vala:246
 msgid "(see COPYING.themes for informations)"
-msgstr ""
+msgstr "(za več informacij si oglejte vsebino datoteke COPYING.themes)"
 
 #: ../src/taquin-main.vala:254
 msgid "A classic 15-puzzle game"
