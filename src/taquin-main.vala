@@ -26,7 +26,6 @@ public class Taquin : Gtk.Application
     private GLib.Settings settings;
     private static int tmp_size = 0;
     private GameType? tmp_type = null;
-    private bool type_changed = false;
     private bool size_changed = false;
     private bool theme_changed = false;
     private static bool? sound = null;
@@ -55,11 +54,10 @@ public class Taquin : Gtk.Application
 
     private const GLib.ActionEntry app_actions[] =
     {
-        /* {"change-type", null, "s", null, null, change_type_cb},  TODO SimpleActionChangeStateCallback is deprecated...
+        /* TODO SimpleActionChangeStateCallback is deprecated...
         {"change-size", null, "s", null, null, change_size_cb},     http://valadoc.org/#!api=gio-2.0/GLib.SimpleActionChangeStateCallback
         {"change-theme", null, "s", null, null, change_theme_cb},   see comments about window.add_action (settings.create_action (…)) */
 
-        {"change-type", change_type_cb, "s"},
         {"change-size", change_size_cb, "s"},
         {"change-theme", change_theme_cb, "s"},
 
@@ -167,22 +165,11 @@ public class Taquin : Gtk.Application
         });
         update_theme (settings.get_string ("theme"));
 
-        settings.changed["type"].connect (() => {
-            if (!type_changed)
-            {
-                var button_name = "radio-" + settings.get_string ("type");
-                ((RadioButton) builder.get_object (button_name)).set_active (true);
-            }
-            type_changed = false;
-        });
-        var button_name = "radio-" + settings.get_string ("type");
-        ((RadioButton) builder.get_object (button_name)).set_active (true);
-
         add_action_entries (app_actions, this);
         add_action (settings.create_action ("sound"));
-        // TODO window.add_action (settings.create_action ("type"));        // Problem: same bug as in Iagno, the settings are resetted to the first radiobutton found
+        add_action (settings.create_action ("type"));        // TODO window action?
         // TODO window.add_action (settings.create_action ("size"));        // Problem: cannot use this way for an integer from a menu; works for radiobuttons in Iagno
-        // TODO window.add_action (settings.create_action ("theme"));       // Problem: a bug that exists in the three tries, and in Iagno: you cannot manually change the gsetting or it bugs completely (gsetting between two states)
+        // TODO window.add_action (settings.create_action ("theme"));
 
         add_window (window);
         start_game ();
@@ -310,12 +297,6 @@ public class Taquin : Gtk.Application
     /*\
     * * Options of the start-screen
     \*/
-
-    private void change_type_cb (SimpleAction action, Variant? variant)
-    {
-        type_changed = true;
-        settings.set_string ("type", variant.get_string ());
-    }
 
     private void change_size_cb (SimpleAction action, Variant? variant)
     {

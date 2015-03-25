@@ -38,6 +38,7 @@
     <property name="orientation">vertical</property>
     <property name="visible">True</property>
     <property name="spacing">6</property>
+    <property name="width-request">400</property>
     <child>
       <object class="GtkBox">
         <property name="orientation">horizontal</property>
@@ -45,32 +46,29 @@
         <property name="homogeneous">True</property>
         <property name="spacing">6</property>
         <child>
-          <object class="GtkRadioButton" id="radio-fifteen">
+          <object class="GtkModelButton">
             <property name="visible">True</property>
             <property name="name">radio-fifteen</property>
-            <style><class name="radio-like-toggle"/></style>
+            <style><class name="radio-like-toggle"/><class name="flat"/></style>
             <property name="focus-on-click">False</property>
-            <property name="relief">none</property> <!-- could probably be replaced by a use of the "flat" style-class -->
-            <property name="action-name">app.change-type</property>
+            <property name="action-name">app.type</property>
             <property name="action-target">'fifteen'</property>
-            <property name="draw-indicator">False</property>
-            <property name="label" translatable="yes">15-Puzzle</property>
-            <property name="width-request">197</property>
+            <property name="text" translatable="yes">15-Puzzle</property>
+            <property name="iconic">True</property>
+            <property name="centered">True</property>
           </object>
         </child>
         <child>
-          <object class="GtkRadioButton" id="radio-sixteen">
+          <object class="GtkModelButton">
             <property name="visible">True</property>
             <property name="name">radio-sixteen</property>
-            <style><class name="radio-like-toggle"/></style>
+            <style><class name="radio-like-toggle"/><class name="flat"/></style>
             <property name="focus-on-click">False</property>
-            <property name="relief">none</property>
-            <property name="action-name">app.change-type</property>
+            <property name="action-name">app.type</property>
             <property name="action-target">'sixteen'</property>
-            <property name="group">radio-fifteen</property>
-            <property name="draw-indicator">False</property>
-            <property name="label" translatable="yes">16-Puzzle</property>
-            <property name="width-request">197</property>
+            <property name="text" translatable="yes">16-Puzzle</property>
+            <property name="iconic">True</property>
+            <property name="centered">True</property>
           </object>
         </child>
       </object>
@@ -91,8 +89,7 @@
             <property name="use-underline">True</property>
             <property name="menu-model">size-menu</property>
             <property name="height-request">60</property>
-            <style><class name="menubutton-like-combo"/></style>
-            <property name="relief">none</property> <!-- could probably be replaced by a use of the "flat" style-class -->
+            <style><class name="menubutton-like-combo"/><class name="flat"/></style>
           </object>
           <packing>
             <property name="expand">True</property>
@@ -105,8 +102,7 @@
             <property name="use-underline">True</property>
             <property name="menu-model">theme-menu</property>
             <property name="height-request">60</property>
-            <style><class name="menubutton-like-combo"/></style>
-            <property name="relief">none</property>
+            <style><class name="menubutton-like-combo"/><class name="flat"/></style>
           </object>
           <packing>
             <property name="expand">True</property>
@@ -115,7 +111,6 @@
         </child>
       </object>
       <packing>
-        <property name="expand">True</property>
         <property name="fill">True</property>
       </packing>
     </child>

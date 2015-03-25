@@ -1,24 +1,24 @@
-GtkRadioButton.radio-like-toggle#radio-fifteen {
+GtkModelButton.radio-like-toggle#radio-fifteen {
     background-image: url("resource://org/gnome/taquin/images/15-Puzzle.png");
 }
-GtkRadioButton.radio-like-toggle#radio-sixteen {
+GtkModelButton.radio-like-toggle#radio-sixteen {
     background-image: url("resource://org/gnome/taquin/images/16-Puzzle.png");
 }
 
-GtkRadioButton.radio-like-toggle {
+GtkModelButton.radio-like-toggle {
     background-repeat: no-repeat;
-    /* width is requested by the widget: 197 */
-    padding-top: 15px;
-    padding-bottom: 185px;
     background-position: center 25px;
     color: @theme_fg_color;
     background-color: transparent;
 }
-GtkRadioButton.radio-like-toggle:backdrop {
+GtkModelButton.radio-like-toggle GtkLabel {
+    padding-bottom: 165px;
+}
+GtkModelButton.radio-like-toggle:backdrop {
     color: @theme_unfocused_fg_color;
 }
 
-GtkRadioButton.radio-like-toggle,
+GtkModelButton.radio-like-toggle,
 GtkMenuButton.menubutton-like-combo {
     border-radius:15px;
     outline-radius:13px;
