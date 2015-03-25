@@ -137,7 +137,7 @@ public class Taquin : Gtk.Application
                                  settings.get_int ("window-height"),
                                  settings.get_boolean ("window-is-maximized"),
                                  true,     // TODO add an option to go to new-game screen?
-                                 GameWindowFlags.SHOW_UNDO,
+                                 GameWindowFlags.SHOW_UNDO | GameWindowFlags.SHOW_START_BUTTON,
                                  (Box) builder.get_object ("new-game-screen"),
                                  view);
         window.play.connect (start_game);
