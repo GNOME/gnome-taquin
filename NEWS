@@ -1,3 +1,18 @@
+3.17.1 - April 28, 2015
+=========================
+
+Changes since 3.16.0
+* HighContrast icons removed (as the symbolic one is now used)
+* New translations: vietnamese and friulian
+* Translations updates: basque and brazilian portuguese
+
+All contributors to this release:
+* Arnaud Bonatti <arnaud.bonatti@gmail.com>
+* Enrico Nicoletto <liverig@gmail.com>
+* Inaki Larranaga Murgoitio <dooteo@zundan.com>
+* Trần Ngọc Quân <vnwildman@gmail.com>
+* Fabio Tomat <f.t.public@gmail.com>
+
 3.16.0 - March 23, 2015
 =========================
 
