@@ -1,0 +1,219 @@
+# Aragonese translation for gnome-taquin.
+# Copyright (C) 2015 gnome-taquin's COPYRIGHT HOLDER
+# This file is distributed under the same license as the gnome-taquin package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: gnome-taquin master\n"
+"Report-Msgid-Bugs-To: http://bugzilla.gnome.org/enter_bug.cgi?product=gnome-"
+"taquin&keywords=I18N+L10N&component=general\n"
+"POT-Creation-Date: 2015-05-04 07:59+0000\n"
+"PO-Revision-Date: 2015-05-04 16:08+0200\n"
+"Last-Translator: Daniel <entaltoaragon@gmail.com>\n"
+"Language-Team: Aragonese <softaragones@googlegroups.com>\n"
+"Language: an\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"X-Generator: Pootle 2.5.1.1\n"
+"X-POOTLE-MTIME: 1430752095.000000\n"
+
+#: ../data/taquin-menus.ui.h:1
+msgid "_Sound"
+msgstr "_Son"
+
+#: ../data/taquin-menus.ui.h:2
+msgid "_Help"
+msgstr "_Aduya"
+
+#: ../data/taquin-menus.ui.h:3
+msgid "_About"
+msgstr "_Arredol de"
+
+#: ../data/taquin-menus.ui.h:4
+msgid "_Quit"
+msgstr "_Salir"
+
+#: ../data/taquin-screens.ui.h:1
+msgid "3 × 3"
+msgstr "3 × 3"
+
+#: ../data/taquin-screens.ui.h:2
+msgid "4 × 4"
+msgstr "4 × 4"
+
+#: ../data/taquin-screens.ui.h:3
+msgid "5 × 5"
+msgstr "5 × 5"
+
+#: ../data/taquin-screens.ui.h:4
+msgid "Cats"
+msgstr "Gatos"
+
+#: ../data/taquin-screens.ui.h:5
+msgid "Numbers"
+msgstr "Números"
+
+#: ../data/taquin-screens.ui.h:6 ../data/org.gnome.taquin.desktop.in.h:4
+msgid "15-Puzzle"
+msgstr "Puzle-15"
+
+#: ../data/taquin-screens.ui.h:7 ../data/org.gnome.taquin.desktop.in.h:5
+msgid "16-Puzzle"
+msgstr "Puzle-16"
+
+#: ../data/taquin.ui.h:1
+msgid "Go back to the current game"
+msgstr "Tornar a o chuego actual"
+
+#: ../data/taquin.ui.h:2
+msgid "_Start Over"
+msgstr "_Encetar"
+
+#: ../data/taquin.ui.h:3
+msgid "Configure a new game"
+msgstr "Configurar un chuego nuevo"
+
+#: ../data/taquin.ui.h:4
+msgid "Start a new game"
+msgstr "Encetar un chuego nuevo"
+
+#: ../data/org.gnome.taquin.appdata.xml.in.h:1
+msgid "GNOME Taquin"
+msgstr "GNOME Taquin"
+
+#: ../data/org.gnome.taquin.appdata.xml.in.h:2
+#: ../data/org.gnome.taquin.desktop.in.h:2
+msgid "Slide tiles to their correct places"
+msgstr "Eslice as fichas a os puestos correctos"
+
+#: ../data/org.gnome.taquin.appdata.xml.in.h:3
+msgid ""
+"Taquin is a computer version of the 15-puzzle and other sliding puzzles."
+msgstr ""
+"Taquin ye una versión d'ordinador de puzle-15 y atros puzles d'eslizar."
+
+#: ../data/org.gnome.taquin.appdata.xml.in.h:4
+msgid ""
+"The object of Taquin is to move tiles so that they reach their places, "
+"either indicated with numbers, or with parts of a great image."
+msgstr ""
+"L'obchectivo de Taquin ye mover as fichas a os suyos puestos "
+"correspondients, indicaus por numeros u por partes d'una bonica imachen."
+
+#: ../data/org.gnome.taquin.desktop.in.h:1 ../src/taquin-main.vala:76
+#: ../src/taquin-main.vala:133 ../src/taquin-main.vala:237
+msgid "Taquin"
+msgstr "Taquin"
+
+#: ../data/org.gnome.taquin.desktop.in.h:3
+msgid "puzzle;"
+msgstr "puzle;chuego;"
+
+#: ../data/org.gnome.taquin.gschema.xml.h:1
+msgid "Number of tiles on each edge."
+msgstr "Numero de fichas en cada borde."
+
+#: ../data/org.gnome.taquin.gschema.xml.h:2
+msgid ""
+"The game offers to play with a board size from 3 to 5. The setting could be "
+"set from 2 (good for testing) to 9, limited by the way files are selected."
+msgstr ""
+"O chuego ofreix a posibilidat de chugar en un tablero de grandaria de 3 a 5. "
+"A configuración puede ir de 2 (ideyal ta prebas) dica 9, limitau por a forma "
+"en que se seleccionan os fichers."
+
+#: ../data/org.gnome.taquin.gschema.xml.h:3
+msgid "Name of the theme folder."
+msgstr "Nombre d'a carpeta de temas."
+
+#: ../data/org.gnome.taquin.gschema.xml.h:4
+msgid "Taquin has two default themes: 'cats' and 'numbers'."
+msgstr "Taquin tiene dos temas predeterminaus: 'gatos' y 'numeros'."
+
+#: ../data/org.gnome.taquin.gschema.xml.h:5
+msgid "Sound"
+msgstr "Son"
+
+#: ../data/org.gnome.taquin.gschema.xml.h:6
+msgid "Whether or not to play event sounds."
+msgstr "Indica si s'han de reproducir eventos de son."
+
+#: ../data/org.gnome.taquin.gschema.xml.h:7
+msgid "Width of the window in pixels."
+msgstr "Amplaria d'a finestra en pixels."
+
+#: ../data/org.gnome.taquin.gschema.xml.h:8
+msgid "Height of the window in pixels."
+msgstr "Altura d'a finestra en pixels."
+
+#: ../data/org.gnome.taquin.gschema.xml.h:9
+msgid "true if the window is maximized."
+msgstr "cierto si a finestra ye maximizada."
+
+#: ../src/game-window.vala:128
+msgid "_Start Game"
+msgstr "_Encetar chuego"
+
+#: ../src/game-window.vala:153
+msgid "Undo your most recent move"
+msgstr "Desfer o movimiento mas recient"
+
+#: ../src/taquin-main.vala:45
+msgid "Play the classical 1880s’ 15-puzzle"
+msgstr "Chugue a o clasico puzle-15 de 1880"
+
+#: ../src/taquin-main.vala:46
+msgid "Try this fun alternative 16-puzzle"
+msgstr "Prebe iste divertiu puzle-16 alternativo"
+
+#: ../src/taquin-main.vala:47
+msgid "Sets the puzzle edges’ size (3-5, 2-9 for debug)"
+msgstr "Estableix a grandaria d'os bordes d'o puzle (3-5, 2-9 ta depuración))"
+
+#: ../src/taquin-main.vala:48
+msgid "Turn off the sound"
+msgstr "Amortar o son"
+
+#: ../src/taquin-main.vala:49
+msgid "Turn on the sound"
+msgstr "Activar o son"
+
+#: ../src/taquin-main.vala:50
+msgid "Print release version and exit"
+msgstr "Amostrar información d'a versión y salir"
+
+#: ../src/taquin-main.vala:233
+msgid "(see COPYING.themes for informations)"
+msgstr "(consulte COPYING.themes ta obtener mas información)"
+
+#: ../src/taquin-main.vala:241
+msgid "A classic 15-puzzle game"
+msgstr "Un chuego clasico de puzle-15"
+
+#: ../src/taquin-main.vala:245
+msgid "translator-credits"
+msgstr "Daniel Martinez <entaltoaragon@gmail.com>, 2015"
+
+#: ../src/taquin-main.vala:286
+msgid "You can’t move this tile!"
+msgstr "No puede mover ista ficha!"
+
+#: ../src/taquin-main.vala:292
+msgid "Bravo! You finished the game!"
+msgstr "Enhorabuena, ha rematau o chuego!"
+
+#: ../src/taquin-main.vala:310
+#, c-format
+msgid "Size: %d × %d ▾"
+msgstr "Grandaria: %d × %d ▾"
+
+#: ../src/taquin-main.vala:324
+msgid "Theme: Cats ▾"
+msgstr "Tema: gatos ▾"
+
+#: ../src/taquin-main.vala:325
+msgid "Theme: Numbers ▾"
+msgstr "Tema: numeros ▾"
