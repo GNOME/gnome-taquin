@@ -1,0 +1,213 @@
+# Norwegian bokmål translation of gnome-taquin.
+# Copyright © 1998-2002 Free Software Foundation, Inc.
+# Kjartan Maraas <kmaraas@gnome.org>, 1998-2015.
+# Terance Edward Sola <terance@lyse.net>, 2005.
+# Torstein Adolf Winterseth <kvikende@fsfe.org>, 2010.
+msgid ""
+msgstr ""
+"Project-Id-Version: gnome-tetravex 3.17.x\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2015-05-14 16:38+0200\n"
+"PO-Revision-Date: 2015-05-14 16:43+0200\n"
+"Last-Translator: Kjartan Maraas <kmaraas@gnome.org>\n"
+"Language-Team: Norwegian bokmål <i18n-nb@lister.ping.uio.no>\n"
+"Language: nb\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+
+#: ../data/taquin-menus.ui.h:1
+msgid "_Sound"
+msgstr "_Lyd"
+
+#: ../data/taquin-menus.ui.h:2
+msgid "_Help"
+msgstr "_Hjelp"
+
+#: ../data/taquin-menus.ui.h:3
+msgid "_About"
+msgstr "_Om"
+
+#: ../data/taquin-menus.ui.h:4
+msgid "_Quit"
+msgstr "A_vslutt"
+
+#: ../data/taquin-screens.ui.h:1
+msgid "3 × 3"
+msgstr "3 × 3"
+
+#: ../data/taquin-screens.ui.h:2
+msgid "4 × 4"
+msgstr "4 × 4"
+
+#: ../data/taquin-screens.ui.h:3
+msgid "5 × 5"
+msgstr "5 × 5"
+
+#: ../data/taquin-screens.ui.h:4
+msgid "Cats"
+msgstr "Katter"
+
+#: ../data/taquin-screens.ui.h:5
+msgid "Numbers"
+msgstr "Tall"
+
+#: ../data/taquin-screens.ui.h:6 ../data/org.gnome.taquin.desktop.in.h:4
+msgid "15-Puzzle"
+msgstr ""
+
+#: ../data/taquin-screens.ui.h:7 ../data/org.gnome.taquin.desktop.in.h:5
+msgid "16-Puzzle"
+msgstr ""
+
+#: ../data/taquin.ui.h:1
+msgid "Go back to the current game"
+msgstr ""
+
+#: ../data/taquin.ui.h:2
+msgid "_Start Over"
+msgstr "_Start på nytt"
+
+#: ../data/taquin.ui.h:3
+msgid "Configure a new game"
+msgstr "Konfigurer et nytt spill"
+
+#: ../data/taquin.ui.h:4
+msgid "Start a new game"
+msgstr "Start et nytt spill"
+
+#: ../data/org.gnome.taquin.appdata.xml.in.h:1
+msgid "GNOME Taquin"
+msgstr "GNOME Taquin"
+
+#: ../data/org.gnome.taquin.appdata.xml.in.h:2
+#: ../data/org.gnome.taquin.desktop.in.h:2
+msgid "Slide tiles to their correct places"
+msgstr "Flytt fliser til rett plass"
+
+#: ../data/org.gnome.taquin.appdata.xml.in.h:3
+msgid ""
+"Taquin is a computer version of the 15-puzzle and other sliding puzzles."
+msgstr ""
+
+#: ../data/org.gnome.taquin.appdata.xml.in.h:4
+msgid ""
+"The object of Taquin is to move tiles so that they reach their places, "
+"either indicated with numbers, or with parts of a great image."
+msgstr ""
+
+#: ../data/org.gnome.taquin.desktop.in.h:1 ../src/taquin-main.vala:76
+#: ../src/taquin-main.vala:133 ../src/taquin-main.vala:237
+msgid "Taquin"
+msgstr "Taquin"
+
+#: ../data/org.gnome.taquin.desktop.in.h:3
+msgid "puzzle;"
+msgstr "puslespill;"
+
+#: ../data/org.gnome.taquin.gschema.xml.h:1
+msgid "Number of tiles on each edge."
+msgstr "Antall fliser på hver kant."
+
+#: ../data/org.gnome.taquin.gschema.xml.h:2
+msgid ""
+"The game offers to play with a board size from 3 to 5. The setting could be "
+"set from 2 (good for testing) to 9, limited by the way files are selected."
+msgstr ""
+
+#: ../data/org.gnome.taquin.gschema.xml.h:3
+msgid "Name of the theme folder."
+msgstr "Navn på temamappe."
+
+#: ../data/org.gnome.taquin.gschema.xml.h:4
+msgid "Taquin has two default themes: 'cats' and 'numbers'."
+msgstr ""
+
+#: ../data/org.gnome.taquin.gschema.xml.h:5
+msgid "Sound"
+msgstr "Lyd"
+
+#: ../data/org.gnome.taquin.gschema.xml.h:6
+msgid "Whether or not to play event sounds."
+msgstr ""
+
+#: ../data/org.gnome.taquin.gschema.xml.h:7
+msgid "Width of the window in pixels."
+msgstr "Bredden på vinduet i piksler."
+
+#: ../data/org.gnome.taquin.gschema.xml.h:8
+msgid "Height of the window in pixels."
+msgstr "Høyden på vinduet i piksler."
+
+#: ../data/org.gnome.taquin.gschema.xml.h:9
+msgid "true if the window is maximized."
+msgstr "«true» hvis vinduet er maksimert."
+
+#: ../src/game-window.vala:128
+msgid "_Start Game"
+msgstr "_Start spill"
+
+#: ../src/game-window.vala:153
+msgid "Undo your most recent move"
+msgstr "Angre siste trekk"
+
+#: ../src/taquin-main.vala:45
+msgid "Play the classical 1880s’ 15-puzzle"
+msgstr ""
+
+#: ../src/taquin-main.vala:46
+msgid "Try this fun alternative 16-puzzle"
+msgstr ""
+
+#: ../src/taquin-main.vala:47
+msgid "Sets the puzzle edges’ size (3-5, 2-9 for debug)"
+msgstr ""
+
+#: ../src/taquin-main.vala:48
+msgid "Turn off the sound"
+msgstr "Slå av lyd"
+
+#: ../src/taquin-main.vala:49
+msgid "Turn on the sound"
+msgstr "Slå på lyd"
+
+#: ../src/taquin-main.vala:50
+msgid "Print release version and exit"
+msgstr "Skriv versjonsinformasjon og avslutt"
+
+#: ../src/taquin-main.vala:233
+msgid "(see COPYING.themes for informations)"
+msgstr ""
+
+#: ../src/taquin-main.vala:241
+msgid "A classic 15-puzzle game"
+msgstr ""
+
+#: ../src/taquin-main.vala:245
+msgid "translator-credits"
+msgstr ""
+"Kjartan Maraas <kmaraas@gnome.org>\n"
+"Espen Stefansen <espens@svn.gnome.org>\n"
+"Torstein Adolf Winterseth <kvikende@fsfe.org>"
+
+#: ../src/taquin-main.vala:286
+msgid "You can’t move this tile!"
+msgstr "Du kan ikke flytte denne flisen!"
+
+#: ../src/taquin-main.vala:292
+msgid "Bravo! You finished the game!"
+msgstr "Bravo! Du fullførte spillet!"
+
+#: ../src/taquin-main.vala:310
+#, c-format
+msgid "Size: %d × %d ▾"
+msgstr "Størrelse: %d × %d ▾"
+
+#: ../src/taquin-main.vala:324
+msgid "Theme: Cats ▾"
+msgstr "Tema: Katter ▾"
+
+#: ../src/taquin-main.vala:325
+msgid "Theme: Numbers ▾"
+msgstr "Tema: Tall ▾"
