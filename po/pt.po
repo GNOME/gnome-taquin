@@ -2,15 +2,16 @@
 # Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
 # This file is distributed under the same license as the PACKAGE package.
 # Pedro Albuquerque <palbuquerque73@gmail.com>, 2015.
+#
 msgid ""
 msgstr ""
 "Project-Id-Version: Taquin\n"
 "Report-Msgid-Bugs-To: http://bugzilla.gnome.org/enter_bug.cgi?product=gnome-"
 "taquin&keywords=I18N+L10N&component=general\n"
-"POT-Creation-Date: 2015-07-25 20:20+0000\n"
-"PO-Revision-Date: 2015-07-28 05:37+0100\n"
+"POT-Creation-Date: 2015-07-28 05:23+0000\n"
+"PO-Revision-Date: 2015-07-28 06:25+0100\n"
 "Last-Translator: Pedro Albuquerque <palbuquerque73@gmail.com>\n"
-"Language-Team: Pedro Albuquerque\n"
+"Language-Team: Português <palbuquerque73@gmail.com>\n"
 "Language: pt\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -68,10 +69,20 @@ msgid "Go back to the current game"
 msgstr "Voltar ao jogo atual"
 
 #: ../data/taquin.ui.h:2
+#| msgid "_Start Over"
+msgid "_Start Game"
+msgstr "_Iniciar o jogo"
+
+#: ../data/taquin.ui.h:3
+#| msgid "Start a new game"
+msgid "Start a new game as configured"
+msgstr "Iniciar um novo jogo como configurado"
+
+#: ../data/taquin.ui.h:4
 msgid "_Start Over"
 msgstr "_Recomeçar"
 
-#: ../data/taquin.ui.h:3
+#: ../data/taquin.ui.h:5
 msgid "Configure a new game"
 msgstr "Configurar um novo jogo"
 
