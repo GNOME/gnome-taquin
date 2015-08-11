@@ -5,10 +5,10 @@
 # Torstein Adolf Winterseth <kvikende@fsfe.org>, 2010.
 msgid ""
 msgstr ""
-"Project-Id-Version: gnome-tetravex 3.17.x\n"
+"Project-Id-Version: gnome-taquin 3.17.x\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2015-05-14 16:38+0200\n"
-"PO-Revision-Date: 2015-05-14 16:43+0200\n"
+"POT-Creation-Date: 2015-08-11 19:12+0200\n"
+"PO-Revision-Date: 2015-08-11 19:16+0200\n"
 "Last-Translator: Kjartan Maraas <kmaraas@gnome.org>\n"
 "Language-Team: Norwegian bokmål <i18n-nb@lister.ping.uio.no>\n"
 "Language: nb\n"
@@ -55,15 +55,15 @@ msgstr "Tall"
 
 #: ../data/taquin-screens.ui.h:6 ../data/org.gnome.taquin.desktop.in.h:4
 msgid "15-Puzzle"
-msgstr ""
+msgstr "15-puslespill"
 
 #: ../data/taquin-screens.ui.h:7 ../data/org.gnome.taquin.desktop.in.h:5
 msgid "16-Puzzle"
-msgstr ""
+msgstr "16-puslespill"
 
 #: ../data/taquin.ui.h:1
 msgid "Go back to the current game"
-msgstr ""
+msgstr "Gå tilbake til aktivt spill"
 
 #: ../data/taquin.ui.h:2
 msgid "_Start Over"
@@ -89,13 +89,13 @@ msgstr "Flytt fliser til rett plass"
 #: ../data/org.gnome.taquin.appdata.xml.in.h:3
 msgid ""
 "Taquin is a computer version of the 15-puzzle and other sliding puzzles."
-msgstr ""
+msgstr "Taquin er datamaskinversjonen av 15-puslespill og andre skyvepuslespill."
 
 #: ../data/org.gnome.taquin.appdata.xml.in.h:4
 msgid ""
 "The object of Taquin is to move tiles so that they reach their places, "
 "either indicated with numbers, or with parts of a great image."
-msgstr ""
+msgstr "Målet i Taquin er å skyve flisene slik at de når sine plasser som er indikert med tall eller deler av et større bilde."
 
 #: ../data/org.gnome.taquin.desktop.in.h:1 ../src/taquin-main.vala:76
 #: ../src/taquin-main.vala:133 ../src/taquin-main.vala:237
@@ -114,7 +114,7 @@ msgstr "Antall fliser på hver kant."
 msgid ""
 "The game offers to play with a board size from 3 to 5. The setting could be "
 "set from 2 (good for testing) to 9, limited by the way files are selected."
-msgstr ""
+msgstr "Spillet tilbyr å spille med brettstørrelse på 3 til 5. Denne innstillingen kan settes til 2 (bra for testing) til 9, begrenset av måten filene velges."
 
 #: ../data/org.gnome.taquin.gschema.xml.h:3
 msgid "Name of the theme folder."
@@ -122,7 +122,7 @@ msgstr "Navn på temamappe."
 
 #: ../data/org.gnome.taquin.gschema.xml.h:4
 msgid "Taquin has two default themes: 'cats' and 'numbers'."
-msgstr ""
+msgstr "Taquin har to forvalgte tema: «cats» og «numbers»"
 
 #: ../data/org.gnome.taquin.gschema.xml.h:5
 msgid "Sound"
@@ -130,7 +130,7 @@ msgstr "Lyd"
 
 #: ../data/org.gnome.taquin.gschema.xml.h:6
 msgid "Whether or not to play event sounds."
-msgstr ""
+msgstr "Hvorvidt lyd for hendelser skal spilles eller ikke."
 
 #: ../data/org.gnome.taquin.gschema.xml.h:7
 msgid "Width of the window in pixels."
@@ -154,15 +154,15 @@ msgstr "Angre siste trekk"
 
 #: ../src/taquin-main.vala:45
 msgid "Play the classical 1880s’ 15-puzzle"
-msgstr ""
+msgstr "Spill det klassiske 15-puslespill fra 1880-årene"
 
 #: ../src/taquin-main.vala:46
 msgid "Try this fun alternative 16-puzzle"
-msgstr ""
+msgstr "Prøv dette morsomme alternativet: 16-puslespill"
 
 #: ../src/taquin-main.vala:47
 msgid "Sets the puzzle edges’ size (3-5, 2-9 for debug)"
-msgstr ""
+msgstr "Setter størrelse på puslespillets kanter (3-5, 2-9 for feilsøking)"
 
 #: ../src/taquin-main.vala:48
 msgid "Turn off the sound"
@@ -178,11 +178,11 @@ msgstr "Skriv versjonsinformasjon og avslutt"
 
 #: ../src/taquin-main.vala:233
 msgid "(see COPYING.themes for informations)"
-msgstr ""
+msgstr "(se COPYING.themes for informasjon)"
 
 #: ../src/taquin-main.vala:241
 msgid "A classic 15-puzzle game"
-msgstr ""
+msgstr "Et klassisk 15-puslespill"
 
 #: ../src/taquin-main.vala:245
 msgid "translator-credits"
