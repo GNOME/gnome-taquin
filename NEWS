@@ -1,3 +1,16 @@
+3.17.90 - August 18, 2015
+=========================
+
+Changes since 3.17.1
+* Print --version output on stdout
+* New translations: aragonese, norwegian bokmål, portuguese
+
+All contributors to this release:
+* Mohammed Sadiq <sadiq@sadiqpk.org>
+* Daniel Martinez <dmartinez@src.gnome.org>
+* Kjartan Maraas <kmaraas@gnome.org>
+* Pedro Albuquerque <palbuquerque73@gmail.com>
+
 3.17.1 - April 28, 2015
 =========================
 
