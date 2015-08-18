@@ -91,7 +91,7 @@ public class Taquin : Gtk.Application
         if (options.contains ("version"))
         {
             /* NOTE: Is not translated so can be easily parsed */
-            stderr.printf ("%1$s %2$s\n", "gnome-taquin", VERSION);
+            stdout.printf ("%1$s %2$s\n", "gnome-taquin", VERSION);
             return Posix.EXIT_SUCCESS;
         }
 
