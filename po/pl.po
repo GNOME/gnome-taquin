@@ -11,8 +11,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: gnome-taquin\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2015-03-02 21:40+0100\n"
-"PO-Revision-Date: 2015-03-02 21:44+0100\n"
+"POT-Creation-Date: 2015-08-25 14:25+0200\n"
+"PO-Revision-Date: 2015-08-25 14:27+0200\n"
 "Last-Translator: Piotr Drąg <piotrdrag@gmail.com>\n"
 "Language-Team: Polish <gnomepl@aviary.pl>\n"
 "Language: pl\n"
@@ -73,22 +73,14 @@ msgid "Go back to the current game"
 msgstr "Wraca do gry"
 
 #: ../data/taquin.ui.h:2
-msgid "_Start Game"
-msgstr "_Rozpocznij grę"
-
-#: ../data/taquin.ui.h:3
-msgid "Start a new game as configured"
-msgstr "Rozpoczyna nową grę tak, jak skonfigurowano"
-
-#: ../data/taquin.ui.h:4
 msgid "_Start Over"
 msgstr "_Nowa gra"
 
-#: ../data/taquin.ui.h:5
+#: ../data/taquin.ui.h:3
 msgid "Configure a new game"
 msgstr "Konfiguruje nową grę"
 
-#: ../data/taquin.ui.h:6
+#: ../data/taquin.ui.h:4
 msgid "Start a new game"
 msgstr "Rozpoczyna nową grę"
 
@@ -114,9 +106,8 @@ msgstr ""
 "Taquin polega na przesuwaniu poszczególnych elementów tak, aby każdy z nich "
 "znalazł się na właściwym miejscu, według numeru lub obrazka."
 
-#. Window
-#: ../data/org.gnome.taquin.desktop.in.h:1 ../src/taquin-main.vala:78
-#: ../src/taquin-main.vala:138 ../src/taquin-main.vala:254
+#: ../data/org.gnome.taquin.desktop.in.h:1 ../src/taquin-main.vala:76
+#: ../src/taquin-main.vala:133 ../src/taquin-main.vala:237
 msgid "Taquin"
 msgstr "Taquin"
 
@@ -142,7 +133,8 @@ msgstr "Nazwa katalogu z motywami."
 
 #: ../data/org.gnome.taquin.gschema.xml.h:4
 msgid "Taquin has two default themes: 'cats' and 'numbers'."
-msgstr "Taquin posiada dwa domyślne motywy: \"cats\" oraz \"numbers\"."
+msgstr ""
+"Taquin posiada dwa domyślne motywy: „cats” (koty) oraz „numbers” (liczby)."
 
 #: ../data/org.gnome.taquin.gschema.xml.h:5
 msgid "Sound"
@@ -162,68 +154,72 @@ msgstr "Wysokość okna w pikselach."
 
 #: ../data/org.gnome.taquin.gschema.xml.h:9
 msgid "true if the window is maximized."
-msgstr "Wartość \"true\" oznacza, że okno jest zmaksymalizowane."
+msgstr "Wartość „true” oznacza, że okno jest zmaksymalizowane."
 
-#: ../src/game-window.vala:134
+#: ../src/game-window.vala:128
+msgid "_Start Game"
+msgstr "_Rozpocznij grę"
+
+#: ../src/game-window.vala:153
 msgid "Undo your most recent move"
 msgstr "Cofa ostatni ruch"
 
-#: ../src/taquin-main.vala:46
+#: ../src/taquin-main.vala:45
 msgid "Play the classical 1880s’ 15-puzzle"
 msgstr "Włącza klasyczne 15-częściowe puzzle z lat 80-tych XIX wieku"
 
-#: ../src/taquin-main.vala:47
+#: ../src/taquin-main.vala:46
 msgid "Try this fun alternative 16-puzzle"
 msgstr "Włącza zabawną wersję 16-częściowych puzzli"
 
-#: ../src/taquin-main.vala:48
+#: ../src/taquin-main.vala:47
 msgid "Sets the puzzle edges’ size (3-5, 2-9 for debug)"
 msgstr "Ustawia wielkość krawędzi układanki (2-9, 2 tylko do debugowania)"
 
-#: ../src/taquin-main.vala:49
+#: ../src/taquin-main.vala:48
 msgid "Turn off the sound"
 msgstr "Wyłącza dźwięk"
 
-#: ../src/taquin-main.vala:50
+#: ../src/taquin-main.vala:49
 msgid "Turn on the sound"
 msgstr "Włącza dźwięk"
 
-#: ../src/taquin-main.vala:51
+#: ../src/taquin-main.vala:50
 msgid "Print release version and exit"
 msgstr "Wyświetla wersję wydania i kończy działanie"
 
-#: ../src/taquin-main.vala:250
+#: ../src/taquin-main.vala:233
 msgid "(see COPYING.themes for informations)"
 msgstr "(Plik COPYING.themes zawiera więcej informacji)"
 
-#: ../src/taquin-main.vala:258
+#: ../src/taquin-main.vala:241
 msgid "A classic 15-puzzle game"
 msgstr "Klasyczne 15-częściowe puzzle"
 
-#: ../src/taquin-main.vala:262
+#: ../src/taquin-main.vala:245
 msgid "translator-credits"
 msgstr ""
 "Joanna Lisek <jlisek@gmail.com>, 2015\n"
 "Piotr Drąg <piotrdrag@gmail.com>, 2015\n"
 "Aviary.pl <gnomepl@aviary.pl>, 2015"
 
-#: ../src/taquin-main.vala:303
+#: ../src/taquin-main.vala:286
 msgid "You can’t move this tile!"
 msgstr "Nie można przesunąć tego elementu"
 
-#: ../src/taquin-main.vala:309
+#: ../src/taquin-main.vala:292
 msgid "Bravo! You finished the game!"
 msgstr "Gratulacje! Ukończono grę!"
 
-#: ../src/taquin-main.vala:333
+#: ../src/taquin-main.vala:310
 #, c-format
 msgid "Size: %d × %d ▾"
 msgstr "Rozmiar: %d×%d ▾"
 
-#: ../src/taquin-main.vala:347
+#: ../src/taquin-main.vala:324
 msgid "Theme: Cats ▾"
 msgstr "Motyw: Koty ▾"
 
-#: ../src/taquin-main.vala:348
+#: ../src/taquin-main.vala:325
 msgid "Theme: Numbers ▾"
 msgstr "Motyw: Liczby ▾"
