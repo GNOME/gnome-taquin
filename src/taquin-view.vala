@@ -76,7 +76,7 @@ public class TaquinView : Gtk.DrawingArea
     public TaquinView ()
     {
         can_focus = true;
-        set_events (EventMask.EXPOSURE_MASK | EventMask.BUTTON_PRESS_MASK | EventMask.KEY_PRESS_MASK);
+        set_events (EventMask.EXPOSURE_MASK | EventMask.BUTTON_PRESS_MASK | EventMask.BUTTON_RELEASE_MASK | EventMask.KEY_PRESS_MASK);
         set_size_request (350, 350);
     }
 
