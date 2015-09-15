@@ -1,3 +1,17 @@
+3.17.92 - September 15, 2015
+=========================
+
+Changes since 3.17.91
+* Updated czech and finnish translations
+* Fix dragging the window after clicking the game view
+
+All contributors to this release:
+* Michael Catanzaro <mcatanzaro@gnome.org>
+* Marek Černocký <marek@manet.cz>
+* Piotr Drąg <piotrdrag@gmail.com>
+* Carlos Garnacho <carlosg@gnome.org>
+* Jiri Grönroos <jiri.gronroos+l10n@iki.fi>
+
 3.17.91 - September 1st, 2015
 =========================
 
