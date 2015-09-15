@@ -108,7 +108,7 @@ msgid ""
 "either indicated with numbers, or with parts of a great image."
 msgstr ""
 "Cílem hlavolamu Taquin je přesunout kameny na jejich správná místa, která "
-"jsou daná buď číslem nebo částí celkového obrázku."
+"jsou daná buď číslem nebo částmi velkého obrázku."
 
 #. Window
 #: ../data/org.gnome.taquin.desktop.in.h:1 ../src/taquin-main.vala:78
