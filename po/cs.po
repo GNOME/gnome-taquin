@@ -57,11 +57,11 @@ msgstr "Čísla"
 
 #: ../data/taquin-screens.ui.h:6 ../data/org.gnome.taquin.desktop.in.h:4
 msgid "15-Puzzle"
-msgstr "Puzzle s 15 díly"
+msgstr "Skládačka s 15 díly"
 
 #: ../data/taquin-screens.ui.h:7 ../data/org.gnome.taquin.desktop.in.h:5
 msgid "16-Puzzle"
-msgstr "Puzzle se 16 díly"
+msgstr "Skládačka s 16 díly"
 
 #: ../data/taquin.ui.h:1
 msgid "Go back to the current game"
@@ -94,20 +94,20 @@ msgstr "Taquin GNOME"
 #: ../data/org.gnome.taquin.appdata.xml.in.h:2
 #: ../data/org.gnome.taquin.desktop.in.h:2
 msgid "Slide tiles to their correct places"
-msgstr "Presuňte kameny na jejich správné místo"
+msgstr "Presuňte díly na jejich správné místo"
 
 #: ../data/org.gnome.taquin.appdata.xml.in.h:3
 msgid ""
 "Taquin is a computer version of the 15-puzzle and other sliding puzzles."
 msgstr ""
-"Taquin je počítačová verze posuvného puzzle s 15 nebo i jiným počtem dílů."
+"Taquin je počítačová verze posuvného hlavolamu s 15 nebo i jiným počtem dílů."
 
 #: ../data/org.gnome.taquin.appdata.xml.in.h:4
 msgid ""
 "The object of Taquin is to move tiles so that they reach their places, "
 "either indicated with numbers, or with parts of a great image."
 msgstr ""
-"Cílem hlavolamu Taquin je přesunout kameny na jejich správná místa, která "
+"Cílem hlavolamu Taquin je přesunout díly na jejich správná místa, která "
 "jsou daná buď číslem nebo částmi velkého obrázku."
 
 #. Window
@@ -118,11 +118,11 @@ msgstr "Taquin"
 
 #: ../data/org.gnome.taquin.desktop.in.h:3
 msgid "puzzle;"
-msgstr "posuvné;puzzle;hlavolam;"
+msgstr "posuvné;posuvná;puzzle;hlavolam;skládačka;"
 
 #: ../data/org.gnome.taquin.gschema.xml.h:1
 msgid "Number of tiles on each edge."
-msgstr "Počet kamenů na každé straně."
+msgstr "Počet dílů na každé straně."
 
 #: ../data/org.gnome.taquin.gschema.xml.h:2
 msgid ""
@@ -167,11 +167,11 @@ msgstr "Vrátit zpět poslední tah"
 
 #: ../src/taquin-main.vala:46
 msgid "Play the classical 1880s’ 15-puzzle"
-msgstr "Hrát klasické posuvné puzzle z 80 let s 15 díly"
+msgstr "Hrát klasický posuvný hlavolam z 80 let s 15 díly"
 
 #: ../src/taquin-main.vala:47
 msgid "Try this fun alternative 16-puzzle"
-msgstr "Zkusit vtipnou alternativu posuvného puzzle se 16 díly"
+msgstr "Zkusit vtipnou alternativu posuvného hlavolamu s 16 díly"
 
 #: ../src/taquin-main.vala:48
 msgid "Sets the puzzle edges’ size (3-5, 2-9 for debug)"
@@ -195,7 +195,7 @@ msgstr "(viz COPYING.themes ohledně informací)"
 
 #: ../src/taquin-main.vala:258
 msgid "A classic 15-puzzle game"
-msgstr "Klasické posuvné puzzle s 15 díly"
+msgstr "Klasický posuvný hlavolam s 15 díly"
 
 #: ../src/taquin-main.vala:262
 msgid "translator-credits"
@@ -203,7 +203,7 @@ msgstr "Marek Černocký <marek@manet.cz>"
 
 #: ../src/taquin-main.vala:303
 msgid "You can’t move this tile!"
-msgstr "Tímto kamenem nemůžete táhnout!"
+msgstr "Tímto dílem nemůžete táhnout!"
 
 #: ../src/taquin-main.vala:309
 msgid "Bravo! You finished the game!"
