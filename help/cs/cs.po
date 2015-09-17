@@ -1,0 +1,622 @@
+# Czech translation for gnome-taquin.
+# Copyright (C) 2015 gnome-taquin's COPYRIGHT HOLDER
+# This file is distributed under the same license as the gnome-taquin package.
+# Marek Černocký <marek@manet.cz>, 2015.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: gnome-taquin master\n"
+"POT-Creation-Date: 2015-09-14 08:30+0000\n"
+"PO-Revision-Date: 2015-09-17 01:58+0200\n"
+"Last-Translator: Marek Černocký <marek@manet.cz>\n"
+"Language-Team: Czech <gnome-cs-list@gnome.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Language: cs\n"
+"Plural-Forms: nplurals=3; plural=(n==1) ? 0 : (n>=2 && n<=4) ? 1 : 2;\n"
+"X-Generator: Gtranslator 2.91.7\n"
+
+#. Put one translator per line, in the form NAME <EMAIL>, YEAR1, YEAR2
+msgctxt "_"
+msgid "translator-credits"
+msgstr "Marek Černocký <marek@manet.cz>"
+
+#. (itstool) path: credit/name
+#: C/15-Puzzle.page:10 C/16-Puzzle.page:10 C/beginning.page:10 C/index.page:12
+#: C/shortcuts.page:10 C/start-screen.page:10
+msgid "Arnaud Bonatti"
+msgstr "Arnaud Bonatti"
+
+#. (itstool) path: credit/years
+#: C/15-Puzzle.page:12 C/16-Puzzle.page:12 C/beginning.page:12
+#: C/shortcuts.page:12 C/start-screen.page:12
+msgid "2014"
+msgstr "2014"
+
+#. (itstool) path: page/title
+#: C/15-Puzzle.page:18
+msgid "15-Puzzle"
+msgstr "Skládačka s 15 díly"
+
+#. (itstool) path: page/p
+#: C/15-Puzzle.page:20
+msgid ""
+"The <em>15-Puzzle</em> is the default puzzle of <app>Taquin</app>. It is "
+"displayed the first time the application is opened. You can start one at any "
+"time from the <link xref=\"start-screen\">Start Screen</link>."
+msgstr ""
+"Verze s <em>15 díly</em> je pro <app>Taquin</app> výchozí. Zobrazí se, když "
+"je aplikace poprvé spuštěna. Můžete ji kdykoliv spustit ze <link xref="
+"\"start-screen\">spouštěcí obrazovky</link>."
+
+#. (itstool) path: section/title
+#: C/15-Puzzle.page:23 C/16-Puzzle.page:23
+msgid "Gameplay"
+msgstr "Hraní"
+
+#. (itstool) path: section/p
+#: C/15-Puzzle.page:25 C/16-Puzzle.page:25
+msgid "The goal is to move all the tiles to their proper places."
+msgstr "Cílem je přesunout všechny díly na jejich správná místa."
+
+#. (itstool) path: section/p
+#: C/15-Puzzle.page:27
+msgid ""
+"There’s an empty space where you can move adjacent tiles by pushing them "
+"onto it. You can push more than one tile at the same time in the empty "
+"space’s direction."
+msgstr ""
+"K dispozici je jedno prázdné místo, na které můžete posunout sousedící díl "
+"tím, že jej zmáčknete. Můžete posunout i více dílu naráz, pokud leží v jedné "
+"přímce směrem k prázdnému místu."
+
+#. (itstool) path: section/title
+#: C/15-Puzzle.page:31 C/16-Puzzle.page:31
+msgid "End of the game"
+msgstr "Konec hry"
+
+#. (itstool) path: section/p
+#: C/15-Puzzle.page:32 C/16-Puzzle.page:32
+msgid ""
+"At the end of the game, <app>Taquin</app> notifies you and displays the "
+"complete image."
+msgstr ""
+"Na konci hry vás <app>Taquin</app> informuje, že jste dohráli, a zobrazí "
+"celý obrázek."
+
+#. (itstool) path: section/p
+#: C/15-Puzzle.page:33 C/16-Puzzle.page:33
+msgid ""
+"You can click the <gui>Start Over</gui> button to go to the <link xref="
+"\"start-screen\">Start Screen</link>."
+msgstr ""
+"Můžete kliknout na tlačítko <gui>Začít jinou hru</gui>, abyste přešli na "
+"<link xref=\"start-screen\">spouštěcí obrazovku</link>."
+
+#. (itstool) path: section/title
+#: C/15-Puzzle.page:37 C/16-Puzzle.page:37
+msgid "How to play with a mouse"
+msgstr "Jak hrát myší"
+
+#. (itstool) path: section/p
+#: C/15-Puzzle.page:39 C/15-Puzzle.page:57 C/16-Puzzle.page:39
+#: C/16-Puzzle.page:55
+msgid "To make a move:"
+msgstr "Když chcete posunout díl:"
+
+#. (itstool) path: item/p
+#: C/15-Puzzle.page:41 C/beginning.page:25
+msgid "Click on a tile on the same row or column as the empty space."
+msgstr "Klikněte na díl ve stejném řádku nebo sloupci, jako je prázdné místo."
+
+#. (itstool) path: note/p
+#: C/15-Puzzle.page:42 C/15-Puzzle.page:61 C/beginning.page:26
+msgid ""
+"If you click on a tile that cannot move, the game notifies you that the move "
+"is impossible."
+msgstr ""
+"Když kliknete na díl, který nelze posunout, upozorní vás hra, že tah není "
+"možný."
+
+#. (itstool) path: item/p
+#: C/15-Puzzle.page:45 C/16-Puzzle.page:43
+msgid ""
+"You can always undo a move by clicking the <gui>Undo</gui> button at the "
+"left of the header bar."
+msgstr ""
+"Vždy máte možnost tah vrátit zpět kliknutím na tlačítko <gui>Zpět</gui> "
+"vlevo na hlavičkové liště."
+
+#. (itstool) path: item/p
+#: C/15-Puzzle.page:47 C/16-Puzzle.page:45 C/beginning.page:31
+msgid ""
+"At the end of the game, or when you want to switch games, click the "
+"<gui>Start Over</gui> button to go to the <link xref=\"start-screen\">Start "
+"Screen</link>."
+msgstr ""
+"Když dokončíte hru, nebo když chcete hru změnit, klikněte na tlačítko "
+"<gui>Začít jinou hru</gui>, abyste se dostali na <link xref=\"start-screen"
+"\">spouštěcí obrazovku</link>."
+
+#. (itstool) path: section/p
+#: C/15-Puzzle.page:51 C/16-Puzzle.page:49
+msgid "You can also use the keyboard."
+msgstr "Můžete používat také klávesnici."
+
+#. (itstool) path: section/title
+#: C/15-Puzzle.page:55 C/16-Puzzle.page:53
+msgid "How to play with the keyboard"
+msgstr "Jak hrát klávesnicí"
+
+#. (itstool) path: item/p
+#: C/15-Puzzle.page:59
+msgid ""
+"Use the <key>Left</key>, <key>Right</key>, <key>Up</key> and <key>Down</key> "
+"arrows to go at the tile you want to move. The currently selected tile is "
+"indicated with four arrows around the board, on each side of its row and "
+"column."
+msgstr ""
+"Použijte šipky <key>←</key>, <key>→</key>, <key>↑</key> a <key>↓</key>, "
+"abyste přešli na díl, který chcete posunout. Právě vybraný díl je označen "
+"čtyřmi šipkami okolo herní desky, na obou stranách řádku a sloupce."
+
+#. (itstool) path: item/p
+#: C/15-Puzzle.page:60
+msgid ""
+"Use the <key>Space</key> key to move the selected tile in the direction of "
+"the empty space."
+msgstr ""
+"Použijte <key>mezerník</key> k posunutí vybraného dílu směrem k prázdnému "
+"místu."
+
+#. (itstool) path: item/p
+#: C/15-Puzzle.page:64 C/16-Puzzle.page:60
+msgid ""
+"You can always undo a move with the <keyseq><key>Ctrl</key><key>Z</key></"
+"keyseq> keys."
+msgstr ""
+"Pomocí kláves <keyseq><key>Ctrl</key><key>Z</key></keyseq> můžete jednotlivé "
+"tahy kdykoliv vrátit."
+
+#. (itstool) path: item/p
+#: C/15-Puzzle.page:66 C/16-Puzzle.page:62
+msgid ""
+"At the end of the game, or when you want to switch games, use the the "
+"<keyseq><key>Ctrl</key><key>N</key></keyseq> keys to go to the <link xref="
+"\"start-screen\">Start Screen</link>."
+msgstr ""
+"Na konci hry, nebo když chcete začít jinou hru, použijte <keyseq><key>Ctrl</"
+"key><key>N</key></keyseq> k zobrazení <link xref=\"start-screen\">spouštěcí "
+"obrazovky</link>."
+
+#. (itstool) path: section/p
+#: C/15-Puzzle.page:70 C/16-Puzzle.page:66
+msgid "You can also use a mouse."
+msgstr "Můžete používat také myš."
+
+#. (itstool) path: page/title
+#: C/16-Puzzle.page:18
+msgid "16-Puzzle"
+msgstr "Skládačka s 16 díly"
+
+#. (itstool) path: page/p
+#: C/16-Puzzle.page:20
+msgid ""
+"The <em>16-Puzzle</em> is the variant puzzle of <app>Taquin</app>. You can "
+"launch it at any time from the <link xref=\"start-screen\">Start Screen</"
+"link>."
+msgstr ""
+"<em>Skládačka s 16 díly</em> je variantou hlavolamu <app>Taquin</app>. "
+"Můžete ji kdykoliv spustit ze <link xref=\"start-screen\">spouštěcí "
+"obrazovky</link>."
+
+#. (itstool) path: section/p
+#: C/16-Puzzle.page:27
+msgid ""
+"You move all the tiles of a row or a column in one direction. The tile that "
+"is pushed out of the board is placed at the opposite side of the row or "
+"column."
+msgstr ""
+"Posouváte jedním směrem všechny díly v řádku nebo sloupci. Díl, který je "
+"vytlačen z desky, je umístěn zpátky na opačnou stranu daného řádku nebo "
+"sloupce."
+
+#. (itstool) path: item/p
+#: C/16-Puzzle.page:41
+msgid ""
+"Click on one of the arrows displayed around the board. The row or column at "
+"the end of which this arrow is moves in this direction, and the tile that "
+"was next to the arrow is placed at the opposite side."
+msgstr ""
+"Klikněte na jednu ze šipek zobrazených okolo herní desky. Řádek nebo sloupec "
+"za touto šipkou se posunu v daném směru a díl, který byl na kraji u šipky, "
+"se přemístí na opačnou stranu."
+
+#. (itstool) path: item/p
+#: C/16-Puzzle.page:57
+msgid ""
+"Use the <key>Left</key>, <key>Right</key>, <key>Up</key> and <key>Down</key> "
+"arrows to go at the row or the column you want to move. The currently "
+"selected row and column are indicated with two lights around the board."
+msgstr ""
+"Použijte šipky <key>←</key>, <key>→</key>, <key>↑</key> a <key>↓</key>, "
+"abyste přešli na řádek nebo sloupec, který chcete posunout. Právě vybraný "
+"řádek a sloupec jsou označeny osvětlením okolo herní desky."
+
+#. (itstool) path: item/p
+#: C/16-Puzzle.page:58
+msgid ""
+"Use the <keyseq><key>Ctrl</key><key>Left</key></keyseq> or "
+"<keyseq><key>Ctrl</key><key>Right</key></keyseq> keys to move a row, or the "
+"<keyseq><key>Ctrl</key><key>Up</key></keyseq> and <keyseq><key>Ctrl</"
+"key><key>Down</key></keyseq> keys to move a column."
+msgstr ""
+"Použijte klávesy <keyseq><key>Ctrl</key><key>←</key></keyseq> a "
+"<keyseq><key>Ctrl</key><key>→</key></keyseq> k posunu řádku, nebo klávesy "
+"<keyseq><key>Ctrl</key><key>↑</key></keyseq> a <keyseq><key>Ctrl</"
+"key><key>↓</key></keyseq> k posunu sloupce."
+
+#. (itstool) path: page/title
+#: C/beginning.page:18
+msgid "Beginning"
+msgstr "Začínáme"
+
+#. (itstool) path: page/p
+#: C/beginning.page:20
+msgid ""
+"When <app>Taquin</app> is opened for the first time, it displays a "
+"traditional <link xref=\"15-Puzzle\">15-Puzzle</link> game."
+msgstr ""
+"Když je <app>Taquin</app> otevřen poprvé, zobrazí tradiční hru <link xref="
+"\"15-Puzzle\">skládačky s 15 díly</link>."
+
+#. (itstool) path: page/p
+#: C/beginning.page:22
+msgid "The game is played using the mouse. To make a move:"
+msgstr "Hra se hraje pomocí myši. Abyste provedli tah:"
+
+#. (itstool) path: item/p
+#: C/beginning.page:29
+msgid ""
+"You can always undo a move by clicking the <gui>Undo</gui> button on the "
+"left of the header bar."
+msgstr ""
+"Kliknutím na tlačítko <gui>Zpět</gui> vlevo na hlavičkové liště můžete "
+"jednotlivé tahy kdykoliv vrátit."
+
+#. (itstool) path: page/p
+#: C/beginning.page:35
+msgid ""
+"After the first time it is opened, <app>Taquin</app> displays a puzzle with "
+"the same rules and dimensions as the last one played when it is opened, so "
+"it could be a <link xref=\"16-Puzzle\">16-Puzzle</link> game."
+msgstr ""
+"Při dalších spuštění <app>Taquin</app> zobrazí hlavolam se stejnými pravidly "
+"a rozměry, jako byl hrán naposledy, což může být i <link xref=\"16-Puzzle"
+"\">skládačka s 16 díly</link>."
+
+#. (itstool) path: info/title
+#: C/index.page:8
+msgctxt "link"
+msgid "Taquin"
+msgstr "Taquin"
+
+#. (itstool) path: info/title
+#: C/index.page:9
+msgctxt "text"
+msgid "Taquin"
+msgstr "Taquin"
+
+#. (itstool) path: license/p
+#: C/index.page:16
+msgid ""
+"Creative Commons Attribution-ShareAlike 4.0 International (CC BY-SA 4.0)"
+msgstr ""
+"Creative Commons Attribution-ShareAlike 4.0 International (CC BY-SA 4.0)"
+
+#. (itstool) path: media/span
+#: C/index.page:20
+msgid "Taquin logo"
+msgstr "logo Taquin"
+
+#. (itstool) path: page/title
+#: C/index.page:20
+msgid "<_:media-1/> Taquin"
+msgstr "<_:media-1/> Taquin"
+
+#. (itstool) path: page/p
+#: C/index.page:22
+msgid ""
+"<app>Taquin</app> is a sliding-block puzzle game. It includes the "
+"traditional 15-Puzzle invented in the early 1880s, and the more recent 16-"
+"Puzzle variant."
+msgstr ""
+"<app>Taquin</app> je hlavolam založený na posouvání dílů skládačky. Obsahuje "
+"jak tradiční skládačku s 15 díly vymyšlenou před rokem 1880, tak novější "
+"variantu v podobě skládačky s 16 díly."
+
+#. (itstool) path: section/title
+#: C/index.page:26
+msgid "How to Play"
+msgstr "Jak hrát"
+
+#. (itstool) path: section/title
+#: C/index.page:38
+msgid "Advanced"
+msgstr "Pokročilé"
+
+#. (itstool) path: p/link
+#: C/legal.xml:3
+msgid "Creative Commons Attribution-ShareAlike 4.0 Unported License"
+msgstr "Creative Commons Attribution-ShareAlike 4.0 Unported License"
+
+#. (itstool) path: license/p
+#: C/legal.xml:3
+msgid "This work is licensed under a <_:link-1/>."
+msgstr "Toto dílo je šířeno pod licencí <_:link-1/>."
+
+#. (itstool) path: info/desc
+#: C/license.page:8
+msgid "Legal information."
+msgstr "Právní informace."
+
+#. (itstool) path: page/title
+#: C/license.page:11
+msgid "License"
+msgstr "Licence"
+
+#. (itstool) path: page/p
+#: C/license.page:12
+msgid ""
+"This work is distributed under a CreativeCommons Attribution-Share Alike 4.0 "
+"Unported license."
+msgstr ""
+"Toto dílo je šířeno pod licencí CreativeCommons Attribution-Share Alike 4.0 "
+"Unported license."
+
+#. (itstool) path: page/p
+#: C/license.page:20
+msgid "You are free:"
+msgstr "Můžete volně:"
+
+#. (itstool) path: item/title
+#: C/license.page:25
+msgid "<em>To share</em>"
+msgstr "<em>Sdílet</em>\""
+
+#. (itstool) path: item/p
+#: C/license.page:26
+msgid "To copy, distribute and transmit the work."
+msgstr "Kopírovat, šířit a rozesílat dílo."
+
+#. (itstool) path: item/title
+#: C/license.page:29
+msgid "<em>To remix</em>"
+msgstr "<em>Měnit</em>"
+
+#. (itstool) path: item/p
+#: C/license.page:30
+msgid "To adapt the work."
+msgstr "Přizpůsobovat dílo."
+
+#. (itstool) path: page/p
+#: C/license.page:33
+msgid "Under the following conditions:"
+msgstr "Za následujících podmínek:"
+
+#. (itstool) path: item/title
+#: C/license.page:38
+msgid "<em>Attribution</em>"
+msgstr "<em>Označení</em>"
+
+#. (itstool) path: item/p
+#: C/license.page:39
+msgid ""
+"You must attribute the work in the manner specified by the author or "
+"licensor (but not in any way that suggests that they endorse you or your use "
+"of the work)."
+msgstr ""
+"Musíte dílo označit v souladu s požadavky autora nebo licence (ale ne žádným "
+"způsobem, který předpokládá, že podporují vás nebo vaše použití díla)."
+
+#. (itstool) path: item/title
+#: C/license.page:46
+msgid "<em>Share Alike</em>"
+msgstr "<em>Stejné sdílení</em>"
+
+#. (itstool) path: item/p
+#: C/license.page:47
+msgid ""
+"If you alter, transform, or build upon this work, you may distribute the "
+"resulting work only under the same, similar or a compatible license."
+msgstr ""
+"Pokud dílo změníte, převedete nebo na něm založíte jiné, můžete výsledek "
+"této práce šířit pouze pod stejnou, podobnou nebo kompatibilní licencí."
+
+#. (itstool) path: page/p
+#: C/license.page:53
+msgid ""
+"For the full text of the license, see the <link href=\"http://"
+"creativecommons.org/licenses/by-sa/3.0/legalcode\">CreativeCommons website</"
+"link>, or read the full <link href=\"http://creativecommons.org/licenses/by-"
+"sa/3.0/\">Commons Deed</link>."
+msgstr ""
+"Text licence v plném znění najdete na <link href=\"http://creativecommons."
+"org/licenses/by-sa/3.0/legalcode\">webových stránkách CreativeCommons</link> "
+"nebo si přečtěte <link href=\"http://creativecommons.org/licenses/by-sa/3.0/"
+"\">výtah dokumentu pro neprávníky</link>."
+
+#. (itstool) path: page/title
+#: C/shortcuts.page:18
+msgid "Keyboard Shortcuts"
+msgstr "Klávesové zkratky"
+
+#. (itstool) path: page/p
+#: C/shortcuts.page:20
+msgid ""
+"<app>Taquin</app> can easily be used with keyboard. The <link xref=\"15-"
+"Puzzle#15-keyboard\">15-Puzzle</link> and <link xref=\"16-Puzzle#16-keyboard"
+"\">16-Puzzle</link> both have specific shortcuts."
+msgstr ""
+"<app>Taquin</app> lze snadno hrát klávesnicí. Jak <link xref=\"15-Puzzle#15-"
+"keyboard\">skládačky s 15 díly</link>, tak <link xref=\"16-Puzzle#16-keyboard"
+"\">skládačka s 16 díly</link> mají své vlastní klávesové zkratky."
+
+#. (itstool) path: section/title
+#: C/shortcuts.page:23
+msgid "In-game shortcuts"
+msgstr "Klávesové zkratky při hraní"
+
+#. (itstool) path: td/p
+#: C/shortcuts.page:26
+msgid "Show new-game screen"
+msgstr "Zobrazit obrazovku pro novou hru"
+
+#. (itstool) path: td/p
+#: C/shortcuts.page:27
+msgid "<keyseq><key>Ctrl</key><key>N</key></keyseq>"
+msgstr "<keyseq><key>Ctrl</key><key>N</key></keyseq>"
+
+#. (itstool) path: td/p
+#: C/shortcuts.page:30
+msgid "Undo last move"
+msgstr "Vrátit zpět poslední tah"
+
+#. (itstool) path: td/p
+#: C/shortcuts.page:31
+msgid "<keyseq><key>Ctrl</key><key>Z</key></keyseq>"
+msgstr "<keyseq><key>Ctrl</key><key>Z</key></keyseq>"
+
+#. (itstool) path: section/title
+#: C/shortcuts.page:36
+msgid "15-Puzzle shortcuts"
+msgstr "Klávesové zkratky skládačky s 15 díly"
+
+#. (itstool) path: td/p
+#: C/shortcuts.page:39 C/shortcuts.page:52
+msgid "Change selected tile"
+msgstr "Změnit vybraný díl"
+
+#. (itstool) path: td/p
+#: C/shortcuts.page:40 C/shortcuts.page:53
+msgid "<key>Left</key>, <key>Right</key>, <key>Up</key> and <key>Down</key>"
+msgstr "<key>←</key>, <key>→</key>, <key>↑</key> a <key>↓</key>"
+
+#. (itstool) path: td/p
+#: C/shortcuts.page:43
+msgid "Push tile in empty space’s direction"
+msgstr "Posunout díl ve směru prázdného místa"
+
+#. (itstool) path: td/p
+#: C/shortcuts.page:44
+msgid "<key>Space</key> or <key>KP_Enter</key>"
+msgstr "<key>mezerník</key> nebo <key>Enter</key> na numerické klávesnici"
+
+#. (itstool) path: section/title
+#: C/shortcuts.page:49
+msgid "16-Puzzle shortcuts"
+msgstr "Klávesové zkratky skládačky s 16 díly"
+
+#. (itstool) path: td/p
+#: C/shortcuts.page:56
+msgid "Move row"
+msgstr "Posunout řádek"
+
+#. (itstool) path: td/p
+#: C/shortcuts.page:57
+msgid ""
+"<keyseq><key>Ctrl</key><key>Left</key></keyseq> and <keyseq><key>Ctrl</"
+"key><key>Right</key></keyseq>"
+msgstr ""
+"<keyseq><key>Ctrl</key><key>←</key></keyseq> a <keyseq><key>Ctrl</"
+"key><key>→</key></keyseq>"
+
+#. (itstool) path: td/p
+#: C/shortcuts.page:60
+msgid "Move column"
+msgstr "Posunout sloupec"
+
+#. (itstool) path: td/p
+#: C/shortcuts.page:61
+msgid ""
+"<keyseq><key>Ctrl</key><key>Up</key></keyseq> and <keyseq><key>Ctrl</"
+"key><key>Down</key></keyseq>"
+msgstr ""
+"<keyseq><key>Ctrl</key><key>↑</key></keyseq> a <keyseq><key>Ctrl</"
+"key><key>↓</key></keyseq>"
+
+#. (itstool) path: section/title
+#: C/shortcuts.page:66
+msgid "Start Screen shortcuts"
+msgstr "Klávesové zkratky spouštěcí obrazovky"
+
+#. (itstool) path: td/p
+#: C/shortcuts.page:69
+msgid "New Game"
+msgstr "Nová hra"
+
+#. (itstool) path: td/p
+#: C/shortcuts.page:70
+msgid "<keyseq><key>Ctrl</key><key>Shift</key><key>N</key></keyseq>"
+msgstr "<keyseq><key>Ctrl</key><key>Shift</key><key>N</key></keyseq>"
+
+#. (itstool) path: td/p
+#: C/shortcuts.page:73
+msgid "Back to previous game (if any)"
+msgstr "Zpět do předchozí hry (pokud existuje)"
+
+#. (itstool) path: td/p
+#: C/shortcuts.page:74
+msgid "<key>Escape</key>"
+msgstr "<key>Esc</key>"
+
+#. (itstool) path: section/title
+#: C/shortcuts.page:79
+msgid "General shortcuts"
+msgstr "Obecné klávesové zkratky"
+
+#. (itstool) path: td/p
+#: C/shortcuts.page:82
+msgid "Help"
+msgstr "Nápověda"
+
+#. (itstool) path: td/p
+#: C/shortcuts.page:83
+msgid "<key>F1</key>"
+msgstr "<key>F1</key>"
+
+#. (itstool) path: td/p
+#: C/shortcuts.page:86
+msgid "Quit"
+msgstr "Ukončit"
+
+#. (itstool) path: td/p
+#: C/shortcuts.page:87
+msgid "<keyseq><key>Ctrl</key><key>Q</key></keyseq>"
+msgstr "<keyseq><key>Ctrl</key><key>Q</key></keyseq>"
+
+#. (itstool) path: page/title
+#: C/start-screen.page:18
+msgid "Start Screen"
+msgstr "Spouštěcí obrazovka"
+
+#. (itstool) path: page/p
+#: C/start-screen.page:19
+msgid ""
+"The <em>Start Screen</em> is the place to select your options and launch a "
+"new game, either a <link xref=\"15-Puzzle\">15-Puzzle</link> or a <link xref="
+"\"16-Puzzle\">16-Puzzle</link>."
+msgstr ""
+"<em>Spouštěcí obrazovka</em> je místo, kde si vybíráte volby a spouštíte "
+"novou hru, a to buď <link xref=\"15-Puzzle\">skládačku s 15 díly</link> nebo "
+"<link xref=\"16-Puzzle\">skládačku s 16 díly</link>."
+
+#. (itstool) path: page/p
+#: C/start-screen.page:20
+msgid ""
+"It can be accessed at any time from a game by pressing the <gui>Start Over</"
+"gui> button."
+msgstr ""
+"Můžete se na ni dostat kdykoliv během hraní zmáčknutím tlačítka <gui>Začít "
+"jinou hru</gui>."
