@@ -1,6 +1,7 @@
 [Desktop Entry]
 Icon=gnome-taquin
 _Name=Taquin
+_GenericName=15-puzzle
 _Comment=Slide tiles to their correct places
 _Keywords=puzzle;
 Exec=gnome-taquin
