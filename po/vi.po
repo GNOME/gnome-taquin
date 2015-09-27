@@ -9,8 +9,8 @@ msgstr ""
 "Project-Id-Version: gnome-taquin gnome-master\n"
 "Report-Msgid-Bugs-To: http://bugzilla.gnome.org/enter_bug.cgi?product=gnome-"
 "taquin&keywords=I18N+L10N&component=general\n"
-"POT-Creation-Date: 2015-03-24 20:58+0000\n"
-"PO-Revision-Date: 2015-03-25 08:55+0700\n"
+"POT-Creation-Date: 2015-09-26 21:06+0000\n"
+"PO-Revision-Date: 2015-09-27 07:55+0700\n"
 "Last-Translator: Trần Ngọc Quân <vnwildman@gmail.com>\n"
 "Language-Team: Vietnamese <gnome-vi-list@gnome.org>\n"
 "Language: vi\n"
@@ -18,6 +18,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
+"X-Generator: Gtranslator 2.91.7\n"
 
 #: ../data/taquin-menus.ui.h:1
 msgid "_Sound"
@@ -53,13 +54,13 @@ msgstr "Con mèo"
 
 #: ../data/taquin-screens.ui.h:5
 msgid "Numbers"
-msgstr "Số"
+msgstr "Con số"
 
-#: ../data/taquin-screens.ui.h:6 ../data/org.gnome.taquin.desktop.in.h:4
+#: ../data/taquin-screens.ui.h:6 ../data/org.gnome.taquin.desktop.in.h:5
 msgid "15-Puzzle"
 msgstr "15-Puzzle"
 
-#: ../data/taquin-screens.ui.h:7 ../data/org.gnome.taquin.desktop.in.h:5
+#: ../data/taquin-screens.ui.h:7 ../data/org.gnome.taquin.desktop.in.h:6
 msgid "16-Puzzle"
 msgstr "16-Puzzle"
 
@@ -68,31 +69,23 @@ msgid "Go back to the current game"
 msgstr "Quay trở lại ván chơi hiện tại"
 
 #: ../data/taquin.ui.h:2
-msgid "_Start Game"
-msgstr "_Bắt đầu chơi"
-
-#: ../data/taquin.ui.h:3
-msgid "Start a new game as configured"
-msgstr "Bắt đầu ván chơi đã cấu hình mới"
-
-#: ../data/taquin.ui.h:4
 msgid "_Start Over"
 msgstr "_Bắt đầu từ đầu"
 
-#: ../data/taquin.ui.h:5
+#: ../data/taquin.ui.h:3
 msgid "Configure a new game"
 msgstr "Cấu hình ván chơi mới"
 
-#: ../data/taquin.ui.h:6
+#: ../data/taquin.ui.h:4
 msgid "Start a new game"
 msgstr "Bắt đầu ván chơi mới"
 
 #: ../data/org.gnome.taquin.appdata.xml.in.h:1
 msgid "GNOME Taquin"
-msgstr "Ghép hình GNOME"
+msgstr "Xếp hình GNOME"
 
 #: ../data/org.gnome.taquin.appdata.xml.in.h:2
-#: ../data/org.gnome.taquin.desktop.in.h:2
+#: ../data/org.gnome.taquin.desktop.in.h:3
 msgid "Slide tiles to their correct places"
 msgstr "Di chuyển các miếng ghép vào đúng chỗ dành cho nó"
 
@@ -112,12 +105,16 @@ msgstr ""
 "đúng chỗ, hoặc là được chỉ thị bằng số, hoặc là các phần nhỏ của một bức ảnh "
 "lớn."
 
-#: ../data/org.gnome.taquin.desktop.in.h:1 ../src/taquin-main.vala:78
-#: ../src/taquin-main.vala:135 ../src/taquin-main.vala:250
+#: ../data/org.gnome.taquin.desktop.in.h:1 ../src/taquin-main.vala:76
+#: ../src/taquin-main.vala:133 ../src/taquin-main.vala:237
 msgid "Taquin"
-msgstr "Taquin"
+msgstr "Xếp hình"
 
-#: ../data/org.gnome.taquin.desktop.in.h:3
+#: ../data/org.gnome.taquin.desktop.in.h:2
+msgid "15-puzzle"
+msgstr "15-puzzle"
+
+#: ../data/org.gnome.taquin.desktop.in.h:4
 msgid "puzzle;"
 msgstr "puzzle;ghép;ghep;xếp;hình;xep;hinh;"
 
@@ -161,63 +158,70 @@ msgstr "Chiều cao cửa sổ tính theo điểm ảnh."
 msgid "true if the window is maximized."
 msgstr "đặt là đúng nếu cửa sổ được phóng to tối đa."
 
-#: ../src/game-window.vala:141
+#: ../src/game-window.vala:128
+msgid "_Start Game"
+msgstr "_Bắt đầu chơi"
+
+#: ../src/game-window.vala:153
 msgid "Undo your most recent move"
 msgstr "Hoàn lại nước đi gần đây nhất"
 
-#: ../src/taquin-main.vala:46
+#: ../src/taquin-main.vala:45
 msgid "Play the classical 1880s’ 15-puzzle"
 msgstr "Chơi trò chơi 15-puzzle cổ điển của thập niên 1880 "
 
-#: ../src/taquin-main.vala:47
+#: ../src/taquin-main.vala:46
 msgid "Try this fun alternative 16-puzzle"
 msgstr "Thử trò chơi thay thế khá vui là 16-puzzle"
 
-#: ../src/taquin-main.vala:48
+#: ../src/taquin-main.vala:47
 msgid "Sets the puzzle edges’ size (3-5, 2-9 for debug)"
 msgstr "Đặt cỡ các cạnh của trò trơi ghép hình (3-5, 2-9 để gỡ lỗi)"
 
-#: ../src/taquin-main.vala:49
+#: ../src/taquin-main.vala:48
 msgid "Turn off the sound"
 msgstr "Tắt âm thanh"
 
-#: ../src/taquin-main.vala:50
+#: ../src/taquin-main.vala:49
 msgid "Turn on the sound"
 msgstr "Bật âm thanh"
 
-#: ../src/taquin-main.vala:51
+#: ../src/taquin-main.vala:50
 msgid "Print release version and exit"
 msgstr "Hiển thị phiên bản phát hành rồi thoát"
 
-#: ../src/taquin-main.vala:246
+#: ../src/taquin-main.vala:233
 msgid "(see COPYING.themes for informations)"
 msgstr "(xem COPYING.themes để biết thông tin chi tiết)"
 
-#: ../src/taquin-main.vala:254
+#: ../src/taquin-main.vala:241
 msgid "A classic 15-puzzle game"
 msgstr "Trò chơi 15-puzzle cổ điển"
 
-#: ../src/taquin-main.vala:258
+#: ../src/taquin-main.vala:245
 msgid "translator-credits"
-msgstr "Nhóm dịch GNOME <gnome-vi-list@gnome.org>"
+msgstr "Nhóm Việt hóa GNOME <gnome-vi-list@gnome.org>"
 
-#: ../src/taquin-main.vala:299
+#: ../src/taquin-main.vala:286
 msgid "You can’t move this tile!"
 msgstr "Bạn không thể di chuyển miếng này!"
 
-#: ../src/taquin-main.vala:305
+#: ../src/taquin-main.vala:292
 msgid "Bravo! You finished the game!"
 msgstr "Hoan hô! Bạn đã hoàn thành trò chơi!"
 
-#: ../src/taquin-main.vala:329
+#: ../src/taquin-main.vala:310
 #, c-format
 msgid "Size: %d × %d ▾"
 msgstr "Cỡ: %d × %d ▾"
 
-#: ../src/taquin-main.vala:343
+#: ../src/taquin-main.vala:324
 msgid "Theme: Cats ▾"
 msgstr "Chủ đề: Con mèo ▾"
 
-#: ../src/taquin-main.vala:344
+#: ../src/taquin-main.vala:325
 msgid "Theme: Numbers ▾"
-msgstr "Chủ đề: Số ▾"
+msgstr "Chủ đề: Con số ▾"
+
+#~ msgid "Start a new game as configured"
+#~ msgstr "Bắt đầu ván chơi đã cấu hình mới"
