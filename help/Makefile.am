@@ -18,6 +18,6 @@ HELP_FILES = \
 	shortcuts.page      \
 	start-screen.page
 
-HELP_LINGUAS = cs
+HELP_LINGUAS = cs el
 
 -include $(top_srcdir)/git.mk
