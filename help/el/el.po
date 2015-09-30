@@ -1,0 +1,637 @@
+# Greek translation for gnome-taquin.
+# Copyright (C) 2015 gnome-taquin's COPYRIGHT HOLDER
+# This file is distributed under the same license as the gnome-taquin package.
+# Tom Tryfonidis <tomtryf@gmail.com>, 2015.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: gnome-taquin master\n"
+"POT-Creation-Date: 2015-09-27 08:53+0000\n"
+"PO-Revision-Date: 2015-09-27 23:38+0300\n"
+"Last-Translator: Tom Tryfonidis <tomtryf@gmail.com>\n"
+"Language-Team: Greek <gnome-el-list@gnome.org>\n"
+"Language: el\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"X-Generator: Poedit 1.8.4\n"
+
+#. Put one translator per line, in the form NAME <EMAIL>, YEAR1, YEAR2
+msgctxt "_"
+msgid "translator-credits"
+msgstr ""
+"Ελληνική μεταφραστική ομάδα GNOME <team@gnome.gr>, 2015\n"
+"Θάνος Τρυφωνίδης <tomtryf@gmail.com>, 2015"
+
+#. (itstool) path: credit/name
+#: C/15-Puzzle.page:10 C/16-Puzzle.page:10 C/beginning.page:10 C/index.page:12
+#: C/shortcuts.page:10 C/start-screen.page:10
+msgid "Arnaud Bonatti"
+msgstr "Arnaud Bonatti"
+
+#. (itstool) path: credit/years
+#: C/15-Puzzle.page:12 C/16-Puzzle.page:12 C/beginning.page:12
+#: C/shortcuts.page:12 C/start-screen.page:12
+msgid "2014"
+msgstr "2014"
+
+#. (itstool) path: page/title
+#: C/15-Puzzle.page:18
+msgid "15-Puzzle"
+msgstr "Γρίφος 15"
+
+#. (itstool) path: page/p
+#: C/15-Puzzle.page:20
+msgid ""
+"The <em>15-Puzzle</em> is the default puzzle of <app>Taquin</app>. It is "
+"displayed the first time the application is opened. You can start one at any "
+"time from the <link xref=\"start-screen\">Start Screen</link>."
+msgstr ""
+"Το <em>Γρίφος 15</em> είναι το προεπιλέγμένο παιχνίδι του <app>Taquin</app> "
+"και εμφανίζεται την πρώτη φορά όπου ανοίγει η εφαρμογή. Μπορείτε να "
+"ξεκινήσετε ένα παιχνίδι οποιαδήποτε στιγμή από την <link xref=\"start-screen"
+"\">οθόνη έναρξης</link>."
+
+#. (itstool) path: section/title
+#: C/15-Puzzle.page:23 C/16-Puzzle.page:23
+msgid "Gameplay"
+msgstr "Βασικό παιχνίδι"
+
+#. (itstool) path: section/p
+#: C/15-Puzzle.page:25 C/16-Puzzle.page:25
+msgid "The goal is to move all the tiles to their proper places."
+msgstr ""
+"Σκοπός του παιχνιδιού είναι να μετακινήσετε όλα τα πλακίδια στις σωστές "
+"θέσεις τους."
+
+#. (itstool) path: section/p
+#: C/15-Puzzle.page:27
+msgid ""
+"There’s an empty space where you can move adjacent tiles by pushing them "
+"onto it. You can push more than one tile at the same time in the empty "
+"space’s direction."
+msgstr ""
+"Υπάρχει ένας ελεύθερος χώρος όπου μπορείτε να μετακινήσετε γειτονικά "
+"πλακίδια ωθώντας τα σε αυτόν. Μπορείτε να ωθήσετε περισσότερα από ένα "
+"πλακίδια ταυτόχρονα προς την κατεύθυνση του ελεύθερου χώρου."
+
+#. (itstool) path: section/title
+#: C/15-Puzzle.page:31 C/16-Puzzle.page:31
+msgid "End of the game"
+msgstr "Τέλος παιχνιδιού"
+
+#. (itstool) path: section/p
+#: C/15-Puzzle.page:32 C/16-Puzzle.page:32
+msgid ""
+"At the end of the game, <app>Taquin</app> notifies you and displays the "
+"complete image."
+msgstr ""
+"Στο τέλος του παιχνιδιού, το <app>Taquin</app> σας ειδοποιεί και εμφανίζει "
+"την ολοκληρωμένη εικόνα."
+
+#. (itstool) path: section/p
+#: C/15-Puzzle.page:33 C/16-Puzzle.page:33
+msgid ""
+"You can click the <gui>Start Over</gui> button to go to the <link xref="
+"\"start-screen\">Start Screen</link>."
+msgstr ""
+"Μπορείτε να κάνετε κλικ στο κουμπί <gui>Επανεκκίνηση</gui> για να μεταβείτε "
+"στην <link xref=\"start-screen\">οθόνη έναρξης</link>."
+
+#. (itstool) path: section/title
+#: C/15-Puzzle.page:37 C/16-Puzzle.page:37
+msgid "How to play with a mouse"
+msgstr "Πώς να παίξετε με το ποντίκι"
+
+#. (itstool) path: section/p
+#: C/15-Puzzle.page:39 C/15-Puzzle.page:57 C/16-Puzzle.page:39
+#: C/16-Puzzle.page:55
+msgid "To make a move:"
+msgstr "Για να κάνετε μια κίνηση:"
+
+#. (itstool) path: item/p
+#: C/15-Puzzle.page:41 C/beginning.page:25
+msgid "Click on a tile on the same row or column as the empty space."
+msgstr ""
+"Κάντε κλικ σε ένα πλακίδιο στην ίδια γραμμή ή στήλη και στον κενό χώρο."
+
+#. (itstool) path: note/p
+#: C/15-Puzzle.page:42 C/15-Puzzle.page:61 C/beginning.page:26
+msgid ""
+"If you click on a tile that cannot move, the game notifies you that the move "
+"is impossible."
+msgstr ""
+"Αν κάνετε κλικ σε ένα πλακίδιο που δεν μπορεί να μετακινηθεί, τότε το "
+"παιχνιδί σας ειδοποιεί πως είναι αδύνατη η κίνηση αυτή."
+
+#. (itstool) path: item/p
+#: C/15-Puzzle.page:45 C/16-Puzzle.page:43
+msgid ""
+"You can always undo a move by clicking the <gui>Undo</gui> button at the "
+"left of the header bar."
+msgstr ""
+"Μπορείτε πάντα να αναιρέσετε μια κίνηση κάνοντας κλικ στο κουμπί "
+"<gui>Αναίρεση</gui> στο αριστερό μέρος της γραμμής κεφαλίδας."
+
+#. (itstool) path: item/p
+#: C/15-Puzzle.page:47 C/16-Puzzle.page:45 C/beginning.page:31
+msgid ""
+"At the end of the game, or when you want to switch games, click the "
+"<gui>Start Over</gui> button to go to the <link xref=\"start-screen\">Start "
+"Screen</link>."
+msgstr ""
+"Στο τέλος του παιχνιδιού, ή όταν θέλετε να αλλάξετε παιχνίδια, κάντε κλικ "
+"στο κουμπί <gui>Επανεκκίνηση</gui> για να μεταβείτε στην <link xref=\"start-"
+"screen\">οθόνη έναρξης</link>."
+
+#. (itstool) path: section/p
+#: C/15-Puzzle.page:51 C/16-Puzzle.page:49
+msgid "You can also use the keyboard."
+msgstr "Μπορείτε επίσης να χρησιμοποιήσετε το πληκτρολόγιο σας."
+
+#. (itstool) path: section/title
+#: C/15-Puzzle.page:55 C/16-Puzzle.page:53
+msgid "How to play with the keyboard"
+msgstr "Πώς να παίξετε με το πληκτρολόγιο"
+
+#. (itstool) path: item/p
+#: C/15-Puzzle.page:59
+msgid ""
+"Use the <key>Left</key>, <key>Right</key>, <key>Up</key> and <key>Down</key> "
+"arrows to go at the tile you want to move. The currently selected tile is "
+"indicated with four arrows around the board, on each side of its row and "
+"column."
+msgstr ""
+"Χρησιμοποιήστε τα βέλη <key>αριστερά</key>, <key>δεξιά</key>, <key>πάνω</"
+"key> και <key>κάτω</key> για να μεταβείτε στο πλακίδιο που θέλετε να "
+"μετακινήσετε. Το επιλεγμένο πλακίδιο εμφανίζεται με τέσσερα βέλη γύρω από "
+"τον πίνακα, σε κάθε πλευρά της γραμμής και στήλης του."
+
+#. (itstool) path: item/p
+#: C/15-Puzzle.page:60
+msgid ""
+"Use the <key>Space</key> key to move the selected tile in the direction of "
+"the empty space."
+msgstr ""
+"Χρησιμοποιήστε το πλήκτρο <key>Διάστημα</key>  για να μετακινήσετε το "
+"επιλεγμένο πλακίδιο προς την κατεύθυνση του ελεύθερου χώρου."
+
+#. (itstool) path: item/p
+#: C/15-Puzzle.page:64 C/16-Puzzle.page:60
+msgid ""
+"You can always undo a move with the <keyseq><key>Ctrl</key><key>Z</key></"
+"keyseq> keys."
+msgstr ""
+"Μπορείτε πάντα να αναιρέσετε μια κίνηση με τα πλήκτρα <keyseq><key>Ctrl</"
+"key><key>Z</key></keyseq>."
+
+#. (itstool) path: item/p
+#: C/15-Puzzle.page:66 C/16-Puzzle.page:62
+msgid ""
+"At the end of the game, or when you want to switch games, use the the "
+"<keyseq><key>Ctrl</key><key>N</key></keyseq> keys to go to the <link xref="
+"\"start-screen\">Start Screen</link>."
+msgstr ""
+"Στο τέλος του παιχνιδιού, ή όταν θέλετε να αλλάξετε παιχνίδι, χρησιμοποιήστε "
+"τα πλήκτρα <keyseq><key>Ctrl</key><key>N</key></keyseq> για να μεταβείτε "
+"στην <link xref=\"start-screen\">οθόνη έναρξης</link>."
+
+#. (itstool) path: section/p
+#: C/15-Puzzle.page:70 C/16-Puzzle.page:66
+msgid "You can also use a mouse."
+msgstr "Μπορείτε επίσης να χρησιμοποιήσετε το ποντίκι σας."
+
+#. (itstool) path: page/title
+#: C/16-Puzzle.page:18
+msgid "16-Puzzle"
+msgstr "Γρίφος 16"
+
+#. (itstool) path: page/p
+#: C/16-Puzzle.page:20
+msgid ""
+"The <em>16-Puzzle</em> is the variant puzzle of <app>Taquin</app>. You can "
+"launch it at any time from the <link xref=\"start-screen\">Start Screen</"
+"link>."
+msgstr ""
+"Το <em>Γρίφος 16</em> είναι μια παραλλαγή του παιχνιδιού <app>Taquin</app>. "
+"Μπορείτε να παίξετε οποιαδήποτε στιγμή από την <link xref=\"start-screen"
+"\">οθόνη έναρξης</link>."
+
+#. (itstool) path: section/p
+#: C/16-Puzzle.page:27
+msgid ""
+"You move all the tiles of a row or a column in one direction. The tile that "
+"is pushed out of the board is placed at the opposite side of the row or "
+"column."
+msgstr ""
+"Μετακινήστε όλα τα πλακίδια μιας γραμμής ή στήλης προς μια κατεύθυνση. Το "
+"πλακίδιο που ωθείται εκτός πίνακα θα τοποθετηθεί στην αντίθετη πλευρά της "
+"γραμμής ή στήλης."
+
+#. (itstool) path: item/p
+#: C/16-Puzzle.page:41
+msgid ""
+"Click on one of the arrows displayed around the board. The row or column at "
+"the end of which this arrow is moves in this direction, and the tile that "
+"was next to the arrow is placed at the opposite side."
+msgstr ""
+"Κάντε κλικ σε ένα από τα βέλη που εμφανίζονται γύρω από τον πίνακα. Η γραμμή "
+"ή στήλη που βρίσκεται στο τέλος αυτού του βέλους μετακινείται προς αυτήν την "
+"κατεύθυνση, ενώ το πλακίδιο που ήταν δίπλα από το βέλος τοποθετείται στην "
+"αντίθετη πλευρά."
+
+#. (itstool) path: item/p
+#: C/16-Puzzle.page:57
+msgid ""
+"Use the <key>Left</key>, <key>Right</key>, <key>Up</key> and <key>Down</key> "
+"arrows to go at the row or the column you want to move. The currently "
+"selected row and column are indicated with two lights around the board."
+msgstr ""
+"Χρησιμοποιήστε τα βέλη <key>αριστερά</key>, <key>δεξιά</key>, <key>πάνω</"
+"key> και <key>κάτω</key> για να μεταβείτε στην γραμμή ή στήλη που θέλετε να "
+"μετακινήσετε. Η επιλεγμένη γραμμή και στήλη επισημαίνονται με δύο φωτάκια "
+"γύρω από τον πίνακα."
+
+#. (itstool) path: item/p
+#: C/16-Puzzle.page:58
+msgid ""
+"Use the <keyseq><key>Ctrl</key><key>Left</key></keyseq> or "
+"<keyseq><key>Ctrl</key><key>Right</key></keyseq> keys to move a row, or the "
+"<keyseq><key>Ctrl</key><key>Up</key></keyseq> and <keyseq><key>Ctrl</"
+"key><key>Down</key></keyseq> keys to move a column."
+msgstr ""
+"Χρησιμοποιήστε τα πλήκτρα <keyseq><key>Ctrl</key><key>αριστερά</key></"
+"keyseq> ή <keyseq><key>Ctrl</key><key>δεξιά</key></keyseq> για να "
+"μετακινήσετε μια σειρά, ή τα <keyseq><key>Ctrl</key><key>πάνω</key></keyseq> "
+"και <keyseq><key>Ctrl</key><key>κάτω</key></keyseq> για να μετακινήσετε μια "
+"στήλη."
+
+#. (itstool) path: page/title
+#: C/beginning.page:18
+msgid "Beginning"
+msgstr "Ξεκινώντας"
+
+#. (itstool) path: page/p
+#: C/beginning.page:20
+msgid ""
+"When <app>Taquin</app> is opened for the first time, it displays a "
+"traditional <link xref=\"15-Puzzle\">15-Puzzle</link> game."
+msgstr ""
+"Όταν ξεκινά το <app>Taquin</app> για πρώτη φορά, εμφανίζει το παραδοσιακό "
+"παιχνίδι <link xref=\"15-Puzzle\">Γρίφος 15</link>."
+
+#. (itstool) path: page/p
+#: C/beginning.page:22
+msgid "The game is played using the mouse. To make a move:"
+msgstr ""
+"Το παιχνίδι παίζεται χρησιμοποιώντας το ποντίκι. Για να κάνετε μια κίνηση:"
+
+#. (itstool) path: item/p
+#: C/beginning.page:29
+msgid ""
+"You can always undo a move by clicking the <gui>Undo</gui> button on the "
+"left of the header bar."
+msgstr ""
+"Μπορείτε πάντα να αναιρέσετε μια κίνηση κάνοντας κλικ στο κουμπί "
+"<gui>Αναίρεση</gui> στα αριστερά της γραμμής κεφαλίδας."
+
+#. (itstool) path: page/p
+#: C/beginning.page:35
+msgid ""
+"After the first time it is opened, <app>Taquin</app> displays a puzzle with "
+"the same rules and dimensions as the last one played when it is opened, so "
+"it could be a <link xref=\"16-Puzzle\">16-Puzzle</link> game."
+msgstr ""
+"Αφού ανοιχθεί για πρώτη φορά, το <app>Taquin</app> εμφανίζει ένα γρίφο με "
+"τους ίδιους κανόνες και διαστάσεις με το τελευταίο παιχνίδι που παίχτηκε, "
+"ώστε να μπορεί να είναι ένα παιχνίδι <link xref=\"16-Puzzle\">Γρίφος 16</"
+"link>"
+
+#. (itstool) path: info/title
+#: C/index.page:8
+msgctxt "link"
+msgid "Taquin"
+msgstr "Taquin"
+
+#. (itstool) path: info/title
+#: C/index.page:9
+msgctxt "text"
+msgid "Taquin"
+msgstr "Taquin"
+
+#. (itstool) path: license/p
+#: C/index.page:16
+msgid ""
+"Creative Commons Attribution-ShareAlike 4.0 International (CC BY-SA 4.0)"
+msgstr ""
+"Creative Commons Attribution-ShareAlike 4.0 International (CC BY-SA 4.0)"
+
+#. (itstool) path: media/span
+#: C/index.page:20
+msgid "Taquin logo"
+msgstr "Λογότυπο Taquin"
+
+#. (itstool) path: page/title
+#: C/index.page:20
+msgid "<_:media-1/> Taquin"
+msgstr "<_:media-1/> Taquin"
+
+#. (itstool) path: page/p
+#: C/index.page:22
+msgid ""
+"<app>Taquin</app> is a sliding-block puzzle game. It includes the "
+"traditional 15-Puzzle invented in the early 1880s, and the more recent 16-"
+"Puzzle variant."
+msgstr ""
+"Το <app>Taquin</app> είναι ένα παιχνίδι γρίφου με κινούμενα πλακίδια. "
+"Περιλαμβάνει το παραδοσιακό παιχνίδι «Γρίφος 15» το οποίο εφευρέθηκε στις "
+"αρχές του 1880, και μια παραλλαγή του, το «Γρίφος 16»."
+
+#. (itstool) path: section/title
+#: C/index.page:26
+msgid "How to Play"
+msgstr "Πώς να παίξετε"
+
+#. (itstool) path: section/title
+#: C/index.page:38
+msgid "Advanced"
+msgstr "Για προχωρημένους"
+
+#. (itstool) path: p/link
+#: C/legal.xml:3
+msgid "Creative Commons Attribution-ShareAlike 4.0 Unported License"
+msgstr "Άδεια Creative Commons Attribution-ShareAlike 4.0 Unported"
+
+#. (itstool) path: license/p
+#: C/legal.xml:3
+msgid "This work is licensed under a <_:link-1/>."
+msgstr "Αυτό το έργο έχει αδειοδοτηθεί υπό την <_:link-1/>."
+
+#. (itstool) path: info/desc
+#: C/license.page:8
+msgid "Legal information."
+msgstr "Νομικές πληροφορίες."
+
+#. (itstool) path: page/title
+#: C/license.page:11
+msgid "License"
+msgstr "Άδεια"
+
+#. (itstool) path: page/p
+#: C/license.page:12
+msgid ""
+"This work is distributed under a CreativeCommons Attribution-Share Alike 4.0 "
+"Unported license."
+msgstr ""
+"Το έργο διανέμεται υπό τους όρους της άδειας CreativeCommons Attribution-"
+"Share Alike 4.0 Unported."
+
+#. (itstool) path: page/p
+#: C/license.page:20
+msgid "You are free:"
+msgstr "Είστε ελεύθεροι:"
+
+#. (itstool) path: item/title
+#: C/license.page:25
+msgid "<em>To share</em>"
+msgstr "<em>Να μοιραστείτε</em>"
+
+#. (itstool) path: item/p
+#: C/license.page:26
+msgid "To copy, distribute and transmit the work."
+msgstr "Να αντιγράψετε, να διανείμετε και να μεταδόσετε το έργο."
+
+#. (itstool) path: item/title
+#: C/license.page:29
+msgid "<em>To remix</em>"
+msgstr "<em>Να διασκευάσετε</em>"
+
+#. (itstool) path: item/p
+#: C/license.page:30
+msgid "To adapt the work."
+msgstr "Να προσαρμόσετε το έργο."
+
+#. (itstool) path: page/p
+#: C/license.page:33
+msgid "Under the following conditions:"
+msgstr "Υπό τους εξής όρους:"
+
+#. (itstool) path: item/title
+#: C/license.page:38
+msgid "<em>Attribution</em>"
+msgstr "<em>Απόδοση</em>"
+
+#. (itstool) path: item/p
+#: C/license.page:39
+msgid ""
+"You must attribute the work in the manner specified by the author or "
+"licensor (but not in any way that suggests that they endorse you or your use "
+"of the work)."
+msgstr ""
+"Πρέπει να αναφέρετε την πηγή του έργου με τον τρόπο που καθορίζεται από το "
+"δημιουργό του ή αυτόν που παρέχει την άδεια (αλλά όχι με τρόπο που να εννοεί "
+"ότι εγκρίνουν εσάς ή τη δική σας χρήση του έργου)."
+
+#. (itstool) path: item/title
+#: C/license.page:46
+msgid "<em>Share Alike</em>"
+msgstr "<em>Παρόμοια διανομή</em>"
+
+#. (itstool) path: item/p
+#: C/license.page:47
+msgid ""
+"If you alter, transform, or build upon this work, you may distribute the "
+"resulting work only under the same, similar or a compatible license."
+msgstr ""
+"Αν μετατρέψετε, μετασχηματίσετε ή επεκτείνετε αυτό το έργο, μπορείτε να "
+"αναδιανείμετε το αποτέλεσμα υπό την ίδια, παρόμοια ή συμβατή άδεια χρήσης."
+
+#. (itstool) path: page/p
+#: C/license.page:53
+msgid ""
+"For the full text of the license, see the <link href=\"http://"
+"creativecommons.org/licenses/by-sa/3.0/legalcode\">CreativeCommons website</"
+"link>, or read the full <link href=\"http://creativecommons.org/licenses/by-"
+"sa/3.0/\">Commons Deed</link>."
+msgstr ""
+"Για το πλήρες κείμενο της άδειας, δείτε τον <link href=\"http://"
+"creativecommons.org/licenses/by-sa/3.0/legalcode\">ιστότοπο CreativeCommons</"
+"link>, ή διαβάστε όλη την <link href=\"http://creativecommons.org/licenses/"
+"by-sa/3.0/\">Πράξη Commons</link>."
+
+#. (itstool) path: page/title
+#: C/shortcuts.page:18
+msgid "Keyboard Shortcuts"
+msgstr "Συντομεύσεις πληκτρολογίου"
+
+#. (itstool) path: page/p
+#: C/shortcuts.page:20
+msgid ""
+"<app>Taquin</app> can easily be used with keyboard. The <link xref=\"15-"
+"Puzzle#15-keyboard\">15-Puzzle</link> and <link xref=\"16-Puzzle#16-keyboard"
+"\">16-Puzzle</link> both have specific shortcuts."
+msgstr ""
+"Το <app>Taquin</app> μπορεί να παιχθεί εύκλα με το πληκτρολόγιο. Τα <link "
+"xref=\"15-Puzzle#15-keyboard\">Γρίφος 15</link> και <link xref=\"16-"
+"Puzzle#16-keyboard\">Γρίφος 16</link> έχουν και τα δύο συγκεκριμένες "
+"συντομεύσεις."
+
+#. (itstool) path: section/title
+#: C/shortcuts.page:23
+msgid "In-game shortcuts"
+msgstr "Συντομεύσεις παιχνιδιού"
+
+#. (itstool) path: td/p
+#: C/shortcuts.page:26
+msgid "Show new-game screen"
+msgstr "Εμφάνιση οθόνης νέου παιχνιδιού"
+
+#. (itstool) path: td/p
+#: C/shortcuts.page:27
+msgid "<keyseq><key>Ctrl</key><key>N</key></keyseq>"
+msgstr "<keyseq><key>Ctrl</key><key>N</key></keyseq>"
+
+#. (itstool) path: td/p
+#: C/shortcuts.page:30
+msgid "Undo last move"
+msgstr "Αναίρεση της τελευταίας κίνησης"
+
+#. (itstool) path: td/p
+#: C/shortcuts.page:31
+msgid "<keyseq><key>Ctrl</key><key>Z</key></keyseq>"
+msgstr "<keyseq><key>Ctrl</key><key>Z</key></keyseq>"
+
+#. (itstool) path: section/title
+#: C/shortcuts.page:36
+msgid "15-Puzzle shortcuts"
+msgstr "Συντομεύσεις παιχνιδιού «Γρίφος 15»"
+
+#. (itstool) path: td/p
+#: C/shortcuts.page:39 C/shortcuts.page:52
+msgid "Change selected tile"
+msgstr "Αλλαγή επιλεγμένου πλακιδίου"
+
+#. (itstool) path: td/p
+#: C/shortcuts.page:40 C/shortcuts.page:53
+msgid "<key>Left</key>, <key>Right</key>, <key>Up</key> and <key>Down</key>"
+msgstr ""
+"<key>Αριστερά</key>, <key>Δεξιά</key>, <key>Πάνω</key> και <key>Κάτω</key>"
+
+#. (itstool) path: td/p
+#: C/shortcuts.page:43
+msgid "Push tile in empty space’s direction"
+msgstr "Ωθεί το πλακίδιο προς την κατεύθυνση του ελεύθερου χώρου"
+
+#. (itstool) path: td/p
+#: C/shortcuts.page:44
+msgid "<key>Space</key> or <key>KP_Enter</key>"
+msgstr "<key>Space</key> ή <key>KP_Enter</key>"
+
+#. (itstool) path: section/title
+#: C/shortcuts.page:49
+msgid "16-Puzzle shortcuts"
+msgstr "Συντομεύσεις παιχνιδιού «Γρίφος 16»"
+
+#. (itstool) path: td/p
+#: C/shortcuts.page:56
+msgid "Move row"
+msgstr "Μετακίνηση σειράς"
+
+#. (itstool) path: td/p
+#: C/shortcuts.page:57
+msgid ""
+"<keyseq><key>Ctrl</key><key>Left</key></keyseq> and <keyseq><key>Ctrl</"
+"key><key>Right</key></keyseq>"
+msgstr ""
+"<keyseq><key>Ctrl</key><key>Αριστερά</key></keyseq> και <keyseq><key>Ctrl</"
+"key><key>Δεξιά</key></keyseq>"
+
+#. (itstool) path: td/p
+#: C/shortcuts.page:60
+msgid "Move column"
+msgstr "Μετακίνηση στήλης"
+
+#. (itstool) path: td/p
+#: C/shortcuts.page:61
+msgid ""
+"<keyseq><key>Ctrl</key><key>Up</key></keyseq> and <keyseq><key>Ctrl</"
+"key><key>Down</key></keyseq>"
+msgstr ""
+"<keyseq><key>Ctrl</key><key>Πάνω</key></keyseq> και <keyseq><key>Ctrl</"
+"key><key>Κάτω</key></keyseq>"
+
+#. (itstool) path: section/title
+#: C/shortcuts.page:66
+msgid "Start Screen shortcuts"
+msgstr "Συντομεύσεις οθόνης έναρξης"
+
+#. (itstool) path: td/p
+#: C/shortcuts.page:69
+msgid "New Game"
+msgstr "Νέο παιχνίδι"
+
+#. (itstool) path: td/p
+#: C/shortcuts.page:70
+msgid "<keyseq><key>Ctrl</key><key>Shift</key><key>N</key></keyseq>"
+msgstr "<keyseq><key>Ctrl</key><key>Shift</key><key>N</key></keyseq>"
+
+#. (itstool) path: td/p
+#: C/shortcuts.page:73
+msgid "Back to previous game (if any)"
+msgstr "Επιστροφή στο προηγούμενο παιχνίδι (αν υπάρχει)"
+
+#. (itstool) path: td/p
+#: C/shortcuts.page:74
+msgid "<key>Escape</key>"
+msgstr "<key>Πλήκτρο διαφυγής</key>"
+
+#. (itstool) path: section/title
+#: C/shortcuts.page:79
+msgid "General shortcuts"
+msgstr "Γενικές συντομεύσεις"
+
+#. (itstool) path: td/p
+#: C/shortcuts.page:82
+msgid "Help"
+msgstr "Βοήθεια"
+
+#. (itstool) path: td/p
+#: C/shortcuts.page:83
+msgid "<key>F1</key>"
+msgstr "<key>F1</key>"
+
+#. (itstool) path: td/p
+#: C/shortcuts.page:86
+msgid "Quit"
+msgstr "Έξοδος"
+
+#. (itstool) path: td/p
+#: C/shortcuts.page:87
+msgid "<keyseq><key>Ctrl</key><key>Q</key></keyseq>"
+msgstr "<keyseq><key>Ctrl</key><key>Q</key></keyseq>"
+
+#. (itstool) path: page/title
+#: C/start-screen.page:18
+msgid "Start Screen"
+msgstr "Οθόνη έναρξης"
+
+#. (itstool) path: page/p
+#: C/start-screen.page:19
+msgid ""
+"The <em>Start Screen</em> is the place to select your options and launch a "
+"new game, either a <link xref=\"15-Puzzle\">15-Puzzle</link> or a <link xref="
+"\"16-Puzzle\">16-Puzzle</link>."
+msgstr ""
+"Η <em>οθόνη έναρξης</em> είναι το μέρος για να ορίσετε τις προτιμήσεις σας "
+"αλλά και να ξεκινήσετε ένα νέο παιχνίδι, είτε ένα παιχνίδι <link xref=\"15-"
+"Puzzle\">Γρίφου 15</link> ή <link xref=\"16-Puzzle\">Γρίφου 16</link>."
+
+#. (itstool) path: page/p
+#: C/start-screen.page:20
+msgid ""
+"It can be accessed at any time from a game by pressing the <gui>Start Over</"
+"gui> button."
+msgstr ""
+"Μπορείτε να έχετε πρόσβαση ανά πάσα στιγμή μέσα από το παιχνίδι πατώντας το "
+"κουμπί <gui>Επανεκκίνηση</gui>."
