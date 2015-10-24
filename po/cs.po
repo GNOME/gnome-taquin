@@ -8,8 +8,8 @@ msgstr ""
 "Project-Id-Version: gnome-taquin master\n"
 "Report-Msgid-Bugs-To: http://bugzilla.gnome.org/enter_bug.cgi?product=gnome-"
 "taquin&keywords=I18N+L10N&component=general\n"
-"POT-Creation-Date: 2015-03-01 04:45+0000\n"
-"PO-Revision-Date: 2015-03-02 22:07+0100\n"
+"POT-Creation-Date: 2015-10-24 09:21+0000\n"
+"PO-Revision-Date: 2015-10-24 22:38+0200\n"
 "Last-Translator: Marek Černocký <marek@manet.cz>\n"
 "Language-Team: Czech <gnome-cs-list@gnome.org>\n"
 "Language: cs\n"
@@ -55,11 +55,11 @@ msgstr "Kočky"
 msgid "Numbers"
 msgstr "Čísla"
 
-#: ../data/taquin-screens.ui.h:6 ../data/org.gnome.taquin.desktop.in.h:4
+#: ../data/taquin-screens.ui.h:6 ../data/org.gnome.taquin.desktop.in.h:5
 msgid "15-Puzzle"
 msgstr "Skládačka s 15 díly"
 
-#: ../data/taquin-screens.ui.h:7 ../data/org.gnome.taquin.desktop.in.h:5
+#: ../data/taquin-screens.ui.h:7 ../data/org.gnome.taquin.desktop.in.h:6
 msgid "16-Puzzle"
 msgstr "Skládačka s 16 díly"
 
@@ -68,22 +68,14 @@ msgid "Go back to the current game"
 msgstr "Zpátky na současnou hru"
 
 #: ../data/taquin.ui.h:2
-msgid "_Start Game"
-msgstr "_Začít hru"
-
-#: ../data/taquin.ui.h:3
-msgid "Start a new game as configured"
-msgstr "Začít novou hru, tak jak je nastavená"
-
-#: ../data/taquin.ui.h:4
 msgid "_Start Over"
 msgstr "_Začít jinou hru"
 
-#: ../data/taquin.ui.h:5
+#: ../data/taquin.ui.h:3
 msgid "Configure a new game"
 msgstr "Nastavit novou hru"
 
-#: ../data/taquin.ui.h:6
+#: ../data/taquin.ui.h:4
 msgid "Start a new game"
 msgstr "Začít novou hru"
 
@@ -92,7 +84,7 @@ msgid "GNOME Taquin"
 msgstr "Taquin GNOME"
 
 #: ../data/org.gnome.taquin.appdata.xml.in.h:2
-#: ../data/org.gnome.taquin.desktop.in.h:2
+#: ../data/org.gnome.taquin.desktop.in.h:3
 msgid "Slide tiles to their correct places"
 msgstr "Presuňte díly na jejich správné místo"
 
@@ -107,16 +99,19 @@ msgid ""
 "The object of Taquin is to move tiles so that they reach their places, "
 "either indicated with numbers, or with parts of a great image."
 msgstr ""
-"Cílem hlavolamu Taquin je přesunout díly na jejich správná místa, která "
-"jsou daná buď číslem nebo částmi velkého obrázku."
+"Cílem hlavolamu Taquin je přesunout díly na jejich správná místa, která jsou "
+"daná buď číslem nebo částmi velkého obrázku."
 
-#. Window
-#: ../data/org.gnome.taquin.desktop.in.h:1 ../src/taquin-main.vala:78
-#: ../src/taquin-main.vala:138 ../src/taquin-main.vala:254
+#: ../data/org.gnome.taquin.desktop.in.h:1 ../src/taquin-main.vala:76
+#: ../src/taquin-main.vala:133 ../src/taquin-main.vala:237
 msgid "Taquin"
 msgstr "Taquin"
 
-#: ../data/org.gnome.taquin.desktop.in.h:3
+#: ../data/org.gnome.taquin.desktop.in.h:2
+msgid "15-puzzle"
+msgstr "Skládačka s 15 díly"
+
+#: ../data/org.gnome.taquin.desktop.in.h:4
 msgid "puzzle;"
 msgstr "posuvné;posuvná;puzzle;hlavolam;skládačka;"
 
@@ -161,63 +156,67 @@ msgstr "Výška okna v pixelech."
 msgid "true if the window is maximized."
 msgstr "Zapnuto, když je okno maximalizováno."
 
-#: ../src/game-window.vala:134
+#: ../src/game-window.vala:128
+msgid "_Start Game"
+msgstr "_Začít hru"
+
+#: ../src/game-window.vala:153
 msgid "Undo your most recent move"
 msgstr "Vrátit zpět poslední tah"
 
-#: ../src/taquin-main.vala:46
+#: ../src/taquin-main.vala:45
 msgid "Play the classical 1880s’ 15-puzzle"
 msgstr "Hrát klasický posuvný hlavolam z 80 let s 15 díly"
 
-#: ../src/taquin-main.vala:47
+#: ../src/taquin-main.vala:46
 msgid "Try this fun alternative 16-puzzle"
 msgstr "Zkusit vtipnou alternativu posuvného hlavolamu s 16 díly"
 
-#: ../src/taquin-main.vala:48
+#: ../src/taquin-main.vala:47
 msgid "Sets the puzzle edges’ size (3-5, 2-9 for debug)"
 msgstr "Nastavit velikost stran (3 až 5, pro účely ladění 2 až 9)"
 
-#: ../src/taquin-main.vala:49
+#: ../src/taquin-main.vala:48
 msgid "Turn off the sound"
 msgstr "Vypnout zvuk"
 
-#: ../src/taquin-main.vala:50
+#: ../src/taquin-main.vala:49
 msgid "Turn on the sound"
 msgstr "Zapnout zvuk"
 
-#: ../src/taquin-main.vala:51
+#: ../src/taquin-main.vala:50
 msgid "Print release version and exit"
 msgstr "Vypsat verzi vydání a skončit"
 
-#: ../src/taquin-main.vala:250
+#: ../src/taquin-main.vala:233
 msgid "(see COPYING.themes for informations)"
 msgstr "(viz COPYING.themes ohledně informací)"
 
-#: ../src/taquin-main.vala:258
+#: ../src/taquin-main.vala:241
 msgid "A classic 15-puzzle game"
 msgstr "Klasický posuvný hlavolam s 15 díly"
 
-#: ../src/taquin-main.vala:262
+#: ../src/taquin-main.vala:245
 msgid "translator-credits"
 msgstr "Marek Černocký <marek@manet.cz>"
 
-#: ../src/taquin-main.vala:303
+#: ../src/taquin-main.vala:286
 msgid "You can’t move this tile!"
 msgstr "Tímto dílem nemůžete táhnout!"
 
-#: ../src/taquin-main.vala:309
+#: ../src/taquin-main.vala:292
 msgid "Bravo! You finished the game!"
 msgstr "Výborně! Dokončili jste hru."
 
-#: ../src/taquin-main.vala:333
+#: ../src/taquin-main.vala:310
 #, c-format
 msgid "Size: %d × %d ▾"
 msgstr "Velikost: %d × %d ▾"
 
-#: ../src/taquin-main.vala:347
+#: ../src/taquin-main.vala:324
 msgid "Theme: Cats ▾"
 msgstr "Motiv: Kočky ▾"
 
-#: ../src/taquin-main.vala:348
+#: ../src/taquin-main.vala:325
 msgid "Theme: Numbers ▾"
 msgstr "Motiv: Čísla ▾"
