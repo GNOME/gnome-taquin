@@ -45,7 +45,7 @@ msgstr "4 × 4"
 
 #: ../data/taquin-screens.ui.h:3
 msgid "5 × 5"
-msgstr "5 × 5"
+msgstr "5 × 5"
 
 #: ../data/taquin-screens.ui.h:4
 msgid "Cats"
