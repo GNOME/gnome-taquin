@@ -1,3 +1,14 @@
+3.19.1 – October 27, 2015
+=========================
+
+Changes since 3.18.1
+* Updated czech translation
+* Adaptation to current CSS-nodes
+
+Known issue
+* Narrow no-break space (U+202F) looks not rendered in some locales
+* CSS-nodes will break again
+
 3.18.1.1 - October 15, 2015
 =========================
 

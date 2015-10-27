@@ -1,3 +1,5 @@
+/* GtkXyz is pre-3.19.1 */
+
 GtkModelButton.radio-like-toggle#radio-fifteen {
     background-image: url("resource://org/gnome/taquin/images/15-Puzzle.png");
 }
@@ -11,6 +13,7 @@ GtkModelButton.radio-like-toggle {
     color: @theme_fg_color;
     background-color: transparent;
 }
+GtkModelButton.radio-like-toggle GtkLabel,
 GtkModelButton.radio-like-toggle label {
     padding-bottom: 165px;
 }
