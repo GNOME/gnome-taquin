@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: gnome-taquin gnome-3-16\n"
 "Report-Msgid-Bugs-To: http://bugzilla.gnome.org/enter_bug.cgi?product=gnome-"
 "taquin&keywords=I18N+L10N&component=general\n"
-"POT-Creation-Date: 2015-04-12 20:08+0000\n"
+"POT-Creation-Date: 2015-09-21 17:52+0000\n"
 "PO-Revision-Date: 2015-04-15 09:52+0100\n"
 "Last-Translator: Fabio Tomat <f.t.public@gmail.com>\n"
 "Language-Team: Friulian <fur@li.org>\n"
@@ -67,22 +67,14 @@ msgid "Go back to the current game"
 msgstr "Torne te partide in pîts"
 
 #: ../data/taquin.ui.h:2
-msgid "_Start Game"
-msgstr "_Tache partide"
-
-#: ../data/taquin.ui.h:3
-msgid "Start a new game as configured"
-msgstr "Tache une gnove partide"
-
-#: ../data/taquin.ui.h:4
 msgid "_Start Over"
 msgstr "_Torne partìs"
 
-#: ../data/taquin.ui.h:5
+#: ../data/taquin.ui.h:3
 msgid "Configure a new game"
 msgstr "Configure une gnove partide"
 
-#: ../data/taquin.ui.h:6
+#: ../data/taquin.ui.h:4
 msgid "Start a new game"
 msgstr "Tache une gnove partide"
 
@@ -110,8 +102,8 @@ msgstr ""
 "L'obietîf di Taquin al è chel di spostâ lis tessaris in mût che si placin te "
 "lôr posizion juste, indicade da numars o di parts di une figure"
 
-#: ../data/org.gnome.taquin.desktop.in.h:1 ../src/taquin-main.vala:78
-#: ../src/taquin-main.vala:135 ../src/taquin-main.vala:250
+#: ../data/org.gnome.taquin.desktop.in.h:1 ../src/taquin-main.vala:76
+#: ../src/taquin-main.vala:133 ../src/taquin-main.vala:237
 msgid "Taquin"
 msgstr "Taquin"
 
@@ -160,63 +152,70 @@ msgstr "Altece dal barcon in pixels."
 msgid "true if the window is maximized."
 msgstr "VÊR se il barcon al è slargjât."
 
-#: ../src/game-window.vala:141
+#: ../src/game-window.vala:128
+msgid "_Start Game"
+msgstr "_Tache partide"
+
+#: ../src/game-window.vala:153
 msgid "Undo your most recent move"
 msgstr "Anule le ultime mosse"
 
-#: ../src/taquin-main.vala:46
+#: ../src/taquin-main.vala:45
 msgid "Play the classical 1880s’ 15-puzzle"
 msgstr "Zuie al classic puzzle dai 15"
 
-#: ../src/taquin-main.vala:47
+#: ../src/taquin-main.vala:46
 msgid "Try this fun alternative 16-puzzle"
 msgstr "Prove cheste alternative divertent dal 16"
 
-#: ../src/taquin-main.vala:48
+#: ../src/taquin-main.vala:47
 msgid "Sets the puzzle edges’ size (3-5, 2-9 for debug)"
 msgstr "Imposte la dimension dai flancs (3-5, 2-9 par debug)"
 
-#: ../src/taquin-main.vala:49
+#: ../src/taquin-main.vala:48
 msgid "Turn off the sound"
 msgstr "Stude suns"
 
-#: ../src/taquin-main.vala:50
+#: ../src/taquin-main.vala:49
 msgid "Turn on the sound"
 msgstr "Pie suns"
 
-#: ../src/taquin-main.vala:51
+#: ../src/taquin-main.vala:50
 msgid "Print release version and exit"
 msgstr "Stampe la version e jes"
 
-#: ../src/taquin-main.vala:246
+#: ../src/taquin-main.vala:233
 msgid "(see COPYING.themes for informations)"
 msgstr "Viodi COPYING.themes par informazions)"
 
-#: ../src/taquin-main.vala:254
+#: ../src/taquin-main.vala:241
 msgid "A classic 15-puzzle game"
 msgstr "Il classic zûc dal 15"
 
-#: ../src/taquin-main.vala:258
+#: ../src/taquin-main.vala:245
 msgid "translator-credits"
 msgstr "Fabio Tomat <f.t.public@gmail.com>"
 
-#: ../src/taquin-main.vala:299
+#: ../src/taquin-main.vala:286
 msgid "You can’t move this tile!"
 msgstr "No tu puedis movi cheste tessare!"
 
-#: ../src/taquin-main.vala:305
+#: ../src/taquin-main.vala:292
 msgid "Bravo! You finished the game!"
 msgstr "Brâf! Tu âs finît la partide!"
 
-#: ../src/taquin-main.vala:329
+#: ../src/taquin-main.vala:310
 #, c-format
 msgid "Size: %d × %d ▾"
 msgstr "Dimension: %d × %d ▾"
 
-#: ../src/taquin-main.vala:343
+#: ../src/taquin-main.vala:324
 msgid "Theme: Cats ▾"
 msgstr "Teme: Gjats ▾"
 
-#: ../src/taquin-main.vala:344
+#: ../src/taquin-main.vala:325
 msgid "Theme: Numbers ▾"
 msgstr "Teme: Numars ▾"
+
+#~ msgid "Start a new game as configured"
+#~ msgstr "Tache une gnove partide"
