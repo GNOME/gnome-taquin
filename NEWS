@@ -1,3 +1,17 @@
+3.16.2 - November 12, 2015
+=========================
+
+Changes sinc 3.16.1
+* Fix dragging the window after clicking the game view
+* New translations: friulian, german (help added), portuguese, occitan
+
+All contributors to this release:
+* Pedro Albuquerque <palbuquerque73@gmail.com>
+* Michael Catanzaro <mcatanzaro@gnome.org>
+* Christian Kirbach <christian.kirbach@gmail.com>
+* Fabio Tomat <f.t.public@gmail.com>
+* Cédric Valmary <cvalmary@yahoo.fr>
+
 3.16.1 - April 13, 2015
 =========================
 
