@@ -1,34 +1,45 @@
+button.radio-like-toggle#radio-fifteen,
 GtkModelButton.radio-like-toggle#radio-fifteen {
     background-image: url("resource://org/gnome/taquin/images/15-Puzzle.png");
 }
+button.radio-like-toggle#radio-sixteen,
 GtkModelButton.radio-like-toggle#radio-sixteen {
     background-image: url("resource://org/gnome/taquin/images/16-Puzzle.png");
 }
 
+button.radio-like-toggle,
 GtkModelButton.radio-like-toggle {
     background-repeat: no-repeat;
     background-position: center 25px;
     color: @theme_fg_color;
     background-color: transparent;
 }
+button.radio-like-toggle label,
 GtkModelButton.radio-like-toggle GtkLabel {
     padding-bottom: 165px;
 }
+button.radio-like-toggle:backdrop,
 GtkModelButton.radio-like-toggle:backdrop {
     color: @theme_unfocused_fg_color;
 }
 
+button.radio-like-toggle,
 GtkModelButton.radio-like-toggle,
+menubutton.menubutton-like-combo,
 GtkMenuButton.menubutton-like-combo {
     border-radius:15px;
     outline-radius:13px;
 }
 
+menubutton.menubutton-like-combo:checked,
+menubutton.menubutton-like-combo:prelight,
 GtkMenuButton.menubutton-like-combo:checked,
 GtkMenuButton.menubutton-like-combo:prelight {
     color:#2e3436; /* gtk-contained.css’ theme_fg_color */
     background:-gtk-gradient (radial, center center, 0, center center, 0.5, from(rgba (255, 255, 255, 1)), to(rgba (255, 255, 255, 0)));
 }
+menubutton.menubutton-like-combo:checked:backdrop,
+menubutton.menubutton-like-combo:prelight:backdrop,
 GtkMenuButton.menubutton-like-combo:checked:backdrop,
 GtkMenuButton.menubutton-like-combo:prelight:backdrop {
     color:@theme_unfocused_fg_color;
