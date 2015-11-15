@@ -5,10 +5,10 @@
 # Torstein Adolf Winterseth <kvikende@fsfe.org>, 2010.
 msgid ""
 msgstr ""
-"Project-Id-Version: gnome-taquin 3.17.x\n"
+"Project-Id-Version: gnome-taquin 3.19.x\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2015-08-11 19:12+0200\n"
-"PO-Revision-Date: 2015-08-11 19:16+0200\n"
+"POT-Creation-Date: 2015-11-16 00:22+0100\n"
+"PO-Revision-Date: 2015-11-16 00:23+0100\n"
 "Last-Translator: Kjartan Maraas <kmaraas@gnome.org>\n"
 "Language-Team: Norwegian bokmål <i18n-nb@lister.ping.uio.no>\n"
 "Language: nb\n"
@@ -53,11 +53,11 @@ msgstr "Katter"
 msgid "Numbers"
 msgstr "Tall"
 
-#: ../data/taquin-screens.ui.h:6 ../data/org.gnome.taquin.desktop.in.h:4
+#: ../data/taquin-screens.ui.h:6 ../data/org.gnome.taquin.desktop.in.h:5
 msgid "15-Puzzle"
 msgstr "15-puslespill"
 
-#: ../data/taquin-screens.ui.h:7 ../data/org.gnome.taquin.desktop.in.h:5
+#: ../data/taquin-screens.ui.h:7 ../data/org.gnome.taquin.desktop.in.h:6
 msgid "16-Puzzle"
 msgstr "16-puslespill"
 
@@ -82,27 +82,34 @@ msgid "GNOME Taquin"
 msgstr "GNOME Taquin"
 
 #: ../data/org.gnome.taquin.appdata.xml.in.h:2
-#: ../data/org.gnome.taquin.desktop.in.h:2
+#: ../data/org.gnome.taquin.desktop.in.h:3
 msgid "Slide tiles to their correct places"
 msgstr "Flytt fliser til rett plass"
 
 #: ../data/org.gnome.taquin.appdata.xml.in.h:3
 msgid ""
 "Taquin is a computer version of the 15-puzzle and other sliding puzzles."
-msgstr "Taquin er datamaskinversjonen av 15-puslespill og andre skyvepuslespill."
+msgstr ""
+"Taquin er datamaskinversjonen av 15-puslespill og andre skyvepuslespill."
 
 #: ../data/org.gnome.taquin.appdata.xml.in.h:4
 msgid ""
 "The object of Taquin is to move tiles so that they reach their places, "
 "either indicated with numbers, or with parts of a great image."
-msgstr "Målet i Taquin er å skyve flisene slik at de når sine plasser som er indikert med tall eller deler av et større bilde."
+msgstr ""
+"Målet i Taquin er å skyve flisene slik at de når sine plasser som er "
+"indikert med tall eller deler av et større bilde."
 
 #: ../data/org.gnome.taquin.desktop.in.h:1 ../src/taquin-main.vala:76
 #: ../src/taquin-main.vala:133 ../src/taquin-main.vala:237
 msgid "Taquin"
 msgstr "Taquin"
 
-#: ../data/org.gnome.taquin.desktop.in.h:3
+#: ../data/org.gnome.taquin.desktop.in.h:2
+msgid "15-puzzle"
+msgstr "15-puslespill"
+
+#: ../data/org.gnome.taquin.desktop.in.h:4
 msgid "puzzle;"
 msgstr "puslespill;"
 
@@ -114,7 +121,9 @@ msgstr "Antall fliser på hver kant."
 msgid ""
 "The game offers to play with a board size from 3 to 5. The setting could be "
 "set from 2 (good for testing) to 9, limited by the way files are selected."
-msgstr "Spillet tilbyr å spille med brettstørrelse på 3 til 5. Denne innstillingen kan settes til 2 (bra for testing) til 9, begrenset av måten filene velges."
+msgstr ""
+"Spillet tilbyr å spille med brettstørrelse på 3 til 5. Denne innstillingen "
+"kan settes til 2 (bra for testing) til 9, begrenset av måten filene velges."
 
 #: ../data/org.gnome.taquin.gschema.xml.h:3
 msgid "Name of the theme folder."
