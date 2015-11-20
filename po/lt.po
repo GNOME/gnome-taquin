@@ -9,8 +9,8 @@ msgstr ""
 "Project-Id-Version: gnome-taquin master\n"
 "Report-Msgid-Bugs-To: http://bugzilla.gnome.org/enter_bug.cgi?product=gnome-"
 "taquin&keywords=I18N+L10N&component=general\n"
-"POT-Creation-Date: 2015-03-01 04:45+0000\n"
-"PO-Revision-Date: 2015-03-08 19:59+0200\n"
+"POT-Creation-Date: 2015-11-13 10:26+0000\n"
+"PO-Revision-Date: 2015-11-13 12:57+0200\n"
 "Last-Translator: Aurimas Černius <aurisc4@gmail.com>\n"
 "Language-Team: Lithuanian <gnome-lt@lists.akl.lt>\n"
 "Language: lt\n"
@@ -19,7 +19,7 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=3; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && (n"
 "%100<10 || n%100>=20) ? 1 : 2);\n"
-"X-Generator: Gtranslator 2.91.6\n"
+"X-Generator: Poedit 1.8.5\n"
 
 #: ../data/taquin-menus.ui.h:1
 msgid "_Sound"
@@ -57,11 +57,11 @@ msgstr "Katinai"
 msgid "Numbers"
 msgstr "Skaičiai"
 
-#: ../data/taquin-screens.ui.h:6 ../data/org.gnome.taquin.desktop.in.h:4
+#: ../data/taquin-screens.ui.h:6 ../data/org.gnome.taquin.desktop.in.h:5
 msgid "15-Puzzle"
 msgstr "15-galvosūkis"
 
-#: ../data/taquin-screens.ui.h:7 ../data/org.gnome.taquin.desktop.in.h:5
+#: ../data/taquin-screens.ui.h:7 ../data/org.gnome.taquin.desktop.in.h:6
 msgid "16-Puzzle"
 msgstr "16-galvosūkis"
 
@@ -70,24 +70,14 @@ msgid "Go back to the current game"
 msgstr "Grįžti į dabartinį žaidimą"
 
 #: ../data/taquin.ui.h:2
-msgid "_Start Game"
-msgstr "_Pradėti žaidimą"
-
-#: ../data/taquin.ui.h:3
-#| msgid "Start a new game"
-msgid "Start a new game as configured"
-msgstr "Pradėti naują žaidimą kaip sukonfigūruota"
-
-#: ../data/taquin.ui.h:4
 msgid "_Start Over"
 msgstr "Žaisti iš _naujo"
 
-#: ../data/taquin.ui.h:5
-#| msgid "Start a new game"
+#: ../data/taquin.ui.h:3
 msgid "Configure a new game"
 msgstr "Konfigūruoti naują žaidimą"
 
-#: ../data/taquin.ui.h:6
+#: ../data/taquin.ui.h:4
 msgid "Start a new game"
 msgstr "Pradėti naują žaidimą"
 
@@ -96,7 +86,7 @@ msgid "GNOME Taquin"
 msgstr "GNOME Taquin"
 
 #: ../data/org.gnome.taquin.appdata.xml.in.h:2
-#: ../data/org.gnome.taquin.desktop.in.h:2
+#: ../data/org.gnome.taquin.desktop.in.h:3
 msgid "Slide tiles to their correct places"
 msgstr "Tempkite koklius į jų teisingas vietas"
 
@@ -114,13 +104,16 @@ msgstr ""
 "Taquin tikslas yra perkelti koklius taip, kad kiekvienas atsidurtų savo "
 "vietoje, nurodytoje skaičiais arba didesnio paveikslėlio dalimis."
 
-#. Window
-#: ../data/org.gnome.taquin.desktop.in.h:1 ../src/taquin-main.vala:78
-#: ../src/taquin-main.vala:138 ../src/taquin-main.vala:254
+#: ../data/org.gnome.taquin.desktop.in.h:1 ../src/taquin-main.vala:76
+#: ../src/taquin-main.vala:133 ../src/taquin-main.vala:237
 msgid "Taquin"
 msgstr "Taquin"
 
-#: ../data/org.gnome.taquin.desktop.in.h:3
+#: ../data/org.gnome.taquin.desktop.in.h:2
+msgid "15-puzzle"
+msgstr "15-galvosūkis"
+
+#: ../data/org.gnome.taquin.desktop.in.h:4
 msgid "puzzle;"
 msgstr "galvosūkis;"
 
@@ -164,68 +157,76 @@ msgstr "Lango aukštis pikseliais."
 msgid "true if the window is maximized."
 msgstr "Teigiama, jei langas yra išdidintas."
 
-#: ../src/game-window.vala:134
+#: ../src/game-window.vala:128
+msgid "_Start Game"
+msgstr "_Pradėti žaidimą"
+
+#: ../src/game-window.vala:153
 msgid "Undo your most recent move"
 msgstr "Atšaukti paskutinį ėjimą"
 
-#: ../src/taquin-main.vala:46
+#: ../src/taquin-main.vala:45
 msgid "Play the classical 1880s’ 15-puzzle"
 msgstr "Žaisti klasikinį 1880-ųjų 15-galvosūkį"
 
-#: ../src/taquin-main.vala:47
+#: ../src/taquin-main.vala:46
 msgid "Try this fun alternative 16-puzzle"
 msgstr "Bandyti šį smagų alternatyvų 16-galvosūkį"
 
-#: ../src/taquin-main.vala:48
+#: ../src/taquin-main.vala:47
 msgid "Sets the puzzle edges’ size (3-5, 2-9 for debug)"
 msgstr "Nustato galvosūkio pakraščių dydį (3-5, 2-9 derinimui)"
 
-#: ../src/taquin-main.vala:49
+#: ../src/taquin-main.vala:48
 msgid "Turn off the sound"
 msgstr "Išjungti garsą"
 
-#: ../src/taquin-main.vala:50
+#: ../src/taquin-main.vala:49
 msgid "Turn on the sound"
 msgstr "Įjungti garsą"
 
-#: ../src/taquin-main.vala:51
+#: ../src/taquin-main.vala:50
 msgid "Print release version and exit"
 msgstr "Atspausdinti leidimo versiją ir išeiti"
 
-#: ../src/taquin-main.vala:250
+#: ../src/taquin-main.vala:233
 msgid "(see COPYING.themes for informations)"
 msgstr "(daugiau informacijos rasite faile COPYING.themes)"
 
-#: ../src/taquin-main.vala:258
+#: ../src/taquin-main.vala:241
 msgid "A classic 15-puzzle game"
 msgstr "Klasikinis 15-galvosūkio žaidimas"
 
-#: ../src/taquin-main.vala:262
+#: ../src/taquin-main.vala:245
 msgid "translator-credits"
 msgstr ""
 "Išvertė:\n"
 "Aurimas Černius <aurisc4@gmail.com>"
 
-#: ../src/taquin-main.vala:303
+#: ../src/taquin-main.vala:286
 msgid "You can’t move this tile!"
 msgstr "Negalima perkelti šio koklio!"
 
-#: ../src/taquin-main.vala:309
+#: ../src/taquin-main.vala:292
 msgid "Bravo! You finished the game!"
 msgstr "Sveikiname! Jūs užbaigėte žaidimą!"
 
-#: ../src/taquin-main.vala:333
+#: ../src/taquin-main.vala:310
 #, c-format
 msgid "Size: %d × %d ▾"
 msgstr "Dydis: %d × %d ▾"
 
-#: ../src/taquin-main.vala:347
+#: ../src/taquin-main.vala:324
 msgid "Theme: Cats ▾"
 msgstr "Tema: katinai ▾"
 
-#: ../src/taquin-main.vala:348
+#: ../src/taquin-main.vala:325
 msgid "Theme: Numbers ▾"
 msgstr "Tema: skaičiai ▾"
+
+#~| msgid "Start a new game"
+#~ msgid "Start a new game as configured"
+#~ msgstr "Pradėti naują žaidimą kaip sukonfigūruota"
 
 #~ msgid "15-Puzzle with hole"
 #~ msgstr "15-galvosūkis su skyle"
