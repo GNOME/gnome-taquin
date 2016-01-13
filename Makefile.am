@@ -6,4 +6,7 @@ MAINTAINERCLEANFILES = \
 
 EXTRA_DIST = COPYING.sounds COPYING.themes
 
+# We currently have no custom macros
+GITIGNOREFILES = m4
+
 -include $(top_srcdir)/git.mk
