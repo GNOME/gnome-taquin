@@ -1,0 +1,225 @@
+# Bulgarian translation of gnome-taquin po-file
+# Copyright (C) 2016 Free Software Foundation, Inc.
+# This file is distributed under the same license as the gnome-taguin package.
+# Alexander Shopov <ash@kambanaria.org>, 2016.
+msgid ""
+msgstr ""
+"Project-Id-Version: gnome-taquin master\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2016-01-15 21:39+0200\n"
+"PO-Revision-Date: 2016-01-15 21:39+0200\n"
+"Last-Translator: Alexander Shopov <ash@kambanaria.org>\n"
+"Language-Team: Bulgarian <dict@fsa-bg.org>\n"
+"Language: bg\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+
+#: ../data/taquin-menus.ui.h:1
+msgid "_Sound"
+msgstr "_Звук"
+
+#: ../data/taquin-menus.ui.h:2
+msgid "_Help"
+msgstr "Помо_щ"
+
+#: ../data/taquin-menus.ui.h:3
+msgid "_About"
+msgstr "_Относно"
+
+#: ../data/taquin-menus.ui.h:4
+msgid "_Quit"
+msgstr "_Спиране на програмата"
+
+#: ../data/taquin-screens.ui.h:1
+msgid "3 × 3"
+msgstr "3 × 3"
+
+#: ../data/taquin-screens.ui.h:2
+msgid "4 × 4"
+msgstr "4 × 4"
+
+#: ../data/taquin-screens.ui.h:3
+msgid "5 × 5"
+msgstr "5 × 5"
+
+#: ../data/taquin-screens.ui.h:4
+msgid "Cats"
+msgstr "Котки"
+
+#: ../data/taquin-screens.ui.h:5
+msgid "Numbers"
+msgstr "Числа"
+
+#: ../data/taquin-screens.ui.h:6 ../data/org.gnome.taquin.desktop.in.h:5
+msgid "15-Puzzle"
+msgstr "15 плочки"
+
+#: ../data/taquin-screens.ui.h:7 ../data/org.gnome.taquin.desktop.in.h:6
+msgid "16-Puzzle"
+msgstr "16 плочки"
+
+#: ../data/taquin.ui.h:1
+msgid "Go back to the current game"
+msgstr "Към текущата игра"
+
+#: ../data/taquin.ui.h:2
+msgid "_Start Over"
+msgstr "Отна_чало"
+
+#: ../data/taquin.ui.h:3
+msgid "Configure a new game"
+msgstr "Настройване на нова игра"
+
+#: ../data/taquin.ui.h:4
+msgid "Start a new game"
+msgstr "Започване на нова игра"
+
+#: ../data/org.gnome.taquin.appdata.xml.in.h:1
+msgid "GNOME Taquin"
+msgstr "Пет6найсе"
+
+#: ../data/org.gnome.taquin.appdata.xml.in.h:2
+#: ../data/org.gnome.taquin.desktop.in.h:3
+msgid "Slide tiles to their correct places"
+msgstr "Поставете плочките на правилните места чрез плъзгане"
+
+#: ../data/org.gnome.taquin.appdata.xml.in.h:3
+msgid ""
+"Taquin is a computer version of the 15-puzzle and other sliding puzzles."
+msgstr "„Пет6найсе“ е версия на популярната игра с 15 плъзгащи се блокчета"
+
+#: ../data/org.gnome.taquin.appdata.xml.in.h:4
+msgid ""
+"The object of Taquin is to move tiles so that they reach their places, "
+"either indicated with numbers, or with parts of a great image."
+msgstr ""
+"Целта е да подредите плочките като ги плъзгате и те да се подредят "
+"последователно или като част от картинка."
+
+#: ../data/org.gnome.taquin.desktop.in.h:1 ../src/taquin-main.vala:76
+#: ../src/taquin-main.vala:133 ../src/taquin-main.vala:237
+msgid "Taquin"
+msgstr "Пет6найсе"
+
+#: ../data/org.gnome.taquin.desktop.in.h:2
+msgid "15-puzzle"
+msgstr "Квадрат с 15-16 плочки"
+
+#: ../data/org.gnome.taquin.desktop.in.h:4
+msgid "puzzle;"
+msgstr "петнадесет;загадка;плочки;15;16;puzzle;"
+
+#: ../data/org.gnome.taquin.gschema.xml.h:1
+msgid "Number of tiles on each edge."
+msgstr "Брой плочки на всяка страна"
+
+#: ../data/org.gnome.taquin.gschema.xml.h:2
+msgid ""
+"The game offers to play with a board size from 3 to 5. The setting could be "
+"set from 2 (good for testing) to 9, limited by the way files are selected."
+msgstr ""
+"Стандартно можете да играете с размер на ръба на дъската от 3 до 5 плочки. 2 "
+"е добре при тестване на играта, а над 5 до 9 е са по-трудни варианти и има "
+"определени ограничения."
+
+#: ../data/org.gnome.taquin.gschema.xml.h:3
+msgid "Name of the theme folder."
+msgstr "Име на папката с темата."
+
+#: ../data/org.gnome.taquin.gschema.xml.h:4
+msgid "Taquin has two default themes: 'cats' and 'numbers'."
+msgstr "„Пет6найсе“ идва с две стандартни теми: „Котки“ и „Числа“."
+
+#: ../data/org.gnome.taquin.gschema.xml.h:5
+msgid "Sound"
+msgstr "Звук"
+
+#: ../data/org.gnome.taquin.gschema.xml.h:6
+msgid "Whether or not to play event sounds."
+msgstr "Дали събитията да се придружават с изпълнение на звук"
+
+#: ../data/org.gnome.taquin.gschema.xml.h:7
+msgid "Width of the window in pixels."
+msgstr "Широчина на прозореца в пиксели."
+
+#: ../data/org.gnome.taquin.gschema.xml.h:8
+msgid "Height of the window in pixels."
+msgstr "Височина на прозореца в пиксели."
+
+#: ../data/org.gnome.taquin.gschema.xml.h:9
+msgid "true if the window is maximized."
+msgstr "истина, ако прозорецът е максимизиран."
+
+#: ../src/game-window.vala:128
+msgid "_Start Game"
+msgstr "_Начало на играта"
+
+#: ../src/game-window.vala:153
+msgid "Undo your most recent move"
+msgstr "Отмяна на последния ход"
+
+#: ../src/taquin-main.vala:45
+msgid "Play the classical 1880s’ 15-puzzle"
+msgstr "Класическата игра от 80-те години на 19 век"
+
+#: ../src/taquin-main.vala:46
+msgid "Try this fun alternative 16-puzzle"
+msgstr "Алтернативен вариант с всички плочки"
+
+#: ../src/taquin-main.vala:47
+msgid "Sets the puzzle edges’ size (3-5, 2-9 for debug)"
+msgstr "Задаване на броя плочки по страните (3-5, 2-9 за трасиране)"
+
+#: ../src/taquin-main.vala:48
+msgid "Turn off the sound"
+msgstr "Без звук"
+
+#: ../src/taquin-main.vala:49
+msgid "Turn on the sound"
+msgstr "Със звук"
+
+#: ../src/taquin-main.vala:50
+msgid "Print release version and exit"
+msgstr "Извеждане на версията и спиране на програмата"
+
+#: ../src/taquin-main.vala:233
+msgid "(see COPYING.themes for informations)"
+msgstr "(за информация погледнете файла „COPYING.themes“)"
+
+#: ../src/taquin-main.vala:241
+msgid "A classic 15-puzzle game"
+msgstr "Класическата игра с 15 плочки"
+
+#: ../src/taquin-main.vala:245
+msgid "translator-credits"
+msgstr ""
+"Александър Шопов <ash@kambanaria.org>\n"
+"\n"
+"Проектът за превод на GNOME има нужда от подкрепа.\n"
+"Научете повече за нас на <a href=\"http://gnome.cult.bg\">http://gnome.cult."
+"bg</a>\n"
+"Докладвайте за грешки на <a href=\"http://gnome.cult.bg/bugs\">http://gnome."
+"cult.bg/bugs</a>"
+
+#: ../src/taquin-main.vala:286
+msgid "You can’t move this tile!"
+msgstr "Не може да местите тази плочка!"
+
+#: ../src/taquin-main.vala:292
+msgid "Bravo! You finished the game!"
+msgstr "Браво, подредихте плочките!"
+
+#: ../src/taquin-main.vala:310
+#, c-format
+msgid "Size: %d × %d ▾"
+msgstr "Размер: %d × %d ▾"
+
+#: ../src/taquin-main.vala:324
+msgid "Theme: Cats ▾"
+msgstr "Тема: Котки ▾"
+
+#: ../src/taquin-main.vala:325
+msgid "Theme: Numbers ▾"
+msgstr "Тема: Числа ▾"
