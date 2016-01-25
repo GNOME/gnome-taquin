@@ -27,4 +27,5 @@
     <kudo>ModernToolkit</kudo>
     <kudo>UserDocs</kudo>
   </kudos>
+  <translation type="gettext">gnome-taquin</translation>
 </application>
