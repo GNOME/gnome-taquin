@@ -1,0 +1,221 @@
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+#
+# Rūdolfs Mazurs <rudolfs.mazurs@gmail.com>, 2016.
+msgid ""
+msgstr ""
+"Project-Id-Version: \n"
+"Report-Msgid-Bugs-To: http://bugzilla.gnome.org/enter_bug.cgi?product=gnome-ta"
+"quin&keywords=I18N+L10N&component=general\n"
+"POT-Creation-Date: 2016-02-04 10:32+0000\n"
+"PO-Revision-Date: 2016-02-06 19:23+0200\n"
+"Last-Translator: Rūdolfs Mazurs <rudolfs.mazurs@gmail.com>\n"
+"Language-Team: Latvian <lata-l10n@googlegroups.com>\n"
+"Language: lv\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=3; plural=(n%10==1 && n%100!=11 ? 0 : n != 0 ? 1 : "
+"2);\n"
+"X-Generator: Lokalize 2.0\n"
+
+#: ../data/taquin-menus.ui.h:1
+msgid "_Sound"
+msgstr "_Skaņa"
+
+#: ../data/taquin-menus.ui.h:2
+msgid "_Help"
+msgstr "_Palīdzība"
+
+#: ../data/taquin-menus.ui.h:3
+msgid "_About"
+msgstr "P_ar"
+
+#: ../data/taquin-menus.ui.h:4
+msgid "_Quit"
+msgstr "_Iziet"
+
+#: ../data/taquin-screens.ui.h:1
+msgid "3 × 3"
+msgstr "3 × 3"
+
+#: ../data/taquin-screens.ui.h:2
+msgid "4 × 4"
+msgstr "4 × 4"
+
+#: ../data/taquin-screens.ui.h:3
+msgid "5 × 5"
+msgstr "5 × 5"
+
+#: ../data/taquin-screens.ui.h:4
+msgid "Cats"
+msgstr "Kaķi"
+
+#: ../data/taquin-screens.ui.h:5
+msgid "Numbers"
+msgstr "Skaitļi"
+
+#: ../data/taquin-screens.ui.h:6 ../data/org.gnome.taquin.desktop.in.h:5
+msgid "15-Puzzle"
+msgstr "15-mīkla"
+
+#: ../data/taquin-screens.ui.h:7 ../data/org.gnome.taquin.desktop.in.h:6
+msgid "16-Puzzle"
+msgstr "16-mīkla"
+
+#: ../data/taquin.ui.h:1
+msgid "Go back to the current game"
+msgstr "Iet uz pašreizējo spēli"
+
+#: ../data/taquin.ui.h:2
+msgid "_Start Over"
+msgstr "_Sākt no jauna"
+
+#: ../data/taquin.ui.h:3
+msgid "Configure a new game"
+msgstr "Konfigurēt jaunu spēli"
+
+#: ../data/taquin.ui.h:4
+msgid "Start a new game"
+msgstr "Sākt jaunu spēli"
+
+#: ../data/org.gnome.taquin.appdata.xml.in.h:1
+msgid "GNOME Taquin"
+msgstr "GNOME Taquin"
+
+#: ../data/org.gnome.taquin.appdata.xml.in.h:2
+#: ../data/org.gnome.taquin.desktop.in.h:3
+msgid "Slide tiles to their correct places"
+msgstr "Slidiniet kauliņus uz tiem paredzētajām vietām"
+
+#: ../data/org.gnome.taquin.appdata.xml.in.h:3
+msgid ""
+"Taquin is a computer version of the 15-puzzle and other sliding puzzles."
+msgstr "Taquin ir datora variants 15-mīklai un citām slidināšanas spēlēm."
+
+#: ../data/org.gnome.taquin.appdata.xml.in.h:4
+msgid ""
+"The object of Taquin is to move tiles so that they reach their places, "
+"either indicated with numbers, or with parts of a great image."
+msgstr ""
+"Taquin mērķis ir pārvietot kauliņus, lai tie sasniegtu savu vietu, vai nu tie "
+"ir numuri, vai daļa no lielāka attēla."
+
+#: ../data/org.gnome.taquin.desktop.in.h:1 ../src/taquin-main.vala:76
+#: ../src/taquin-main.vala:133 ../src/taquin-main.vala:237
+msgid "Taquin"
+msgstr "Taquin"
+
+#: ../data/org.gnome.taquin.desktop.in.h:2
+msgid "15-puzzle"
+msgstr "15-mīkla"
+
+#: ../data/org.gnome.taquin.desktop.in.h:4
+msgid "puzzle;"
+msgstr "puzle;mīkla;"
+
+#: ../data/org.gnome.taquin.gschema.xml.h:1
+msgid "Number of tiles on each edge."
+msgstr "Kauliņu skaits katrā malā."
+
+#: ../data/org.gnome.taquin.gschema.xml.h:2
+msgid ""
+"The game offers to play with a board size from 3 to 5. The setting could be "
+"set from 2 (good for testing) to 9, limited by the way files are selected."
+msgstr ""
+"Spēle piedāvā spēlēt ar laukuma izmēru no 3 līdz 5. Iestatījumu var mainīt no "
+"2 (noder testēšanai) līdz 9, ierobežo veids, kādā tiek izvēlētas datnes."
+
+#: ../data/org.gnome.taquin.gschema.xml.h:3
+msgid "Name of the theme folder."
+msgstr "Motīvu mapes nosaukums."
+
+#: ../data/org.gnome.taquin.gschema.xml.h:4
+msgid "Taquin has two default themes: 'cats' and 'numbers'."
+msgstr "Taquin ir divi noklusējuma motīvi — “cats” un “numbers”."
+
+#: ../data/org.gnome.taquin.gschema.xml.h:5
+msgid "Sound"
+msgstr "Skaņa"
+
+#: ../data/org.gnome.taquin.gschema.xml.h:6
+msgid "Whether or not to play event sounds."
+msgstr "Vai atskaņot notikumu skaņas."
+
+#: ../data/org.gnome.taquin.gschema.xml.h:7
+msgid "Width of the window in pixels."
+msgstr "Galvenā loga platums pikseļos."
+
+#: ../data/org.gnome.taquin.gschema.xml.h:8
+msgid "Height of the window in pixels."
+msgstr "Galvenā loga augstums pikseļos."
+
+#: ../data/org.gnome.taquin.gschema.xml.h:9
+msgid "true if the window is maximized."
+msgstr "patiess, ja logs ir maksimizēts."
+
+#: ../src/game-window.vala:128
+msgid "_Start Game"
+msgstr "_Sākt spēli"
+
+#: ../src/game-window.vala:153
+msgid "Undo your most recent move"
+msgstr "Atsaukt savu pēdējo gājienu"
+
+#: ../src/taquin-main.vala:45
+msgid "Play the classical 1880s’ 15-puzzle"
+msgstr "Spēlēt klasisko 1880-to gadu 15-mīklu"
+
+#: ../src/taquin-main.vala:46
+msgid "Try this fun alternative 16-puzzle"
+msgstr "Pamēģiniet šo jautro alternatīvo 16-mīklu"
+
+#: ../src/taquin-main.vala:47
+msgid "Sets the puzzle edges’ size (3-5, 2-9 for debug)"
+msgstr "Iestata mīklas malu izmēru (3–5, 2–9 atkļūdošanai)"
+
+#: ../src/taquin-main.vala:48
+msgid "Turn off the sound"
+msgstr "Izslēgt skaņu"
+
+#: ../src/taquin-main.vala:49
+msgid "Turn on the sound"
+msgstr "Ieslēgt skaņu"
+
+#: ../src/taquin-main.vala:50
+msgid "Print release version and exit"
+msgstr "Parādīt informāciju par laidienu un iziet"
+
+#: ../src/taquin-main.vala:233
+msgid "(see COPYING.themes for informations)"
+msgstr "(skatiet COPYING.themes, lai uzzinātu vairāk)"
+
+#: ../src/taquin-main.vala:241
+msgid "A classic 15-puzzle game"
+msgstr "Klasiskā 15-mīklas spēle"
+
+#: ../src/taquin-main.vala:245
+msgid "translator-credits"
+msgstr "Rūdolfs Mazurs <rudolfs.mazurs@gmail.com>"
+
+#: ../src/taquin-main.vala:286
+msgid "You can’t move this tile!"
+msgstr "Jūs nevarat pārvietot šo kauliņu!"
+
+#: ../src/taquin-main.vala:292
+msgid "Bravo! You finished the game!"
+msgstr "Bravo! Jūs pabeidzāt spēli!"
+
+#: ../src/taquin-main.vala:310
+#, c-format
+msgid "Size: %d × %d ▾"
+msgstr "Izmērs: %d × %d ▾"
+
+#: ../src/taquin-main.vala:324
+msgid "Theme: Cats ▾"
+msgstr "Motīvs: kaķi ▾"
+
+#: ../src/taquin-main.vala:325
+msgid "Theme: Numbers ▾"
+msgstr "Motīvs: skaitļi ▾"
+
