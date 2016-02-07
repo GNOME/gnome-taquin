@@ -9,8 +9,8 @@ msgstr ""
 "Project-Id-Version: taquin master\n"
 "Report-Msgid-Bugs-To: http://bugzilla.gnome.org/enter_bug.cgi?product=gnome-"
 "taquin&keywords=I18N+L10N&component=general\n"
-"POT-Creation-Date: 2015-03-01 04:45+0000\n"
-"PO-Revision-Date: 2015-03-02 18:34+0100\n"
+"POT-Creation-Date: 2016-02-07 10:32+0000\n"
+"PO-Revision-Date: 2016-02-07 22:24+0100\n"
 "Last-Translator: Arnaud Bonatti <arnaud.bonatti@gmail.com>\n"
 "Language-Team: GNOME French Team <gnomefr@traduc.org>\n"
 "Language: fr\n"
@@ -55,11 +55,11 @@ msgstr "Chats"
 msgid "Numbers"
 msgstr "Nombres"
 
-#: ../data/taquin-screens.ui.h:6 ../data/org.gnome.taquin.desktop.in.h:4
+#: ../data/taquin-screens.ui.h:6 ../data/org.gnome.taquin.desktop.in.h:5
 msgid "15-Puzzle"
 msgstr "Pousse-pousse"
 
-#: ../data/taquin-screens.ui.h:7 ../data/org.gnome.taquin.desktop.in.h:5
+#: ../data/taquin-screens.ui.h:7 ../data/org.gnome.taquin.desktop.in.h:6
 msgid "16-Puzzle"
 msgstr "Glisse-glisse"
 
@@ -68,22 +68,14 @@ msgid "Go back to the current game"
 msgstr "Revenir au jeu en cours"
 
 #: ../data/taquin.ui.h:2
-msgid "_Start Game"
-msgstr "_Lancer le jeu"
-
-#: ../data/taquin.ui.h:3
-msgid "Start a new game as configured"
-msgstr "Commence une nouvelle partie telle que configurée"
-
-#: ../data/taquin.ui.h:4
 msgid "_Start Over"
 msgstr "_Recommencer"
 
-#: ../data/taquin.ui.h:5
+#: ../data/taquin.ui.h:3
 msgid "Configure a new game"
 msgstr "Configurer une nouvelle partie"
 
-#: ../data/taquin.ui.h:6
+#: ../data/taquin.ui.h:4
 msgid "Start a new game"
 msgstr "Commence une nouvelle partie"
 
@@ -92,7 +84,7 @@ msgid "GNOME Taquin"
 msgstr "GNOME Taquin"
 
 #: ../data/org.gnome.taquin.appdata.xml.in.h:2
-#: ../data/org.gnome.taquin.desktop.in.h:2
+#: ../data/org.gnome.taquin.desktop.in.h:3
 msgid "Slide tiles to their correct places"
 msgstr "Glisser les pièces jusqu’à leur position correcte"
 
@@ -112,13 +104,16 @@ msgstr ""
 "leur position correcte, devinable soit par un nombre, soit par les morceaux "
 "d’une chouette image."
 
-#. Window
-#: ../data/org.gnome.taquin.desktop.in.h:1 ../src/taquin-main.vala:78
-#: ../src/taquin-main.vala:138 ../src/taquin-main.vala:254
+#: ../data/org.gnome.taquin.desktop.in.h:1 ../src/taquin-main.vala:76
+#: ../src/taquin-main.vala:133 ../src/taquin-main.vala:237
 msgid "Taquin"
 msgstr "Taquin"
 
-#: ../data/org.gnome.taquin.desktop.in.h:3
+#: ../data/org.gnome.taquin.desktop.in.h:2
+msgid "15-puzzle"
+msgstr "Pousse-pousse"
+
+#: ../data/org.gnome.taquin.desktop.in.h:4
 msgid "puzzle;"
 msgstr "puzzle; pousse-pousse; taquin;"
 
@@ -165,66 +160,73 @@ msgstr "Hauteur de la fenêtre en pixels."
 msgid "true if the window is maximized."
 msgstr "Vrai si la fenêtre est maximisée."
 
-#: ../src/game-window.vala:134
+#: ../src/game-window.vala:128
+msgid "_Start Game"
+msgstr "_Lancer le jeu"
+
+#: ../src/game-window.vala:153
 msgid "Undo your most recent move"
 msgstr "Annule votre dernier déplacement"
 
-#: ../src/taquin-main.vala:46
+#: ../src/taquin-main.vala:45
 msgid "Play the classical 1880s’ 15-puzzle"
 msgstr "Jouer au pousse-pousse classique des années 1880."
 
-#: ../src/taquin-main.vala:47
+#: ../src/taquin-main.vala:46
 msgid "Try this fun alternative 16-puzzle"
 msgstr "Essaye cet amusant puzzle alternatif à 16 pièces"
 
-#: ../src/taquin-main.vala:48
+#: ../src/taquin-main.vala:47
 msgid "Sets the puzzle edges’ size (3-5, 2-9 for debug)"
 msgstr "Configure la taille du côté du puzzle (3 à 5, 2 à 9 pour débugger)"
 
-#: ../src/taquin-main.vala:49
+#: ../src/taquin-main.vala:48
 msgid "Turn off the sound"
 msgstr "Coupe le son"
 
-#: ../src/taquin-main.vala:50
+#: ../src/taquin-main.vala:49
 msgid "Turn on the sound"
 msgstr "Active le son"
 
-#: ../src/taquin-main.vala:51
+#: ../src/taquin-main.vala:50
 msgid "Print release version and exit"
 msgstr "Affiche le numéro de version et quitte"
 
-#: ../src/taquin-main.vala:250
+#: ../src/taquin-main.vala:233
 msgid "(see COPYING.themes for informations)"
 msgstr "(voir COPYING.themes pour plus d’informations)"
 
-#: ../src/taquin-main.vala:258
+#: ../src/taquin-main.vala:241
 msgid "A classic 15-puzzle game"
 msgstr "Un taquin classique"
 
-#: ../src/taquin-main.vala:262
+#: ../src/taquin-main.vala:245
 msgid "translator-credits"
 msgstr "Arnaud Bonatti <arnaud.bonatti@gmail.com>"
 
-#: ../src/taquin-main.vala:303
+#: ../src/taquin-main.vala:286
 msgid "You can’t move this tile!"
 msgstr "Impossible de déplacer cette pièce !"
 
-#: ../src/taquin-main.vala:309
+#: ../src/taquin-main.vala:292
 msgid "Bravo! You finished the game!"
 msgstr "Bravo ! Vous avez terminé le jeu !"
 
-#: ../src/taquin-main.vala:333
+#: ../src/taquin-main.vala:310
 #, c-format
 msgid "Size: %d × %d ▾"
 msgstr "Taille : %d × %d ▾"
 
-#: ../src/taquin-main.vala:347
+#: ../src/taquin-main.vala:324
 msgid "Theme: Cats ▾"
 msgstr "Thème : Chats ▾"
 
-#: ../src/taquin-main.vala:348
+#: ../src/taquin-main.vala:325
 msgid "Theme: Numbers ▾"
 msgstr "Thème : Nombres ▾"
+
+#~ msgid "Start a new game as configured"
+#~ msgstr "Commence une nouvelle partie telle que configurée"
 
 #~ msgid "15-Puzzle with hole"
 #~ msgstr "Pousse-pousse, avec un trou"
