@@ -1,34 +1,68 @@
-modelbutton.radio-like-toggle#radio-fifteen {
+/* Copyright (C) 2015-2016 Arnaud Bonatti <arnaud.bonatti@gmail.com>
+ *
+ * This file is part of GNOME Taquin.
+ *
+ * GNOME Taquin is free software: you can redistribute it and/or modify
+ * it under the terms of the GNU General Public License as published by
+ * the Free Software Foundation, either version 3 of the License, or
+ * (at your option) any later version.
+ *
+ * GNOME Taquin is distributed in the hope that it will be useful,
+ * but WITHOUT ANY WARRANTY; without even the implied warranty of
+ * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+ * GNU General Public License for more details.
+ *
+ * You should have received a copy of the GNU General Public License along
+ * with this application. If not, see <http://www.gnu.org/licenses/>.
+ */
+
+/* GtkXyz is pre-3.19.n */
+
+GtkModelButton.radio-like-toggle#radio-fifteen,
+button.radio-like-toggle#radio-fifteen {
     background-image: url("resource://org/gnome/taquin/images/15-Puzzle.png");
 }
-modelbutton.radio-like-toggle#radio-sixteen {
+GtkModelButton.radio-like-toggle#radio-sixteen,
+button.radio-like-toggle#radio-sixteen {
     background-image: url("resource://org/gnome/taquin/images/16-Puzzle.png");
 }
 
-modelbutton.radio-like-toggle {
+GtkModelButton.radio-like-toggle,
+button.radio-like-toggle {
     background-repeat: no-repeat;
     background-position: center 25px;
     color: @theme_fg_color;
     background-color: transparent;
 }
-modelbutton.radio-like-toggle label {
+GtkModelButton.radio-like-toggle GtkLabel,
+button.radio-like-toggle label {
     padding-bottom: 165px;
 }
-modelbutton.radio-like-toggle:backdrop {
+GtkModelButton.radio-like-toggle:backdrop,
+button.radio-like-toggle:backdrop {
     color: @theme_unfocused_fg_color;
 }
 
-modelbutton.radio-like-toggle,
+GtkModelButton.radio-like-toggle,
+GtkMenuButton.menubutton-like-combo {
+    border-radius:15px;
+    outline-radius:13px;
+}
+button.radio-like-toggle,
 button.menubutton-like-combo {
     border-radius:15px;
     -gtk-outline-radius:13px;
 }
 
+GtkMenuButton.menubutton-like-combo:checked,
+GtkMenuButton.menubutton-like-combo:prelight,
 button.menubutton-like-combo:checked,
 button.menubutton-like-combo:hover {
     color:#2e3436; /* gtk-contained.css’ theme_fg_color */
     background:-gtk-gradient (radial, center center, 0, center center, 0.5, from(rgba (255, 255, 255, 1)), to(rgba (255, 255, 255, 0)));
 }
+GtkMenuButton.menubutton-like-combo:checked:backdrop,
+GtkMenuButton.menubutton-like-combo:prelight:backdrop,
 button.menubutton-like-combo:checked:backdrop,
 button.menubutton-like-combo:hover:backdrop {
     color:@theme_unfocused_fg_color;
