@@ -354,10 +354,10 @@ msgstr "Erweitert"
 
 #. (itstool) path: p/link
 #: C/legal.xml:3
-msgid "Creative Commons Attribution-ShareAlike 4.0 Unported License"
+msgid "Creative Commons Attribution-ShareAlike 4.0 International license"
 msgstr ""
 "Creative Commons Namensnennung - Weitergabe unter gleichen Bedingungen 4.0 "
-"Unported Lizenz"
+"International Lizenz"
 
 #. (itstool) path: license/p
 #: C/legal.xml:3
@@ -377,11 +377,11 @@ msgstr "Nutzungsbedingungen - Lizenz"
 #. (itstool) path: page/p
 #: C/license.page:12
 msgid ""
-"This work is distributed under a CreativeCommons Attribution-Share Alike 4.0 "
-"Unported license."
+"This work is distributed under a Creative Commons Attribution-ShareAlike 4.0 "
+"International license."
 msgstr ""
-"Dieses Werk wird unter einer CreativeCommons-Lizenz »Attribution-Share Alike "
-"3.0 Unported« verbreitet."
+"Dieses Werk wird unter einer Creative Commons-Lizenz »Attribution-ShareAlike "
+"4.0 International« verbreitet."
 
 #. (itstool) path: page/p
 #: C/license.page:20
