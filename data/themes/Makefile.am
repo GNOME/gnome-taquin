@@ -6,11 +6,11 @@ numbers_DATA = \
 
 catsdir=$(datadir)/gnome-taquin/themes/cats
 cats_DATA = \
+	cats/1-Cat_face_day.jpg \
 	cats/1-Jasmina.jpg \
-	cats/1-kitten.jpg \
 	cats/1-maine.jpg \
 	cats/1-march.jpg \
-	cats/1-olhos.jpg
+	cats/1-Tortoiseshell.jpg
 
 EXTRA_DIST = $(numbers_DATA) $(cats_DATA)
 
