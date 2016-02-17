@@ -1,14 +1,14 @@
 # Serbian translation for gnome-taquin.
-# Courtesy of Prevod.org team (http://prevod.org/) -- 2014—2015.
+# Courtesy of Prevod.org team (http://prevod.org/) -- 2014—2016.
 # This file is distributed under the same license as the gnome-taquin package.
-# Miroslav Nikolić <miroslavnikolic@rocketmail.com>, 2014—2015.
+# Miroslav Nikolić <miroslavnikolic@rocketmail.com>, 2014—2016.
 msgid ""
 msgstr ""
 "Project-Id-Version: gnome-taquin master\n"
 "Report-Msgid-Bugs-To: http://bugzilla.gnome.org/enter_bug.cgi?product=gnome-"
 "taquin&keywords=I18N+L10N&component=general\n"
-"POT-Creation-Date: 2015-03-01 04:45+0000\n"
-"PO-Revision-Date: 2015-03-05 23:05+0200\n"
+"POT-Creation-Date: 2015-09-21 18:49+0000\n"
+"PO-Revision-Date: 2016-02-17 21:22+0200\n"
 "Last-Translator: Miroslav Nikolić <miroslavnikolic@rocketmail.com>\n"
 "Language-Team: Serbian <gnom@prevod.org>\n"
 "Language: sr\n"
@@ -55,11 +55,11 @@ msgstr "Mačke"
 msgid "Numbers"
 msgstr "Brojevi"
 
-#: ../data/taquin-screens.ui.h:6 ../data/org.gnome.taquin.desktop.in.h:4
+#: ../data/taquin-screens.ui.h:6 ../data/org.gnome.taquin.desktop.in.h:5
 msgid "15-Puzzle"
 msgstr "15-slagalica"
 
-#: ../data/taquin-screens.ui.h:7 ../data/org.gnome.taquin.desktop.in.h:5
+#: ../data/taquin-screens.ui.h:7 ../data/org.gnome.taquin.desktop.in.h:6
 msgid "16-Puzzle"
 msgstr "16-slagalica"
 
@@ -68,24 +68,14 @@ msgid "Go back to the current game"
 msgstr "Vratite se na tekuću igru"
 
 #: ../data/taquin.ui.h:2
-msgid "_Start Game"
-msgstr "Počni _igru"
-
-#: ../data/taquin.ui.h:3
-#| msgid "Start a new game"
-msgid "Start a new game as configured"
-msgstr "Započnite novu igru kao što je podešeno"
-
-#: ../data/taquin.ui.h:4
 msgid "_Start Over"
 msgstr "_Počni"
 
-#: ../data/taquin.ui.h:5
-#| msgid "Start a new game"
+#: ../data/taquin.ui.h:3
 msgid "Configure a new game"
 msgstr "Podesite novu igru"
 
-#: ../data/taquin.ui.h:6
+#: ../data/taquin.ui.h:4
 msgid "Start a new game"
 msgstr "Započnite novu igru"
 
@@ -94,7 +84,7 @@ msgid "GNOME Taquin"
 msgstr "Gnomovo Peckalo"
 
 #: ../data/org.gnome.taquin.appdata.xml.in.h:2
-#: ../data/org.gnome.taquin.desktop.in.h:2
+#: ../data/org.gnome.taquin.desktop.in.h:3
 msgid "Slide tiles to their correct places"
 msgstr "Dogurajte pločice na njihova odgovarajuća mesta."
 
@@ -111,13 +101,17 @@ msgstr ""
 "Predmet Peckala je premeštanje pločica tako da stignu do svojih mesta, bilo "
 "naznačenih brojevima, ili delovima velike slike."
 
-#. Window
-#: ../data/org.gnome.taquin.desktop.in.h:1 ../src/taquin-main.vala:78
-#: ../src/taquin-main.vala:138 ../src/taquin-main.vala:254
+#: ../data/org.gnome.taquin.desktop.in.h:1 ../src/taquin-main.vala:76
+#: ../src/taquin-main.vala:133 ../src/taquin-main.vala:237
 msgid "Taquin"
 msgstr "Peckalo"
 
-#: ../data/org.gnome.taquin.desktop.in.h:3
+#: ../data/org.gnome.taquin.desktop.in.h:2
+#| msgid "15-Puzzle"
+msgid "15-puzzle"
+msgstr "15-slagalica"
+
+#: ../data/org.gnome.taquin.desktop.in.h:4
 msgid "puzzle;"
 msgstr "slagalica;"
 
@@ -161,69 +155,77 @@ msgstr "Visina prozora u tačkicama."
 msgid "true if the window is maximized."
 msgstr "štiklirano ako je prozor uvećan."
 
-#: ../src/game-window.vala:134
+#: ../src/game-window.vala:128
+msgid "_Start Game"
+msgstr "Počni _igru"
+
+#: ../src/game-window.vala:153
 msgid "Undo your most recent move"
 msgstr "Poništite vaš poslednji potez"
 
-#: ../src/taquin-main.vala:46
+#: ../src/taquin-main.vala:45
 msgid "Play the classical 1880s’ 15-puzzle"
 msgstr "Igrajte klasičnu igru 15-slagalica iz 1880."
 
-#: ../src/taquin-main.vala:47
+#: ../src/taquin-main.vala:46
 msgid "Try this fun alternative 16-puzzle"
 msgstr "Probajte ovu zabavnu zamenu 16-slagalica"
 
-#: ../src/taquin-main.vala:48
+#: ../src/taquin-main.vala:47
 msgid "Sets the puzzle edges’ size (3-5, 2-9 for debug)"
 msgstr "Podesite veličinu ivica slagalice (3-5, 2-9  je samo za pročišćavanje)"
 
-#: ../src/taquin-main.vala:49
+#: ../src/taquin-main.vala:48
 msgid "Turn off the sound"
 msgstr "Isključuje zvuk"
 
-#: ../src/taquin-main.vala:50
+#: ../src/taquin-main.vala:49
 msgid "Turn on the sound"
 msgstr "Uključuje zvuk"
 
-#: ../src/taquin-main.vala:51
+#: ../src/taquin-main.vala:50
 msgid "Print release version and exit"
 msgstr "Ispisuje broj izdanja i izlazi"
 
-#: ../src/taquin-main.vala:250
+#: ../src/taquin-main.vala:233
 msgid "(see COPYING.themes for informations)"
 msgstr "(za podatke pogledajte „COPYING.themes“)"
 
-#: ../src/taquin-main.vala:258
+#: ../src/taquin-main.vala:241
 msgid "A classic 15-puzzle game"
 msgstr "Klasična igra 15-slagalica"
 
-#: ../src/taquin-main.vala:262
+#: ../src/taquin-main.vala:245
 msgid "translator-credits"
 msgstr ""
 "  Miroslav Nikolić <miroslavnikolic@rocketmail.com>\n"
 "\n"
 "http://prevod.org — prevod na srpski jezik"
 
-#: ../src/taquin-main.vala:303
+#: ../src/taquin-main.vala:286
 msgid "You can’t move this tile!"
 msgstr "Ne možete da pomerite ovu pločicu!"
 
-#: ../src/taquin-main.vala:309
+#: ../src/taquin-main.vala:292
 msgid "Bravo! You finished the game!"
 msgstr "Odlično! Završili ste igru!"
 
-#: ../src/taquin-main.vala:333
+#: ../src/taquin-main.vala:310
 #, c-format
 msgid "Size: %d × %d ▾"
 msgstr "Veličina: %d × %d ▾"
 
-#: ../src/taquin-main.vala:347
+#: ../src/taquin-main.vala:324
 msgid "Theme: Cats ▾"
 msgstr "Tema: Mačke ▾"
 
-#: ../src/taquin-main.vala:348
+#: ../src/taquin-main.vala:325
 msgid "Theme: Numbers ▾"
 msgstr "Tema: Brojevi ▾"
+
+#~| msgid "Start a new game"
+#~ msgid "Start a new game as configured"
+#~ msgstr "Započnite novu igru kao što je podešeno"
 
 #~ msgid "15-Puzzle with hole"
 #~ msgstr "15-slagalica sa prazninom"
