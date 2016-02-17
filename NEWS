@@ -1,3 +1,29 @@
+3.19.90 – February 17, 2016
+=========================
+
+Two cats have been replaced, for DFSG compatibility. Other changes include some
+metadata updates, and corrections caused by recent GTK+.
+
+New translations:
+ Bulgarian: Alexander Shopov
+ Occitan: Cédric Valmary
+
+Translations updated:
+ Chinese (Taiwan): Chao-Hsiung Liao
+ Finnish: Jiri Grönroos
+ French: Alexandre Franke
+ Friulian: Fabio Tomat
+ German: Mario Blättermann
+ Hungarian: Balázs Meskó
+ Latvian: Rūdolfs Mazurs
+ Lithuanian: Aurimas Černius
+ Norwegian bokmål: Kjartan Maraas
+ Polish: Piotr Drąg
+ Portuguese: Pedro Albuquerque
+ Slovenian: Matej Urbančič
+ Spanish: Daniel Mustieles
+ Swedish: Anders Jonsson and Sebastian Rasmussen (help added)
+
 3.19.1 – October 27, 2015
 =========================
 
