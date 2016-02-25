@@ -1,6 +1,6 @@
 /* -*- Mode: vala; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*-
  *
- * Copyright (C) 2014 Arnaud Bonatti <arnaud.bonatti@gmail.com>
+ * Copyright (C) 2014-2016 Arnaud Bonatti <arnaud.bonatti@gmail.com>
  *
  * This file is part of Taquin.
  *

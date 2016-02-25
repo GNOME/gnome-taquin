@@ -1,6 +1,6 @@
 /* -*- Mode: vala; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*-
  *
- * Copyright (C) 2014-2015 Arnaud Bonatti <arnaud.bonatti@gmail.com>
+ * Copyright (C) 2014-2016 Arnaud Bonatti <arnaud.bonatti@gmail.com>
  *
  * This file is part of Taquin.
  *
@@ -225,18 +225,18 @@ public class Taquin : Gtk.Application
     private void about_cb ()
     {
         string[] authors = { "Arnaud Bonatti", null };
-        string[] artists = { "Ola Einang (Flickr)",
-                             "Ruskis (Wikimedia)",
+        string[] artists = { "Abelard (Wikimedia)",
                              "Alvesgaspar (Wikimedia)",
-                             "Mark J. Sebastian (Flickr)",
                              "Mueller-rech.muenchen (Wikimedia)",
+                             "Ruskis (Wikimedia)",
+                             "Toyah (Wikimedia)",
                              _("(see COPYING.themes for informations)"),
                              null };
         string[] documenters = { "Arnaud Bonatti", null };
         show_about_dialog (window,
                            "name", _("Taquin"),
                            "version", VERSION,
-                           "copyright", "Copyright © 2014-2015 Arnaud Bonatti",
+                           "copyright", "Copyright © 2014-2016 Arnaud Bonatti",
                            "license-type", License.GPL_3_0,
                            "comments", _("A classic 15-puzzle game"),
                            "authors", authors,
