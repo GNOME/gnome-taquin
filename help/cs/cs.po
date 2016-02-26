@@ -438,13 +438,13 @@ msgstr ""
 #: C/license.page:53
 msgid ""
 "For the full text of the license, see the <link href=\"http://"
-"creativecommons.org/licenses/by-sa/3.0/legalcode\">CreativeCommons website</"
+"creativecommons.org/licenses/by-sa/4.0/legalcode\">CreativeCommons website</"
 "link>, or read the full <link href=\"http://creativecommons.org/licenses/by-"
-"sa/3.0/\">Commons Deed</link>."
+"sa/4.0/\">Commons Deed</link>."
 msgstr ""
 "Text licence v plném znění najdete na <link href=\"http://creativecommons."
-"org/licenses/by-sa/3.0/legalcode\">webových stránkách CreativeCommons</link> "
-"nebo si přečtěte <link href=\"http://creativecommons.org/licenses/by-sa/3.0/"
+"org/licenses/by-sa/4.0/legalcode\">webových stránkách CreativeCommons</link> "
+"nebo si přečtěte <link href=\"http://creativecommons.org/licenses/by-sa/4.0/"
 "\">výtah dokumentu pro neprávníky</link>."
 
 #. (itstool) path: page/title

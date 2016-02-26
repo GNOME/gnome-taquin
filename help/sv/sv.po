@@ -438,14 +438,14 @@ msgstr ""
 #: C/license.page:53
 msgid ""
 "For the full text of the license, see the <link href=\"http://"
-"creativecommons.org/licenses/by-sa/3.0/legalcode\">CreativeCommons website</"
+"creativecommons.org/licenses/by-sa/4.0/legalcode\">CreativeCommons website</"
 "link>, or read the full <link href=\"http://creativecommons.org/licenses/by-"
-"sa/3.0/\">Commons Deed</link>."
+"sa/4.0/\">Commons Deed</link>."
 msgstr ""
 "För den fullständiga texten för licensen, se vidare på <link href=\"http://"
-"creativecommons.org/licenses/by-sa/3.0/legalcode\">CreativeCommons "
+"creativecommons.org/licenses/by-sa/4.0/legalcode\">CreativeCommons "
 "webbplats</link>, eller läs det fullständiga <link href=\"http://"
-"creativecommons.org/licenses/by-sa/3.0/\">Commons-kontraktet</link>."
+"creativecommons.org/licenses/by-sa/4.0/\">Commons-kontraktet</link>."
 
 #. (itstool) path: page/title
 #: C/shortcuts.page:18

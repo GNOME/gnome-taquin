@@ -451,14 +451,14 @@ msgstr ""
 #: C/license.page:53
 msgid ""
 "For the full text of the license, see the <link href=\"http://"
-"creativecommons.org/licenses/by-sa/3.0/legalcode\">CreativeCommons website</"
+"creativecommons.org/licenses/by-sa/4.0/legalcode\">CreativeCommons website</"
 "link>, or read the full <link href=\"http://creativecommons.org/licenses/by-"
-"sa/3.0/\">Commons Deed</link>."
+"sa/4.0/\">Commons Deed</link>."
 msgstr ""
 "Για το πλήρες κείμενο της άδειας, δείτε τον <link href=\"http://"
-"creativecommons.org/licenses/by-sa/3.0/legalcode\">ιστότοπο CreativeCommons</"
+"creativecommons.org/licenses/by-sa/4.0/legalcode\">ιστότοπο CreativeCommons</"
 "link>, ή διαβάστε όλη την <link href=\"http://creativecommons.org/licenses/"
-"by-sa/3.0/\">Πράξη Commons</link>."
+"by-sa/4.0/\">Πράξη Commons</link>."
 
 #. (itstool) path: page/title
 #: C/shortcuts.page:18
