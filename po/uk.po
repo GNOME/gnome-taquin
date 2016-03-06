@@ -1,22 +1,21 @@
 # Ukrainian translation for gnome-taquin.
 # Copyright (C) 2015 gnome-taquin's COPYRIGHT HOLDER
 # This file is distributed under the same license as the gnome-taquin package.
-# Daniel Korostil <ted.korostiled@gmail.com>, 2015.
+# Daniel Korostil <ted.korostiled@gmail.com>, 2015, 2016.
 msgid ""
 msgstr ""
 "Project-Id-Version: gnome-taquin master\n"
-"Report-Msgid-Bugs-To: http://bugzilla.gnome.org/enter_bug.cgi?product=gnome-"
-"taquin&keywords=I18N+L10N&component=general\n"
-"POT-Creation-Date: 2015-03-03 08:51+0000\n"
-"PO-Revision-Date: 2015-03-18 19:43+0300\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2016-03-06 20:45+0200\n"
+"PO-Revision-Date: 2016-03-06 20:46+0300\n"
 "Last-Translator: Daniel Korostil <ted.korostiled@gmail.com>\n"
 "Language-Team: linux.org.ua\n"
 "Language: uk\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Plural-Forms: nplurals=3; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && n%"
-"10<=4 && (n%100<10 || n%100>=20) ? 1 : 2);\n"
+"Plural-Forms: nplurals=3; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && "
+"n%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2);\n"
 "X-Generator: Virtaal 0.7.1\n"
 "X-Project-Style: gnome\n"
 
@@ -56,11 +55,11 @@ msgstr "Коти"
 msgid "Numbers"
 msgstr "Кількість"
 
-#: ../data/taquin-screens.ui.h:6 ../data/org.gnome.taquin.desktop.in.h:4
+#: ../data/taquin-screens.ui.h:6 ../data/org.gnome.taquin.desktop.in.h:5
 msgid "15-Puzzle"
 msgstr "15"
 
-#: ../data/taquin-screens.ui.h:7 ../data/org.gnome.taquin.desktop.in.h:5
+#: ../data/taquin-screens.ui.h:7 ../data/org.gnome.taquin.desktop.in.h:6
 msgid "16-Puzzle"
 msgstr "16"
 
@@ -69,22 +68,14 @@ msgid "Go back to the current game"
 msgstr "Повернутись до поточної гри"
 
 #: ../data/taquin.ui.h:2
-msgid "_Start Game"
-msgstr "_Почати гру"
-
-#: ../data/taquin.ui.h:3
-msgid "Start a new game as configured"
-msgstr "Почати нову гру як налаштовано"
-
-#: ../data/taquin.ui.h:4
 msgid "_Start Over"
 msgstr "_Почати знову"
 
-#: ../data/taquin.ui.h:5
+#: ../data/taquin.ui.h:3
 msgid "Configure a new game"
 msgstr "Налаштувати нову гру"
 
-#: ../data/taquin.ui.h:6
+#: ../data/taquin.ui.h:4
 msgid "Start a new game"
 msgstr "Розпочати нову гру"
 
@@ -93,7 +84,7 @@ msgid "GNOME Taquin"
 msgstr "Дратун GNOME"
 
 #: ../data/org.gnome.taquin.appdata.xml.in.h:2
-#: ../data/org.gnome.taquin.desktop.in.h:2
+#: ../data/org.gnome.taquin.desktop.in.h:3
 msgid "Slide tiles to their correct places"
 msgstr "Перетягніть плиточки на їхні місця"
 
@@ -110,13 +101,16 @@ msgstr ""
 "Ціль Дратуна — розставити мозаїки на свої місця, вони позначені числами або "
 "частинами великого малюнка."
 
-#. Window
-#: ../data/org.gnome.taquin.desktop.in.h:1 ../src/taquin-main.vala:78
-#: ../src/taquin-main.vala:138 ../src/taquin-main.vala:253
+#: ../data/org.gnome.taquin.desktop.in.h:1 ../src/taquin-main.vala:76
+#: ../src/taquin-main.vala:133 ../src/taquin-main.vala:237
 msgid "Taquin"
 msgstr "Дратун"
 
-#: ../data/org.gnome.taquin.desktop.in.h:3
+#: ../data/org.gnome.taquin.desktop.in.h:2
+msgid "15-puzzle"
+msgstr "15"
+
+#: ../data/org.gnome.taquin.desktop.in.h:4
 msgid "puzzle;"
 msgstr "головоломка;"
 
@@ -160,63 +154,70 @@ msgstr "Висота вікна у точках."
 msgid "true if the window is maximized."
 msgstr "вказано, коли вікно розгорнуто."
 
-#: ../src/game-window.vala:134
+#: ../src/game-window.vala:128
+msgid "_Start Game"
+msgstr "_Почати гру"
+
+#: ../src/game-window.vala:153
 msgid "Undo your most recent move"
 msgstr "Повернути ваш останній хід"
 
-#: ../src/taquin-main.vala:46
+#: ../src/taquin-main.vala:45
 msgid "Play the classical 1880s’ 15-puzzle"
 msgstr "Зіграти класичну п'ятнадцятку з 1880-тих"
 
-#: ../src/taquin-main.vala:47
+#: ../src/taquin-main.vala:46
 msgid "Try this fun alternative 16-puzzle"
 msgstr "Спробувати альтернативну шістнадцятку"
 
-#: ../src/taquin-main.vala:48
+#: ../src/taquin-main.vala:47
 msgid "Sets the puzzle edges’ size (3-5, 2-9 for debug)"
 msgstr "Вказати розмір країв (3-5, 2-9 для тестування)"
 
-#: ../src/taquin-main.vala:49
+#: ../src/taquin-main.vala:48
 msgid "Turn off the sound"
 msgstr "Вимкнути звук"
 
-#: ../src/taquin-main.vala:50
+#: ../src/taquin-main.vala:49
 msgid "Turn on the sound"
 msgstr "Увімкнути звук"
 
-#: ../src/taquin-main.vala:51
+#: ../src/taquin-main.vala:50
 msgid "Print release version and exit"
 msgstr "Показати версію випуску та вийти"
 
-#: ../src/taquin-main.vala:249
+#: ../src/taquin-main.vala:233
 msgid "(see COPYING.themes for informations)"
 msgstr "(докладніше дивіться у COPYING.themes)"
 
-#: ../src/taquin-main.vala:257
+#: ../src/taquin-main.vala:241
 msgid "A classic 15-puzzle game"
 msgstr "Класична п'ятнадцятка"
 
-#: ../src/taquin-main.vala:261
+#: ../src/taquin-main.vala:245
 msgid "translator-credits"
 msgstr "Daniel Korostil <ted.korostiled@gmail.com>"
 
-#: ../src/taquin-main.vala:302
+#: ../src/taquin-main.vala:286
 msgid "You can’t move this tile!"
 msgstr "Ви не можете пересунути цю плиточку!"
 
-#: ../src/taquin-main.vala:308
+#: ../src/taquin-main.vala:292
 msgid "Bravo! You finished the game!"
 msgstr "Браво! Ви завершили гру!"
 
-#: ../src/taquin-main.vala:332
+#: ../src/taquin-main.vala:310
 #, c-format
 msgid "Size: %d × %d ▾"
 msgstr "Розмір: %d × %d ▾"
 
-#: ../src/taquin-main.vala:346
+#: ../src/taquin-main.vala:324
 msgid "Theme: Cats ▾"
 msgstr "Тема: котики ▾"
 
-#: ../src/taquin-main.vala:347
+#: ../src/taquin-main.vala:325
 msgid "Theme: Numbers ▾"
 msgstr "Тема: числа ▾"
+
+#~ msgid "Start a new game as configured"
+#~ msgstr "Почати нову гру як налаштовано"
