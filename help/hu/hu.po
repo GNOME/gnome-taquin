@@ -6,14 +6,14 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: gnome-taquin_help master\n"
-"POT-Creation-Date: 2016-02-26 22:29+0000\n"
-"PO-Revision-Date: 2016-02-28 23:48+0100\n"
+"POT-Creation-Date: 2016-03-05 10:34+0000\n"
+"PO-Revision-Date: 2016-03-07 22:07+0100\n"
 "Last-Translator: Gabor Kelemen <kelemeng at ubuntu dot com>\n"
 "Language-Team: Hungarian <openscope at googlegroups dot com>\n"
+"Language: hu\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Language: hu\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
 "X-Generator: Lokalize 1.5\n"
 
@@ -23,21 +23,14 @@ msgid "translator-credits"
 msgstr "Kelemen Gábor <kelemeng at ubuntu dot com>, 2016."
 
 #. (itstool) path: credit/name
-#: C/15-Puzzle.page:10
-#: C/16-Puzzle.page:10
-#: C/beginning.page:10
-#: C/index.page:12
-#: C/shortcuts.page:10
-#: C/start-screen.page:10
+#: C/15-Puzzle.page:10 C/16-Puzzle.page:10 C/beginning.page:10 C/index.page:12
+#: C/shortcuts.page:10 C/start-screen.page:10
 msgid "Arnaud Bonatti"
 msgstr "Arnaud Bonatti"
 
 #. (itstool) path: credit/years
-#: C/15-Puzzle.page:12
-#: C/16-Puzzle.page:12
-#: C/beginning.page:12
-#: C/shortcuts.page:12
-#: C/start-screen.page:12
+#: C/15-Puzzle.page:12 C/16-Puzzle.page:12 C/beginning.page:12
+#: C/shortcuts.page:12 C/start-screen.page:12
 msgid "2014"
 msgstr "2014"
 
@@ -54,109 +47,108 @@ msgid ""
 "time from the <link xref=\"start-screen\">Start Screen</link>."
 msgstr ""
 "A <em>15-ös kirakó</em> a <app>Taquin</app> alapértelmezett feladványa. Az "
-"alkalmazás megnyitásakor jelenik meg. A <link xref=\"start-screen\">"
-"Kezdőképernyőről</link> bármikor elindíthatja."
+"alkalmazás megnyitásakor jelenik meg. A <link xref=\"start-screen"
+"\">Kezdőképernyőről</link> bármikor elindíthatja."
 
 #. (itstool) path: section/title
-#: C/15-Puzzle.page:23
-#: C/16-Puzzle.page:23
+#: C/15-Puzzle.page:23 C/16-Puzzle.page:23
 msgid "Gameplay"
 msgstr "Játékmenet"
 
 #. (itstool) path: section/p
-#: C/15-Puzzle.page:25
-#: C/16-Puzzle.page:25
+#: C/15-Puzzle.page:25 C/16-Puzzle.page:25
 msgid "The goal is to move all the tiles to their proper places."
 msgstr "A játék célja az összes csempe megfelelő helyre mozgatása."
 
 #. (itstool) path: section/p
 #: C/15-Puzzle.page:27
 msgid ""
-"There’s an empty space where you can move adjacent tiles by pushing them onto "
-"it. You can push more than one tile at the same time in the empty space’s "
-"direction."
+"There’s an empty space where you can move adjacent tiles by pushing them "
+"onto it. You can push more than one tile at the same time in the empty "
+"space’s direction."
 msgstr ""
+"Van egy üres hely, ahová a szomszédos csempéket áttolhatja. Egyszerre több "
+"csempét is áttolhat a hely irányába."
 
 #. (itstool) path: section/title
-#: C/15-Puzzle.page:31
-#: C/16-Puzzle.page:31
+#: C/15-Puzzle.page:31 C/16-Puzzle.page:31
 msgid "End of the game"
-msgstr ""
+msgstr "A játék vége"
 
 #. (itstool) path: section/p
-#: C/15-Puzzle.page:32
-#: C/16-Puzzle.page:32
+#: C/15-Puzzle.page:32 C/16-Puzzle.page:32
 msgid ""
 "At the end of the game, <app>Taquin</app> notifies you and displays the "
 "complete image."
 msgstr ""
+"A játék végén a <app>Taquin</app> értesítést jelenít meg, a teljes képpel "
+"együtt."
 
 #. (itstool) path: section/p
-#: C/15-Puzzle.page:33
-#: C/16-Puzzle.page:33
+#: C/15-Puzzle.page:33 C/16-Puzzle.page:33
 msgid ""
-"You can click the <gui>Start Over</gui> button to go to the <link "
-"xref=\"start-screen\">Start Screen</link>."
+"You can click the <gui>Start Over</gui> button to go to the <link xref="
+"\"start-screen\">Start Screen</link>."
 msgstr ""
+"A <link xref=\"start-screen\">Kezdőképernyőre</link> való visszatéréshez "
+"kattintson az <gui>Újrakezdés</gui> gombra."
 
 #. (itstool) path: section/title
-#: C/15-Puzzle.page:37
-#: C/16-Puzzle.page:37
+#: C/15-Puzzle.page:37 C/16-Puzzle.page:37
 msgid "How to play with a mouse"
-msgstr ""
+msgstr "Játék az egér használatával"
 
 #. (itstool) path: section/p
-#: C/15-Puzzle.page:39
-#: C/15-Puzzle.page:57
-#: C/16-Puzzle.page:39
+#: C/15-Puzzle.page:39 C/15-Puzzle.page:57 C/16-Puzzle.page:39
 #: C/16-Puzzle.page:55
 msgid "To make a move:"
-msgstr ""
+msgstr "Lépéshez:"
 
 #. (itstool) path: item/p
-#: C/15-Puzzle.page:41
-#: C/beginning.page:25
+#: C/15-Puzzle.page:41 C/beginning.page:25
 msgid "Click on a tile on the same row or column as the empty space."
 msgstr ""
+"Kattintson egy csempére ugyanabban a sorban vagy oszlopban, mint ahol az "
+"üres hely van."
 
 #. (itstool) path: note/p
-#: C/15-Puzzle.page:42
-#: C/15-Puzzle.page:61
-#: C/beginning.page:26
+#: C/15-Puzzle.page:42 C/15-Puzzle.page:61 C/beginning.page:26
 msgid ""
 "If you click on a tile that cannot move, the game notifies you that the move "
 "is impossible."
 msgstr ""
+"Ha egy nem mozgatható csempére kattint, a játék értesíti, hogy a mozgatás "
+"nem lehetséges."
 
 #. (itstool) path: item/p
-#: C/15-Puzzle.page:45
-#: C/16-Puzzle.page:43
+#: C/15-Puzzle.page:45 C/16-Puzzle.page:43
 msgid ""
-"You can always undo a move by clicking the <gui>Undo</gui> button at the left "
-"of the header bar."
+"You can always undo a move by clicking the <gui>Undo</gui> button at the "
+"left of the header bar."
 msgstr ""
+"Bármikor visszavonhat egy lépést a fejlécsáv bal oldalán lévő "
+"<gui>Visszavonás</gui> gombbal."
 
 #. (itstool) path: item/p
-#: C/15-Puzzle.page:47
-#: C/16-Puzzle.page:45
-#: C/beginning.page:31
+#: C/15-Puzzle.page:47 C/16-Puzzle.page:45 C/beginning.page:31
 msgid ""
-"At the end of the game, or when you want to switch games, click the <gui>"
-"Start Over</gui> button to go to the <link xref=\"start-screen\">Start "
+"At the end of the game, or when you want to switch games, click the "
+"<gui>Start Over</gui> button to go to the <link xref=\"start-screen\">Start "
 "Screen</link>."
 msgstr ""
+"A játék végén, vagy ha a játékmódok közt szeretne váltani, kattintson az "
+"<gui>Újrakezdés</gui> gombra a <link xref=\"start-screen\">Kezdőképernyőre</"
+"link> való visszatéréshez."
 
 #. (itstool) path: section/p
-#: C/15-Puzzle.page:51
-#: C/16-Puzzle.page:49
+#: C/15-Puzzle.page:51 C/16-Puzzle.page:49
 msgid "You can also use the keyboard."
-msgstr ""
+msgstr "A billentyűzetet is használhatja."
 
 #. (itstool) path: section/title
-#: C/15-Puzzle.page:55
-#: C/16-Puzzle.page:53
+#: C/15-Puzzle.page:55 C/16-Puzzle.page:53
 msgid "How to play with the keyboard"
-msgstr ""
+msgstr "Játék a billentyűzet használatával"
 
 #. (itstool) path: item/p
 #: C/15-Puzzle.page:59
@@ -166,6 +158,9 @@ msgid ""
 "indicated with four arrows around the board, on each side of its row and "
 "column."
 msgstr ""
+"Használja a <key>Balra</key>, <key>Jobbra</key>, <key>Fel</key> és <key>Le</"
+"key> nyilakat a mozgatni kívánt csempe kiválasztásához. Az éppen kijelölt "
+"csempét négy nyíl jelöli a tábla körül, a sora és oszlopa oldalain."
 
 #. (itstool) path: item/p
 #: C/15-Puzzle.page:60
@@ -173,29 +168,33 @@ msgid ""
 "Use the <key>Space</key> key to move the selected tile in the direction of "
 "the empty space."
 msgstr ""
+"A <key>Szóköz</key> billentyűvel mozgathatja a kijelölt csempét az üres hely "
+"irányába."
 
 #. (itstool) path: item/p
-#: C/15-Puzzle.page:64
-#: C/16-Puzzle.page:60
+#: C/15-Puzzle.page:64 C/16-Puzzle.page:60
 msgid ""
-"You can always undo a move with the <keyseq><key>Ctrl</key><key>Z</key><"
-"/keyseq> keys."
+"You can always undo a move with the <keyseq><key>Ctrl</key><key>Z</key></"
+"keyseq> keys."
 msgstr ""
+"Egy lépést bármikor visszavonhat a <keyseq><key>Ctrl</key><key>Z</key></"
+"keyseq> kombinációval."
 
 #. (itstool) path: item/p
-#: C/15-Puzzle.page:66
-#: C/16-Puzzle.page:62
+#: C/15-Puzzle.page:66 C/16-Puzzle.page:62
 msgid ""
-"At the end of the game, or when you want to switch games, use the the <keyseq>"
-"<key>Ctrl</key><key>N</key></keyseq> keys to go to the <link "
-"xref=\"start-screen\">Start Screen</link>."
+"At the end of the game, or when you want to switch games, use the the "
+"<keyseq><key>Ctrl</key><key>N</key></keyseq> keys to go to the <link xref="
+"\"start-screen\">Start Screen</link>."
 msgstr ""
+"A játék végén, vagy ha a játékmódok közt szeretne váltani, nyomja meg a "
+"<keyseq><key>Ctrl</key><key>N</key></keyseq> kombinációt a <link xref="
+"\"start-screen\">Kezdőképernyőre</link> való visszatéréshez."
 
 #. (itstool) path: section/p
-#: C/15-Puzzle.page:70
-#: C/16-Puzzle.page:66
+#: C/15-Puzzle.page:70 C/16-Puzzle.page:66
 msgid "You can also use a mouse."
-msgstr ""
+msgstr "Használhatja az egeret is."
 
 #. (itstool) path: page/title
 #: C/16-Puzzle.page:18
@@ -206,9 +205,11 @@ msgstr "16-os kirakó"
 #: C/16-Puzzle.page:20
 msgid ""
 "The <em>16-Puzzle</em> is the variant puzzle of <app>Taquin</app>. You can "
-"launch it at any time from the <link xref=\"start-screen\">Start Screen</link>"
-"."
+"launch it at any time from the <link xref=\"start-screen\">Start Screen</"
+"link>."
 msgstr ""
+"A <em>16-os kirakó</em> a <app>Taquin</app> módosított feladványa. A <link "
+"xref=\"start-screen\">Kezdőképernyőről</link> bármikor elindíthatja."
 
 #. (itstool) path: section/p
 #: C/16-Puzzle.page:27
@@ -217,14 +218,18 @@ msgid ""
 "is pushed out of the board is placed at the opposite side of the row or "
 "column."
 msgstr ""
+"A sor vagy oszlop összes csempéje egy irányba fog mozdulni. A tábláról kitolt "
+"csempe a sor vagy oszlop másik végére kerül."
 
 #. (itstool) path: item/p
 #: C/16-Puzzle.page:41
 msgid ""
 "Click on one of the arrows displayed around the board. The row or column at "
-"the end of which this arrow is moves in this direction, and the tile that was "
-"next to the arrow is placed at the opposite side."
+"the end of which this arrow is moves in this direction, and the tile that "
+"was next to the arrow is placed at the opposite side."
 msgstr ""
+"Kattintson a tábla körül megjelenő nyilak egyikére. A sor vagy oszlop a nyíl "
+"irányába mozdul, és a nyíl melletti csempe átkerül a másik oldalra."
 
 #. (itstool) path: item/p
 #: C/16-Puzzle.page:57
@@ -233,15 +238,23 @@ msgid ""
 "arrows to go at the row or the column you want to move. The currently "
 "selected row and column are indicated with two lights around the board."
 msgstr ""
+"Használja a <key>Balra</key>, <key>Jobbra</key>, <key>Fel</key> és <key>Le</"
+"key> nyilakat a mozgatni kívánt sor vagy oszlop kiválasztásához. Az éppen "
+"kijelölt "
+"sort és oszlopot két fény jelöli a tábla körül."
 
 #. (itstool) path: item/p
 #: C/16-Puzzle.page:58
 msgid ""
-"Use the <keyseq><key>Ctrl</key><key>Left</key></keyseq> or <keyseq><key>Ctrl<"
-"/key><key>Right</key></keyseq> keys to move a row, or the <keyseq><key>Ctrl<"
-"/key><key>Up</key></keyseq> and <keyseq><key>Ctrl</key><key>Down</key><"
-"/keyseq> keys to move a column."
+"Use the <keyseq><key>Ctrl</key><key>Left</key></keyseq> or "
+"<keyseq><key>Ctrl</key><key>Right</key></keyseq> keys to move a row, or the "
+"<keyseq><key>Ctrl</key><key>Up</key></keyseq> and <keyseq><key>Ctrl</"
+"key><key>Down</key></keyseq> keys to move a column."
 msgstr ""
+"Használja a <keyseq><key>Ctrl</key><key>Balra</key></keyseq> és <keyseq><key>"
+"Ctrl</key><key>Jobbra</key></keyseq> kombinációt egy sor mozgatására, vagy a "
+"<keyseq><key>Ctrl</key><key>Fel</key></keyseq> és <keyseq><key>Ctrl</key><key>"
+"Le</key></keyseq> kombinációt egy oszlop mozgatására."
 
 #. (itstool) path: page/title
 #: C/beginning.page:18
@@ -254,6 +267,8 @@ msgid ""
 "When <app>Taquin</app> is opened for the first time, it displays a "
 "traditional <link xref=\"15-Puzzle\">15-Puzzle</link> game."
 msgstr ""
+"A <app>Taquin</app> első megnyitásakor egy hagyományos <link "
+"xref=\"15-Puzzle\">15-ös kirakó</link> játékot jelenít meg."
 
 #. (itstool) path: page/p
 #: C/beginning.page:22
@@ -263,17 +278,22 @@ msgstr "A játékot az egérrel kell játszani. A lépéshez:"
 #. (itstool) path: item/p
 #: C/beginning.page:29
 msgid ""
-"You can always undo a move by clicking the <gui>Undo</gui> button on the left "
-"of the header bar."
+"You can always undo a move by clicking the <gui>Undo</gui> button on the "
+"left of the header bar."
 msgstr ""
+"Bármikor visszavonhat egy lépést a fejlécsáv bal oldalán lévő "
+"<gui>Visszavonás</gui> gombbal."
 
 #. (itstool) path: page/p
 #: C/beginning.page:35
 msgid ""
 "After the first time it is opened, <app>Taquin</app> displays a puzzle with "
-"the same rules and dimensions as the last one played when it is opened, so it "
-"could be a <link xref=\"16-Puzzle\">16-Puzzle</link> game."
+"the same rules and dimensions as the last one played when it is opened, so "
+"it could be a <link xref=\"16-Puzzle\">16-Puzzle</link> game."
 msgstr ""
+"Az első megnyitása után a <app>Taquin</app> az utoljára játszottal egyező "
+"típusú és méretű kirakót jelenít meg, így ez egy <link xref=\"16-Puzzle\">"
+"16-os kirakó</link> is lehet."
 
 #. (itstool) path: info/title
 #: C/index.page:8
@@ -307,9 +327,13 @@ msgstr "<_:media-1/> Taquin"
 #. (itstool) path: page/p
 #: C/index.page:22
 msgid ""
-"<app>Taquin</app> is a sliding-block puzzle game. It includes the traditional "
-"15-Puzzle invented in the early 1880s, and the more recent 16-Puzzle variant."
+"<app>Taquin</app> is a sliding-block puzzle game. It includes the "
+"traditional 15-Puzzle invented in the early 1880s, and the more recent 16-"
+"Puzzle variant."
 msgstr ""
+"A <app>Taquin</app> egy csempecsúsztatós kirakós játék. Tartalmazza az "
+"1880-as évek elején kitalált hagyományos 15-ös kirakót, és a későbbi 16-os "
+"változatot is."
 
 #. (itstool) path: section/title
 #: C/index.page:26
@@ -347,8 +371,8 @@ msgid ""
 "This work is distributed under a Creative Commons Attribution-ShareAlike 4.0 "
 "International license."
 msgstr ""
-"Ez a munka a Creative Commons Attribution-ShareAlike 4.0 "
-"International licenc alatt érhető el."
+"Ez a munka a Creative Commons Attribution-ShareAlike 4.0 International "
+"licenc alatt érhető el."
 
 #. (itstool) path: page/p
 #: C/license.page:20
@@ -388,9 +412,9 @@ msgstr "<em>Nevezd meg!</em>"
 #. (itstool) path: item/p
 #: C/license.page:39
 msgid ""
-"You must attribute the work in the manner specified by the author or licensor "
-"(but not in any way that suggests that they endorse you or your use of the "
-"work)."
+"You must attribute the work in the manner specified by the author or "
+"licensor (but not in any way that suggests that they endorse you or your use "
+"of the work)."
 msgstr ""
 "A szerző vagy a jogosult által meghatározott módon fel kell tüntetnie a "
 "műhöz kapcsolódó információkat (pl. a szerző nevét vagy álnevét, a Mű címét)."
@@ -412,13 +436,13 @@ msgstr ""
 #. (itstool) path: page/p
 #: C/license.page:53
 msgid ""
-"For the full text of the license, see the <link "
-"href=\"http://creativecommons.org/licenses/by-sa/4.0/legalcode\">"
-"CreativeCommons website</link>, or read the full <link "
-"href=\"http://creativecommons.org/licenses/by-sa/4.0/\">Commons Deed</link>."
+"For the full text of the license, see the <link href=\"http://"
+"creativecommons.org/licenses/by-sa/4.0/legalcode\">CreativeCommons website</"
+"link>, or read the full <link href=\"http://creativecommons.org/licenses/by-"
+"sa/4.0/\">Commons Deed</link>."
 msgstr ""
-"A licenc teljes szövegéért lásd a <link href=\"http://creativecommons.org/lice"
-"nses/by-sa/4.0/legalcode\">CreativeCommons weboldalát</link>, vagy a "
+"A licenc teljes szövegéért lásd a <link href=\"http://creativecommons.org/"
+"licenses/by-sa/4.0/legalcode\">CreativeCommons weboldalát</link>, vagy a "
 "teljes <link href=\"http://creativecommons.org/licenses/by-sa/4.0/\">Commons "
 "összefoglalót</link>."
 
@@ -430,14 +454,14 @@ msgstr "Gyorsbillentyűk"
 #. (itstool) path: page/p
 #: C/shortcuts.page:20
 msgid ""
-"<app>Taquin</app> can easily be used with keyboard. The <link "
-"xref=\"15-Puzzle#15-keyboard\">15-Puzzle</link> and <link "
-"xref=\"16-Puzzle#16-keyboard\">16-Puzzle</link> both have specific shortcuts."
+"<app>Taquin</app> can easily be used with keyboard. The <link xref=\"15-"
+"Puzzle#15-keyboard\">15-Puzzle</link> and <link xref=\"16-Puzzle#16-keyboard"
+"\">16-Puzzle</link> both have specific shortcuts."
 msgstr ""
 "A <app>Taquin</app> egyszerűen használható a billentyűzetről is. A <link "
-"xref=\"15-Puzzle#15-keyboard\">15-ös kirakó</link> és a <link "
-"xref=\"16-Puzzle#16-keyboard\">16-os kirakó</link> is rendelkezik csak rájuk "
-"jellemző gyorsbillentyűkkel."
+"xref=\"15-Puzzle#15-keyboard\">15-ös kirakó</link> és a <link xref=\"16-"
+"Puzzle#16-keyboard\">16-os kirakó</link> is rendelkezik csak rájuk jellemző "
+"gyorsbillentyűkkel."
 
 #. (itstool) path: section/title
 #: C/shortcuts.page:23
@@ -470,14 +494,12 @@ msgid "15-Puzzle shortcuts"
 msgstr "15-ös kirakó gyorsbillentyűi"
 
 #. (itstool) path: td/p
-#: C/shortcuts.page:39
-#: C/shortcuts.page:52
+#: C/shortcuts.page:39 C/shortcuts.page:52
 msgid "Change selected tile"
 msgstr "Kijelölt csempe módosítása"
 
 #. (itstool) path: td/p
-#: C/shortcuts.page:40
-#: C/shortcuts.page:53
+#: C/shortcuts.page:40 C/shortcuts.page:53
 msgid "<key>Left</key>, <key>Right</key>, <key>Up</key> and <key>Down</key>"
 msgstr "<key>Balra</key>, <key>Jobbra</key>, <key>Fel</key> és <key>Le</key>"
 
@@ -494,7 +516,7 @@ msgstr "<key>Szóköz</key> vagy <key>a numerikus Enter</key>"
 #. (itstool) path: section/title
 #: C/shortcuts.page:49
 msgid "16-Puzzle shortcuts"
-msgstr "16-ös kirakó gyorsbillentyűi"
+msgstr "16-os kirakó gyorsbillentyűi"
 
 #. (itstool) path: td/p
 #: C/shortcuts.page:56
@@ -504,11 +526,11 @@ msgstr "Sor mozgatása"
 #. (itstool) path: td/p
 #: C/shortcuts.page:57
 msgid ""
-"<keyseq><key>Ctrl</key><key>Left</key></keyseq> and <keyseq><key>Ctrl</key><"
-"key>Right</key></keyseq>"
+"<keyseq><key>Ctrl</key><key>Left</key></keyseq> and <keyseq><key>Ctrl</"
+"key><key>Right</key></keyseq>"
 msgstr ""
-"<keyseq><key>Ctrl</key><key>Balra</key></keyseq> és <keyseq><key>Ctrl</key><"
-"key>Jobbra</key></keyseq>"
+"<keyseq><key>Ctrl</key><key>Balra</key></keyseq> és <keyseq><key>Ctrl</"
+"key><key>Jobbra</key></keyseq>"
 
 #. (itstool) path: td/p
 #: C/shortcuts.page:60
@@ -518,11 +540,11 @@ msgstr "Oszlop áthelyezése"
 #. (itstool) path: td/p
 #: C/shortcuts.page:61
 msgid ""
-"<keyseq><key>Ctrl</key><key>Up</key></keyseq> and <keyseq><key>Ctrl</key><key>"
-"Down</key></keyseq>"
+"<keyseq><key>Ctrl</key><key>Up</key></keyseq> and <keyseq><key>Ctrl</"
+"key><key>Down</key></keyseq>"
 msgstr ""
-"<keyseq><key>Ctrl</key><key>Fel</key></keyseq> és <keyseq><key>Ctrl</key><key>"
-"Le</key></keyseq>"
+"<keyseq><key>Ctrl</key><key>Fel</key></keyseq> és <keyseq><key>Ctrl</"
+"key><key>Le</key></keyseq>"
 
 #. (itstool) path: section/title
 #: C/shortcuts.page:66
@@ -583,15 +605,18 @@ msgstr "Kezdőképernyő"
 #: C/start-screen.page:19
 msgid ""
 "The <em>Start Screen</em> is the place to select your options and launch a "
-"new game, either a <link xref=\"15-Puzzle\">15-Puzzle</link> or a <link "
-"xref=\"16-Puzzle\">16-Puzzle</link>."
+"new game, either a <link xref=\"15-Puzzle\">15-Puzzle</link> or a <link xref="
+"\"16-Puzzle\">16-Puzzle</link>."
 msgstr ""
+"A <em>Kezdőképernyőn</em> választhat a beállítások közül, és indíthat új <"
+"link xref=\"15-Puzzle\">15-ös</link> vagy <link xref=\"16-Puzzle\">16-os<"
+"/link> kirakót."
 
 #. (itstool) path: page/p
 #: C/start-screen.page:20
 msgid ""
-"It can be accessed at any time from a game by pressing the <gui>Start Over<"
-"/gui> button."
+"It can be accessed at any time from a game by pressing the <gui>Start Over</"
+"gui> button."
 msgstr ""
-
+"Bármikor elérhető a játékból az <gui>Újrakezdés</gui> gomb megnyomásával."
 
