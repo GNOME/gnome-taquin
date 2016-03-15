@@ -1,3 +1,19 @@
+3.19.92 – March 15, 2016
+=========================
+
+A problem related to the french translation of help, reported (bug #762466) by
+Anders Jonsson, has (hopefully) be corrected by Alexandre Franke. Also, the
+“valign” property of some buttons of the headerbar has been set to “center”, to
+look better on some rare configurations.
+
+Translations updated:
+  Greek: Efstathios Iosifidis
+  Hebrew: Yosef Or Boczko
+  Hungarian: Gábor Kelemen
+  Occitan: Cédric Valmary
+  Slovak: Dušan Kazik
+  Ukrainian: Daniel Korostil
+
 3.19.91 – March 1, 2016
 =========================
 
