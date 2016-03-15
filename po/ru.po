@@ -3,15 +3,15 @@
 # This file is distributed under the same license as the gnome-taquin package.
 # Иван <vantu5z@mail.ru>, 2015.
 # Yuri Myasoedov <ymyasoedov@yandex.ru>, 2015.
-# Stas Solovey <whats_up@tut.by>, 2015.
+# Stas Solovey <whats_up@tut.by>, 2015, 2016.
 #
 msgid ""
 msgstr ""
 "Project-Id-Version: gnome-taquin master\n"
 "Report-Msgid-Bugs-To: http://bugzilla.gnome.org/enter_bug.cgi?product=gnome-"
 "taquin&keywords=I18N+L10N&component=general\n"
-"POT-Creation-Date: 2015-09-13 18:07+0000\n"
-"PO-Revision-Date: 2015-09-21 00:14+0300\n"
+"POT-Creation-Date: 2016-03-15 10:36+0000\n"
+"PO-Revision-Date: 2016-03-15 15:42+0300\n"
 "Last-Translator: Stas Solovey <whats_up@tut.by>\n"
 "Language-Team: Русский <gnome-cyr@gnome.org>\n"
 "Language: ru\n"
@@ -58,11 +58,11 @@ msgstr "Кошки"
 msgid "Numbers"
 msgstr "Числа"
 
-#: ../data/taquin-screens.ui.h:6 ../data/org.gnome.taquin.desktop.in.h:4
+#: ../data/taquin-screens.ui.h:6 ../data/org.gnome.taquin.desktop.in.h:5
 msgid "15-Puzzle"
 msgstr "Пятнашки (15-фишек)"
 
-#: ../data/taquin-screens.ui.h:7 ../data/org.gnome.taquin.desktop.in.h:5
+#: ../data/taquin-screens.ui.h:7 ../data/org.gnome.taquin.desktop.in.h:6
 msgid "16-Puzzle"
 msgstr "16-фишек"
 
@@ -75,7 +75,6 @@ msgid "_Start Over"
 msgstr "_Начать заново"
 
 #: ../data/taquin.ui.h:3
-#| msgid "Start a new game"
 msgid "Configure a new game"
 msgstr "Настроить новую игру"
 
@@ -88,7 +87,7 @@ msgid "GNOME Taquin"
 msgstr "GNOME Taquin"
 
 #: ../data/org.gnome.taquin.appdata.xml.in.h:2
-#: ../data/org.gnome.taquin.desktop.in.h:2
+#: ../data/org.gnome.taquin.desktop.in.h:3
 msgid "Slide tiles to their correct places"
 msgstr "Передвиньте фишки на правильные места"
 
@@ -112,7 +111,12 @@ msgstr ""
 msgid "Taquin"
 msgstr "Taquin"
 
-#: ../data/org.gnome.taquin.desktop.in.h:3
+#: ../data/org.gnome.taquin.desktop.in.h:2
+#| msgid "15-Puzzle"
+msgid "15-puzzle"
+msgstr "Пятнашки (15-фишек)"
+
+#: ../data/org.gnome.taquin.desktop.in.h:4
 msgid "puzzle;"
 msgstr "головоломка;пятнашки;"
 
@@ -200,7 +204,7 @@ msgstr "Классическая игра в пятнашки (15-фишек)"
 msgid "translator-credits"
 msgstr ""
 "Ivan Komaritsyn <vantu5z@mail.ru>, 2015.\n"
-"Stas Solovey <whats_up@tut.by>, 2015."
+"Stas Solovey <whats_up@tut.by>, 2015-2016."
 
 #: ../src/taquin-main.vala:286
 msgid "You can’t move this tile!"
