@@ -1,14 +1,14 @@
 # Danish translation for gnome-taquin.
-# Copyright (C) 2015 gnome-taquin's COPYRIGHT HOLDER
+# Copyright (C) 2015, 2016 gnome-taquin's developers and the below translators
 # This file is distributed under the same license as the gnome-taquin package.
-# Ask Hjorth Larsen <asklarsen@gmail.com>, 2015.
+# Ask Hjorth Larsen <asklarsen@gmail.com>, 2015, 2016.
 #
 msgid ""
 msgstr ""
 "Project-Id-Version: gnome-taquin master\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2015-03-14 19:46+0100\n"
-"PO-Revision-Date: 2015-03-14 01:07+0100\n"
+"POT-Creation-Date: 2016-03-20 23:33+0100\n"
+"PO-Revision-Date: 2016-03-20 03:30+0100\n"
 "Last-Translator: Ask Hjorth Larsen <asklarsen@gmail.com>\n"
 "Language-Team: Danish <dansk@dansk-gruppen.dk>\n"
 "Language: da\n"
@@ -53,11 +53,11 @@ msgstr "Katte"
 msgid "Numbers"
 msgstr "Tal"
 
-#: ../data/taquin-screens.ui.h:6 ../data/org.gnome.taquin.desktop.in.h:4
+#: ../data/taquin-screens.ui.h:6 ../data/org.gnome.taquin.desktop.in.h:5
 msgid "15-Puzzle"
 msgstr "15-spil"
 
-#: ../data/taquin-screens.ui.h:7 ../data/org.gnome.taquin.desktop.in.h:5
+#: ../data/taquin-screens.ui.h:7 ../data/org.gnome.taquin.desktop.in.h:6
 msgid "16-Puzzle"
 msgstr "16-spil"
 
@@ -66,22 +66,14 @@ msgid "Go back to the current game"
 msgstr "Gå tilbage til nuværende spil"
 
 #: ../data/taquin.ui.h:2
-msgid "_Start Game"
-msgstr "_Start spil"
-
-#: ../data/taquin.ui.h:3
-msgid "Start a new game as configured"
-msgstr "Start et nyt spil ifølge opsætning"
-
-#: ../data/taquin.ui.h:4
 msgid "_Start Over"
 msgstr "_Start forfra"
 
-#: ../data/taquin.ui.h:5
+#: ../data/taquin.ui.h:3
 msgid "Configure a new game"
 msgstr "Sæt nyt spil op"
 
-#: ../data/taquin.ui.h:6
+#: ../data/taquin.ui.h:4
 msgid "Start a new game"
 msgstr "Start et nyt spil"
 
@@ -90,7 +82,7 @@ msgid "GNOME Taquin"
 msgstr "GNOME Taquin"
 
 #: ../data/org.gnome.taquin.appdata.xml.in.h:2
-#: ../data/org.gnome.taquin.desktop.in.h:2
+#: ../data/org.gnome.taquin.desktop.in.h:3
 msgid "Slide tiles to their correct places"
 msgstr "Flyt brikker til deres rigtige pladser"
 
@@ -107,12 +99,16 @@ msgstr ""
 "Målet med Taquin er at flytte brikker, så de når deres pladser angivet enten "
 "ved tal eller dele af et stort billede."
 
-#: ../data/org.gnome.taquin.desktop.in.h:1 ../src/taquin-main.vala:78
-#: ../src/taquin-main.vala:135 ../src/taquin-main.vala:250
+#: ../data/org.gnome.taquin.desktop.in.h:1 ../src/taquin-main.vala:76
+#: ../src/taquin-main.vala:133 ../src/taquin-main.vala:237
 msgid "Taquin"
 msgstr "Taquin"
 
-#: ../data/org.gnome.taquin.desktop.in.h:3
+#: ../data/org.gnome.taquin.desktop.in.h:2
+msgid "15-puzzle"
+msgstr "15-spil"
+
+#: ../data/org.gnome.taquin.desktop.in.h:4
 msgid "puzzle;"
 msgstr "spil;opgave;tænkespil;puslespil;"
 
@@ -157,43 +153,47 @@ msgstr "Højden af vinduet i pixler."
 msgid "true if the window is maximized."
 msgstr "true hvis vinduet er maksimeret."
 
-#: ../src/game-window.vala:141
+#: ../src/game-window.vala:128
+msgid "_Start Game"
+msgstr "_Start spil"
+
+#: ../src/game-window.vala:153
 msgid "Undo your most recent move"
 msgstr "Fortryd dit seneste træk"
 
-#: ../src/taquin-main.vala:46
+#: ../src/taquin-main.vala:45
 msgid "Play the classical 1880s’ 15-puzzle"
 msgstr "Spil det klassiske 15-spil fra 1880'erne"
 
-#: ../src/taquin-main.vala:47
+#: ../src/taquin-main.vala:46
 msgid "Try this fun alternative 16-puzzle"
 msgstr "Prøv dette underholdende 16-spil som alternativ"
 
-#: ../src/taquin-main.vala:48
+#: ../src/taquin-main.vala:47
 msgid "Sets the puzzle edges’ size (3-5, 2-9 for debug)"
 msgstr "Angiver spillets kantstørrelse (3-5, eller 2-9 for fejlsøgning)"
 
-#: ../src/taquin-main.vala:49
+#: ../src/taquin-main.vala:48
 msgid "Turn off the sound"
 msgstr "Slå lyden fra"
 
-#: ../src/taquin-main.vala:50
+#: ../src/taquin-main.vala:49
 msgid "Turn on the sound"
 msgstr "Slå lyden til"
 
-#: ../src/taquin-main.vala:51
+#: ../src/taquin-main.vala:50
 msgid "Print release version and exit"
 msgstr "Udskriv versionsinformation og afslut"
 
-#: ../src/taquin-main.vala:246
+#: ../src/taquin-main.vala:233
 msgid "(see COPYING.themes for informations)"
 msgstr "(se COPYING.themes for oplysninger)"
 
-#: ../src/taquin-main.vala:254
+#: ../src/taquin-main.vala:241
 msgid "A classic 15-puzzle game"
 msgstr "Et klassisk 15-spil"
 
-#: ../src/taquin-main.vala:258
+#: ../src/taquin-main.vala:245
 msgid "translator-credits"
 msgstr ""
 "Ask Hjorth Larsen <asklarsen@gmail.com>\n"
@@ -202,23 +202,26 @@ msgstr ""
 "\n"
 "Mere info: http://www.dansk-gruppen.dk"
 
-#: ../src/taquin-main.vala:299
+#: ../src/taquin-main.vala:286
 msgid "You can’t move this tile!"
 msgstr "Du kan ikke flytte denne brik!"
 
-#: ../src/taquin-main.vala:305
+#: ../src/taquin-main.vala:292
 msgid "Bravo! You finished the game!"
 msgstr "Bravo! Du har gennemført spillet!"
 
-#: ../src/taquin-main.vala:329
+#: ../src/taquin-main.vala:310
 #, c-format
 msgid "Size: %d × %d ▾"
 msgstr "Størrelse: %d × %d ▾"
 
-#: ../src/taquin-main.vala:343
+#: ../src/taquin-main.vala:324
 msgid "Theme: Cats ▾"
 msgstr "Tema: Katte ▾"
 
-#: ../src/taquin-main.vala:344
+#: ../src/taquin-main.vala:325
 msgid "Theme: Numbers ▾"
 msgstr "Tema: Tal ▾"
+
+#~ msgid "Start a new game as configured"
+#~ msgstr "Start et nyt spil ifølge opsætning"
