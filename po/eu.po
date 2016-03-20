@@ -2,23 +2,22 @@
 # Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
 # This file is distributed under the same license as the PACKAGE package.
 #
-# Iñaki Larrañaga Murgoitio <dooteo@zundan.com>, 2015.
 #
+# Iñaki Larrañaga Murgoitio <dooteo@zundan.com>, 2015, 2016.
 msgid ""
 msgstr ""
 "Project-Id-Version: gnome-taquin master\n"
-"Report-Msgid-Bugs-To: http://bugzilla.gnome.org/enter_bug.cgi?product=gnome-"
-"taquin&keywords=I18N+L10N&component=general\n"
-"POT-Creation-Date: 2015-03-24 14:53+0100\n"
-"PO-Revision-Date: 2015-03-24 14:55+0100\n"
-"Last-Translator: Iñaki Larrañaga Murgoitio <dooteo@zundan.com>\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2016-03-20 19:55+0100\n"
+"PO-Revision-Date: 2016-03-20 19:55+0100\n"
+"Last-Translator: dooteo <dooteo@zundan.com>\n"
 "Language-Team: Basque <librezale@librezale.org>\n"
 "Language: eu\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Lokalize 1.5\n"
+"X-Generator: Lokalize 2.0\n"
 
 #: ../data/taquin-menus.ui.h:1
 msgid "_Sound"
@@ -56,11 +55,11 @@ msgstr "Katuak"
 msgid "Numbers"
 msgstr "Zenbakiak"
 
-#: ../data/taquin-screens.ui.h:6 ../data/org.gnome.taquin.desktop.in.h:4
+#: ../data/taquin-screens.ui.h:6 ../data/org.gnome.taquin.desktop.in.h:5
 msgid "15-Puzzle"
 msgstr "15-Puzzlea"
 
-#: ../data/taquin-screens.ui.h:7 ../data/org.gnome.taquin.desktop.in.h:5
+#: ../data/taquin-screens.ui.h:7 ../data/org.gnome.taquin.desktop.in.h:6
 msgid "16-Puzzle"
 msgstr "16-Puzzlea"
 
@@ -69,22 +68,14 @@ msgid "Go back to the current game"
 msgstr "Uneko jokora itzultzen da"
 
 #: ../data/taquin.ui.h:2
-msgid "_Start Game"
-msgstr "_Hasi jokoa"
-
-#: ../data/taquin.ui.h:3
-msgid "Start a new game as configured"
-msgstr "Hasi joko berria (konfiguratuta dagoen bezala)"
-
-#: ../data/taquin.ui.h:4
 msgid "_Start Over"
 msgstr "_Hasi berriro"
 
-#: ../data/taquin.ui.h:5
+#: ../data/taquin.ui.h:3
 msgid "Configure a new game"
 msgstr "Konfiguratu joko berria"
 
-#: ../data/taquin.ui.h:6
+#: ../data/taquin.ui.h:4
 msgid "Start a new game"
 msgstr "Hasi joko berria"
 
@@ -93,7 +84,7 @@ msgid "GNOME Taquin"
 msgstr "GNOME Taquin"
 
 #: ../data/org.gnome.taquin.appdata.xml.in.h:2
-#: ../data/org.gnome.taquin.desktop.in.h:2
+#: ../data/org.gnome.taquin.desktop.in.h:3
 msgid "Slide tiles to their correct places"
 msgstr "Lerratu lauzak dagokien lekuetara"
 
@@ -112,12 +103,16 @@ msgstr ""
 "Taquin-en helburua lauzak lekuz aldatzea da bakoitza dagokion lekura "
 "eramanez, irudi handi baten zati gisa edo zenbaki gisa adierazita."
 
-#: ../data/org.gnome.taquin.desktop.in.h:1 ../src/taquin-main.vala:78
-#: ../src/taquin-main.vala:135 ../src/taquin-main.vala:250
+#: ../data/org.gnome.taquin.desktop.in.h:1 ../src/taquin-main.vala:76
+#: ../src/taquin-main.vala:133 ../src/taquin-main.vala:237
 msgid "Taquin"
 msgstr "Taquin"
 
-#: ../data/org.gnome.taquin.desktop.in.h:3
+#: ../data/org.gnome.taquin.desktop.in.h:2
+msgid "15-puzzle"
+msgstr "15-puzzlea"
+
+#: ../data/org.gnome.taquin.desktop.in.h:4
 msgid "puzzle;"
 msgstr "puzzlea;"
 
@@ -161,66 +156,73 @@ msgstr "Leihoaren zabalera (pixeletan)."
 msgid "true if the window is maximized."
 msgstr "True (egia) leihoa maximizatuta badago."
 
-#: ../src/game-window.vala:141
+#: ../src/game-window.vala:128
+msgid "_Start Game"
+msgstr "_Hasi jokoa"
+
+#: ../src/game-window.vala:153
 msgid "Undo your most recent move"
 msgstr "Desegin zure azken mugimendua"
 
-#: ../src/taquin-main.vala:46
+#: ../src/taquin-main.vala:45
 msgid "Play the classical 1880s’ 15-puzzle"
 msgstr "Jokatu 1880 garaiko 15-puzzlera"
 
-#: ../src/taquin-main.vala:47
+#: ../src/taquin-main.vala:46
 msgid "Try this fun alternative 16-puzzle"
 msgstr "Saiatu bestelako 16-puzzle honekin"
 
-#: ../src/taquin-main.vala:48
+#: ../src/taquin-main.vala:47
 msgid "Sets the puzzle edges’ size (3-5, 2-9 for debug)"
 msgstr "Puzzlearen ertzen tamaina ezartzen du (3-5, 2-9 arazketarako)"
 
-#: ../src/taquin-main.vala:49
+#: ../src/taquin-main.vala:48
 msgid "Turn off the sound"
 msgstr "Desaktibatu soinua"
 
-#: ../src/taquin-main.vala:50
+#: ../src/taquin-main.vala:49
 msgid "Turn on the sound"
 msgstr "Aktibatu soinua"
 
-#: ../src/taquin-main.vala:51
+#: ../src/taquin-main.vala:50
 msgid "Print release version and exit"
 msgstr "Erakutsi bertsioaren informazioa eta irten"
 
-#: ../src/taquin-main.vala:246
+#: ../src/taquin-main.vala:233
 msgid "(see COPYING.themes for informations)"
 msgstr "(ikusi 'COPYING.themes' informazio gehiagorako)"
 
-#: ../src/taquin-main.vala:254
+#: ../src/taquin-main.vala:241
 msgid "A classic 15-puzzle game"
 msgstr "15-puzzle joko klasikoa"
 
-#: ../src/taquin-main.vala:258
+#: ../src/taquin-main.vala:245
 msgid "translator-credits"
 msgstr "Iñaki Larrañaga Murgoitio <dooteo@zundan.com>"
 
-#: ../src/taquin-main.vala:299
+#: ../src/taquin-main.vala:286
 msgid "You can’t move this tile!"
 msgstr "Ezin duzu lauza hau lekuz aldatu!"
 
-#: ../src/taquin-main.vala:305
+#: ../src/taquin-main.vala:292
 msgid "Bravo! You finished the game!"
 msgstr "Oso ondo! Jokoa amaitu duzu!"
 
-#: ../src/taquin-main.vala:329
+#: ../src/taquin-main.vala:310
 #, c-format
 msgid "Size: %d × %d ▾"
 msgstr "Tamaina : %d × %d ▾"
 
-#: ../src/taquin-main.vala:343
+#: ../src/taquin-main.vala:324
 msgid "Theme: Cats ▾"
 msgstr "Gaia: Katuak ▾"
 
-#: ../src/taquin-main.vala:344
+#: ../src/taquin-main.vala:325
 msgid "Theme: Numbers ▾"
 msgstr "Gaia: Zenbakiak ▾"
+
+#~ msgid "Start a new game as configured"
+#~ msgstr "Hasi joko berria (konfiguratuta dagoen bezala)"
 
 #~ msgid "15-Puzzle with hole"
 #~ msgstr "15-Puzzlea zuloarekin"
