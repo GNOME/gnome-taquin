@@ -8,8 +8,8 @@ msgstr ""
 "Project-Id-Version: gnome-taquin gnome-3-16\n"
 "Report-Msgid-Bugs-To: http://bugzilla.gnome.org/enter_bug.cgi?product=gnome-"
 "taquin&keywords=I18N+L10N&component=general\n"
-"POT-Creation-Date: 2016-03-23 10:52+0000\n"
-"PO-Revision-Date: 2016-03-23 12:54+0100\n"
+"POT-Creation-Date: 2016-04-05 09:51+0000\n"
+"PO-Revision-Date: 2016-04-05 13:50+0200\n"
 "Last-Translator: Fabio Tomat <f.t.public@gmail.com>\n"
 "Language-Team: Friulian <fur@li.org>\n"
 "Language: fur\n"
@@ -174,7 +174,7 @@ msgstr "Prove cheste alternative divertent dal 16"
 
 #: ../src/taquin-main.vala:47
 msgid "Sets the puzzle edges’ size (3-5, 2-9 for debug)"
-msgstr "Imposte la dimension dai flancs (3-5, 2-9 par debug)"
+msgstr "Impueste la dimension dai flancs (3-5, 2-9 pal debug)"
 
 #: ../src/taquin-main.vala:48
 msgid "Turn off the sound"
