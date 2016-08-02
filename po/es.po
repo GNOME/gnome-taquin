@@ -9,7 +9,7 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: http://bugzilla.gnome.org/enter_bug.cgi?product=gnome-"
 "taquin&keywords=I18N+L10N&component=general\n"
-"POT-Creation-Date: 2015-09-21 18:49+0000\n"
+"POT-Creation-Date: 2016-05-05 10:11+0000\n"
 "PO-Revision-Date: 2015-11-16 16:49+0100\n"
 "Last-Translator: Daniel Mustieles <daniel.mustieles@gmail.com>\n"
 "Language-Team: Español; Castellano <gnome-es-list@gnome.org>\n"
@@ -109,7 +109,6 @@ msgid "Taquin"
 msgstr "Taquin"
 
 #: ../data/org.gnome.taquin.desktop.in.h:2
-#| msgid "15-Puzzle"
 msgid "15-puzzle"
 msgstr "Puzle-15"
 
@@ -119,7 +118,7 @@ msgstr "puzle;juego;"
 
 #: ../data/org.gnome.taquin.gschema.xml.h:1
 msgid "Number of tiles on each edge."
-msgstr "Número de fichas en cada borde"
+msgstr "Número de fichas en cada borde."
 
 #: ../data/org.gnome.taquin.gschema.xml.h:2
 msgid ""
@@ -152,11 +151,11 @@ msgstr "Anchura de la ventana en píxeles"
 
 #: ../data/org.gnome.taquin.gschema.xml.h:8
 msgid "Height of the window in pixels."
-msgstr "Altura de la ventana en píxeles"
+msgstr "Altura de la ventana en píxeles."
 
 #: ../data/org.gnome.taquin.gschema.xml.h:9
 msgid "true if the window is maximized."
-msgstr "cierto si la ventana está maximizada"
+msgstr "cierto si la ventana está maximizada."
 
 #: ../src/game-window.vala:128
 msgid "_Start Game"
