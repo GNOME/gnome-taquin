@@ -8,8 +8,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: taquin master\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2016-03-03 15:24+0200\n"
-"PO-Revision-Date: 2016-03-03 15:24+0200\n"
+"POT-Creation-Date: 2016-08-14 17:04+0300\n"
+"PO-Revision-Date: 2016-08-14 17:05+0300\n"
 "Last-Translator: Yosef Or Boczko <yoseforb@gmail.com>\n"
 "Language-Team: עברית <>\n"
 "Language: he\n"
@@ -100,6 +100,14 @@ msgid ""
 msgstr ""
 "הרעיון של Taquin הוא להזיז אריחים כך שהם יגיעו למקומם, המצוינים במספרים, או "
 "כחלק של תמונה גדולה."
+
+#: ../data/org.gnome.taquin.appdata.xml.in.h:5
+msgid "A GNOME taquin game preview"
+msgstr "תצוגה מקדימה של GNOME Taquin"
+
+#: ../data/org.gnome.taquin.appdata.xml.in.h:6
+msgid "The GNOME Project"
+msgstr "מיזם GNOME"
 
 #: ../data/org.gnome.taquin.desktop.in.h:1 ../src/taquin-main.vala:76
 #: ../src/taquin-main.vala:133 ../src/taquin-main.vala:237
