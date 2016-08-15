@@ -1,3 +1,11 @@
+3.21.90 - August 15, 2016
+=========================
+
+* Update appdata(Sahil Sareen)
+* Simplify style-checker enabling code(Sahil Sareen)
+* Fix style-checker with new libgnome-games-support(Sahil Sareen)
+* Updated translations
+
 3.20.1 – April 14, 2016
 =========================
 
