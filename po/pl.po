@@ -1,28 +1,24 @@
-# -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-
-# Aviary.pl
-# Jeśli masz jakiekolwiek uwagi odnoszące się do tłumaczenia lub chcesz
-# pomóc w jego rozwijaniu i pielęgnowaniu, napisz do nas:
-# gnomepl@aviary.pl
-# -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-
+# Polish translation for gnome-taquin.
+# Copyright © 2015-2016 the gnome-taquin authors.
+# This file is distributed under the same license as the gnome-taquin package.
 # Joanna Lisek <jlisek@gmail.com>, 2015.
 # Piotr Drąg <piotrdrag@gmail.com>, 2015-2016.
-# Aviary.pl <gnomepl@aviary.pl>, 2015-2016.
+# Aviary.pl <community-poland@mozilla.org>, 2015-2016.
+#
 msgid ""
 msgstr ""
 "Project-Id-Version: gnome-taquin\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2016-02-06 15:24+0100\n"
-"PO-Revision-Date: 2016-02-06 15:25+0100\n"
+"POT-Creation-Date: 2016-08-16 10:31+0200\n"
+"PO-Revision-Date: 2016-08-16 10:32+0200\n"
 "Last-Translator: Piotr Drąg <piotrdrag@gmail.com>\n"
-"Language-Team: Polish <gnomepl@aviary.pl>\n"
+"Language-Team: Polish <community-poland@mozilla.org>\n"
 "Language: pl\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=3; plural=(n==1 ? 0 : n%10>=2 && n%10<=4 && (n%100<10 "
 "|| n%100>=20) ? 1 : 2);\n"
-"X-Poedit-Language: Polish\n"
-"X-Poedit-Country: Poland\n"
 
 #: ../data/taquin-menus.ui.h:1
 msgid "_Sound"
@@ -34,7 +30,7 @@ msgstr "Pomo_c"
 
 #: ../data/taquin-menus.ui.h:3
 msgid "_About"
-msgstr "_O grze"
+msgstr "_O grze"
 
 #: ../data/taquin-menus.ui.h:4
 msgid "_Quit"
@@ -103,8 +99,16 @@ msgid ""
 "The object of Taquin is to move tiles so that they reach their places, "
 "either indicated with numbers, or with parts of a great image."
 msgstr ""
-"Taquin polega na przesuwaniu poszczególnych elementów tak, aby każdy z nich "
+"Taquin polega na przesuwaniu poszczególnych elementów tak, aby każdy z nich "
 "znalazł się na właściwym miejscu, według numeru lub obrazka."
+
+#: ../data/org.gnome.taquin.appdata.xml.in.h:5
+msgid "A GNOME taquin game preview"
+msgstr "Podgląd gry GNOME Taquin"
+
+#: ../data/org.gnome.taquin.appdata.xml.in.h:6
+msgid "The GNOME Project"
+msgstr "Projekt GNOME"
 
 #: ../data/org.gnome.taquin.desktop.in.h:1 ../src/taquin-main.vala:76
 #: ../src/taquin-main.vala:133 ../src/taquin-main.vala:237
@@ -121,7 +125,7 @@ msgstr "puzzle;puzle;"
 
 #: ../data/org.gnome.taquin.gschema.xml.h:1
 msgid "Number of tiles on each edge."
-msgstr "Liczba elementów z każdej strony układanki."
+msgstr "Liczba elementów z każdej strony układanki."
 
 #: ../data/org.gnome.taquin.gschema.xml.h:2
 msgid ""
@@ -133,7 +137,7 @@ msgstr ""
 
 #: ../data/org.gnome.taquin.gschema.xml.h:3
 msgid "Name of the theme folder."
-msgstr "Nazwa katalogu z motywami."
+msgstr "Nazwa katalogu z motywami."
 
 #: ../data/org.gnome.taquin.gschema.xml.h:4
 msgid "Taquin has two default themes: 'cats' and 'numbers'."
@@ -150,11 +154,11 @@ msgstr "Czy odtwarzać dźwięki dla zdarzeń."
 
 #: ../data/org.gnome.taquin.gschema.xml.h:7
 msgid "Width of the window in pixels."
-msgstr "Szerokość okna w pikselach."
+msgstr "Szerokość okna w pikselach."
 
 #: ../data/org.gnome.taquin.gschema.xml.h:8
 msgid "Height of the window in pixels."
-msgstr "Wysokość okna w pikselach."
+msgstr "Wysokość okna w pikselach."
 
 #: ../data/org.gnome.taquin.gschema.xml.h:9
 msgid "true if the window is maximized."
@@ -170,7 +174,7 @@ msgstr "Cofa ostatni ruch"
 
 #: ../src/taquin-main.vala:45
 msgid "Play the classical 1880s’ 15-puzzle"
-msgstr "Włącza klasyczne 15-częściowe puzzle z lat 80-tych XIX wieku"
+msgstr "Włącza klasyczne 15-częściowe puzzle z lat 80-tych XIX wieku"
 
 #: ../src/taquin-main.vala:46
 msgid "Try this fun alternative 16-puzzle"
@@ -190,7 +194,7 @@ msgstr "Włącza dźwięk"
 
 #: ../src/taquin-main.vala:50
 msgid "Print release version and exit"
-msgstr "Wyświetla wersję wydania i kończy działanie"
+msgstr "Wyświetla wersję wydania i kończy działanie"
 
 #: ../src/taquin-main.vala:233
 msgid "(see COPYING.themes for informations)"
@@ -205,7 +209,7 @@ msgid "translator-credits"
 msgstr ""
 "Joanna Lisek <jlisek@gmail.com>, 2015\n"
 "Piotr Drąg <piotrdrag@gmail.com>, 2015-2016\n"
-"Aviary.pl <gnomepl@aviary.pl>, 2015-2016"
+"Aviary.pl <community-poland@mozilla.org>, 2015-2016"
 
 #: ../src/taquin-main.vala:286
 msgid "You can’t move this tile!"
