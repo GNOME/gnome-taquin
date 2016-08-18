@@ -2,24 +2,23 @@
 # Copyright (C) 2015 gnome-taquin's COPYRIGHT HOLDER
 # This file is distributed under the same license as the gnome-taquin package.
 #
-# Matej Urbančič <mateju@svn.gnome.org>, 2015
+# Matej Urbančič <mateju@svn.gnome.org>, 2015-2016
 #
 msgid ""
 msgstr ""
 "Project-Id-Version: gnome-taquin master\n"
 "Report-Msgid-Bugs-To: http://bugzilla.gnome.org/enter_bug.cgi?product=gnome-"
 "taquin&keywords=I18N+L10N&component=general\n"
-"POT-Creation-Date: 2015-12-13 10:30+0000\n"
-"PO-Revision-Date: 2015-12-13 20:01+0100\n"
+"POT-Creation-Date: 2016-08-18 22:33+0200\n"
+"PO-Revision-Date: 2016-08-18 22:34+0200\n"
 "Last-Translator: Matej Urbančič <mateju@svn.gnome.org>\n"
 "Language-Team: Slovenian <gnome-si@googlegroups.com>\n"
 "Language: sl\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Plural-Forms: nplurals=4; plural=(n%100==1 ? 1 : n%100==2 ? 2 : n%100==3 || n"
-"%100==4 ? 3 : 0);\n"
-"X-Generator: Poedit 1.7.5\n"
+"Plural-Forms: nplurals=4; plural=(n%100==1 ? 1 : n%100==2 ? 2 : n%100==3 || n%100==4 ? 3 : 0);\n"
+"X-Generator: Poedit 1.8.7.1\n"
 
 #: ../data/taquin-menus.ui.h:1
 msgid "_Sound"
@@ -105,6 +104,14 @@ msgstr ""
 "Cilj premičnice Taquin, znane tudi kot igre petnajst, je premakniti ploščice "
 "na prava (urejena) mesta. Ploščice so lahko označene s številkami, lahko pa "
 "skupaj sestavljajo sliko."
+
+#: ../data/org.gnome.taquin.appdata.xml.in.h:5
+msgid "A GNOME taquin game preview"
+msgstr "Predogled igre GNOME Taquin"
+
+#: ../data/org.gnome.taquin.appdata.xml.in.h:6
+msgid "The GNOME Project"
+msgstr "Projekt GNOME"
 
 #: ../data/org.gnome.taquin.desktop.in.h:1 ../src/taquin-main.vala:76
 #: ../src/taquin-main.vala:133 ../src/taquin-main.vala:237
