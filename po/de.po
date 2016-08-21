@@ -3,15 +3,15 @@
 # This file is distributed under the same license as the gnome-taquin package.
 # Christian Kirbach <Christian.Kirbach@gmail.com>, 2015.
 # Bernd Homuth <dev@hmt.im>, 2015.
-# Mario Blättermann <mario.blaettermann@gmail.com>, 2015.
+# Mario Blättermann <mario.blaettermann@gmail.com>, 2015, 2016.
 #
 msgid ""
 msgstr ""
 "Project-Id-Version: gnome-taquin master\n"
 "Report-Msgid-Bugs-To: http://bugzilla.gnome.org/enter_bug.cgi?product=gnome-"
 "taquin&keywords=I18N+L10N&component=general\n"
-"POT-Creation-Date: 2015-12-28 10:29+0000\n"
-"PO-Revision-Date: 2015-12-28 20:46+0100\n"
+"POT-Creation-Date: 2016-08-13 20:10+0000\n"
+"PO-Revision-Date: 2016-08-21 12:05+0200\n"
 "Last-Translator: Mario Blättermann <mario.blaettermann@gmail.com>\n"
 "Language-Team: Deutsch <gnome-de@gnome.org>\n"
 "Language: de\n"
@@ -19,7 +19,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
-"X-Generator: Poedit 1.8.5\n"
+"X-Generator: Poedit 1.8.8\n"
 
 #: ../data/taquin-menus.ui.h:1
 msgid "_Sound"
@@ -105,6 +105,14 @@ msgstr ""
 "Das Ziel von Taquin ist es, Kacheln so zu verschieben, dass sie ihren "
 "Zielort erreichen. Der Zielort ist entweder über Zahlen oder mit "
 "Ausschnitten eines großen Bildes markiert."
+
+#: ../data/org.gnome.taquin.appdata.xml.in.h:5
+msgid "A GNOME taquin game preview"
+msgstr "Eine Vorschau auf GNOME Taquin"
+
+#: ../data/org.gnome.taquin.appdata.xml.in.h:6
+msgid "The GNOME Project"
+msgstr "Das GNOME-Projekt"
 
 #: ../data/org.gnome.taquin.desktop.in.h:1 ../src/taquin-main.vala:76
 #: ../src/taquin-main.vala:133 ../src/taquin-main.vala:237
@@ -204,8 +212,8 @@ msgstr "Ein klassisches 15-teiliges Puzzlespiel"
 msgid "translator-credits"
 msgstr ""
 "Christian Kirbach <christian.kirbach@gmail.com>, 2015\n"
-"Bernd Homuth <dev@hmt.im>, 2015"
-"Mario Blättermann <mario.blaettermann@gmail.com>, 2015"
+"Bernd Homuth <dev@hmt.im>, 2015Mario Blättermann <mario.blaettermann@gmail."
+"com>, 2015"
 
 #: ../src/taquin-main.vala:286
 msgid "You can’t move this tile!"
