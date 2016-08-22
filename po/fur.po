@@ -8,15 +8,15 @@ msgstr ""
 "Project-Id-Version: gnome-taquin gnome-3-16\n"
 "Report-Msgid-Bugs-To: http://bugzilla.gnome.org/enter_bug.cgi?product=gnome-"
 "taquin&keywords=I18N+L10N&component=general\n"
-"POT-Creation-Date: 2016-04-05 09:51+0000\n"
-"PO-Revision-Date: 2016-04-05 13:50+0200\n"
+"POT-Creation-Date: 2016-08-13 20:10+0000\n"
+"PO-Revision-Date: 2016-08-22 22:42+0200\n"
 "Last-Translator: Fabio Tomat <f.t.public@gmail.com>\n"
 "Language-Team: Friulian <fur@li.org>\n"
 "Language: fur\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Generator: Poedit 1.8.5\n"
+"X-Generator: Poedit 1.8.8\n"
 
 #: ../data/taquin-menus.ui.h:1
 msgid "_Sound"
@@ -101,6 +101,14 @@ msgid ""
 msgstr ""
 "L'obietîf di Taquin al è chel di spostâ lis tessaris in mût che si placin te "
 "lôr posizion juste, indicade da numars o di parts di une figure"
+
+#: ../data/org.gnome.taquin.appdata.xml.in.h:5
+msgid "A GNOME taquin game preview"
+msgstr "Une anteprime dal zûc taquin di GNOME"
+
+#: ../data/org.gnome.taquin.appdata.xml.in.h:6
+msgid "The GNOME Project"
+msgstr "Il progjet GNOME"
 
 #: ../data/org.gnome.taquin.desktop.in.h:1 ../src/taquin-main.vala:76
 #: ../src/taquin-main.vala:133 ../src/taquin-main.vala:237
