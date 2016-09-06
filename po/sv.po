@@ -8,8 +8,8 @@ msgstr ""
 "Project-Id-Version: gnome-taquin master\n"
 "Report-Msgid-Bugs-To: http://bugzilla.gnome.org/enter_bug.cgi?product=gnome-"
 "taquin&keywords=I18N+L10N&component=general\n"
-"POT-Creation-Date: 2015-09-21 18:49+0000\n"
-"PO-Revision-Date: 2015-11-02 13:23+0100\n"
+"POT-Creation-Date: 2016-08-13 20:10+0000\n"
+"PO-Revision-Date: 2016-08-20 23:38+0200\n"
 "Last-Translator: Anders Jonsson <anders.jonsson@norsjovallen.se>\n"
 "Language-Team: Swedish <tp-sv@listor.tp-sv.se>\n"
 "Language: sv\n"
@@ -17,7 +17,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
-"X-Generator: Poedit 1.8.6\n"
+"X-Generator: Poedit 1.8.8\n"
 
 #: ../data/taquin-menus.ui.h:1
 msgid "_Sound"
@@ -100,6 +100,14 @@ msgid ""
 msgstr ""
 "Målet i Taquin är att flytta brickor så att de når sina platser, vilka "
 "antingen markeras med siffror eller med delar av en stor bild."
+
+#: ../data/org.gnome.taquin.appdata.xml.in.h:5
+msgid "A GNOME taquin game preview"
+msgstr "En förhandsvisning av GNOME taquin"
+
+#: ../data/org.gnome.taquin.appdata.xml.in.h:6
+msgid "The GNOME Project"
+msgstr "GNOME-projektet"
 
 #: ../data/org.gnome.taquin.desktop.in.h:1 ../src/taquin-main.vala:76
 #: ../src/taquin-main.vala:133 ../src/taquin-main.vala:237
