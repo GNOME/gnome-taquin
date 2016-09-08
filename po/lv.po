@@ -7,16 +7,16 @@ msgstr ""
 "Project-Id-Version: \n"
 "Report-Msgid-Bugs-To: http://bugzilla.gnome.org/enter_bug.cgi?product=gnome-ta"
 "quin&keywords=I18N+L10N&component=general\n"
-"POT-Creation-Date: 2016-02-04 10:32+0000\n"
-"PO-Revision-Date: 2016-02-06 19:23+0200\n"
+"POT-Creation-Date: 2016-08-13 20:10+0000\n"
+"PO-Revision-Date: 2016-09-08 19:11+0200\n"
 "Last-Translator: Rūdolfs Mazurs <rudolfs.mazurs@gmail.com>\n"
 "Language-Team: Latvian <lata-l10n@googlegroups.com>\n"
 "Language: lv\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Plural-Forms: nplurals=3; plural=(n%10==1 && n%100!=11 ? 0 : n != 0 ? 1 : "
-"2);\n"
+"Plural-Forms: nplurals=3; plural=(n%10==1 && n%100!=11 ? 0 : n != 0 ? 1 :"
+" 2);\n"
 "X-Generator: Lokalize 2.0\n"
 
 #: ../data/taquin-menus.ui.h:1
@@ -98,8 +98,16 @@ msgid ""
 "The object of Taquin is to move tiles so that they reach their places, "
 "either indicated with numbers, or with parts of a great image."
 msgstr ""
-"Taquin mērķis ir pārvietot kauliņus, lai tie sasniegtu savu vietu, vai nu tie "
-"ir numuri, vai daļa no lielāka attēla."
+"Taquin mērķis ir pārvietot kauliņus, lai tie sasniegtu savu vietu, vai nu "
+"tie ir numuri, vai daļa no lielāka attēla."
+
+#: ../data/org.gnome.taquin.appdata.xml.in.h:5
+msgid "A GNOME taquin game preview"
+msgstr "GNOME taquin spēles priekšskatījums"
+
+#: ../data/org.gnome.taquin.appdata.xml.in.h:6
+msgid "The GNOME Project"
+msgstr "GNOME projekts"
 
 #: ../data/org.gnome.taquin.desktop.in.h:1 ../src/taquin-main.vala:76
 #: ../src/taquin-main.vala:133 ../src/taquin-main.vala:237
@@ -123,8 +131,8 @@ msgid ""
 "The game offers to play with a board size from 3 to 5. The setting could be "
 "set from 2 (good for testing) to 9, limited by the way files are selected."
 msgstr ""
-"Spēle piedāvā spēlēt ar laukuma izmēru no 3 līdz 5. Iestatījumu var mainīt no "
-"2 (noder testēšanai) līdz 9, ierobežo veids, kādā tiek izvēlētas datnes."
+"Spēle piedāvā spēlēt ar laukuma izmēru no 3 līdz 5. Iestatījumu var mainīt "
+"no 2 (noder testēšanai) līdz 9, ierobežo veids, kādā tiek izvēlētas datnes."
 
 #: ../data/org.gnome.taquin.gschema.xml.h:3
 msgid "Name of the theme folder."
