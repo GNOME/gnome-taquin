@@ -7,8 +7,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: gnome-taquin master\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2016-03-20 23:33+0100\n"
-"PO-Revision-Date: 2016-03-20 03:30+0100\n"
+"POT-Creation-Date: 2016-09-12 02:11+0200\n"
+"PO-Revision-Date: 2016-09-08 02:50+0200\n"
 "Last-Translator: Ask Hjorth Larsen <asklarsen@gmail.com>\n"
 "Language-Team: Danish <dansk@dansk-gruppen.dk>\n"
 "Language: da\n"
@@ -98,6 +98,14 @@ msgid ""
 msgstr ""
 "Målet med Taquin er at flytte brikker, så de når deres pladser angivet enten "
 "ved tal eller dele af et stort billede."
+
+#: ../data/org.gnome.taquin.appdata.xml.in.h:5
+msgid "A GNOME taquin game preview"
+msgstr "Smugkig på et spil GNOME taquin"
+
+#: ../data/org.gnome.taquin.appdata.xml.in.h:6
+msgid "The GNOME Project"
+msgstr "GNOME-projektet"
 
 #: ../data/org.gnome.taquin.desktop.in.h:1 ../src/taquin-main.vala:76
 #: ../src/taquin-main.vala:133 ../src/taquin-main.vala:237
