@@ -10,8 +10,8 @@ msgstr ""
 "Project-Id-Version: gnome-taquin master\n"
 "Report-Msgid-Bugs-To: http://bugzilla.gnome.org/enter_bug.cgi?product=gnome-"
 "taquin&keywords=I18N+L10N&component=general\n"
-"POT-Creation-Date: 2016-03-15 10:36+0000\n"
-"PO-Revision-Date: 2016-03-15 15:42+0300\n"
+"POT-Creation-Date: 2016-08-13 20:10+0000\n"
+"PO-Revision-Date: 2016-09-16 12:47+0300\n"
 "Last-Translator: Stas Solovey <whats_up@tut.by>\n"
 "Language-Team: Русский <gnome-cyr@gnome.org>\n"
 "Language: ru\n"
@@ -106,13 +106,20 @@ msgstr ""
 "Цель игры — передвинуть фишки так, чтобы они заняли свои места, сложив "
 "последовательность чисел или целое изображение."
 
+#: ../data/org.gnome.taquin.appdata.xml.in.h:5
+msgid "A GNOME taquin game preview"
+msgstr "Предварительный просмотр игры Taquin GNOME"
+
+#: ../data/org.gnome.taquin.appdata.xml.in.h:6
+msgid "The GNOME Project"
+msgstr "Проект GNOME"
+
 #: ../data/org.gnome.taquin.desktop.in.h:1 ../src/taquin-main.vala:76
 #: ../src/taquin-main.vala:133 ../src/taquin-main.vala:237
 msgid "Taquin"
 msgstr "Taquin"
 
 #: ../data/org.gnome.taquin.desktop.in.h:2
-#| msgid "15-Puzzle"
 msgid "15-puzzle"
 msgstr "Пятнашки (15-фишек)"
 
