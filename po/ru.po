@@ -2,25 +2,25 @@
 # Copyright (C) 2015 gnome-taquin's COPYRIGHT HOLDER
 # This file is distributed under the same license as the gnome-taquin package.
 # Иван <vantu5z@mail.ru>, 2015.
-# Stas Solovey <whats_up@tut.by>, 2015.
 # Yuri Myasoedov <ymyasoedov@yandex.ru>, 2015.
+# Stas Solovey <whats_up@tut.by>, 2015, 2016.
 #
 msgid ""
 msgstr ""
 "Project-Id-Version: gnome-taquin master\n"
 "Report-Msgid-Bugs-To: http://bugzilla.gnome.org/enter_bug.cgi?product=gnome-"
 "taquin&keywords=I18N+L10N&component=general\n"
-"POT-Creation-Date: 2015-02-11 21:06+0000\n"
-"PO-Revision-Date: 2015-02-15 16:29+0300\n"
-"Last-Translator: Yuri Myasoedov <ymyasoedov@yandex.ru>\n"
-"Language-Team: русский <gnome-cyr@gnome.org>\n"
+"POT-Creation-Date: 2016-05-05 10:11+0000\n"
+"PO-Revision-Date: 2016-09-16 12:50+0300\n"
+"Last-Translator: Stas Solovey <whats_up@tut.by>\n"
+"Language-Team: Русский <gnome-cyr@gnome.org>\n"
 "Language: ru\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=3; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && n"
 "%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2)\n"
-"X-Generator: Gtranslator 2.91.6\n"
+"X-Generator: Gtranslator 2.91.7\n"
 
 #: ../data/taquin-menus.ui.h:1
 msgid "_Sound"
@@ -38,56 +38,56 @@ msgstr "_О приложении"
 msgid "_Quit"
 msgstr "_Завершить"
 
-#: ../data/taquin.ui.h:1
+#: ../data/taquin-screens.ui.h:1
 msgid "3 × 3"
 msgstr "3 × 3"
 
-#: ../data/taquin.ui.h:2
+#: ../data/taquin-screens.ui.h:2
 msgid "4 × 4"
 msgstr "4 × 4"
 
-#: ../data/taquin.ui.h:3
+#: ../data/taquin-screens.ui.h:3
 msgid "5 × 5"
 msgstr "5 × 5"
 
-#: ../data/taquin.ui.h:4
+#: ../data/taquin-screens.ui.h:4
 msgid "Cats"
 msgstr "Кошки"
 
-#: ../data/taquin.ui.h:5
+#: ../data/taquin-screens.ui.h:5
 msgid "Numbers"
 msgstr "Числа"
 
-#: ../data/taquin.ui.h:6 ../data/org.gnome.taquin.desktop.in.h:1
-#: ../src/taquin-main.vala:98 ../src/taquin-main.vala:347
-msgid "Taquin"
-msgstr "Taquin"
-
-#: ../data/taquin.ui.h:7
-msgid "Undo your most recent move"
-msgstr "Отменить последний ход"
-
-#: ../data/taquin.ui.h:8
-msgid "Go back to the current game"
-msgstr "Вернуться к текущей игре"
-
-#: ../data/taquin.ui.h:9
+#: ../data/taquin-screens.ui.h:6 ../data/org.gnome.taquin.desktop.in.h:4
 msgid "15-Puzzle"
 msgstr "Пятнашки (15-фишек)"
 
-#: ../data/taquin.ui.h:10
+#: ../data/taquin-screens.ui.h:7 ../data/org.gnome.taquin.desktop.in.h:5
 msgid "16-Puzzle"
 msgstr "16-фишек"
 
-#: ../data/taquin.ui.h:11
+#: ../data/taquin.ui.h:1
+msgid "Go back to the current game"
+msgstr "Вернуться к текущей игре"
+
+#: ../data/taquin.ui.h:2
 msgid "_Start Game"
 msgstr "_Начать игру"
 
-#: ../data/taquin.ui.h:12
+#: ../data/taquin.ui.h:3
+#| msgid "Start a new game"
+msgid "Start a new game as configured"
+msgstr "Начать новую игру с сохранёнными настройками"
+
+#: ../data/taquin.ui.h:4
 msgid "_Start Over"
 msgstr "_Начать заново"
 
-#: ../data/taquin.ui.h:13
+#: ../data/taquin.ui.h:5
+msgid "Configure a new game"
+msgstr "Настроить новую игру"
+
+#: ../data/taquin.ui.h:6
 msgid "Start a new game"
 msgstr "Начать новую игру"
 
@@ -115,17 +115,14 @@ msgstr ""
 "Цель игры — передвинуть фишки так, чтобы они заняли свои места, сложив "
 "последовательность чисел или целое изображение."
 
+#: ../data/org.gnome.taquin.desktop.in.h:1 ../src/taquin-main.vala:78
+#: ../src/taquin-main.vala:135 ../src/taquin-main.vala:250
+msgid "Taquin"
+msgstr "Taquin"
+
 #: ../data/org.gnome.taquin.desktop.in.h:3
 msgid "puzzle;"
 msgstr "головоломка;пятнашки;"
-
-#: ../data/org.gnome.taquin.desktop.in.h:4
-msgid "15-Puzzle with hole"
-msgstr "15-фишек с одним пустым сектором"
-
-#: ../data/org.gnome.taquin.desktop.in.h:5
-msgid "Puzzle with arrays"
-msgstr "Головоломка с последовательностью"
 
 #: ../data/org.gnome.taquin.gschema.xml.h:1
 msgid "Number of tiles on each edge."
@@ -133,15 +130,11 @@ msgstr "Количество фишек по каждой стороне."
 
 #: ../data/org.gnome.taquin.gschema.xml.h:2
 msgid ""
-"The game is tested and offers to select a size from 3 to 5. There is a human-"
-"understandable maximum value to avoid some bugs. Maximum size is 9 as the "
-"image files are randomly selected depending on the first character of their "
-"filename."
+"The game offers to play with a board size from 3 to 5. The setting could be "
+"set from 2 (good for testing) to 9, limited by the way files are selected."
 msgstr ""
-"Игра проверена и предлагает на выбор размер от 3 до 5. Это — максимальное "
-"значение, доступное пониманию человека, чтобы избежать некоторых ошибок. "
-"Максимальный размер — 9, так как файлы изображений выбираются случайным "
-"образом в зависимости от первого символа в имени их файла."
+"Игра предлагает сыграть с размером поля от 3 до 5. Можно установить от 2 "
+"(хорошо для тестирования) до 9, ограничено по методу выбора файлов."
 
 #: ../data/org.gnome.taquin.gschema.xml.h:3
 msgid "Name of the theme folder."
@@ -171,61 +164,91 @@ msgstr "Высота окна в пикселях."
 msgid "true if the window is maximized."
 msgstr "значение «true», если окно развернуто."
 
-#: ../src/taquin-main.vala:58
+#: ../src/game-window.vala:141
+msgid "Undo your most recent move"
+msgstr "Отменить последний ход"
+
+#: ../src/taquin-main.vala:46
 msgid "Play the classical 1880s’ 15-puzzle"
 msgstr "Играть в классическую игру в пятнашки 1880-ых годов."
 
-#: ../src/taquin-main.vala:59
+#: ../src/taquin-main.vala:47
 msgid "Try this fun alternative 16-puzzle"
 msgstr "Попробуйте забавную альтернативу: 16-фишек"
 
-#: ../src/taquin-main.vala:60
+#: ../src/taquin-main.vala:48
 msgid "Sets the puzzle edges’ size (3-5, 2-9 for debug)"
 msgstr "Задаёт соотношение сторон головоломки (3-5, 2-9 для отладки)"
 
-#: ../src/taquin-main.vala:61
+#: ../src/taquin-main.vala:49
 msgid "Turn off the sound"
 msgstr "Выключить звук"
 
-#: ../src/taquin-main.vala:62
+#: ../src/taquin-main.vala:50
 msgid "Turn on the sound"
 msgstr "Включить звук"
 
-#: ../src/taquin-main.vala:63
+#: ../src/taquin-main.vala:51
 msgid "Print release version and exit"
 msgstr "Показать версию и выйти"
 
-#: ../src/taquin-main.vala:343
+#: ../src/taquin-main.vala:246
 msgid "(see COPYING.themes for informations)"
 msgstr "(смотрите COPYING.themes для информации)"
 
-#: ../src/taquin-main.vala:351
+#: ../src/taquin-main.vala:254
 msgid "A classic 15-puzzle game"
 msgstr "Классическая игра в пятнашки (15-фишек)"
 
-#: ../src/taquin-main.vala:355
+#: ../src/taquin-main.vala:258
 msgid "translator-credits"
 msgstr ""
-"Иван <vantu5z@mail.ru>, 2015.\n"
-"Stas Solovey <whats_up@tut.by>, 2015."
+"Ivan Komaritsyn <vantu5z@mail.ru>, 2015.\n"
+"Stas Solovey <whats_up@tut.by>, 2015-2016."
 
-#: ../src/taquin-main.vala:396
+#: ../src/taquin-main.vala:299
 msgid "You can’t move this tile!"
 msgstr "Вы не можете подвинуть эту фишку!"
 
-#: ../src/taquin-main.vala:402
+#: ../src/taquin-main.vala:305
 msgid "Bravo! You finished the game!"
 msgstr "Браво! Вы закончили игру!"
 
-#: ../src/taquin-main.vala:426
+#: ../src/taquin-main.vala:329
 #, c-format
 msgid "Size: %d × %d ▾"
 msgstr "Размер: %d × %d ▾"
 
-#: ../src/taquin-main.vala:440
+#: ../src/taquin-main.vala:343
 msgid "Theme: Cats ▾"
 msgstr "Тема: Кошки ▾"
 
-#: ../src/taquin-main.vala:441
+#: ../src/taquin-main.vala:344
 msgid "Theme: Numbers ▾"
 msgstr "Тема: Числа ▾"
+
+#~ msgid "A GNOME taquin game preview"
+#~ msgstr "Предварительный просмотр игры Taquin GNOME"
+
+#~ msgid "The GNOME Project"
+#~ msgstr "Проект GNOME"
+
+#~ msgid "15-puzzle"
+#~ msgstr "Пятнашки (15-фишек)"
+
+#~ msgid "15-Puzzle with hole"
+#~ msgstr "15-фишек с одним пустым сектором"
+
+#~ msgid "Puzzle with arrays"
+#~ msgstr "Головоломка с последовательностью"
+
+#~ msgid ""
+#~ "The game is tested and offers to select a size from 3 to 5. There is a "
+#~ "human-understandable maximum value to avoid some bugs. Maximum size is 9 "
+#~ "as the image files are randomly selected depending on the first character "
+#~ "of their filename."
+#~ msgstr ""
+#~ "Игра проверена и предлагает на выбор размер от 3 до 5. Это — максимальное "
+#~ "значение, доступное пониманию человека, чтобы избежать некоторых ошибок. "
+#~ "Максимальный размер — 9, так как файлы изображений выбираются случайным "
+#~ "образом в зависимости от первого символа в имени их файла."
