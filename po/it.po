@@ -2,22 +2,23 @@
 # Copyright (C) 2015, 2016 gnome-taquin's COPYRIGHT HOLDER
 # This file is distributed under the same license as the gnome-taquin package.
 # Milo Casagrande <milo@milo.name>, 2015, 2016.
+# Gianvito Cavasoli <gianvito@gmx.it>, 2016.
 #
 msgid ""
 msgstr ""
 "Project-Id-Version: gnome-taquin\n"
 "Report-Msgid-Bugs-To: http://bugzilla.gnome.org/enter_bug.cgi?product=gnome-"
 "taquin&keywords=I18N+L10N&component=general\n"
-"POT-Creation-Date: 2015-09-21 18:49+0000\n"
-"PO-Revision-Date: 2016-02-23 17:24+0100\n"
-"Last-Translator: Milo Casagrande <milo@milo.name>\n"
-"Language-Team: Italian <gnome-it-list@gnome.org>\n"
+"POT-Creation-Date: 2016-09-16 15:08+0000\n"
+"PO-Revision-Date: 2016-10-04 15:23+0200\n"
+"Last-Translator: Gianvito Cavasoli <gianvito@gmx.it>\n"
+"Language-Team: Italiano <gnome-it-list@gnome.org>\n"
 "Language: it\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
-"X-Generator: Poedit 1.8.7\n"
+"X-Generator: Gtranslator 2.91.7\n"
 
 #: ../data/taquin-menus.ui.h:1
 msgid "_Sound"
@@ -103,6 +104,14 @@ msgstr ""
 "L'obiettivo di Taquin è quello di spostare le tessere in modo tale che "
 "raggiungano la loro designata posizione, indicata da numeri o da parti di "
 "un'immagine."
+
+#: ../data/org.gnome.taquin.appdata.xml.in.h:5
+msgid "A GNOME taquin game preview"
+msgstr "Un'anteprima del gioco GNOME taquin"
+
+#: ../data/org.gnome.taquin.appdata.xml.in.h:6
+msgid "The GNOME Project"
+msgstr "Il progetto GNOME"
 
 #: ../data/org.gnome.taquin.desktop.in.h:1 ../src/taquin-main.vala:76
 #: ../src/taquin-main.vala:133 ../src/taquin-main.vala:237
