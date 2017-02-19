@@ -1,14 +1,14 @@
 # Norwegian bokmål translation of gnome-taquin.
 # Copyright © 1998-2002 Free Software Foundation, Inc.
-# Kjartan Maraas <kmaraas@gnome.org>, 1998-2015.
+# Kjartan Maraas <kmaraas@gnome.org>, 1998-2017.
 # Terance Edward Sola <terance@lyse.net>, 2005.
 # Torstein Adolf Winterseth <kvikende@fsfe.org>, 2010.
 msgid ""
 msgstr ""
-"Project-Id-Version: gnome-taquin 3.19.x\n"
-"Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2015-11-16 00:22+0100\n"
-"PO-Revision-Date: 2015-11-16 00:23+0100\n"
+"Project-Id-Version: gnome-taquin 3.23.x\n"
+"Report-Msgid-Bugs-To: http://bugzilla.gnome.org/enter_bug.cgi?product=gnome-taquin&keywords=I18N+L10N&component=general\n"
+"POT-Creation-Date: 2017-02-13 08:12+0000\n"
+"PO-Revision-Date: 2017-02-19 17:51+0100\n"
 "Last-Translator: Kjartan Maraas <kmaraas@gnome.org>\n"
 "Language-Team: Norwegian bokmål <i18n-nb@lister.ping.uio.no>\n"
 "Language: nb\n"
@@ -99,6 +99,14 @@ msgid ""
 msgstr ""
 "Målet i Taquin er å skyve flisene slik at de når sine plasser som er "
 "indikert med tall eller deler av et større bilde."
+
+#: ../data/org.gnome.taquin.appdata.xml.in.h:5
+msgid "A GNOME taquin game preview"
+msgstr "Et taquin spill for GNOME"
+
+#: ../data/org.gnome.taquin.appdata.xml.in.h:6
+msgid "The GNOME Project"
+msgstr "GNOME prosjektet"
 
 #: ../data/org.gnome.taquin.desktop.in.h:1 ../src/taquin-main.vala:76
 #: ../src/taquin-main.vala:133 ../src/taquin-main.vala:237
