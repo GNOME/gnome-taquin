@@ -5,13 +5,11 @@
 #
 # El 15-Puzzle és un joc nord-americà (http://en.wikipedia.org/wiki/15_puzzle)
 # En català sembla no tenir nom. Ho traduïm per "Trencaclosques de 15 fitxes"
- 
-
 msgid ""
 msgstr ""
 "Project-Id-Version: gnome-taquin\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2015-03-22 11:44-0400\n"
+"POT-Creation-Date: 2017-03-12 08:31+0100\n"
 "PO-Revision-Date: 2015-03-22 11:44-0400\n"
 "Last-Translator: Jordi Mas i Hernàndez <jmas@softcatala.org>\n"
 "Language-Team: ca_ES <tradgnome@softcatala.net>\n"
@@ -57,11 +55,11 @@ msgstr "Gats"
 msgid "Numbers"
 msgstr "Nombres"
 
-#: ../data/taquin-screens.ui.h:6 ../data/org.gnome.taquin.desktop.in.h:4
+#: ../data/taquin-screens.ui.h:6 ../data/org.gnome.taquin.desktop.in.h:5
 msgid "15-Puzzle"
 msgstr "Trencaclosques de 15 fitxes"
 
-#: ../data/taquin-screens.ui.h:7 ../data/org.gnome.taquin.desktop.in.h:5
+#: ../data/taquin-screens.ui.h:7 ../data/org.gnome.taquin.desktop.in.h:6
 msgid "16-Puzzle"
 msgstr "Trencaclosques de 16 fitxes"
 
@@ -70,22 +68,14 @@ msgid "Go back to the current game"
 msgstr "Torna al joc actual"
 
 #: ../data/taquin.ui.h:2
-msgid "_Start Game"
-msgstr "_Inicia el joc"
-
-#: ../data/taquin.ui.h:3
-msgid "Start a new game as configured"
-msgstr "Inicia un joc nou com està configurat"
-
-#: ../data/taquin.ui.h:4
 msgid "_Start Over"
 msgstr "_Torna a començar"
 
-#: ../data/taquin.ui.h:5
+#: ../data/taquin.ui.h:3
 msgid "Configure a new game"
 msgstr "Configura un joc nou"
 
-#: ../data/taquin.ui.h:6
+#: ../data/taquin.ui.h:4
 msgid "Start a new game"
 msgstr "Comença un joc nou"
 
@@ -94,7 +84,7 @@ msgid "GNOME Taquin"
 msgstr "GNOME Taquin"
 
 #: ../data/org.gnome.taquin.appdata.xml.in.h:2
-#: ../data/org.gnome.taquin.desktop.in.h:2
+#: ../data/org.gnome.taquin.desktop.in.h:3
 msgid "Slide tiles to their correct places"
 msgstr "Llisca les fitxes als llocs correctes"
 
@@ -102,7 +92,8 @@ msgstr "Llisca les fitxes als llocs correctes"
 msgid ""
 "Taquin is a computer version of the 15-puzzle and other sliding puzzles."
 msgstr ""
-"El Taquin és una versió d'ordinador del joc trencaclosques de 15 fitxes i altres trencaclosques lliscants."
+"El Taquin és una versió d'ordinador del joc trencaclosques de 15 fitxes i "
+"altres trencaclosques lliscants."
 
 #: ../data/org.gnome.taquin.appdata.xml.in.h:4
 msgid ""
@@ -112,12 +103,24 @@ msgstr ""
 "L'objectiu del Taquin és moure les fitxes perquè arribin als seus llocs, "
 "indicat per nombres o bé per ser parts d'una imatge més gran."
 
-#: ../data/org.gnome.taquin.desktop.in.h:1 ../src/taquin-main.vala:78
-#: ../src/taquin-main.vala:135 ../src/taquin-main.vala:250
+#: ../data/org.gnome.taquin.appdata.xml.in.h:5
+msgid "A GNOME taquin game preview"
+msgstr "Una vista prèvia del joc GNOME Taquin"
+
+#: ../data/org.gnome.taquin.appdata.xml.in.h:6
+msgid "The GNOME Project"
+msgstr "El projecte GNOME"
+
+#: ../data/org.gnome.taquin.desktop.in.h:1 ../src/taquin-main.vala:76
+#: ../src/taquin-main.vala:133 ../src/taquin-main.vala:237
 msgid "Taquin"
 msgstr "Taquin"
 
-#: ../data/org.gnome.taquin.desktop.in.h:3
+#: ../data/org.gnome.taquin.desktop.in.h:2
+msgid "15-puzzle"
+msgstr "Trencaclosques de 15 fitxes"
+
+#: ../data/org.gnome.taquin.desktop.in.h:4
 msgid "puzzle;"
 msgstr "trencaclosques;"
 
@@ -130,8 +133,9 @@ msgid ""
 "The game offers to play with a board size from 3 to 5. The setting could be "
 "set from 2 (good for testing) to 9, limited by the way files are selected."
 msgstr ""
-"El joc ofereix jugar amb un taulell de mida 3 a 5. Es pot configurar "
-"des de 2 (per fer proves) fins a 9, limitat per la manera que se seleccionen els fitxers."
+"El joc ofereix jugar amb un taulell de mida 3 a 5. Es pot configurar des de "
+"2 (per fer proves) fins a 9, limitat per la manera que se seleccionen els "
+"fitxers."
 
 #: ../data/org.gnome.taquin.gschema.xml.h:3
 msgid "Name of the theme folder."
@@ -161,63 +165,72 @@ msgstr "Alçada de la finestra en píxels."
 msgid "true if the window is maximized."
 msgstr "«true» (cert) si la finestra està maximitzada."
 
-#: ../src/game-window.vala:141
+#: ../src/game-window.vala:128
+msgid "_Start Game"
+msgstr "_Inicia el joc"
+
+#: ../src/game-window.vala:153
 msgid "Undo your most recent move"
 msgstr "Desfés l'última jugada"
 
-#: ../src/taquin-main.vala:46
+#: ../src/taquin-main.vala:45
 msgid "Play the classical 1880s’ 15-puzzle"
 msgstr "Juga al trencaclosques de 15 fitxes clàssic de 1880"
 
-#: ../src/taquin-main.vala:47
+#: ../src/taquin-main.vala:46
 msgid "Try this fun alternative 16-puzzle"
 msgstr "Prova aquesta divertida alternativa al trencaclosques de 16 fitxes"
 
-#: ../src/taquin-main.vala:48
+#: ../src/taquin-main.vala:47
 msgid "Sets the puzzle edges’ size (3-5, 2-9 for debug)"
-msgstr "Estableix la mida de les cantonades del trencaclosques (3-5, 2-9 per depuració)"
+msgstr ""
+"Estableix la mida de les cantonades del trencaclosques (3-5, 2-9 per "
+"depuració)"
 
-#: ../src/taquin-main.vala:49
+#: ../src/taquin-main.vala:48
 msgid "Turn off the sound"
 msgstr "Desactiva el so"
 
-#: ../src/taquin-main.vala:50
+#: ../src/taquin-main.vala:49
 msgid "Turn on the sound"
 msgstr "Activa el so"
 
-#: ../src/taquin-main.vala:51
+#: ../src/taquin-main.vala:50
 msgid "Print release version and exit"
 msgstr "Mostra la informació de la versió i surt"
 
-#: ../src/taquin-main.vala:246
+#: ../src/taquin-main.vala:233
 msgid "(see COPYING.themes for informations)"
 msgstr "(vegeu COPYING.themes per a més informació)"
 
-#: ../src/taquin-main.vala:254
+#: ../src/taquin-main.vala:241
 msgid "A classic 15-puzzle game"
 msgstr "Un trencaclosques clàssic de 15 fitxes"
 
-#: ../src/taquin-main.vala:258
+#: ../src/taquin-main.vala:245
 msgid "translator-credits"
 msgstr "Jordi Mas i Hernàndez <jmas@softcatala.org>, 2015"
 
-#: ../src/taquin-main.vala:299
+#: ../src/taquin-main.vala:286
 msgid "You can’t move this tile!"
 msgstr "No podeu moure aquesta fitxa"
 
-#: ../src/taquin-main.vala:305
+#: ../src/taquin-main.vala:292
 msgid "Bravo! You finished the game!"
 msgstr "Enhorabona. Heu acabat el joc!"
 
-#: ../src/taquin-main.vala:329
+#: ../src/taquin-main.vala:310
 #, c-format
 msgid "Size: %d × %d ▾"
 msgstr "Mida: %d × %d ▾"
 
-#: ../src/taquin-main.vala:343
+#: ../src/taquin-main.vala:324
 msgid "Theme: Cats ▾"
 msgstr "Tema: Gats ▾"
 
-#: ../src/taquin-main.vala:344
+#: ../src/taquin-main.vala:325
 msgid "Theme: Numbers ▾"
 msgstr "Tema: Nombres ▾"
+
+#~ msgid "Start a new game as configured"
+#~ msgstr "Inicia un joc nou com està configurat"
