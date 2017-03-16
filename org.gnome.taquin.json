@@ -1,0 +1,37 @@
+{
+    "app-id": "org.gnome.taquin",
+    "runtime": "org.gnome.Platform",
+    "runtime-version": "master",
+    "sdk": "org.gnome.Sdk",
+    "command": "gnome-taquin",
+    "tags": ["nightly"],
+    "copy-icon": true,
+    "rename-icon": "gnome-taquin",
+    "desktop-file-name-prefix": "(Nightly) ",
+    "finish-args": [
+        /* X11 + XShm access */
+        "--share=ipc", "--socket=x11",
+        /* Wayland access */
+        "--socket=wayland",
+        /* Sound! */
+        "--socket=pulseaudio",
+        /* dconf */
+        "--filesystem=xdg-run/dconf", "--filesystem=~/.config/dconf:ro",
+        "--talk-name=ca.desrt.dconf", "--env=DCONF_USER_CONFIG_DIR=.config/dconf"
+    ],
+    "build-options": {
+        "cflags": "-O2 -g"
+    },
+    "cleanup": ["/share/man"],
+    "modules": [
+        {
+            "name": "gnome-taquin",
+            "sources": [
+                {
+                    "type": "git",
+                    "url": "git://git.gnome.org/gnome-taquin"
+                }
+            ]
+        }
+    ]
+}
