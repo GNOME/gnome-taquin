@@ -6,8 +6,9 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: gnome-taquin master\n"
-"Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2016-09-12 02:11+0200\n"
+"Report-Msgid-Bugs-To: "
+"https://bugzilla.gnome.org/enter_bug.cgi?product=gnome-taquin&keywords=I18N+L10N&component=general\n"
+"POT-Creation-Date: 2017-02-28 09:08+0000\n"
 "PO-Revision-Date: 2016-09-08 02:50+0200\n"
 "Last-Translator: Ask Hjorth Larsen <asklarsen@gmail.com>\n"
 "Language-Team: Danish <dansk@dansk-gruppen.dk>\n"
@@ -139,7 +140,7 @@ msgstr "Navnet på temamappen."
 
 #: ../data/org.gnome.taquin.gschema.xml.h:4
 msgid "Taquin has two default themes: 'cats' and 'numbers'."
-msgstr "Taquin har to standardtemaer: \"katte\" og \"tal\"."
+msgstr "Taquin har to standardtemaer: “katte” og “tal”."
 
 #: ../data/org.gnome.taquin.gschema.xml.h:5
 msgid "Sound"
@@ -233,3 +234,5 @@ msgstr "Tema: Tal ▾"
 
 #~ msgid "Start a new game as configured"
 #~ msgstr "Start et nyt spil ifølge opsætning"
+
+
