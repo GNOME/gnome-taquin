@@ -4,21 +4,22 @@
 # This file is distributed under the same license as the gnome-taquin package.
 #
 # Changwoo Ryu <cwryu@debian.org>, 2015-2016.
-#
+# DaeHyun Sung <sungdh86@gmail.com>, 2017.
 msgid ""
 msgstr ""
 "Project-Id-Version: gnome-taquin master\n"
-"Report-Msgid-Bugs-To: http://bugzilla.gnome.org/enter_bug.cgi?product=gnome-"
+"Report-Msgid-Bugs-To: https://bugzilla.gnome.org/enter_bug.cgi?product=gnome-"
 "taquin&keywords=I18N+L10N&component=general\n"
-"POT-Creation-Date: 2016-03-02 08:25+0000\n"
-"PO-Revision-Date: 2016-03-17 05:21+0900\n"
-"Last-Translator: Changwoo Ryu <cwryu@debian.org>\n"
+"POT-Creation-Date: 2017-02-28 09:08+0000\n"
+"PO-Revision-Date: 2017-09-02 17:07+0900\n"
+"Last-Translator: DaeHyun Sung <sungdh86@gmail.com>\n"
 "Language-Team: GNOME Korea <gnome-kr@googlegroups.com>\n"
 "Language: ko\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
+"X-Generator: Poedit 1.8.12\n"
 
 #: ../data/taquin-menus.ui.h:1
 msgid "_Sound"
@@ -101,6 +102,14 @@ msgid ""
 msgstr ""
 "타킨의 목표는 타일을 움직여서 자기 위치에 놓는 것입니다. 숫자로 표시된 위치"
 "에 놓거나, 전체 그림을 맞추는 방식으로 놓습니다."
+
+#: ../data/org.gnome.taquin.appdata.xml.in.h:5
+msgid "A GNOME taquin game preview"
+msgstr "그놈 타킨 게임 미리보기"
+
+#: ../data/org.gnome.taquin.appdata.xml.in.h:6
+msgid "The GNOME Project"
+msgstr "그놈 프로젝트"
 
 #: ../data/org.gnome.taquin.desktop.in.h:1 ../src/taquin-main.vala:76
 #: ../src/taquin-main.vala:133 ../src/taquin-main.vala:237
@@ -197,7 +206,9 @@ msgstr "전통적인 15-퍼즐 게임"
 
 #: ../src/taquin-main.vala:245
 msgid "translator-credits"
-msgstr "류창우 <cwryu@debian.org>"
+msgstr ""
+"류창우 <cwryu@debian.org>\n"
+"성대현 <sungdh86@gmail.com>"
 
 #: ../src/taquin-main.vala:286
 msgid "You can’t move this tile!"
