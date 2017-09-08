@@ -7,10 +7,10 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: taquin master\n"
-"Report-Msgid-Bugs-To: http://bugzilla.gnome.org/enter_bug.cgi?product=gnome-"
+"Report-Msgid-Bugs-To: https://bugzilla.gnome.org/enter_bug.cgi?product=gnome-"
 "taquin&keywords=I18N+L10N&component=general\n"
-"POT-Creation-Date: 2016-08-13 20:10+0000\n"
-"PO-Revision-Date: 2016-08-28 19:28+0200\n"
+"POT-Creation-Date: 2017-02-28 09:08+0000\n"
+"PO-Revision-Date: 2017-09-08 19:28+0200\n"
 "Last-Translator: Arnaud Bonatti <arnaud.bonatti@gmail.com>\n"
 "Language-Team: GNOME French Team <gnomefr@traduc.org>\n"
 "Language: fr\n"
@@ -81,7 +81,7 @@ msgstr "Commence une nouvelle partie"
 
 #: ../data/org.gnome.taquin.appdata.xml.in.h:1
 msgid "GNOME Taquin"
-msgstr "GNOME Taquin"
+msgstr "Taquin de GNOME"
 
 #: ../data/org.gnome.taquin.appdata.xml.in.h:2
 #: ../data/org.gnome.taquin.desktop.in.h:3
@@ -106,7 +106,7 @@ msgstr ""
 
 #: ../data/org.gnome.taquin.appdata.xml.in.h:5
 msgid "A GNOME taquin game preview"
-msgstr "Un aperçu d'une partie de taquin GNOME"
+msgstr "Un aperçu d’une partie de Taquin de GNOME"
 
 #: ../data/org.gnome.taquin.appdata.xml.in.h:6
 msgid "The GNOME Project"
