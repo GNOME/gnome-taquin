@@ -2,22 +2,24 @@
 # Copyright (C) 2014 gnome-taquin's COPYRIGHT HOLDER
 # This file is distributed under the same license as the gnome-taquin package.
 # Muhammet Kara <muhammetk@gmail.com>, 2014, 2015.
+# Furkan Ahmet Kara <furkanahmetkara.fk@gmail.com>, 2017.
+# Emin Tufan Çetin <etcetin@gmail.com>, 2017.
 #
 msgid ""
 msgstr ""
 "Project-Id-Version: gnome-taquin master\n"
-"Report-Msgid-Bugs-To: http://bugzilla.gnome.org/enter_bug.cgi?product=gnome-"
+"Report-Msgid-Bugs-To: https://bugzilla.gnome.org/enter_bug.cgi?product=gnome-"
 "taquin&keywords=I18N+L10N&component=general\n"
-"POT-Creation-Date: 2015-02-16 22:45+0000\n"
-"PO-Revision-Date: 2015-02-21 09:27+0200\n"
-"Last-Translator: Muhammet Kara <muhammetk@gmail.com>\n"
-"Language-Team: Turkish <gnome-turk@gnome.org>\n"
+"POT-Creation-Date: 2017-09-10 06:45+0000\n"
+"PO-Revision-Date: 2017-09-10 15:28+0300\n"
+"Last-Translator: Emin Tufan Çetin <etcetin@gmail.com>\n"
+"Language-Team: Türkçe <gnome-turk@gnome.org>\n"
 "Language: tr\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
-"X-Generator: Gtranslator 2.91.6\n"
+"X-Generator: Gtranslator 2.91.7\n"
 
 #: ../data/taquin-menus.ui.h:1
 msgid "_Sound"
@@ -35,56 +37,47 @@ msgstr "_Hakkında"
 msgid "_Quit"
 msgstr "_Çık"
 
-#: ../data/taquin.ui.h:1
+#: ../data/taquin-screens.ui.h:1
 msgid "3 × 3"
 msgstr "3 × 3"
 
-#: ../data/taquin.ui.h:2
+#: ../data/taquin-screens.ui.h:2
 msgid "4 × 4"
 msgstr "4 × 4"
 
-#: ../data/taquin.ui.h:3
+#: ../data/taquin-screens.ui.h:3
 msgid "5 × 5"
 msgstr "5 × 5"
 
-#: ../data/taquin.ui.h:4
+#: ../data/taquin-screens.ui.h:4
 msgid "Cats"
 msgstr "Kediler"
 
-#: ../data/taquin.ui.h:5
+#: ../data/taquin-screens.ui.h:5
 msgid "Numbers"
 msgstr "Sayılar"
 
-#: ../data/taquin.ui.h:6 ../data/org.gnome.taquin.desktop.in.h:1
-#: ../src/taquin-main.vala:98 ../src/taquin-main.vala:347
-msgid "Taquin"
-msgstr "Taquin"
-
-#: ../data/taquin.ui.h:7
-msgid "Undo your most recent move"
-msgstr "Son hareketinizi geri alın"
-
-#: ../data/taquin.ui.h:8
-msgid "Go back to the current game"
-msgstr "Mevcut oyuna geri dön"
-
-#: ../data/taquin.ui.h:9 ../data/org.gnome.taquin.desktop.in.h:4
+#: ../data/taquin-screens.ui.h:6 ../data/org.gnome.taquin.desktop.in.h:5
 msgid "15-Puzzle"
-msgstr ""
+msgstr "15-Bulmaca"
 
-#: ../data/taquin.ui.h:10 ../data/org.gnome.taquin.desktop.in.h:5
+#: ../data/taquin-screens.ui.h:7 ../data/org.gnome.taquin.desktop.in.h:6
 msgid "16-Puzzle"
-msgstr ""
+msgstr "16-Bulmaca"
 
-#: ../data/taquin.ui.h:11
-msgid "_Start Game"
-msgstr "_Oynu Başlat"
+#: ../data/taquin.ui.h:1
+msgid "Go back to the current game"
+msgstr "Şimdiki oyuna geri dön"
 
-#: ../data/taquin.ui.h:12
+#: ../data/taquin.ui.h:2
 msgid "_Start Over"
 msgstr "_Baştan Başla"
 
-#: ../data/taquin.ui.h:13
+#: ../data/taquin.ui.h:3
+msgid "Configure a new game"
+msgstr "Yeni bir oyun yapılandır"
+
+#: ../data/taquin.ui.h:4
 msgid "Start a new game"
 msgstr "Yeni bir oyun başlat"
 
@@ -93,42 +86,67 @@ msgid "GNOME Taquin"
 msgstr "GNOME Taquin"
 
 #: ../data/org.gnome.taquin.appdata.xml.in.h:2
-#: ../data/org.gnome.taquin.desktop.in.h:2
+#: ../data/org.gnome.taquin.desktop.in.h:3
 msgid "Slide tiles to their correct places"
-msgstr ""
+msgstr "Karoları doğru yerlerine kaydır"
 
 #: ../data/org.gnome.taquin.appdata.xml.in.h:3
 msgid ""
 "Taquin is a computer version of the 15-puzzle and other sliding puzzles."
-msgstr ""
+msgstr "Taquin 15-bulmaca ve diğer sürgülü bulmacaların bilgisayar sürümüdür."
 
 #: ../data/org.gnome.taquin.appdata.xml.in.h:4
 msgid ""
 "The object of Taquin is to move tiles so that they reach their places, "
 "either indicated with numbers, or with parts of a great image."
 msgstr ""
+"Taquin’in amacı, numaralarla veya büyük bir resmin parçalarından herhangi "
+"biriyle gösterilen karoların kendi yerlerine ulaşması için hareket "
+"ettirmektir."
 
-#: ../data/org.gnome.taquin.desktop.in.h:3
+#: ../data/org.gnome.taquin.appdata.xml.in.h:5
+msgid "A GNOME taquin game preview"
+msgstr "Bir GNOME taquin oyunu önizlemesi"
+
+#: ../data/org.gnome.taquin.appdata.xml.in.h:6
+msgid "The GNOME Project"
+msgstr "GNOME Projesi"
+
+#: ../data/org.gnome.taquin.desktop.in.h:1 ../src/taquin-main.vala:76
+#: ../src/taquin-main.vala:133 ../src/taquin-main.vala:237
+msgid "Taquin"
+msgstr "Taquin"
+
+#: ../data/org.gnome.taquin.desktop.in.h:2
+msgid "15-puzzle"
+msgstr "15-bulmaca"
+
+#: ../data/org.gnome.taquin.desktop.in.h:4
 msgid "puzzle;"
-msgstr "bulmaca;yapboz;"
+msgstr "bulmaca;"
 
 #: ../data/org.gnome.taquin.gschema.xml.h:1
 msgid "Number of tiles on each edge."
-msgstr ""
+msgstr "Her kenardaki karo sayısı."
 
 #: ../data/org.gnome.taquin.gschema.xml.h:2
 msgid ""
 "The game offers to play with a board size from 3 to 5. The setting could be "
 "set from 2 (good for testing) to 9, limited by the way files are selected."
 msgstr ""
+"Oyun, 3 ila 5 arasında bir pano boyutu ile oynamayı sunuyor. Ayarlar, "
+"dosyaların seçilme biçimine göre sınırlı olmak üzere 2’den (sınama için iyi) "
+"9’a kadar ayarlanabilir."
 
 #: ../data/org.gnome.taquin.gschema.xml.h:3
 msgid "Name of the theme folder."
-msgstr "Tema klasörünün adı."
+msgstr "Gövde klasörünün adı."
 
 #: ../data/org.gnome.taquin.gschema.xml.h:4
 msgid "Taquin has two default themes: 'cats' and 'numbers'."
 msgstr ""
+"Taquin’in iki öntanımlı gövdesi vardır: 'cats' (kediler) ve "
+"'numbers' (sayılar)."
 
 #: ../data/org.gnome.taquin.gschema.xml.h:5
 msgid "Sound"
@@ -148,61 +166,69 @@ msgstr "Pencerenin piksel olarak yüksekliği."
 
 #: ../data/org.gnome.taquin.gschema.xml.h:9
 msgid "true if the window is maximized."
-msgstr ""
+msgstr "eğer pencere en büyük boyuta getirilmişse işaretle"
 
-#: ../src/taquin-main.vala:58
+#: ../src/game-window.vala:128
+msgid "_Start Game"
+msgstr "_Oynu Başlat"
+
+#: ../src/game-window.vala:153
+msgid "Undo your most recent move"
+msgstr "Son hareketinizi geri alın"
+
+#: ../src/taquin-main.vala:45
 msgid "Play the classical 1880s’ 15-puzzle"
-msgstr ""
+msgstr "1880’lerin klasik 15-bulmacasını oyna"
 
-#: ../src/taquin-main.vala:59
+#: ../src/taquin-main.vala:46
 msgid "Try this fun alternative 16-puzzle"
-msgstr ""
+msgstr "Bu eğlenceli 16-bulmaca seçeneğini deneyin"
 
-#: ../src/taquin-main.vala:60
+#: ../src/taquin-main.vala:47
 msgid "Sets the puzzle edges’ size (3-5, 2-9 for debug)"
-msgstr ""
+msgstr "Bulmaca kenarlarının boyutunu ayarlar (hata ayıklama için 3-5, 2-9)"
 
-#: ../src/taquin-main.vala:61
+#: ../src/taquin-main.vala:48
 msgid "Turn off the sound"
 msgstr "Sesi kapat"
 
-#: ../src/taquin-main.vala:62
+#: ../src/taquin-main.vala:49
 msgid "Turn on the sound"
 msgstr "Sesi aç"
 
-#: ../src/taquin-main.vala:63
+#: ../src/taquin-main.vala:50
 msgid "Print release version and exit"
 msgstr "Yayım sürümünü yazdır ve çık"
 
-#: ../src/taquin-main.vala:343
+#: ../src/taquin-main.vala:233
 msgid "(see COPYING.themes for informations)"
 msgstr "(ilgili bilgiler için COPYING.themes dosyasına bakınız)"
 
-#: ../src/taquin-main.vala:351
+#: ../src/taquin-main.vala:241
 msgid "A classic 15-puzzle game"
-msgstr ""
+msgstr "Bir klasik 15-bulmaca oyunu"
 
-#: ../src/taquin-main.vala:355
+#: ../src/taquin-main.vala:245
 msgid "translator-credits"
 msgstr "Muhammet Kara <muhammetk@gmail.com>"
 
-#: ../src/taquin-main.vala:396
+#: ../src/taquin-main.vala:286
 msgid "You can’t move this tile!"
-msgstr ""
+msgstr "Bu karoyu hareket ettiremezsin!"
 
-#: ../src/taquin-main.vala:402
+#: ../src/taquin-main.vala:292
 msgid "Bravo! You finished the game!"
 msgstr "Tebrikler! Oyunu bitirdiniz!"
 
-#: ../src/taquin-main.vala:426
+#: ../src/taquin-main.vala:310
 #, c-format
 msgid "Size: %d × %d ▾"
 msgstr "Boyut: %d × %d ▾"
 
-#: ../src/taquin-main.vala:440
+#: ../src/taquin-main.vala:324
 msgid "Theme: Cats ▾"
-msgstr "Tema: Kediler ▾"
+msgstr "Gövde: Kediler ▾"
 
-#: ../src/taquin-main.vala:441
+#: ../src/taquin-main.vala:325
 msgid "Theme: Numbers ▾"
-msgstr "Tema: Sayılar ▾"
+msgstr "Gövde: Sayılar ▾"
