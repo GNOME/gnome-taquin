@@ -2,14 +2,16 @@
 # Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
 # This file is distributed under the same license as the PACKAGE package.
 # Copyright (C) 2015 Jordi Mas i Hernàndez, jmas@softcatala.org
+# Jordi Serratosa <jordis@softcatala.cat>, 2017.
 #
 # El 15-Puzzle és un joc nord-americà (http://en.wikipedia.org/wiki/15_puzzle)
 # En català sembla no tenir nom. Ho traduïm per "Trencaclosques de 15 fitxes"
 msgid ""
 msgstr ""
 "Project-Id-Version: gnome-taquin\n"
-"Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2017-03-12 08:31+0100\n"
+"Report-Msgid-Bugs-To: https://bugzilla.gnome.org/enter_bug.cgi?product=gnome-"
+"taquin&keywords=I18N+L10N&component=general\n"
+"POT-Creation-Date: 2017-03-12 07:33+0000\n"
 "PO-Revision-Date: 2015-03-22 11:44-0400\n"
 "Last-Translator: Jordi Mas i Hernàndez <jmas@softcatala.org>\n"
 "Language-Team: ca_ES <tradgnome@softcatala.net>\n"
@@ -133,7 +135,7 @@ msgid ""
 "The game offers to play with a board size from 3 to 5. The setting could be "
 "set from 2 (good for testing) to 9, limited by the way files are selected."
 msgstr ""
-"El joc ofereix jugar amb un taulell de mida 3 a 5. Es pot configurar des de "
+"El joc ofereix jugar amb un tauler de mida 3 a 5. Es pot configurar des de "
 "2 (per fer proves) fins a 9, limitat per la manera que se seleccionen els "
 "fitxers."
 
