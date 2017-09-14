@@ -1,0 +1,627 @@
+# Polish translation for gnome-taquin help.
+# Copyright © 2017 the gnome-taquin authors.
+# This file is distributed under the same license as the gnome-taquin package.
+# Piotr Drąg <piotrdrag@gmail.com>, 2017.
+# Aviary.pl <community-poland@mozilla.org>, 2017.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: gnome-taquin-help\n"
+"POT-Creation-Date: 2017-09-10 12:54+0000\n"
+"PO-Revision-Date: 2017-09-14 23:05+0200\n"
+"Last-Translator: Piotr Drąg <piotrdrag@gmail.com>\n"
+"Language-Team: Polish <community-poland@mozilla.org>\n"
+"Language: pl\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=3; plural=(n==1 ? 0 : n%10>=2 && n%10<=4 && (n%100<10 "
+"|| n%100>=20) ? 1 : 2);\n"
+
+#. Put one translator per line, in the form NAME <EMAIL>, YEAR1, YEAR2
+msgctxt "_"
+msgid "translator-credits"
+msgstr ""
+"Piotr Drąg <piotrdrag@gmail.com>, 2017\n"
+"Aviary.pl <community-poland@mozilla.org>, 2017"
+
+#. (itstool) path: credit/name
+#: C/15-Puzzle.page:10 C/16-Puzzle.page:10 C/beginning.page:10 C/index.page:12
+#: C/shortcuts.page:10 C/start-screen.page:10
+msgid "Arnaud Bonatti"
+msgstr "Arnaud Bonatti"
+
+#. (itstool) path: credit/years
+#: C/15-Puzzle.page:12 C/16-Puzzle.page:12 C/beginning.page:12
+#: C/shortcuts.page:12 C/start-screen.page:12
+msgid "2014"
+msgstr "2014"
+
+#. (itstool) path: page/title
+#: C/15-Puzzle.page:18
+msgid "15-Puzzle"
+msgstr "15-częściowe puzzle"
+
+#. (itstool) path: page/p
+#: C/15-Puzzle.page:20
+msgid ""
+"The <em>15-Puzzle</em> is the default puzzle of <app>Taquin</app>. It is "
+"displayed the first time the application is opened. You can start one at any "
+"time from the <link xref=\"start-screen\">Start Screen</link>."
+msgstr ""
+"<em>15-częściowe puzzle</em> są domyślnym trybem gry <app>Taquin</app>. Są "
+"wyświetlane po pierwszym uruchomieniu gry. Można je włączyć w każdej chwili "
+"na <link xref=\"start-screen\">ekranie startowym</link>."
+
+#. (itstool) path: section/title
+#: C/15-Puzzle.page:23 C/16-Puzzle.page:23
+msgid "Gameplay"
+msgstr "Rozgrywka"
+
+#. (itstool) path: section/p
+#: C/15-Puzzle.page:25 C/16-Puzzle.page:25
+msgid "The goal is to move all the tiles to their proper places."
+msgstr "Celem jest przeniesienie wszystkich elementów na ich właściwe miejsca."
+
+#. (itstool) path: section/p
+#: C/15-Puzzle.page:27
+msgid ""
+"There’s an empty space where you can move adjacent tiles by pushing them "
+"onto it. You can push more than one tile at the same time in the empty "
+"space’s direction."
+msgstr ""
+"Na wolne miejsce można przenieść wszystkie sąsiednie elementy przez "
+"przesunięcie ich. W kierunku wolnego miejsca można przesunąć więcej niż "
+"jeden element naraz."
+
+#. (itstool) path: section/title
+#: C/15-Puzzle.page:31 C/16-Puzzle.page:31
+msgid "End of the game"
+msgstr "Koniec gry"
+
+#. (itstool) path: section/p
+#: C/15-Puzzle.page:32 C/16-Puzzle.page:32
+msgid ""
+"At the end of the game, <app>Taquin</app> notifies you and displays the "
+"complete image."
+msgstr ""
+"Po ukończeniu gry <app>Taquin</app> powiadamia o zwycięstwie i wyświetla "
+"kompletny obraz."
+
+#. (itstool) path: section/p
+#: C/15-Puzzle.page:33 C/16-Puzzle.page:33
+msgid ""
+"You can click the <gui>Start Over</gui> button to go to the <link xref="
+"\"start-screen\">Start Screen</link>."
+msgstr ""
+"Można kliknąć przycisk <gui>Nowa gra</gui>, aby przejść do <link xref="
+"\"start-screen\">ekranu startowego</link>."
+
+#. (itstool) path: section/title
+#: C/15-Puzzle.page:37 C/16-Puzzle.page:37
+msgid "How to play with a mouse"
+msgstr "Jak grać za pomocą myszy"
+
+#. (itstool) path: section/p
+#: C/15-Puzzle.page:39 C/15-Puzzle.page:57 C/16-Puzzle.page:39
+#: C/16-Puzzle.page:55
+msgid "To make a move:"
+msgstr "Aby wykonać ruch:"
+
+#. (itstool) path: item/p
+#: C/15-Puzzle.page:41 C/beginning.page:25
+msgid "Click on a tile on the same row or column as the empty space."
+msgstr "Kliknij element w tym samym rzędzie lub kolumnie, co puste miejsce."
+
+#. (itstool) path: note/p
+#: C/15-Puzzle.page:42 C/15-Puzzle.page:61 C/beginning.page:26
+msgid ""
+"If you click on a tile that cannot move, the game notifies you that the move "
+"is impossible."
+msgstr ""
+"Gra powiadamia użytkownika w przypadku kliknięcia elementu, którego nie "
+"można przenieść."
+
+#. (itstool) path: item/p
+#: C/15-Puzzle.page:45 C/16-Puzzle.page:43
+msgid ""
+"You can always undo a move by clicking the <gui>Undo</gui> button at the "
+"left of the header bar."
+msgstr ""
+"Zawsze można cofnąć ruch klikając przycisk <gui>Cofnij</gui> po lewej "
+"stronie paska nagłówka."
+
+#. (itstool) path: item/p
+#: C/15-Puzzle.page:47 C/16-Puzzle.page:45 C/beginning.page:31
+msgid ""
+"At the end of the game, or when you want to switch games, click the "
+"<gui>Start Over</gui> button to go to the <link xref=\"start-screen\">Start "
+"Screen</link>."
+msgstr ""
+"Po ukończeniu gry, lub jeśli chcesz przełączyć grę, kliknij przycisk "
+"<gui>Nowa gra</gui>, aby przejść do <link xref=\"start-screen\">ekranu "
+"startowego</link>."
+
+#. (itstool) path: section/p
+#: C/15-Puzzle.page:51 C/16-Puzzle.page:49
+msgid "You can also use the keyboard."
+msgstr "Można także używać klawiatury."
+
+#. (itstool) path: section/title
+#: C/15-Puzzle.page:55 C/16-Puzzle.page:53
+msgid "How to play with the keyboard"
+msgstr "Jak grać za pomocą klawiatury"
+
+#. (itstool) path: item/p
+#: C/15-Puzzle.page:59
+msgid ""
+"Use the <key>Left</key>, <key>Right</key>, <key>Up</key> and <key>Down</key> "
+"arrows to go at the tile you want to move. The currently selected tile is "
+"indicated with four arrows around the board, on each side of its row and "
+"column."
+msgstr ""
+"Użyj klawiszy strzałek <key>W górę</key>, <key>W prawo</key>, <key>W górę</"
+"key> i <key>W dół</key>, aby przejść do wybranego elementu. Obecnie "
+"zaznaczony element jest oznaczony czterema strzałkami wokół planszy, po "
+"każdej stronie jego rzędu i kolumny."
+
+#. (itstool) path: item/p
+#: C/15-Puzzle.page:60
+msgid ""
+"Use the <key>Space</key> key to move the selected tile in the direction of "
+"the empty space."
+msgstr ""
+"Użyj <key>spacji</key>, aby przenieść zaznaczony element w kierunku pustego "
+"miejsca."
+
+#. (itstool) path: item/p
+#: C/15-Puzzle.page:64 C/16-Puzzle.page:60
+msgid ""
+"You can always undo a move with the <keyseq><key>Ctrl</key><key>Z</key></"
+"keyseq> keys."
+msgstr ""
+"Zawsze można cofnąć ruch za pomocą klawiszy <keyseq><key>Ctrl</key><key>Z</"
+"key></keyseq>."
+
+#. (itstool) path: item/p
+#: C/15-Puzzle.page:66 C/16-Puzzle.page:62
+msgid ""
+"At the end of the game, or when you want to switch games, use the the "
+"<keyseq><key>Ctrl</key><key>N</key></keyseq> keys to go to the <link xref="
+"\"start-screen\">Start Screen</link>."
+msgstr ""
+"Po ukończeniu gry, lub jeśli chcesz przełączyć grę, użyj klawiszy "
+"<keyseq><key>Ctrl</key><key>N</key></keyseq>, aby przejść do <link xref="
+"\"start-screen\">ekranu startowego</link>."
+
+#. (itstool) path: section/p
+#: C/15-Puzzle.page:70 C/16-Puzzle.page:66
+msgid "You can also use a mouse."
+msgstr "Można także używać myszy."
+
+#. (itstool) path: page/title
+#: C/16-Puzzle.page:18
+msgid "16-Puzzle"
+msgstr "16-częściowe puzzle"
+
+#. (itstool) path: page/p
+#: C/16-Puzzle.page:20
+msgid ""
+"The <em>16-Puzzle</em> is the variant puzzle of <app>Taquin</app>. You can "
+"launch it at any time from the <link xref=\"start-screen\">Start Screen</"
+"link>."
+msgstr ""
+"<em>16-częściowe puzzle</em> to alternatywny tryb gry <app>Taquin</app>. "
+"Można go włączyć w każdej chwili na <link xref=\"start-screen\">ekranie "
+"startowym</link>."
+
+#. (itstool) path: section/p
+#: C/16-Puzzle.page:27
+msgid ""
+"You move all the tiles of a row or a column in one direction. The tile that "
+"is pushed out of the board is placed at the opposite side of the row or "
+"column."
+msgstr ""
+"Wszystkie elementy rzędu lub kolumny są przenoszone w jednym kierunku. "
+"Element wypchnięty z planszy jest umieszczany po przeciwnej stronie rzędu "
+"lub kolumny."
+
+#. (itstool) path: item/p
+#: C/16-Puzzle.page:41
+msgid ""
+"Click on one of the arrows displayed around the board. The row or column at "
+"the end of which this arrow is moves in this direction, and the tile that "
+"was next to the arrow is placed at the opposite side."
+msgstr ""
+"Kliknij jedną ze strzałek wyświetlanych wokół planszy. Rząd lub kolumna na "
+"końcu której jest strzałka przenosi w tym kierunku, a element obok strzałki "
+"jest umieszczany po przeciwnej stronie."
+
+#. (itstool) path: item/p
+#: C/16-Puzzle.page:57
+msgid ""
+"Use the <key>Left</key>, <key>Right</key>, <key>Up</key> and <key>Down</key> "
+"arrows to go at the row or the column you want to move. The currently "
+"selected row and column are indicated with two lights around the board."
+msgstr ""
+"Użyj klawiszy strzałek <key>W lewo</key>, <key>W prawo</key>, <key>W górę</"
+"key> i <key>W dół</key>, aby przejść do wybranego rzędu lub kolumny. Obecnie "
+"zaznaczony rząd lub kolumna jest oznaczony dwoma światełkami wokół planszy."
+
+#. (itstool) path: item/p
+#: C/16-Puzzle.page:58
+msgid ""
+"Use the <keyseq><key>Ctrl</key><key>Left</key></keyseq> or "
+"<keyseq><key>Ctrl</key><key>Right</key></keyseq> keys to move a row, or the "
+"<keyseq><key>Ctrl</key><key>Up</key></keyseq> and <keyseq><key>Ctrl</"
+"key><key>Down</key></keyseq> keys to move a column."
+msgstr ""
+"Użyj klawiszy <keyseq><key>Ctrl</key><key>W lewo</key></keyseq> lub "
+"<keyseq><key>Ctrl</key><key>W prawo</key></keyseq>, aby przenieść rząd, albo "
+"klawiszy <keyseq><key>Ctrl</key><key>W górę</key></keyseq> "
+"i <keyseq><key>Ctrl</key><key>W dół</key></keyseq>, aby przenieść kolumnę."
+
+#. (itstool) path: page/title
+#: C/beginning.page:18
+msgid "Beginning"
+msgstr "Początek"
+
+#. (itstool) path: page/p
+#: C/beginning.page:20
+msgid ""
+"When <app>Taquin</app> is opened for the first time, it displays a "
+"traditional <link xref=\"15-Puzzle\">15-Puzzle</link> game."
+msgstr ""
+"Po pierwszym uruchomieniu gry <app>Taquin</app> wyświetlane są tradycyjne "
+"<link xref=\"15-Puzzle\">15-częściowe puzzle</link>."
+
+#. (itstool) path: page/p
+#: C/beginning.page:22
+msgid "The game is played using the mouse. To make a move:"
+msgstr "Gra się za pomocą myszy. Aby wykonać ruch:"
+
+#. (itstool) path: item/p
+#: C/beginning.page:29
+msgid ""
+"You can always undo a move by clicking the <gui>Undo</gui> button on the "
+"left of the header bar."
+msgstr ""
+"Zawsze można cofnąć ruch klikając przycisk <gui>Cofnij</gui> po lewej "
+"stronie paska nagłówka."
+
+#. (itstool) path: page/p
+#: C/beginning.page:35
+msgid ""
+"After the first time it is opened, <app>Taquin</app> displays a puzzle with "
+"the same rules and dimensions as the last one played when it is opened, so "
+"it could be a <link xref=\"16-Puzzle\">16-Puzzle</link> game."
+msgstr ""
+"Po następnym uruchomieniu gry <app>Taquin</app> wyświetla puzzle o tych "
+"regułach i wymiarach, w które grano poprzednio, więc mogą to być <link xref="
+"\"16-Puzzle\">16-częściowe puzzle</link>."
+
+#. (itstool) path: info/title
+#: C/index.page:8
+msgctxt "link"
+msgid "Taquin"
+msgstr "Taquin"
+
+#. (itstool) path: info/title
+#: C/index.page:9
+msgctxt "text"
+msgid "Taquin"
+msgstr "Taquin"
+
+#. (itstool) path: license/p
+#: C/index.page:16
+msgid ""
+"Creative Commons Attribution-ShareAlike 4.0 International (CC BY-SA 4.0)"
+msgstr ""
+"Creative Commons Attribution-ShareAlike 4.0 International (CC BY-SA 4.0)"
+
+#. (itstool) path: media/span
+#: C/index.page:20
+msgid "Taquin logo"
+msgstr "Logo gry Taquin"
+
+#. (itstool) path: page/title
+#: C/index.page:20
+msgid "<_:media-1/> Taquin"
+msgstr "<_:media-1/> Taquin"
+
+#. (itstool) path: page/p
+#: C/index.page:22
+msgid ""
+"<app>Taquin</app> is a sliding-block puzzle game. It includes the "
+"traditional 15-Puzzle invented in the early 1880s, and the more recent 16-"
+"Puzzle variant."
+msgstr ""
+"<app>Taquin</app> to gra w przesuwane puzzle. Zawiera tradycyjne 15-"
+"częściowe puzzle wynalezione we wczesnych latach 80. XIX wieku, jak "
+"i nowocześniejszy wariant 16-częściowy."
+
+#. (itstool) path: section/title
+#: C/index.page:26
+msgid "How to Play"
+msgstr "Jak grać"
+
+#. (itstool) path: section/title
+#: C/index.page:38
+msgid "Advanced"
+msgstr "Zaawansowane"
+
+#. (itstool) path: p/link
+#: C/legal.xml:3
+msgid "Creative Commons Attribution-ShareAlike 4.0 International license"
+msgstr "Creative Commons Attribution-ShareAlike 4.0 International"
+
+#. (itstool) path: license/p
+#: C/legal.xml:3
+msgid "This work is licensed under a <_:link-1/>."
+msgstr "Na warunkach licencji <_:link-1/>."
+
+#. (itstool) path: info/desc
+#: C/license.page:8
+msgid "Legal information."
+msgstr "Informacje prawne."
+
+#. (itstool) path: page/title
+#: C/license.page:11
+msgid "License"
+msgstr "Licencja"
+
+#. (itstool) path: page/p
+#: C/license.page:12
+msgid ""
+"This work is distributed under a Creative Commons Attribution-ShareAlike 4.0 "
+"International license."
+msgstr ""
+"Na warunkach licencji Creative Commons Attribution-ShareAlike 4.0 "
+"International."
+
+#. (itstool) path: page/p
+#: C/license.page:20
+msgid "You are free:"
+msgstr "Można:"
+
+#. (itstool) path: item/title
+#: C/license.page:25
+msgid "<em>To share</em>"
+msgstr "<em>dzielić się</em>"
+
+#. (itstool) path: item/p
+#: C/license.page:26
+msgid "To copy, distribute and transmit the work."
+msgstr ", czyli kopiować, rozpowszechniać, odtwarzać i wykonywać utwór."
+
+#. (itstool) path: item/title
+#: C/license.page:29
+msgid "<em>To remix</em>"
+msgstr "<em>remiksować</em>"
+
+#. (itstool) path: item/p
+#: C/license.page:30
+msgid "To adapt the work."
+msgstr ", czyli tworzyć utwory zależne."
+
+#. (itstool) path: page/p
+#: C/license.page:33
+msgid "Under the following conditions:"
+msgstr "Na następujących warunkach:"
+
+#. (itstool) path: item/title
+#: C/license.page:38
+msgid "<em>Attribution</em>"
+msgstr "<em>Uznanie autorstwa</em>"
+
+#. (itstool) path: item/p
+#: C/license.page:39
+msgid ""
+"You must attribute the work in the manner specified by the author or "
+"licensor (but not in any way that suggests that they endorse you or your use "
+"of the work)."
+msgstr ""
+"Utwór należy oznaczyć w sposób określony przez Twórcę lub Licencjodawcę."
+
+#. (itstool) path: item/title
+#: C/license.page:46
+msgid "<em>Share Alike</em>"
+msgstr "<em>Na tych samych warunkach</em>"
+
+#. (itstool) path: item/p
+#: C/license.page:47
+msgid ""
+"If you alter, transform, or build upon this work, you may distribute the "
+"resulting work only under the same, similar or a compatible license."
+msgstr ""
+"Zmieniając utwór, przekształcając go lub tworząc na jego podstawie, wolno "
+"rozpowszechniać powstały utwór zależny jedynie na tej samej, podobnej lub "
+"zgodnej licencji."
+
+#. (itstool) path: page/p
+#: C/license.page:53
+msgid ""
+"For the full text of the license, see the <link href=\"http://"
+"creativecommons.org/licenses/by-sa/4.0/legalcode\">CreativeCommons website</"
+"link>, or read the full <link href=\"http://creativecommons.org/licenses/by-"
+"sa/4.0/\">Commons Deed</link>."
+msgstr ""
+"Pełny tekst licencji dostępny jest na stronie <link href=\"http://"
+"creativecommons.org/licenses/by-sa/4.0/legalcode\">Creative Commons</link>; "
+"można również przeczytać <link href=\"http://creativecommons.org/licenses/by-"
+"sa/4.0/\">podsumowanie</link>."
+
+#. (itstool) path: page/title
+#: C/shortcuts.page:18
+msgid "Keyboard Shortcuts"
+msgstr "Skróty klawiszowe"
+
+#. (itstool) path: page/p
+#: C/shortcuts.page:20
+msgid ""
+"<app>Taquin</app> can easily be used with keyboard. The <link xref=\"15-"
+"Puzzle#15-keyboard\">15-Puzzle</link> and <link xref=\"16-Puzzle#16-keyboard"
+"\">16-Puzzle</link> both have specific shortcuts."
+msgstr ""
+"W grę <app>Taquin</app> można łatwo grać za pomocą klawiatury. <link xref="
+"\"15-Puzzle#15-keyboard\">Puzzle 15-częściowe</link> i <link xref=\"16-"
+"Puzzle#16-keyboard\">16-częściowe</link> mają kilka oddzielnych skrótów."
+
+#. (itstool) path: section/title
+#: C/shortcuts.page:23
+msgid "In-game shortcuts"
+msgstr "Skróty w grze"
+
+#. (itstool) path: td/p
+#: C/shortcuts.page:26
+msgid "Show new-game screen"
+msgstr "Wyświetlenie ekranu nowej gry"
+
+#. (itstool) path: td/p
+#: C/shortcuts.page:27
+msgid "<keyseq><key>Ctrl</key><key>N</key></keyseq>"
+msgstr "<keyseq><key>Ctrl</key><key>N</key></keyseq>"
+
+#. (itstool) path: td/p
+#: C/shortcuts.page:30
+msgid "Undo last move"
+msgstr "Cofnięcie ostatniego ruchu"
+
+#. (itstool) path: td/p
+#: C/shortcuts.page:31
+msgid "<keyseq><key>Ctrl</key><key>Z</key></keyseq>"
+msgstr "<keyseq><key>Ctrl</key><key>Z</key></keyseq>"
+
+#. (itstool) path: section/title
+#: C/shortcuts.page:36
+msgid "15-Puzzle shortcuts"
+msgstr "Skróty puzzli 15-częściowych"
+
+#. (itstool) path: td/p
+#: C/shortcuts.page:39 C/shortcuts.page:52
+msgid "Change selected tile"
+msgstr "Zmiana zaznaczonego elementu"
+
+#. (itstool) path: td/p
+#: C/shortcuts.page:40 C/shortcuts.page:53
+msgid "<key>Left</key>, <key>Right</key>, <key>Up</key> and <key>Down</key>"
+msgstr ""
+"<key>W lewo</key>, <key>W prawo</key>, <key>W górę</key> i <key>W dół</key>"
+
+#. (itstool) path: td/p
+#: C/shortcuts.page:43
+msgid "Push tile in empty space’s direction"
+msgstr "Przesunięcie elementu w kierunku pustego miejsca"
+
+#. (itstool) path: td/p
+#: C/shortcuts.page:44
+msgid "<key>Space</key> or <key>KP_Enter</key>"
+msgstr "<key>Spacja</key> lub <key>Enter na klawiaturze numerycznej</key>"
+
+#. (itstool) path: section/title
+#: C/shortcuts.page:49
+msgid "16-Puzzle shortcuts"
+msgstr "Skróty puzzli 16-częściowych"
+
+#. (itstool) path: td/p
+#: C/shortcuts.page:56
+msgid "Move row"
+msgstr "Przeniesienie rzędu"
+
+#. (itstool) path: td/p
+#: C/shortcuts.page:57
+msgid ""
+"<keyseq><key>Ctrl</key><key>Left</key></keyseq> and <keyseq><key>Ctrl</"
+"key><key>Right</key></keyseq>"
+msgstr ""
+"<keyseq><key>Ctrl</key><key>W lewo</key></keyseq> i <keyseq><key>Ctrl</"
+"key><key>W prawo</key></keyseq>"
+
+#. (itstool) path: td/p
+#: C/shortcuts.page:60
+msgid "Move column"
+msgstr "Przeniesienie kolumny"
+
+#. (itstool) path: td/p
+#: C/shortcuts.page:61
+msgid ""
+"<keyseq><key>Ctrl</key><key>Up</key></keyseq> and <keyseq><key>Ctrl</"
+"key><key>Down</key></keyseq>"
+msgstr ""
+"<keyseq><key>Ctrl</key><key>W dół</key></keyseq> i <keyseq><key>Ctrl</"
+"key><key>W dół</key></keyseq>"
+
+#. (itstool) path: section/title
+#: C/shortcuts.page:66
+msgid "Start Screen shortcuts"
+msgstr "Skróty ekranu startowego"
+
+#. (itstool) path: td/p
+#: C/shortcuts.page:69
+msgid "New Game"
+msgstr "Nowa gra"
+
+#. (itstool) path: td/p
+#: C/shortcuts.page:70
+msgid "<keyseq><key>Ctrl</key><key>Shift</key><key>N</key></keyseq>"
+msgstr "<keyseq><key>Ctrl</key><key>Shift</key><key>N</key></keyseq>"
+
+#. (itstool) path: td/p
+#: C/shortcuts.page:73
+msgid "Back to previous game (if any)"
+msgstr "Powrót do poprzedniej gry (jeśli jakaś jest)"
+
+#. (itstool) path: td/p
+#: C/shortcuts.page:74
+msgid "<key>Escape</key>"
+msgstr "<key>Esc</key>"
+
+#. (itstool) path: section/title
+#: C/shortcuts.page:79
+msgid "General shortcuts"
+msgstr "Ogólne skróty"
+
+#. (itstool) path: td/p
+#: C/shortcuts.page:82
+msgid "Help"
+msgstr "Pomoc"
+
+#. (itstool) path: td/p
+#: C/shortcuts.page:83
+msgid "<key>F1</key>"
+msgstr "<key>F1</key>"
+
+#. (itstool) path: td/p
+#: C/shortcuts.page:86
+msgid "Quit"
+msgstr "Zakończenie gry"
+
+#. (itstool) path: td/p
+#: C/shortcuts.page:87
+msgid "<keyseq><key>Ctrl</key><key>Q</key></keyseq>"
+msgstr "<keyseq><key>Ctrl</key><key>Q</key></keyseq>"
+
+#. (itstool) path: page/title
+#: C/start-screen.page:18
+msgid "Start Screen"
+msgstr "Ekran startowy"
+
+#. (itstool) path: page/p
+#: C/start-screen.page:19
+msgid ""
+"The <em>Start Screen</em> is the place to select your options and launch a "
+"new game, either a <link xref=\"15-Puzzle\">15-Puzzle</link> or a <link xref="
+"\"16-Puzzle\">16-Puzzle</link>."
+msgstr ""
+"<em>Ekran startowy</em> to miejsce wyboru opcji i rozpoczynania nowej gry "
+"<link xref=\"15-Puzzle\">puzzli 15-częściowych</link> lub <link xref=\"16-"
+"Puzzle\">16-częściowych</link>."
+
+#. (itstool) path: page/p
+#: C/start-screen.page:20
+msgid ""
+"It can be accessed at any time from a game by pressing the <gui>Start Over</"
+"gui> button."
+msgstr ""
+"Można do niego przejść w każdej chwili naciskając przycisk <gui>Nowa gra</"
+"gui>."
