@@ -3,10 +3,7 @@ HELP_ID = gnome-taquin
 
 HELP_MEDIA = \
 	figures/logo.png            \
-	figures/logo32.png          \
-	figures/start-screen.png    \
-	figures/fifteen.png         \
-	figures/sixteen.png
+	figures/logo32.png
 
 HELP_FILES = \
 	15-Puzzle.page      \
