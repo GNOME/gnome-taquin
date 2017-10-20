@@ -2,7 +2,7 @@
 # Copyright (C) 2015 gnome-taquin's COPYRIGHT HOLDER
 # This file is distributed under the same license as the gnome-taquin package.
 #
-# Matej Urbančič <mateju@svn.gnome.org>, 2015-2016
+# Matej Urbančič <mateju@svn.gnome.org>, + 2015–2017.
 #
 msgid ""
 msgstr ""
@@ -26,15 +26,15 @@ msgstr "_Zvok"
 
 #: ../data/taquin-menus.ui.h:2
 msgid "_Help"
-msgstr "_Help"
+msgstr "P_omoč"
 
 #: ../data/taquin-menus.ui.h:3
 msgid "_About"
-msgstr "_About"
+msgstr "_O programu"
 
 #: ../data/taquin-menus.ui.h:4
 msgid "_Quit"
-msgstr "_Quit"
+msgstr "_Končaj"
 
 #: ../data/taquin-screens.ui.h:1
 msgid "3 × 3"
@@ -74,36 +74,31 @@ msgstr "_Začni znova"
 
 #: ../data/taquin.ui.h:3
 msgid "Configure a new game"
-msgstr "Začni novo igro"
+msgstr "Nastavi novo igro"
 
 #: ../data/taquin.ui.h:4
 msgid "Start a new game"
-msgstr "Start a new game"
+msgstr "Začni novo igro"
 
 #: ../data/org.gnome.taquin.appdata.xml.in.h:1
 msgid "GNOME Taquin"
-msgstr "Slikovna sestavljanka GNOME"
+msgstr "GNOME Taquin"
 
 #: ../data/org.gnome.taquin.appdata.xml.in.h:2
 #: ../data/org.gnome.taquin.desktop.in.h:3
 msgid "Slide tiles to their correct places"
-msgstr "Premakni ploščice na ustrezna mesta"
+msgstr "Premakni ploščice slike na ustrezna mesta"
 
 #: ../data/org.gnome.taquin.appdata.xml.in.h:3
-msgid ""
-"Taquin is a computer version of the 15-puzzle and other sliding puzzles."
-msgstr ""
-"Igra Taquin je računalniška različica Igre petnajst in drugih podobnih "
-"premičnic."
+msgid "Taquin is a computer version of the 15-puzzle and other sliding puzzles."
+msgstr "Igra Taquin je računalniška različica igre »Petnajst« in drugih podobnih premičnic."
 
 #: ../data/org.gnome.taquin.appdata.xml.in.h:4
-msgid ""
-"The object of Taquin is to move tiles so that they reach their places, "
+msgid "The object of Taquin is to move tiles so that they reach their places, "
 "either indicated with numbers, or with parts of a great image."
-msgstr ""
-"Cilj premičnice Taquin, znane tudi kot igre petnajst, je premakniti ploščice "
-"na prava (urejena) mesta. Ploščice so lahko označene s številkami, lahko pa "
-"skupaj sestavljajo sliko."
+msgstr "Cilj igre Taquin, znane tudi kot igre Petnajst, je premakniti ploščice "
+"na ustrezna mesta. Ploščice so lahko označene s številkami, lahko pa skupaj"
+"sestavljajo sliko."
 
 #: ../data/org.gnome.taquin.appdata.xml.in.h:5
 msgid "A GNOME taquin game preview"
@@ -116,7 +111,7 @@ msgstr "Projekt GNOME"
 #: ../data/org.gnome.taquin.desktop.in.h:1 ../src/taquin-main.vala:76
 #: ../src/taquin-main.vala:133 ../src/taquin-main.vala:237
 msgid "Taquin"
-msgstr "Premičnica Taquin ali Igra 15"
+msgstr "Premičnica Taquin"
 
 #: ../data/org.gnome.taquin.desktop.in.h:2
 msgid "15-puzzle"
@@ -135,17 +130,17 @@ msgid ""
 "The game offers to play with a board size from 3 to 5. The setting could be "
 "set from 2 (good for testing) to 9, limited by the way files are selected."
 msgstr ""
-"Igra omogoča velikosti plošče s stranicami od 3 do 5, je pa mogoče nastaviti "
-"vrednosti od 2 (za preizkušanje) do 9. Velikosti so omejene z izbranimi "
-"datotekami."
+"Igra podpira velikosti igralne plošč s stranicami od 3 do 5, je pa mogoče "
+"nastaviti vrednosti od 2 (za preizkus) do 9. Velikosti so omejene z izbro "
+"datoteke."
 
 #: ../data/org.gnome.taquin.gschema.xml.h:3
 msgid "Name of the theme folder."
-msgstr "Ime mape teme."
+msgstr "Ime mape, v kateri so teme."
 
 #: ../data/org.gnome.taquin.gschema.xml.h:4
 msgid "Taquin has two default themes: 'cats' and 'numbers'."
-msgstr "Premičnica ima dve privzeti temi: 'mačne' in 'številke'."
+msgstr "Igra ima dve privzeti temi: 'mačke' in 'številke'."
 
 #: ../data/org.gnome.taquin.gschema.xml.h:5
 msgid "Sound"
@@ -169,23 +164,23 @@ msgstr "prav, če je okno razpeto."
 
 #: ../src/game-window.vala:128
 msgid "_Start Game"
-msgstr "_Start Game"
+msgstr "_Začni z igro"
 
 #: ../src/game-window.vala:153
 msgid "Undo your most recent move"
-msgstr "Razveljavi  zadnjo potezo"
+msgstr "Razveljavi zadnjo potezo"
 
 #: ../src/taquin-main.vala:45
 msgid "Play the classical 1880s’ 15-puzzle"
-msgstr "Začni klasično igro iz leta 1880 s 15 polji."
+msgstr "Začni klasično igro s 15 polji iz leta 1880."
 
 #: ../src/taquin-main.vala:46
 msgid "Try this fun alternative 16-puzzle"
-msgstr "Preizkusite to drugačno sestavljanko s 16 polji."
+msgstr "Preizkusite sestavljanko s 16 polji."
 
 #: ../src/taquin-main.vala:47
 msgid "Sets the puzzle edges’ size (3-5, 2-9 for debug)"
-msgstr "Nastavi velikost plošče (3-5, 2-9 za razhroščevanje)"
+msgstr "Nastavi velikost plošče (3–5, 2–9 za razhroščevanje)"
 
 #: ../src/taquin-main.vala:48
 msgid "Turn off the sound"
@@ -201,11 +196,11 @@ msgstr "Izpiši različico programa in končaj"
 
 #: ../src/taquin-main.vala:233
 msgid "(see COPYING.themes for informations)"
-msgstr "(za več informacij si oglejte vsebino datoteke COPYING.themes)"
+msgstr "(za več podrobnosti si oglejte vsebino datoteke COPYING.themes)"
 
 #: ../src/taquin-main.vala:241
 msgid "A classic 15-puzzle game"
-msgstr "Običajna sestavljanka s 15 drsečimi bloki"
+msgstr "Klasična sestavljanka s 15 drsečimi ploščicami"
 
 #: ../src/taquin-main.vala:245
 msgid "translator-credits"
@@ -217,7 +212,7 @@ msgstr "Te ploščice ni mogoče premakniti!"
 
 #: ../src/taquin-main.vala:292
 msgid "Bravo! You finished the game!"
-msgstr "Bravo! Igra je končana!"
+msgstr "Odlično! Igra je končana!"
 
 #: ../src/taquin-main.vala:310
 #, c-format
@@ -233,8 +228,4 @@ msgid "Theme: Numbers ▾"
 msgstr "Tema: številke ▾"
 
 #~ msgid "Start a new game as configured"
-#~ msgstr "Začni novo igro kot nastavljeno"
-
-#, fuzzy
-#~ msgid "Puzzle with arrays"
-#~ msgstr "Odpri _del z %s"
+#~ msgstr "Začni novo, nastavljeno igro"
