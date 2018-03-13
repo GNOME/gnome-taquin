@@ -1,0 +1,235 @@
+# Croatian translation for gnome-taquin.
+# Copyright (C) 2018 gnome-taquin's COPYRIGHT HOLDER
+# This file is distributed under the same license as the gnome-taquin package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: gnome-taquin master\n"
+"Report-Msgid-Bugs-To: https://bugzilla.gnome.org/enter_bug.cgi?product=gnome-"
+"taquin&keywords=I18N+L10N&component=general\n"
+"POT-Creation-Date: 2018-02-07 23:55+0000\n"
+"PO-Revision-Date: 2018-03-14 00:25+0100\n"
+"Language-Team: Croatian <hr@li.org>\n"
+"Language: hr\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=3; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && n"
+"%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2);\n"
+"Last-Translator: \n"
+"X-Generator: Poedit 2.0.6\n"
+
+#: ../data/taquin-menus.ui.h:1
+msgid "_Sound"
+msgstr "_Zvuk"
+
+#: ../data/taquin-menus.ui.h:2
+msgid "_Help"
+msgstr "_Priručnik"
+
+#: ../data/taquin-menus.ui.h:3
+msgid "_About"
+msgstr "_O programu"
+
+#: ../data/taquin-menus.ui.h:4
+msgid "_Quit"
+msgstr "_Zatvori"
+
+#: ../data/taquin-screens.ui.h:1
+msgid "3 × 3"
+msgstr "3 × 3"
+
+#: ../data/taquin-screens.ui.h:2
+msgid "4 × 4"
+msgstr "4 × 4"
+
+#: ../data/taquin-screens.ui.h:3
+msgid "5 × 5"
+msgstr "5 × 5"
+
+#: ../data/taquin-screens.ui.h:4
+msgid "Cats"
+msgstr "Mačke"
+
+#: ../data/taquin-screens.ui.h:5
+msgid "Numbers"
+msgstr "Brojevi"
+
+#: ../data/taquin-screens.ui.h:6 ../data/org.gnome.taquin.desktop.in.h:5
+msgid "15-Puzzle"
+msgstr "15-slagalica"
+
+#: ../data/taquin-screens.ui.h:7 ../data/org.gnome.taquin.desktop.in.h:6
+msgid "16-Puzzle"
+msgstr "16-slagalica"
+
+#: ../data/taquin.ui.h:1
+msgid "Go back to the current game"
+msgstr "Vrati se natrag na trenutnu igru"
+
+#: ../data/taquin.ui.h:2
+msgid "_Start Over"
+msgstr "_Pokreni ponovo"
+
+#: ../data/taquin.ui.h:3
+msgid "Configure a new game"
+msgstr "Podesi novu igru"
+
+#: ../data/taquin.ui.h:4
+msgid "Start a new game"
+msgstr "Pokreni novu igru"
+
+#: ../data/org.gnome.taquin.appdata.xml.in.h:1
+msgid "GNOME Taquin"
+msgstr "GNOME Taquin"
+
+#: ../data/org.gnome.taquin.appdata.xml.in.h:2
+#: ../data/org.gnome.taquin.desktop.in.h:3
+msgid "Slide tiles to their correct places"
+msgstr "Pomičite pločice na njihova odgovarajuća mjesta"
+
+#: ../data/org.gnome.taquin.appdata.xml.in.h:3
+msgid ""
+"Taquin is a computer version of the 15-puzzle and other sliding puzzles."
+msgstr "Taquin je računalna inačica 15-slagalica i ostalih pomičnih slagalica."
+
+#: ../data/org.gnome.taquin.appdata.xml.in.h:4
+msgid ""
+"The object of Taquin is to move tiles so that they reach their places, "
+"either indicated with numbers, or with parts of a great image."
+msgstr ""
+"Cilj Taquina je pomicanje pločica tako da se poslože, prema bojevima ili "
+"dijelovima velike slike."
+
+#: ../data/org.gnome.taquin.appdata.xml.in.h:5
+msgid "A GNOME taquin game preview"
+msgstr "GNOME taquin pregled igre"
+
+#: ../data/org.gnome.taquin.appdata.xml.in.h:6
+msgid "The GNOME Project"
+msgstr "GNOME projekt"
+
+#: ../data/org.gnome.taquin.desktop.in.h:1 ../src/taquin-main.vala:76
+#: ../src/taquin-main.vala:133 ../src/taquin-main.vala:237
+msgid "Taquin"
+msgstr "Taquin"
+
+#: ../data/org.gnome.taquin.desktop.in.h:2
+msgid "15-puzzle"
+msgstr "15-slagalica"
+
+#: ../data/org.gnome.taquin.desktop.in.h:4
+msgid "puzzle;"
+msgstr "slagalica;"
+
+#: ../data/org.gnome.taquin.gschema.xml.h:1
+msgid "Number of tiles on each edge."
+msgstr "Broj pločica na svakom rubu."
+
+#: ../data/org.gnome.taquin.gschema.xml.h:2
+msgid ""
+"The game offers to play with a board size from 3 to 5. The setting could be "
+"set from 2 (good for testing) to 9, limited by the way files are selected."
+msgstr ""
+"Igra nudi igranje s pločom veličine od 3 do 5. Postavka se može postaviti od "
+"2 (prikladno za testiranje) do 9, ograničeno načinom na koji su datoteke "
+"odabrane."
+
+#: ../data/org.gnome.taquin.gschema.xml.h:3
+msgid "Name of the theme folder."
+msgstr "Naziv teme mape."
+
+#: ../data/org.gnome.taquin.gschema.xml.h:4
+msgid "Taquin has two default themes: 'cats' and 'numbers'."
+msgstr "Taquin ima dvije zadane teme: 'mačke' i 'brojeve'."
+
+#: ../data/org.gnome.taquin.gschema.xml.h:5
+msgid "Sound"
+msgstr "Zvuk"
+
+#: ../data/org.gnome.taquin.gschema.xml.h:6
+msgid "Whether or not to play event sounds."
+msgstr "Treba li ili ne reproducirati zvukove događaja."
+
+#: ../data/org.gnome.taquin.gschema.xml.h:7
+msgid "Width of the window in pixels."
+msgstr "Širina prozora u pikselima."
+
+#: ../data/org.gnome.taquin.gschema.xml.h:8
+msgid "Height of the window in pixels."
+msgstr "Visina prozora u pikselima."
+
+#: ../data/org.gnome.taquin.gschema.xml.h:9
+msgid "true if the window is maximized."
+msgstr "istinito ako je prozor uvećan."
+
+#: ../src/game-window.vala:128
+msgid "_Start Game"
+msgstr "_Pokreni igru"
+
+#: ../src/game-window.vala:153
+msgid "Undo your most recent move"
+msgstr "Poništi posljednji potez"
+
+#: ../src/taquin-main.vala:45
+msgid "Play the classical 1880s’ 15-puzzle"
+msgstr "Igrajte klasičnu 15-slagalicu iz 1880 godine"
+
+#: ../src/taquin-main.vala:46
+msgid "Try this fun alternative 16-puzzle"
+msgstr "Probajte ovu zabavnu alternativnu 16-slagalicu"
+
+#: ../src/taquin-main.vala:47
+msgid "Sets the puzzle edges’ size (3-5, 2-9 for debug)"
+msgstr "Postavi veličinu rubova slagalice (3-5, 2-9 za otklanjanje greške)"
+
+#: ../src/taquin-main.vala:48
+msgid "Turn off the sound"
+msgstr "Isključi zvuk"
+
+#: ../src/taquin-main.vala:49
+msgid "Turn on the sound"
+msgstr "Uključi zvuk"
+
+#: ../src/taquin-main.vala:50
+msgid "Print release version and exit"
+msgstr "Prikaži inačicu izdanja i zatvori"
+
+#: ../src/taquin-main.vala:233
+msgid "(see COPYING.themes for informations)"
+msgstr "(pogledajte COPYING.themes za više informacija)"
+
+#: ../src/taquin-main.vala:241
+msgid "A classic 15-puzzle game"
+msgstr "Klasična igra 15-slagalica"
+
+#: ../src/taquin-main.vala:245
+msgid "translator-credits"
+msgstr ""
+"Launchpad Contributions:\n"
+"  Danijel Šnajder https://launchpad.net/~phantomlord-deactivatedaccount\n"
+"  Davor Buday https://launchpad.net/~davor-buday-gmail\n"
+"  Sebastien Bacher https://launchpad.net/~seb128\n"
+"  gogo https://launchpad.net/~trebelnik-stefina"
+
+#: ../src/taquin-main.vala:286
+msgid "You can’t move this tile!"
+msgstr "Ne možete pomaknuti ovu pločicu!"
+
+#: ../src/taquin-main.vala:292
+msgid "Bravo! You finished the game!"
+msgstr "Bravo! Završili ste igru!"
+
+#: ../src/taquin-main.vala:310
+#, c-format
+msgid "Size: %d × %d ▾"
+msgstr "Veličina: %d × %d ▾"
+
+#: ../src/taquin-main.vala:324
+msgid "Theme: Cats ▾"
+msgstr "Tema: Mačke ▾"
+
+#: ../src/taquin-main.vala:325
+msgid "Theme: Numbers ▾"
+msgstr "Tema: Brojevi ▾"
