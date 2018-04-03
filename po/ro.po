@@ -1,0 +1,234 @@
+# Romanian translation for gnome-taquin.
+# Copyright (C) 2018 gnome-taquin's COPYRIGHT HOLDER
+# This file is distributed under the same license as the gnome-taquin package.
+# Floren <>, 2018.
+# Daniel Șerbănescu <daniel [at] serbanescu [dot] dk>, 2018.
+msgid ""
+msgstr ""
+"Project-Id-Version: gnome-taquin master\n"
+"Report-Msgid-Bugs-To: https://bugzilla.gnome.org/enter_bug.cgi?product=gnome-"
+"taquin&keywords=I18N+L10N&component=general\n"
+"POT-Creation-Date: 2018-03-26 12:01+0000\n"
+"PO-Revision-Date: 2018-04-02 20:58+0200\n"
+"Last-Translator: Daniel Șerbănescu <daniel [at] serbanescu [dot] dk>\n"
+"Language-Team: Gnome Romanian Translation Team\n"
+"Language: ro\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=3; plural=(n==1 ? 0 : (n==0 || (n%100 > 0 && n%100 < "
+"20)) ? 1 : 2);;\n"
+"X-Generator: Virtaal 0.7.1\n"
+"X-Project-Style: gnome\n"
+
+#: ../data/taquin-menus.ui.h:1
+msgid "_Sound"
+msgstr "_Sunet"
+
+#: ../data/taquin-menus.ui.h:2
+msgid "_Help"
+msgstr "_Ajutor"
+
+#: ../data/taquin-menus.ui.h:3
+msgid "_About"
+msgstr "_Despre"
+
+#: ../data/taquin-menus.ui.h:4
+msgid "_Quit"
+msgstr "_Ieșire"
+
+#: ../data/taquin-screens.ui.h:1
+msgid "3 × 3"
+msgstr "3 × 3"
+
+#: ../data/taquin-screens.ui.h:2
+msgid "4 × 4"
+msgstr "4 × 4"
+
+#: ../data/taquin-screens.ui.h:3
+msgid "5 × 5"
+msgstr "5 × 5"
+
+#: ../data/taquin-screens.ui.h:4
+msgid "Cats"
+msgstr "Pisici"
+
+#: ../data/taquin-screens.ui.h:5
+msgid "Numbers"
+msgstr "Numere"
+
+#: ../data/taquin-screens.ui.h:6 ../data/org.gnome.taquin.desktop.in.h:5
+msgid "15-Puzzle"
+msgstr "Puzzle-15"
+
+#: ../data/taquin-screens.ui.h:7 ../data/org.gnome.taquin.desktop.in.h:6
+msgid "16-Puzzle"
+msgstr "Puzzle-16"
+
+#: ../data/taquin.ui.h:1
+msgid "Go back to the current game"
+msgstr "Navighează înapoi la jocul curent"
+
+#: ../data/taquin.ui.h:2
+msgid "_Start Over"
+msgstr "Î_ncepe din nou"
+
+#: ../data/taquin.ui.h:3
+msgid "Configure a new game"
+msgstr "Configurează un joc nou"
+
+#: ../data/taquin.ui.h:4
+msgid "Start a new game"
+msgstr "Începe un joc nou"
+
+#: ../data/org.gnome.taquin.appdata.xml.in.h:1
+msgid "GNOME Taquin"
+msgstr "Taquin GNOME"
+
+#: ../data/org.gnome.taquin.appdata.xml.in.h:2
+#: ../data/org.gnome.taquin.desktop.in.h:3
+msgid "Slide tiles to their correct places"
+msgstr "Glisați dalele la locurile lor corecte"
+
+#: ../data/org.gnome.taquin.appdata.xml.in.h:3
+msgid ""
+"Taquin is a computer version of the 15-puzzle and other sliding puzzles."
+msgstr ""
+"Taquin este o versiune pe calculator a puzzle-15 și a altor puzzle-uri de "
+"glisare."
+
+#: ../data/org.gnome.taquin.appdata.xml.in.h:4
+msgid ""
+"The object of Taquin is to move tiles so that they reach their places, "
+"either indicated with numbers, or with parts of a great image."
+msgstr ""
+"Scopul jocului de Taquin este să mutați dalele astfel încât să ajungă la "
+"locul lor, indicat fie prin numere, fie prin părțile unei imagini mari."
+
+#: ../data/org.gnome.taquin.appdata.xml.in.h:5
+msgid "A GNOME taquin game preview"
+msgstr "O previzualizare de joc taquin GNOME"
+
+#: ../data/org.gnome.taquin.appdata.xml.in.h:6
+msgid "The GNOME Project"
+msgstr "Proiectul GNOME"
+
+#: ../data/org.gnome.taquin.desktop.in.h:1 ../src/taquin-main.vala:76
+#: ../src/taquin-main.vala:133 ../src/taquin-main.vala:237
+msgid "Taquin"
+msgstr "Taquin"
+
+#: ../data/org.gnome.taquin.desktop.in.h:2
+msgid "15-puzzle"
+msgstr "puzzle-15"
+
+#: ../data/org.gnome.taquin.desktop.in.h:4
+msgid "puzzle;"
+msgstr "puzzle;"
+
+#: ../data/org.gnome.taquin.gschema.xml.h:1
+msgid "Number of tiles on each edge."
+msgstr "Numărul de dale pe fiecare margine."
+
+#: ../data/org.gnome.taquin.gschema.xml.h:2
+msgid ""
+"The game offers to play with a board size from 3 to 5. The setting could be "
+"set from 2 (good for testing) to 9, limited by the way files are selected."
+msgstr ""
+"Jocul oferă să fie jucat cu o dimensiune a tablei de la 3 la 5. Configurarea "
+"poate fi stabilită de la 2 (bun pentru testare) la 9, limitat prin modul în "
+"care sunt selectate fișierele."
+
+#: ../data/org.gnome.taquin.gschema.xml.h:3
+msgid "Name of the theme folder."
+msgstr "Numele dosarului de teme."
+
+#: ../data/org.gnome.taquin.gschema.xml.h:4
+msgid "Taquin has two default themes: 'cats' and 'numbers'."
+msgstr "Taquin are două teme implicite: „pisici” și „numere”."
+
+#: ../data/org.gnome.taquin.gschema.xml.h:5
+msgid "Sound"
+msgstr "Sunet"
+
+#: ../data/org.gnome.taquin.gschema.xml.h:6
+msgid "Whether or not to play event sounds."
+msgstr "Dacă se redau sau nu sunetele de evenimente."
+
+#: ../data/org.gnome.taquin.gschema.xml.h:7
+msgid "Width of the window in pixels."
+msgstr "Lățimea ferestrei în pixeli."
+
+#: ../data/org.gnome.taquin.gschema.xml.h:8
+msgid "Height of the window in pixels."
+msgstr "Înălțimea ferestrei în pixeli."
+
+#: ../data/org.gnome.taquin.gschema.xml.h:9
+msgid "true if the window is maximized."
+msgstr "adevărat dacă fereastra este maximizată."
+
+#: ../src/game-window.vala:128
+msgid "_Start Game"
+msgstr "Î_ncepe jocul"
+
+#: ../src/game-window.vala:153
+msgid "Undo your most recent move"
+msgstr "Anulează cea mai recentă mutare"
+
+#: ../src/taquin-main.vala:45
+msgid "Play the classical 1880s’ 15-puzzle"
+msgstr "Jucați clasicul puzzle-15 din anii 1880"
+
+#: ../src/taquin-main.vala:46
+msgid "Try this fun alternative 16-puzzle"
+msgstr "Încercați acest distractiv puzzle-16 alternativ"
+
+#: ../src/taquin-main.vala:47
+msgid "Sets the puzzle edges’ size (3-5, 2-9 for debug)"
+msgstr ""
+"Stabilește dimensiunea marginilor puzzle-ului (3-5, 2-9 pentru depanare)"
+
+#: ../src/taquin-main.vala:48
+msgid "Turn off the sound"
+msgstr "Oprește sunetul"
+
+#: ../src/taquin-main.vala:49
+msgid "Turn on the sound"
+msgstr "Pornește sunetul"
+
+#: ../src/taquin-main.vala:50
+msgid "Print release version and exit"
+msgstr "Tipărește versiunea de lansare și ieși"
+
+#: ../src/taquin-main.vala:233
+msgid "(see COPYING.themes for informations)"
+msgstr "(consultați COPYING.themes pentru informații)"
+
+#: ../src/taquin-main.vala:241
+msgid "A classic 15-puzzle game"
+msgstr "Un joc puzzle-15 clasic"
+
+#: ../src/taquin-main.vala:245
+msgid "translator-credits"
+msgstr "Florentina Mușat <florentina.musat.28@gmail.com>"
+
+#: ../src/taquin-main.vala:286
+msgid "You can’t move this tile!"
+msgstr "Nu puteți muta dala aceasta!"
+
+#: ../src/taquin-main.vala:292
+msgid "Bravo! You finished the game!"
+msgstr "Bravo! Ați terminat jocul!"
+
+#: ../src/taquin-main.vala:310
+#, c-format
+msgid "Size: %d × %d ▾"
+msgstr "Dimensiune: %d × %d ▾"
+
+#: ../src/taquin-main.vala:324
+msgid "Theme: Cats ▾"
+msgstr "Temă: pisici ▾"
+
+#: ../src/taquin-main.vala:325
+msgid "Theme: Numbers ▾"
+msgstr "Temă: numere ▾"
