@@ -46,7 +46,7 @@ button.radio-like-toggle:backdrop {
 GtkModelButton.radio-like-toggle,
 GtkMenuButton.menubutton-like-combo {
     border-radius:15px;
-    outline-radius:13px;
+    -gtk-outline-radius:13px;
 }
 button.radio-like-toggle,
 button.menubutton-like-combo {
@@ -55,14 +55,14 @@ button.menubutton-like-combo {
 }
 
 GtkMenuButton.menubutton-like-combo:checked,
-GtkMenuButton.menubutton-like-combo:prelight,
+GtkMenuButton.menubutton-like-combo:hover,
 button.menubutton-like-combo:checked,
 button.menubutton-like-combo:hover {
     color:#2e3436; /* gtk-contained.css’ theme_fg_color */
     background:-gtk-gradient (radial, center center, 0, center center, 0.5, from(rgba (255, 255, 255, 1)), to(rgba (255, 255, 255, 0)));
 }
 GtkMenuButton.menubutton-like-combo:checked:backdrop,
-GtkMenuButton.menubutton-like-combo:prelight:backdrop,
+GtkMenuButton.menubutton-like-combo:hover:backdrop,
 button.menubutton-like-combo:checked:backdrop,
 button.menubutton-like-combo:hover:backdrop {
     color:@theme_unfocused_fg_color;
