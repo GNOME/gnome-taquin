@@ -59,7 +59,7 @@
       </item>
       <item><p>You can always undo a move with the <keyseq><key>Ctrl</key><key>Z</key></keyseq> keys.</p>
       </item>
-      <item><p>At the end of the game, or when you want to switch games, use the the <keyseq><key>Ctrl</key><key>N</key></keyseq> keys to go to the <link xref="start-screen">Start Screen</link>.</p>
+      <item><p>At the end of the game, or when you want to switch games, use the <keyseq><key>Ctrl</key><key>N</key></keyseq> keys to go to the <link xref="start-screen">Start Screen</link>.</p>
       </item>
     </steps>
 
