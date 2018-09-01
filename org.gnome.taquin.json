@@ -29,7 +29,7 @@
             "sources": [
                 {
                     "type": "git",
-                    "url": "git://git.gnome.org/gnome-taquin"
+                    "url": "https://gitlab.gnome.org/GNOME/gnome-taquin.git"
                 }
             ]
         }
