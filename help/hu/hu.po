@@ -1,21 +1,22 @@
-# Hungarian translation of gnome-taquin help
-# Copyright (C) 2016. Free Software Foundation, Inc.
+# Hungarian translation for gnome-taquin help.
+# Copyright (C) 2016, 2018. Free Software Foundation, Inc.
 # This file is distributed under the same license as the user help.
 #
 # Gabor Kelemen <kelemeng at ubuntu dot com>, 2016.
+# Balázs Úr <urbalazs at gmail dot com>, 2018.
 msgid ""
 msgstr ""
 "Project-Id-Version: gnome-taquin_help master\n"
-"POT-Creation-Date: 2016-03-05 10:34+0000\n"
-"PO-Revision-Date: 2016-03-07 22:07+0100\n"
-"Last-Translator: Gabor Kelemen <kelemeng at ubuntu dot com>\n"
+"POT-Creation-Date: 2018-08-09 13:38+0000\n"
+"PO-Revision-Date: 2018-09-13 23:11+0200\n"
+"Last-Translator: Balázs Úr <urbalazs@gmail.com>\n"
 "Language-Team: Hungarian <openscope at googlegroups dot com>\n"
 "Language: hu\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
-"X-Generator: Lokalize 1.5\n"
+"X-Generator: Lokalize 1.2\n"
 
 #. Put one translator per line, in the form NAME <EMAIL>, YEAR1, YEAR2
 msgctxt "_"
@@ -183,13 +184,13 @@ msgstr ""
 #. (itstool) path: item/p
 #: C/15-Puzzle.page:66 C/16-Puzzle.page:62
 msgid ""
-"At the end of the game, or when you want to switch games, use the the "
+"At the end of the game, or when you want to switch games, use the "
 "<keyseq><key>Ctrl</key><key>N</key></keyseq> keys to go to the <link xref="
 "\"start-screen\">Start Screen</link>."
 msgstr ""
-"A játék végén, vagy ha a játékmódok közt szeretne váltani, nyomja meg a "
-"<keyseq><key>Ctrl</key><key>N</key></keyseq> kombinációt a <link xref="
-"\"start-screen\">Kezdőképernyőre</link> való visszatéréshez."
+"A játék végén, vagy ha a játékok közt szeretne váltani, használja a <keyseq><"
+"key>Ctrl</key><key>N</key></keyseq> kombinációt a <link xref=\"start-screen\">"
+"Kezdőképernyőre</link> való lépéshez."
 
 #. (itstool) path: section/p
 #: C/15-Puzzle.page:70 C/16-Puzzle.page:66
@@ -218,8 +219,8 @@ msgid ""
 "is pushed out of the board is placed at the opposite side of the row or "
 "column."
 msgstr ""
-"A sor vagy oszlop összes csempéje egy irányba fog mozdulni. A tábláról kitolt "
-"csempe a sor vagy oszlop másik végére kerül."
+"A sor vagy oszlop összes csempéje egy irányba fog mozdulni. A tábláról "
+"kitolt csempe a sor vagy oszlop másik végére kerül."
 
 #. (itstool) path: item/p
 #: C/16-Puzzle.page:41
@@ -240,8 +241,7 @@ msgid ""
 msgstr ""
 "Használja a <key>Balra</key>, <key>Jobbra</key>, <key>Fel</key> és <key>Le</"
 "key> nyilakat a mozgatni kívánt sor vagy oszlop kiválasztásához. Az éppen "
-"kijelölt "
-"sort és oszlopot két fény jelöli a tábla körül."
+"kijelölt sort és oszlopot két fény jelöli a tábla körül."
 
 #. (itstool) path: item/p
 #: C/16-Puzzle.page:58
@@ -251,10 +251,11 @@ msgid ""
 "<keyseq><key>Ctrl</key><key>Up</key></keyseq> and <keyseq><key>Ctrl</"
 "key><key>Down</key></keyseq> keys to move a column."
 msgstr ""
-"Használja a <keyseq><key>Ctrl</key><key>Balra</key></keyseq> és <keyseq><key>"
-"Ctrl</key><key>Jobbra</key></keyseq> kombinációt egy sor mozgatására, vagy a "
-"<keyseq><key>Ctrl</key><key>Fel</key></keyseq> és <keyseq><key>Ctrl</key><key>"
-"Le</key></keyseq> kombinációt egy oszlop mozgatására."
+"Használja a <keyseq><key>Ctrl</key><key>Balra</key></keyseq> és "
+"<keyseq><key>Ctrl</key><key>Jobbra</key></keyseq> kombinációt egy sor "
+"mozgatására, vagy a <keyseq><key>Ctrl</key><key>Fel</key></keyseq> és "
+"<keyseq><key>Ctrl</key><key>Le</key></keyseq> kombinációt egy oszlop "
+"mozgatására."
 
 #. (itstool) path: page/title
 #: C/beginning.page:18
@@ -267,8 +268,8 @@ msgid ""
 "When <app>Taquin</app> is opened for the first time, it displays a "
 "traditional <link xref=\"15-Puzzle\">15-Puzzle</link> game."
 msgstr ""
-"A <app>Taquin</app> első megnyitásakor egy hagyományos <link "
-"xref=\"15-Puzzle\">15-ös kirakó</link> játékot jelenít meg."
+"A <app>Taquin</app> első megnyitásakor egy hagyományos <link xref=\"15-Puzzle"
+"\">15-ös kirakó</link> játékot jelenít meg."
 
 #. (itstool) path: page/p
 #: C/beginning.page:22
@@ -292,8 +293,8 @@ msgid ""
 "it could be a <link xref=\"16-Puzzle\">16-Puzzle</link> game."
 msgstr ""
 "Az első megnyitása után a <app>Taquin</app> az utoljára játszottal egyező "
-"típusú és méretű kirakót jelenít meg, így ez egy <link xref=\"16-Puzzle\">"
-"16-os kirakó</link> is lehet."
+"típusú és méretű kirakót jelenít meg, így ez egy <link xref=\"16-Puzzle\">16-"
+"os kirakó</link> is lehet."
 
 #. (itstool) path: info/title
 #: C/index.page:8
@@ -331,8 +332,8 @@ msgid ""
 "traditional 15-Puzzle invented in the early 1880s, and the more recent 16-"
 "Puzzle variant."
 msgstr ""
-"A <app>Taquin</app> egy csempecsúsztatós kirakós játék. Tartalmazza az "
-"1880-as évek elején kitalált hagyományos 15-ös kirakót, és a későbbi 16-os "
+"A <app>Taquin</app> egy csempecsúsztatós kirakós játék. Tartalmazza az 1880-"
+"as évek elején kitalált hagyományos 15-ös kirakót, és a későbbi 16-os "
 "változatot is."
 
 #. (itstool) path: section/title
@@ -608,9 +609,9 @@ msgid ""
 "new game, either a <link xref=\"15-Puzzle\">15-Puzzle</link> or a <link xref="
 "\"16-Puzzle\">16-Puzzle</link>."
 msgstr ""
-"A <em>Kezdőképernyőn</em> választhat a beállítások közül, és indíthat új <"
-"link xref=\"15-Puzzle\">15-ös</link> vagy <link xref=\"16-Puzzle\">16-os<"
-"/link> kirakót."
+"A <em>Kezdőképernyőn</em> választhat a beállítások közül, és indíthat új "
+"<link xref=\"15-Puzzle\">15-ös</link> vagy <link xref=\"16-Puzzle\">16-os</"
+"link> kirakót."
 
 #. (itstool) path: page/p
 #: C/start-screen.page:20
