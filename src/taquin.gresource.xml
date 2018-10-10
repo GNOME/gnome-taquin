@@ -9,7 +9,4 @@
     <file preprocess="xml-stripblanks" alias="taquin-screens.ui">../data/taquin-screens.ui</file>
     <file alias="taquin.css">../data/taquin.css</file>
   </gresource>
-  <gresource prefix="/org/gnome/taquin/gtk">
-    <file preprocess="xml-stripblanks" alias="menus.ui">../data/taquin-menus.ui</file>
-  </gresource>
 </gresources>
