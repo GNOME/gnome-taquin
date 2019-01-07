@@ -206,7 +206,7 @@ public class Taquin : Gtk.Application
         {
             int random = Random.int_range (0, (int) dirlist.length());
             filename = dirlist.nth_data(random);
-            unowned List<string> entry = dirlist.find_custom (filename, strcmp);
+            unowned List<weak string> entry = dirlist.find_custom (filename, strcmp);
             dirlist.remove_link (entry);
         } while (filename[0] == '0' || (filename[0] != '1' && filename[0] != size.to_string ()[0] && dirlist.length () != 0));
         view.theme = Path.build_filename (DATA_DIRECTORY, "themes", settings.get_string ("theme"), filename);
