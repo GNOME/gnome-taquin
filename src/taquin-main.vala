@@ -142,11 +142,12 @@ public class Taquin : Gtk.Application
         window.undo.connect (undo_cb);
 
         // TODO use UI file?
-        set_accels_for_action ("win.new-game", {"<Primary>n"});
-        set_accels_for_action ("win.start-game", {"<Primary><Shift>n"});
-        set_accels_for_action ("win.undo", {"<Primary>z"});
-        set_accels_for_action ("win.redo", {"<Primary><Shift>z"});
-        set_accels_for_action ("win.back", {"Escape"});
+        set_accels_for_action ("win.new-game",          {        "<Primary>n"       });
+        set_accels_for_action ("win.start-game",        { "<Shift><Primary>n"       });
+        set_accels_for_action ("win.undo",              {        "<Primary>z"       });
+        set_accels_for_action ("win.redo",              { "<Shift><Primary>z"       });
+        set_accels_for_action ("win.back",              {                 "Escape"  });
+        set_accels_for_action ("win.toggle-hamburger",  {                 "F10"     });
 
         /* New-game screen signals */
         size_button = (MenuButton) builder.get_object ("size-button");

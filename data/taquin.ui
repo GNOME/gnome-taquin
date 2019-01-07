@@ -36,7 +36,7 @@
           </packing>
         </child>
         <child>
-          <object class="GtkMenuButton">
+          <object class="GtkMenuButton" id="info_button">
             <property name="visible">True</property>
             <property name="can_focus">False</property>
             <property name="receives_default">False</property>
