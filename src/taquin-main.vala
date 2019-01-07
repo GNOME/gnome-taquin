@@ -148,6 +148,7 @@ public class Taquin : Gtk.Application
         set_accels_for_action ("win.redo",              { "<Shift><Primary>z"       });
         set_accels_for_action ("win.back",              {                 "Escape"  });
         set_accels_for_action ("win.toggle-hamburger",  {                 "F10"     });
+        set_accels_for_action ("app.help",              {                 "F1"      });
 
         /* New-game screen signals */
         size_button = (MenuButton) builder.get_object ("size-button");
