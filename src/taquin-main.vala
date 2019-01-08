@@ -240,7 +240,7 @@ public class Taquin : Gtk.Application
         show_about_dialog (window,
                            "name", _("Taquin"),
                            "version", VERSION,
-                           "copyright", "Copyright © 2014-2016 Arnaud Bonatti",
+                           "copyright", "Copyright © 2014-2019 Arnaud Bonatti",
                            "license-type", License.GPL_3_0,
                            "comments", _("A classic 15-puzzle game"),
                            "authors", authors,
