@@ -22,6 +22,9 @@ using Gtk;
 
 public class Taquin : Gtk.Application
 {
+    /* Translators: application name, as used in the window manager, the window title, the about dialog... */
+    internal const string PROGRAM_NAME = _("Taquin");
+
     /* Settings */
     private GLib.Settings settings;
     private static int tmp_size = 0;
@@ -42,13 +45,26 @@ public class Taquin : Gtk.Application
 
     private static const OptionEntry[] option_entries =
     {
-        { "fifteen", 0, 0, OptionArg.NONE, null, N_("Play the classical 1880s’ 15-puzzle"), null},
-        { "sixteen", 0, 0, OptionArg.NONE, null, N_("Try this fun alternative 16-puzzle"), null},
-        { "size", 's', 0, OptionArg.INT, ref tmp_size, N_("Sets the puzzle edges’ size (3-5, 2-9 for debug)"), null},
-        { "mute", 0, 0, OptionArg.NONE, null, N_("Turn off the sound"), null},
-        { "unmute", 0, 0, OptionArg.NONE, null, N_("Turn on the sound"), null},
-        { "version", 'v', 0, OptionArg.NONE, null, N_("Print release version and exit"), null},
-        /* { "no-gtk", 0, 0, OptionArg.NONE, null, N_("Begins a console game"), null}, TODO */
+        /* Translators: command-line option description, see 'gnome-taquin --help' */
+        { "fifteen", 0, 0,  OptionArg.NONE, null,       N_("Play the classical 1880s’ 15-puzzle"), null},
+
+        /* Translators: command-line option description, see 'gnome-taquin --help' */
+        { "sixteen", 0, 0, OptionArg.NONE, null,        N_("Try this fun alternative 16-puzzle"), null},
+
+        /* Translators: command-line option description, see 'gnome-taquin --help' */
+        { "size", 's', 0, OptionArg.INT, ref tmp_size,  N_("Sets the puzzle edges’ size (3-5, 2-9 for debug)"), null},
+
+        /* Translators: command-line option description, see 'gnome-taquin --help' */
+        { "mute", 0, 0, OptionArg.NONE, null,           N_("Turn off the sound"), null},
+
+        /* Translators: command-line option description, see 'gnome-taquin --help' */
+        { "unmute", 0, 0, OptionArg.NONE, null,         N_("Turn on the sound"), null},
+
+        /* Translators: command-line option description, see 'gnome-taquin --help' */
+        { "version", 'v', 0, OptionArg.NONE, null,      N_("Print release version and exit"), null},
+
+        /* Translators: command-line option description, see 'gnome-taquin --help' */
+     /* { "no-gtk", 0, 0, OptionArg.NONE, null,         N_("Begins a console game"), null}, TODO */
         { null }
     };
 
@@ -73,7 +89,7 @@ public class Taquin : Gtk.Application
         Intl.bind_textdomain_codeset (GETTEXT_PACKAGE, "UTF-8");
         Intl.textdomain (GETTEXT_PACKAGE);
 
-        Environment.set_application_name (_("Taquin"));
+        Environment.set_application_name (PROGRAM_NAME);
         Window.set_default_icon_name ("gnome-taquin");
 
         return new Taquin ().run (args);
@@ -130,7 +146,7 @@ public class Taquin : Gtk.Application
 
         /* Window */
         window = new GameWindow ("/org/gnome/taquin/ui/taquin.css",
-                                 _("Taquin"),
+                                 PROGRAM_NAME,
                                  settings.get_int ("window-width"),
                                  settings.get_int ("window-height"),
                                  settings.get_boolean ("window-is-maximized"),
@@ -141,7 +157,6 @@ public class Taquin : Gtk.Application
         window.play.connect (start_game);
         window.undo.connect (undo_cb);
 
-        // TODO use UI file?
         set_accels_for_action ("win.new-game",          {        "<Primary>n"       });
         set_accels_for_action ("win.start-game",        { "<Shift><Primary>n"       });
         set_accels_for_action ("app.quit",              {        "<Primary>q"       });
@@ -234,18 +249,21 @@ public class Taquin : Gtk.Application
                              "Mueller-rech.muenchen (Wikimedia)",
                              "Ruskis (Wikimedia)",
                              "Toyah (Wikimedia)",
+                             /* Translators: about dialog text; in the Credits, text at the end of the "Artwork by" section */
                              _("(see COPYING.themes for informations)"),
                              null };
         string[] documenters = { "Arnaud Bonatti", null };
         show_about_dialog (window,
-                           "name", _("Taquin"),
+                           "name", PROGRAM_NAME,
                            "version", VERSION,
                            "copyright", "Copyright © 2014-2019 Arnaud Bonatti",
                            "license-type", License.GPL_3_0,
+                           /* Translators: about dialog text */
                            "comments", _("A classic 15-puzzle game"),
                            "authors", authors,
                            "artists", artists,
                            "documenters", documenters,
+                            /* Translators: about dialog text; this string should be replaced by a text crediting yourselves and your translation team, or should be left empty. Do not translate literally! */
                            "translator-credits", _("translator-credits"),
                            "logo-icon-name", "gnome-taquin",
                            "website", "https://wiki.gnome.org/Apps/Taquin",
@@ -287,12 +305,14 @@ public class Taquin : Gtk.Application
 
     private void cannot_move_cb ()
     {
+        /* Translators: notification, as a subtitle of the headerbar; on the 15-Puzzle game, if the user clicks a tile that cannot move */
         window.set_subtitle (_("You can’t move this tile!"));
     }
 
     private void game_complete_cb ()
     {
         window.finish_game ();
+        /* Translators: notification, as a subtitle of the headerbar; on both games, if the user solves the puzzle */
         window.set_subtitle (_("Bravo! You finished the game!"));
         window.undo_action.set_enabled (false);    // Taquin specific
         play_sound ("gameover");
@@ -311,6 +331,7 @@ public class Taquin : Gtk.Application
     }
     private void update_size_button_label (int size)
     {
+        /* Translators: when configuring a new game, button label for the size of the game ("3 × 3", or 4, or 5) */
         size_button.set_label (_("Size: %d × %d ▾").printf (size, size));
     }
 
@@ -325,8 +346,12 @@ public class Taquin : Gtk.Application
     {
         switch (theme)
         {
+            /* Translators: when configuring a new game, button label for the theme, if the current theme is Cats */
             case "cats":    theme_button.set_label (_("Theme: Cats ▾")); break;
+
+            /* Translators: when configuring a new game, button label for the theme, if the current theme is Numbers */
             case "numbers": theme_button.set_label (_("Theme: Numbers ▾")); break;
+
             default: warn_if_reached (); break;
         }
 

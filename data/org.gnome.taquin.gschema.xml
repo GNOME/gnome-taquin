@@ -7,34 +7,47 @@
   <schema id="org.gnome.taquin" path="/org/gnome/taquin/" gettext-domain="gnome-taquin">
     <key name="type" enum="org.gnome.taquin.GameType">
       <default>'fifteen'</default>
+      <!-- TODO add summary and description -->
     </key>
     <key name="size" type="i">
       <default>4</default>
       <range min="2" max="9"/>
+      <!-- Translators: summary of a settings key, see 'dconf-editor /org/gnome/taquin/size' -->
       <summary>Number of tiles on each edge.</summary>
+      <!-- Translators: description of a settings key, see 'dconf-editor /org/gnome/taquin/size' -->
       <description>The game offers to play with a board size from 3 to 5. The setting could be set from 2 (good for testing) to 9, limited by the way files are selected.</description>
     </key>
     <key name="theme" type="s">
       <default>'cats'</default>
+      <!-- Translators: summary of a settings key, see 'dconf-editor /org/gnome/taquin/theme' -->
       <summary>Name of the theme folder.</summary>
+      <!-- Translators: description of a settings key, see 'dconf-editor /org/gnome/taquin/theme'; TODO the themes names are translated in the UI, but not in the settings; not sure what to do for now -->
       <description>Taquin has two default themes: 'cats' and 'numbers'.</description>
     </key>
     <key name="sound" type="b">
       <default>true</default>
+      <!-- Translators: summary of a settings key, see 'dconf-editor /org/gnome/taquin/sound' -->
       <summary>Sound</summary>
+      <!-- Translators: description of a settings key, see 'dconf-editor /org/gnome/taquin/sound' -->
       <description>Whether or not to play event sounds.</description>
     </key>
     <key name="window-width" type="i">
       <default>540</default>
+      <!-- Translators: summary of a settings key, see 'dconf-editor /org/gnome/taquin/window-width' -->
       <summary>Width of the window in pixels.</summary>
+      <!-- TODO add description? -->
     </key>
     <key name="window-height" type="i">
       <default>500</default>
+      <!-- Translators: summary of a settings key, see 'dconf-editor /org/gnome/taquin/window-height' -->
       <summary>Height of the window in pixels.</summary>
+      <!-- TODO add description? -->
     </key>
     <key name="window-is-maximized" type="b">
       <default>false</default>
+      <!-- Translators: summary of a settings key, see 'dconf-editor /org/gnome/taquin/window-is-maximized' -->
       <summary>true if the window is maximized.</summary>
+      <!-- TODO add description? -->
     </key>
   </schema>
 </schemalist>

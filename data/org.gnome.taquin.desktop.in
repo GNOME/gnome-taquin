@@ -1,8 +1,12 @@
 [Desktop Entry]
+# Translators: Do NOT translate or transliterate this text (this is an icon file name)!
 Icon=gnome-taquin
 _Name=Taquin
+# Translators: a GenericName that gives the application goal, as defined in the desktop file spec
 _GenericName=15-puzzle
+# Translators: a Comment that gives the application function, as defined in the desktop file spec
 _Comment=Slide tiles to their correct places
+# Translators: some search Keywords to find this application, as defined in the desktop file spec. Do NOT translate or localize the semicolons! The list MUST also end with a semicolon!
 _Keywords=puzzle;
 Exec=gnome-taquin
 Terminal=false
@@ -12,9 +16,11 @@ StartupNotify=true
 Actions=Fifteen;Sixteen;
 
 [Desktop Action Fifteen]
+# Translators: an action Name, as defined in the desktop file spec; name of the traditional Taquin game
 _Name=15-Puzzle
 Exec=gnome-taquin --fifteen
 
 [Desktop Action Sixteen]
+# Translators: an action Name, as defined in the desktop file spec; name of the alternative game
 _Name=16-Puzzle
 Exec=gnome-taquin --sixteen
