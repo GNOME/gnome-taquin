@@ -1,7 +1,6 @@
 # List of source files containing translatable strings.
 # Please keep this file in alphabetical order.
 [encoding: UTF-8]
-[type: gettext/glade]data/taquin-menus.ui
 [type: gettext/glade]data/taquin-screens.ui
 [type: gettext/glade]data/taquin.ui
 data/org.gnome.taquin.appdata.xml.in

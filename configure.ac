@@ -1,5 +1,6 @@
 AC_PREREQ([2.63])
-AC_INIT([GNOME Taquin], [3.28.0], [https://bugzilla.gnome.org/],
+AC_INIT([GNOME Taquin], [3.31.4],
+        [https://gitlab.gnome.org/GNOME/gnome-taquin/issues],
         [gnome-taquin], [https://wiki.gnome.org/Apps/Taquin])
 AC_CONFIG_MACRO_DIR([m4])
 
