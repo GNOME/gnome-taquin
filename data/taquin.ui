@@ -36,6 +36,20 @@
           </packing>
         </child>
         <child>
+          <object class="GtkButton" id="new_game_button">
+            <property name="visible">True</property>
+            <property name="halign">center</property>
+            <property name="valign">center</property>
+            <property name="label" translatable="yes">_Start Over</property>
+            <property name="use-underline">True</property>
+            <property name="action-name">win.new-game</property>
+            <property name="tooltip-text" translatable="yes">Start a new game</property>
+          </object>
+          <packing>
+            <property name="pack-type">end</property>
+          </packing>
+        </child>
+        <child>
           <object class="GtkMenuButton" id="info_button">
             <property name="visible">True</property>
             <property name="can_focus">False</property>
@@ -53,7 +67,7 @@
             <property name="pack_type">end</property>
             <property name="position">2</property>
           </packing>
-         </child>
+        </child>
       </object>
     </child>
     <child>
@@ -87,40 +101,6 @@
                 <property name="visible">True</property>
                 <property name="orientation">horizontal</property>
                 <property name="spacing">25</property>
-                <child>
-                  <object class="GtkBox" id="side_box">
-                    <property name="visible">True</property>
-                    <property name="orientation">vertical</property>
-                    <property name="spacing">6</property>
-                    <child>
-                      <object class="GtkButton" id="new_game_button">
-                        <property name="visible">True</property>
-                        <property name="use-underline">True</property>
-                        <property name="label" translatable="yes">_Start Over</property>
-                        <property name="tooltip-text" translatable="yes">Configure a new game</property>
-                        <property name="halign">center</property>
-                        <property name="valign">center</property>
-                        <property name="action-name">win.new-game</property>
-                        <property name="tooltip-text" translatable="yes">Start a new game</property>
-                        <property name="width-request">120</property>
-                        <property name="height-request">60</property>
-                      </object>
-                      <packing>
-                        <property name="pack-type">end</property>
-                        <property name="expand">False</property>
-                        <property name="fill">False</property>
-                        <property name="padding">0</property>
-                        <property name="position">1</property>
-                      </packing>
-                    </child>
-                  </object>
-                  <packing>
-                    <property name="pack-type">end</property>
-                    <property name="expand">False</property>
-                    <property name="fill">True</property>
-                    <property name="padding">0</property>
-                  </packing>
-                </child>
               </object>
             </child>
           </object>

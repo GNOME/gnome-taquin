@@ -57,8 +57,6 @@ public class GameWindow : ApplicationWindow
     private Box game_box;
     [GtkChild]
     private Box new_game_box;
-    [GtkChild]
-    private Box side_box;
 
     private Widget view;
 
@@ -220,11 +218,6 @@ public class GameWindow : ApplicationWindow
     * * Some public calls
     \*/
 
-    public void add_to_sidebox (Widget widget)
-    {
-        side_box.pack_start (widget, false, false, 0);
-    }
-
     public void cannot_undo_more ()
     {
         undo_action.set_enabled (false);
@@ -268,6 +261,7 @@ public class GameWindow : ApplicationWindow
     {
         stack.set_visible_child_name ("frame");
         back_button.hide ();        // TODO transition?
+        new_game_button.show ();        // TODO transition?
         controls_box.show ();
 
         if (game_finished)
@@ -291,6 +285,7 @@ public class GameWindow : ApplicationWindow
         stack.set_transition_duration (800);
 
         back_button.show ();
+        new_game_button.hide ();        // TODO transition?
         back_action.set_enabled (true);
 
         show_new_game_screen ();
