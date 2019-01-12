@@ -28,8 +28,7 @@ public enum GameWindowFlags {
     SHOW_START_BUTTON;
 }
 
-[GtkTemplate (ui = "/org/gnome/Taquin/ui/game-window.ui")]
-public class GameWindow : ApplicationWindow
+private class GameWindow : ApplicationWindow
 {
     /* settings */
     private bool tiled_state;
@@ -40,11 +39,19 @@ public class GameWindow : ApplicationWindow
     private bool game_finished = false;
 
     /* private widgets */
-    [GtkChild] private GameHeaderBar    headerbar;
-    [GtkChild] private GameView         game_view;
+    private GameHeaderBar   headerbar;
+    private GameView        game_view;
 
     public GameWindow (string? css_resource, string name, int width, int height, bool maximized, bool start_now, GameWindowFlags flags, Box new_game_screen, Widget view_content)
     {
+        headerbar = new GameHeaderBar (flags);
+        headerbar.show ();
+        game_view = new GameView (flags, new_game_screen, view_content);
+        game_view.show ();
+        set_titlebar (headerbar);
+        add (game_view);
+
+        /* CSS */
         if (css_resource != null)
         {
             CssProvider css_provider = new CssProvider ();
@@ -54,10 +61,6 @@ public class GameWindow : ApplicationWindow
 
         /* window actions */
         install_win_action_entries ();
-
-        /* add widgets */
-        game_view.set_content (flags, new_game_screen, view_content);
-        headerbar.add_controls (flags);
 
         /* window config */
         set_title (name);

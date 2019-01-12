@@ -38,7 +38,7 @@ private class GameView : Stack
         add (new_game_box);
     }
 
-    internal void set_content (GameWindowFlags flags, Box new_game_screen, Widget content)
+    internal GameView (GameWindowFlags flags, Box new_game_screen, Widget content)
     {
         new_game_box.pack_start (new_game_screen, true, true, 0);
 

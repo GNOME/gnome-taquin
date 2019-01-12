@@ -28,7 +28,7 @@ private class GameHeaderBar : HeaderBar
     [GtkChild] private Button       back_button;
     [GtkChild] private MenuButton   info_button;
 
-    internal void add_controls (GameWindowFlags flags)
+    internal GameHeaderBar (GameWindowFlags flags)
     {
         if (GameWindowFlags.SHOW_UNDO in flags)
         {
