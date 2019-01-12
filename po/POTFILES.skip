@@ -1,4 +1,5 @@
 src/game-headerbar.c
+src/game-view.c
 src/game-window.c
 src/taquin-main.c
 src/taquin-game.c

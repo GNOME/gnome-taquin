@@ -7,7 +7,8 @@ data/game-headerbar.ui
 data/taquin-screens.ui
 data/taquin.ui
 src/game-headerbar.vala
+src/game-view.vala
 src/game-window.vala
-src/taquin-main.vala
 src/taquin-game.vala
+src/taquin-main.vala
 src/taquin-view.vala

@@ -3,6 +3,7 @@ resources = gnome.compile_resources (meson.project_name(), 'taquin.gresource.xml
 executable(meson.project_name(),[
         'config.vapi',
         'game-headerbar.vala',
+        'game-view.vala',
         'game-window.vala',
         'taquin-game.vala',
         'taquin-main.vala',

@@ -9,21 +9,8 @@
       </object>
     </child>
     <child>
-      <object class="GtkStack" id="stack">
+      <object class="GameView" id="game_view">
         <property name="visible">True</property>
-        <property name="homogeneous">True</property>
-        <child>
-          <object class="GtkBox" id="new_game_box">
-            <property name="orientation">vertical</property>
-            <property name="visible">True</property>
-            <property name="halign">center</property>
-            <property name="valign">center</property>
-            <property name="margin">25</property>
-            <property name="width-request">350</property>
-            <property name="height-request">350</property>
-            <property name="spacing">6</property>
-          </object>
-        </child>
       </object>
     </child>
   </template>

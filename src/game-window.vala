@@ -41,15 +41,9 @@ public class GameWindow : ApplicationWindow
 
     /* private widgets */
     [GtkChild] private GameHeaderBar    headerbar;
-    [GtkChild] private Stack            stack;
+    [GtkChild] private GameView         game_view;
 
-    private Button? start_game_button = null;
-
-    [GtkChild] private Box new_game_box;
-
-    private Widget view;
-
-    public GameWindow (string? css_resource, string name, int width, int height, bool maximized, bool start_now, GameWindowFlags flags, Box new_game_screen, Widget _view)
+    public GameWindow (string? css_resource, string name, int width, int height, bool maximized, bool start_now, GameWindowFlags flags, Box new_game_screen, Widget view_content)
     {
         if (css_resource != null)
         {
@@ -58,10 +52,12 @@ public class GameWindow : ApplicationWindow
             StyleContext.add_provider_for_screen (Gdk.Screen.get_default (), css_provider, STYLE_PROVIDER_PRIORITY_APPLICATION);
         }
 
-        view = _view;
-
         /* window actions */
         install_win_action_entries ();
+
+        /* add widgets */
+        game_view.set_content (flags, new_game_screen, view_content);
+        headerbar.add_controls (flags);
 
         /* window config */
         set_title (name);
@@ -73,31 +69,6 @@ public class GameWindow : ApplicationWindow
 
         size_allocate.connect (size_allocate_cb);
         window_state_event.connect (window_state_event_cb);
-
-        /* add widgets */
-        new_game_box.pack_start (new_game_screen, true, true, 0);
-
-        if (GameWindowFlags.SHOW_START_BUTTON in flags)
-        {
-            /* Translators: when configuring a new game, label of the blue Start button (with a mnemonic that appears pressing Alt) */
-            start_game_button = new Button.with_mnemonic (_("_Start Game"));
-            start_game_button.width_request = 222;
-            start_game_button.height_request = 60;
-            start_game_button.halign = Align.CENTER;
-            start_game_button.set_action_name ("win.start-game");
-            /* Translators: when configuring a new game, tooltip text of the blue Start button */
-            // start_game_button.set_tooltip_text (_("Start a new game as configured"));
-            ((StyleContext) start_game_button.get_style_context ()).add_class ("suggested-action");
-            start_game_button.show ();
-            new_game_box.pack_end (start_game_button, false, false, 0);
-        }
-
-        stack.add (view);
-        view.margin = 25;
-        view.can_focus = true;
-        view.show ();
-
-        headerbar.add_controls (flags);
 
         /* start or not */
         if (start_now)
@@ -142,7 +113,7 @@ public class GameWindow : ApplicationWindow
     public void cannot_undo_more ()
     {
         undo_action.set_enabled (false);
-        view.grab_focus ();
+        game_view.show_game_content (/* grab focus */ true);
     }
 
     public void set_subtitle (string? subtitle)
@@ -168,18 +139,13 @@ public class GameWindow : ApplicationWindow
     private void show_new_game_screen ()
     {
         bool grabs_focus = headerbar.show_new_game_screen (game_finished);
-        if (!grabs_focus && start_game_button != null)
-            start_game_button.grab_focus ();
-        // TODO else if (!grabs_focus && start_game_button == null)
-        stack.set_visible_child (new_game_box);
+        game_view.show_new_game_box (/* grab focus */ !grabs_focus);
     }
 
     private void show_view ()
     {
-        stack.set_visible_child (view);
         bool grabs_focus = headerbar.show_view (game_finished);
-        if (!grabs_focus)
-            view.grab_focus ();
+        game_view.show_game_content (/* grab focus */ !grabs_focus);
     }
 
     /*\
@@ -226,13 +192,13 @@ public class GameWindow : ApplicationWindow
 
     private void new_game_cb (/* SimpleAction action, Variant? variant */)
     {
-        if (stack.get_visible_child_name () != "frame")
+        if (!game_view.game_content_visible_if_true ())
             return;
 
         wait ();
 
-        stack.set_transition_type (StackTransitionType.SLIDE_LEFT);
-        stack.set_transition_duration (800);
+        game_view.set_transition_type (StackTransitionType.SLIDE_LEFT);
+        game_view.set_transition_duration (800);
 
         headerbar.new_game ();
         back_action.set_enabled (true);
@@ -241,7 +207,7 @@ public class GameWindow : ApplicationWindow
 
     private void start_game_cb (/* SimpleAction action, Variant? variant */)
     {
-        if (stack.get_visible_child_name () != "start-box")
+        if (game_view.game_content_visible_if_true ())
             return;
 
         game_finished = false;
@@ -251,19 +217,19 @@ public class GameWindow : ApplicationWindow
 
         play ();        // FIXME lag (see in Taquin…)
 
-        stack.set_transition_type (StackTransitionType.SLIDE_DOWN);
-        stack.set_transition_duration (1000);
+        game_view.set_transition_type (StackTransitionType.SLIDE_DOWN);
+        game_view.set_transition_duration (1000);
         show_view ();
     }
 
     private void back_cb (/* SimpleAction action, Variant? variant */)
     {
-        if (stack.get_visible_child_name () != "start-box")
+        if (game_view.game_content_visible_if_true ())
             return;
 
         // TODO change back headerbar subtitle?
-        stack.set_transition_type (StackTransitionType.SLIDE_RIGHT);
-        stack.set_transition_duration (800);
+        game_view.set_transition_type (StackTransitionType.SLIDE_RIGHT);
+        game_view.set_transition_duration (800);
         show_view ();
 
         back ();
@@ -271,13 +237,13 @@ public class GameWindow : ApplicationWindow
 
     private void undo_cb (/* SimpleAction action, Variant? variant */)
     {
-        if (stack.get_visible_child_name () != "frame")
+        if (!game_view.game_content_visible_if_true ())
             return;
 
         game_finished = false;
 
         if (headerbar.new_game_button_is_focus ())
-            view.grab_focus();
+            game_view.show_game_content (/* grab focus */ true);
         redo_action.set_enabled (true);
 
         undo ();
@@ -285,11 +251,11 @@ public class GameWindow : ApplicationWindow
 
     private void redo_cb (/* SimpleAction action, Variant? variant */)
     {
-        if (stack.get_visible_child_name () != "frame")
+        if (!game_view.game_content_visible_if_true ())
             return;
 
         if (headerbar.new_game_button_is_focus ())
-            view.grab_focus();
+            game_view.show_game_content (/* grab focus */ true);
         undo_action.set_enabled (true);
 
         redo ();
@@ -297,7 +263,7 @@ public class GameWindow : ApplicationWindow
 
     private void hint_cb (/* SimpleAction action, Variant? variant */)
     {
-        if (stack.get_visible_child_name () != "frame")
+        if (!game_view.game_content_visible_if_true ())
             return;
 
         hint ();
