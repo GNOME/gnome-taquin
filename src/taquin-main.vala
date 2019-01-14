@@ -157,13 +157,13 @@ public class Taquin : Gtk.Application
         window.play.connect (start_game);
         window.undo.connect (undo_cb);
 
-        set_accels_for_action ("win.new-game",          {        "<Primary>n"       });
-        set_accels_for_action ("win.start-game",        { "<Shift><Primary>n"       });
+        set_accels_for_action ("ui.new-game",           {        "<Primary>n"       });
+        set_accels_for_action ("ui.start-game",         { "<Shift><Primary>n"       });
         set_accels_for_action ("app.quit",              {        "<Primary>q"       });
-        set_accels_for_action ("win.undo",              {        "<Primary>z"       });
-        set_accels_for_action ("win.redo",              { "<Shift><Primary>z"       });
-        set_accels_for_action ("win.back",              {                 "Escape"  });
-        set_accels_for_action ("win.toggle-hamburger",  {                 "F10"     });
+        set_accels_for_action ("ui.undo",               {        "<Primary>z"       });
+        set_accels_for_action ("ui.redo",               { "<Shift><Primary>z"       });
+        set_accels_for_action ("ui.back",               {                 "Escape"  });
+        set_accels_for_action ("ui.toggle-hamburger",   {                 "F10"     });
         set_accels_for_action ("app.help",              {                 "F1"      });
         set_accels_for_action ("app.about",             {          "<Shift>F1"      });
 

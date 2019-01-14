@@ -60,7 +60,7 @@ private class GameWindow : ApplicationWindow
         }
 
         /* window actions */
-        install_win_action_entries ();
+        install_ui_action_entries ();
 
         /* window config */
         set_title (name);
@@ -163,24 +163,25 @@ private class GameWindow : ApplicationWindow
     public signal void redo ();
     public signal void hint ();
 
-    private SimpleAction back_action;
-    public  SimpleAction undo_action;
-    public  SimpleAction redo_action;
+    public SimpleAction undo_action;
+    public SimpleAction redo_action;
 
-    private void install_win_action_entries ()
+    private bool back_action_disabled = true;
+
+    private void install_ui_action_entries ()
     {
-        add_action_entries (win_actions, this);
+        SimpleActionGroup action_group = new SimpleActionGroup ();
+        action_group.add_action_entries (ui_action_entries, this);
+        insert_action_group ("ui", action_group);
 
-        back_action = (SimpleAction) lookup_action ("back");
-        undo_action = (SimpleAction) lookup_action ("undo");
-        redo_action = (SimpleAction) lookup_action ("redo");
+        undo_action = (SimpleAction) action_group.lookup_action ("undo");
+        redo_action = (SimpleAction) action_group.lookup_action ("redo");
 
-        back_action.set_enabled (false);
         undo_action.set_enabled (false);
         redo_action.set_enabled (false);
     }
 
-    private const GLib.ActionEntry win_actions[] =
+    private const GLib.ActionEntry [] ui_action_entries =
     {
         { "new-game", new_game_cb },
         { "start-game", start_game_cb },
@@ -204,7 +205,7 @@ private class GameWindow : ApplicationWindow
         game_view.set_transition_duration (800);
 
         headerbar.new_game ();
-        back_action.set_enabled (true);
+        back_action_disabled = false;
         show_new_game_screen ();
     }
 
@@ -227,6 +228,8 @@ private class GameWindow : ApplicationWindow
 
     private void back_cb (/* SimpleAction action, Variant? variant */)
     {
+        if (back_action_disabled)
+            return;
         if (game_view.game_content_visible_if_true ())
             return;
 

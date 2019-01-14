@@ -38,7 +38,7 @@
         <!-- Translators: when configuring a new game, if the user has a started game, tooltip text of the Go back button -->
         <property name="tooltip-text" translatable="yes">Go back to the current game</property>
         <property name="use-underline">True</property>
-        <property name="action-name">win.back</property>
+        <property name="action-name">ui.back</property>
         <style><class name="image-button"/></style>
         <child>
           <object class="GtkImage">
@@ -61,7 +61,7 @@
         <!-- Translators: during a game, label of the Start Over button (with a mnemonic that appears pressing Alt) -->
         <property name="label" translatable="yes">_Start Over</property>
         <property name="use-underline">True</property>
-        <property name="action-name">win.new-game</property>
+        <property name="action-name">ui.new-game</property>
         <!-- Translators: during a game, tooltip text of the Start Over button -->
         <property name="tooltip-text" translatable="yes">Start a new game</property>
       </object>

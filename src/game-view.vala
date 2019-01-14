@@ -49,7 +49,7 @@ private class GameView : Stack
             start_game_button.width_request = 222;
             start_game_button.height_request = 60;
             start_game_button.halign = Align.CENTER;
-            start_game_button.set_action_name ("win.start-game");
+            start_game_button.set_action_name ("ui.start-game");
             /* Translators: when configuring a new game, tooltip text of the blue Start button */
             // start_game_button.set_tooltip_text (_("Start a new game as configured"));
             ((StyleContext) start_game_button.get_style_context ()).add_class ("suggested-action");

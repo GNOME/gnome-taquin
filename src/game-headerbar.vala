@@ -36,7 +36,7 @@ private class GameHeaderBar : HeaderBar
             history_box.get_style_context ().add_class ("linked");
 
             Button undo_button = new Button.from_icon_name ("edit-undo-symbolic", Gtk.IconSize.BUTTON);
-            undo_button.action_name = "win.undo";
+            undo_button.action_name = "ui.undo";
             /* Translators: during a game, tooltip text of the Undo button */
             undo_button.set_tooltip_text (_("Undo your most recent move"));
             undo_button.valign = Align.CENTER;
