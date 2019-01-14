@@ -105,7 +105,12 @@ public class Game : Object
 
         /* Now construct the game description */
         for (var j = 0; j < ntiles; j++)
-            tiles[j % size, j / size] = line[j];
+        {
+            int? line_j = line[j];
+            if (line_j == null)
+                assert_not_reached ();
+            tiles[j % size, j / size] = (!) line_j;
+        }
     }
 
     public string to_string ()
@@ -266,12 +271,12 @@ public class Game : Object
             return;
 
         if (game_type == GameType.FIFTEEN)
-            fifteen_move (state.x, state.y, true);
+            fifteen_move (((!) state).x, ((!) state).y, true);
         else
-            sixteen_move (state.x, state.y, true);
+            sixteen_move (((!) state).x, ((!) state).y, true);
 
         state = previous_state;
-        previous_state = state == null ? null : state.previous;
+        previous_state = state == null ? null : ((!) state).previous;
 
         if (state == null)
             cannot_undo_more ();
@@ -281,7 +286,8 @@ public class Game : Object
     {
         previous_state = state == null ? null : state;
         state = UndoItem () { x = x_gap, y = y_gap, next = null, previous = previous_state };
-        if (previous_state != null)
-            previous_state.next = state;
+        if (previous_state == null)
+            return;
+        previous_state = UndoItem () { x = ((!) previous_state).x, y = ((!) previous_state).y, next = state, previous = ((!) previous_state).previous };
     }
 }

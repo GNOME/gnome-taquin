@@ -43,7 +43,7 @@ public class Taquin : Gtk.Application
     private Game? game = null;
     List<string> theme_dirlist;
 
-    private static const OptionEntry[] option_entries =
+    private const OptionEntry [] option_entries =
     {
         /* Translators: command-line option description, see 'gnome-taquin --help' */
         { "fifteen", 0, 0,  OptionArg.NONE, null,       N_("Play the classical 1880s’ 15-puzzle"), null},
@@ -65,10 +65,10 @@ public class Taquin : Gtk.Application
 
         /* Translators: command-line option description, see 'gnome-taquin --help' */
      /* { "no-gtk", 0, 0, OptionArg.NONE, null,         N_("Begins a console game"), null}, TODO */
-        { null }
+        {}
     };
 
-    private const GLib.ActionEntry app_actions[] =
+    private const GLib.ActionEntry [] action_entries =
     {
         /* TODO SimpleActionChangeStateCallback is deprecated...
         {"change-size", null, "s", null, null, change_size_cb},     http://valadoc.org/#!api=gio-2.0/GLib.SimpleActionChangeStateCallback
@@ -133,11 +133,11 @@ public class Taquin : Gtk.Application
 
         settings = new GLib.Settings ("org.gnome.Taquin");
         if (sound != null)
-            settings.set_boolean ("sound", sound);
+            settings.set_boolean ("sound", (!) sound);
         if (tmp_size > 1)
             settings.set_int ("size", tmp_size);
         if (tmp_type != null)
-            settings.set_string ("type", tmp_type.to_string());     // TODO better?
+            settings.set_string ("type", ((!) tmp_type).to_string ());     // TODO better?
 
         /* UI parts */
         view = new TaquinView ();
@@ -184,7 +184,7 @@ public class Taquin : Gtk.Application
         });
         update_theme (settings.get_string ("theme"));
 
-        add_action_entries (app_actions, this);
+        add_action_entries (action_entries, this);
         add_action (settings.create_action ("sound"));
         add_action (settings.create_action ("type"));        // TODO window action?
         // TODO window.add_action (settings.create_action ("size"));        // Problem: cannot use this way for an integer from a menu; works for radiobuttons in Iagno
@@ -212,12 +212,12 @@ public class Taquin : Gtk.Application
     private void start_game ()
     {
         if (game != null)
-            SignalHandler.disconnect_by_func (game, null, this);
+            SignalHandler.disconnect_by_func ((!) game, null, this);
 
         GameType type = (GameType) settings.get_enum ("type");
         int size = settings.get_int ("size");
         game = new Game (type, size);
-        view.game = game;
+        view.game = (!) game;
 
         string filename = "";
         var dirlist = theme_dirlist.copy ();
@@ -231,10 +231,10 @@ public class Taquin : Gtk.Application
         view.theme = Path.build_filename (DATA_DIRECTORY, "themes", settings.get_string ("theme"), filename);
         view.realize ();        // TODO does that help?
 
-        game.complete.connect (game_complete_cb);
-        game.cannot_move.connect (cannot_move_cb);
-        game.cannot_undo_more.connect (window.cannot_undo_more);
-        game.move.connect (move_cb);
+        ((!) game).complete.connect (game_complete_cb);
+        ((!) game).cannot_move.connect (cannot_move_cb);
+        ((!) game).cannot_undo_more.connect (window.cannot_undo_more);
+        ((!) game).move.connect (move_cb);
     }
 
     /*\
@@ -243,16 +243,15 @@ public class Taquin : Gtk.Application
 
     private void about_cb ()
     {
-        string[] authors = { "Arnaud Bonatti", null };
+        string[] authors = { "Arnaud Bonatti" };
         string[] artists = { "Abelard (Wikimedia)",
                              "Alvesgaspar (Wikimedia)",
                              "Mueller-rech.muenchen (Wikimedia)",
                              "Ruskis (Wikimedia)",
                              "Toyah (Wikimedia)",
                              /* Translators: about dialog text; in the Credits, text at the end of the "Artwork by" section */
-                             _("(see COPYING.themes for informations)"),
-                             null };
-        string[] documenters = { "Arnaud Bonatti", null };
+                             _("(see COPYING.themes for informations)") };
+        string[] documenters = { "Arnaud Bonatti" };
         show_about_dialog (window,
                            "name", PROGRAM_NAME,
                            "version", VERSION,
@@ -266,8 +265,7 @@ public class Taquin : Gtk.Application
                             /* Translators: about dialog text; this string should be replaced by a text crediting yourselves and your translation team, or should be left empty. Do not translate literally! */
                            "translator-credits", _("translator-credits"),
                            "logo-icon-name", "org.gnome.Taquin",
-                           "website", "https://wiki.gnome.org/Apps/Taquin",
-                           null);
+                           "website", "https://wiki.gnome.org/Apps/Taquin");
     }
 
     private void help_cb ()
@@ -287,8 +285,9 @@ public class Taquin : Gtk.Application
     \*/
 
     private void undo_cb ()
+        requires (game != null)
     {
-        game.undo ();
+        ((!) game).undo ();
         play_sound ("sliding-1");
     }
 
@@ -323,9 +322,10 @@ public class Taquin : Gtk.Application
     \*/
 
     private void change_size_cb (SimpleAction action, Variant? variant)
+        requires (variant != null)
     {
         size_changed = true;
-        int size = int.parse (variant.get_string ());
+        int size = int.parse (((!) variant).get_string ());
         update_size_button_label (size);
         settings.set_int ("size", size);
     }
@@ -336,9 +336,10 @@ public class Taquin : Gtk.Application
     }
 
     private void change_theme_cb (SimpleAction action, Variant? variant)
+        requires (variant != null)
     {
         theme_changed = true;
-        string name = variant.get_string ();
+        string name = ((!) variant).get_string ();
         update_theme (name);
         settings.set_string ("theme", name);
     }
@@ -365,7 +366,7 @@ public class Taquin : Gtk.Application
                 var filename = dir.read_name ();
                 if (filename == null)
                     break;
-                theme_dirlist.append (filename);
+                theme_dirlist.append ((!) filename);
             }
         }
         catch (FileError e)

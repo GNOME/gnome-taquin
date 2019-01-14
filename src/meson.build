@@ -14,7 +14,8 @@ executable(meson.project_name(),[
         '-include', 'config.h'
     ],
     vala_args: [
-        '--vapidir', join_paths(meson.current_source_dir(), 'vapi')
+        '--vapidir', join_paths(meson.current_source_dir(), 'vapi'),
+        '--enable-experimental-non-null'
     ],
     dependencies: [
         glib_dependency,

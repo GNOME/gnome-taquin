@@ -81,13 +81,18 @@ public class TaquinView : Gtk.DrawingArea
     }
 
     private Game? _game = null;
-    public Game? game
+    public Game game
     {
-        get { return _game; }
+        get { if (_game == null) assert_not_reached (); return (!) _game; }
         set
         {
             if (_game != null)
                 SignalHandler.disconnect_by_func (_game, null, this);
+
+            _game = value;
+            if (_game == null)
+                assert_not_reached ();
+
             animate = false;
             finished = false;
             animate_end = false;
@@ -95,24 +100,30 @@ public class TaquinView : Gtk.DrawingArea
             draw_lights = false;
             x_arrow = 0;
             y_arrow = 0;
-            _game = value;
-            _game.move.connect (move_cb);
-            _game.complete.connect (complete_cb);
+            ((!) _game).move.connect (move_cb);
+            ((!) _game).complete.connect (complete_cb);
             queue_draw ();
         }
     }
 
     private string? _theme = null;
-    public string? theme
+    public string theme
     {
-        get { return _theme; }
-        set { _theme = value; tiles_pattern = null; queue_draw (); }
+        get { if (_theme == null) assert_not_reached (); return (!) _theme; }
+        set
+        {
+            _theme = value;
+            if (_theme == null)
+                assert_not_reached ();
+            tiles_pattern = null;
+            queue_draw ();
+        }
     }
 
     public override bool draw (Cairo.Context cr)
     {
-        if (game == null)
-            return false;
+//        if (game == null)
+//            return false;
 
         calculate ();
 
@@ -175,8 +186,8 @@ public class TaquinView : Gtk.DrawingArea
 
             var matrix = Cairo.Matrix.identity ();
             matrix.translate (texture_x - tile_x, texture_y - tile_y);
-            tiles_pattern.set_matrix (matrix);
-            cr.set_source (tiles_pattern);
+            ((!) tiles_pattern).set_matrix (matrix);
+            cr.set_source ((!) tiles_pattern);
             cr.rectangle (tile_x, tile_y, tile_size - GRID_SPACING, tile_size - GRID_SPACING);
             cr.fill ();
 
@@ -186,8 +197,8 @@ public class TaquinView : Gtk.DrawingArea
 
             matrix = Cairo.Matrix.identity ();
             matrix.translate (texture_x - tile_x, texture_y - tile_y);
-            tiles_pattern.set_matrix (matrix);
-            cr.set_source (tiles_pattern);
+            ((!) tiles_pattern).set_matrix (matrix);
+            cr.set_source ((!) tiles_pattern);
             cr.rectangle (tile_x, tile_y, tile_size - GRID_SPACING, tile_size - GRID_SPACING);
             cr.fill ();
         }
@@ -225,8 +236,8 @@ public class TaquinView : Gtk.DrawingArea
 
                 var matrix = Cairo.Matrix.identity ();
                 matrix.translate (texture_x - tile_x, texture_y - tile_y);
-                tiles_pattern.set_matrix (matrix);
-                cr.set_source (tiles_pattern);
+                ((!) tiles_pattern).set_matrix (matrix);
+                cr.set_source ((!) tiles_pattern);
                 cr.rectangle (tile_x, tile_y, tile_size - GRID_SPACING, tile_size - GRID_SPACING);
                 cr.fill ();
             }
@@ -238,7 +249,7 @@ public class TaquinView : Gtk.DrawingArea
             if (animation_end_offset >= 1)
                 animation_end_offset = 1;
             var matrix = Cairo.Matrix.identity ();
-            tiles_pattern.set_matrix (matrix);
+            ((!) tiles_pattern).set_matrix (matrix);
             cr.paint_with_alpha (animation_end_offset);
             if (animation_end_offset != 1)
                 queue_draw ();
@@ -416,7 +427,7 @@ public class TaquinView : Gtk.DrawingArea
     {
         if (finished)
             return false;
-        string k_name = Gdk.keyval_name (event.keyval);
+        string k_name = (!) (Gdk.keyval_name (event.keyval) ?? "");
 
         if (game.game_type == GameType.SIXTEEN && ((event.state & ModifierType.SHIFT_MASK) > 0 || (event.state & ModifierType.CONTROL_MASK) > 0))
         {
