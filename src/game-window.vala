@@ -203,8 +203,7 @@ private class GameWindow : ApplicationWindow
 
         wait ();
 
-        game_view.set_transition_type (StackTransitionType.SLIDE_LEFT);
-        game_view.set_transition_duration (800);
+        game_view.configure_transition (StackTransitionType.SLIDE_LEFT, 800);
 
         headerbar.new_game ();
         back_action_disabled = false;
@@ -223,8 +222,7 @@ private class GameWindow : ApplicationWindow
 
         play ();        // FIXME lag (see in Taquin…)
 
-        game_view.set_transition_type (StackTransitionType.SLIDE_DOWN);
-        game_view.set_transition_duration (1000);
+        game_view.configure_transition (StackTransitionType.SLIDE_DOWN, 1000);
         show_view ();
     }
 
@@ -236,8 +234,7 @@ private class GameWindow : ApplicationWindow
             return;
 
         // TODO change back headerbar subtitle?
-        game_view.set_transition_type (StackTransitionType.SLIDE_RIGHT);
-        game_view.set_transition_duration (800);
+        game_view.configure_transition (StackTransitionType.SLIDE_RIGHT, 800);
         show_view ();
 
         back ();

@@ -83,4 +83,11 @@ private class GameView : Stack
     {
         return get_visible_child () == game_content;
     }
+
+    internal void configure_transition (StackTransitionType transition_type,
+                                        uint                transition_duration)
+    {
+        set_transition_type (transition_type);
+        set_transition_duration (transition_duration);
+    }
 }
