@@ -187,7 +187,7 @@ private class GameWindow : ApplicationWindow
     {
         { "new-game", new_game_cb },
         { "start-game", start_game_cb },
-        { "back", back_cb },
+        { "escape", escape_pressed },
 
         { "undo", undo_cb },
         { "redo", redo_cb },
@@ -228,7 +228,7 @@ private class GameWindow : ApplicationWindow
         show_view ();
     }
 
-    private void back_cb (/* SimpleAction action, Variant? variant */)
+    private void escape_pressed (/* SimpleAction action, Variant? variant */)
     {
         if (back_action_disabled)
             return;
