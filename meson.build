@@ -8,7 +8,7 @@ i18n = import('i18n')
 python3 = import('python3')
 
 glib_dependency = dependency('glib-2.0', version: '>= 2.40.0')
-gtk_dependency = dependency('gtk+-3.0', version: '>= 3.15.0')
+gtk_dependency = dependency('gtk+-3.0', version: '>= 3.20.0')
 rsvg_dependency = dependency('librsvg-2.0', version: '>= 2.32.0')
 canberra_depenency = dependency('libcanberra')
 canberra_gtk3_depenency = dependency('libcanberra-gtk3', version: '>= 0.26')
