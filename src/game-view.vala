@@ -20,14 +20,21 @@
 
 using Gtk;
 
-private class GameView : Stack
+private class GameView : BaseView
 {
+    private Stack   game_stack;
     private Widget  game_content;
     private Box     new_game_box;
     private Button? start_game_button = null;
 
     construct
     {
+        game_stack = new Stack ();
+        game_stack.hexpand = true;
+        game_stack.vexpand = true;
+        game_stack.show ();
+        main_grid.add (game_stack);
+
         new_game_box = new Box (Orientation.VERTICAL, /* spacing */ 6);
         new_game_box.halign = Align.CENTER;
         new_game_box.valign = Align.CENTER;
@@ -35,7 +42,7 @@ private class GameView : Stack
         new_game_box.width_request = 350;
         new_game_box.height_request = 350;
         new_game_box.show ();
-        add (new_game_box);
+        game_stack.add (new_game_box);
     }
 
     internal GameView (GameWindowFlags flags, Box new_game_screen, Widget content)
@@ -58,7 +65,7 @@ private class GameView : Stack
         }
 
         game_content = content;
-        add (content);
+        game_stack.add (content);
         content.margin = 25;
         content.can_focus = true;
         content.show ();
@@ -66,28 +73,28 @@ private class GameView : Stack
 
     internal void show_new_game_box (bool grab_focus)
     {
-        set_visible_child (new_game_box);
+        game_stack.set_visible_child (new_game_box);
         if (grab_focus && start_game_button != null)
             ((!) start_game_button).grab_focus ();
-        // TODO else if (!grabs_focus && start_game_button == null)
+        // TODO else if (grab_focus && start_game_button == null)
     }
 
     internal void show_game_content (bool grab_focus)
     {
-        set_visible_child (game_content);
+        game_stack.set_visible_child (game_content);
         if (grab_focus)
             game_content.grab_focus ();
     }
 
     internal bool game_content_visible_if_true ()
     {
-        return get_visible_child () == game_content;
+        return game_stack.get_visible_child () == game_content;
     }
 
     internal void configure_transition (StackTransitionType transition_type,
                                         uint                transition_duration)
     {
-        set_transition_type (transition_type);
-        set_transition_duration (transition_duration);
+        game_stack.set_transition_type (transition_type);
+        game_stack.set_transition_duration (transition_duration);
     }
 }

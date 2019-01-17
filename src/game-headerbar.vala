@@ -21,15 +21,32 @@
 using Gtk;
 
 [GtkTemplate (ui = "/org/gnome/Taquin/ui/game-headerbar.ui")]
-private class GameHeaderBar : HeaderBar
+private class GameHeaderBar : BaseHeaderBar
 {
-    [GtkChild] private Box          controls_box;
-    [GtkChild] private Button       new_game_button;
-    [GtkChild] private Button       back_button;
-    [GtkChild] private MenuButton   info_button;
+    [GtkChild] private Box      controls_box;
+    [GtkChild] private Button   new_game_button;
+    [GtkChild] private Button   back_button;
 
-    internal GameHeaderBar (GameWindowFlags flags)
+    public bool window_has_name { private get; protected construct; default = false; }
+    public string window_name   { private get; internal  construct; default = ""; }
+
+    construct
     {
+        init_modes ();
+
+        if (window_name != "")
+            window_has_name = true;
+    }
+
+    internal GameHeaderBar (string _window_name, GameWindowFlags flags, NightLightMonitor _night_light_monitor)
+    {
+        /* Translators: usual menu entry of the hamburger menu */
+        Object (about_action_label:     _("About Taquin"),
+                night_light_monitor:    _night_light_monitor,
+                has_help:               true,
+                has_keyboard_shortcuts: false,
+                window_name:            _window_name);
+
         if (GameWindowFlags.SHOW_UNDO in flags)
         {
             Box history_box = new Box (Orientation.HORIZONTAL, 0);
@@ -70,11 +87,49 @@ private class GameHeaderBar : HeaderBar
     }
 
     /*\
+    * * adaptative stuff
+    \*/
+
+    private bool is_quite_thin = true;
+    protected override void set_window_size (AdaptativeWidget.WindowSize new_size)
+    {
+        base.set_window_size (new_size);
+
+        if (!window_has_name)
+            return;
+
+        bool _is_quite_thin = AdaptativeWidget.WindowSize.is_quite_thin (new_size);
+        if (_is_quite_thin == is_quite_thin)
+            return;
+        is_quite_thin = _is_quite_thin;
+        set_default_widgets_default_states (this);
+    }
+
+    protected override void set_default_widgets_default_states (BaseHeaderBar _this)
+    {
+        string? headerbar_label_text;
+        if (((GameHeaderBar) _this).is_quite_thin)
+            headerbar_label_text = null;
+        else
+            headerbar_label_text = ((GameHeaderBar) _this).window_name;
+        _this.set_default_widgets_states (/* title_label text or null */ headerbar_label_text,
+                                          /* show go_back_button      */ false,
+                                          /* show ltr_left_separator  */ false,
+                                          /* show info_button         */ true,
+                                          /* show ltr_right_separator */ _this.disable_action_bar,
+                                          /* show quit_button_stack   */ _this.disable_action_bar);
+    }
+
+    /*\
     * * Showing the Stack
     \*/
 
+    private bool current_view_is_new_game_screen = false;
+
     internal /* grabs focus */ bool show_new_game_screen (bool game_finished)
     {
+        current_view_is_new_game_screen = true;
+
         set_subtitle (null);      // TODO save / restore?
 
         controls_box.hide ();
@@ -90,6 +145,8 @@ private class GameHeaderBar : HeaderBar
 
     internal /* grabs focus */ bool show_view (bool game_finished)
     {
+        current_view_is_new_game_screen = false;
+
         back_button.hide ();        // TODO transition?
         new_game_button.show ();    // TODO transition?
         controls_box.show ();
@@ -131,8 +188,47 @@ private class GameHeaderBar : HeaderBar
     * * hamburger menu
     \*/
 
-    internal void toggle_hamburger (/* SimpleAction action, Variant? variant */)
+    protected override void populate_menu (ref GLib.Menu menu)
     {
-        info_button.active = !info_button.active;
+        append_sound_section (ref menu);
+    }
+
+    private static inline void append_sound_section (ref GLib.Menu menu)
+    {
+        GLib.Menu section = new GLib.Menu ();
+        /* Translators: hamburger menu entry; sound togglebutton (with a mnemonic that appears pressing Alt) */
+        section.append (_("_Sound"), "app.sound");
+        section.freeze ();
+        menu.append_section (null, section);
+    }
+
+    /*\
+    * * modes
+    \*/
+
+    private void init_modes ()
+    {
+        this.change_mode.connect (mode_changed_game);
+    }
+
+    private static void mode_changed_game (BaseHeaderBar _this, uint8 mode_id)
+    {
+        GameHeaderBar real_this = (GameHeaderBar) _this;
+        if (mode_id == default_mode_id)
+        {
+            if (real_this.current_view_is_new_game_screen)
+                real_this.back_button.show ();
+            else
+            {
+                real_this.controls_box.show ();
+                real_this.new_game_button.show ();
+            }
+        }
+        else
+        {
+            real_this.back_button.hide ();
+            real_this.controls_box.hide ();
+            real_this.new_game_button.hide ();
+        }
     }
 }

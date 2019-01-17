@@ -50,4 +50,13 @@
       <!-- TODO add description? -->
     </key>
   </schema>
+  <schema id="org.gnome.Taquin.NightLight">
+    <key name="automatic-night-mode" type="b">
+      <default>false</default>
+      <!-- Translators: summary of a settings key, see 'dconf-editor /org/gnome/taquin/automatic-night-mode' -->
+      <summary>Follow system night light</summary>
+      <!-- Translators: description of a settings key, see 'dconf-editor /org/gnome/taquin/automatic-night-mode' -->
+      <description>Use GNOME night light setting to activate night-mode.</description>
+    </key>
+  </schema>
 </schemalist>

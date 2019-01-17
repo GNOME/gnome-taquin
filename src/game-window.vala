@@ -28,7 +28,7 @@ public enum GameWindowFlags {
     SHOW_START_BUTTON;
 }
 
-private class GameWindow : ApplicationWindow
+private class GameWindow : BaseWindow
 {
     /* settings */
     private bool tiled_state;
@@ -42,14 +42,18 @@ private class GameWindow : ApplicationWindow
     private GameHeaderBar   headerbar;
     private GameView        game_view;
 
-    public GameWindow (string? css_resource, string name, int width, int height, bool maximized, bool start_now, GameWindowFlags flags, Box new_game_screen, Widget view_content)
+    public GameWindow (string? css_resource, string name, int width, int height, bool maximized, bool start_now, GameWindowFlags flags, Box new_game_screen, Widget view_content, NightLightMonitor night_light_monitor)
     {
-        headerbar = new GameHeaderBar (flags);
-        headerbar.show ();
-        game_view = new GameView (flags, new_game_screen, view_content);
-        game_view.show ();
-        set_titlebar (headerbar);
-        add (game_view);
+        GameHeaderBar _headerbar = new GameHeaderBar (name, flags, night_light_monitor);
+        GameView      _game_view = new GameView (flags, new_game_screen, view_content);
+
+        Object (nta_headerbar               : (NightTimeAwareHeaderBar) _headerbar,
+                base_view                   : (BaseView) _game_view,
+                window_title                : Taquin.PROGRAM_NAME,
+                specific_css_class_or_empty : "");
+
+        headerbar = _headerbar;
+        game_view = _game_view;
 
         /* CSS */
         if (css_resource != null)
@@ -66,7 +70,6 @@ private class GameWindow : ApplicationWindow
 
         /* window config */
         set_title (name);
-        headerbar.set_title (name);
 
         set_default_size (width, height);
         if (maximized)
@@ -123,7 +126,8 @@ private class GameWindow : ApplicationWindow
 
     public void set_subtitle (string? subtitle)
     {
-        headerbar.set_subtitle (subtitle);
+        if (subtitle != null)
+            show_notification ((!) subtitle);
     }
 
     public void finish_game ()
@@ -132,10 +136,22 @@ private class GameWindow : ApplicationWindow
         headerbar.new_game_button_grab_focus ();
     }
 
-    /* public void about ()
+    protected override bool escape_pressed ()
     {
-        TODO
-    } */
+        if (base.escape_pressed ())
+            return true;
+        if (back_action_disabled)
+            return true;
+        if (game_view.game_content_visible_if_true ())
+            return true;
+
+        // TODO change back headerbar subtitle?
+        game_view.configure_transition (StackTransitionType.SLIDE_RIGHT, 800);
+        show_view ();
+
+        back ();
+        return true;
+    }
 
     /*\
     * * Showing the Stack
@@ -143,6 +159,7 @@ private class GameWindow : ApplicationWindow
 
     private void show_new_game_screen ()
     {
+        hide_notification ();
         bool grabs_focus = headerbar.show_new_game_screen (game_finished);
         game_view.show_new_game_box (/* grab focus */ !grabs_focus);
     }
@@ -187,17 +204,16 @@ private class GameWindow : ApplicationWindow
     {
         { "new-game", new_game_cb },
         { "start-game", start_game_cb },
-        { "escape", escape_pressed },
 
         { "undo", undo_cb },
         { "redo", redo_cb },
-        { "hint", hint_cb },
-
-        { "toggle-hamburger", toggle_hamburger }
+        { "hint", hint_cb }
     };
 
     private void new_game_cb (/* SimpleAction action, Variant? variant */)
     {
+        if (game_view.is_in_in_window_mode ())
+            return;
         if (!game_view.game_content_visible_if_true ())
             return;
 
@@ -212,6 +228,8 @@ private class GameWindow : ApplicationWindow
 
     private void start_game_cb (/* SimpleAction action, Variant? variant */)
     {
+        if (game_view.is_in_in_window_mode ())
+            return;
         if (game_view.game_content_visible_if_true ())
             return;
 
@@ -226,22 +244,10 @@ private class GameWindow : ApplicationWindow
         show_view ();
     }
 
-    private void escape_pressed (/* SimpleAction action, Variant? variant */)
-    {
-        if (back_action_disabled)
-            return;
-        if (game_view.game_content_visible_if_true ())
-            return;
-
-        // TODO change back headerbar subtitle?
-        game_view.configure_transition (StackTransitionType.SLIDE_RIGHT, 800);
-        show_view ();
-
-        back ();
-    }
-
     private void undo_cb (/* SimpleAction action, Variant? variant */)
     {
+        if (game_view.is_in_in_window_mode ())
+            return;
         if (!game_view.game_content_visible_if_true ())
             return;
 
@@ -256,6 +262,8 @@ private class GameWindow : ApplicationWindow
 
     private void redo_cb (/* SimpleAction action, Variant? variant */)
     {
+        if (game_view.is_in_in_window_mode ())
+            return;
         if (!game_view.game_content_visible_if_true ())
             return;
 
@@ -268,14 +276,11 @@ private class GameWindow : ApplicationWindow
 
     private void hint_cb (/* SimpleAction action, Variant? variant */)
     {
+        if (game_view.is_in_in_window_mode ())
+            return;
         if (!game_view.game_content_visible_if_true ())
             return;
 
         hint ();
-    }
-
-    private void toggle_hamburger (/* SimpleAction action, Variant? variant */)
-    {
-        headerbar.toggle_hamburger ();
     }
 }

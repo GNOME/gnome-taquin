@@ -20,7 +20,7 @@
 
 using Gtk;
 
-public class Taquin : Gtk.Application
+private class Taquin : Gtk.Application, BaseApplication
 {
     /* Translators: application name, as used in the window manager, the window title, the about dialog... */
     internal const string PROGRAM_NAME = _("Taquin");
@@ -77,8 +77,8 @@ public class Taquin : Gtk.Application
         {"change-size", change_size_cb, "s"},
         {"change-theme", change_theme_cb, "s"},
 
+        {"set-use-night-mode", set_use_night_mode, "b"},
         {"help", help_cb},
-        {"about", about_cb},
         {"quit", quit}
     };
 
@@ -145,6 +145,7 @@ public class Taquin : Gtk.Application
         Builder builder = new Builder.from_resource ("/org/gnome/Taquin/ui/taquin-screens.ui");
 
         /* Window */
+        init_night_mode ();
         window = new GameWindow ("/org/gnome/Taquin/ui/taquin.css",
                                  PROGRAM_NAME,
                                  settings.get_int ("window-width"),
@@ -153,19 +154,25 @@ public class Taquin : Gtk.Application
                                  true,     // TODO add an option to go to new-game screen?
                                  GameWindowFlags.SHOW_UNDO | GameWindowFlags.SHOW_START_BUTTON,
                                  (Box) builder.get_object ("new-game-screen"),
-                                 view);
+                                 view,
+                                 night_light_monitor);
         window.play.connect (start_game);
         window.undo.connect (undo_cb);
 
+        set_accels_for_action ("base.copy",             {        "<Primary>c"       });
+        set_accels_for_action ("base.copy-alt",         { "<Shift><Primary>c"       });
         set_accels_for_action ("ui.new-game",           {        "<Primary>n"       });
         set_accels_for_action ("ui.start-game",         { "<Shift><Primary>n"       });
-        set_accels_for_action ("app.quit",              {        "<Primary>q"       });
+        set_accels_for_action ("app.quit",              {        "<Primary>q",
+                                                          "<Shift><Primary>q"       });
+        set_accels_for_action ("base.paste",            {        "<Primary>v"       });
+        set_accels_for_action ("base.paste-alt",        { "<Shift><Primary>v"       });
         set_accels_for_action ("ui.undo",               {        "<Primary>z"       });
         set_accels_for_action ("ui.redo",               { "<Shift><Primary>z"       });
-        set_accels_for_action ("ui.escape",             {                 "Escape"  });
-        set_accels_for_action ("ui.toggle-hamburger",   {                 "F10"     });
+        set_accels_for_action ("base.escape",           {                 "Escape"  });
+        set_accels_for_action ("base.toggle-hamburger", {                 "F10",
+                                                                          "Menu"    });
         set_accels_for_action ("app.help",              {                 "F1"      });
-        set_accels_for_action ("app.about",             {          "<Shift>F1"      });
 
         /* New-game screen signals */
         size_button = (MenuButton) builder.get_object ("size-button");
@@ -206,6 +213,23 @@ public class Taquin : Gtk.Application
     }
 
     /*\
+    * * Night mode
+    \*/
+
+    NightLightMonitor night_light_monitor;  // keep it here or it is unrefed
+
+    private void init_night_mode ()
+    {
+        night_light_monitor = new NightLightMonitor ("/org/gnome/taquin/");
+    }
+
+    private void set_use_night_mode (SimpleAction action, Variant? gvariant)
+        requires (gvariant != null)
+    {
+        night_light_monitor.set_use_night_mode (((!) gvariant).get_boolean ());
+    }
+
+    /*\
     * * Creating and starting game
     \*/
 
@@ -240,33 +264,6 @@ public class Taquin : Gtk.Application
     /*\
     * * App-menu callbacks
     \*/
-
-    private void about_cb ()
-    {
-        string[] authors = { "Arnaud Bonatti" };
-        string[] artists = { "Abelard (Wikimedia)",
-                             "Alvesgaspar (Wikimedia)",
-                             "Mueller-rech.muenchen (Wikimedia)",
-                             "Ruskis (Wikimedia)",
-                             "Toyah (Wikimedia)",
-                             /* Translators: about dialog text; in the Credits, text at the end of the "Artwork by" section */
-                             _("(see COPYING.themes for informations)") };
-        string[] documenters = { "Arnaud Bonatti" };
-        show_about_dialog (window,
-                           "name", PROGRAM_NAME,
-                           "version", VERSION,
-                           "copyright", "Copyright © 2014-2019 Arnaud Bonatti",
-                           "license-type", License.GPL_3_0,
-                           /* Translators: about dialog text */
-                           "comments", _("A classic 15-puzzle game"),
-                           "authors", authors,
-                           "artists", artists,
-                           "documenters", documenters,
-                            /* Translators: about dialog text; this string should be replaced by a text crediting yourselves and your translation team, or should be left empty. Do not translate literally! */
-                           "translator-credits", _("translator-credits"),
-                           "logo-icon-name", "org.gnome.Taquin",
-                           "website", "https://wiki.gnome.org/Apps/Taquin");
-    }
 
     private void help_cb ()
     {
@@ -402,38 +399,49 @@ public class Taquin : Gtk.Application
         Gtk.Clipboard clipboard = Gtk.Clipboard.get_default ((!) display);
         clipboard.set_text (text, text.length);
     }
-}
 
-namespace AboutDialogInfos
-{
-    // strings
-    internal const string program_name = Taquin.PROGRAM_NAME;
-    internal const string version = VERSION;
+    /*\
+    * * about dialog infos
+    \*/
 
-    /* Translators: about dialog text */
-    internal const string comments = _("A classic 15-puzzle game");
+    internal void get_about_dialog_infos (out string [] artists,
+                                          out string [] authors,
+                                          out string    comments,
+                                          out string    copyright,
+                                          out string [] documenters,
+                                          out string    logo_icon_name,
+                                          out string    program_name,
+                                          out string    translator_credits,
+                                          out string    version,
+                                          out string    website,
+                                          out string    website_label)
+    {
+        /* Translators: about dialog text */
+        comments = _("A classic 15-puzzle game");
 
-    /* Translators: about dialog text */
-    internal const string copyright = "Copyright \xc2\xa9 2014-2019 – Arnaud Bonatti";  // TODO translation; autogen, to not change each year?
-
-    /* Translators: about dialog text; this string should be replaced by a text crediting yourselves and your translation team, or should be left empty. Do not translate literally! */
-    internal const string translator_credits = _("translator-credits");
-
-    // various
-    internal const string logo_icon_name = "gnome-taquin";
-    internal const string website = "https://wiki.gnome.org/Apps/Taquin";
-    /* Translators: about dialog text; label of the website link */
-    internal const string website_label = _("Page on GNOME wiki");
-    internal const string [] authors = { "Arnaud Bonatti" };
-    internal const License license_type = License.GPL_3_0; /* means "version 3.0 or later" */
-    internal const string [] artists = {
+        artists = {
             "Abelard (Wikimedia)",
             "Alvesgaspar (Wikimedia)",
             "Mueller-rech.muenchen (Wikimedia)",
             "Ruskis (Wikimedia)",
-            "Toyah (Wikimedia)"
+            "Toyah (Wikimedia)",
             /* Translators: about dialog text; in the Credits, text at the end of the "Artwork by" section */
-//            _("(see COPYING.themes for informations)")    // FIXME
+            _("(see COPYING.themes for informations)")
         };
-    internal const string [] documenters = { "Arnaud Bonatti" };
+        authors = { "Arnaud Bonatti" };
+
+        /* Translators: about dialog text */
+        copyright = "Copyright \xc2\xa9 2014-2019 – Arnaud Bonatti";  // TODO translation; autogen, to not change each year?
+        documenters = { "Arnaud Bonatti" };
+        logo_icon_name = "gnome-taquin";
+        program_name = Taquin.PROGRAM_NAME;
+
+        /* Translators: about dialog text; this string should be replaced by a text crediting yourselves and your translation team, or should be left empty. Do not translate literally! */
+        translator_credits = _("translator-credits");
+        version = VERSION;
+
+        website = "https://wiki.gnome.org/Apps/Taquin";
+        /* Translators: about dialog text; label of the website link */
+        website_label = _("Page on GNOME wiki");
+    }
 }

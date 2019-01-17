@@ -17,28 +17,7 @@
 -->
 <interface>
   <requires lib="gtk+" version="3.12"/>
-  <menu id="window-menu">
-    <section>
-      <item>
-        <!-- Translators: hamburger menu entry; sound togglebutton (with a mnemonic that appears pressing Alt) -->
-        <attribute name="label" translatable="yes">_Sound</attribute>
-        <attribute name="action">app.sound</attribute>
-      </item>
-    </section>
-    <section>
-      <item>
-        <!-- Translators: hamburger menu entry; open help (with a mnemonic that appears pressing Alt) -->
-        <attribute name="label" translatable="yes">_Help</attribute>
-        <attribute name="action">app.help</attribute>
-      </item>
-      <item>
-        <!-- Translators: hamburger menu entry; open about dialog (with a mnemonic that appears pressing Alt) -->
-        <attribute name="label" translatable="yes">_About Taquin</attribute>
-        <attribute name="action">app.about</attribute>
-      </item>
-    </section>
-  </menu>
-  <template class="GameHeaderBar" parent="GtkHeaderBar">
+  <template class="GameHeaderBar" parent="BaseHeaderBar">
     <property name="show-close-button">True</property>
     <child>
       <object class="GtkBox" id="controls_box">
@@ -54,7 +33,7 @@
         <!-- Translators: when configuring a new game, if the user has a started game, tooltip text of the Go back button -->
         <property name="tooltip-text" translatable="yes">Go back to the current game</property>
         <property name="use-underline">True</property>
-        <property name="action-name">ui.escape</property>
+        <property name="action-name">base.escape</property>
         <style><class name="image-button"/></style>
         <child>
           <object class="GtkImage">
@@ -83,25 +62,6 @@
       </object>
       <packing>
         <property name="pack-type">end</property>
-      </packing>
-    </child>
-    <child>
-      <object class="GtkMenuButton" id="info_button">
-        <property name="visible">True</property>
-        <property name="can-focus">False</property>
-        <property name="receives-default">False</property>
-        <property name="menu-model">window-menu</property>
-        <child>
-          <object class="GtkImage">
-            <property name="visible">True</property>
-            <property name="can-focus">False</property>
-            <property name="icon-name">open-menu-symbolic</property>
-          </object>
-        </child>
-      </object>
-      <packing>
-        <property name="pack-type">end</property>
-        <property name="position">2</property>
       </packing>
     </child>
   </template>
