@@ -55,7 +55,7 @@
       </item>
     </section>
   </menu>
-  <object class="GtkBox" id="new-game-screen">
+  <template class="NewGameScreen" parent="GtkBox">
     <property name="orientation">vertical</property>
     <property name="visible">True</property>
     <property name="spacing">6</property>
@@ -107,7 +107,7 @@
         <property name="homogeneous">True</property>
         <property name="spacing">6</property>
         <child>
-          <object class="GtkMenuButton" id="size-button">
+          <object class="GtkMenuButton" id="size_button">
             <property name="visible">True</property>
             <property name="use-underline">True</property>
             <property name="menu-model">size-menu</property>
@@ -120,7 +120,7 @@
           </packing>
         </child>
         <child>
-          <object class="GtkMenuButton" id="theme-button">
+          <object class="GtkMenuButton" id="theme_button">
             <property name="visible">True</property>
             <property name="use-underline">True</property>
             <property name="menu-model">theme-menu</property>
@@ -137,5 +137,5 @@
         <property name="fill">True</property>
       </packing>
     </child>
-  </object>
+  </template>
 </interface>

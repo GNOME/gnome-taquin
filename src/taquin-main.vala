@@ -35,9 +35,8 @@ private class Taquin : Gtk.Application, BaseApplication
 
     /* Widgets */
     private GameWindow window;
-    private MenuButton size_button;
-    private MenuButton theme_button;
     private TaquinView view;
+    private NewGameScreen new_game_screen;
 
     /* The game being played */
     private Game? game = null;
@@ -141,8 +140,7 @@ private class Taquin : Gtk.Application, BaseApplication
 
         /* UI parts */
         view = new TaquinView ();
-
-        Builder builder = new Builder.from_resource ("/org/gnome/Taquin/ui/taquin-screens.ui");
+        new_game_screen = new NewGameScreen ();
 
         /* Window */
         init_night_mode ();
@@ -153,7 +151,7 @@ private class Taquin : Gtk.Application, BaseApplication
                                  settings.get_boolean ("window-is-maximized"),
                                  true,     // TODO add an option to go to new-game screen?
                                  GameWindowFlags.SHOW_UNDO | GameWindowFlags.SHOW_START_BUTTON,
-                                 (Box) builder.get_object ("new-game-screen"),
+                                 (Box) new_game_screen,
                                  view,
                                  night_light_monitor);
         window.play.connect (start_game);
@@ -175,16 +173,14 @@ private class Taquin : Gtk.Application, BaseApplication
         set_accels_for_action ("app.help",              {                 "F1"      });
 
         /* New-game screen signals */
-        size_button = (MenuButton) builder.get_object ("size-button");
-        settings.changed["size"].connect (() => {
+        settings.changed ["size"].connect (() => {
             if (!size_changed)
-                update_size_button_label (settings.get_int ("size"));
+                new_game_screen.update_size_button_label (settings.get_int ("size"));
             size_changed = false;
         });
-        update_size_button_label (settings.get_int ("size"));
+        new_game_screen.update_size_button_label (settings.get_int ("size"));
 
-        theme_button = (MenuButton) builder.get_object ("theme-button");
-        settings.changed["theme"].connect (() => {
+        settings.changed ["theme"].connect (() => {
             if (!theme_changed)
                 update_theme (settings.get_string ("theme"));
             theme_changed = false;
@@ -323,13 +319,8 @@ private class Taquin : Gtk.Application, BaseApplication
     {
         size_changed = true;
         int size = int.parse (((!) variant).get_string ());
-        update_size_button_label (size);
+        new_game_screen.update_size_button_label (size);
         settings.set_int ("size", size);
-    }
-    private void update_size_button_label (int size)
-    {
-        /* Translators: when configuring a new game, button label for the size of the game ("3 × 3", or 4, or 5) */
-        size_button.set_label (_("Size: %d × %d ▾").printf (size, size));
     }
 
     private void change_theme_cb (SimpleAction action, Variant? variant)
@@ -342,16 +333,7 @@ private class Taquin : Gtk.Application, BaseApplication
     }
     private void update_theme (string theme)
     {
-        switch (theme)
-        {
-            /* Translators: when configuring a new game, button label for the theme, if the current theme is Cats */
-            case "cats":    theme_button.set_label (_("Theme: Cats ▾")); break;
-
-            /* Translators: when configuring a new game, button label for the theme, if the current theme is Numbers */
-            case "numbers": theme_button.set_label (_("Theme: Numbers ▾")); break;
-
-            default: warn_if_reached (); break;
-        }
+        new_game_screen.update_theme (theme);
 
         Dir dir;
         theme_dirlist = new List<string> ();
