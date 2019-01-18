@@ -388,4 +388,52 @@ public class Taquin : Gtk.Application
                                      Canberra.PROP_MEDIA_NAME, name,
                                      Canberra.PROP_MEDIA_FILENAME, Path.build_filename (SOUND_DIRECTORY, "%s.ogg".printf (name)));
     }
+
+    /*\
+    * * Copy action
+    \*/
+
+    internal void copy (string text)
+    {
+        Gdk.Display? display = Gdk.Display.get_default ();
+        if (display == null)
+            return;
+
+        Gtk.Clipboard clipboard = Gtk.Clipboard.get_default ((!) display);
+        clipboard.set_text (text, text.length);
+    }
+}
+
+namespace AboutDialogInfos
+{
+    // strings
+    internal const string program_name = Taquin.PROGRAM_NAME;
+    internal const string version = VERSION;
+
+    /* Translators: about dialog text */
+    internal const string comments = _("A classic 15-puzzle game");
+
+    /* Translators: about dialog text */
+    internal const string copyright = "Copyright \xc2\xa9 2014-2019 – Arnaud Bonatti";  // TODO translation; autogen, to not change each year?
+
+    /* Translators: about dialog text; this string should be replaced by a text crediting yourselves and your translation team, or should be left empty. Do not translate literally! */
+    internal const string translator_credits = _("translator-credits");
+
+    // various
+    internal const string logo_icon_name = "gnome-taquin";
+    internal const string website = "https://wiki.gnome.org/Apps/Taquin";
+    /* Translators: about dialog text; label of the website link */
+    internal const string website_label = _("Page on GNOME wiki");
+    internal const string [] authors = { "Arnaud Bonatti" };
+    internal const License license_type = License.GPL_3_0; /* means "version 3.0 or later" */
+    internal const string [] artists = {
+            "Abelard (Wikimedia)",
+            "Alvesgaspar (Wikimedia)",
+            "Mueller-rech.muenchen (Wikimedia)",
+            "Ruskis (Wikimedia)",
+            "Toyah (Wikimedia)"
+            /* Translators: about dialog text; in the Credits, text at the end of the "Artwork by" section */
+//            _("(see COPYING.themes for informations)")    // FIXME
+        };
+    internal const string [] documenters = { "Arnaud Bonatti" };
 }

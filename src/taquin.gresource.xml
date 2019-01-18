@@ -5,7 +5,15 @@
     <file preprocess="to-pixdata" alias="16-Puzzle.png">../data/schema-16.png</file>
   </gresource>
   <gresource prefix="/org/gnome/Taquin/ui">
+    <file preprocess="xml-stripblanks" alias="adaptative-window.ui">../data/adaptative-window.ui</file>
+    <file preprocess="xml-stripblanks" alias="base-headerbar.ui">../data/base-headerbar.ui</file>
+    <file preprocess="xml-stripblanks" alias="base-view.ui">../data/base-view.ui</file>
+    <file alias="base-window.css">../data/base-window.css</file>
+    <file preprocess="xml-stripblanks" alias="base-window.ui">../data/base-window.ui</file>
     <file preprocess="xml-stripblanks" alias="game-headerbar.ui">../data/game-headerbar.ui</file>
+    <file preprocess="xml-stripblanks" alias="notifications-revealer.ui">../data/notifications-revealer.ui</file>
+    <file preprocess="xml-stripblanks" alias="overlayed-list.ui">../data/overlayed-list.ui</file>
+    <file preprocess="xml-stripblanks" alias="registry-placeholder.ui">../data/registry-placeholder.ui</file>
     <file preprocess="xml-stripblanks" alias="taquin-screens.ui">../data/taquin-screens.ui</file>
     <file alias="taquin.css">../data/taquin.css</file>
   </gresource>
