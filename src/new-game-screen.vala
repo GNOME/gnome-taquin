@@ -69,38 +69,59 @@ private class NewGameScreen : Box, AdaptativeWidget
 
     private bool phone_size = false;
     private bool extra_thin = false;
+    private bool extra_flat = false;
     private void set_window_size (AdaptativeWidget.WindowSize new_size)
     {
-        bool _extra_thin = new_size == AdaptativeWidget.WindowSize.EXTRA_THIN;
-        bool _phone_size = new_size == AdaptativeWidget.WindowSize.PHONE_BOTH
-                        || new_size == AdaptativeWidget.WindowSize.PHONE_VERT;
+        bool _extra_flat = AdaptativeWidget.WindowSize.is_extra_flat (new_size);
+        bool _extra_thin = (new_size == AdaptativeWidget.WindowSize.EXTRA_THIN);
+        bool _phone_size = (new_size == AdaptativeWidget.WindowSize.PHONE_BOTH)
+                        || (new_size == AdaptativeWidget.WindowSize.PHONE_VERT);
 
         if ((_extra_thin == extra_thin)
-         && (_phone_size == phone_size))
+         && (_phone_size == phone_size)
+         && (_extra_flat == extra_flat))
             return;
         extra_thin = _extra_thin;
         phone_size = _phone_size;
+        extra_flat = _extra_flat;
 
         if (!_extra_thin && !_phone_size)
         {
-            games_label.hide ();
-            options_label.hide ();
-            options_separator.hide ();
-            games_box.set_orientation (Orientation.HORIZONTAL);
-            options_box.set_orientation (Orientation.HORIZONTAL);
-            games_box.hide ();
+            if (extra_flat)
+            {
+                games_label.hide ();
+                options_label.hide ();
+                this.set_orientation (Orientation.HORIZONTAL);
+                games_box.set_orientation (Orientation.VERTICAL);
+                options_box.set_orientation (Orientation.VERTICAL);
+                options_separator.set_orientation (Orientation.VERTICAL);
+                options_separator.show ();
+            }
+            else
+            {
+                games_label.hide ();
+                options_label.hide ();
+                options_separator.hide ();
+                this.set_orientation (Orientation.VERTICAL);
+                games_box.set_orientation (Orientation.HORIZONTAL);
+                options_box.set_orientation (Orientation.HORIZONTAL);
+                games_box.hide ();
+            }
         }
         else if (_phone_size)
         {
             games_label.hide ();
             options_label.hide ();
+            this.set_orientation (Orientation.VERTICAL);
             games_box.set_orientation (Orientation.VERTICAL);
             options_box.set_orientation (Orientation.VERTICAL);
+            options_separator.set_orientation (Orientation.HORIZONTAL);
             options_separator.show ();
         }
         else
         {
             options_separator.hide ();
+            this.set_orientation (Orientation.VERTICAL);
             games_box.set_orientation (Orientation.VERTICAL);
             options_box.set_orientation (Orientation.VERTICAL);
             games_label.show ();
