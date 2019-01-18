@@ -59,9 +59,20 @@
     <property name="orientation">vertical</property>
     <property name="visible">True</property>
     <property name="spacing">6</property>
-    <property name="width-request">400</property>
     <child>
-      <object class="GtkBox">
+      <object class="GtkLabel" id="games_label">
+        <property name="visible">False</property>
+        <property name="halign">start</property>
+        <!-- Translators: when configuring a new game, header of the game type that appears on small screen -->
+        <property name="label" translatable="yes">Game</property>
+        <style>
+          <class name="bold-label"/>
+          <class name="section-header"/>
+        </style>
+      </object>
+    </child>
+    <child>
+      <object class="GtkBox" id="games_box">
         <property name="orientation">horizontal</property>
         <property name="visible">True</property>
         <property name="homogeneous">True</property>
@@ -70,7 +81,10 @@
           <object class="GtkModelButton">
             <property name="visible">True</property>
             <property name="name">radio-fifteen</property>
-            <style><class name="radio-like-toggle"/><class name="flat"/></style>
+            <style>
+              <class name="radio-like-toggle"/>
+              <class name="flat"/>
+            </style>
             <property name="focus-on-click">False</property>
             <property name="action-name">app.type</property>
             <property name="action-target">'fifteen'</property>
@@ -84,7 +98,10 @@
           <object class="GtkModelButton">
             <property name="visible">True</property>
             <property name="name">radio-sixteen</property>
-            <style><class name="radio-like-toggle"/><class name="flat"/></style>
+            <style>
+              <class name="radio-like-toggle"/>
+              <class name="flat"/>
+            </style>
             <property name="focus-on-click">False</property>
             <property name="action-name">app.type</property>
             <property name="action-target">'sixteen'</property>
@@ -101,7 +118,25 @@
       </packing>
     </child>
     <child>
-      <object class="GtkBox">
+      <object class="GtkSeparator" id="options_separator">
+        <property name="visible">False</property>
+        <property name="orientation">horizontal</property>
+      </object>
+    </child>
+    <child>
+      <object class="GtkLabel" id="options_label">
+        <property name="visible">False</property>
+        <property name="halign">start</property>
+        <!-- Translators: when configuring a new game, header of the options that appears on small screen -->
+        <property name="label" translatable="yes">Options</property>
+        <style>
+          <class name="bold-label"/>
+          <class name="section-header"/>
+        </style>
+      </object>
+    </child>
+    <child>
+      <object class="GtkBox" id="options_box">
         <property name="orientation">horizontal</property>
         <property name="visible">True</property>
         <property name="homogeneous">True</property>
@@ -111,8 +146,10 @@
             <property name="visible">True</property>
             <property name="use-underline">True</property>
             <property name="menu-model">size-menu</property>
-            <property name="height-request">60</property>
-            <style><class name="menubutton-like-combo"/><class name="flat"/></style>
+            <style>
+              <class name="menubutton-like-combo"/>
+              <class name="flat"/>
+            </style>
           </object>
           <packing>
             <property name="expand">True</property>
@@ -124,8 +161,10 @@
             <property name="visible">True</property>
             <property name="use-underline">True</property>
             <property name="menu-model">theme-menu</property>
-            <property name="height-request">60</property>
-            <style><class name="menubutton-like-combo"/><class name="flat"/></style>
+            <style>
+              <class name="menubutton-like-combo"/>
+              <class name="flat"/>
+            </style>
           </object>
           <packing>
             <property name="expand">True</property>

@@ -21,8 +21,12 @@
 using Gtk;
 
 [GtkTemplate (ui = "/org/gnome/Taquin/ui/taquin-screens.ui")]
-private class NewGameScreen : Box
+private class NewGameScreen : Box, AdaptativeWidget
 {
+    /*\
+    * * options buttons
+    \*/
+
     [GtkChild] private MenuButton size_button;
     [GtkChild] private MenuButton theme_button;
 
@@ -44,5 +48,64 @@ private class NewGameScreen : Box
 
             default: warn_if_reached (); break;
         }
+    }
+
+    /*\
+    * * adaptative stuff
+    \*/
+
+    construct   // FIXME things are a bit racy between the CSS and the box orientation changes, so delay games_box redraw
+    {
+        size_allocate.connect_after (() => games_box.show ());
+        map.connect (() => games_box.show ());
+    }
+
+    [GtkChild] private Box          games_box;
+    [GtkChild] private Box          options_box;
+
+    [GtkChild] private Label        games_label;
+    [GtkChild] private Label        options_label;
+    [GtkChild] private Separator    options_separator;
+
+    private bool phone_size = false;
+    private bool extra_thin = false;
+    private void set_window_size (AdaptativeWidget.WindowSize new_size)
+    {
+        bool _extra_thin = new_size == AdaptativeWidget.WindowSize.EXTRA_THIN;
+        bool _phone_size = new_size == AdaptativeWidget.WindowSize.PHONE_BOTH
+                        || new_size == AdaptativeWidget.WindowSize.PHONE_VERT;
+
+        if ((_extra_thin == extra_thin)
+         && (_phone_size == phone_size))
+            return;
+        extra_thin = _extra_thin;
+        phone_size = _phone_size;
+
+        if (!_extra_thin && !_phone_size)
+        {
+            games_label.hide ();
+            options_label.hide ();
+            options_separator.hide ();
+            games_box.set_orientation (Orientation.HORIZONTAL);
+            options_box.set_orientation (Orientation.HORIZONTAL);
+            games_box.hide ();
+        }
+        else if (_phone_size)
+        {
+            games_label.hide ();
+            options_label.hide ();
+            games_box.set_orientation (Orientation.VERTICAL);
+            options_box.set_orientation (Orientation.VERTICAL);
+            options_separator.show ();
+        }
+        else
+        {
+            options_separator.hide ();
+            games_box.set_orientation (Orientation.VERTICAL);
+            options_box.set_orientation (Orientation.VERTICAL);
+            games_label.show ();
+            options_label.show ();
+        }
+        queue_allocate ();
     }
 }

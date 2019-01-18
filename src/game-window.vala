@@ -28,7 +28,7 @@ public enum GameWindowFlags {
     SHOW_START_BUTTON;
 }
 
-private class GameWindow : BaseWindow
+private class GameWindow : BaseWindow, AdaptativeWidget
 {
     /* settings */
     private bool tiled_state;
@@ -41,11 +41,17 @@ private class GameWindow : BaseWindow
     /* private widgets */
     private GameHeaderBar   headerbar;
     private GameView        game_view;
+    private Box             new_game_screen;
 
-    public GameWindow (string? css_resource, string name, int width, int height, bool maximized, bool start_now, GameWindowFlags flags, Box new_game_screen, Widget view_content, NightLightMonitor night_light_monitor)
+    construct
+    {
+        height_request = 500;    // FIXME remove limit
+    }
+
+    public GameWindow (string? css_resource, string name, int width, int height, bool maximized, bool start_now, GameWindowFlags flags, Box _new_game_screen, Widget view_content, NightLightMonitor night_light_monitor)
     {
         GameHeaderBar _headerbar = new GameHeaderBar (name, flags, night_light_monitor);
-        GameView      _game_view = new GameView (flags, new_game_screen, view_content);
+        GameView      _game_view = new GameView (flags, _new_game_screen, view_content);
 
         Object (nta_headerbar               : (NightTimeAwareHeaderBar) _headerbar,
                 base_view                   : (BaseView) _game_view,
@@ -54,6 +60,7 @@ private class GameWindow : BaseWindow
 
         headerbar = _headerbar;
         game_view = _game_view;
+        new_game_screen = _new_game_screen;
 
         /* CSS */
         if (css_resource != null)
@@ -83,6 +90,14 @@ private class GameWindow : BaseWindow
             show_view ();
         else
             show_new_game_screen ();
+    }
+
+    protected override void set_window_size (AdaptativeWidget.WindowSize new_size)
+    {
+        base.set_window_size (new_size);
+
+        ((AdaptativeWidget) new_game_screen).set_window_size (new_size);
+        ((AdaptativeWidget) game_view).set_window_size (new_size);
     }
 
     /*\

@@ -20,12 +20,13 @@
 
 using Gtk;
 
-private class GameView : BaseView
+private class GameView : BaseView, AdaptativeWidget
 {
-    private Stack   game_stack;
-    private Widget  game_content;
-    private Box     new_game_box;
-    private Button? start_game_button = null;
+    private Stack           game_stack;
+    private Widget          game_content;
+    private ScrolledWindow  scrolled;
+    private Box             new_game_box;
+    private Button?         start_game_button = null;
 
     construct
     {
@@ -35,14 +36,15 @@ private class GameView : BaseView
         game_stack.show ();
         main_grid.add (game_stack);
 
-        new_game_box = new Box (Orientation.VERTICAL, /* spacing */ 6);
+        scrolled = new ScrolledWindow (null, null);
+        scrolled.visible = true;
+        game_stack.add (scrolled);
+
+        new_game_box = new Box (Orientation.VERTICAL, /* spacing */ 0);
         new_game_box.halign = Align.CENTER;
         new_game_box.valign = Align.CENTER;
-        new_game_box.margin = 25;
-        new_game_box.width_request = 350;
-        new_game_box.height_request = 350;
         new_game_box.show ();
-        game_stack.add (new_game_box);
+        scrolled.add (new_game_box);
     }
 
     internal GameView (GameWindowFlags flags, Box new_game_screen, Widget content)
@@ -53,8 +55,7 @@ private class GameView : BaseView
         {
             /* Translators: when configuring a new game, label of the blue Start button (with a mnemonic that appears pressing Alt) */
             start_game_button = new Button.with_mnemonic (_("_Start Game"));
-            ((!) start_game_button).width_request = 222;
-            ((!) start_game_button).height_request = 60;
+            ((!) start_game_button).get_style_context ().add_class ("start-game-button");
             ((!) start_game_button).halign = Align.CENTER;
             ((!) start_game_button).set_action_name ("ui.start-game");
             /* Translators: when configuring a new game, tooltip text of the blue Start button */
@@ -66,14 +67,34 @@ private class GameView : BaseView
 
         game_content = content;
         game_stack.add (content);
-        content.margin = 25;
+        update_game_content_margin (short_margin, ref game_content);
         content.can_focus = true;
         content.show ();
     }
 
+    private bool short_margin = false;
+    protected override void set_window_size (AdaptativeWidget.WindowSize new_size)
+    {
+        base.set_window_size (new_size);
+
+        bool _short_margin = AdaptativeWidget.WindowSize.is_extra_thin (new_size)
+                          || AdaptativeWidget.WindowSize.is_extra_flat (new_size);
+        if (_short_margin == short_margin)
+            return;
+        short_margin = _short_margin;
+        update_game_content_margin (short_margin, ref game_content);
+    }
+    private static void update_game_content_margin (bool new_state, ref Widget game_content)
+    {
+        if (new_state)
+            game_content.margin = 11;
+        else
+            game_content.margin = 25;
+    }
+
     internal void show_new_game_box (bool grab_focus)
     {
-        game_stack.set_visible_child (new_game_box);
+        game_stack.set_visible_child (scrolled);
         if (grab_focus && start_game_button != null)
             ((!) start_game_button).grab_focus ();
         // TODO else if (grab_focus && start_game_button == null)

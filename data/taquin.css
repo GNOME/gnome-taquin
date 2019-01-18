@@ -17,39 +17,74 @@
 
 @import url("base-window.css");
 
-button.radio-like-toggle#radio-fifteen {
-    background-image: url("resource://org/gnome/Taquin/images/15-Puzzle.png");
-}
-button.radio-like-toggle#radio-sixteen {
-    background-image: url("resource://org/gnome/Taquin/images/16-Puzzle.png");
-}
+                   button.start-game-button { margin-top:2rem; margin-bottom:1rem; transition:margin-top 0 ease; }
 
-button.radio-like-toggle {
-    background-repeat: no-repeat;
-    background-position: center 25px;
-    color: @theme_fg_color;
-    background-color: transparent;
-}
-button.radio-like-toggle label {
-    padding-bottom: 165px;
-}
-button.radio-like-toggle:backdrop {
-    color: @theme_unfocused_fg_color;
-}
+.extra-thin-window button.start-game-button,
+.extra-thin-window label.section-header     { margin-top:1rem; }
 
 button.radio-like-toggle,
 button.menubutton-like-combo {
-    border-radius:15px;
-    -gtk-outline-radius:13px;
+  border-radius:15px;
+  -gtk-outline-radius:13px;
 }
 
+/*\
+* * games buttons
+\*/
+
+                   button.radio-like-toggle#radio-fifteen { background-image: url("resource://org/gnome/Taquin/images/15-Puzzle.png"); }
+                   button.radio-like-toggle#radio-sixteen { background-image: url("resource://org/gnome/Taquin/images/16-Puzzle.png"); }
+
+                   button.radio-like-toggle:backdrop { color: @theme_unfocused_fg_color; }
+                   button.radio-like-toggle          { color: @theme_fg_color;
+
+  background-repeat:no-repeat;
+  background-color:transparent;
+
+  background-size:12rem;
+  background-position:center bottom;
+  min-height:13rem;
+  min-width:10rem;
+  padding:0.5rem 1rem 1rem 1rem;
+}
+
+window:not(.extra-thin-window) button.radio-like-toggle {
+  transition:background-size     0s ease 0.01s,
+             background-position 0s ease 0.01s,
+             min-height          0s ease 0.01s,
+             padding             0s ease 0.01s;
+}
+
+.extra-thin-window button.radio-like-toggle {
+  background-size:5rem;
+  background-position:0.4rem center;
+  min-height:3rem;
+  padding:1.8rem 1rem 1rem 5rem;
+}
+
+                   button.radio-like-toggle label { padding-bottom:10rem; }
+.extra-thin-window button.radio-like-toggle label { padding-bottom:1rem;  }
+
+/*\
+* * options buttons
+\*/
+
+button.start-game-button,
+button.menubutton-like-combo {
+  min-height:3rem;
+  min-width:11rem;
+}
 button.menubutton-like-combo:checked,
 button.menubutton-like-combo:hover {
-    color:#2e3436; /* gtk-contained.css’ theme_fg_color */
-    background:-gtk-gradient (radial, center center, 0, center center, 0.5, from(rgba (255, 255, 255, 1)), to(rgba (255, 255, 255, 0)));
+  color:#2e3436; /* gtk-contained.css’ theme_fg_color */
+  background:-gtk-gradient (radial, center center, 0, center center, 0.5, from(rgba (255, 255, 255, 1)), to(rgba (255, 255, 255, 0)));
 }
 button.menubutton-like-combo:checked:backdrop,
 button.menubutton-like-combo:hover:backdrop {
-    color:@theme_unfocused_fg_color;
-    background:-gtk-gradient (radial, center center, 0, center center, 0.5, from(rgba (255, 255, 255, 0.3)), to(rgba (255, 255, 255, 0)));
+  color:@theme_unfocused_fg_color;
+  background:-gtk-gradient (radial, center center, 0, center center, 0.5, from(rgba (255, 255, 255, 0.3)), to(rgba (255, 255, 255, 0)));
 }
+
+/*\
+* * the end
+\*/
