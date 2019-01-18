@@ -158,7 +158,7 @@ public class TaquinView : Gtk.DrawingArea
         cr.stroke ();
 
         /* Drawing arrows */
-        cr.set_source_rgba (0.25, 0.25, 0.25, 1.0 - animation_end_offset);
+        cr.set_source_rgba (0.5, 0.5, 0.5, 1.0 - animation_end_offset);
         cr.set_line_width (arrows);
         if (game.game_type == GameType.SIXTEEN)
         {
@@ -308,7 +308,7 @@ public class TaquinView : Gtk.DrawingArea
     private void draw_movable_lights (Cairo.Context cr)
     {
         cr.save ();
-        cr.set_source_rgba (0.8, 0.8, 0.8, 0.3 - 0.3 * animation_end_offset);
+        cr.set_source_rgba (0.7, 0.7, 0.7, 0.3 - 0.3 * animation_end_offset);
         /* horizontals */
         cr.save ();
         cr.translate (grid_border_main + tile_size * (x_arrow + 0.5), (grid_border_main + grid_border_thin)/ 2.0);
