@@ -17,10 +17,13 @@
 
 @import url("base-window.css");
 
-                   button.start-game-button { margin-top:2rem; margin-bottom:1rem; transition:margin-top 0 ease; }
+                   .new-game-screen         { padding:   0.5rem; }  /* for top    */
+      .flat-window button.start-game-button { margin-top:0.5rem; } /* for bottom */
 
-.extra-thin-window button.start-game-button,
-.extra-thin-window label.section-header     { margin-top:1rem; }
+                   button.start-game-button { margin-top:2.0rem; margin-bottom:0.5rem; transition:margin-top 0 ease; }
+
+.extra-thin-window label.section-header,
+.extra-thin-window button.start-game-button { margin-top:1.0rem; }
 
 button.radio-like-toggle,
 button.menubutton-like-combo {
@@ -48,22 +51,28 @@ button.menubutton-like-combo {
   padding:0.5rem 1rem 1rem 1rem;
 }
 
-window:not(.extra-thin-window) button.radio-like-toggle {
+      window:not(.extra-thin-window) button.radio-like-toggle {
   transition:background-size     0s ease 0.01s,
              background-position 0s ease 0.01s,
              min-height          0s ease 0.01s,
              padding             0s ease 0.01s;
 }
 
-.extra-thin-window button.radio-like-toggle {
+.flat-window:not(.extra-thin-window) button.radio-like-toggle {
+  background-size:8rem;
+  min-height:9rem;
+}
+
+                 .extra-thin-window  button.radio-like-toggle {
   background-size:5rem;
   background-position:0.4rem center;
   min-height:3rem;
   padding:1.8rem 1rem 1rem 5rem;
 }
 
-                   button.radio-like-toggle label { padding-bottom:10rem; }
-.extra-thin-window button.radio-like-toggle label { padding-bottom:1rem;  }
+                                     button.radio-like-toggle label { padding-bottom:10rem; }
+                 .extra-thin-window  button.radio-like-toggle label { padding-bottom: 1rem; }
+.flat-window:not(.extra-thin-window) button.radio-like-toggle label { padding-bottom: 6rem; }
 
 /*\
 * * options buttons

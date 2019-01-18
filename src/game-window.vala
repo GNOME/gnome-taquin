@@ -45,7 +45,7 @@ private class GameWindow : BaseWindow, AdaptativeWidget
 
     construct
     {
-        height_request = 500;    // FIXME remove limit
+        height_request = 400;    // FIXME remove limit
     }
 
     public GameWindow (string? css_resource, string name, int width, int height, bool maximized, bool start_now, GameWindowFlags flags, Box _new_game_screen, Widget view_content, NightLightMonitor night_light_monitor)
