@@ -17,12 +17,41 @@
 -->
 <interface>
   <requires lib="gtk+" version="3.12"/>
+  <menu id="history-menu">
+    <section>
+      <item>
+        <!-- Translators: during a game, entry in the menu of the history menubutton (with a mnemonic that appears pressing Alt) -->
+        <attribute name="label" translatable="yes">_Undo</attribute>
+        <attribute name="action">ui.undo</attribute>
+      </item>
+    </section>
+  </menu>
   <template class="GameHeaderBar" parent="BaseHeaderBar">
     <property name="show-close-button">True</property>
     <child>
-      <object class="GtkBox" id="controls_box">
-        <property name="visible">False</property>
-        <property name="orientation">horizontal</property>
+      <object class="GtkMenuButton" id="history_button">
+        <property name="visible">True</property>
+        <property name="valign">center</property>
+        <property name="focus-on-click">False</property>
+        <property name="menu-model">history-menu</property>
+        <style>
+          <class name="image-button"/>
+        </style>
+        <child internal-child="accessible">
+          <object class="AtkObject">
+            <!-- Translators: accessible name of the history menubutton -->
+            <property name="AtkObject::accessible-name" translatable="yes">History</property>
+            <!-- Translators: accessible description of the history menubutton -->
+            <property name="AtkObject::accessible-description" translatable="yes">Game history menu</property>
+          </object>
+        </child>
+        <child>
+          <object class="GtkImage">
+            <property name="visible">True</property>
+            <property name="icon-name">document-open-recent-symbolic</property>
+            <property name="icon-size">1</property>
+          </object>
+        </child>
       </object>
       <packing>
         <property name="pack-type">end</property>

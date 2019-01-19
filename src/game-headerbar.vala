@@ -23,9 +23,9 @@ using Gtk;
 [GtkTemplate (ui = "/org/gnome/Taquin/ui/game-headerbar.ui")]
 private class GameHeaderBar : BaseHeaderBar
 {
-    [GtkChild] private Box      controls_box;
-    [GtkChild] private Button   new_game_button;
-    [GtkChild] private Button   back_button;
+    [GtkChild] private MenuButton   history_button;
+    [GtkChild] private Button       new_game_button;
+    [GtkChild] private Button       back_button;
 
     public bool window_has_name { private get; protected construct; default = false; }
     public string window_name   { private get; internal  construct; default = ""; }
@@ -47,20 +47,20 @@ private class GameHeaderBar : BaseHeaderBar
                 has_keyboard_shortcuts: false,
                 window_name:            _window_name);
 
-        if (GameWindowFlags.SHOW_UNDO in flags)
+/*        if (GameWindowFlags.SHOW_UNDO in flags)
         {
             Box history_box = new Box (Orientation.HORIZONTAL, 0);
             history_box.get_style_context ().add_class ("linked");
 
             Button undo_button = new Button.from_icon_name ("edit-undo-symbolic", Gtk.IconSize.BUTTON);
             undo_button.action_name = "ui.undo";
-            /* Translators: during a game, tooltip text of the Undo button */
-            undo_button.set_tooltip_text (_("Undo your most recent move"));
+*/            /* Translators: during a game, tooltip text of the Undo button */
+/*            undo_button.set_tooltip_text (_("Undo your most recent move"));
             undo_button.valign = Align.CENTER;
             undo_button.show ();
             history_box.pack_start (undo_button, true, true, 0);
 
-            /* if (GameWindowFlags.SHOW_REDO in flags)
+*/            /* if (GameWindowFlags.SHOW_REDO in flags)
             {
                 Button redo_button = new Button.from_icon_name ("edit-redo-symbolic", Gtk.IconSize.BUTTON);
                 redo_button.action_name = "app.redo";
@@ -71,10 +71,10 @@ private class GameHeaderBar : BaseHeaderBar
                 history_box.pack_start (redo_button, true, true, 0);
             } */
 
-            history_box.show ();
+/*            history_box.show ();
             controls_box.pack_start (history_box, true, true, 0);
         }
-        /* if (GameWindowFlags.SHOW_HINT in flags)
+*/        /* if (GameWindowFlags.SHOW_HINT in flags)
         {
             Button hint_button = new Button.from_icon_name ("dialog-question-symbolic", Gtk.IconSize.BUTTON);
             hint_button.action_name = "app.hint";
@@ -132,7 +132,7 @@ private class GameHeaderBar : BaseHeaderBar
 
         set_subtitle (null);      // TODO save / restore?
 
-        controls_box.hide ();
+        history_button.hide ();
 
         if (!game_finished && back_button.visible)
         {
@@ -149,7 +149,7 @@ private class GameHeaderBar : BaseHeaderBar
 
         back_button.hide ();        // TODO transition?
         new_game_button.show ();    // TODO transition?
-        controls_box.show ();
+        history_button.show ();
 
         if (game_finished)
         {
@@ -220,14 +220,14 @@ private class GameHeaderBar : BaseHeaderBar
                 real_this.back_button.show ();
             else
             {
-                real_this.controls_box.show ();
+                real_this.history_button.show ();
                 real_this.new_game_button.show ();
             }
         }
         else
         {
             real_this.back_button.hide ();
-            real_this.controls_box.hide ();
+            real_this.history_button.hide ();
             real_this.new_game_button.hide ();
         }
     }
