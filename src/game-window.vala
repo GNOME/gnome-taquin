@@ -130,6 +130,7 @@ private class GameWindow : BaseWindow, AdaptativeWidget
 
     public void cannot_undo_more ()
     {
+        restart_action.set_enabled (false);
         undo_action.set_enabled (false);
         game_view.show_game_content (/* grab focus */ true);
     }
@@ -188,12 +189,14 @@ private class GameWindow : BaseWindow, AdaptativeWidget
     public signal void wait ();
     public signal void back ();
 
+    public signal void restart ();
     public signal void undo ();
     public signal void redo ();
     public signal void hint ();
 
-    public SimpleAction undo_action;
-    public SimpleAction redo_action;
+    public SimpleAction restart_action;
+    public SimpleAction    undo_action;
+    public SimpleAction    redo_action;
 
     private bool back_action_disabled = true;
 
@@ -203,11 +206,13 @@ private class GameWindow : BaseWindow, AdaptativeWidget
         action_group.add_action_entries (ui_action_entries, this);
         insert_action_group ("ui", action_group);
 
-        undo_action = (SimpleAction) action_group.lookup_action ("undo");
-        redo_action = (SimpleAction) action_group.lookup_action ("redo");
+        restart_action = (SimpleAction) action_group.lookup_action ("restart");
+           undo_action = (SimpleAction) action_group.lookup_action ("undo");
+           redo_action = (SimpleAction) action_group.lookup_action ("redo");
 
-        undo_action.set_enabled (false);
-        redo_action.set_enabled (false);
+        restart_action.set_enabled (false);
+           undo_action.set_enabled (false);
+           redo_action.set_enabled (false);
     }
 
     private const GLib.ActionEntry [] ui_action_entries =
@@ -215,8 +220,10 @@ private class GameWindow : BaseWindow, AdaptativeWidget
         { "new-game", new_game_cb },
         { "start-game", start_game_cb },
 
-        { "undo", undo_cb },
-        { "redo", redo_cb },
+        { "restart", restart_cb },
+        {    "undo",    undo_cb },
+        {    "redo",    redo_cb },
+
         { "hint", hint_cb }
     };
 
@@ -245,13 +252,31 @@ private class GameWindow : BaseWindow, AdaptativeWidget
 
         game_finished = false;
 
-        undo_action.set_enabled (false);
-        redo_action.set_enabled (false);
+        restart_action.set_enabled (false);
+           undo_action.set_enabled (false);
+           redo_action.set_enabled (false);
 
         play ();        // FIXME lag (see in Taquin…)
 
         game_view.configure_transition (StackTransitionType.SLIDE_DOWN, 1000);
         show_view ();
+    }
+
+    private void restart_cb (/* SimpleAction action, Variant? variant */)
+    {
+        if (game_view.is_in_in_window_mode ())
+            return;
+        if (!game_view.game_content_visible_if_true ())
+            return;
+
+        game_finished = false;
+
+        if (headerbar.new_game_button_is_focus ())
+            game_view.show_game_content (/* grab focus */ true);
+        redo_action.set_enabled (true);
+        restart_action.set_enabled (false);
+
+        restart ();
     }
 
     private void undo_cb (/* SimpleAction action, Variant? variant */)
@@ -279,6 +304,7 @@ private class GameWindow : BaseWindow, AdaptativeWidget
 
         if (headerbar.new_game_button_is_focus ())
             game_view.show_game_content (/* grab focus */ true);
+        restart_action.set_enabled (true);
         undo_action.set_enabled (true);
 
         redo ();

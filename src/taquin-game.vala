@@ -54,7 +54,7 @@ public class Game : Object
 
     /* signals */
     public signal void complete ();
-    public signal void move (bool x_axis, int number, int x_gap, int y_gap);
+    public signal void move (bool x_axis, int number, int x_gap, int y_gap, bool restarting);
     public signal void empty_tile ();
     public signal void cannot_move (int x, int y);
     public signal void cannot_undo_more ();
@@ -134,12 +134,13 @@ public class Game : Object
     public void request_move (int x, int y)
     {
         if (game_type == GameType.FIFTEEN)
-            fifteen_move (x, y, false);
+            fifteen_move (x, y, /* undoing */ false);
         else
-            sixteen_move (x, y, false);
+            sixteen_move (x, y, /* undoing */ false);
     }
 
-    private void fifteen_move (int x, int y, bool undoing = false)
+    private void fifteen_move (int x, int y, bool undoing = false, bool restarting = false)
+        requires (!restarting || undoing)
     {
         if (x < 0 || x >= size || y < 0 || y >= size)
             return;
@@ -178,11 +179,13 @@ public class Game : Object
         }
         tiles[x_gap, y_gap] = -1;
 
-        move (move_x_axis, move_number, x_gap, y_gap);
-        check_complete ();
+        move (move_x_axis, move_number, x_gap, y_gap, restarting);
+        if (!undoing)
+            check_complete ();
     }
 
-    private void sixteen_move (int x, int y, bool undoing = false)
+    private void sixteen_move (int x, int y, bool undoing = false, bool restarting = false)
+        requires (!restarting || undoing)
     {
         /* TODO touch */
         if (x >= 0 && x < size && y >= 0 && y < size)
@@ -241,8 +244,9 @@ public class Game : Object
         }
         if (!undoing)
             add_move (move_x_axis ? (new_coord == 0 ? -1 : size) : x, move_x_axis ? y : (new_coord == 0 ? -1 : size));
-        move (move_x_axis, new_coord == 0 ? size - 1 : 1 - size, move_x_axis ? new_coord : x, move_x_axis ? y : new_coord);
-        check_complete ();
+        move (move_x_axis, new_coord == 0 ? size - 1 : 1 - size, move_x_axis ? new_coord : x, move_x_axis ? y : new_coord, restarting);
+        if (!undoing)
+            check_complete ();
     }
 
     private void check_complete ()
@@ -271,15 +275,31 @@ public class Game : Object
             return;
 
         if (game_type == GameType.FIFTEEN)
-            fifteen_move (((!) state).x, ((!) state).y, true);
+            fifteen_move (((!) state).x, ((!) state).y, /* undoing */ true);
         else
-            sixteen_move (((!) state).x, ((!) state).y, true);
+            sixteen_move (((!) state).x, ((!) state).y, /* undoing */ true);
 
         state = previous_state;
         previous_state = state == null ? null : ((!) state).previous;
 
         if (state == null)
             cannot_undo_more ();
+    }
+
+    public void restart ()
+    {
+        while (state != null)
+        {
+            if (game_type == GameType.FIFTEEN)
+                fifteen_move (((!) state).x, ((!) state).y, /* undoing */ true, /* restarting */ true);
+            else
+                sixteen_move (((!) state).x, ((!) state).y, /* undoing */ true, /* restarting */ true);
+
+            state = previous_state;
+            previous_state = state == null ? null : ((!) state).previous;
+        }
+
+        cannot_undo_more ();
     }
 
     private void add_move (int x_gap, int y_gap)

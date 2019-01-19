@@ -156,6 +156,7 @@ private class Taquin : Gtk.Application, BaseApplication
                                  night_light_monitor);
         window.play.connect (start_game);
         window.undo.connect (undo_cb);
+        window.restart.connect (restart_cb);
 
         set_accels_for_action ("base.copy",             {        "<Primary>c"       });
         set_accels_for_action ("base.copy-alt",         { "<Shift><Primary>c"       });
@@ -166,6 +167,7 @@ private class Taquin : Gtk.Application, BaseApplication
         set_accels_for_action ("base.paste",            {        "<Primary>v"       });
         set_accels_for_action ("base.paste-alt",        { "<Shift><Primary>v"       });
         set_accels_for_action ("ui.undo",               {        "<Primary>z"       });
+     // set_accels_for_action ("ui.restart" // TODO
         set_accels_for_action ("ui.redo",               { "<Shift><Primary>z"       });
         set_accels_for_action ("base.escape",           {                 "Escape"  });
         set_accels_for_action ("base.toggle-hamburger", {                 "F10",
@@ -277,6 +279,13 @@ private class Taquin : Gtk.Application, BaseApplication
     * * Signals from window
     \*/
 
+    private void restart_cb ()
+        requires (game != null)
+    {
+        ((!) game).restart ();
+        play_sound ("sliding-n");
+    }
+
     private void undo_cb ()
         requires (game != null)
     {
@@ -291,6 +300,7 @@ private class Taquin : Gtk.Application, BaseApplication
     private void move_cb ()
     {
         window.set_subtitle (null);
+        window.restart_action.set_enabled (true);
         window.undo_action.set_enabled (true);
         play_sound ("sliding-1");       // TODO sliding-n??
     }
@@ -306,6 +316,7 @@ private class Taquin : Gtk.Application, BaseApplication
         window.finish_game ();
         /* Translators: notification, as a subtitle of the headerbar; on both games, if the user solves the puzzle */
         window.set_subtitle (_("Bravo! You finished the game!"));
+        window.restart_action.set_enabled (false); // Taquin specific
         window.undo_action.set_enabled (false);    // Taquin specific
         play_sound ("gameover");
     }

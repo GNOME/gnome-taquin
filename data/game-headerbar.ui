@@ -24,6 +24,11 @@
         <attribute name="label" translatable="yes">_Undo</attribute>
         <attribute name="action">ui.undo</attribute>
       </item>
+      <item>
+        <!-- Translators: during a game, entry in the menu of the history menubutton (with a mnemonic that appears pressing Alt) -->
+        <attribute name="label" translatable="yes">_Restart</attribute>
+        <attribute name="action">ui.restart</attribute>
+      </item>
     </section>
   </menu>
   <template class="GameHeaderBar" parent="BaseHeaderBar">
@@ -82,8 +87,8 @@
         <property name="visible">True</property>
         <property name="halign">center</property>
         <property name="valign">center</property>
-        <!-- Translators: during a game, label of the Start Over button (with a mnemonic that appears pressing Alt) -->
-        <property name="label" translatable="yes">_Start Over</property>
+        <!-- Translators: during a game, label of the New Game button (with a mnemonic that appears pressing Alt) -->
+        <property name="label" translatable="yes">_New Game</property>
         <property name="use-underline">True</property>
         <property name="action-name">ui.new-game</property>
         <!-- Translators: during a game, tooltip text of the Start Over button -->
