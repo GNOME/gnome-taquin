@@ -131,7 +131,7 @@ public class TaquinView : Gtk.DrawingArea
             render_size = tile_size;
             var surface = new Cairo.Surface.similar (cr.get_target (), Cairo.Content.COLOR_ALPHA, board_size, board_size);
             var c = new Cairo.Context (surface);
-            load_image (c);
+            _load_image (c, theme, ref board_size);
             tiles_pattern = new Cairo.Pattern.for_surface (surface);
         }
 
@@ -139,23 +139,7 @@ public class TaquinView : Gtk.DrawingArea
         cr.set_line_cap (Cairo.LineCap.ROUND);
         cr.set_line_join (Cairo.LineJoin.ROUND);
 
-        /* Drawing board */
-        cr.set_source_rgb (0.8, 0.8, 0.8);
-        cr.rectangle (grid_border_main / 2.0, grid_border_main / 2.0, board_size + grid_border_main, board_size + grid_border_main);
-        cr.fill_preserve ();
-        cr.set_source_rgb (0.3, 0.3, 0.3);
-        cr.set_line_width (grid_border_main);
-        cr.stroke ();
-
-        /* Drawing border */
-        cr.set_source_rgb (0.1, 0.1, 0.1);
-        cr.set_line_width (grid_border_thin);
-        cr.arc (grid_border_main / 2.0, grid_border_main / 2.0, (grid_border_main - grid_border_thin) / 2.0, Math.PI, Math.PI * 3 / 2.0);
-        cr.arc (grid_border_main * 3 / 2.0 + board_size, grid_border_main / 2.0, (grid_border_main - grid_border_thin) / 2.0, Math.PI * 3 / 2.0, 0);
-        cr.arc (grid_border_main * 3 / 2.0 + board_size, grid_border_main * 3 / 2.0 + board_size, (grid_border_main - grid_border_thin) / 2.0, 0, Math.PI / 2.0);
-        cr.arc (grid_border_main / 2.0, grid_border_main * 3 / 2.0 + board_size, (grid_border_main - grid_border_thin) / 2.0, Math.PI / 2.0, Math.PI);
-        cr.arc (grid_border_main / 2.0, grid_border_main / 2.0, (grid_border_main - grid_border_thin) / 2.0, Math.PI, Math.PI * 3 / 2.0);
-        cr.stroke ();
+        _draw_board (cr, ref grid_border_main, ref board_size, ref grid_border_thin);
 
         /* Drawing arrows */
         cr.set_source_rgba (0.5, 0.5, 0.5, 1.0 - animation_end_offset);
@@ -275,7 +259,7 @@ public class TaquinView : Gtk.DrawingArea
         return false;
     }
 
-    private void load_image (Cairo.Context c)
+    private static inline void _load_image (Cairo.Context c, string theme, ref int board_size)
     {
         /* try      // there’s a lag switching ui screen, and I don’t use SVGs…
         {
@@ -305,29 +289,75 @@ public class TaquinView : Gtk.DrawingArea
         }
     }
 
-    private void draw_movable_lights (Cairo.Context cr)
+    private const double half_pi = Math.PI / 2.0;
+    private const double three_half_pi = half_pi * 3.0;
+    private static inline void _draw_board (Cairo.Context cr,
+                                        ref int grid_border_main,
+                                        ref int board_size,
+                                        ref int grid_border_thin)
     {
+        double half_grid_border_main_first_side = grid_border_main / 2.0;
+        double board_size_plus_two_half_borders = board_size + grid_border_main;
+        double half_grid_border_main_other_side = board_size_plus_two_half_borders + half_grid_border_main_first_side;
+        double half_grid_borders_diff = (grid_border_main - grid_border_thin) / 2.0;
+
+        /* drawing board */
+        cr.set_source_rgb (0.8, 0.8, 0.8);
+        cr.rectangle (/* start */ half_grid_border_main_first_side, half_grid_border_main_first_side,
+                      /* size  */ board_size_plus_two_half_borders, board_size_plus_two_half_borders);
+        cr.fill_preserve ();
+        cr.set_source_rgb (0.3, 0.3, 0.3);
+        cr.set_line_width (grid_border_main);
+        cr.stroke ();
+
+        /* drawing border */
+        cr.set_source_rgb (0.1, 0.1, 0.1);
+        cr.set_line_width (grid_border_thin);
+        cr.arc (half_grid_border_main_first_side, half_grid_border_main_first_side, half_grid_borders_diff, Math.PI,       three_half_pi);
+        cr.arc (half_grid_border_main_other_side, half_grid_border_main_first_side, half_grid_borders_diff, three_half_pi, 0.0);
+        cr.arc (half_grid_border_main_other_side, half_grid_border_main_other_side, half_grid_borders_diff, 0.0,           half_pi);
+        cr.arc (half_grid_border_main_first_side, half_grid_border_main_other_side, half_grid_borders_diff, half_pi,       Math.PI);
+        cr.arc (half_grid_border_main_first_side, half_grid_border_main_first_side, half_grid_borders_diff, Math.PI,       three_half_pi);
+        cr.stroke ();
+    }
+
+    private inline void draw_movable_lights (Cairo.Context cr)
+    {
+        _draw_movable_lights (cr, ref animation_end_offset, ref grid_border_main, ref tile_size, ref x_arrow, ref grid_border_thin, ref board_size, ref y_arrow);
+    }
+    private static inline void _draw_movable_lights (Cairo.Context cr,
+                                                 ref double animation_end_offset,
+                                                 ref int    grid_border_main,
+                                                 ref int    tile_size,
+                                                 ref int    x_arrow,
+                                                 ref int    grid_border_thin,
+                                                 ref int    board_size,
+                                                 ref int    y_arrow)
+    {
+        double half_grid_borders_sum = (grid_border_main + grid_border_thin) / 2.0;
+        int board_size_plus_borders_diff = board_size + grid_border_main - grid_border_thin;
+
         cr.save ();
         cr.set_source_rgba (0.7, 0.7, 0.7, 0.3 - 0.3 * animation_end_offset);
         /* horizontals */
         cr.save ();
-        cr.translate (grid_border_main + tile_size * (x_arrow + 0.5), (grid_border_main + grid_border_thin)/ 2.0);
-        draw_light (cr, true);
-        cr.translate (0, board_size + grid_border_main - grid_border_thin);
-        draw_light (cr, true);
+        cr.translate (grid_border_main + tile_size * (x_arrow + 0.5), half_grid_borders_sum);
+        draw_light (cr, /* horizontal */ true, ref tile_size, ref grid_border_main);
+        cr.translate (0, board_size_plus_borders_diff);
+        draw_light (cr, /* horizontal */ true, ref tile_size, ref grid_border_main);
         cr.restore ();
         cr.fill ();
         /* verticals */
         cr.save ();
-        cr.translate ((grid_border_main + grid_border_thin)/ 2.0, grid_border_main + tile_size * (y_arrow + 0.5));
-        draw_light (cr, false);
-        cr.translate (board_size + grid_border_main - grid_border_thin, 0);
-        draw_light (cr, false);
+        cr.translate (half_grid_borders_sum, grid_border_main + tile_size * (y_arrow + 0.5));
+        draw_light (cr, /* horizontal */ false, ref tile_size, ref grid_border_main);
+        cr.translate (board_size_plus_borders_diff, 0);
+        draw_light (cr, /* horizontal */ false, ref tile_size, ref grid_border_main);
         cr.restore ();
         cr.fill ();
         cr.restore ();
     }
-    private void draw_light (Cairo.Context cr, bool horizontal)
+    private static void draw_light (Cairo.Context cr, bool horizontal, ref int tile_size, ref int grid_border_main)
     {
         cr.save ();
         var size = 0.3 * tile_size / grid_border_main;
@@ -336,22 +366,44 @@ public class TaquinView : Gtk.DrawingArea
         cr.restore ();
     }
 
-    private void draw_fixed_arrows (Cairo.Context cr)
+    private inline void draw_fixed_arrows (Cairo.Context cr)
     {
-        for (var i = 0; i < game.size; i++)
+        _draw_fixed_arrows (cr, game.size, ref grid_border_main, ref tile_size, ref grid_border_thin, ref board_size);
+    }
+    private static inline void _draw_fixed_arrows (Cairo.Context cr, int game_size,
+                                               ref int grid_border_main,
+                                               ref int tile_size,
+                                               ref int grid_border_thin,
+                                               ref int board_size)
+    {
+        for (var i = 0; i < game_size; i++)
         {
-            draw_vertical_arrow (cr, false, i);
-            draw_horizontal_arrow (cr, false, i);
+            draw_vertical_arrow   (cr, /* inside */ false, i, ref grid_border_main, ref tile_size, ref grid_border_thin, ref board_size);
+            draw_horizontal_arrow (cr, /* inside */ false, i, ref grid_border_main, ref tile_size, ref grid_border_thin, ref board_size);
         }
     }
 
-    private void draw_movable_arrows (Cairo.Context cr)
+    private inline void draw_movable_arrows (Cairo.Context cr)
     {
-        draw_vertical_arrow (cr, true, x_arrow);
-        draw_horizontal_arrow (cr, true, y_arrow);
+        _draw_movable_arrows (cr, ref x_arrow, ref y_arrow, ref grid_border_main, ref tile_size, ref grid_border_thin, ref board_size);
+    }
+    private static inline void _draw_movable_arrows (Cairo.Context cr,
+                                                 ref int x_arrow,
+                                                 ref int y_arrow,
+                                                 ref int grid_border_main,
+                                                 ref int tile_size,
+                                                 ref int grid_border_thin,
+                                                 ref int board_size)
+    {
+        draw_vertical_arrow   (cr, /* inside */ true, x_arrow, ref grid_border_main, ref tile_size, ref grid_border_thin, ref board_size);
+        draw_horizontal_arrow (cr, /* inside */ true, y_arrow, ref grid_border_main, ref tile_size, ref grid_border_thin, ref board_size);
     }
 
-    private void draw_horizontal_arrow (Cairo.Context cr, bool inside, int number)
+    private static void draw_horizontal_arrow (Cairo.Context cr, bool inside, int number,
+                                           ref int grid_border_main,
+                                           ref int tile_size,
+                                           ref int grid_border_thin,
+                                           ref int board_size)
     {
         var x1 = grid_border_main * 1.0 / 3 + grid_border_thin * 2.0 / 3;
         var x2 = grid_border_main * 2.0 / 3 + grid_border_thin * 1.0 / 3;
@@ -365,7 +417,11 @@ public class TaquinView : Gtk.DrawingArea
         cr.line_to (inside ? x1 : x2, grid_border_main + tile_size * (number + 2.0 / 3));
     }
 
-    private void draw_vertical_arrow (Cairo.Context cr, bool inside, int number)
+    private static void draw_vertical_arrow (Cairo.Context cr, bool inside, int number,
+                                         ref int grid_border_main,
+                                         ref int tile_size,
+                                         ref int grid_border_thin,
+                                         ref int board_size)
     {
         var y1 = grid_border_main * 1.0 / 3 + grid_border_thin * 2.0 / 3;
         var y2 = grid_border_main * 2.0 / 3 + grid_border_thin * 1.0 / 3;
