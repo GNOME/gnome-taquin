@@ -90,7 +90,7 @@ private class GameHeaderBar : BaseHeaderBar
     * * adaptative stuff
     \*/
 
-    private bool is_quite_thin = true;
+    private bool is_extra_thin = true;
     protected override void set_window_size (AdaptativeWidget.WindowSize new_size)
     {
         base.set_window_size (new_size);
@@ -98,17 +98,17 @@ private class GameHeaderBar : BaseHeaderBar
         if (!window_has_name)
             return;
 
-        bool _is_quite_thin = AdaptativeWidget.WindowSize.is_quite_thin (new_size);
-        if (_is_quite_thin == is_quite_thin)
+        bool _is_extra_thin = AdaptativeWidget.WindowSize.is_extra_thin (new_size);
+        if (_is_extra_thin == is_extra_thin)
             return;
-        is_quite_thin = _is_quite_thin;
+        is_extra_thin = _is_extra_thin;
         set_default_widgets_default_states (this);
     }
 
     protected override void set_default_widgets_default_states (BaseHeaderBar _this)
     {
         string? headerbar_label_text;
-        if (((GameHeaderBar) _this).is_quite_thin)
+        if (((GameHeaderBar) _this).is_extra_thin)
             headerbar_label_text = null;
         else
             headerbar_label_text = ((GameHeaderBar) _this).window_name;

@@ -24,6 +24,10 @@
         <property name="visible">False</property>
         <property name="orientation">horizontal</property>
       </object>
+      <packing>
+        <property name="pack-type">end</property>
+        <property name="position">5</property>
+      </packing>
     </child>
     <child>
       <object class="GtkButton" id="back_button">
@@ -43,10 +47,6 @@
           </object>
         </child>
       </object>
-      <packing>
-        <property name="pack-type">start</property>
-        <property name="position">1</property>
-      </packing>
     </child>
     <child>
       <object class="GtkButton" id="new_game_button">
@@ -60,9 +60,6 @@
         <!-- Translators: during a game, tooltip text of the Start Over button -->
         <property name="tooltip-text" translatable="yes">Start a new game</property>
       </object>
-      <packing>
-        <property name="pack-type">end</property>
-      </packing>
     </child>
   </template>
 </interface>
