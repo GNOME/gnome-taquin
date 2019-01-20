@@ -1,8 +1,8 @@
-resources = gnome.compile_resources (meson.project_name(), 'taquin.gresources.xml')
+resources = gnome.compile_resources (meson.project_name(), 'taquin.gresource.xml')
 
 executable(meson.project_name(),[
         'config.vapi',
-        'gnome-window.vala',
+        'game-window.vala',
         'taquin-game.vala',
         'taquin-main.vala',
         'taquin-view.vala'
@@ -15,11 +15,11 @@ executable(meson.project_name(),[
         '--vapidir', join_paths(meson.current_source_dir(), 'vapi')
     ],
     dependencies: [
-        gee_dependency,
         glib_dependency,
-        gnome_games_support_dependency,
         gtk_dependency,
-        posix_dependency,
-        rsvg_dependency
+        rsvg_dependency,
+        canberra_depenency,
+        canberra_gtk3_depenency,
+        posix_dependency
     ]
 )

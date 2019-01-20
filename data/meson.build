@@ -30,8 +30,8 @@ endif
 
 # AppData file
 appdata_file = i18n.merge_file(
-    input: '@0@.appdata.xml.in'.format(application_id),
-    output: '@0@.appdata.xml'.format(application_id),
+    input: '@0@.appdata.xml.in'.format(project_id),
+    output: '@0@.appdata.xml'.format(project_id),
     po_dir: join_paths(meson.source_root(), 'po'),
     install: true,
     install_dir: join_paths(get_option('datadir'), 'metainfo')
@@ -46,6 +46,12 @@ if appstream_util.found()
     ]
   )
 endif
+
+install_data(
+  '@0@.gschema.xml'.format(project_id),
+  install_dir: join_paths(get_option('datadir'), 'glib-2.0', 'schemas')
+)
+
 
 install_man('@0@.6'.format(meson.project_name()))
 
