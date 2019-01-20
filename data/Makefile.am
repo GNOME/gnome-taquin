@@ -9,11 +9,6 @@ dist_noinst_DATA = \
 	schema-15.png \
 	schema-16.png
 
-soundsdir = $(datadir)/gnome-taquin/sounds
-sounds_DATA = \
-	sliding-1.ogg \
-	sliding-n.ogg \
-	gameover.ogg
 
 desktopdir = $(datadir)/applications
 desktop_in_files = org.gnome.taquin.desktop.in

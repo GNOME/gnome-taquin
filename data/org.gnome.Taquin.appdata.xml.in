@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!-- Copyright 2014-2016 Arnaud Bonatti and contributors -->
-<component type="desktop">
-  <id>org.gnome.taquin.desktop</id>
+<component type="desktop-application">
+  <id>org.gnome.Taquin</id>
   <metadata_license>CC0-1.0</metadata_license>
   <project_license>GPL-3.0+</project_license>
   <_name>GNOME Taquin</_name>
@@ -21,14 +21,14 @@
       <_caption>A GNOME taquin game preview</_caption>
     </screenshot>
   </screenshots>
+  <launchable type="desktop-id">org.gnome.Taquin.desktop</launchable>
   <url type="homepage">https://wiki.gnome.org/Apps/Taquin</url>
-  <url type="bugtracker">https://bugzilla.gnome.org/enter_bug.cgi?product=gnome-taquin</url>
+  <url type="bugtracker">https://gitlab.gnome.org/GNOME/gnome-taquin/issues/</url>
   <url type="donation">http://www.gnome.org/friends/</url>
   <url type="translate">https://wiki.gnome.org/TranslationProject</url>
   <update_contact>arnaud.bonatti_at_gmail.com</update_contact>
   <project_group>GNOME</project_group>
   <kudos>
-    <kudo>AppMenu</kudo>
     <kudo>HiDpiIcon</kudo>
     <kudo>ModernToolkit</kudo>
     <kudo>UserDocs</kudo>

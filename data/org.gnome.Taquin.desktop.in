@@ -1,6 +1,6 @@
 [Desktop Entry]
 # Translators: Do NOT translate or transliterate this text (this is an icon file name)!
-Icon=gnome-taquin
+Icon=org.gnome.Taquin
 _Name=Taquin
 # Translators: a GenericName that gives the application goal, as defined in the desktop file spec
 _GenericName=15-puzzle

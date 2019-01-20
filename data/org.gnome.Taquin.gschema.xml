@@ -1,11 +1,11 @@
 <schemalist>
-  <enum id="org.gnome.taquin.GameType">
+  <enum id="org.gnome.Taquin.GameType">
     <value value="0" nick="fifteen"/>
     <value value="1" nick="sixteen"/>
   </enum>
 
-  <schema id="org.gnome.taquin" path="/org/gnome/taquin/" gettext-domain="gnome-taquin">
-    <key name="type" enum="org.gnome.taquin.GameType">
+  <schema id="org.gnome.Taquin" path="/org/gnome/taquin/" gettext-domain="gnome-taquin">
+    <key name="type" enum="org.gnome.Taquin.GameType">
       <default>'fifteen'</default>
       <!-- TODO add summary and description -->
     </key>
