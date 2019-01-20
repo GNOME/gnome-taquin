@@ -20,11 +20,11 @@
 
 GtkModelButton.radio-like-toggle#radio-fifteen,
 button.radio-like-toggle#radio-fifteen {
-    background-image: url("resource://org/gnome/taquin/images/15-Puzzle.png");
+    background-image: url("resource://org/gnome/Taquin/images/15-Puzzle.png");
 }
 GtkModelButton.radio-like-toggle#radio-sixteen,
 button.radio-like-toggle#radio-sixteen {
-    background-image: url("resource://org/gnome/taquin/images/16-Puzzle.png");
+    background-image: url("resource://org/gnome/Taquin/images/16-Puzzle.png");
 }
 
 GtkModelButton.radio-like-toggle,
