@@ -90,14 +90,14 @@ public class Taquin : Gtk.Application
         Intl.textdomain (GETTEXT_PACKAGE);
 
         Environment.set_application_name (PROGRAM_NAME);
-        Window.set_default_icon_name ("gnome-taquin");
+        Window.set_default_icon_name ("org.gnome.Taquin");
 
         return new Taquin ().run (args);
     }
 
     private Taquin ()
     {
-        Object (application_id: "org.gnome.taquin", flags: ApplicationFlags.FLAGS_NONE);
+        Object (application_id: "org.gnome.Taquin", flags: ApplicationFlags.FLAGS_NONE);
 
         add_main_option_entries (option_entries);
     }
@@ -131,7 +131,7 @@ public class Taquin : Gtk.Application
     {
         base.startup ();
 
-        settings = new GLib.Settings ("org.gnome.taquin");
+        settings = new GLib.Settings ("org.gnome.Taquin");
         if (sound != null)
             settings.set_boolean ("sound", sound);
         if (tmp_size > 1)
@@ -142,10 +142,10 @@ public class Taquin : Gtk.Application
         /* UI parts */
         view = new TaquinView ();
 
-        Builder builder = new Builder.from_resource ("/org/gnome/taquin/ui/taquin-screens.ui");
+        Builder builder = new Builder.from_resource ("/org/gnome/Taquin/ui/taquin-screens.ui");
 
         /* Window */
-        window = new GameWindow ("/org/gnome/taquin/ui/taquin.css",
+        window = new GameWindow ("/org/gnome/Taquin/ui/taquin.css",
                                  PROGRAM_NAME,
                                  settings.get_int ("window-width"),
                                  settings.get_int ("window-height"),
@@ -265,7 +265,7 @@ public class Taquin : Gtk.Application
                            "documenters", documenters,
                             /* Translators: about dialog text; this string should be replaced by a text crediting yourselves and your translation team, or should be left empty. Do not translate literally! */
                            "translator-credits", _("translator-credits"),
-                           "logo-icon-name", "gnome-taquin",
+                           "logo-icon-name", "org.gnome.Taquin",
                            "website", "https://wiki.gnome.org/Apps/Taquin",
                            null);
     }

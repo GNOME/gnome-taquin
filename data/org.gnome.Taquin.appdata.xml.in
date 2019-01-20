@@ -1,40 +1,40 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!-- Copyright 2014-2016 Arnaud Bonatti and contributors -->
-<component type="desktop">
-  <id>org.gnome.taquin.desktop</id>
+<component type="desktop-application">
+  <id>org.gnome.Taquin</id>
   <metadata_license>CC0-1.0</metadata_license>
   <project_license>GPL-3.0+</project_license>
-  <_name>GNOME Taquin</_name>
-  <_summary>Slide tiles to their correct places</_summary>
+  <name>GNOME Taquin</name>
+  <summary>Slide tiles to their correct places</summary>
   <description>
-    <_p>
+    <p>
       Taquin is a computer version of the 15-puzzle and other sliding puzzles.
-    </_p>
-    <_p>
+    </p>
+    <p>
       The object of Taquin is to move tiles so that they reach their places,
       either indicated with numbers, or with parts of a great image.
-    </_p>
+    </p>
   </description>
   <screenshots>
     <screenshot height="455" width="700" type="default">
       <image>https://gitlab.gnome.org/GNOME/gnome-taquin/raw/master/data/appdata-screenshot.png</image>
-      <_caption>A GNOME taquin game preview</_caption>
+      <caption>A GNOME taquin game preview</caption>
     </screenshot>
   </screenshots>
+  <launchable type="desktop-id">org.gnome.Taquin.desktop</launchable>
   <url type="homepage">https://wiki.gnome.org/Apps/Taquin</url>
-  <url type="bugtracker">https://bugzilla.gnome.org/enter_bug.cgi?product=gnome-taquin</url>
+  <url type="bugtracker">https://gitlab.gnome.org/GNOME/gnome-taquin/issues/</url>
   <url type="donation">http://www.gnome.org/friends/</url>
   <url type="translate">https://wiki.gnome.org/TranslationProject</url>
   <update_contact>arnaud.bonatti_at_gmail.com</update_contact>
   <project_group>GNOME</project_group>
   <kudos>
-    <kudo>AppMenu</kudo>
     <kudo>HiDpiIcon</kudo>
     <kudo>ModernToolkit</kudo>
     <kudo>UserDocs</kudo>
   </kudos>
   <translation type="gettext">gnome-taquin</translation>
-  <_developer_name>The GNOME Project</_developer_name>
+  <developer_name>The GNOME Project</developer_name>
   <content_rating type="oars-1.0">
     <content_attribute id="violence-cartoon">none</content_attribute>
     <content_attribute id="violence-fantasy">none</content_attribute>
