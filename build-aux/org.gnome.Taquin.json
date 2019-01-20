@@ -25,7 +25,7 @@
             "sources": [
                 {
                     "type": "git",
-                    "path": "https://gitlab.gnome.org/GNOME/gonme-taquin.git"
+                    "url": "https://gitlab.gnome.org/GNOME/gnome-taquin.git"
                 }
             ]
         }
