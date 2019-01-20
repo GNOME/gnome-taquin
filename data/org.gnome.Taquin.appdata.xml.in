@@ -4,21 +4,21 @@
   <id>org.gnome.Taquin</id>
   <metadata_license>CC0-1.0</metadata_license>
   <project_license>GPL-3.0+</project_license>
-  <_name>GNOME Taquin</_name>
-  <_summary>Slide tiles to their correct places</_summary>
+  <name>GNOME Taquin</name>
+  <summary>Slide tiles to their correct places</summary>
   <description>
-    <_p>
+    <p>
       Taquin is a computer version of the 15-puzzle and other sliding puzzles.
-    </_p>
-    <_p>
+    </p>
+    <p>
       The object of Taquin is to move tiles so that they reach their places,
       either indicated with numbers, or with parts of a great image.
-    </_p>
+    </p>
   </description>
   <screenshots>
     <screenshot height="455" width="700" type="default">
       <image>https://gitlab.gnome.org/GNOME/gnome-taquin/raw/master/data/appdata-screenshot.png</image>
-      <_caption>A GNOME taquin game preview</_caption>
+      <caption>A GNOME taquin game preview</caption>
     </screenshot>
   </screenshots>
   <launchable type="desktop-id">org.gnome.Taquin.desktop</launchable>
@@ -34,7 +34,7 @@
     <kudo>UserDocs</kudo>
   </kudos>
   <translation type="gettext">gnome-taquin</translation>
-  <_developer_name>The GNOME Project</_developer_name>
+  <developer_name>The GNOME Project</developer_name>
   <content_rating type="oars-1.0">
     <content_attribute id="violence-cartoon">none</content_attribute>
     <content_attribute id="violence-fantasy">none</content_attribute>
