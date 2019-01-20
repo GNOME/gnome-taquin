@@ -40,53 +40,14 @@ public class GameWindow : ApplicationWindow
     private bool game_finished = false;
 
     /* private widgets */
-    [GtkChild]
-    private HeaderBar headerbar;
-    [GtkChild]
-    private Stack stack;
+    [GtkChild] private GameHeaderBar    headerbar;
+    [GtkChild] private Stack            stack;
 
     private Button? start_game_button = null;
-    [GtkChild]
-    private Button new_game_button;
-    [GtkChild]
-    private Button back_button;
 
-    [GtkChild]
-    private Box controls_box;
-    [GtkChild]
-    private Box game_box;
-    [GtkChild]
-    private Box new_game_box;
+    [GtkChild] private Box new_game_box;
 
     private Widget view;
-
-    /* signals */
-    public signal void play ();
-    public signal void wait ();
-    public signal void back ();
-
-    public signal void undo ();
-    public signal void redo ();
-    public signal void hint ();
-
-    /* actions */
-    private const GLib.ActionEntry win_actions[] =
-    {
-        { "new-game", new_game_cb },
-        { "start-game", start_game_cb },
-        { "back", back_cb },
-
-        { "undo", undo_cb },
-        { "redo", redo_cb },
-        { "hint", hint_cb },
-
-        { "toggle-hamburger", toggle_hamburger }
-    };
-
-    private SimpleAction back_action;
-
-    public SimpleAction undo_action;
-    public SimpleAction redo_action;
 
     public GameWindow (string? css_resource, string name, int width, int height, bool maximized, bool start_now, GameWindowFlags flags, Box new_game_screen, Widget _view)
     {
@@ -100,15 +61,7 @@ public class GameWindow : ApplicationWindow
         view = _view;
 
         /* window actions */
-        add_action_entries (win_actions, this);
-
-        back_action = (SimpleAction) lookup_action ("back");
-        undo_action = (SimpleAction) lookup_action ("undo");
-        redo_action = (SimpleAction) lookup_action ("redo");
-
-        back_action.set_enabled (false);
-        undo_action.set_enabled (false);
-        redo_action.set_enabled (false);
+        install_win_action_entries ();
 
         /* window config */
         set_title (name);
@@ -123,6 +76,7 @@ public class GameWindow : ApplicationWindow
 
         /* add widgets */
         new_game_box.pack_start (new_game_screen, true, true, 0);
+
         if (GameWindowFlags.SHOW_START_BUTTON in flags)
         {
             /* Translators: when configuring a new game, label of the blue Start button (with a mnemonic that appears pressing Alt) */
@@ -138,50 +92,12 @@ public class GameWindow : ApplicationWindow
             new_game_box.pack_end (start_game_button, false, false, 0);
         }
 
-        game_box.pack_start (view, true, true, 0);
-        game_box.set_focus_child (view);            // TODO test if necessary; note: view could grab focus from application
-        view.halign = Align.FILL;
+        stack.add (view);
+        view.margin = 25;
         view.can_focus = true;
         view.show ();
 
-        /* add controls */
-        if (GameWindowFlags.SHOW_UNDO in flags)
-        {
-            Box history_box = new Box (Orientation.HORIZONTAL, 0);
-            history_box.get_style_context ().add_class ("linked");
-
-            Button undo_button = new Button.from_icon_name ("edit-undo-symbolic", Gtk.IconSize.BUTTON);
-            undo_button.action_name = "win.undo";
-            /* Translators: during a game, tooltip text of the Undo button */
-            undo_button.set_tooltip_text (_("Undo your most recent move"));
-            undo_button.valign = Align.CENTER;
-            undo_button.show ();
-            history_box.pack_start (undo_button, true, true, 0);
-
-            /* if (GameWindowFlags.SHOW_REDO in flags)
-            {
-                Button redo_button = new Button.from_icon_name ("edit-redo-symbolic", Gtk.IconSize.BUTTON);
-                redo_button.action_name = "app.redo";
-                / Translators: during a game, tooltip text of the Redo button /
-                redo_button.set_tooltip_text (_("Redo your most recent undone move"));
-                redo_button.valign = Align.CENTER;
-                redo_button.show ();
-                history_box.pack_start (redo_button, true, true, 0);
-            } */
-
-            history_box.show ();
-            controls_box.pack_start (history_box, true, true, 0);
-        }
-        /* if (GameWindowFlags.SHOW_HINT in flags)
-        {
-            Button hint_button = new Button.from_icon_name ("dialog-question-symbolic", Gtk.IconSize.BUTTON);
-            hint_button.action_name = "app.hint";
-            / Translators: during a game, tooltip text of the Hint button /
-            hint_button.set_tooltip_text (_("Receive a hint for your next move"));
-            hint_button.valign = Align.CENTER;
-            hint_button.show ();
-            controls_box.pack_start (hint_button, true, true, 0);
-        } */
+        headerbar.add_controls (flags);
 
         /* start or not */
         if (start_now)
@@ -237,7 +153,7 @@ public class GameWindow : ApplicationWindow
     public void finish_game ()
     {
         game_finished = true;
-        new_game_button.grab_focus ();
+        headerbar.new_game_button_grab_focus ();
     }
 
     /* public void about ()
@@ -251,35 +167,64 @@ public class GameWindow : ApplicationWindow
 
     private void show_new_game_screen ()
     {
-        headerbar.set_subtitle (null);      // TODO save / restore?
-
-        stack.set_visible_child_name ("start-box");
-        controls_box.hide ();
-
-        if (!game_finished && back_button.visible)
-            back_button.grab_focus ();
-        else if (start_game_button != null)
+        bool grabs_focus = headerbar.show_new_game_screen (game_finished);
+        if (!grabs_focus && start_game_button != null)
             start_game_button.grab_focus ();
+        // TODO else if (!grabs_focus && start_game_button == null)
+        stack.set_visible_child (new_game_box);
     }
 
     private void show_view ()
     {
-        stack.set_visible_child_name ("frame");
-        back_button.hide ();        // TODO transition?
-        new_game_button.show ();        // TODO transition?
-        controls_box.show ();
-
-        if (game_finished)
-            new_game_button.grab_focus ();
-        else
+        stack.set_visible_child (view);
+        bool grabs_focus = headerbar.show_view (game_finished);
+        if (!grabs_focus)
             view.grab_focus ();
     }
 
     /*\
-    * * Switching the Stack
+    * * actions
     \*/
 
-    private void new_game_cb ()
+    public signal void play ();
+    public signal void wait ();
+    public signal void back ();
+
+    public signal void undo ();
+    public signal void redo ();
+    public signal void hint ();
+
+    private SimpleAction back_action;
+    public  SimpleAction undo_action;
+    public  SimpleAction redo_action;
+
+    private void install_win_action_entries ()
+    {
+        add_action_entries (win_actions, this);
+
+        back_action = (SimpleAction) lookup_action ("back");
+        undo_action = (SimpleAction) lookup_action ("undo");
+        redo_action = (SimpleAction) lookup_action ("redo");
+
+        back_action.set_enabled (false);
+        undo_action.set_enabled (false);
+        redo_action.set_enabled (false);
+    }
+
+    private const GLib.ActionEntry win_actions[] =
+    {
+        { "new-game", new_game_cb },
+        { "start-game", start_game_cb },
+        { "back", back_cb },
+
+        { "undo", undo_cb },
+        { "redo", redo_cb },
+        { "hint", hint_cb },
+
+        { "toggle-hamburger", toggle_hamburger }
+    };
+
+    private void new_game_cb (/* SimpleAction action, Variant? variant */)
     {
         if (stack.get_visible_child_name () != "frame")
             return;
@@ -289,14 +234,12 @@ public class GameWindow : ApplicationWindow
         stack.set_transition_type (StackTransitionType.SLIDE_LEFT);
         stack.set_transition_duration (800);
 
-        back_button.show ();
-        new_game_button.hide ();        // TODO transition?
+        headerbar.new_game ();
         back_action.set_enabled (true);
-
         show_new_game_screen ();
     }
 
-    private void start_game_cb ()
+    private void start_game_cb (/* SimpleAction action, Variant? variant */)
     {
         if (stack.get_visible_child_name () != "start-box")
             return;
@@ -313,10 +256,11 @@ public class GameWindow : ApplicationWindow
         show_view ();
     }
 
-    private void back_cb ()
+    private void back_cb (/* SimpleAction action, Variant? variant */)
     {
         if (stack.get_visible_child_name () != "start-box")
             return;
+
         // TODO change back headerbar subtitle?
         stack.set_transition_type (StackTransitionType.SLIDE_RIGHT);
         stack.set_transition_duration (800);
@@ -325,49 +269,42 @@ public class GameWindow : ApplicationWindow
         back ();
     }
 
-    /*\
-    * * Controls_box actions
-    \*/
-
-    private void undo_cb ()
+    private void undo_cb (/* SimpleAction action, Variant? variant */)
     {
         if (stack.get_visible_child_name () != "frame")
             return;
 
         game_finished = false;
 
-        if (new_game_button.is_focus)
+        if (headerbar.new_game_button_is_focus ())
             view.grab_focus();
         redo_action.set_enabled (true);
+
         undo ();
     }
 
-    private void redo_cb ()
+    private void redo_cb (/* SimpleAction action, Variant? variant */)
     {
         if (stack.get_visible_child_name () != "frame")
             return;
 
-        if (new_game_button.is_focus)
+        if (headerbar.new_game_button_is_focus ())
             view.grab_focus();
         undo_action.set_enabled (true);
+
         redo ();
     }
 
-    private void hint_cb ()
+    private void hint_cb (/* SimpleAction action, Variant? variant */)
     {
         if (stack.get_visible_child_name () != "frame")
             return;
+
         hint ();
     }
 
-    /*\
-    * * hamburger menu
-    \*/
-
-    [GtkChild] private MenuButton info_button;
-
     private void toggle_hamburger (/* SimpleAction action, Variant? variant */)
     {
-        info_button.active = !info_button.active;
+        headerbar.toggle_hamburger ();
     }
 }

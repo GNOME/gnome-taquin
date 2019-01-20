@@ -4,73 +4,8 @@
   <template class="GameWindow" parent="GtkApplicationWindow">
     <!-- <initial-focus name="view"/> -->
     <child type="titlebar">
-      <object class="GtkHeaderBar" id="headerbar">
+      <object class="GameHeaderBar" id="headerbar">
         <property name="visible">True</property>
-        <property name="show-close-button">True</property>
-        <child>
-          <object class="GtkBox" id="controls_box">
-            <property name="visible">False</property>
-            <property name="orientation">horizontal</property>
-          </object>
-        </child>
-        <child>
-          <object class="GtkButton" id="back_button">
-            <property name="visible">False</property>
-            <property name="halign">center</property>
-            <property name="valign">center</property>
-            <!-- Translators: when configuring a new game, if the user has a started game, tooltip text of the Go back button -->
-            <property name="tooltip-text" translatable="yes">Go back to the current game</property>
-            <property name="use-underline">True</property>
-            <property name="action-name">win.back</property>
-            <style><class name="image-button"/></style>
-            <child>
-              <object class="GtkImage">
-                <property name="icon-name">go-previous-symbolic</property>
-                <property name="visible">True</property>
-                <property name="icon-size">1</property>
-              </object>
-            </child>
-          </object>
-          <packing>
-            <property name="pack_type">start</property>
-            <property name="position">1</property>
-          </packing>
-        </child>
-        <child>
-          <object class="GtkButton" id="new_game_button">
-            <property name="visible">True</property>
-            <property name="halign">center</property>
-            <property name="valign">center</property>
-            <!-- Translators: during a game, label of the Start Over button (with a mnemonic that appears pressing Alt) -->
-            <property name="label" translatable="yes">_Start Over</property>
-            <property name="use-underline">True</property>
-            <property name="action-name">win.new-game</property>
-            <!-- Translators: during a game, tooltip text of the Start Over button -->
-            <property name="tooltip-text" translatable="yes">Start a new game</property>
-          </object>
-          <packing>
-            <property name="pack-type">end</property>
-          </packing>
-        </child>
-        <child>
-          <object class="GtkMenuButton" id="info_button">
-            <property name="visible">True</property>
-            <property name="can_focus">False</property>
-            <property name="receives_default">False</property>
-            <property name="menu_model">window-menu</property>
-            <child>
-              <object class="GtkImage">
-                <property name="visible">True</property>
-                <property name="can_focus">False</property>
-                <property name="icon_name">open-menu-symbolic</property>
-              </object>
-            </child>
-          </object>
-          <packing>
-            <property name="pack_type">end</property>
-            <property name="position">2</property>
-          </packing>
-        </child>
       </object>
     </child>
     <child>
@@ -88,51 +23,8 @@
             <property name="height-request">350</property>
             <property name="spacing">6</property>
           </object>
-          <packing>
-            <property name="name">start-box</property>
-          </packing>
-        </child>
-        <child>
-          <object class="GtkAspectFrame">
-            <property name="visible">True</property>
-            <property name="shadow-type">GTK_SHADOW_NONE</property>
-            <property name="obey-child">false</property>
-            <property name="ratio">1.4</property>
-            <property name="margin">25</property>
-            <child>
-              <object class="GtkBox" id="game_box">
-                <property name="visible">True</property>
-                <property name="orientation">horizontal</property>
-                <property name="spacing">25</property>
-              </object>
-            </child>
-          </object>
-          <packing>
-            <property name="name">frame</property>
-          </packing>
         </child>
       </object>
     </child>
   </template>
-  <menu id="window-menu">
-    <section>
-      <item>
-        <!-- Translators: hamburger menu entry; sound togglebutton (with a mnemonic that appears pressing Alt) -->
-        <attribute name="label" translatable="yes">_Sound</attribute>
-        <attribute name="action">app.sound</attribute>
-      </item>
-    </section>
-    <section>
-      <item>
-        <!-- Translators: hamburger menu entry; open help (with a mnemonic that appears pressing Alt) -->
-        <attribute name="label" translatable="yes">_Help</attribute>
-        <attribute name="action">app.help</attribute>
-      </item>
-      <item>
-        <!-- Translators: hamburger menu entry; open about dialog (with a mnemonic that appears pressing Alt) -->
-        <attribute name="label" translatable="yes">_About Taquin</attribute>
-        <attribute name="action">app.about</attribute>
-      </item>
-    </section>
-  </menu>
 </interface>
