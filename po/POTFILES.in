@@ -1,11 +1,10 @@
 # List of source files containing translatable strings.
 # Please keep this file in alphabetical order.
-[encoding: UTF-8]
-[type: gettext/glade]data/taquin-screens.ui
-[type: gettext/glade]data/taquin.ui
-data/org.gnome.taquin.appdata.xml.in
-data/org.gnome.taquin.desktop.in
-data/org.gnome.taquin.gschema.xml
+data/org.gnome.Taquin.appdata.xml.in
+data/org.gnome.Taquin.desktop.in
+data/org.gnome.Taquin.gschema.xml
+data/taquin-screens.ui
+data/taquin.ui
 src/game-window.vala
 src/taquin-main.vala
 src/taquin-game.vala

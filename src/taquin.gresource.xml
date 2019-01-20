@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <gresources>
-  <gresource prefix="/org/gnome/taquin/images">
+  <gresource prefix="/org/gnome/Taquin/images">
     <file preprocess="to-pixdata" alias="15-Puzzle.png">../data/schema-15.png</file>
     <file preprocess="to-pixdata" alias="16-Puzzle.png">../data/schema-16.png</file>
   </gresource>
-  <gresource prefix="/org/gnome/taquin/ui">
+  <gresource prefix="/org/gnome/Taquin/ui">
     <file preprocess="xml-stripblanks" alias="game-window.ui">../data/taquin.ui</file>
     <file preprocess="xml-stripblanks" alias="taquin-screens.ui">../data/taquin-screens.ui</file>
     <file alias="taquin.css">../data/taquin.css</file>
