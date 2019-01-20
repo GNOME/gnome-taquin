@@ -1,15 +1,14 @@
 # Swedish translation for gnome-taquin.
-# Copyright © 2015 gnome-taquin's COPYRIGHT HOLDER
+# Copyright © 2015, 2016, 2019 gnome-taquin's COPYRIGHT HOLDER
 # This file is distributed under the same license as the gnome-taquin package.
-# Anders Jonsson <anders.jonsson@norsjovallen.se>, 2015.
+# Anders Jonsson <anders.jonsson@norsjovallen.se>, 2015, 2016, 2019.
 #
 msgid ""
 msgstr ""
 "Project-Id-Version: gnome-taquin master\n"
-"Report-Msgid-Bugs-To: http://bugzilla.gnome.org/enter_bug.cgi?product=gnome-"
-"taquin&keywords=I18N+L10N&component=general\n"
-"POT-Creation-Date: 2016-08-13 20:10+0000\n"
-"PO-Revision-Date: 2016-08-20 23:38+0200\n"
+"Report-Msgid-Bugs-To: https://gitlab.gnome.org/GNOME/gnome-taquin/issues\n"
+"POT-Creation-Date: 2019-01-20 17:16+0000\n"
+"PO-Revision-Date: 2019-01-20 21:47+0100\n"
 "Last-Translator: Anders Jonsson <anders.jonsson@norsjovallen.se>\n"
 "Language-Team: Swedish <tp-sv@listor.tp-sv.se>\n"
 "Language: sv\n"
@@ -17,83 +16,23 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
-"X-Generator: Poedit 1.8.8\n"
+"X-Generator: Poedit 2.2\n"
 
-#: ../data/taquin-menus.ui.h:1
-msgid "_Sound"
-msgstr "_Ljud"
-
-#: ../data/taquin-menus.ui.h:2
-msgid "_Help"
-msgstr "_Hjälp"
-
-#: ../data/taquin-menus.ui.h:3
-msgid "_About"
-msgstr "_Om"
-
-#: ../data/taquin-menus.ui.h:4
-msgid "_Quit"
-msgstr "_Avsluta"
-
-#: ../data/taquin-screens.ui.h:1
-msgid "3 × 3"
-msgstr "3 × 3"
-
-#: ../data/taquin-screens.ui.h:2
-msgid "4 × 4"
-msgstr "4 × 4"
-
-#: ../data/taquin-screens.ui.h:3
-msgid "5 × 5"
-msgstr "5 × 5"
-
-#: ../data/taquin-screens.ui.h:4
-msgid "Cats"
-msgstr "Katter"
-
-#: ../data/taquin-screens.ui.h:5
-msgid "Numbers"
-msgstr "Siffror"
-
-#: ../data/taquin-screens.ui.h:6 ../data/org.gnome.taquin.desktop.in.h:5
-msgid "15-Puzzle"
-msgstr "15-pussel"
-
-#: ../data/taquin-screens.ui.h:7 ../data/org.gnome.taquin.desktop.in.h:6
-msgid "16-Puzzle"
-msgstr "16-pussel"
-
-#: ../data/taquin.ui.h:1
-msgid "Go back to the current game"
-msgstr "Gå tillbaka till aktuellt spel"
-
-#: ../data/taquin.ui.h:2
-msgid "_Start Over"
-msgstr "_Börja om"
-
-#: ../data/taquin.ui.h:3
-msgid "Configure a new game"
-msgstr "Konfigurera ett nytt spel"
-
-#: ../data/taquin.ui.h:4
-msgid "Start a new game"
-msgstr "Starta ett nytt spel"
-
-#: ../data/org.gnome.taquin.appdata.xml.in.h:1
+#: data/org.gnome.Taquin.appdata.xml.in:7
 msgid "GNOME Taquin"
 msgstr "GNOME Taquin"
 
-#: ../data/org.gnome.taquin.appdata.xml.in.h:2
-#: ../data/org.gnome.taquin.desktop.in.h:3
+#. Translators: a Comment that gives the application function, as defined in the desktop file spec
+#: data/org.gnome.Taquin.appdata.xml.in:8 data/org.gnome.Taquin.desktop.in:9
 msgid "Slide tiles to their correct places"
 msgstr "Dra brickor till deras rätta platser"
 
-#: ../data/org.gnome.taquin.appdata.xml.in.h:3
+#: data/org.gnome.Taquin.appdata.xml.in:10
 msgid ""
 "Taquin is a computer version of the 15-puzzle and other sliding puzzles."
 msgstr "Taquin är en datorversion av 15-pusslet och andra glidpussel."
 
-#: ../data/org.gnome.taquin.appdata.xml.in.h:4
+#: data/org.gnome.Taquin.appdata.xml.in:13
 msgid ""
 "The object of Taquin is to move tiles so that they reach their places, "
 "either indicated with numbers, or with parts of a great image."
@@ -101,32 +40,53 @@ msgstr ""
 "Målet i Taquin är att flytta brickor så att de når sina platser, vilka "
 "antingen markeras med siffror eller med delar av en stor bild."
 
-#: ../data/org.gnome.taquin.appdata.xml.in.h:5
+#: data/org.gnome.Taquin.appdata.xml.in:21
 msgid "A GNOME taquin game preview"
 msgstr "En förhandsvisning av GNOME taquin"
 
-#: ../data/org.gnome.taquin.appdata.xml.in.h:6
+#: data/org.gnome.Taquin.appdata.xml.in:37
 msgid "The GNOME Project"
 msgstr "GNOME-projektet"
 
-#: ../data/org.gnome.taquin.desktop.in.h:1 ../src/taquin-main.vala:76
-#: ../src/taquin-main.vala:133 ../src/taquin-main.vala:237
+#. Translators: Do NOT translate or transliterate this text (this is an icon file name)!
+#: data/org.gnome.Taquin.desktop.in:4
+msgid "org.gnome.Taquin"
+msgstr "org.gnome.Taquin"
+
+#. Translators: application name, as used in the window manager, the window title, the about dialog...
+#: data/org.gnome.Taquin.desktop.in:5 src/taquin-main.vala:26
 msgid "Taquin"
 msgstr "Taquin"
 
-#: ../data/org.gnome.taquin.desktop.in.h:2
+#. Translators: a GenericName that gives the application goal, as defined in the desktop file spec
+#: data/org.gnome.Taquin.desktop.in:7
 msgid "15-puzzle"
 msgstr "15-pussel"
 
-#: ../data/org.gnome.taquin.desktop.in.h:4
+#. Translators: some search Keywords to find this application, as defined in the desktop file spec. Do NOT translate or localize the semicolons! The list MUST also end with a semicolon!
+#: data/org.gnome.Taquin.desktop.in:11
 msgid "puzzle;"
 msgstr "pussel;"
 
-#: ../data/org.gnome.taquin.gschema.xml.h:1
+#. Translators: an action Name, as defined in the desktop file spec; name of the traditional Taquin game
+#. Translators: when configuring a new game, label of the first big button; name of the traditional Taquin game
+#: data/org.gnome.Taquin.desktop.in:21 data/taquin-screens.ui:62
+msgid "15-Puzzle"
+msgstr "15-pussel"
+
+#. Translators: an action Name, as defined in the desktop file spec; name of the alternative game
+#. Translators: when configuring a new game, label of the second big button; name of the non-traditional game
+#: data/org.gnome.Taquin.desktop.in:26 data/taquin-screens.ui:76
+msgid "16-Puzzle"
+msgstr "16-pussel"
+
+#. Translators: summary of a settings key, see 'dconf-editor /org/gnome/taquin/size'
+#: data/org.gnome.Taquin.gschema.xml:16
 msgid "Number of tiles on each edge."
 msgstr "Antal brickor på varje kant."
 
-#: ../data/org.gnome.taquin.gschema.xml.h:2
+#. Translators: description of a settings key, see 'dconf-editor /org/gnome/taquin/size'
+#: data/org.gnome.Taquin.gschema.xml:18
 msgid ""
 "The game offers to play with a board size from 3 to 5. The setting could be "
 "set from 2 (good for testing) to 9, limited by the way files are selected."
@@ -134,75 +94,148 @@ msgstr ""
 "Spelet erbjuder spel med en brädstorlek från 3 till 5. Inställningen kan "
 "sättas från 2 (bra för tester) till 9, begränsat av sättet som filer väljs."
 
-#: ../data/org.gnome.taquin.gschema.xml.h:3
+#. Translators: summary of a settings key, see 'dconf-editor /org/gnome/taquin/theme'
+#: data/org.gnome.Taquin.gschema.xml:23
 msgid "Name of the theme folder."
 msgstr "Namn på temamappen."
 
-#: ../data/org.gnome.taquin.gschema.xml.h:4
+#. Translators: description of a settings key, see 'dconf-editor /org/gnome/taquin/theme'; TODO the themes names are translated in the UI, but not in the settings; not sure what to do for now
+#: data/org.gnome.Taquin.gschema.xml:25
 msgid "Taquin has two default themes: 'cats' and 'numbers'."
 msgstr "Taquin har två standardteman: 'cats' (katter) och 'numbers' (siffror)."
 
-#: ../data/org.gnome.taquin.gschema.xml.h:5
+#. Translators: summary of a settings key, see 'dconf-editor /org/gnome/taquin/sound'
+#: data/org.gnome.Taquin.gschema.xml:30
 msgid "Sound"
 msgstr "Ljud"
 
-#: ../data/org.gnome.taquin.gschema.xml.h:6
+#. Translators: description of a settings key, see 'dconf-editor /org/gnome/taquin/sound'
+#: data/org.gnome.Taquin.gschema.xml:32
 msgid "Whether or not to play event sounds."
 msgstr "Huruvida händelseljud ska spelas upp."
 
-#: ../data/org.gnome.taquin.gschema.xml.h:7
+#. Translators: summary of a settings key, see 'dconf-editor /org/gnome/taquin/window-width'
+#: data/org.gnome.Taquin.gschema.xml:37
 msgid "Width of the window in pixels."
 msgstr "Bredden på fönstret i bildpunkter."
 
-#: ../data/org.gnome.taquin.gschema.xml.h:8
+#. Translators: summary of a settings key, see 'dconf-editor /org/gnome/taquin/window-height'
+#: data/org.gnome.Taquin.gschema.xml:43
 msgid "Height of the window in pixels."
 msgstr "Höjden på fönstret i bildpunkter."
 
-#: ../data/org.gnome.taquin.gschema.xml.h:9
+#. Translators: summary of a settings key, see 'dconf-editor /org/gnome/taquin/window-is-maximized'
+#: data/org.gnome.Taquin.gschema.xml:49
 msgid "true if the window is maximized."
 msgstr "true (sant) om fönstret är maximerat."
 
-#: ../src/game-window.vala:128
+#. Translators: when configuring a new game, entry in the menu of the game size menubutton
+#: data/taquin-screens.ui:8
+msgid "3 × 3"
+msgstr "3 × 3"
+
+#. Translators: when configuring a new game, entry in the menu of the game size menubutton
+#: data/taquin-screens.ui:14
+msgid "4 × 4"
+msgstr "4 × 4"
+
+#. Translators: when configuring a new game, entry in the menu of the game size menubutton
+#: data/taquin-screens.ui:20
+msgid "5 × 5"
+msgstr "5 × 5"
+
+#. Translators: when configuring a new game, entry in the menu of the game theme menubutton; play with cats images
+#: data/taquin-screens.ui:30
+msgid "Cats"
+msgstr "Katter"
+
+#. Translators: when configuring a new game, entry in the menu of the game theme menubutton; play with numbers
+#: data/taquin-screens.ui:36
+msgid "Numbers"
+msgstr "Siffror"
+
+#. Translators: when configuring a new game, if the user has a started game, tooltip text of the Go back button
+#: data/taquin.ui:22
+msgid "Go back to the current game"
+msgstr "Gå tillbaka till aktuellt spel"
+
+#. Translators: during a game, label of the Start Over button (with a mnemonic that appears pressing Alt)
+#: data/taquin.ui:45
+msgid "_Start Over"
+msgstr "_Börja om"
+
+#. Translators: during a game, tooltip text of the Start Over button
+#: data/taquin.ui:49
+msgid "Start a new game"
+msgstr "Starta ett nytt spel"
+
+#. Translators: hamburger menu entry; sound togglebutton (with a mnemonic that appears pressing Alt)
+#: data/taquin.ui:121
+msgid "_Sound"
+msgstr "_Ljud"
+
+#. Translators: hamburger menu entry; open help (with a mnemonic that appears pressing Alt)
+#: data/taquin.ui:128
+msgid "_Help"
+msgstr "_Hjälp"
+
+#. Translators: hamburger menu entry; open about dialog (with a mnemonic that appears pressing Alt)
+#: data/taquin.ui:133
+msgid "_About Taquin"
+msgstr "_Om Taquin"
+
+#. Translators: when configuring a new game, label of the blue Start button (with a mnemonic that appears pressing Alt)
+#: src/game-window.vala:129
 msgid "_Start Game"
 msgstr "_Starta spel"
 
-#: ../src/game-window.vala:153
+#. Translators: during a game, tooltip text of the Undo button
+#: src/game-window.vala:156
 msgid "Undo your most recent move"
 msgstr "Ångra ditt senaste drag"
 
-#: ../src/taquin-main.vala:45
+#. Translators: command-line option description, see 'gnome-taquin --help'
+#: src/taquin-main.vala:49
 msgid "Play the classical 1880s’ 15-puzzle"
 msgstr "Spela det klassiska 15-pusslet från 1880-talet"
 
-#: ../src/taquin-main.vala:46
+#. Translators: command-line option description, see 'gnome-taquin --help'
+#: src/taquin-main.vala:52
 msgid "Try this fun alternative 16-puzzle"
 msgstr "Pröva detta roliga alternativa 16-pussel"
 
-#: ../src/taquin-main.vala:47
+#. Translators: command-line option description, see 'gnome-taquin --help'
+#: src/taquin-main.vala:55
 msgid "Sets the puzzle edges’ size (3-5, 2-9 for debug)"
 msgstr "Ställer in kantstorlek på pusslet (3-5, 2-9 för felsökning)"
 
-#: ../src/taquin-main.vala:48
+#. Translators: command-line option description, see 'gnome-taquin --help'
+#: src/taquin-main.vala:58
 msgid "Turn off the sound"
 msgstr "Slå av ljudet"
 
-#: ../src/taquin-main.vala:49
+#. Translators: command-line option description, see 'gnome-taquin --help'
+#: src/taquin-main.vala:61
 msgid "Turn on the sound"
 msgstr "Slå på ljudet"
 
-#: ../src/taquin-main.vala:50
+#. Translators: command-line option description, see 'gnome-taquin --help'
+#: src/taquin-main.vala:64
 msgid "Print release version and exit"
 msgstr "Visa utgåvans version och avsluta"
 
-#: ../src/taquin-main.vala:233
+#. Translators: about dialog text; in the Credits, text at the end of the "Artwork by" section
+#: src/taquin-main.vala:253
 msgid "(see COPYING.themes for informations)"
 msgstr "(se COPYING.themes för information)"
 
-#: ../src/taquin-main.vala:241
+#. Translators: about dialog text
+#: src/taquin-main.vala:262
 msgid "A classic 15-puzzle game"
 msgstr "Ett klassiskt 15-pusselspel"
 
-#: ../src/taquin-main.vala:245
+#. Translators: about dialog text; this string should be replaced by a text crediting yourselves and your translation team, or should be left empty. Do not translate literally!
+#: src/taquin-main.vala:267
 msgid "translator-credits"
 msgstr ""
 "Anders Jonsson <anders.jonsson@norsjovallen.se>\n"
@@ -210,26 +243,37 @@ msgstr ""
 "Skicka synpunkter på översättningen till\n"
 "<tp-sv@listor.tp-sv.se>."
 
-#: ../src/taquin-main.vala:286
+#. Translators: notification, as a subtitle of the headerbar; on the 15-Puzzle game, if the user clicks a tile that cannot move
+#: src/taquin-main.vala:309
 msgid "You can’t move this tile!"
 msgstr "Du kan inte flytta den här brickan!"
 
-#: ../src/taquin-main.vala:292
+#. Translators: notification, as a subtitle of the headerbar; on both games, if the user solves the puzzle
+#: src/taquin-main.vala:316
 msgid "Bravo! You finished the game!"
 msgstr "Bravo! Du har klarat spelet!"
 
-#: ../src/taquin-main.vala:310
+#. Translators: when configuring a new game, button label for the size of the game ("3 × 3", or 4, or 5)
+#: src/taquin-main.vala:335
 #, c-format
 msgid "Size: %d × %d ▾"
 msgstr "Storlek: %d × %d ▾"
 
-#: ../src/taquin-main.vala:324
+#. Translators: when configuring a new game, button label for the theme, if the current theme is Cats
+#: src/taquin-main.vala:350
 msgid "Theme: Cats ▾"
 msgstr "Tema: Katter ▾"
 
-#: ../src/taquin-main.vala:325
+#. Translators: when configuring a new game, button label for the theme, if the current theme is Numbers
+#: src/taquin-main.vala:353
 msgid "Theme: Numbers ▾"
 msgstr "Tema: Siffror ▾"
+
+#~ msgid "_Quit"
+#~ msgstr "_Avsluta"
+
+#~ msgid "Configure a new game"
+#~ msgstr "Konfigurera ett nytt spel"
 
 #~ msgid "Start a new game as configured"
 #~ msgstr "Starta ett nytt spel enligt konfiguration"
