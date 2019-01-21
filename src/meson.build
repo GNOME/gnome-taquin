@@ -32,8 +32,8 @@ executable(meson.project_name(),[
         glib_dependency,
         gtk_dependency,
         rsvg_dependency,
-        canberra_depenency,
-        canberra_gtk3_depenency,
+        canberra_dependency,
+        canberra_gtk3_dependency,
         posix_dependency
     ]
 )
