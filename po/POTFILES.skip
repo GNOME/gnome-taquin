@@ -1,6 +1,10 @@
+src/about-list.c
+src/adaptative-window.c
+src/base-headerbar.c
 src/game-headerbar.c
 src/game-view.c
 src/game-window.c
-src/taquin-main.c
+src/new-game-screen.c
 src/taquin-game.c
+src/taquin-main.c
 src/taquin-view.c

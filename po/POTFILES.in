@@ -3,12 +3,16 @@
 data/org.gnome.Taquin.appdata.xml.in
 data/org.gnome.Taquin.desktop.in
 data/org.gnome.Taquin.gschema.xml
+data/base-headerbar.ui
 data/game-headerbar.ui
 data/taquin-screens.ui
-data/taquin.ui
+src/about-list.vala
+src/adaptative-window.vala
+src/base-headerbar.vala
 src/game-headerbar.vala
 src/game-view.vala
 src/game-window.vala
+src/new-game-screen.vala
 src/taquin-game.vala
 src/taquin-main.vala
 src/taquin-view.vala
