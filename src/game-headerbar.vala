@@ -32,6 +32,8 @@ private class GameHeaderBar : BaseHeaderBar
 
     construct
     {
+        ((Label) new_game_button.get_child ()).set_ellipsize (Pango.EllipsizeMode.END); // can happen on small screen with big moves count
+
         init_modes ();
 
         if (window_name != "")
@@ -182,6 +184,12 @@ private class GameHeaderBar : BaseHeaderBar
     internal bool new_game_button_is_focus ()
     {
         return new_game_button.is_focus;
+    }
+
+    internal void set_moves_count (ref uint moves_count)
+    {
+        history_button.set_label (moves_count.to_string ());
+        history_button.set_sensitive (moves_count != 0);
     }
 
     /*\

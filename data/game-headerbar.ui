@@ -39,22 +39,14 @@
         <property name="valign">center</property>
         <property name="focus-on-click">False</property>
         <property name="menu-model">history-menu</property>
-        <style>
-          <class name="image-button"/>
-        </style>
+        <property name="label">0</property>
+        <property name="sensitive">False</property>
         <child internal-child="accessible">
           <object class="AtkObject">
             <!-- Translators: accessible name of the history menubutton -->
             <property name="AtkObject::accessible-name" translatable="yes">History</property>
             <!-- Translators: accessible description of the history menubutton -->
             <property name="AtkObject::accessible-description" translatable="yes">Game history menu</property>
-          </object>
-        </child>
-        <child>
-          <object class="GtkImage">
-            <property name="visible">True</property>
-            <property name="icon-name">document-open-recent-symbolic</property>
-            <property name="icon-size">1</property>
           </object>
         </child>
       </object>
@@ -91,7 +83,7 @@
         <property name="label" translatable="yes">_New Game</property>
         <property name="use-underline">True</property>
         <property name="action-name">ui.new-game</property>
-        <!-- Translators: during a game, tooltip text of the Start Over button -->
+        <!-- Translators: during a game, tooltip text of the New Game button -->
         <property name="tooltip-text" translatable="yes">Start a new game</property>
       </object>
     </child>

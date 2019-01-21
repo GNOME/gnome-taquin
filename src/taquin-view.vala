@@ -435,7 +435,7 @@ public class TaquinView : Gtk.DrawingArea
         cr.line_to (grid_border_main + tile_size * (number + 2.0 / 3), inside ? y1 : y2);
     }
 
-    private void move_cb (bool x_axis, int number, int x_gap, int y_gap, bool restarting)
+    private void move_cb (bool x_axis, int number, int x_gap, int y_gap, uint moves_count, bool disable_animation)
     {
         this.x_axis = x_axis;
         this.number = number;
@@ -447,7 +447,13 @@ public class TaquinView : Gtk.DrawingArea
             x_arrow = x_gap;
             y_arrow = y_gap;
         }
-        if (!restarting)
+        if (disable_animation)
+        {
+            finished = false;
+            animation_end_offset = 0;
+            animate_end = false;
+        }
+        else
         {
             animation_offset = 0;
             animate = true;

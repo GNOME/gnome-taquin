@@ -47,6 +47,7 @@ public class Game : Object
     /* undoing */
     private UndoItem? state = null;
     private UndoItem? previous_state = null;
+    private uint moves_count = 0;
 
     /* position of the empty tile, if any */
     private int x_gap = 0;
@@ -54,7 +55,7 @@ public class Game : Object
 
     /* signals */
     public signal void complete ();
-    public signal void move (bool x_axis, int number, int x_gap, int y_gap, bool restarting);
+    public signal void move (bool x_axis, int number, int x_gap, int y_gap, uint moves_count, bool disable_animation);
     public signal void empty_tile ();
     public signal void cannot_move (int x, int y);
     public signal void cannot_undo_more ();
@@ -157,11 +158,18 @@ public class Game : Object
         }
 
         /* we do the move before notifying */
+        bool was_complete = check_complete ();
+
         var move_x_axis = x != x_gap;
         var move_number = move_x_axis ? x_gap - x : y_gap - y;
 
-        if (!undoing)
+        if (undoing)
+            moves_count--;
+        else
+        {
             add_move (/* move_x_axis, move_number,*/ x_gap, y_gap);
+            moves_count++;
+        }
 
         if (move_x_axis)
         {
@@ -179,9 +187,9 @@ public class Game : Object
         }
         tiles[x_gap, y_gap] = -1;
 
-        move (move_x_axis, move_number, x_gap, y_gap, restarting);
-        if (!undoing)
-            check_complete ();
+        move (move_x_axis, move_number, x_gap, y_gap, moves_count, restarting || (was_complete && undoing));
+        if (check_complete ())
+            complete ();
     }
 
     private void sixteen_move (int x, int y, bool undoing = false, bool restarting = false)
@@ -203,6 +211,8 @@ public class Game : Object
             return;
 
         /* we do the move before notifying */
+        bool was_complete = check_complete ();
+
         var new_coord = 0;
         if (move_x_axis)
         {
@@ -242,19 +252,31 @@ public class Game : Object
                 new_coord = 0;
             }
         }
-        if (!undoing)
+
+        if (undoing)
+            moves_count--;
+        else
+        {
             add_move (move_x_axis ? (new_coord == 0 ? -1 : size) : x, move_x_axis ? y : (new_coord == 0 ? -1 : size));
-        move (move_x_axis, new_coord == 0 ? size - 1 : 1 - size, move_x_axis ? new_coord : x, move_x_axis ? y : new_coord, restarting);
-        if (!undoing)
-            check_complete ();
+            moves_count++;
+        }
+
+        move (move_x_axis,
+              new_coord == 0 ? size - 1 : 1 - size,
+              move_x_axis ? new_coord : x,
+              move_x_axis ? y : new_coord,
+              moves_count,
+              restarting || (was_complete && undoing));
+        if (check_complete ())
+            complete ();
     }
 
-    private void check_complete ()
+    private bool check_complete ()
     {
         for (var i = 1; i < size * size; i++)
             if (i != tiles[i % size, i / size])
-                return;
-        complete ();
+                return false;
+        return true;
     }
 
     /*\

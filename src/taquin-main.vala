@@ -240,6 +240,7 @@ private class Taquin : Gtk.Application, BaseApplication
         int size = settings.get_int ("size");
         game = new Game (type, size);
         view.game = (!) game;
+        window.set_moves_count (0);
 
         string filename = "";
         var dirlist = theme_dirlist.copy ();
@@ -297,8 +298,9 @@ private class Taquin : Gtk.Application, BaseApplication
     * * Signals from game
     \*/
 
-    private void move_cb ()
+    private void move_cb (bool x_axis, int number, int x_gap, int y_gap, uint moves_count, bool disable_animation)
     {
+        window.set_moves_count (moves_count);
         window.set_subtitle (null);
         window.restart_action.set_enabled (true);
         window.undo_action.set_enabled (true);
@@ -316,8 +318,6 @@ private class Taquin : Gtk.Application, BaseApplication
         window.finish_game ();
         /* Translators: notification, as a subtitle of the headerbar; on both games, if the user solves the puzzle */
         window.set_subtitle (_("Bravo! You finished the game!"));
-        window.restart_action.set_enabled (false); // Taquin specific
-        window.undo_action.set_enabled (false);    // Taquin specific
         play_sound ("gameover");
     }
 

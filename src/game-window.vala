@@ -135,6 +135,11 @@ private class GameWindow : BaseWindow, AdaptativeWidget
         game_view.show_game_content (/* grab focus */ true);
     }
 
+    public void set_moves_count (uint moves_count)
+    {
+        headerbar.set_moves_count (ref moves_count);
+    }
+
     public void set_subtitle (string? subtitle)
     {
         if (subtitle != null)
@@ -270,6 +275,7 @@ private class GameWindow : BaseWindow, AdaptativeWidget
             return;
 
         game_finished = false;
+        hide_notification ();
 
         if (headerbar.new_game_button_is_focus ())
             game_view.show_game_content (/* grab focus */ true);
@@ -287,6 +293,7 @@ private class GameWindow : BaseWindow, AdaptativeWidget
             return;
 
         game_finished = false;
+        hide_notification ();
 
         if (headerbar.new_game_button_is_focus ())
             game_view.show_game_content (/* grab focus */ true);
