@@ -172,6 +172,8 @@ private class GameHeaderBar : BaseHeaderBar
     {
         back_button.show ();
         new_game_button.hide ();        // TODO transition?
+        best_score = 0;
+        last_moves_count = 0;
     }
 
     /*\
