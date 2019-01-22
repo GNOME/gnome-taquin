@@ -150,6 +150,7 @@ private class GameWindow : BaseWindow, AdaptativeWidget
     {
         game_finished = true;
         headerbar.new_game_button_grab_focus ();
+        headerbar.save_best_score ();
     }
 
     protected override bool escape_pressed ()

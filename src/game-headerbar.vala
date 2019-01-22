@@ -34,6 +34,8 @@ private class GameHeaderBar : BaseHeaderBar
     {
         ((Label) new_game_button.get_child ()).set_ellipsize (Pango.EllipsizeMode.END); // can happen on small screen with big moves count
 
+        generate_moves_menu ();
+
         init_modes ();
 
         if (window_name != "")
@@ -186,10 +188,12 @@ private class GameHeaderBar : BaseHeaderBar
         return new_game_button.is_focus;
     }
 
+    private uint last_moves_count = 0;
     internal void set_moves_count (ref uint moves_count)
     {
         history_button.set_label (moves_count.to_string ());
-        history_button.set_sensitive (moves_count != 0);
+        history_button.set_sensitive ((moves_count != 0) || (best_score != 0));
+        last_moves_count = moves_count;
     }
 
     /*\
@@ -238,5 +242,52 @@ private class GameHeaderBar : BaseHeaderBar
             real_this.history_button.hide ();
             real_this.new_game_button.hide ();
         }
+    }
+
+    /*\
+    * * moves menu
+    \*/
+
+    private uint best_score = 0;
+    internal void save_best_score ()
+    {
+        if ((best_score == 0) || (last_moves_count < best_score))
+            best_score = last_moves_count;
+        generate_moves_menu ();
+    }
+
+    private void generate_moves_menu ()
+    {
+        GLib.Menu menu = new GLib.Menu ();
+        generate_undo_actions_section (ref menu);
+        if (best_score != 0)
+            generate_best_score_section (ref best_score, ref menu);
+        menu.freeze ();
+        history_button.set_menu_model (menu);
+    }
+
+    private static inline void generate_undo_actions_section (ref GLib.Menu menu)
+    {
+        GLib.Menu section = new GLib.Menu ();
+
+        /* Translators: during a game, entry in the menu of the history menubutton (with a mnemonic that appears pressing Alt) */
+        section.append (_("_Undo"), "ui.undo");
+
+        /* Translators: during a game, entry in the menu of the history menubutton (with a mnemonic that appears pressing Alt) */
+        section.append (_("_Restart"), "ui.restart");
+
+        section.freeze ();
+        menu.append_section (null, section);
+    }
+
+    private static inline void generate_best_score_section (ref uint best_score, ref GLib.Menu menu)
+    {
+        GLib.Menu section = new GLib.Menu ();
+
+        /* Translators: during a game that has already been finished (and possibly restarted), entry in the menu of the moves button */
+        section.append (_("Best score: %u").printf (best_score), null);
+
+        section.freeze ();
+        menu.append_section (null, section);
     }
 }
