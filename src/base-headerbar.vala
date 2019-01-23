@@ -122,7 +122,7 @@ private class BaseHeaderBar : NightTimeAwareHeaderBar, AdaptativeWidget
             return;
 
         /* Translators: usual menu entry of the hamburger menu (with a mnemonic that appears pressing Alt) */
-        section.append (_("_Help"), "app.help");
+        section.append (_("_Help"), "base.help");
     }
 
     private static inline void append_about_entry (string about_action_label, ref GLib.Menu section)

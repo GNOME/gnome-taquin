@@ -103,6 +103,8 @@ private class BaseWindow : AdaptativeWindow, AdaptativeWidget
         { "menu",               menu_pressed        },  // Menu
 
         { "show-default-view",  show_default_view   },
+
+        { "help",               help                },
         { "about",              about               }
     };
 
@@ -295,13 +297,36 @@ private class BaseWindow : AdaptativeWindow, AdaptativeWidget
 
             _this.headerbar.close_popovers ();
             _this.main_view.close_popovers ();
+            if ((event.state & Gdk.ModifierType.CONTROL_MASK) != 0)
+                return false;                           // help overlay
             if ((event.state & Gdk.ModifierType.SHIFT_MASK) == 0)
-                return false;   // help overlay
+                return show_application_help (_this);   // fallback on help overlay (TODO test)
             _this.about ();
             return true;
         }
 
         return false;
+    }
+
+    private void help (/* SimpleAction action, Variant? variant */)
+    {
+        show_application_help (this);
+    }
+
+    private static inline bool show_application_help (BaseWindow _this)
+    {
+        bool success;
+        try
+        {
+            show_uri (_this.get_screen (), "help:gnome-taquin", get_current_event_time ());
+            success = true;
+        }
+        catch (Error e)
+        {
+            warning ("Failed to show help: %s", e.message);
+            success = false;
+        }
+        return success;
     }
 
     /*\

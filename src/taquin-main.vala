@@ -77,7 +77,6 @@ private class Taquin : Gtk.Application, BaseApplication
         {"change-theme", change_theme_cb, "s"},
 
         {"set-use-night-mode", set_use_night_mode, "b"},
-        {"help", help_cb},
         {"quit", quit}
     };
 
@@ -172,7 +171,13 @@ private class Taquin : Gtk.Application, BaseApplication
         set_accels_for_action ("base.escape",           {                 "Escape"  });
         set_accels_for_action ("base.toggle-hamburger", {                 "F10",
                                                                           "Menu"    });
-        set_accels_for_action ("app.help",              {                 "F1"      });
+//        set_accels_for_action ("app.help",              {                 "F1"      });
+//        set_accels_for_action ("base.about",            {          "<Shift>F1"      });
+        set_accels_for_action ("win.show-help-overlay", {                 "F1", // TODO test: if showing Yelp fails, should fallback there
+                                                                 "<Primary>F1",
+                                                          "<Shift><Primary>F1",
+                                                                 "<Primary>question",
+                                                          "<Shift><Primary>question"});
 
         /* New-game screen signals */
         settings.changed ["size"].connect (() => {
@@ -258,22 +263,6 @@ private class Taquin : Gtk.Application, BaseApplication
         ((!) game).cannot_move.connect (cannot_move_cb);
         ((!) game).cannot_undo_more.connect (window.cannot_undo_more);
         ((!) game).move.connect (move_cb);
-    }
-
-    /*\
-    * * App-menu callbacks
-    \*/
-
-    private void help_cb ()
-    {
-        try
-        {
-            show_uri (window.get_screen (), "help:gnome-taquin", get_current_event_time ());
-        }
-        catch (Error e)
-        {
-            warning ("Failed to show help: %s", e.message);
-        }
     }
 
     /*\

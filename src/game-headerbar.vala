@@ -48,7 +48,7 @@ private class GameHeaderBar : BaseHeaderBar
         Object (about_action_label:     _("About Taquin"),
                 night_light_monitor:    _night_light_monitor,
                 has_help:               true,
-                has_keyboard_shortcuts: false,
+                has_keyboard_shortcuts: true,
                 window_name:            _window_name);
 
 /*        if (GameWindowFlags.SHOW_UNDO in flags)

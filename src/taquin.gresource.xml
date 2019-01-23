@@ -17,4 +17,7 @@
     <file preprocess="xml-stripblanks" alias="taquin-screens.ui">../data/taquin-screens.ui</file>
     <file alias="taquin.css">../data/taquin.css</file>
   </gresource>
+  <gresource prefix="/org/gnome/Taquin/gtk">
+    <file preprocess="xml-stripblanks" alias="help-overlay.ui">../data/help-overlay.ui</file>
+  </gresource>
 </gresources>
