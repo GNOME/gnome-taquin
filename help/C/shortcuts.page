@@ -4,12 +4,12 @@
 
   <info>
     <link type="guide" xref="index#advanced" />
-    <revision pkgversion="3.15" version="0.1" date="2014-09-11" status="final"/>
+    <revision pkgversion="3.31" version="0.2" date="2019-01-23" status="final"/>
 
     <credit type="author copyright">
       <name>Arnaud Bonatti</name>
       <email>arnaud.bonatti@gmail.com</email>
-      <years>2014</years>
+      <years>2014-2019</years>
     </credit>
 
     <desc></desc>
@@ -27,6 +27,10 @@
         <td><p><keyseq><key>Ctrl</key><key>N</key></keyseq></p></td>
       </tr>
       <tr>
+        <td><p>Restart game</p></td>
+        <td><p><keyseq><key>Shift</key><key>Ctrl</key><key>N</key></keyseq></p></td>
+      </tr>
+      <tr>
         <td><p>Undo last move</p></td>
         <td><p><keyseq><key>Ctrl</key><key>Z</key></keyseq></p></td>
       </tr>
@@ -36,12 +40,12 @@
     <title>15-Puzzle shortcuts</title>
     <table frame="all" rules="cols" shade="rows">
       <tr>
-        <td><p>Change selected tile</p></td>
+        <td><p>Select tile to push on</p></td>
         <td><p><key>Left</key>, <key>Right</key>, <key>Up</key> and <key>Down</key></p></td>
       </tr>
       <tr>
         <td><p>Push tile in empty space’s direction</p></td>
-        <td><p><key>Space</key> or <key>KP_Enter</key></p></td>
+        <td><p><key>Space</key>, <key>Return</key> and <key>KP_Enter</key></p></td>
       </tr>
     </table>
   </section>
@@ -49,16 +53,20 @@
     <title>16-Puzzle shortcuts</title>
     <table frame="all" rules="cols" shade="rows">
       <tr>
-        <td><p>Change selected tile</p></td>
-        <td><p><key>Left</key>, <key>Right</key>, <key>Up</key> and <key>Down</key></p></td>
+        <td><p>Change selected column</p></td>
+        <td><p><key>Left</key> and <key>Right</key></p></td>
       </tr>
       <tr>
-        <td><p>Move row</p></td>
-        <td><p><keyseq><key>Ctrl</key><key>Left</key></keyseq> and <keyseq><key>Ctrl</key><key>Right</key></keyseq></p></td>
+        <td><p>Change selected row</p></td>
+        <td><p><key>Up</key> and <key>Down</key></p></td>
       </tr>
       <tr>
-        <td><p>Move column</p></td>
-        <td><p><keyseq><key>Ctrl</key><key>Up</key></keyseq> and <keyseq><key>Ctrl</key><key>Down</key></keyseq></p></td>
+        <td><p>Swipe selected row</p></td>
+        <td><p><keyseq><key>Shift</key><key>Left</key></keyseq> and <keyseq><key>Shift</key><key>Right</key></keyseq></p></td>
+      </tr>
+      <tr>
+        <td><p>Swipe selected column</p></td>
+        <td><p><keyseq><key>Shift</key><key>Up</key></keyseq> and <keyseq><key>Shift</key><key>Down</key></keyseq></p></td>
       </tr>
     </table>
   </section>
@@ -66,8 +74,8 @@
     <title>Start Screen shortcuts</title>
     <table frame="all" rules="cols" shade="rows">
       <tr>
-        <td><p>New Game</p></td>
-        <td><p><keyseq><key>Ctrl</key><key>Shift</key><key>N</key></keyseq></p></td>
+        <td><p>Start new game</p></td>
+        <td><p><keyseq><key>Shift</key><key>Ctrl</key><key>N</key></keyseq></p></td>
       </tr>
       <tr>
         <td><p>Back to previous game (if any)</p></td>
@@ -79,8 +87,16 @@
     <title>General shortcuts</title>
     <table frame="all" rules="cols" shade="rows">
       <tr>
+        <td><p>Keyboard shortcuts</p></td>
+        <td><p><keyseq><key>Ctrl</key><key>F1</key></keyseq></p></td> <!-- TODO: show also <Ctrl>? -->
+      </tr>
+      <tr>
         <td><p>Help</p></td>
         <td><p><key>F1</key></p></td>
+      </tr>
+      <tr>
+        <td><p>About</p></td>
+        <td><p><keyseq><key>Shift</key><key>F1</key></keyseq></p></td>
       </tr>
       <tr>
         <td><p>Quit</p></td>
