@@ -4,12 +4,12 @@
 
   <info>
     <link type="guide" xref="index#play" />
-    <revision pkgversion="3.15" version="0.1" date="2014-09-11" status="final"/>
+    <revision pkgversion="3.31" version="0.2" date="2019-01-23" status="final"/>
 
     <credit type="author copyright">
       <name>Arnaud Bonatti</name>
       <email>arnaud.bonatti@gmail.com</email>
-      <years>2014</years>
+      <years>2014-2019</years>
     </credit>
 
     <desc></desc>
@@ -17,6 +17,6 @@
 
   <title>Start Screen</title>
   <p>The <em>Start Screen</em> is the place to select your options and launch a new game, either a <link xref="15-Puzzle">15-Puzzle</link> or a <link xref="16-Puzzle">16-Puzzle</link>.</p>
-  <p>It can be accessed at any time from a game by pressing the <gui>Start Over</gui> button.</p>
+  <p>It can be accessed at any time from a game by pressing the <gui>New Game</gui> button.</p>
 
 </page>

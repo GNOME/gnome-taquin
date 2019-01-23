@@ -23,7 +23,7 @@
     <title>In-game shortcuts</title>
     <table frame="all" rules="cols" shade="rows">
       <tr>
-        <td><p>Show new-game screen</p></td>
+        <td><p>Show the Start Screen</p></td>
         <td><p><keyseq><key>Ctrl</key><key>N</key></keyseq></p></td>
       </tr>
       <tr>
