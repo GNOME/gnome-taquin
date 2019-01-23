@@ -160,7 +160,7 @@ private class Taquin : Gtk.Application, BaseApplication
         set_accels_for_action ("base.copy",             {        "<Primary>c"       });
         set_accels_for_action ("base.copy-alt",         { "<Shift><Primary>c"       });
         set_accels_for_action ("ui.new-game",           {        "<Primary>n"       });
-        set_accels_for_action ("ui.start-game",         { "<Shift><Primary>n"       });
+        set_accels_for_action ("ui.start-or-restart",   { "<Shift><Primary>n"       });
         set_accels_for_action ("app.quit",              {        "<Primary>q",
                                                           "<Shift><Primary>q"       });
         set_accels_for_action ("base.paste",            {        "<Primary>v"       });

@@ -138,6 +138,7 @@ private class GameWindow : BaseWindow, AdaptativeWidget
     public void set_moves_count (uint moves_count)
     {
         headerbar.set_moves_count (ref moves_count);
+        hide_notification ();
     }
 
     public void set_subtitle (string? subtitle)
@@ -223,15 +224,28 @@ private class GameWindow : BaseWindow, AdaptativeWidget
 
     private const GLib.ActionEntry [] ui_action_entries =
     {
-        { "new-game", new_game_cb },
-        { "start-game", start_game_cb },
+        { "start-or-restart",   start_or_restart_cb },  // "Start new game" button or <Shift><Primary>n
+        { "new-game",           new_game_cb },          // "New game" button or <Shift>n
+        { "restart",            restart_cb },           // "Restart" menu entry; keep action to allow disabling menu entry
 
-        { "restart", restart_cb },
-        {    "undo",    undo_cb },
-        {    "redo",    redo_cb },
-
+        { "undo", undo_cb },
+        { "redo", redo_cb },
         { "hint", hint_cb }
     };
+
+    private void start_or_restart_cb (/* SimpleAction action, Variant? variant */)
+    {
+        if (game_view.is_in_in_window_mode ())
+            return;
+
+        if (!game_view.game_content_visible_if_true ())
+            start_game ();
+        else if (restart_action.get_enabled ())
+            restart_game ();
+        else
+            /* Translator: during a game, if the user tries with <Shift><Ctrl>n to restart the game, while already on initial position */
+            show_notification (_("Already on initial position."));
+    }
 
     private void new_game_cb (/* SimpleAction action, Variant? variant */)
     {
@@ -240,32 +254,7 @@ private class GameWindow : BaseWindow, AdaptativeWidget
         if (!game_view.game_content_visible_if_true ())
             return;
 
-        wait ();
-
-        game_view.configure_transition (StackTransitionType.SLIDE_LEFT, 800);
-
-        headerbar.new_game ();
-        back_action_disabled = false;
-        show_new_game_screen ();
-    }
-
-    private void start_game_cb (/* SimpleAction action, Variant? variant */)
-    {
-        if (game_view.is_in_in_window_mode ())
-            return;
-        if (game_view.game_content_visible_if_true ())
-            return;
-
-        game_finished = false;
-
-        restart_action.set_enabled (false);
-           undo_action.set_enabled (false);
-           redo_action.set_enabled (false);
-
-        play ();        // FIXME lag (see in Taquin…)
-
-        game_view.configure_transition (StackTransitionType.SLIDE_DOWN, 1000);
-        show_view ();
+        new_game ();
     }
 
     private void restart_cb (/* SimpleAction action, Variant? variant */)
@@ -275,15 +264,7 @@ private class GameWindow : BaseWindow, AdaptativeWidget
         if (!game_view.game_content_visible_if_true ())
             return;
 
-        game_finished = false;
-        hide_notification ();
-
-        if (headerbar.new_game_button_is_focus ())
-            game_view.show_game_content (/* grab focus */ true);
-        redo_action.set_enabled (true);
-        restart_action.set_enabled (false);
-
-        restart ();
+        restart_game ();
     }
 
     private void undo_cb (/* SimpleAction action, Variant? variant */)
@@ -326,5 +307,47 @@ private class GameWindow : BaseWindow, AdaptativeWidget
             return;
 
         hint ();
+    }
+
+    /*\
+    * * actions helpers
+    \*/
+
+    private void start_game ()
+    {
+        game_finished = false;
+
+        restart_action.set_enabled (false);
+           undo_action.set_enabled (false);
+           redo_action.set_enabled (false);
+
+        play ();        // FIXME lag (see in Taquin…)
+
+        game_view.configure_transition (StackTransitionType.SLIDE_DOWN, 1000);
+        show_view ();
+    }
+
+    private void restart_game ()
+    {
+        game_finished = false;
+        hide_notification ();
+
+        if (headerbar.new_game_button_is_focus ())
+            game_view.show_game_content (/* grab focus */ true);
+        redo_action.set_enabled (true);
+        restart_action.set_enabled (false);
+
+        restart ();
+    }
+
+    private void new_game ()
+    {
+        wait ();
+
+        game_view.configure_transition (StackTransitionType.SLIDE_LEFT, 800);
+
+        headerbar.new_game ();
+        back_action_disabled = false;
+        show_new_game_screen ();
     }
 }

@@ -57,7 +57,7 @@ private class GameView : BaseView, AdaptativeWidget
             start_game_button = new Button.with_mnemonic (_("_Start Game"));
             ((!) start_game_button).get_style_context ().add_class ("start-game-button");
             ((!) start_game_button).halign = Align.CENTER;
-            ((!) start_game_button).set_action_name ("ui.start-game");
+            ((!) start_game_button).set_action_name ("ui.start-or-restart");
             /* Translators: when configuring a new game, tooltip text of the blue Start button */
             // start_game_button.set_tooltip_text (_("Start a new game as configured"));
             ((StyleContext) ((!) start_game_button).get_style_context ()).add_class ("suggested-action");
