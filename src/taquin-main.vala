@@ -239,13 +239,16 @@ private class Taquin : Gtk.Application, BaseApplication
     private void start_game ()
     {
         if (game != null)
+        {
             SignalHandler.disconnect_by_func ((!) game, null, this);
+            SignalHandler.disconnect_by_func ((!) game, null, window);
+        }
 
         GameType type = (GameType) settings.get_enum ("type");
         int size = settings.get_int ("size");
         game = new Game (type, size);
         view.game = (!) game;
-        window.set_moves_count (0);
+        window.move (0);
 
         string filename = "";
         var dirlist = theme_dirlist.copy ();
@@ -260,8 +263,7 @@ private class Taquin : Gtk.Application, BaseApplication
         view.realize ();        // TODO does that help?
 
         ((!) game).complete.connect (game_complete_cb);
-        ((!) game).cannot_move.connect (cannot_move_cb);
-        ((!) game).cannot_undo_more.connect (window.cannot_undo_more);
+        ((!) game).cannot_move.connect (window.cannot_move);
         ((!) game).move.connect (move_cb);
     }
 
@@ -289,24 +291,13 @@ private class Taquin : Gtk.Application, BaseApplication
 
     private void move_cb (bool x_axis, int number, int x_gap, int y_gap, uint moves_count, bool disable_animation)
     {
-        window.set_moves_count (moves_count);
-        window.set_subtitle (null);
-        window.restart_action.set_enabled (true);
-        window.undo_action.set_enabled (true);
+        window.move (moves_count);
         play_sound ("sliding-1");       // TODO sliding-n??
-    }
-
-    private void cannot_move_cb ()
-    {
-        /* Translators: notification, as a subtitle of the headerbar; on the 15-Puzzle game, if the user clicks a tile that cannot move */
-        window.set_subtitle (_("You can’t move this tile!"));
     }
 
     private void game_complete_cb ()
     {
         window.finish_game ();
-        /* Translators: notification, as a subtitle of the headerbar; on both games, if the user solves the puzzle */
-        window.set_subtitle (_("Bravo! You finished the game!"));
         play_sound ("gameover");
     }
 

@@ -58,7 +58,6 @@ public class Game : Object
     public signal void move (bool x_axis, int number, int x_gap, int y_gap, uint moves_count, bool disable_animation);
     public signal void empty_tile ();
     public signal void cannot_move (int x, int y);
-    public signal void cannot_undo_more ();
 
     /*\
     * * Creation / exporting
@@ -303,9 +302,6 @@ public class Game : Object
 
         state = previous_state;
         previous_state = state == null ? null : ((!) state).previous;
-
-        if (state == null)
-            cannot_undo_more ();
     }
 
     public void restart ()
@@ -320,8 +316,6 @@ public class Game : Object
             state = previous_state;
             previous_state = state == null ? null : ((!) state).previous;
         }
-
-        cannot_undo_more ();
     }
 
     private void add_move (int x_gap, int y_gap)

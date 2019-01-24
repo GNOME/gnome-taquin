@@ -116,7 +116,7 @@ private class GameWindow : BaseWindow, AdaptativeWidget
         return false;
     }
 
-    public void shutdown (GLib.Settings settings)
+    internal void shutdown (GLib.Settings settings)
     {
         settings.set_int ("window-width", window_width);
         settings.set_int ("window-height", window_height);
@@ -128,30 +128,30 @@ private class GameWindow : BaseWindow, AdaptativeWidget
     * * Some public calls
     \*/
 
-    public void cannot_undo_more ()
+    internal void cannot_move ()
     {
-        restart_action.set_enabled (false);
-        undo_action.set_enabled (false);
-        game_view.show_game_content (/* grab focus */ true);
+        /* Translators: notification, as a subtitle of the headerbar; on the 15-Puzzle game, if the user clicks a tile that cannot move */
+        show_notification (_("You can’t move this tile!"));
     }
 
-    public void set_moves_count (uint moves_count)
+    internal void move (uint moves_count)
     {
         headerbar.set_moves_count (ref moves_count);
         hide_notification ();
+        bool undo_possible = moves_count != 0;
+        restart_action.set_enabled (undo_possible);
+        undo_action.set_enabled (undo_possible);
+        if (!undo_possible)
+            game_view.show_game_content (/* grab focus */ true);
     }
 
-    public void set_subtitle (string? subtitle)
-    {
-        if (subtitle != null)
-            show_notification ((!) subtitle);
-    }
-
-    public void finish_game ()
+    internal void finish_game ()
     {
         game_finished = true;
         headerbar.new_game_button_grab_focus ();
         headerbar.save_best_score ();
+        /* Translators: notification, as a subtitle of the headerbar; on both games, if the user solves the puzzle */
+        show_notification (_("Bravo! You finished the game!"));
     }
 
     protected override bool escape_pressed ()
@@ -201,9 +201,9 @@ private class GameWindow : BaseWindow, AdaptativeWidget
     public signal void redo ();
     public signal void hint ();
 
-    public SimpleAction restart_action;
-    public SimpleAction    undo_action;
-    public SimpleAction    redo_action;
+    private SimpleAction restart_action;
+    private SimpleAction    undo_action;
+    private SimpleAction    redo_action;
 
     private bool back_action_disabled = true;
 
