@@ -18,12 +18,19 @@
 @import url("base-window.css");
 
 
+/*\
+* * new-hame screen generics
+\*/
 
-                               .new-game-screen         {                          padding:0.5rem; }  /* for top    */
+                               .main-grid               { transition:padding 0.3s; padding:1.5rem; }
+                  .thin-window .main-grid               {                          padding:1.0rem; }
+.extra-thin-window.thin-window .main-grid,
+                  .flat-window .main-grid               {                          padding:0.5rem; }
+.extra-flat-window.flat-window .main-grid               {                          padding:0.4rem; }
+
                                button.start-game-button { margin-top:1.5rem; margin-bottom:0.5rem;
                                                transition:margin-top 0 ease, margin-bottom 0 ease; }
                   .flat-window button.start-game-button { margin-top:0.5rem;                       }
-.extra-flat-window.flat-window .new-game-screen         {                          padding:0.4rem; }
 .extra-flat-window.flat-window button.start-game-button { margin-top:  0rem; margin-bottom:0.4rem; }
 
 .extra-thin-window             label.section-header,

@@ -67,29 +67,8 @@ private class GameView : BaseView, AdaptativeWidget
 
         game_content = content;
         game_stack.add (content);
-        update_game_content_margin (short_margin, ref game_content);
         content.can_focus = true;
         content.show ();
-    }
-
-    private bool short_margin = false;
-    protected override void set_window_size (AdaptativeWidget.WindowSize new_size)
-    {
-        base.set_window_size (new_size);
-
-        bool _short_margin = AdaptativeWidget.WindowSize.is_extra_thin (new_size)
-                          || AdaptativeWidget.WindowSize.is_extra_flat (new_size);
-        if (_short_margin == short_margin)
-            return;
-        short_margin = _short_margin;
-        update_game_content_margin (short_margin, ref game_content);
-    }
-    private static void update_game_content_margin (bool new_state, ref Widget game_content)
-    {
-        if (new_state)
-            game_content.margin = 11;
-        else
-            game_content.margin = 25;
     }
 
     internal void show_new_game_box (bool grab_focus)

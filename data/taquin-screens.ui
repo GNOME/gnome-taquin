@@ -59,9 +59,6 @@
     <property name="orientation">vertical</property>
     <property name="visible">True</property>
     <property name="spacing">6</property>
-    <style>
-      <class name="new-game-screen"/>
-    </style>
     <child>
       <object class="GtkLabel" id="games_label">
         <property name="visible">False</property>
