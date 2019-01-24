@@ -149,9 +149,9 @@ private class GameWindow : BaseWindow, AdaptativeWidget
     {
         game_finished = true;
         headerbar.new_game_button_grab_focus ();
-        headerbar.save_best_score ();
-        /* Translators: notification, as a subtitle of the headerbar; on both games, if the user solves the puzzle */
-        show_notification (_("Bravo! You finished the game!"));
+        string best_score_string;
+        headerbar.save_best_score (out best_score_string);
+        show_notification (best_score_string);
     }
 
     protected override bool escape_pressed ()

@@ -251,12 +251,50 @@ private class GameHeaderBar : BaseHeaderBar
     \*/
 
     private uint best_score = 0;
-    internal void save_best_score ()
+    internal void save_best_score (out string best_score_string)
     {
+        get_best_score_string (ref best_score, ref last_moves_count, out best_score_string);
+
         if ((best_score == 0) || (last_moves_count < best_score))
             best_score = last_moves_count;
         generate_moves_menu ();
     }
+    private static inline void get_best_score_string (ref uint best_score, ref uint last_moves_count, out string best_score_string)
+    {
+        if (best_score == 0)
+        {
+            best_score_string = usual_best_score_string;
+            return;
+        }
+
+        if (last_moves_count < best_score)
+        {
+            /* Translators: in-window notification; on both games, if the user solved the puzzle more than one time */
+            best_score_string =    _("Bravo! You improved your best score!");
+            if (best_score_string != "Bravo! You improved your best score!")
+                return;
+        }
+        else if (last_moves_count == best_score)
+        {
+            /* Translators: in-window notification; on both games, if the user solved the puzzle more than one time */
+            best_score_string =    _("Bravo! You equalized your best score.");
+            if (best_score_string != "Bravo! You equalized your best score.")
+                return;
+        }
+        else
+        {
+            /* Translators: in-window notification; on both games, if the user solved the puzzle more than one time */
+            best_score_string =    _("Bravo! You finished the game again.");
+            if (best_score_string != "Bravo! You finished the game again.")
+                return;
+        }
+
+        if (usual_best_score_string_untranslated != usual_best_score_string)
+            best_score_string = usual_best_score_string;
+    }
+    /* Translators: in-window notification; on both games, if the user solves the puzzle the first time */
+    private const string usual_best_score_string              = _("Bravo! You finished the game!");
+    private const string usual_best_score_string_untranslated =   "Bravo! You finished the game!" ;
 
     private void generate_moves_menu ()
     {
