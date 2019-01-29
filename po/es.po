@@ -8,8 +8,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: 1.0\n"
 "Report-Msgid-Bugs-To: https://gitlab.gnome.org/GNOME/gnome-taquin/issues\n"
-"POT-Creation-Date: 2019-01-23 15:46+0000\n"
-"PO-Revision-Date: 2019-01-24 13:15+0100\n"
+"POT-Creation-Date: 2019-01-24 12:26+0000\n"
+"PO-Revision-Date: 2019-01-29 15:49+0100\n"
 "Last-Translator: Daniel Mustieles <daniel.mustieles@gmail.com>\n"
 "Language-Team: es <gnome-es-list@gnome.org>\n"
 "Language: es\n"
@@ -72,13 +72,13 @@ msgstr "puzle;juego;"
 
 #. Translators: an action Name, as defined in the desktop file spec; name of the traditional Taquin game
 #. Translators: when configuring a new game, label of the first big button; name of the traditional Taquin game
-#: data/org.gnome.Taquin.desktop.in:21 data/taquin-screens.ui:95
+#: data/org.gnome.Taquin.desktop.in:21 data/taquin-screens.ui:92
 msgid "15-Puzzle"
 msgstr "Puzle-15"
 
 #. Translators: an action Name, as defined in the desktop file spec; name of the alternative game
 #. Translators: when configuring a new game, label of the second big button; name of the non-traditional game
-#: data/org.gnome.Taquin.desktop.in:26 data/taquin-screens.ui:112
+#: data/org.gnome.Taquin.desktop.in:26 data/taquin-screens.ui:109
 msgid "16-Puzzle"
 msgstr "Puzle-16"
 
@@ -150,7 +150,7 @@ msgstr "Acciones"
 #. Translators: accessible description of the hamburger menu
 #: data/base-headerbar.ui:114
 msgid "Current view actions"
-msgstr ""
+msgstr "Acciones de la vista actual"
 
 #. Translators: accessible name of the history menubutton
 #: data/game-headerbar.ui:32
@@ -160,7 +160,7 @@ msgstr "Histórico"
 #. Translators: accessible description of the history menubutton
 #: data/game-headerbar.ui:34
 msgid "Game history menu"
-msgstr ""
+msgstr "Menú del histórico de juegos"
 
 #. Translators: when configuring a new game, if the user has a started game, tooltip text of the Go back button
 #: data/game-headerbar.ui:49
@@ -169,7 +169,6 @@ msgstr "Volver al juego actual"
 
 #. Translators: during a game, label of the New Game button (with a mnemonic that appears pressing Alt)
 #: data/game-headerbar.ui:68
-#| msgid "_Start Game"
 msgid "_New Game"
 msgstr "Juego _nuevo"
 
@@ -184,7 +183,6 @@ msgid "During game selection"
 msgstr ""
 
 #: data/help-overlay.ui:32
-#| msgid "Start a new game"
 msgctxt "shortcut window"
 msgid "Start new game"
 msgstr "Iniciar un juego nuevo"
@@ -205,19 +203,16 @@ msgid "New game"
 msgstr "Juego nuevo"
 
 #: data/help-overlay.ui:59
-#| msgid "_Start Game"
 msgctxt "shortcut window"
 msgid "Restart game"
 msgstr "Reiniciar el juego"
 
 #: data/help-overlay.ui:66
-#| msgid "Undo your most recent move"
 msgctxt "shortcut window"
 msgid "Undo last move"
 msgstr "Deshacer el último movimiento"
 
 #: data/help-overlay.ui:75
-#| msgid "15-Puzzle"
 msgctxt "shortcut window"
 msgid "15-Puzzle"
 msgstr "Puzle-15"
@@ -233,7 +228,6 @@ msgid "Push on selected tile"
 msgstr ""
 
 #: data/help-overlay.ui:95
-#| msgid "16-Puzzle"
 msgctxt "shortcut window"
 msgid "16-Puzzle"
 msgstr "Puzle-16"
@@ -241,12 +235,12 @@ msgstr "Puzle-16"
 #: data/help-overlay.ui:99
 msgctxt "shortcut window"
 msgid "Change selected column"
-msgstr ""
+msgstr "Cambiar la columna seleccionada"
 
 #: data/help-overlay.ui:106
 msgctxt "shortcut window"
 msgid "Change selected row"
-msgstr ""
+msgstr "Cambiar la fila seleccionada"
 
 #: data/help-overlay.ui:113
 msgctxt "shortcut window"
@@ -261,7 +255,7 @@ msgstr ""
 #: data/help-overlay.ui:129
 msgctxt "shortcut window"
 msgid "Generic"
-msgstr ""
+msgstr "Genérico"
 
 #: data/help-overlay.ui:133
 msgctxt "shortcut window"
@@ -269,7 +263,6 @@ msgid "Keyboard shortcuts"
 msgstr "Atajos de teclado"
 
 #: data/help-overlay.ui:140
-#| msgid "_Help"
 msgctxt "shortcut window"
 msgid "Help"
 msgstr "Ayuda"
@@ -280,7 +273,6 @@ msgid "About"
 msgstr "Acerca de"
 
 #: data/help-overlay.ui:154
-#| msgid "_Quit"
 msgctxt "shortcut window"
 msgid "Quit"
 msgstr "Salir"
@@ -311,12 +303,12 @@ msgid "Numbers"
 msgstr "Números"
 
 #. Translators: when configuring a new game, header of the game type that appears on small screen
-#: data/taquin-screens.ui:70
+#: data/taquin-screens.ui:67
 msgid "Game"
 msgstr "Juego"
 
 #. Translators: when configuring a new game, header of the options that appears on small screen
-#: data/taquin-screens.ui:134
+#: data/taquin-screens.ui:131
 msgid "Options"
 msgstr "Opciones"
 
@@ -352,7 +344,6 @@ msgstr "Documentadores"
 
 #. Translators: on really small windows, the about dialog is replaced by an in-window view; here is the header of the translators names
 #: src/about-list.vala:166
-#| msgid "translator-credits"
 msgid "Translators"
 msgstr "Traductores"
 
@@ -388,7 +379,6 @@ msgstr "_Ayuda"
 
 #. Translators: usual menu entry of the hamburger menu
 #: src/game-headerbar.vala:48
-#| msgid "_About Taquin"
 msgid "About Taquin"
 msgstr "Acerca de Taquin"
 
@@ -397,18 +387,39 @@ msgstr "Acerca de Taquin"
 msgid "_Sound"
 msgstr "_Sonido"
 
+#. Translators: in-window notification; on both games, if the user solved the puzzle more than one time
+#: src/game-headerbar.vala:273
+msgid "Bravo! You improved your best score!"
+msgstr ""
+
+#. Translators: in-window notification; on both games, if the user solved the puzzle more than one time
+#: src/game-headerbar.vala:280
+msgid "Bravo! You equalized your best score."
+msgstr ""
+
+#. Translators: in-window notification; on both games, if the user solved the puzzle more than one time
+#: src/game-headerbar.vala:287
+#| msgid "Bravo! You finished the game!"
+msgid "Bravo! You finished the game again."
+msgstr "¡Enhorabuena, ha terminado el juego!"
+
+#. Translators: in-window notification; on both games, if the user solves the puzzle the first time
+#: src/game-headerbar.vala:296
+msgid "Bravo! You finished the game!"
+msgstr "¡Enhorabuena, ha terminado el juego!"
+
 #. Translators: during a game, entry in the menu of the history menubutton (with a mnemonic that appears pressing Alt)
-#: src/game-headerbar.vala:276
+#: src/game-headerbar.vala:314
 msgid "_Undo"
 msgstr "_Deshacer"
 
 #. Translators: during a game, entry in the menu of the history menubutton (with a mnemonic that appears pressing Alt)
-#: src/game-headerbar.vala:279
+#: src/game-headerbar.vala:317
 msgid "_Restart"
 msgstr "_Reiniciar"
 
 #. Translators: during a game that has already been finished (and possibly restarted), entry in the menu of the moves button
-#: src/game-headerbar.vala:290
+#: src/game-headerbar.vala:328
 #, c-format
 msgid "Best score: %u"
 msgstr "Mejor puntuación: %u"
@@ -417,6 +428,11 @@ msgstr "Mejor puntuación: %u"
 #: src/game-view.vala:57
 msgid "_Start Game"
 msgstr "_Iniciar juego"
+
+#. Translators: notification, as a subtitle of the headerbar; on the 15-Puzzle game, if the user clicks a tile that cannot move
+#: src/game-window.vala:134
+msgid "You can’t move this tile!"
+msgstr "No puede mover esta ficha"
 
 #. Translator: during a game, if the user tries with <Shift><Ctrl>n to restart the game, while already on initial position
 #: src/game-window.vala:247
@@ -470,33 +486,23 @@ msgstr "Activar el sonido"
 msgid "Print release version and exit"
 msgstr "Mostrar información de la versión y salir"
 
-#. Translators: notification, as a subtitle of the headerbar; on the 15-Puzzle game, if the user clicks a tile that cannot move
-#: src/taquin-main.vala:302
-msgid "You can’t move this tile!"
-msgstr "No puede mover esta ficha"
-
-#. Translators: notification, as a subtitle of the headerbar; on both games, if the user solves the puzzle
-#: src/taquin-main.vala:309
-msgid "Bravo! You finished the game!"
-msgstr "¡Enhorabuena, ha terminado el juego!"
-
 #. Translators: about dialog text
-#: src/taquin-main.vala:402
+#: src/taquin-main.vala:393
 msgid "A classic 15-puzzle game"
 msgstr "Un juego clásico de puzle-15"
 
 #. Translators: about dialog text; in the Credits, text at the end of the "Artwork by" section
-#: src/taquin-main.vala:411
+#: src/taquin-main.vala:402
 msgid "(see COPYING.themes for informations)"
 msgstr "(consulte COPYING.themes para obtener más información)"
 
 #. Translators: about dialog text; this string should be replaced by a text crediting yourselves and your translation team, or should be left empty. Do not translate literally!
-#: src/taquin-main.vala:422
+#: src/taquin-main.vala:413
 msgid "translator-credits"
 msgstr "Daniel Mustieles <daniel.mustieles@gmail.com>, 2015-2016"
 
 #. Translators: about dialog text; label of the website link
-#: src/taquin-main.vala:427
+#: src/taquin-main.vala:418
 msgid "Page on GNOME wiki"
 msgstr ""
 
