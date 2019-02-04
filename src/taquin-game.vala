@@ -56,8 +56,14 @@ public class Game : Object
     /* signals */
     public signal void complete ();
     public signal void move (bool x_axis, int number, int x_gap, int y_gap, uint moves_count, bool disable_animation);
-    public signal void empty_tile ();
-    public signal void cannot_move (int x, int y);
+    public signal void bad_click (BadClick reason, bool keyboard_call);
+
+    public enum BadClick {
+        EMPTY_TILE,
+        NOT_MOVING,
+        IS_OUTSIDE,
+        USE_ARROWS;
+    }
 
     /*\
     * * Creation / exporting
@@ -131,31 +137,43 @@ public class Game : Object
     * * Game code
     \*/
 
-    public void request_move (int x, int y)
+    public void request_move (int x, int y, bool keyboard_call)
     {
         if (game_type == GameType.FIFTEEN)
+        {
+            if (x < 0 || x >= size || y < 0 || y >= size)
+            {
+                bad_click (BadClick.IS_OUTSIDE, keyboard_call);
+                return;
+            }
+            if (x == x_gap && y == y_gap)
+            {
+                bad_click (BadClick.EMPTY_TILE, keyboard_call);
+                return;
+            }
+            if (x != x_gap && y != y_gap)
+            {
+                bad_click (BadClick.NOT_MOVING, keyboard_call);
+                return;
+            }
             fifteen_move (x, y, /* undoing */ false);
+        }
         else
+        {
+            // TODO real touch support
+            if (x >= 0 && x < size && y >= 0 && y < size)
+            {
+                bad_click (BadClick.USE_ARROWS, keyboard_call);
+                return;
+            }
             sixteen_move (x, y, /* undoing */ false);
+        }
     }
 
     private void fifteen_move (int x, int y, bool undoing = false, bool restarting = false)
         requires (!restarting || undoing)
+        requires ((x >= 0) && (x < size) && (y >= 0) && (y < size))
     {
-        if (x < 0 || x >= size || y < 0 || y >= size)
-            return;
-
-        if (x == x_gap && y == y_gap)
-        {
-            empty_tile ();
-            return;
-        }
-        if (x != x_gap && y != y_gap)
-        {
-            cannot_move (x, y);
-            return;
-        }
-
         /* we do the move before notifying */
         bool was_complete = check_complete ();
 
@@ -193,11 +211,8 @@ public class Game : Object
 
     private void sixteen_move (int x, int y, bool undoing = false, bool restarting = false)
         requires (!restarting || undoing)
+        requires ((x < 0) || (x >= size) || (y < 0) || (y >= size))
     {
-        /* TODO touch */
-        if (x >= 0 && x < size && y >= 0 && y < size)
-            return;
-
         var move_x_axis = false;
         if (x < 0 || x >= size)
         {

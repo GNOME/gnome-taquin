@@ -128,12 +128,6 @@ private class GameWindow : BaseWindow, AdaptativeWidget
     * * Some public calls
     \*/
 
-    internal void cannot_move ()
-    {
-        /* Translators: notification, as a subtitle of the headerbar; on the 15-Puzzle game, if the user clicks a tile that cannot move */
-        show_notification (_("You can’t move this tile!"));
-    }
-
     internal void move (uint moves_count)
     {
         headerbar.set_moves_count (ref moves_count);

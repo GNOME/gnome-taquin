@@ -482,7 +482,8 @@ public class TaquinView : Gtk.DrawingArea
         {
             draw_lights = false;
             game.request_move ((int) (event.x - x_offset - grid_border_main + tile_size) / tile_size - 1,
-                               (int) (event.y - y_offset - grid_border_main + tile_size) / tile_size - 1);
+                               (int) (event.y - y_offset - grid_border_main + tile_size) / tile_size - 1,
+                               /* keyboard */ false);
         }
         return true;
     }
@@ -496,16 +497,16 @@ public class TaquinView : Gtk.DrawingArea
         if (game.game_type == GameType.SIXTEEN && ((event.state & ModifierType.SHIFT_MASK) > 0 || (event.state & ModifierType.CONTROL_MASK) > 0))
         {
             switch (k_name) {
-                case "Left":  game.request_move (- 1, y_arrow);       break;
-                case "Right": game.request_move (game.size, y_arrow); break;
-                case "Up":    game.request_move (x_arrow, - 1);       break;
-                case "Down":  game.request_move (x_arrow, game.size); break;
+                case "Left":  game.request_move (- 1,       y_arrow,    /* keyboard */ true); break;
+                case "Right": game.request_move (game.size, y_arrow,    /* keyboard */ true); break;
+                case "Up":    game.request_move (x_arrow,   - 1,        /* keyboard */ true); break;
+                case "Down":  game.request_move (x_arrow,   game.size,  /* keyboard */ true); break;
                 default: return false;
             }
         }
         if (k_name == "space" || k_name == "KP_Enter" || k_name == "Return")        // TODO even if game.game_type == GameType.SIXTEEN ??
         {
-            game.request_move (x_arrow, y_arrow);
+            game.request_move (x_arrow, y_arrow, /* keyboard */ true);
             return true;
         }
         switch (k_name) {

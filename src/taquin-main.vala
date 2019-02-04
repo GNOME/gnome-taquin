@@ -249,6 +249,7 @@ private class Taquin : Gtk.Application, BaseApplication
         game = new Game (type, size);
         view.game = (!) game;
         window.move (0);
+        move_done = false;
 
         string filename = "";
         var dirlist = theme_dirlist.copy ();
@@ -263,7 +264,7 @@ private class Taquin : Gtk.Application, BaseApplication
         view.realize ();        // TODO does that help?
 
         ((!) game).complete.connect (game_complete_cb);
-        ((!) game).cannot_move.connect (window.cannot_move);
+        ((!) game).bad_click.connect (bad_click_cb);
         ((!) game).move.connect (move_cb);
     }
 
@@ -276,6 +277,7 @@ private class Taquin : Gtk.Application, BaseApplication
     {
         ((!) game).restart ();
         play_sound ("sliding-n");
+        move_done = false;
     }
 
     private void undo_cb ()
@@ -293,12 +295,44 @@ private class Taquin : Gtk.Application, BaseApplication
     {
         window.move (moves_count);
         play_sound ("sliding-1");       // TODO sliding-n??
+        move_done = true;
     }
 
     private void game_complete_cb ()
     {
         window.finish_game ();
         play_sound ("gameover");
+    }
+
+    private bool move_done = false;
+    private void bad_click_cb (Game.BadClick reason, bool keyboard_call)
+    {
+        switch (reason)
+        {
+            case Game.BadClick.NOT_MOVING:
+                /* Translators: in-window notification; on the 15-Puzzle game, if the user clicks a tile that cannot move */
+                window.show_notification (_("You can’t move this tile!"));
+                return;
+
+            case Game.BadClick.USE_ARROWS:
+                if (move_done)  // do nothing if a move has already been done, a bad click or key press happens; reset on next game
+                    return;
+
+                if (keyboard_call)
+                    /* Translators: in-window notification; on the 16-Puzzle game, help for keyboard use, displayed if the user uses an unmeaningful keyboard key */
+                    window.show_notification (_("Use Shift and an arrow to move tiles!"));
+
+                else
+                    /* Translators: in-window notification; on the 16-Puzzle game, if the user clicks on a tile of the board (the game is played using mouse with arrows around the board) */
+                    window.show_notification (_("Click on the arrows to move tiles!"));
+
+                return;
+
+            case Game.BadClick.IS_OUTSIDE:  // TODO something?
+            case Game.BadClick.EMPTY_TILE:  // TODO something?
+            default:
+                return;
+        }
     }
 
     /*\

@@ -491,7 +491,7 @@ private class BaseWindow : AdaptativeWindow, AdaptativeWidget
     * * notifications
     \*/
 
-    protected void show_notification (string notification)
+    internal void show_notification (string notification)
     {
         main_view.show_notification (notification);
     }
