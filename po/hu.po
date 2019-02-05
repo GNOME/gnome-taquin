@@ -7,8 +7,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: gnome-taquin master\n"
 "Report-Msgid-Bugs-To: https://gitlab.gnome.org/GNOME/gnome-taquin/issues\n"
-"POT-Creation-Date: 2019-01-24 12:26+0000\n"
-"PO-Revision-Date: 2019-01-27 16:34+0100\n"
+"POT-Creation-Date: 2019-02-04 08:16+0000\n"
+"PO-Revision-Date: 2019-02-05 21:15+0100\n"
 "Last-Translator: Balázs Úr <urbalazs@gmail.com>\n"
 "Language-Team: Hungarian <gnome-hu-list at gnome dot org>\n"
 "Language: hu\n"
@@ -429,13 +429,8 @@ msgstr "Legjobb pontszám: %u"
 msgid "_Start Game"
 msgstr "Játék _indítása"
 
-#. Translators: notification, as a subtitle of the headerbar; on the 15-Puzzle game, if the user clicks a tile that cannot move
-#: src/game-window.vala:134
-msgid "You can’t move this tile!"
-msgstr "Ezt a csempét nem mozdíthatja!"
-
 #. Translator: during a game, if the user tries with <Shift><Ctrl>n to restart the game, while already on initial position
-#: src/game-window.vala:247
+#: src/game-window.vala:241
 msgid "Already on initial position."
 msgstr "Már a kezdeti helyen van."
 
@@ -485,23 +480,38 @@ msgstr "Hang bekapcsolása"
 msgid "Print release version and exit"
 msgstr "Kiadási verzió kiírása és kilépés"
 
+#. Translators: in-window notification; on the 15-Puzzle game, if the user clicks a tile that cannot move
+#: src/taquin-main.vala:314
+msgid "You can’t move this tile!"
+msgstr "Ezt a csempét nem mozdíthatja!"
+
+#. Translators: in-window notification; on the 16-Puzzle game, help for keyboard use, displayed if the user uses an unmeaningful keyboard key
+#: src/taquin-main.vala:323
+msgid "Use Shift and an arrow to move tiles!"
+msgstr "Használja a Shift és egy nyíl billentyűt a csempék mozgatásához!"
+
+#. Translators: in-window notification; on the 16-Puzzle game, if the user clicks on a tile of the board (the game is played using mouse with arrows around the board)
+#: src/taquin-main.vala:327
+msgid "Click on the arrows to move tiles!"
+msgstr "Kattintson a nyilakra a csempék mozgatásához!"
+
 #. Translators: about dialog text
-#: src/taquin-main.vala:393
+#: src/taquin-main.vala:427
 msgid "A classic 15-puzzle game"
 msgstr "Egy klasszikus 15-ös kirakós játék"
 
 #. Translators: about dialog text; in the Credits, text at the end of the "Artwork by" section
-#: src/taquin-main.vala:402
+#: src/taquin-main.vala:436
 msgid "(see COPYING.themes for informations)"
 msgstr "(további információkért lásd a COPYING.themes fájlt)"
 
 #. Translators: about dialog text; this string should be replaced by a text crediting yourselves and your translation team, or should be left empty. Do not translate literally!
-#: src/taquin-main.vala:413
+#: src/taquin-main.vala:447
 msgid "translator-credits"
 msgstr "Úr Balázs <urbalazs@gmail.com>"
 
 #. Translators: about dialog text; label of the website link
-#: src/taquin-main.vala:418
+#: src/taquin-main.vala:452
 msgid "Page on GNOME wiki"
 msgstr "Szócikk a GNOME wikin"
 
