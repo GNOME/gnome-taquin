@@ -1,3 +1,22 @@
+3.31.90 – February 5, 2019
+=============================
+
+Many changes. From the technical side, Taquin switched to Meson and can
+now be built using Gitlab CI, thanks to Bilal Elmoussaoui. It uses also
+a new and great icon now, designed by Jakub Steiner. On the UI side, it
+is I think the first update ever: the game board is now centered, there
+is in the headerbar a counter of moves, you can now restart the current
+game (and it keeps your best score, so you can try to improve it). And,
+the application should now be playable when using a phone-sized screen.
+
+Translations updated:
+  Friulian: Fabio Tomat
+  Galician: Fran Dieguez
+  Hungarian: Balázs Úr
+  Indonesian: Kukuh Syafaat
+  Spanish: Daniel Mustieles
+  Swedish: Anders Jonsson
+
 3.31.4 – January 8, 2019
 =============================
 
