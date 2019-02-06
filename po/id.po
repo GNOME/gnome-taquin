@@ -6,8 +6,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: gnome-taquin master\n"
 "Report-Msgid-Bugs-To: https://gitlab.gnome.org/GNOME/gnome-taquin/issues\n"
-"POT-Creation-Date: 2019-01-24 12:26+0000\n"
-"PO-Revision-Date: 2019-01-26 21:28+0700\n"
+"POT-Creation-Date: 2019-02-04 08:16+0000\n"
+"PO-Revision-Date: 2019-02-06 21:12+0700\n"
 "Last-Translator: Kukuh Syafaat <kukuhsyafaat@gnome.org>\n"
 "Language-Team: Indonesian\n"
 "Language: id\n"
@@ -427,13 +427,8 @@ msgstr "Skor terbaik: %u"
 msgid "_Start Game"
 msgstr "M_ulai Permainan"
 
-#. Translators: notification, as a subtitle of the headerbar; on the 15-Puzzle game, if the user clicks a tile that cannot move
-#: src/game-window.vala:134
-msgid "You can’t move this tile!"
-msgstr "Anda tidak dapat memindahkan ubin ini!"
-
 #. Translator: during a game, if the user tries with <Shift><Ctrl>n to restart the game, while already on initial position
-#: src/game-window.vala:247
+#: src/game-window.vala:241
 msgid "Already on initial position."
 msgstr "Sudah di posisi awal."
 
@@ -483,23 +478,38 @@ msgstr "Nyalakan suara"
 msgid "Print release version and exit"
 msgstr "Cetak versi rilis dan keluar"
 
+#. Translators: in-window notification; on the 15-Puzzle game, if the user clicks a tile that cannot move
+#: src/taquin-main.vala:314
+msgid "You can’t move this tile!"
+msgstr "Anda tidak dapat memindahkan ubin ini!"
+
+#. Translators: in-window notification; on the 16-Puzzle game, help for keyboard use, displayed if the user uses an unmeaningful keyboard key
+#: src/taquin-main.vala:323
+msgid "Use Shift and an arrow to move tiles!"
+msgstr "Gunakan Shift dan tanda panah untuk memindahkan ubin!"
+
+#. Translators: in-window notification; on the 16-Puzzle game, if the user clicks on a tile of the board (the game is played using mouse with arrows around the board)
+#: src/taquin-main.vala:327
+msgid "Click on the arrows to move tiles!"
+msgstr "Klik pada tanda panah untuk memindahkan ubin!"
+
 #. Translators: about dialog text
-#: src/taquin-main.vala:393
+#: src/taquin-main.vala:427
 msgid "A classic 15-puzzle game"
 msgstr "Sebuah permainan 15-potongan klasik"
 
 #. Translators: about dialog text; in the Credits, text at the end of the "Artwork by" section
-#: src/taquin-main.vala:402
+#: src/taquin-main.vala:436
 msgid "(see COPYING.themes for informations)"
 msgstr "(Lihat COPYING.themes untuk informasi)"
 
 #. Translators: about dialog text; this string should be replaced by a text crediting yourselves and your translation team, or should be left empty. Do not translate literally!
-#: src/taquin-main.vala:413
+#: src/taquin-main.vala:447
 msgid "translator-credits"
 msgstr "Kukuh Syafaat <kukuhsyafaat@gnome.org>, 2017, 2019."
 
 #. Translators: about dialog text; label of the website link
-#: src/taquin-main.vala:418
+#: src/taquin-main.vala:452
 msgid "Page on GNOME wiki"
 msgstr "Halaman di wiki GNOME"
 
