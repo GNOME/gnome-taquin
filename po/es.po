@@ -8,8 +8,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: 1.0\n"
 "Report-Msgid-Bugs-To: https://gitlab.gnome.org/GNOME/gnome-taquin/issues\n"
-"POT-Creation-Date: 2019-01-24 12:26+0000\n"
-"PO-Revision-Date: 2019-01-29 15:49+0100\n"
+"POT-Creation-Date: 2019-02-04 08:16+0000\n"
+"PO-Revision-Date: 2019-02-06 11:31+0100\n"
 "Last-Translator: Daniel Mustieles <daniel.mustieles@gmail.com>\n"
 "Language-Team: es <gnome-es-list@gnome.org>\n"
 "Language: es\n"
@@ -17,7 +17,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
-"X-Generator: Gtranslator 3.31.0\n"
+"X-Generator: Gtranslator 3.31.90\n"
 
 #: data/org.gnome.Taquin.appdata.xml.in:7
 msgid "GNOME Taquin"
@@ -140,7 +140,7 @@ msgstr "Seguir la luz nocturna del sistema"
 #. Translators: description of a settings key, see 'dconf-editor /org/gnome/taquin/automatic-night-mode'
 #: data/org.gnome.Taquin.gschema.xml:59
 msgid "Use GNOME night light setting to activate night-mode."
-msgstr ""
+msgstr "Usar la luz nocturna de GNOME para activar el modo noche."
 
 #. Translators: accessible name of the hamburger menu
 #: data/base-headerbar.ui:112
@@ -180,7 +180,7 @@ msgstr "Iniciar un juego nuevo"
 #: data/help-overlay.ui:28
 msgctxt "shortcut window"
 msgid "During game selection"
-msgstr ""
+msgstr "Durante la selección del juego"
 
 #: data/help-overlay.ui:32
 msgctxt "shortcut window"
@@ -220,12 +220,12 @@ msgstr "Puzle-15"
 #: data/help-overlay.ui:79
 msgctxt "shortcut window"
 msgid "Select tile to push on"
-msgstr ""
+msgstr "Seleccione la ficha que empujar"
 
 #: data/help-overlay.ui:86
 msgctxt "shortcut window"
 msgid "Push on selected tile"
-msgstr ""
+msgstr "Empujar la ficha seleccionada"
 
 #: data/help-overlay.ui:95
 msgctxt "shortcut window"
@@ -245,12 +245,12 @@ msgstr "Cambiar la fila seleccionada"
 #: data/help-overlay.ui:113
 msgctxt "shortcut window"
 msgid "Swipe selected row"
-msgstr ""
+msgstr "Deslizar la fila seleccionada"
 
 #: data/help-overlay.ui:120
 msgctxt "shortcut window"
 msgid "Swipe selected column"
-msgstr ""
+msgstr "Deslizar la columna seleccionada"
 
 #: data/help-overlay.ui:129
 msgctxt "shortcut window"
@@ -390,16 +390,15 @@ msgstr "_Sonido"
 #. Translators: in-window notification; on both games, if the user solved the puzzle more than one time
 #: src/game-headerbar.vala:273
 msgid "Bravo! You improved your best score!"
-msgstr ""
+msgstr "¡Enhorabuena! Ha superado su mejor puntuación."
 
 #. Translators: in-window notification; on both games, if the user solved the puzzle more than one time
 #: src/game-headerbar.vala:280
 msgid "Bravo! You equalized your best score."
-msgstr ""
+msgstr "¡Enhorabuena! Ha logrado su mejor puntuación."
 
 #. Translators: in-window notification; on both games, if the user solved the puzzle more than one time
 #: src/game-headerbar.vala:287
-#| msgid "Bravo! You finished the game!"
 msgid "Bravo! You finished the game again."
 msgstr "¡Enhorabuena, ha terminado el juego!"
 
@@ -429,15 +428,10 @@ msgstr "Mejor puntuación: %u"
 msgid "_Start Game"
 msgstr "_Iniciar juego"
 
-#. Translators: notification, as a subtitle of the headerbar; on the 15-Puzzle game, if the user clicks a tile that cannot move
-#: src/game-window.vala:134
-msgid "You can’t move this tile!"
-msgstr "No puede mover esta ficha"
-
 #. Translator: during a game, if the user tries with <Shift><Ctrl>n to restart the game, while already on initial position
-#: src/game-window.vala:247
+#: src/game-window.vala:241
 msgid "Already on initial position."
-msgstr ""
+msgstr "Ya está en la posición inicial."
 
 #. Translators: when configuring a new game, button label for the size of the game ("3 × 3", or 4, or 5)
 #: src/new-game-screen.vala:36
@@ -486,25 +480,40 @@ msgstr "Activar el sonido"
 msgid "Print release version and exit"
 msgstr "Mostrar información de la versión y salir"
 
+#. Translators: in-window notification; on the 15-Puzzle game, if the user clicks a tile that cannot move
+#: src/taquin-main.vala:314
+msgid "You can’t move this tile!"
+msgstr "No puede mover esta ficha"
+
+#. Translators: in-window notification; on the 16-Puzzle game, help for keyboard use, displayed if the user uses an unmeaningful keyboard key
+#: src/taquin-main.vala:323
+msgid "Use Shift and an arrow to move tiles!"
+msgstr "Use Mayús y las flechas para mover las fichas"
+
+#. Translators: in-window notification; on the 16-Puzzle game, if the user clicks on a tile of the board (the game is played using mouse with arrows around the board)
+#: src/taquin-main.vala:327
+msgid "Click on the arrows to move tiles!"
+msgstr "Pulse sobre las flechas para mover las fichas"
+
 #. Translators: about dialog text
-#: src/taquin-main.vala:393
+#: src/taquin-main.vala:427
 msgid "A classic 15-puzzle game"
 msgstr "Un juego clásico de puzle-15"
 
 #. Translators: about dialog text; in the Credits, text at the end of the "Artwork by" section
-#: src/taquin-main.vala:402
+#: src/taquin-main.vala:436
 msgid "(see COPYING.themes for informations)"
 msgstr "(consulte COPYING.themes para obtener más información)"
 
 #. Translators: about dialog text; this string should be replaced by a text crediting yourselves and your translation team, or should be left empty. Do not translate literally!
-#: src/taquin-main.vala:413
+#: src/taquin-main.vala:447
 msgid "translator-credits"
 msgstr "Daniel Mustieles <daniel.mustieles@gmail.com>, 2015-2016"
 
 #. Translators: about dialog text; label of the website link
-#: src/taquin-main.vala:418
+#: src/taquin-main.vala:452
 msgid "Page on GNOME wiki"
-msgstr ""
+msgstr "Página en la wiki de GNOME"
 
 #~ msgid "_Start Over"
 #~ msgstr "_Iniciar"
