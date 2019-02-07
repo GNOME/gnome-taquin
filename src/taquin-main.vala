@@ -130,12 +130,17 @@ private class Taquin : Gtk.Application, BaseApplication
         base.startup ();
 
         settings = new GLib.Settings ("org.gnome.Taquin");
-        if (sound != null)
-            settings.set_boolean ("sound", (!) sound);
-        if (tmp_size > 1)
-            settings.set_int ("size", tmp_size);
-        if (tmp_type != null)
-            settings.set_string ("type", ((!) tmp_type).to_string ());     // TODO better?
+        if ((sound != null) || (tmp_size > 1) || (tmp_type != null))
+        {
+            settings.delay ();
+            if (sound != null)
+                settings.set_boolean ("sound", (!) sound);
+            if (tmp_size > 1)
+                settings.set_int ("size", tmp_size);
+            if (tmp_type != null)
+                settings.set_string ("type", ((!) tmp_type).to_string ());     // TODO better?
+            settings.apply ();
+        }
 
         /* UI parts */
         view = new TaquinView ();

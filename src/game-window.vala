@@ -118,9 +118,11 @@ private class GameWindow : BaseWindow, AdaptativeWidget
 
     internal void shutdown (GLib.Settings settings)
     {
+        settings.delay ();
         settings.set_int ("window-width", window_width);
         settings.set_int ("window-height", window_height);
         settings.set_boolean ("window-is-maximized", maximized_state);
+        settings.apply ();
         destroy ();
     }
 
