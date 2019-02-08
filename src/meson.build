@@ -2,6 +2,7 @@
 taquin_tests = executable(
     'taquin_tests',
     [
+        'taquin-game.vala',
         'test-taquin.vala'
     ],
     dependencies : [

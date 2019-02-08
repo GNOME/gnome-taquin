@@ -23,7 +23,10 @@ private class TestTaquin : Object
     private static int main (string [] args)
     {
         Test.init (ref args);
-        Test.add_func ("/Taquin/test tests", test_tests);
+        Test.add_func ("/Taquin/test tests",
+                                test_tests);
+        Test.add_func ("/Taquin/test a Fifteen 2 by 2 validity",
+                                test_fifteen_validity);
         return Test.run ();
     }
 
@@ -33,6 +36,68 @@ private class TestTaquin : Object
     }
 
     /*\
-    * * tests
+    * * test the Fifteen two by two
     \*/
+
+    /*
+                VALID                              INVALID
+    ┌───┬───┐ ┌───┬───┐ ┌───┬───┐       ┌───┬───┐ ┌───┬───┐ ┌───┬───┐
+    │[0]│ 2 │ │ 3 │ 2 │ │ 3 │ 2 │       │   │ 2 │ │ 4 │ 2 │ │ 4 │ 2 │
+    ├───┼───┤ ├───┼───┤ ├───┼───┤       ├───┼───┤ ├───┼───┤ ├───┼───┤
+    │ 3 │ 4 │ │   │ 4 │ │ 4 │   │       │ 4 │ 3 │ │   │ 3 │ │ 3 │   │
+    └───┴───┘ └───┴───┘ └───┴───┘       └───┴───┘ └───┴───┘ └───┴───┘
+    ┌───┬───┐ ┌───┬───┐ ┌───┬───┐       ┌───┬───┐ ┌───┬───┐ ┌───┬───┐
+    │ 3 │   │ │   │ 3 │ │ 4 │ 3 │       │ 4 │   │ │   │ 4 │ │ 3 │ 4 │
+    ├───┼───┤ ├───┼───┤ ├───┼───┤       ├───┼───┤ ├───┼───┤ ├───┼───┤
+    │ 4 │ 2 │ │ 4 │ 2 │ │   │ 2 │       │ 3 │ 2 │ │ 3 │ 2 │ │   │ 2 │
+    └───┴───┘ └───┴───┘ └───┴───┘       └───┴───┘ └───┴───┘ └───┴───┘
+    ┌───┬───┐ ┌───┬───┐ ┌───┬───┐       ┌───┬───┐ ┌───┬───┐ ┌───┬───┐
+    │ 4 │ 3 │ │ 4 │   │ │   │ 4 │       │ 3 │ 4 │ │ 3 │   │ │   │ 3 │
+    ├───┼───┤ ├───┼───┤ ├───┼───┤       ├───┼───┤ ├───┼───┤ ├───┼───┤
+    │ 2 │   │ │ 2 │ 3 │ │ 2 │ 3 │       │ 2 │   │ │ 2 │ 4 │ │ 2 │ 4 │
+    └───┴───┘ └───┴───┘ └───┴───┘       └───┴───┘ └───┴───┘ └───┴───┘
+    ┌───┬───┐ ┌───┬───┐ ┌───┬───┐       ┌───┬───┐ ┌───┬───┐ ┌───┬───┐
+    │ 2 │ 4 │ │ 2 │ 4 │ │ 2 │   │       │ 2 │ 3 │ │ 2 │ 3 │ │ 2 │   │
+    ├───┼───┤ ├───┼───┤ ├───┼───┤       ├───┼───┤ ├───┼───┤ ├───┼───┤
+    │   │ 3 │ │ 3 │   │ │ 3 │ 4 │       │   │ 4 │ │ 4 │   │ │ 4 │ 3 │
+    └───┴───┘ └───┴───┘ └───┴───┘       └───┴───┘ └───┴───┘ └───┴───┘
+    */
+
+    /* This test is a bit abstract: it tests for all the valid places,
+       but Taquin shows the empty tile at the top-left corner, always. */
+    private static void test_fifteen_validity ()
+    {
+        for (uint i = 0; i < 100; i++) // should be good enough
+        {
+            Game game = new Game (GameType.FIFTEEN, 2); // TODO use GameType.SIXTEEN instead?
+            print (@"\ntest: $game");
+
+            if (compare_value (ref game, 1, 0, 2))
+            {
+                assert_true (compare_value (ref game, 0, 0, 3) || compare_value (ref game, 0, 1, 3));
+                assert_true (compare_value (ref game, 1, 1, 4) || compare_value (ref game, 0, 1, 4));
+            }
+            else if (compare_value (ref game, 1, 1, 2))
+            {
+                assert_true (compare_value (ref game, 1, 0, 3) || compare_value (ref game, 0, 0, 3));
+                assert_true (compare_value (ref game, 0, 1, 4) || compare_value (ref game, 0, 0, 4));
+            }
+            else if (compare_value (ref game, 0, 1, 2))
+            {
+                assert_true (compare_value (ref game, 1, 1, 3) || compare_value (ref game, 1, 0, 3));
+                assert_true (compare_value (ref game, 0, 0, 4) || compare_value (ref game, 1, 0, 4));
+            }
+            else if (compare_value (ref game, 0, 0, 2))
+            {
+                assert_true (compare_value (ref game, 0, 1, 3) || compare_value (ref game, 1, 1, 3));
+                assert_true (compare_value (ref game, 1, 0, 4) || compare_value (ref game, 1, 1, 4));
+            }
+            else
+                Test.fail ();
+        }
+    }
+    private static bool compare_value (ref Game game, uint x, uint y, uint k)
+    {
+        return game.tiles [x, y] + 1 == k;
+    }
 }
