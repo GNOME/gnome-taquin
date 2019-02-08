@@ -7,6 +7,7 @@ gnome = import('gnome')
 i18n = import('i18n')
 python3 = import('python3')
 
+gio_dependency = dependency('gio-2.0', version: '>= 2.40.0')
 glib_dependency = dependency('glib-2.0', version: '>= 2.40.0')
 gtk_dependency = dependency('gtk+-3.0', version: '>= 3.20.0')
 rsvg_dependency = dependency('librsvg-2.0', version: '>= 2.32.0')

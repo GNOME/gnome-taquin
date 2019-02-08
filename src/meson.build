@@ -1,3 +1,16 @@
+# Tests
+taquin_tests = executable(
+    'taquin_tests',
+    [
+        'test-taquin.vala'
+    ],
+    dependencies : [
+        gio_dependency
+    ]
+)
+test('taquin-tests', taquin_tests)
+
+# Application
 resources = gnome.compile_resources (meson.project_name(), 'taquin.gresource.xml')
 
 executable(meson.project_name(),[
