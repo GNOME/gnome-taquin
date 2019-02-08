@@ -32,7 +32,7 @@ private class TestTaquin : Object
 
     private static void test_tests ()
     {
-        assert (1 + 1 == 2);
+        assert_true (1 + 1 == 2);
     }
 
     /*\
