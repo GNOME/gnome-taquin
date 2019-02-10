@@ -7,10 +7,10 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: https://gitlab.gnome.org/GNOME/gnome-taquin/issues\n"
-"POT-Creation-Date: 2019-01-24 12:26+0000\n"
-"PO-Revision-Date: 2019-01-26 23:19+0200\n"
+"POT-Creation-Date: 2019-02-04 08:16+0000\n"
+"PO-Revision-Date: 2019-02-10 17:30+0200\n"
 "Last-Translator: Fran Dieguez <frandieguez@gnome.org>\n"
-"Language-Team: Galician\n"
+"Language-Team: Proxecto Trasno <proxecto@trasno.gal>\n"
 "Language: en_GB\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -169,7 +169,6 @@ msgstr "Volver ao xogo actual"
 
 #. Translators: during a game, label of the New Game button (with a mnemonic that appears pressing Alt)
 #: data/game-headerbar.ui:68
-#| msgid "_Start Game"
 msgid "_New Game"
 msgstr "_Novo xogo"
 
@@ -184,7 +183,6 @@ msgid "During game selection"
 msgstr "Durante a selección do xogo"
 
 #: data/help-overlay.ui:32
-#| msgid "Start a new game"
 msgctxt "shortcut window"
 msgid "Start new game"
 msgstr "Comezar un novo xogo"
@@ -205,19 +203,16 @@ msgid "New game"
 msgstr "Novo xogo"
 
 #: data/help-overlay.ui:59
-#| msgid "_Start Game"
 msgctxt "shortcut window"
 msgid "Restart game"
 msgstr "Reiniciar o xogo"
 
 #: data/help-overlay.ui:66
-#| msgid "Undo your most recent move"
 msgctxt "shortcut window"
 msgid "Undo last move"
 msgstr "Desfacer o último movemento"
 
 #: data/help-overlay.ui:75
-#| msgid "15-Puzzle"
 msgctxt "shortcut window"
 msgid "15-Puzzle"
 msgstr "Quebracabezas 15"
@@ -233,7 +228,6 @@ msgid "Push on selected tile"
 msgstr "Empurrar a tesela seleccionada"
 
 #: data/help-overlay.ui:95
-#| msgid "16-Puzzle"
 msgctxt "shortcut window"
 msgid "16-Puzzle"
 msgstr "Quebracabezas 16"
@@ -269,19 +263,16 @@ msgid "Keyboard shortcuts"
 msgstr "Atallos de teclado"
 
 #: data/help-overlay.ui:140
-#| msgid "_Help"
 msgctxt "shortcut window"
 msgid "Help"
 msgstr "Axuda"
 
 #: data/help-overlay.ui:147
-#| msgid "_About"
 msgctxt "shortcut window"
 msgid "About"
 msgstr "Sobre"
 
 #: data/help-overlay.ui:154
-#| msgid "_Quit"
 msgctxt "shortcut window"
 msgid "Quit"
 msgstr "Saír"
@@ -324,7 +315,6 @@ msgstr "Opcións"
 #. Translators: on really small windows, the about dialog is replaced by an in-window view; here is the label of one of two buttons that have the same role as the stack switcher in the usual about dialog, the second is "Credits"
 #. Translators: on really small windows, the about dialog is replaced by an in-window view; here is the name of the view, displayed in the headerbar
 #: src/about-list.vala:44 src/base-headerbar.vala:288
-#| msgid "_About"
 msgid "About"
 msgstr "Sobre"
 
@@ -354,7 +344,6 @@ msgstr "Documentadores"
 
 #. Translators: on really small windows, the about dialog is replaced by an in-window view; here is the header of the translators names
 #: src/about-list.vala:166
-#| msgid "translator-credits"
 msgid "Translators"
 msgstr "Tradutores"
 
@@ -390,7 +379,6 @@ msgstr "_Axuda"
 
 #. Translators: usual menu entry of the hamburger menu
 #: src/game-headerbar.vala:48
-#| msgid "Taquin"
 msgid "About Taquin"
 msgstr "Sobre Taquin"
 
@@ -411,7 +399,6 @@ msgstr "Bravo! Igualou a mellor puntuación."
 
 #. Translators: in-window notification; on both games, if the user solved the puzzle more than one time
 #: src/game-headerbar.vala:287
-#| msgid "Bravo! You finished the game!"
 msgid "Bravo! You finished the game again."
 msgstr "Bravo! Rematou o xogo de novo!"
 
@@ -441,13 +428,8 @@ msgstr "Mellor puntuación: %u"
 msgid "_Start Game"
 msgstr "_Comezar xogo"
 
-#. Translators: notification, as a subtitle of the headerbar; on the 15-Puzzle game, if the user clicks a tile that cannot move
-#: src/game-window.vala:134
-msgid "You can’t move this tile!"
-msgstr "Pode mover esta tesela!"
-
 #. Translator: during a game, if the user tries with <Shift><Ctrl>n to restart the game, while already on initial position
-#: src/game-window.vala:247
+#: src/game-window.vala:241
 msgid "Already on initial position."
 msgstr "Xa está na mellor puntuación."
 
@@ -498,23 +480,38 @@ msgstr "Activar o son"
 msgid "Print release version and exit"
 msgstr "Mostra a versión de publicación e sae"
 
+#. Translators: in-window notification; on the 15-Puzzle game, if the user clicks a tile that cannot move
+#: src/taquin-main.vala:314
+msgid "You can’t move this tile!"
+msgstr "Pode mover esta tesela!"
+
+#. Translators: in-window notification; on the 16-Puzzle game, help for keyboard use, displayed if the user uses an unmeaningful keyboard key
+#: src/taquin-main.vala:323
+msgid "Use Shift and an arrow to move tiles!"
+msgstr "Use Maiús e unnha fercha para mover as teselas!"
+
+#. Translators: in-window notification; on the 16-Puzzle game, if the user clicks on a tile of the board (the game is played using mouse with arrows around the board)
+#: src/taquin-main.vala:327
+msgid "Click on the arrows to move tiles!"
+msgstr "Prema nas frechas para mover as teselas!"
+
 #. Translators: about dialog text
-#: src/taquin-main.vala:393
+#: src/taquin-main.vala:427
 msgid "A classic 15-puzzle game"
 msgstr "Un xogo de quebracabezas 15 clásico"
 
 #. Translators: about dialog text; in the Credits, text at the end of the "Artwork by" section
-#: src/taquin-main.vala:402
+#: src/taquin-main.vala:436
 msgid "(see COPYING.themes for informations)"
 msgstr "(vexa COPYING.themes para obter máis información)"
 
 #. Translators: about dialog text; this string should be replaced by a text crediting yourselves and your translation team, or should be left empty. Do not translate literally!
-#: src/taquin-main.vala:413
+#: src/taquin-main.vala:447
 msgid "translator-credits"
 msgstr "Fran Dieguez <frandieguez@gnome.org>"
 
 #. Translators: about dialog text; label of the website link
-#: src/taquin-main.vala:418
+#: src/taquin-main.vala:452
 msgid "Page on GNOME wiki"
 msgstr "Páxina na wiki de GNOME"
 
