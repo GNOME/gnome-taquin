@@ -9,7 +9,7 @@ msgstr ""
 "Project-Id-Version: gnome-taquin master\n"
 "Report-Msgid-Bugs-To: https://gitlab.gnome.org/GNOME/gnome-taquin/issues\n"
 "POT-Creation-Date: 2019-02-09 07:55+0000\n"
-"PO-Revision-Date: 2019-02-09 21:05+0100\n"
+"PO-Revision-Date: 2019-02-12 17:41+0100\n"
 "Last-Translator: Matej Urbančič <mateju@svn.gnome.org>\n"
 "Language-Team: Slovenian <gnome-si@googlegroups.com>\n"
 "Language: sl\n"
@@ -138,12 +138,13 @@ msgstr "prav, če je okno razpeto."
 #. Translators: summary of a settings key, see 'dconf-editor /org/gnome/taquin/automatic-night-mode'
 #: data/org.gnome.Taquin.gschema.xml:57
 msgid "Follow system night light"
-msgstr ""
+msgstr "Upošteva sistemsko nočno osvetlitev"
 
 #. Translators: description of a settings key, see 'dconf-editor /org/gnome/taquin/automatic-night-mode'
 #: data/org.gnome.Taquin.gschema.xml:59
 msgid "Use GNOME night light setting to activate night-mode."
 msgstr ""
+"Uporaba nastavitve nočne osvetlitve omogoča zagon nočnega načina prikaza."
 
 #. Translators: accessible name of the hamburger menu
 #: data/base-headerbar.ui:112
@@ -183,7 +184,7 @@ msgstr "Začni novo igro"
 #: data/help-overlay.ui:28
 msgctxt "shortcut window"
 msgid "During game selection"
-msgstr ""
+msgstr "Med izbiro igre"
 
 #: data/help-overlay.ui:32
 msgctxt "shortcut window"
@@ -193,12 +194,12 @@ msgstr "Začni novo igro"
 #: data/help-overlay.ui:39
 msgctxt "shortcut window"
 msgid "Go back"
-msgstr ""
+msgstr "Pojdi nazaj"
 
 #: data/help-overlay.ui:48
 msgctxt "shortcut window"
 msgid "During a game"
-msgstr ""
+msgstr "Med igro"
 
 #: data/help-overlay.ui:52
 msgctxt "shortcut window"
@@ -223,12 +224,12 @@ msgstr "15 drsečih ploščic"
 #: data/help-overlay.ui:79
 msgctxt "shortcut window"
 msgid "Select tile to push on"
-msgstr ""
+msgstr "Izbor plošlice za pritisk"
 
 #: data/help-overlay.ui:86
 msgctxt "shortcut window"
 msgid "Push on selected tile"
-msgstr ""
+msgstr "Pritisk na izbrano ploščico"
 
 #: data/help-overlay.ui:95
 msgctxt "shortcut window"
@@ -238,22 +239,22 @@ msgstr "16 drsečih ploščic"
 #: data/help-overlay.ui:99
 msgctxt "shortcut window"
 msgid "Change selected column"
-msgstr ""
+msgstr "Spreminjanje izbranega stolpca"
 
 #: data/help-overlay.ui:106
 msgctxt "shortcut window"
 msgid "Change selected row"
-msgstr ""
+msgstr "Spreminjanje izbrane vrstice"
 
 #: data/help-overlay.ui:113
 msgctxt "shortcut window"
 msgid "Swipe selected row"
-msgstr ""
+msgstr "Poteg izbrane vrstice"
 
 #: data/help-overlay.ui:120
 msgctxt "shortcut window"
 msgid "Swipe selected column"
-msgstr ""
+msgstr "Poteg izbranega stolpca"
 
 #: data/help-overlay.ui:129
 msgctxt "shortcut window"
@@ -393,12 +394,12 @@ msgstr "_Zvok"
 #. Translators: in-window notification; on both games, if the user solved the puzzle more than one time
 #: src/game-headerbar.vala:273
 msgid "Bravo! You improved your best score!"
-msgstr ""
+msgstr "Čestitke! Izboljšali ste rezultat!"
 
 #. Translators: in-window notification; on both games, if the user solved the puzzle more than one time
 #: src/game-headerbar.vala:280
 msgid "Bravo! You equalized your best score."
-msgstr ""
+msgstr "Čestitke! Izenačili ste najboljši ste rezultat!"
 
 #. Translators: in-window notification; on both games, if the user solved the puzzle more than one time
 #: src/game-headerbar.vala:287
@@ -434,7 +435,7 @@ msgstr "_Začni z igro"
 #. Translator: during a game, if the user tries with <Shift><Ctrl>n to restart the game, while already on initial position
 #: src/game-window.vala:243
 msgid "Already on initial position."
-msgstr ""
+msgstr "Izbrana je začetna postavitev."
 
 #. Translators: when configuring a new game, button label for the size of the game ("3 × 3", or 4, or 5)
 #: src/new-game-screen.vala:36
@@ -490,7 +491,7 @@ msgstr "Te ploščice ni mogoče premakniti!"
 #. Translators: in-window notification; on the 16-Puzzle game, help for keyboard use, displayed if the user uses an unmeaningful keyboard key
 #: src/taquin-main.vala:328
 msgid "Use Shift and an arrow to move tiles!"
-msgstr ""
+msgstr "Uporabite tipke Shift in puščice za premikanje ploščic."
 
 #. Translators: in-window notification; on the 16-Puzzle game, if the user clicks on a tile of the board (the game is played using mouse with arrows around the board)
 #: src/taquin-main.vala:332
