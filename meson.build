@@ -9,7 +9,7 @@ python3 = import('python3')
 
 gio_dependency = dependency('gio-2.0', version: '>= 2.40.0')
 glib_dependency = dependency('glib-2.0', version: '>= 2.40.0')
-gtk_dependency = dependency('gtk+-3.0', version: '>= 3.20.0')
+gtk_dependency = dependency('gtk+-3.0', version: '>= 3.22.23')
 rsvg_dependency = dependency('librsvg-2.0', version: '>= 2.32.0')
 canberra_dependency = dependency('libcanberra')
 canberra_gtk3_dependency = dependency('libcanberra-gtk3', version: '>= 0.26')

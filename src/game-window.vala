@@ -30,12 +30,6 @@ public enum GameWindowFlags {
 
 private class GameWindow : BaseWindow, AdaptativeWidget
 {
-    /* settings */
-    private bool tiled_state;
-    private bool maximized_state;
-    private int window_width;
-    private int window_height;
-
     private bool game_finished = false;
 
     /* private widgets */
@@ -43,7 +37,7 @@ private class GameWindow : BaseWindow, AdaptativeWidget
     private GameView        game_view;
     private Box             new_game_screen;
 
-    public GameWindow (string? css_resource, string name, int width, int height, bool maximized, bool start_now, GameWindowFlags flags, Box _new_game_screen, Widget view_content, NightLightMonitor night_light_monitor)
+    public GameWindow (string? css_resource, string name, bool start_now, GameWindowFlags flags, Box _new_game_screen, Widget view_content, NightLightMonitor night_light_monitor)
     {
         GameHeaderBar _headerbar = new GameHeaderBar (name, flags, night_light_monitor);
         GameView      _game_view = new GameView (flags, _new_game_screen, view_content);
@@ -73,13 +67,6 @@ private class GameWindow : BaseWindow, AdaptativeWidget
         /* window config */
         set_title (name);
 
-        set_default_size (width, height);
-        if (maximized)
-            maximize ();
-
-        size_allocate.connect (size_allocate_cb);
-        window_state_event.connect (window_state_event_cb);
-
         /* start or not */
         if (start_now)
             show_view ();
@@ -93,37 +80,6 @@ private class GameWindow : BaseWindow, AdaptativeWidget
 
         ((AdaptativeWidget) new_game_screen).set_window_size (new_size);
         ((AdaptativeWidget) game_view).set_window_size (new_size);
-    }
-
-    /*\
-    * * Window events
-    \*/
-
-    private void size_allocate_cb ()
-    {
-        if (maximized_state || tiled_state)
-            return;
-        get_size (out window_width, out window_height);
-    }
-
-    private bool window_state_event_cb (Gdk.EventWindowState event)
-    {
-        if ((event.changed_mask & Gdk.WindowState.MAXIMIZED) != 0)
-            maximized_state = (event.new_window_state & Gdk.WindowState.MAXIMIZED) != 0;
-        /* We don’t save this state, but track it for saving size allocation */
-        if ((event.changed_mask & Gdk.WindowState.TILED) != 0)
-            tiled_state = (event.new_window_state & Gdk.WindowState.TILED) != 0;
-        return false;
-    }
-
-    internal void shutdown (GLib.Settings settings)
-    {
-        settings.delay ();
-        settings.set_int ("window-width", window_width);
-        settings.set_int ("window-height", window_height);
-        settings.set_boolean ("window-is-maximized", maximized_state);
-        settings.apply ();
-        destroy ();
     }
 
     /*\

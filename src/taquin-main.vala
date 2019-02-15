@@ -150,9 +150,6 @@ private class Taquin : Gtk.Application, BaseApplication
         init_night_mode ();
         window = new GameWindow ("/org/gnome/Taquin/ui/taquin.css",
                                  PROGRAM_NAME,
-                                 settings.get_int ("window-width"),
-                                 settings.get_int ("window-height"),
-                                 settings.get_boolean ("window-is-maximized"),
                                  true,     // TODO add an option to go to new-game screen?
                                  GameWindowFlags.SHOW_UNDO | GameWindowFlags.SHOW_START_BUTTON,
                                  (Box) new_game_screen,
@@ -216,7 +213,7 @@ private class Taquin : Gtk.Application, BaseApplication
 
     protected override void shutdown ()
     {
-        window.shutdown (settings);
+        window.destroy ();
         base.shutdown ();
     }
 
