@@ -27,12 +27,9 @@ private enum GameType
     {
         switch (this)
         {
-            case FIFTEEN:
-                return "fifteen";
-            case SIXTEEN:
-                return "sixteen";
-            default:
-                assert_not_reached ();
+            case FIFTEEN: return "fifteen";
+            case SIXTEEN: return "sixteen";
+            default: assert_not_reached ();
         }
     }
 }
@@ -71,17 +68,19 @@ private class Game : Object
     * * Creation / exporting
     \*/
 
-    internal Game (GameType game_type = GameType.FIFTEEN, int size = 4)
-        requires (size >= 2)
+    construct
     {
-        Object (game_type: game_type, size: size);
-
-        tiles = new int [size, size];
-
-        do { generate_game (); } while (check_complete ());
+        do { generate_game (game_type, size, out tiles); } while (check_complete (ref tiles));
     }
 
-    private void generate_game ()
+    internal Game (GameType game_type = GameType.FIFTEEN, int size = 4)
+        requires (size >= 2)
+        requires (size <= 9)
+    {
+        Object (game_type: game_type, size: size);
+    }
+
+    private static void generate_game (GameType game_type, int size, out int [,] tiles)
     {
         var ntiles = size * size;
         var line = new int? [ntiles];
@@ -94,11 +93,9 @@ private class Game : Object
 
         if (game_type == GameType.FIFTEEN)
         {
-            /* Place the empty tile at the top-left corner */
+            /* Place the empty tile at the top-left corner; x_gap == 0 && y_gap == 0 */
             line [i] = line [0];
             line [0] = -1;
-            x_gap = 0;
-            y_gap = 0;
         }
 
         /* Play with parities */
@@ -117,6 +114,8 @@ private class Game : Object
         }
 
         /* Now construct the game description */
+        tiles = new int [size, size];
+
         for (var j = 0; j < ntiles; j++)
         {
             int? line_j = line [j];
@@ -182,7 +181,7 @@ private class Game : Object
         requires ((x >= 0) && (x < size) && (y >= 0) && (y < size))
     {
         /* we do the move before notifying */
-        bool was_complete = check_complete ();
+        bool was_complete = check_complete (ref tiles);
 
         var move_x_axis = x != x_gap;
         var move_number = move_x_axis ? x_gap - x : y_gap - y;
@@ -212,7 +211,7 @@ private class Game : Object
         tiles [x_gap, y_gap] = -1;
 
         move (move_x_axis, move_number, x_gap, y_gap, moves_count, restarting || (was_complete && undoing));
-        if (check_complete ())
+        if (check_complete (ref tiles))
             complete ();
     }
 
@@ -232,7 +231,7 @@ private class Game : Object
             return;
 
         /* we do the move before notifying */
-        bool was_complete = check_complete ();
+        bool was_complete = check_complete (ref tiles);
 
         var new_coord = 0;
         if (move_x_axis)
@@ -288,13 +287,14 @@ private class Game : Object
               move_x_axis ? y : new_coord,
               moves_count,
               restarting || (was_complete && undoing));
-        if (check_complete ())
+        if (check_complete (ref tiles))
             complete ();
     }
 
-    private bool check_complete ()
+    private static bool check_complete (ref int [,] tiles)
     {
-        for (var i = 1; i < size * size; i++)
+        uint size = tiles.length [0];   /* 2 <= size <= 9 */
+        for (int i = 1; i < size * size; i++)
             if (i != tiles [i % size, i / size])
                 return false;
         return true;
