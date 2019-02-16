@@ -36,8 +36,6 @@ private class GameHeaderBar : BaseHeaderBar
 
     construct
     {
-        ((Label) new_game_button.get_child ()).set_ellipsize (Pango.EllipsizeMode.END); // can happen on small screen with big moves count
-
         generate_moves_menu ();
 
         init_modes ();
