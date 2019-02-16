@@ -67,6 +67,9 @@
         <property name="action-name">ui.new-game</property>
         <!-- Translators: during a game, tooltip text of the New Game button -->
         <property name="tooltip-text" translatable="yes">Start a new game</property>
+        <style>
+          <class name="text-button"/>
+        </style>
         <child>
           <object class="GtkLabel">
             <property name="visible">True</property>
