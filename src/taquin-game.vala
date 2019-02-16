@@ -76,6 +76,11 @@ public class Game : Object
         this.game_type = game_type;
         tiles = new int[size, size];
 
+        do { generate_game (); } while (check_complete ());
+    }
+
+    private void generate_game ()
+    {
         var ntiles = size * size;
         var line = new int?[ntiles];
         var i = 0;
