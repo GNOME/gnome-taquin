@@ -254,7 +254,7 @@ private class Taquin : Gtk.Application, BaseApplication
         int size = settings.get_int ("size");
         game = new Game (type, size);
         view.game = (!) game;
-        window.move (0);
+        window.move_done (0);
         move_done = false;
 
         string filename = "";
@@ -299,7 +299,7 @@ private class Taquin : Gtk.Application, BaseApplication
 
     private void move_cb (bool x_axis, int number, int x_gap, int y_gap, uint moves_count, bool disable_animation)
     {
-        window.move (moves_count);
+        window.move_done (moves_count);
         play_sound ("sliding-1");       // TODO sliding-n??
         move_done = true;
     }

@@ -88,7 +88,7 @@ private class GameWindow : BaseWindow, AdaptativeWidget
     * * Some public calls
     \*/
 
-    internal void move (uint moves_count)
+    internal void move_done (uint moves_count)
     {
         headerbar.set_moves_count (ref moves_count);
         hide_notification ();
