@@ -84,19 +84,19 @@ private class Game : Object
     private void generate_game ()
     {
         var ntiles = size * size;
-        var line = new int?[ntiles];
+        var line = new int? [ntiles];
         var i = 0;
         for (var n = ntiles - 1; n >= 0; n--)
         {
-            do { i = Random.int_range (0, ntiles); } while (line[i] != null);       // TODO "i == n ||" ?
-            line[i] = n;
+            do { i = Random.int_range (0, ntiles); } while (line [i] != null);       // TODO "i == n ||" ?
+            line [i] = n;
         }
 
         if (game_type == GameType.FIFTEEN)
         {
             /* Place the empty tile at the top-left corner */
-            line[i] = line[0];
-            line[0] = -1;
+            line [i] = line [0];
+            line [0] = -1;
             x_gap = 0;
             y_gap = 0;
         }
@@ -106,23 +106,23 @@ private class Game : Object
         bool parity_game = false;
         for (var j = 0; j < ntiles - 1; j++)
             for (var k = j + 1; k < ntiles; k++)
-                if (line[j] > line[k])
+                if (line [j] > line [k])
                     parity_game = !parity_game;
 
         if (parity_game != parity_grid)
         {
-            var save = line[1];
-            line[1] = line[size + 1];
-            line[size + 1] = save;
+            var save = line [1];
+            line [1] = line [size + 1];
+            line [size + 1] = save;
         }
 
         /* Now construct the game description */
         for (var j = 0; j < ntiles; j++)
         {
-            int? line_j = line[j];
+            int? line_j = line [j];
             if (line_j == null)
                 assert_not_reached ();
-            tiles[j % size, j / size] = (!) line_j;
+            tiles [j % size, j / size] = (!) line_j;
         }
     }
 
@@ -133,7 +133,7 @@ private class Game : Object
         for (int x = 0; x < size; x++)
         {
             for (int y = 0; y < size; y++)
-                s += " " + (tiles[y, x] + 1).to_string ();
+                s += " " + (tiles [y, x] + 1).to_string ();
             s += "\n";
         }
 
@@ -198,18 +198,18 @@ private class Game : Object
         if (move_x_axis)
         {
             if (x < x_gap)
-                do { tiles[x_gap, y] = tiles[x_gap - 1, y]; x_gap--; } while (x_gap != x);
+                do { tiles [x_gap, y] = tiles [x_gap - 1, y]; x_gap--; } while (x_gap != x);
             else
-                do { tiles[x_gap, y] = tiles[x_gap + 1, y]; x_gap++; } while (x_gap != x);
+                do { tiles [x_gap, y] = tiles [x_gap + 1, y]; x_gap++; } while (x_gap != x);
         }
         else
         {
             if (y < y_gap)
-                do { tiles[x, y_gap] = tiles[x, y_gap - 1]; y_gap--; } while (y_gap != y);
+                do { tiles [x, y_gap] = tiles [x, y_gap - 1]; y_gap--; } while (y_gap != y);
             else
-                do { tiles[x, y_gap] = tiles[x, y_gap + 1]; y_gap++; } while (y_gap != y);
+                do { tiles [x, y_gap] = tiles [x, y_gap + 1]; y_gap++; } while (y_gap != y);
         }
-        tiles[x_gap, y_gap] = -1;
+        tiles [x_gap, y_gap] = -1;
 
         move (move_x_axis, move_number, x_gap, y_gap, moves_count, restarting || (was_complete && undoing));
         if (check_complete ())
@@ -239,18 +239,18 @@ private class Game : Object
         {
             if (x < 0)
             {
-                var tmp = tiles[0, y];
+                var tmp = tiles [0, y];
                 for (var i = 0; i < size - 1; i++)
-                    tiles[i, y] = tiles[i + 1, y];
-                tiles[size - 1, y] = tmp;
+                    tiles [i, y] = tiles [i + 1, y];
+                tiles [size - 1, y] = tmp;
                 new_coord = size - 1;
             }
             else
             {
-                var tmp = tiles[size - 1, y];
+                var tmp = tiles [size - 1, y];
                 for (var i = size - 1; i > 0; i--)
-                    tiles[i, y] = tiles[i - 1, y];
-                tiles[0, y] = tmp;
+                    tiles [i, y] = tiles [i - 1, y];
+                tiles [0, y] = tmp;
                 new_coord = 0;
             }
         }
@@ -258,18 +258,18 @@ private class Game : Object
         {
             if (y < 0)
             {
-                var tmp = tiles[x, 0];
+                var tmp = tiles [x, 0];
                 for (var i = 0; i < size - 1; i++)
-                    tiles[x, i] = tiles[x, i + 1];
-                tiles[x, size - 1] = tmp;
+                    tiles [x, i] = tiles [x, i + 1];
+                tiles [x, size - 1] = tmp;
                 new_coord = size - 1;
             }
             else
             {
-                var tmp = tiles[x, size - 1];
+                var tmp = tiles [x, size - 1];
                 for (var i = size - 1; i > 0; i--)
-                    tiles[x, i] = tiles[x, i - 1];
-                tiles[x, 0] = tmp;
+                    tiles [x, i] = tiles [x, i - 1];
+                tiles [x, 0] = tmp;
                 new_coord = 0;
             }
         }
@@ -295,7 +295,7 @@ private class Game : Object
     private bool check_complete ()
     {
         for (var i = 1; i < size * size; i++)
-            if (i != tiles[i % size, i / size])
+            if (i != tiles [i % size, i / size])
                 return false;
         return true;
     }
