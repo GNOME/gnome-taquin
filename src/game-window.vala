@@ -21,7 +21,7 @@
 using Gtk;
 
 [Flags]
-public enum GameWindowFlags {
+private enum GameWindowFlags {
     SHORTCUTS,
     SHOW_HELP,
     SHOW_HINT,
@@ -39,7 +39,7 @@ private class GameWindow : BaseWindow, AdaptativeWidget
     private GameView        game_view;
     private Box             new_game_screen;
 
-    public GameWindow (string? css_resource, string name, string about_action_label, bool start_now, GameWindowFlags flags, Box _new_game_screen, Widget view_content, NightLightMonitor night_light_monitor)
+    internal GameWindow (string? css_resource, string name, string about_action_label, bool start_now, GameWindowFlags flags, Box _new_game_screen, Widget view_content, NightLightMonitor night_light_monitor)
     {
         GameHeaderBar _headerbar = new GameHeaderBar (name, about_action_label, flags, night_light_monitor);
         GameView      _game_view = new GameView (flags, _new_game_screen, view_content);
@@ -146,14 +146,14 @@ private class GameWindow : BaseWindow, AdaptativeWidget
     * * actions
     \*/
 
-    public signal void play ();
-    public signal void wait ();
-    public signal void back ();
+    internal signal void play ();
+    internal signal void wait ();
+    internal signal void back ();
 
-    public signal void restart ();
-    public signal void undo ();
-    public signal void redo ();
-    public signal void hint ();
+    internal signal void restart ();
+    internal signal void undo ();
+    internal signal void redo ();
+    internal signal void hint ();
 
     private SimpleAction restart_action;
     private SimpleAction    undo_action;

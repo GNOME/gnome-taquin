@@ -30,13 +30,13 @@ private class NewGameScreen : Box, AdaptativeWidget
     [GtkChild] private MenuButton size_button;
     [GtkChild] private MenuButton theme_button;
 
-    public void update_size_button_label (int size)
+    internal void update_size_button_label (int size)
     {
         /* Translators: when configuring a new game, button label for the size of the game ("3 × 3", or 4, or 5) */
         size_button.set_label (_("Size: %d × %d ▾").printf (size, size));
     }
 
-    public void update_theme (string theme)
+    internal void update_theme (string theme)
     {
         switch (theme)
         {

@@ -20,7 +20,7 @@
 
 using Gdk;
 
-public enum Direction
+private enum Direction
 {
     TOP,
     LEFT,
@@ -29,7 +29,7 @@ public enum Direction
     NONE;
 }
 
-public class TaquinView : Gtk.DrawingArea
+private class TaquinView : Gtk.DrawingArea
 {
     /* Theme */
     private const int GRID_SPACING = 1;
@@ -40,8 +40,8 @@ public class TaquinView : Gtk.DrawingArea
     /* Utilities */
     private int tile_size;
     private int board_size;
-    private int x_offset { get { return (get_allocated_width () - board_size) / 2 - grid_border_main; }}
-    private int y_offset { get { return (get_allocated_height () - board_size) / 2 - grid_border_main; }}
+    [CCode (notify = false)] private int x_offset { get { return (get_allocated_width ()  - board_size) / 2 - grid_border_main; }}
+    [CCode (notify = false)] private int y_offset { get { return (get_allocated_height () - board_size) / 2 - grid_border_main; }}
 
     private void calculate ()
     {
@@ -73,17 +73,17 @@ public class TaquinView : Gtk.DrawingArea
     private bool finished = false;
     private double animation_end_offset;
 
-    public TaquinView ()
+    internal TaquinView ()
     {
         can_focus = true;
         set_events (EventMask.EXPOSURE_MASK | EventMask.BUTTON_PRESS_MASK | EventMask.BUTTON_RELEASE_MASK | EventMask.KEY_PRESS_MASK);
     }
 
     private Game? _game = null;
-    public Game game
+    [CCode (notify = false)] internal Game game
     {
-        get { if (_game == null) assert_not_reached (); return (!) _game; }
-        set
+        private get { if (_game == null) assert_not_reached (); return (!) _game; }
+        internal set
         {
             if (_game != null)
                 SignalHandler.disconnect_by_func (_game, null, this);
@@ -106,10 +106,10 @@ public class TaquinView : Gtk.DrawingArea
     }
 
     private string? _theme = null;
-    public string theme
+    [CCode (notify = false)] internal string theme
     {
-        get { if (_theme == null) assert_not_reached (); return (!) _theme; }
-        set
+        private get { if (_theme == null) assert_not_reached (); return (!) _theme; }
+        internal set
         {
             _theme = value;
             if (_theme == null)
@@ -119,7 +119,7 @@ public class TaquinView : Gtk.DrawingArea
         }
     }
 
-    public override bool draw (Cairo.Context cr)
+    protected override bool draw (Cairo.Context cr)
     {
 //        if (game == null)
 //            return false;
@@ -160,8 +160,8 @@ public class TaquinView : Gtk.DrawingArea
 
         if (animate && game.game_type == GameType.SIXTEEN)  // TODO less verbose
         {
-            var texture_x = game.tiles[x_gap, y_gap] % game.size * tile_size;
-            var texture_y = game.tiles[x_gap, y_gap] / game.size * tile_size;
+            var texture_x = game.get_tile_value (x_gap, y_gap) % game.size * tile_size;
+            var texture_y = game.get_tile_value (x_gap, y_gap) / game.size * tile_size;
 
             /* the uncovered tile */
             var tile_x = x_gap * tile_size;
@@ -214,8 +214,8 @@ public class TaquinView : Gtk.DrawingArea
                     }
                 }
 
-                var texture_x = game.tiles[x, y] % game.size * tile_size;
-                var texture_y = game.tiles[x, y] / game.size * tile_size;
+                var texture_x = game.get_tile_value (x, y) % game.size * tile_size;
+                var texture_y = game.get_tile_value (x, y) / game.size * tile_size;
 
                 var matrix = Cairo.Matrix.identity ();
                 matrix.translate (texture_x - tile_x, texture_y - tile_y);
@@ -474,7 +474,7 @@ public class TaquinView : Gtk.DrawingArea
             });
     }
 
-    public override bool button_press_event (EventButton event)
+    internal override bool button_press_event (EventButton event)
     {
         if (animate || animate_end)
             return true;
@@ -488,7 +488,7 @@ public class TaquinView : Gtk.DrawingArea
         return true;
     }
 
-    public override bool key_press_event (Gdk.EventKey event)
+    protected override bool key_press_event (Gdk.EventKey event)
     {
         if (finished)
             return false;

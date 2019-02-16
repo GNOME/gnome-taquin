@@ -27,12 +27,12 @@ private class GameHeaderBar : BaseHeaderBar
     [GtkChild] private Button       new_game_button;
     [GtkChild] private Button       back_button;
 
-    public bool window_has_name { private get; protected construct; default = false; }
-    public string window_name   { private get; internal  construct; default = ""; }
+    [CCode (notify = false)] public bool window_has_name { private get; protected construct; default = false; }
+    [CCode (notify = false)] public string window_name   { private get; internal  construct; default = ""; }
 
-    public bool show_undo { private get; protected construct; default = false; }
-    public bool show_redo { private get; protected construct; default = false; }
-    public bool show_hint { private get; protected construct; default = false; }    // TODO something
+    [CCode (notify = false)] public bool show_undo { private get; protected construct; default = false; }
+    [CCode (notify = false)] public bool show_redo { private get; protected construct; default = false; }
+    [CCode (notify = false)] public bool show_hint { private get; protected construct; default = false; }    // TODO something
 
     construct
     {

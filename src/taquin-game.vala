@@ -18,12 +18,12 @@
  * along with Taquin. If not, see <http://www.gnu.org/licenses/>.
  */
 
-public enum GameType
+private enum GameType
 {
     FIFTEEN,
     SIXTEEN;
 
-    public string to_string ()
+    internal string to_string ()
     {
         switch (this)
         {
@@ -37,12 +37,14 @@ public enum GameType
     }
 }
 
-public class Game : Object
+private class Game : Object
 {
+    [CCode (notify = false)] public int size            { internal get; protected construct; }
+    [CCode (notify = false)] public GameType game_type  { internal get; protected construct; }
+
     /* tiles: -1 is the empty tile, if any */
-    public int[,] tiles { get; private set; }
-    public int size { get; private set; }
-    public GameType game_type { get; private set; }
+    private int [,] tiles;
+    internal int get_tile_value (uint x, uint y) { return tiles [x, y]; }
 
     /* undoing */
     private UndoItem? state = null;
@@ -54,11 +56,11 @@ public class Game : Object
     private int y_gap = 0;
 
     /* signals */
-    public signal void complete ();
-    public signal void move (bool x_axis, int number, int x_gap, int y_gap, uint moves_count, bool disable_animation);
-    public signal void bad_click (BadClick reason, bool keyboard_call);
+    internal signal void complete ();
+    internal signal void move (bool x_axis, int number, int x_gap, int y_gap, uint moves_count, bool disable_animation);
+    internal signal void bad_click (BadClick reason, bool keyboard_call);
 
-    public enum BadClick {
+    internal enum BadClick {
         EMPTY_TILE,
         NOT_MOVING,
         IS_OUTSIDE,
@@ -69,12 +71,12 @@ public class Game : Object
     * * Creation / exporting
     \*/
 
-    public Game (GameType game_type = GameType.FIFTEEN, int size = 4)
+    internal Game (GameType game_type = GameType.FIFTEEN, int size = 4)
         requires (size >= 2)
     {
-        this.size = size;
-        this.game_type = game_type;
-        tiles = new int[size, size];
+        Object (game_type: game_type, size: size);
+
+        tiles = new int [size, size];
 
         do { generate_game (); } while (check_complete ());
     }
@@ -124,7 +126,7 @@ public class Game : Object
         }
     }
 
-    public string to_string ()
+    internal string to_string ()
     {
         string s = "\n";
 
@@ -142,7 +144,7 @@ public class Game : Object
     * * Game code
     \*/
 
-    public void request_move (int x, int y, bool keyboard_call)
+    internal void request_move (int x, int y, bool keyboard_call)
     {
         if (game_type == GameType.FIFTEEN)
         {
@@ -310,7 +312,7 @@ public class Game : Object
         public UndoItem? previous;
     }
 
-    public void undo ()
+    internal void undo ()
     {
         if (state == null)
             return;
@@ -324,7 +326,7 @@ public class Game : Object
         previous_state = state == null ? null : ((!) state).previous;
     }
 
-    public void restart ()
+    internal void restart ()
     {
         while (state != null)
         {

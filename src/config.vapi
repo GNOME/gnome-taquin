@@ -18,8 +18,8 @@
  * along with Taquin. If not, see <http://www.gnu.org/licenses/>.
  */
 
-public const string VERSION;
-public const string GETTEXT_PACKAGE;
-public const string DATA_DIRECTORY;
-public const string SOUND_DIRECTORY;
-public const string LOCALEDIR;
+private const string VERSION;
+private const string GETTEXT_PACKAGE;
+private const string DATA_DIRECTORY;
+private const string SOUND_DIRECTORY;
+private const string LOCALEDIR;

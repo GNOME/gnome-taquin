@@ -98,6 +98,6 @@ private class TestTaquin : Object
     }
     private static bool compare_value (ref Game game, uint x, uint y, uint k)
     {
-        return game.tiles [x, y] + 1 == k;
+        return game.get_tile_value (x, y) + 1 == k;
     }
 }

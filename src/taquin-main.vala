@@ -80,7 +80,7 @@ private class Taquin : Gtk.Application, BaseApplication
         {"quit", quit}
     };
 
-    public static int main (string[] args)
+    private static int main (string [] args)
     {
         Intl.setlocale (LocaleCategory.ALL, "");
         Intl.bindtextdomain (GETTEXT_PACKAGE, LOCALEDIR);
