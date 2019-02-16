@@ -229,8 +229,7 @@ private class GameWindow : BaseWindow, AdaptativeWidget
         game_finished = false;
         hide_notification ();
 
-        if (headerbar.new_game_button_is_focus ())
-            game_view.show_game_content (/* grab focus */ true);
+        game_view.show_game_content (/* grab focus */ true);
         redo_action.set_enabled (true);
 
         undo ();
@@ -243,8 +242,7 @@ private class GameWindow : BaseWindow, AdaptativeWidget
         if (!game_view.game_content_visible_if_true ())
             return;
 
-        if (headerbar.new_game_button_is_focus ())
-            game_view.show_game_content (/* grab focus */ true);
+        game_view.show_game_content (/* grab focus */ true);
         restart_action.set_enabled (true);
         undo_action.set_enabled (true);
 
@@ -284,8 +282,7 @@ private class GameWindow : BaseWindow, AdaptativeWidget
         game_finished = false;
         hide_notification ();
 
-        if (headerbar.new_game_button_is_focus ())
-            game_view.show_game_content (/* grab focus */ true);
+        game_view.show_game_content (/* grab focus */ true);
         redo_action.set_enabled (true);
         restart_action.set_enabled (false);
 

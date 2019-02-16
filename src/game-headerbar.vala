@@ -185,11 +185,6 @@ private class GameHeaderBar : BaseHeaderBar
         new_game_button.grab_focus ();
     }
 
-    internal bool new_game_button_is_focus ()
-    {
-        return new_game_button.is_focus;
-    }
-
     private uint last_moves_count = 0;
     internal void set_moves_count (ref uint moves_count)
     {
