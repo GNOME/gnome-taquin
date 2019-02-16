@@ -150,8 +150,12 @@ private class Taquin : Gtk.Application, BaseApplication
         init_night_mode ();
         window = new GameWindow ("/org/gnome/Taquin/ui/taquin.css",
                                  PROGRAM_NAME,
-                                 true,     // TODO add an option to go to new-game screen?
-                                 GameWindowFlags.SHOW_UNDO | GameWindowFlags.SHOW_START_BUTTON,
+                                 _("About Taquin"),
+                                 /* start now */ true,     // TODO add an option to go to new-game screen?
+                                 GameWindowFlags.SHOW_START_BUTTON
+                                 | GameWindowFlags.SHORTCUTS
+                                 | GameWindowFlags.SHOW_HELP
+                                 | GameWindowFlags.SHOW_UNDO,
                                  (Box) new_game_screen,
                                  view,
                                  night_light_monitor);
@@ -169,7 +173,7 @@ private class Taquin : Gtk.Application, BaseApplication
         set_accels_for_action ("base.paste-alt",        { "<Shift><Primary>v"       });
         set_accels_for_action ("ui.undo",               {        "<Primary>z"       });
      // set_accels_for_action ("ui.restart" // TODO
-        set_accels_for_action ("ui.redo",               { "<Shift><Primary>z"       });
+     // set_accels_for_action ("ui.redo",               { "<Shift><Primary>z"       });
         set_accels_for_action ("base.escape",           {                 "Escape"  });
         set_accels_for_action ("base.toggle-hamburger", {                 "F10",
                                                                           "Menu"    });

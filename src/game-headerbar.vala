@@ -30,6 +30,10 @@ private class GameHeaderBar : BaseHeaderBar
     public bool window_has_name { private get; protected construct; default = false; }
     public string window_name   { private get; internal  construct; default = ""; }
 
+    public bool show_undo { private get; protected construct; default = false; }
+    public bool show_redo { private get; protected construct; default = false; }
+    public bool show_hint { private get; protected construct; default = false; }    // TODO something
+
     construct
     {
         ((Label) new_game_button.get_child ()).set_ellipsize (Pango.EllipsizeMode.END); // can happen on small screen with big moves count
@@ -42,52 +46,20 @@ private class GameHeaderBar : BaseHeaderBar
             window_has_name = true;
     }
 
-    internal GameHeaderBar (string _window_name, GameWindowFlags flags, NightLightMonitor _night_light_monitor)
+    internal GameHeaderBar (string              _window_name,
+                            string              _about_action_label,
+                            GameWindowFlags     flags,
+                            NightLightMonitor   _night_light_monitor)
     {
         /* Translators: usual menu entry of the hamburger menu */
-        Object (about_action_label:     _("About Taquin"),
+        Object (about_action_label:     _about_action_label,
                 night_light_monitor:    _night_light_monitor,
-                has_help:               true,
-                has_keyboard_shortcuts: true,
+                has_keyboard_shortcuts: GameWindowFlags.SHORTCUTS in flags,
+                has_help:               GameWindowFlags.SHOW_HELP in flags, // TODO rename show_help
+                show_hint:              GameWindowFlags.SHOW_HINT in flags,
+                show_redo:              GameWindowFlags.SHOW_REDO in flags,
+                show_undo:              GameWindowFlags.SHOW_UNDO in flags,
                 window_name:            _window_name);
-
-/*        if (GameWindowFlags.SHOW_UNDO in flags)
-        {
-            Box history_box = new Box (Orientation.HORIZONTAL, 0);
-            history_box.get_style_context ().add_class ("linked");
-
-            Button undo_button = new Button.from_icon_name ("edit-undo-symbolic", Gtk.IconSize.BUTTON);
-            undo_button.action_name = "ui.undo";
-*/            /* Translators: during a game, tooltip text of the Undo button */
-/*            undo_button.set_tooltip_text (_("Undo your most recent move"));
-            undo_button.valign = Align.CENTER;
-            undo_button.show ();
-            history_box.pack_start (undo_button, true, true, 0);
-
-*/            /* if (GameWindowFlags.SHOW_REDO in flags)
-            {
-                Button redo_button = new Button.from_icon_name ("edit-redo-symbolic", Gtk.IconSize.BUTTON);
-                redo_button.action_name = "app.redo";
-                / Translators: during a game, tooltip text of the Redo button /
-                redo_button.set_tooltip_text (_("Redo your most recent undone move"));
-                redo_button.valign = Align.CENTER;
-                redo_button.show ();
-                history_box.pack_start (redo_button, true, true, 0);
-            } */
-
-/*            history_box.show ();
-            controls_box.pack_start (history_box, true, true, 0);
-        }
-*/        /* if (GameWindowFlags.SHOW_HINT in flags)
-        {
-            Button hint_button = new Button.from_icon_name ("dialog-question-symbolic", Gtk.IconSize.BUTTON);
-            hint_button.action_name = "app.hint";
-            / Translators: during a game, tooltip text of the Hint button /
-            hint_button.set_tooltip_text (_("Receive a hint for your next move"));
-            hint_button.valign = Align.CENTER;
-            hint_button.show ();
-            controls_box.pack_start (hint_button, true, true, 0);
-        } */
     }
 
     /*\
@@ -294,19 +266,26 @@ private class GameHeaderBar : BaseHeaderBar
     private void generate_moves_menu ()
     {
         GLib.Menu menu = new GLib.Menu ();
-        generate_undo_actions_section (ref menu);
+        generate_undo_actions_section (ref menu, show_undo, show_redo);
         if (best_score != 0)
             generate_best_score_section (ref best_score, ref menu);
         menu.freeze ();
         history_button.set_menu_model (menu);
     }
 
-    private static inline void generate_undo_actions_section (ref GLib.Menu menu)
+    private static inline void generate_undo_actions_section (ref GLib.Menu menu, bool show_undo, bool show_redo)
     {
         GLib.Menu section = new GLib.Menu ();
 
-        /* Translators: during a game, entry in the menu of the history menubutton (with a mnemonic that appears pressing Alt) */
-        section.append (_("_Undo"), "ui.undo");
+        if (show_undo)
+        {
+            /* Translators: during a game, entry in the menu of the history menubutton (with a mnemonic that appears pressing Alt) */
+            section.append (_("_Undo"), "ui.undo");
+
+         // if (show_redo)
+         // /* Translators: during a game, entry in the menu of the history menubutton (with a mnemonic that appears pressing Alt) */
+         //     section.append (_("_Redo"), "ui.redo");
+        }
 
         /* Translators: during a game, entry in the menu of the history menubutton (with a mnemonic that appears pressing Alt) */
         section.append (_("_Restart"), "ui.restart");

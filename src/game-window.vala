@@ -22,9 +22,11 @@ using Gtk;
 
 [Flags]
 public enum GameWindowFlags {
-    SHOW_UNDO,
-    SHOW_REDO,
+    SHORTCUTS,
+    SHOW_HELP,
     SHOW_HINT,
+    SHOW_REDO,
+    SHOW_UNDO,
     SHOW_START_BUTTON;
 }
 
@@ -37,9 +39,9 @@ private class GameWindow : BaseWindow, AdaptativeWidget
     private GameView        game_view;
     private Box             new_game_screen;
 
-    public GameWindow (string? css_resource, string name, bool start_now, GameWindowFlags flags, Box _new_game_screen, Widget view_content, NightLightMonitor night_light_monitor)
+    public GameWindow (string? css_resource, string name, string about_action_label, bool start_now, GameWindowFlags flags, Box _new_game_screen, Widget view_content, NightLightMonitor night_light_monitor)
     {
-        GameHeaderBar _headerbar = new GameHeaderBar (name, flags, night_light_monitor);
+        GameHeaderBar _headerbar = new GameHeaderBar (name, about_action_label, flags, night_light_monitor);
         GameView      _game_view = new GameView (flags, _new_game_screen, view_content);
 
         Object (nta_headerbar               : (NightTimeAwareHeaderBar) _headerbar,
