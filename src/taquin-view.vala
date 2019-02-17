@@ -476,7 +476,7 @@ private class TaquinView : Gtk.DrawingArea
 
     internal override bool button_press_event (EventButton event)
     {
-        if (animate || animate_end)
+        if (finished || animate || animate_end)
             return true;
         if (event.button == Gdk.BUTTON_PRIMARY || event.button == Gdk.BUTTON_SECONDARY)
         {
