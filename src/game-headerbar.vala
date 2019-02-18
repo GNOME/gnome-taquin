@@ -158,7 +158,7 @@ private class GameHeaderBar : BaseHeaderBar
     private uint last_moves_count = 0;
     internal void set_moves_count (ref uint moves_count)
     {
-        history_button.set_label (moves_count.to_string ());
+        history_button.set_label (get_moves_count_string (ref moves_count));
         history_button.set_sensitive ((moves_count != 0) || (best_score != 0));
         last_moves_count = moves_count;
     }
@@ -297,9 +297,19 @@ private class GameHeaderBar : BaseHeaderBar
         GLib.Menu section = new GLib.Menu ();
 
         /* Translators: during a game that has already been finished (and possibly restarted), entry in the menu of the moves button */
-        section.append (_("Best score: %u").printf (best_score), null);
+        section.append (_("Best score: %s").printf (get_moves_count_string (ref best_score)), null);
 
         section.freeze ();
         menu.append_section (null, section);
+    }
+
+    private static string get_moves_count_string (ref uint moves_count)
+    {
+        string moves_count_string;
+        if (moves_count != uint.MAX)
+            moves_count_string = moves_count.to_string ();
+        else
+            moves_count_string = "∞";
+        return moves_count_string;
     }
 }

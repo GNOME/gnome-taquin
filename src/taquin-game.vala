@@ -188,11 +188,17 @@ private class Game : Object
         int8 move_number = move_x_axis ? x_gap - x : y_gap - y;
 
         if (undoing)
-            moves_count--;
+        {
+            if (moves_count == 0)
+                assert_not_reached ();
+            if (moves_count != uint.MAX)
+                moves_count--;
+        }
         else
         {
             add_move (/* move_x_axis, move_number,*/ x_gap, y_gap);
-            moves_count++;
+            if (moves_count != uint.MAX)
+                moves_count++;
         }
 
         if (move_x_axis)
@@ -278,11 +284,17 @@ private class Game : Object
         }
 
         if (undoing)
-            moves_count--;
+        {
+            if (moves_count == 0)
+                assert_not_reached ();
+            if (moves_count != uint.MAX)
+                moves_count--;
+        }
         else
         {
             add_move (move_x_axis ? (new_coord == 0 ? -1 : size) : x, move_x_axis ? y : (new_coord == 0 ? -1 : size));
-            moves_count++;
+            if (moves_count != uint.MAX)
+                moves_count++;
         }
 
         move (move_x_axis,
