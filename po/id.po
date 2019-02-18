@@ -6,8 +6,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: gnome-taquin master\n"
 "Report-Msgid-Bugs-To: https://gitlab.gnome.org/GNOME/gnome-taquin/issues\n"
-"POT-Creation-Date: 2019-02-04 08:16+0000\n"
-"PO-Revision-Date: 2019-02-06 21:12+0700\n"
+"POT-Creation-Date: 2019-02-18 14:23+0000\n"
+"PO-Revision-Date: 2019-02-18 22:19+0700\n"
 "Last-Translator: Kukuh Syafaat <kukuhsyafaat@gnome.org>\n"
 "Language-Team: Indonesian\n"
 "Language: id\n"
@@ -166,15 +166,15 @@ msgstr "Menu riwayat permainan"
 msgid "Go back to the current game"
 msgstr "Kembali ke permainan saat ini"
 
-#. Translators: during a game, label of the New Game button (with a mnemonic that appears pressing Alt)
-#: data/game-headerbar.ui:68
-msgid "_New Game"
-msgstr "Permai_nan Baru"
-
 #. Translators: during a game, tooltip text of the New Game button
-#: data/game-headerbar.ui:72
+#: data/game-headerbar.ui:69
 msgid "Start a new game"
 msgstr "Mulai permainan baru"
+
+#. Translators: during a game, label of the New Game button (with a mnemonic that appears pressing Alt)
+#: data/game-headerbar.ui:78
+msgid "_New Game"
+msgstr "Permai_nan Baru"
 
 #: data/help-overlay.ui:28
 msgctxt "shortcut window"
@@ -376,51 +376,49 @@ msgstr "Pintasan Papan Ti_k"
 msgid "_Help"
 msgstr "Ba_ntuan"
 
-#. Translators: usual menu entry of the hamburger menu
-#: src/game-headerbar.vala:48
-msgid "About Taquin"
-msgstr "Tentang Taquin"
-
 #. Translators: hamburger menu entry; sound togglebutton (with a mnemonic that appears pressing Alt)
-#: src/game-headerbar.vala:214
+#: src/game-headerbar.vala:179
 msgid "_Sound"
 msgstr "_Suara"
 
 #. Translators: in-window notification; on both games, if the user solved the puzzle more than one time
-#: src/game-headerbar.vala:273
+#: src/game-headerbar.vala:238
 msgid "Bravo! You improved your best score!"
 msgstr "Bravo! Anda meningkatkan skor terbaik Anda!"
 
 #. Translators: in-window notification; on both games, if the user solved the puzzle more than one time
-#: src/game-headerbar.vala:280
+#: src/game-headerbar.vala:245
 msgid "Bravo! You equalized your best score."
 msgstr "Bravo! Anda menyamakan skor terbaik Anda."
 
 #. Translators: in-window notification; on both games, if the user solved the puzzle more than one time
-#: src/game-headerbar.vala:287
+#: src/game-headerbar.vala:252
 msgid "Bravo! You finished the game again."
 msgstr "Bravo! Anda telah menyelesaikan permainan."
 
 #. Translators: in-window notification; on both games, if the user solves the puzzle the first time
-#: src/game-headerbar.vala:296
+#: src/game-headerbar.vala:261
 msgid "Bravo! You finished the game!"
 msgstr "Bravo! Anda telah menyelesaikan permainan!"
 
 #. Translators: during a game, entry in the menu of the history menubutton (with a mnemonic that appears pressing Alt)
-#: src/game-headerbar.vala:314
+#: src/game-headerbar.vala:281
 msgid "_Undo"
 msgstr "_Tak Jadi"
 
+#. if (show_redo)
+#. /* Translators: during a game, entry in the menu of the history menubutton (with a mnemonic that appears pressing Alt) */
+#. section.append (_("_Redo"), "ui.redo");
 #. Translators: during a game, entry in the menu of the history menubutton (with a mnemonic that appears pressing Alt)
-#: src/game-headerbar.vala:317
+#: src/game-headerbar.vala:289
 msgid "_Restart"
 msgstr "_Ulangi"
 
 #. Translators: during a game that has already been finished (and possibly restarted), entry in the menu of the moves button
-#: src/game-headerbar.vala:328
+#: src/game-headerbar.vala:300
 #, c-format
-msgid "Best score: %u"
-msgstr "Skor terbaik: %u"
+msgid "Best score: %s"
+msgstr "Skor terbaik: %s"
 
 #. Translators: when configuring a new game, label of the blue Start button (with a mnemonic that appears pressing Alt)
 #: src/game-view.vala:57
@@ -428,7 +426,7 @@ msgid "_Start Game"
 msgstr "M_ulai Permainan"
 
 #. Translator: during a game, if the user tries with <Shift><Ctrl>n to restart the game, while already on initial position
-#: src/game-window.vala:241
+#: src/game-window.vala:201
 msgid "Already on initial position."
 msgstr "Sudah di posisi awal."
 
@@ -439,12 +437,12 @@ msgid "Size: %d × %d ▾"
 msgstr "Ukuran: %d × %d ▾"
 
 #. Translators: when configuring a new game, button label for the theme, if the current theme is Cats
-#: src/new-game-screen.vala:44
+#: src/new-game-screen.vala:45
 msgid "Theme: Cats ▾"
 msgstr "Theme: Kucing ▾"
 
 #. Translators: when configuring a new game, button label for the theme, if the current theme is Numbers
-#: src/new-game-screen.vala:47
+#: src/new-game-screen.vala:48
 msgid "Theme: Numbers ▾"
 msgstr "Theme: Angka ▾"
 
@@ -478,38 +476,42 @@ msgstr "Nyalakan suara"
 msgid "Print release version and exit"
 msgstr "Cetak versi rilis dan keluar"
 
+#: src/taquin-main.vala:153
+msgid "About Taquin"
+msgstr "Tentang Taquin"
+
 #. Translators: in-window notification; on the 15-Puzzle game, if the user clicks a tile that cannot move
-#: src/taquin-main.vala:314
+#: src/taquin-main.vala:320
 msgid "You can’t move this tile!"
 msgstr "Anda tidak dapat memindahkan ubin ini!"
 
 #. Translators: in-window notification; on the 16-Puzzle game, help for keyboard use, displayed if the user uses an unmeaningful keyboard key
-#: src/taquin-main.vala:323
+#: src/taquin-main.vala:329
 msgid "Use Shift and an arrow to move tiles!"
 msgstr "Gunakan Shift dan tanda panah untuk memindahkan ubin!"
 
 #. Translators: in-window notification; on the 16-Puzzle game, if the user clicks on a tile of the board (the game is played using mouse with arrows around the board)
-#: src/taquin-main.vala:327
+#: src/taquin-main.vala:333
 msgid "Click on the arrows to move tiles!"
 msgstr "Klik pada tanda panah untuk memindahkan ubin!"
 
 #. Translators: about dialog text
-#: src/taquin-main.vala:427
+#: src/taquin-main.vala:433
 msgid "A classic 15-puzzle game"
 msgstr "Sebuah permainan 15-potongan klasik"
 
 #. Translators: about dialog text; in the Credits, text at the end of the "Artwork by" section
-#: src/taquin-main.vala:436
+#: src/taquin-main.vala:442
 msgid "(see COPYING.themes for informations)"
 msgstr "(Lihat COPYING.themes untuk informasi)"
 
 #. Translators: about dialog text; this string should be replaced by a text crediting yourselves and your translation team, or should be left empty. Do not translate literally!
-#: src/taquin-main.vala:447
+#: src/taquin-main.vala:453
 msgid "translator-credits"
 msgstr "Kukuh Syafaat <kukuhsyafaat@gnome.org>, 2017, 2019."
 
 #. Translators: about dialog text; label of the website link
-#: src/taquin-main.vala:452
+#: src/taquin-main.vala:458
 msgid "Page on GNOME wiki"
 msgstr "Halaman di wiki GNOME"
 
