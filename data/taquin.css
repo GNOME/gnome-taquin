@@ -17,6 +17,8 @@
 
 @import url("base-window.css");
 
+/* hack: fix the double spacing around the centerwidget box, on extra-thin window (visible with big moves count) */
+.extra-thin-window.thin-window button.new-game-button { margin-right:-6px; }
 
 /*\
 * * new-hame screen generics

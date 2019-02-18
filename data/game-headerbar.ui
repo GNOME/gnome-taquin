@@ -69,6 +69,7 @@
         <property name="tooltip-text" translatable="yes">Start a new game</property>
         <style>
           <class name="text-button"/>
+          <class name="new-game-button"/>
         </style>
         <child>
           <object class="GtkLabel">
