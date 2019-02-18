@@ -273,9 +273,10 @@ private class GameWindow : BaseWindow, AdaptativeWidget
            undo_action.set_enabled (false);
            redo_action.set_enabled (false);
 
+        game_view.configure_transition (StackTransitionType.SLIDE_DOWN, 1000);
+
         play ();        // FIXME lag (see in Taquin…)
 
-        game_view.configure_transition (StackTransitionType.SLIDE_DOWN, 1000);
         show_view ();
     }
 
