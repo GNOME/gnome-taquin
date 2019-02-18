@@ -54,8 +54,8 @@ private class TaquinView : Gtk.DrawingArea
     }
 
     /* Arrows (or lights) place */
-    private int x_arrow = 0;
-    private int y_arrow = 0;
+    private int8 x_arrow = 0;
+    private int8 y_arrow = 0;
     private bool draw_lights = false;
 
     /* Pre-rendered image */
@@ -67,8 +67,8 @@ private class TaquinView : Gtk.DrawingArea
     private int animation_offset;
     private bool x_axis;
     private int number;
-    private int x_gap;
-    private int y_gap;
+    private int8 x_gap;
+    private int8 y_gap;
     private bool animate_end = false;
     private bool finished = false;
     private double animation_end_offset;
@@ -329,10 +329,10 @@ private class TaquinView : Gtk.DrawingArea
                                                  ref double animation_end_offset,
                                                  ref int    grid_border_main,
                                                  ref int    tile_size,
-                                                 ref int    x_arrow,
+                                                 ref int8    x_arrow,
                                                  ref int    grid_border_thin,
                                                  ref int    board_size,
-                                                 ref int    y_arrow)
+                                                 ref int8    y_arrow)
     {
         double half_grid_borders_sum = (grid_border_main + grid_border_thin) / 2.0;
         int board_size_plus_borders_diff = board_size + grid_border_main - grid_border_thin;
@@ -388,8 +388,8 @@ private class TaquinView : Gtk.DrawingArea
         _draw_movable_arrows (cr, ref x_arrow, ref y_arrow, ref grid_border_main, ref tile_size, ref grid_border_thin, ref board_size);
     }
     private static inline void _draw_movable_arrows (Cairo.Context cr,
-                                                 ref int x_arrow,
-                                                 ref int y_arrow,
+                                                 ref int8 x_arrow,
+                                                 ref int8 y_arrow,
                                                  ref int grid_border_main,
                                                  ref int tile_size,
                                                  ref int grid_border_thin,
@@ -435,7 +435,7 @@ private class TaquinView : Gtk.DrawingArea
         cr.line_to (grid_border_main + tile_size * (number + 2.0 / 3), inside ? y1 : y2);
     }
 
-    private void move_cb (bool x_axis, int number, int x_gap, int y_gap, uint moves_count, bool disable_animation)
+    private void move_cb (bool x_axis, int8 number, int8 x_gap, int8 y_gap, uint moves_count, bool disable_animation)
     {
         this.x_axis = x_axis;
         this.number = number;
@@ -481,8 +481,8 @@ private class TaquinView : Gtk.DrawingArea
         if (event.button == Gdk.BUTTON_PRIMARY || event.button == Gdk.BUTTON_SECONDARY)
         {
             draw_lights = false;
-            game.request_move ((int) (event.x - x_offset - grid_border_main + tile_size) / tile_size - 1,
-                               (int) (event.y - y_offset - grid_border_main + tile_size) / tile_size - 1,
+            game.request_move ((int8) ((int) (event.x - x_offset - grid_border_main + tile_size) / tile_size - 1),
+                               (int8) ((int) (event.y - y_offset - grid_border_main + tile_size) / tile_size - 1),
                                /* keyboard */ false);
         }
         return true;

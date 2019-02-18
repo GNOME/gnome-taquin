@@ -34,6 +34,7 @@ private class NewGameScreen : Box, AdaptativeWidget
     {
         /* Translators: when configuring a new game, button label for the size of the game ("3 × 3", or 4, or 5) */
         size_button.set_label (_("Size: %d × %d ▾").printf (size, size));
+     // size_button.set_label (_("Size: %hhu × %hhu ▾").printf (size, size));   // TODO uint8
     }
 
     internal void update_theme (string theme)

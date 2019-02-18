@@ -96,7 +96,11 @@ private class TestTaquin : Object
                 Test.fail ();
         }
     }
-    private static bool compare_value (ref Game game, uint x, uint y, uint k)
+    private static bool compare_value (ref Game game, int8 x, int8 y, int8 k)
+        requires (x >= 0)
+        requires (x < game.size)
+        requires (y >= 0)
+        requires (y < game.size)
     {
         return game.get_tile_value (x, y) + 1 == k;
     }

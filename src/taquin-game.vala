@@ -36,12 +36,12 @@ private enum GameType
 
 private class Game : Object
 {
-    [CCode (notify = false)] public int size            { internal get; protected construct; }
+    [CCode (notify = false)] public int8 size           { internal get; protected construct; }
     [CCode (notify = false)] public GameType game_type  { internal get; protected construct; }
 
     /* tiles: -1 is the empty tile, if any */
-    private int [,] tiles;
-    internal int get_tile_value (uint x, uint y) { return tiles [x, y]; }
+    private int8 [,] tiles;
+    internal int8 get_tile_value (int8 x, int8 y) { return tiles [x, y]; }
 
     /* undoing */
     private UndoItem? state = null;
@@ -49,12 +49,12 @@ private class Game : Object
     private uint moves_count = 0;
 
     /* position of the empty tile, if any */
-    private int x_gap = 0;
-    private int y_gap = 0;
+    private int8 x_gap = 0;
+    private int8 y_gap = 0;
 
     /* signals */
     internal signal void complete ();
-    internal signal void move (bool x_axis, int number, int x_gap, int y_gap, uint moves_count, bool disable_animation);
+    internal signal void move (bool x_axis, int8 number, int8 x_gap, int8 y_gap, uint moves_count, bool disable_animation);
     internal signal void bad_click (BadClick reason, bool keyboard_call);
 
     internal enum BadClick {
@@ -73,21 +73,21 @@ private class Game : Object
         do { generate_game (game_type, size, out tiles); } while (check_complete (ref tiles));
     }
 
-    internal Game (GameType game_type = GameType.FIFTEEN, int size = 4)
+    internal Game (GameType game_type = GameType.FIFTEEN, int8 size = 4)
         requires (size >= 2)
         requires (size <= 9)
     {
         Object (game_type: game_type, size: size);
     }
 
-    private static void generate_game (GameType game_type, int size, out int [,] tiles)
+    private static void generate_game (GameType game_type, int8 size, out int8 [,] tiles)
     {
-        var ntiles = size * size;
-        var line = new int? [ntiles];
-        var i = 0;
-        for (var n = ntiles - 1; n >= 0; n--)
+        int8 ntiles = size * size;             // size <= 9
+        int8? [] line = new int8? [ntiles];
+        int i = 0;
+        for (int8 n = ntiles - 1; n >= 0; n--)
         {
-            do { i = Random.int_range (0, ntiles); } while (line [i] != null);       // TODO "i == n ||" ?
+            do { i = Random.int_range (0, (int) ntiles); } while (line [i] != null);       // TODO "i == n ||" ?
             line [i] = n;
         }
 
@@ -101,24 +101,24 @@ private class Game : Object
         /* Play with parities */
         bool parity_grid = (bool) ((size % 2) ^ (size % 2)) & 1 == 0;
         bool parity_game = false;
-        for (var j = 0; j < ntiles - 1; j++)
-            for (var k = j + 1; k < ntiles; k++)
+        for (uint8 j = 0; j < ntiles - 1; j++)
+            for (uint8 k = j + 1; k < ntiles; k++)
                 if (line [j] > line [k])
                     parity_game = !parity_game;
 
         if (parity_game != parity_grid)
         {
-            var save = line [1];
+            int8? save = line [1];
             line [1] = line [size + 1];
             line [size + 1] = save;
         }
 
         /* Now construct the game description */
-        tiles = new int [size, size];
+        tiles = new int8 [size, size];
 
-        for (var j = 0; j < ntiles; j++)
+        for (uint8 j = 0; j < ntiles; j++)
         {
-            int? line_j = line [j];
+            int8? line_j = line [j];
             if (line_j == null)
                 assert_not_reached ();
             tiles [j % size, j / size] = (!) line_j;
@@ -129,9 +129,9 @@ private class Game : Object
     {
         string s = "\n";
 
-        for (int x = 0; x < size; x++)
+        for (uint8 x = 0; x < size; x++)
         {
-            for (int y = 0; y < size; y++)
+            for (uint8 y = 0; y < size; y++)
                 s += " " + (tiles [y, x] + 1).to_string ();
             s += "\n";
         }
@@ -143,7 +143,7 @@ private class Game : Object
     * * Game code
     \*/
 
-    internal void request_move (int x, int y, bool keyboard_call)
+    internal void request_move (int8 x, int8 y, bool keyboard_call)
     {
         if (game_type == GameType.FIFTEEN)
         {
@@ -176,15 +176,16 @@ private class Game : Object
         }
     }
 
-    private void fifteen_move (int x, int y, bool undoing = false, bool restarting = false)
+    private void fifteen_move (int8 x, int8 y, bool undoing = false, bool restarting = false)
         requires (!restarting || undoing)
-        requires ((x >= 0) && (x < size) && (y >= 0) && (y < size))
+        requires ((x >= 0) && (x < size))
+        requires ((y >= 0) && (y < size))
     {
         /* we do the move before notifying */
         bool was_complete = check_complete (ref tiles);
 
-        var move_x_axis = x != x_gap;
-        var move_number = move_x_axis ? x_gap - x : y_gap - y;
+        bool move_x_axis = x != x_gap;
+        int8 move_number = move_x_axis ? x_gap - x : y_gap - y;
 
         if (undoing)
             moves_count--;
@@ -215,39 +216,42 @@ private class Game : Object
             complete ();
     }
 
-    private void sixteen_move (int x, int y, bool undoing = false, bool restarting = false)
+    private void sixteen_move (int8 x, int8 y, bool undoing = false, bool restarting = false)
         requires (!restarting || undoing)
         requires ((x < 0) || (x >= size) || (y < 0) || (y >= size))
     {
-        var move_x_axis = false;
+        bool move_x_axis;
         if (x < 0 || x >= size)
         {
             if (y < 0 || y >= size)
                 return;
-            else
-                move_x_axis = true;
+            move_x_axis = true;
         }
-        else if (y >= 0 && y < size)
-            return;
+        else
+        {
+            if (y >= 0 && y < size)
+                return;
+            move_x_axis = false;
+        }
 
         /* we do the move before notifying */
         bool was_complete = check_complete (ref tiles);
 
-        var new_coord = 0;
+        int8 new_coord = 0;
         if (move_x_axis)
         {
             if (x < 0)
             {
-                var tmp = tiles [0, y];
-                for (var i = 0; i < size - 1; i++)
+                int8 tmp = tiles [0, y];
+                for (uint8 i = 0; i < size - 1; i++)
                     tiles [i, y] = tiles [i + 1, y];
                 tiles [size - 1, y] = tmp;
                 new_coord = size - 1;
             }
             else
             {
-                var tmp = tiles [size - 1, y];
-                for (var i = size - 1; i > 0; i--)
+                int8 tmp = tiles [size - 1, y];
+                for (uint8 i = size - 1; i > 0; i--)
                     tiles [i, y] = tiles [i - 1, y];
                 tiles [0, y] = tmp;
                 new_coord = 0;
@@ -257,16 +261,16 @@ private class Game : Object
         {
             if (y < 0)
             {
-                var tmp = tiles [x, 0];
-                for (var i = 0; i < size - 1; i++)
+                int8 tmp = tiles [x, 0];
+                for (uint8 i = 0; i < size - 1; i++)
                     tiles [x, i] = tiles [x, i + 1];
                 tiles [x, size - 1] = tmp;
                 new_coord = size - 1;
             }
             else
             {
-                var tmp = tiles [x, size - 1];
-                for (var i = size - 1; i > 0; i--)
+                int8 tmp = tiles [x, size - 1];
+                for (uint8 i = size - 1; i > 0; i--)
                     tiles [x, i] = tiles [x, i - 1];
                 tiles [x, 0] = tmp;
                 new_coord = 0;
@@ -291,10 +295,10 @@ private class Game : Object
             complete ();
     }
 
-    private static bool check_complete (ref int [,] tiles)
+    private static bool check_complete (ref int8 [,] tiles)
     {
-        uint size = tiles.length [0];   /* 2 <= size <= 9 */
-        for (int i = 1; i < size * size; i++)
+        uint8 size = (uint8) tiles.length [0];  /* 2 <= size <= 9 */
+        for (uint8 i = 1; i < size * size; i++)
             if (i != tiles [i % size, i / size])
                 return false;
         return true;
@@ -306,8 +310,8 @@ private class Game : Object
 
     private struct UndoItem
     {
-        public int x;
-        public int y;
+        public int8 x;
+        public int8 y;
         public UndoItem? next;
         public UndoItem? previous;
     }
@@ -340,7 +344,7 @@ private class Game : Object
         }
     }
 
-    private void add_move (int x_gap, int y_gap)
+    private void add_move (int8 x_gap, int8 y_gap)
     {
         previous_state = state == null ? null : state;
         state = UndoItem () { x = x_gap, y = y_gap, next = null, previous = previous_state };

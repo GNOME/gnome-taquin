@@ -188,10 +188,10 @@ private class Taquin : Gtk.Application, BaseApplication
         /* New-game screen signals */
         settings.changed ["size"].connect (() => {
             if (!size_changed)
-                new_game_screen.update_size_button_label (settings.get_int ("size"));
+                new_game_screen.update_size_button_label (settings.get_int ("size") /* 2 <= size <= 9 */);
             size_changed = false;
         });
-        new_game_screen.update_size_button_label (settings.get_int ("size"));
+        new_game_screen.update_size_button_label (settings.get_int ("size") /* 2 <= size <= 9 */);
 
         settings.changed ["theme"].connect (() => {
             if (!theme_changed)
@@ -251,14 +251,14 @@ private class Taquin : Gtk.Application, BaseApplication
         }
 
         GameType type = (GameType) settings.get_enum ("type");
-        int size = settings.get_int ("size");
+        int8 size = (int8) settings.get_int ("size"); /* 2 <= size <= 9 */
         game = new Game (type, size);
         view.game = (!) game;
         window.move_done (0);
         move_done = false;
 
         string filename = "";
-        var dirlist = theme_dirlist.copy ();
+        List<weak string> dirlist = theme_dirlist.copy ();
         do
         {
             int random = Random.int_range (0, (int) dirlist.length());
@@ -297,7 +297,7 @@ private class Taquin : Gtk.Application, BaseApplication
     * * Signals from game
     \*/
 
-    private void move_cb (bool x_axis, int number, int x_gap, int y_gap, uint moves_count, bool disable_animation)
+    private void move_cb (bool x_axis, int8 number, int8 x_gap, int8 y_gap, uint moves_count, bool disable_animation)
     {
         window.move_done (moves_count);
         play_sound ("sliding-1");       // TODO sliding-n??
@@ -350,7 +350,7 @@ private class Taquin : Gtk.Application, BaseApplication
     {
         size_changed = true;
         int size = int.parse (((!) variant).get_string ());
-        new_game_screen.update_size_button_label (size);
+        new_game_screen.update_size_button_label (size /* 3 <= size <= 5 */);
         settings.set_int ("size", size);
     }
 
@@ -373,7 +373,7 @@ private class Taquin : Gtk.Application, BaseApplication
             dir = Dir.open (Path.build_filename (DATA_DIRECTORY, "themes", theme));
             while (true)
             {
-                var filename = dir.read_name ();
+                string? filename = dir.read_name ();
                 if (filename == null)
                     break;
                 theme_dirlist.append ((!) filename);
