@@ -285,6 +285,7 @@ private class GameHeaderBar : BaseHeaderBar
          //     section.append (_("_Redo"), "ui.redo");
         }
 
+
         /* Translators: during a game, entry in the menu of the history menubutton (with a mnemonic that appears pressing Alt) */
         section.append (_("_Restart"), "ui.restart");
 
