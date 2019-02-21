@@ -229,8 +229,13 @@ private abstract class AdaptativeWindow : ApplicationWindow
             window_is_maximized = (event.new_window_state & Gdk.WindowState.MAXIMIZED) != 0;
 
         /* fullscreen: saved as maximized */
+        bool window_was_fullscreen = window_is_fullscreen;
         if ((event.changed_mask & Gdk.WindowState.FULLSCREEN) != 0)
             window_is_fullscreen = (event.new_window_state & Gdk.WindowState.FULLSCREEN) != 0;
+        if (window_was_fullscreen && !window_is_fullscreen)
+            on_unfullscreen ();
+        else if (!window_was_fullscreen && window_is_fullscreen)
+            on_fullscreen ();
 
         /* tiled: not saved, but should not change saved window size */
         Gdk.WindowState tiled_state = Gdk.WindowState.TILED
@@ -243,6 +248,8 @@ private abstract class AdaptativeWindow : ApplicationWindow
 
         return false;
     }
+    protected abstract void on_fullscreen ();
+    protected abstract void on_unfullscreen ();
 
     [GtkCallback]
     private void on_size_allocate (Allocation allocation)

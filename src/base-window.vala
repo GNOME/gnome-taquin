@@ -73,10 +73,21 @@ private class BaseWindow : AdaptativeWindow, AdaptativeWidget
     \*/
 
     [GtkChild] private Grid main_grid;
+    [GtkChild] private Button unfullscreen_button;
 
     protected void add_to_main_grid (Widget widget)
     {
         main_grid.add (widget);
+    }
+
+    protected override void on_fullscreen ()
+    {
+        unfullscreen_button.show ();
+    }
+
+    protected override void on_unfullscreen ()
+    {
+        unfullscreen_button.hide ();
     }
 
     /*\
@@ -105,7 +116,9 @@ private class BaseWindow : AdaptativeWindow, AdaptativeWidget
         { "show-default-view",  show_default_view   },
 
         { "help",               help                },
-        { "about",              about               }
+        { "about",              about               },
+
+        { "unfullscreen",       unfullscreen        }
     };
 
     /*\

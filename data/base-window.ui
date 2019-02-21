@@ -21,9 +21,34 @@
     <property name="visible">False</property>
     <signal name="key-press-event" handler="on_key_press_event"/>
     <child>
-      <object class="GtkGrid" id="main_grid">
+      <object class="GtkOverlay">
         <property name="visible">True</property>
-        <property name="orientation">vertical</property>
+        <child>
+          <object class="GtkGrid" id="main_grid">
+            <property name="visible">True</property>
+            <property name="orientation">vertical</property>
+          </object>
+        </child>
+        <child type="overlay">
+          <object class="GtkButton" id="unfullscreen_button">
+            <property name="visible">False</property>
+            <property name="halign">end</property>
+            <property name="valign">start</property>
+            <property name="action-name">base.unfullscreen</property>
+            <style>
+              <class name="image-button"/>
+              <class name="unfullscreen-button"/>
+              <class name="flat"/>
+            </style>
+            <child>
+              <object class="GtkImage">
+                <property name="icon-name">view-restore-symbolic</property>
+                <property name="visible">True</property>
+                <property name="icon-size">1</property>
+              </object>
+            </child>
+          </object>
+        </child>
       </object>
     </child>
   </template>
