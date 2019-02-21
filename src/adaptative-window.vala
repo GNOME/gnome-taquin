@@ -228,7 +228,11 @@ private abstract class AdaptativeWindow : ApplicationWindow
         if ((event.changed_mask & Gdk.WindowState.MAXIMIZED) != 0)
             window_is_maximized = (event.new_window_state & Gdk.WindowState.MAXIMIZED) != 0;
 
-        /* We don’t save this state, but track it for saving size allocation */
+        /* fullscreen: saved as maximized */
+        if ((event.changed_mask & Gdk.WindowState.FULLSCREEN) != 0)
+            window_is_fullscreen = (event.new_window_state & Gdk.WindowState.FULLSCREEN) != 0;
+
+        /* tiled: not saved, but should not change saved window size */
         Gdk.WindowState tiled_state = Gdk.WindowState.TILED
                                     | Gdk.WindowState.TOP_TILED
                                     | Gdk.WindowState.BOTTOM_TILED
@@ -366,6 +370,7 @@ private abstract class AdaptativeWindow : ApplicationWindow
     private int window_width = 0;
     private int window_height = 0;
     private bool window_is_maximized = false;
+    private bool window_is_fullscreen = false;
     private bool window_is_tiled = false;
 
     private void load_window_state ()   // called on construct
@@ -377,7 +382,7 @@ private abstract class AdaptativeWindow : ApplicationWindow
 
     private void update_window_state () // called on size-allocate
     {
-        if (window_is_maximized || window_is_tiled)
+        if (window_is_maximized || window_is_tiled || window_is_fullscreen)
             return;
         int? _window_width = null;
         int? _window_height = null;
@@ -393,7 +398,7 @@ private abstract class AdaptativeWindow : ApplicationWindow
         settings.delay ();
         settings.set_int ("window-width", window_width);
         settings.set_int ("window-height", window_height);
-        settings.set_boolean ("window-is-maximized", window_is_maximized);
+        settings.set_boolean ("window-is-maximized", window_is_maximized || window_is_fullscreen);
         settings.apply ();
     }
 
