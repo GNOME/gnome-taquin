@@ -1,14 +1,14 @@
 # Swedish translation for gnome-taquin.
-# Copyright © 2015, 2016, 2018 gnome-taquin's COPYRIGHT HOLDER
+# Copyright © 2015-2019 gnome-taquin's COPYRIGHT HOLDER
 # This file is distributed under the same license as the gnome-taquin package.
-# Sebastian Rasmussen <sebras@gmail.com>, 2015-2016.
-# Anders Jonsson <anders.jonsson@norsjovallen.se>, 2018.
+# Sebastian Rasmussen <sebras@gmail.com>, 2015, 2016.
+# Anders Jonsson <anders.jonsson@norsjovallen.se>, 2018, 2019.
 #
 msgid ""
 msgstr ""
 "Project-Id-Version: gnome-taquin master\n"
-"POT-Creation-Date: 2018-08-09 13:38+0000\n"
-"PO-Revision-Date: 2018-08-09 20:40+0200\n"
+"POT-Creation-Date: 2019-02-12 19:24+0000\n"
+"PO-Revision-Date: 2019-02-24 16:24+0100\n"
 "Last-Translator: Anders Jonsson <anders.jonsson@norsjovallen.se>\n"
 "Language-Team: Swedish <tp-sv@listor.tp-sv.se>\n"
 "Language: sv\n"
@@ -16,7 +16,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
-"X-Generator: Poedit 2.1.1\n"
+"X-Generator: Poedit 2.2.1\n"
 
 #. Put one translator per line, in the form NAME <EMAIL>, YEAR1, YEAR2
 msgctxt "_"
@@ -32,8 +32,8 @@ msgstr "Arnaud Bonatti"
 #. (itstool) path: credit/years
 #: C/15-Puzzle.page:12 C/16-Puzzle.page:12 C/beginning.page:12
 #: C/shortcuts.page:12 C/start-screen.page:12
-msgid "2014"
-msgstr "2014"
+msgid "2014-2019"
+msgstr "2014-2019"
 
 #. (itstool) path: page/title
 #: C/15-Puzzle.page:18
@@ -89,11 +89,15 @@ msgstr ""
 #. (itstool) path: section/p
 #: C/15-Puzzle.page:33 C/16-Puzzle.page:33
 msgid ""
-"You can click the <gui>Start Over</gui> button to go to the <link xref="
-"\"start-screen\">Start Screen</link>."
+"You can click the <gui>New Game</gui> button in the headerbar to go to the "
+"<link xref=\"start-screen\">Start Screen</link>. Alternatively, you can "
+"restart the game by clicking on the button with a counter of moves done, and "
+"then on the <gui>Restart</gui> entry."
 msgstr ""
-"Du kan klicka på knappen <gui>Börja om</gui> för att gå till <link xref="
-"\"start-screen\">startskärmen</link>."
+"Du kan klicka på knappen <gui>Nytt spel</gui> i rubrikraden för att gå till "
+"<link xref=\"start-screen\">startskärmen</link>. Alternativt kan du starta "
+"om spelet genom att klicka på knappen med en räknare för utförda drag, och "
+"sedan på posten <gui>Starta om</gui>."
 
 #. (itstool) path: section/title
 #: C/15-Puzzle.page:37 C/16-Puzzle.page:37
@@ -101,18 +105,18 @@ msgid "How to play with a mouse"
 msgstr "Hur man spelar med en mus"
 
 #. (itstool) path: section/p
-#: C/15-Puzzle.page:39 C/15-Puzzle.page:57 C/16-Puzzle.page:39
-#: C/16-Puzzle.page:55
+#: C/15-Puzzle.page:39 C/15-Puzzle.page:68 C/16-Puzzle.page:39
+#: C/16-Puzzle.page:65
 msgid "To make a move:"
 msgstr "För att göra ett drag:"
 
 #. (itstool) path: item/p
-#: C/15-Puzzle.page:41 C/beginning.page:25
+#: C/15-Puzzle.page:42 C/beginning.page:26
 msgid "Click on a tile on the same row or column as the empty space."
 msgstr "Klicka på en bricka i samma rad eller kolumn som den tomma platsen."
 
 #. (itstool) path: note/p
-#: C/15-Puzzle.page:42 C/15-Puzzle.page:61 C/beginning.page:26
+#: C/15-Puzzle.page:44 C/15-Puzzle.page:74 C/beginning.page:28
 msgid ""
 "If you click on a tile that cannot move, the game notifies you that the move "
 "is impossible."
@@ -121,36 +125,56 @@ msgstr ""
 "att draget är omöjligt."
 
 #. (itstool) path: item/p
-#: C/15-Puzzle.page:45 C/16-Puzzle.page:43
+#: C/15-Puzzle.page:48 C/16-Puzzle.page:45 C/beginning.page:32
 msgid ""
-"You can always undo a move by clicking the <gui>Undo</gui> button at the "
-"left of the header bar."
+"You can always undo your move. For that, click on the button with a counter "
+"of moves done in the headerbar, and click the <gui>Undo</gui> entry in the "
+"menu that appears."
 msgstr ""
-"Du kan alltid göra ett drag ogjort genom att klicka på <gui>Ångra</gui>-"
-"knappen till vänster om rubrikraden."
-
-#. (itstool) path: item/p
-#: C/15-Puzzle.page:47 C/16-Puzzle.page:45 C/beginning.page:31
-msgid ""
-"At the end of the game, or when you want to switch games, click the "
-"<gui>Start Over</gui> button to go to the <link xref=\"start-screen\">Start "
-"Screen</link>."
-msgstr ""
-"Vid spelets slut, eller när du vill byta spel, klicka på knappen <gui>Börja "
-"om</gui> för att gå till <link xref=\"start-screen\">startskärmen</link>."
+"Du kan alltid ångra ditt drag. För att göra detta kan du i rubrikraden "
+"klicka på knappen med en räknare för utförda drag, och sedan på posten "
+"<gui>Ångra</gui> i menyn som dyker upp."
 
 #. (itstool) path: section/p
-#: C/15-Puzzle.page:51 C/16-Puzzle.page:49
+#: C/15-Puzzle.page:52 C/15-Puzzle.page:82 C/16-Puzzle.page:49
+#: C/16-Puzzle.page:76
+msgid "Whether you finished the current game or not:"
+msgstr "Oavsett om du slutfört det aktuella spelet eller inte:"
+
+#. (itstool) path: item/p
+#: C/15-Puzzle.page:55 C/16-Puzzle.page:52
+msgid ""
+"To start a new game –possibly with other options–, click the <gui>New Game</"
+"gui> button in the headerbar to go to the <link xref=\"start-screen\">Start "
+"Screen</link>."
+msgstr ""
+"För att starta ett nytt spel, möjligen med andra alternativ, klicka på "
+"knappen <gui>Nytt spel</gui> i rubrikraden för att gå till <link xref="
+"\"start-screen\">startskärmen</link>."
+
+#. (itstool) path: item/p
+#: C/15-Puzzle.page:58 C/16-Puzzle.page:55
+msgid ""
+"Alternatively, you may want to restart the game. For that, click in the "
+"headerbar on the button with a counter of moves done, and click the "
+"<gui>Restart</gui> entry in the menu that appears."
+msgstr ""
+"Alternativt kan du vilja starta om spelet. För att göra detta kan du i "
+"rubrikraden klicka på knappen med en räknare för utförda drag, och sedan "
+"klicka på posten <gui>Starta om</gui> i menyn som dyker upp."
+
+#. (itstool) path: section/p
+#: C/15-Puzzle.page:62 C/16-Puzzle.page:59
 msgid "You can also use the keyboard."
 msgstr "Du kan även använda tangentbordet."
 
 #. (itstool) path: section/title
-#: C/15-Puzzle.page:55 C/16-Puzzle.page:53
+#: C/15-Puzzle.page:66 C/16-Puzzle.page:63
 msgid "How to play with the keyboard"
 msgstr "Hur man spelar med ett tangentbord"
 
 #. (itstool) path: item/p
-#: C/15-Puzzle.page:59
+#: C/15-Puzzle.page:71
 msgid ""
 "Use the <key>Left</key>, <key>Right</key>, <key>Up</key> and <key>Down</key> "
 "arrows to go at the tile you want to move. The currently selected tile is "
@@ -163,7 +187,7 @@ msgstr ""
 "och kolumn."
 
 #. (itstool) path: item/p
-#: C/15-Puzzle.page:60
+#: C/15-Puzzle.page:72
 msgid ""
 "Use the <key>Space</key> key to move the selected tile in the direction of "
 "the empty space."
@@ -172,27 +196,36 @@ msgstr ""
 "mot den tomma platsen."
 
 #. (itstool) path: item/p
-#: C/15-Puzzle.page:64 C/16-Puzzle.page:60
+#: C/15-Puzzle.page:78 C/16-Puzzle.page:72
 msgid ""
-"You can always undo a move with the <keyseq><key>Ctrl</key><key>Z</key></"
-"keyseq> keys."
+"You can always undo your move. For that, use the <keyseq><key>Ctrl</"
+"key><key>Z</key></keyseq> keys sequence."
 msgstr ""
-"Du kan alltid ångra ett drag med tangenterna <keyseq><key>Ctrl</key><key>Z</"
-"key></keyseq>."
+"Du kan alltid ångra ditt drag. Använd tangentkombinationen "
+"<keyseq><key>Ctrl</key><key>Z</key></keyseq> för det."
 
 #. (itstool) path: item/p
-#: C/15-Puzzle.page:66 C/16-Puzzle.page:62
+#: C/15-Puzzle.page:85 C/16-Puzzle.page:79
 msgid ""
-"At the end of the game, or when you want to switch games, use the "
-"<keyseq><key>Ctrl</key><key>N</key></keyseq> keys to go to the <link xref="
-"\"start-screen\">Start Screen</link>."
+"To start a new game –possibly with other options–, use the "
+"<keyseq><key>Ctrl</key><key>N</key></keyseq> keys sequence to go to the "
+"<link xref=\"start-screen\">Start Screen</link>."
 msgstr ""
-"Vid spelets slut, eller när du vill byta spel, använd tangenterna "
-"<keyseq><key>Ctrl</key><key>N</key></keyseq> för att gå till <link xref="
-"\"start-screen\">startskärmen</link>."
+"För att starta ett nytt spel, möjligen med andra alternativ, använd "
+"tangentkombinationen <keyseq><key>Ctrl</key><key>N</key></keyseq> för att gå "
+"till <link xref=\"start-screen\">startskärmen</link>."
+
+#. (itstool) path: item/p
+#: C/15-Puzzle.page:88 C/16-Puzzle.page:82
+msgid ""
+"Alternatively, you may want to restart the game. For that, use the "
+"<keyseq><key>Shift</key><key>Ctrl</key><key>N</key></keyseq> keys sequence."
+msgstr ""
+"Alternativt kan du vilja starta om spelet. Använd tangentkombinationen "
+"<keyseq><key>Skift</key><key>Ctrl</key><key>N</key></keyseq> för detta."
 
 #. (itstool) path: section/p
-#: C/15-Puzzle.page:70 C/16-Puzzle.page:66
+#: C/15-Puzzle.page:92 C/16-Puzzle.page:86
 msgid "You can also use a mouse."
 msgstr "Du kan också använda en mus."
 
@@ -222,7 +255,7 @@ msgstr ""
 "knuffas ut från spelplanen placeras på motsatt sida av raden eller kolumnen."
 
 #. (itstool) path: item/p
-#: C/16-Puzzle.page:41
+#: C/16-Puzzle.page:42
 msgid ""
 "Click on one of the arrows displayed around the board. The row or column at "
 "the end of which this arrow is moves in this direction, and the tile that "
@@ -233,28 +266,32 @@ msgstr ""
 "pilen placeras på motsatt sida."
 
 #. (itstool) path: item/p
-#: C/16-Puzzle.page:57
+#: C/16-Puzzle.page:68
 msgid ""
-"Use the <key>Left</key>, <key>Right</key>, <key>Up</key> and <key>Down</key> "
-"arrows to go at the row or the column you want to move. The currently "
-"selected row and column are indicated with two lights around the board."
+"Use the <key>Left</key> and <key>Right</key> arrows to change the selected "
+"column, and the <key>Up</key> and <key>Down</key> arrows to change the "
+"selected row. The currently selected row and column are indicated with "
+"lights around the board."
 msgstr ""
-"Använd piltangenterna <key>Vänster</key>, <key>Höger</key>, <key>Upp</key> "
-"och <key>Ned</key> för att navigera till raden eller kolumnen du vill "
-"flytta. Den valda raden och kolumnen indikeras med två lampor runt brädet."
+"Använd piltangenterna <key>Vänster</key> och <key>Höger</key> för att ändra "
+"vald kolumn, och piltangenterna <key>Upp</key> och <key>Ned</key> för att "
+"ändra vald rad. Den valda raden och kolumnen indikeras med två lampor runt "
+"brädet."
 
 #. (itstool) path: item/p
-#: C/16-Puzzle.page:58
+#: C/16-Puzzle.page:69
 msgid ""
-"Use the <keyseq><key>Ctrl</key><key>Left</key></keyseq> or "
-"<keyseq><key>Ctrl</key><key>Right</key></keyseq> keys to move a row, or the "
-"<keyseq><key>Ctrl</key><key>Up</key></keyseq> and <keyseq><key>Ctrl</"
-"key><key>Down</key></keyseq> keys to move a column."
+"Use the <keyseq><key>Shift</key><key>Left</key></keyseq> and "
+"<keyseq><key>Shift</key><key>Right</key></keyseq> keys sequences to swipe "
+"the selected row, or the <keyseq><key>Shift</key><key>Up</key></keyseq> and "
+"<keyseq><key>Shift</key><key>Down</key></keyseq> keys sequences to swipe the "
+"selected column."
 msgstr ""
-"Använd tangenterna <keyseq><key>Ctrl</key><key>Vänster</key></keyseq> eller "
-"<keyseq><key>Ctrl</key><key>Höger</key></keyseq> för att flytta en rad, "
-"eller tangenterna <keyseq><key>Ctrl</key><key>Upp</key></keyseq> och "
-"<keyseq><key>Ctrl</key><key>Ned</key></keyseq> för att flytta en kolumn."
+"Använd tangentkombinationerna <keyseq><key>Skift</key><key>Vänster</key></"
+"keyseq> eller <keyseq><key>Skift</key><key>Höger</key></keyseq> för att "
+"flytta den markerade raden, eller tangentkombinationerna <keyseq><key>Skift</"
+"key><key>Upp</key></keyseq> och <keyseq><key>Skifta</key><key>Ned</key></"
+"keyseq> för att flytta den markerade kolumnen."
 
 #. (itstool) path: page/title
 #: C/beginning.page:18
@@ -276,16 +313,27 @@ msgid "The game is played using the mouse. To make a move:"
 msgstr "Spelet spelas med musen. För att göra ett drag:"
 
 #. (itstool) path: item/p
-#: C/beginning.page:29
+#: C/beginning.page:35
 msgid ""
-"You can always undo a move by clicking the <gui>Undo</gui> button on the "
-"left of the header bar."
+"To start a new game –whether you finished the current game or not–, click "
+"the <gui>New Game</gui> button in the headerbar to go to the <link xref="
+"\"start-screen\">Start Screen</link>."
 msgstr ""
-"Du kan alltid ångra ett drag genom att klicka på <gui>Ångra</gui>-knappen "
-"till vänster i rubrikraden."
+"För att starta ett nytt spel, oavsett om du avslutat det aktuella spelet "
+"eller inte, klicka på knappen <gui>Nytt spel</gui> i rubrikraden för att gå "
+"till <link xref=\"start-screen\">startskärmen</link>."
 
 #. (itstool) path: page/p
-#: C/beginning.page:35
+#: C/beginning.page:39
+msgid ""
+"You can also <link xref=\"15-Puzzle#15-keyboard\">play with the keyboard</"
+"link> if you prefer."
+msgstr ""
+"Du kan också <link xref=\"15-Puzzle#15-keyboard\">spela med tangentbordet</"
+"link> om du föredrar det."
+
+#. (itstool) path: page/p
+#: C/beginning.page:41
 msgid ""
 "After the first time it is opened, <app>Taquin</app> displays a puzzle with "
 "the same rules and dimensions as the last one played when it is opened, so "
@@ -471,8 +519,8 @@ msgstr "Genvägar i spelet"
 
 #. (itstool) path: td/p
 #: C/shortcuts.page:26
-msgid "Show new-game screen"
-msgstr "Via skärmen för att starta ett nytt spel"
+msgid "Show the Start Screen"
+msgstr "Visa startskärmen"
 
 #. (itstool) path: td/p
 #: C/shortcuts.page:27
@@ -481,120 +529,167 @@ msgstr "<keyseq><key>Ctrl</key><key>N</key></keyseq>"
 
 #. (itstool) path: td/p
 #: C/shortcuts.page:30
+msgid "Restart game"
+msgstr "Starta om spel"
+
+#. (itstool) path: td/p
+#: C/shortcuts.page:31 C/shortcuts.page:78
+msgid "<keyseq><key>Shift</key><key>Ctrl</key><key>N</key></keyseq>"
+msgstr "<keyseq><key>Skift</key><key>Ctrl</key><key>N</key></keyseq>"
+
+#. (itstool) path: td/p
+#: C/shortcuts.page:34
 msgid "Undo last move"
 msgstr "Ångra senaste draget"
 
 #. (itstool) path: td/p
-#: C/shortcuts.page:31
+#: C/shortcuts.page:35
 msgid "<keyseq><key>Ctrl</key><key>Z</key></keyseq>"
 msgstr "<keyseq><key>Ctrl</key><key>Z</key></keyseq>"
 
 #. (itstool) path: section/title
-#: C/shortcuts.page:36
+#: C/shortcuts.page:40
 msgid "15-Puzzle shortcuts"
 msgstr "Genvägar för 15-pussel"
 
 #. (itstool) path: td/p
-#: C/shortcuts.page:39 C/shortcuts.page:52
-msgid "Change selected tile"
-msgstr "Ändra markerad bricka"
+#: C/shortcuts.page:43
+msgid "Select tile to push on"
+msgstr "Välj bricka att flytta"
 
 #. (itstool) path: td/p
-#: C/shortcuts.page:40 C/shortcuts.page:53
+#: C/shortcuts.page:44
 msgid "<key>Left</key>, <key>Right</key>, <key>Up</key> and <key>Down</key>"
 msgstr ""
 "<key>Vänster</key>, <key>Höger</key>, <key>Upp</key> och <key>Ned</key>"
 
 #. (itstool) path: td/p
-#: C/shortcuts.page:43
+#: C/shortcuts.page:47
 msgid "Push tile in empty space’s direction"
 msgstr "Skjut brickan i den riktning som den tomma platsen finns"
 
 #. (itstool) path: td/p
-#: C/shortcuts.page:44
-msgid "<key>Space</key> or <key>KP_Enter</key>"
-msgstr "<key>Blanksteg</key> eller <key>retur</key> på numeriska tangentbordet"
+#: C/shortcuts.page:48
+msgid "<key>Space</key>, <key>Return</key> and <key>KP_Enter</key>"
+msgstr ""
+"<key>Blanksteg</key>, <key>retur</key> eller <key>retur</key> på numeriska "
+"tangentbordet"
 
 #. (itstool) path: section/title
-#: C/shortcuts.page:49
+#: C/shortcuts.page:53
 msgid "16-Puzzle shortcuts"
 msgstr "Genvägar för 16-pussel"
 
 #. (itstool) path: td/p
 #: C/shortcuts.page:56
-msgid "Move row"
-msgstr "Flytta rad"
+msgid "Change selected column"
+msgstr "Ändra markerad kolumn"
 
 #. (itstool) path: td/p
 #: C/shortcuts.page:57
-msgid ""
-"<keyseq><key>Ctrl</key><key>Left</key></keyseq> and <keyseq><key>Ctrl</"
-"key><key>Right</key></keyseq>"
-msgstr ""
-"<keyseq><key>Ctrl</key><key>Vänster</key></keyseq> och <keyseq><key>Ctrl</"
-"key><key>Höger</key></keyseq>"
+msgid "<key>Left</key> and <key>Right</key>"
+msgstr "<key>Vänster</key> och <key>Höger</key>"
 
 #. (itstool) path: td/p
 #: C/shortcuts.page:60
-msgid "Move column"
-msgstr "Flytta kolumn"
+msgid "Change selected row"
+msgstr "Ändra markerad rad"
 
 #. (itstool) path: td/p
 #: C/shortcuts.page:61
+msgid "<key>Up</key> and <key>Down</key>"
+msgstr "<key>Upp</key> och <key>Ned</key>"
+
+#. (itstool) path: td/p
+#: C/shortcuts.page:64
+msgid "Swipe selected row"
+msgstr "Flytta markerad rad"
+
+#. (itstool) path: td/p
+#: C/shortcuts.page:65
 msgid ""
-"<keyseq><key>Ctrl</key><key>Up</key></keyseq> and <keyseq><key>Ctrl</"
+"<keyseq><key>Shift</key><key>Left</key></keyseq> and <keyseq><key>Shift</"
+"key><key>Right</key></keyseq>"
+msgstr ""
+"<keyseq><key>Skift</key><key>Vänster</key></keyseq> och <keyseq><key>Skift</"
+"key><key>Höger</key></keyseq>"
+
+#. (itstool) path: td/p
+#: C/shortcuts.page:68
+msgid "Swipe selected column"
+msgstr "Flytta markerad kolumn"
+
+#. (itstool) path: td/p
+#: C/shortcuts.page:69
+msgid ""
+"<keyseq><key>Shift</key><key>Up</key></keyseq> and <keyseq><key>Shift</"
 "key><key>Down</key></keyseq>"
 msgstr ""
-"<keyseq><key>Ctrl</key><key>Upp</key></keyseq> och <keyseq><key>Ctrl</"
+"<keyseq><key>Skift</key><key>Upp</key></keyseq> och <keyseq><key>Skift</"
 "key><key>Ned</key></keyseq>"
 
 #. (itstool) path: section/title
-#: C/shortcuts.page:66
+#: C/shortcuts.page:74
 msgid "Start Screen shortcuts"
 msgstr "Genvägar för startskärmen"
 
 #. (itstool) path: td/p
-#: C/shortcuts.page:69
-msgid "New Game"
-msgstr "Nytt spel"
+#: C/shortcuts.page:77
+msgid "Start new game"
+msgstr "Starta nytt spel"
 
 #. (itstool) path: td/p
-#: C/shortcuts.page:70
-msgid "<keyseq><key>Ctrl</key><key>Shift</key><key>N</key></keyseq>"
-msgstr "<keyseq><key>Ctrl</key><key>Skift</key><key>N</key></keyseq>"
-
-#. (itstool) path: td/p
-#: C/shortcuts.page:73
+#: C/shortcuts.page:81
 msgid "Back to previous game (if any)"
 msgstr "Tillbaka till föregående spel (om sådant finns)"
 
 #. (itstool) path: td/p
-#: C/shortcuts.page:74
+#: C/shortcuts.page:82
 msgid "<key>Escape</key>"
 msgstr "<key>Escape</key>"
 
 #. (itstool) path: section/title
-#: C/shortcuts.page:79
+#: C/shortcuts.page:87
 msgid "General shortcuts"
 msgstr "Allmänna genvägar"
 
 #. (itstool) path: td/p
-#: C/shortcuts.page:82
+#: C/shortcuts.page:90
+msgid "Keyboard shortcuts"
+msgstr "Tangentbordsgenvägar"
+
+#. (itstool) path: td/p
+#: C/shortcuts.page:91
+msgid "<keyseq><key>Ctrl</key><key>F1</key></keyseq>"
+msgstr "<keyseq><key>Ctrl</key><key>F1</key></keyseq>"
+
+#. (itstool) path: td/p
+#: C/shortcuts.page:94
 msgid "Help"
 msgstr "Hjälp"
 
 #. (itstool) path: td/p
-#: C/shortcuts.page:83
+#: C/shortcuts.page:95
 msgid "<key>F1</key>"
 msgstr "<key>F1</key>"
 
 #. (itstool) path: td/p
-#: C/shortcuts.page:86
+#: C/shortcuts.page:98
+msgid "About"
+msgstr "Om"
+
+#. (itstool) path: td/p
+#: C/shortcuts.page:99
+msgid "<keyseq><key>Shift</key><key>F1</key></keyseq>"
+msgstr "<keyseq><key>Skift</key><key>F1</key></keyseq>"
+
+#. (itstool) path: td/p
+#: C/shortcuts.page:102
 msgid "Quit"
 msgstr "Avsluta"
 
 #. (itstool) path: td/p
-#: C/shortcuts.page:87
+#: C/shortcuts.page:103
 msgid "<keyseq><key>Ctrl</key><key>Q</key></keyseq>"
 msgstr "<keyseq><key>Ctrl</key><key>Q</key></keyseq>"
 
@@ -617,8 +712,41 @@ msgstr ""
 #. (itstool) path: page/p
 #: C/start-screen.page:20
 msgid ""
-"It can be accessed at any time from a game by pressing the <gui>Start Over</"
+"It can be accessed at any time from a game by pressing the <gui>New Game</"
 "gui> button."
 msgstr ""
-"Den kan nås när som helst från spelet genom att trycka på knappen <gui>Börja "
-"om</gui>."
+"Den kan nås när som helst från spelet genom att trycka på knappen <gui>Nytt "
+"spel</gui>."
+
+#~ msgid ""
+#~ "You can click the <gui>Start Over</gui> button to go to the <link xref="
+#~ "\"start-screen\">Start Screen</link>."
+#~ msgstr ""
+#~ "Du kan klicka på knappen <gui>Börja om</gui> för att gå till <link xref="
+#~ "\"start-screen\">startskärmen</link>."
+
+#~ msgid ""
+#~ "You can always undo a move by clicking the <gui>Undo</gui> button at the "
+#~ "left of the header bar."
+#~ msgstr ""
+#~ "Du kan alltid göra ett drag ogjort genom att klicka på <gui>Ångra</gui>-"
+#~ "knappen till vänster om rubrikraden."
+
+#~ msgid ""
+#~ "You can always undo a move by clicking the <gui>Undo</gui> button on the "
+#~ "left of the header bar."
+#~ msgstr ""
+#~ "Du kan alltid ångra ett drag genom att klicka på <gui>Ångra</gui>-knappen "
+#~ "till vänster i rubrikraden."
+
+#~ msgid "Show new-game screen"
+#~ msgstr "Via skärmen för att starta ett nytt spel"
+
+#~ msgid "Move row"
+#~ msgstr "Flytta rad"
+
+#~ msgid "Move column"
+#~ msgstr "Flytta kolumn"
+
+#~ msgid "New Game"
+#~ msgstr "Nytt spel"
