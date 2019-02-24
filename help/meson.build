@@ -9,11 +9,8 @@ help_pages = [
     'start-screen.page',
 ]
 help_media = [
-    'figures/fifteen.png',
     'figures/logo.png',
     'figures/logo32.png',
-    'figures/sixteen.png',
-    'figures/start-screen.png',
 ]
 
 gnome.yelp(meson.project_name(),
