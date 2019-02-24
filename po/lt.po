@@ -2,15 +2,14 @@
 # Copyright (C) 2015 gnome-taquin's COPYRIGHT HOLDER
 # This file is distributed under the same license as the gnome-taquin package.
 # FULL NAME <EMAIL@ADDRESS>, 2015.
-# Aurimas Černius <aurisc4@gmail.com>, 2015, 2016.
+# Aurimas Černius <aurisc4@gmail.com>, 2015-2019.
 #
 msgid ""
 msgstr ""
 "Project-Id-Version: gnome-taquin master\n"
-"Report-Msgid-Bugs-To: http://bugzilla.gnome.org/enter_bug.cgi?product=gnome-"
-"taquin&keywords=I18N+L10N&component=general\n"
-"POT-Creation-Date: 2016-08-13 20:10+0000\n"
-"PO-Revision-Date: 2016-08-14 21:25+0300\n"
+"Report-Msgid-Bugs-To: https://gitlab.gnome.org/GNOME/gnome-taquin/issues\n"
+"POT-Creation-Date: 2019-02-18 14:23+0000\n"
+"PO-Revision-Date: 2019-02-24 17:24+0200\n"
 "Last-Translator: Aurimas Černius <aurisc4@gmail.com>\n"
 "Language-Team: Lietuvių <gnome-lt@lists.akl.lt>\n"
 "Language: lt\n"
@@ -18,85 +17,25 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=3; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && (n"
-"%100<10 || n%100>=20) ? 1 : 2);\n"
-"X-Generator: Gtranslator 2.91.7\n"
+"%100<10 || n%100>=20) ? 1 : 2)\n"
+"X-Generator: Gtranslator 3.30.1\n"
 
-#: ../data/taquin-menus.ui.h:1
-msgid "_Sound"
-msgstr "_Garsas"
-
-#: ../data/taquin-menus.ui.h:2
-msgid "_Help"
-msgstr "_Žinynas"
-
-#: ../data/taquin-menus.ui.h:3
-msgid "_About"
-msgstr "_Apie"
-
-#: ../data/taquin-menus.ui.h:4
-msgid "_Quit"
-msgstr "_Išeiti"
-
-#: ../data/taquin-screens.ui.h:1
-msgid "3 × 3"
-msgstr "3 × 3"
-
-#: ../data/taquin-screens.ui.h:2
-msgid "4 × 4"
-msgstr "4 × 4"
-
-#: ../data/taquin-screens.ui.h:3
-msgid "5 × 5"
-msgstr "5 × 5"
-
-#: ../data/taquin-screens.ui.h:4
-msgid "Cats"
-msgstr "Katinai"
-
-#: ../data/taquin-screens.ui.h:5
-msgid "Numbers"
-msgstr "Skaičiai"
-
-#: ../data/taquin-screens.ui.h:6 ../data/org.gnome.taquin.desktop.in.h:5
-msgid "15-Puzzle"
-msgstr "15-galvosūkis"
-
-#: ../data/taquin-screens.ui.h:7 ../data/org.gnome.taquin.desktop.in.h:6
-msgid "16-Puzzle"
-msgstr "16-galvosūkis"
-
-#: ../data/taquin.ui.h:1
-msgid "Go back to the current game"
-msgstr "Grįžti į dabartinį žaidimą"
-
-#: ../data/taquin.ui.h:2
-msgid "_Start Over"
-msgstr "Žaisti iš _naujo"
-
-#: ../data/taquin.ui.h:3
-msgid "Configure a new game"
-msgstr "Konfigūruoti naują žaidimą"
-
-#: ../data/taquin.ui.h:4
-msgid "Start a new game"
-msgstr "Pradėti naują žaidimą"
-
-#: ../data/org.gnome.taquin.appdata.xml.in.h:1
+#: data/org.gnome.Taquin.appdata.xml.in:7
 msgid "GNOME Taquin"
 msgstr "GNOME Taquin"
 
-#: ../data/org.gnome.taquin.appdata.xml.in.h:2
-#: ../data/org.gnome.taquin.desktop.in.h:3
+#. Translators: a Comment that gives the application function, as defined in the desktop file spec
+#: data/org.gnome.Taquin.appdata.xml.in:8 data/org.gnome.Taquin.desktop.in:9
 msgid "Slide tiles to their correct places"
 msgstr "Tempkite koklius į jų teisingas vietas"
 
-#: ../data/org.gnome.taquin.appdata.xml.in.h:3
+#: data/org.gnome.Taquin.appdata.xml.in:10
 msgid ""
 "Taquin is a computer version of the 15-puzzle and other sliding puzzles."
 msgstr ""
 "Taquin yra 15-galvosūkio ir kitų tempimo galvosūkių kompiuterinė versija."
 
-#: ../data/org.gnome.taquin.appdata.xml.in.h:4
+#: data/org.gnome.Taquin.appdata.xml.in:13
 msgid ""
 "The object of Taquin is to move tiles so that they reach their places, "
 "either indicated with numbers, or with parts of a great image."
@@ -104,32 +43,53 @@ msgstr ""
 "Taquin tikslas yra perkelti koklius taip, kad kiekvienas atsidurtų savo "
 "vietoje, nurodytoje skaičiais arba didesnio paveikslėlio dalimis."
 
-#: ../data/org.gnome.taquin.appdata.xml.in.h:5
+#: data/org.gnome.Taquin.appdata.xml.in:21
 msgid "A GNOME taquin game preview"
 msgstr "GNOME taquin žaidimo peržiūra"
 
-#: ../data/org.gnome.taquin.appdata.xml.in.h:6
+#: data/org.gnome.Taquin.appdata.xml.in:37
 msgid "The GNOME Project"
 msgstr "GNOME projektas"
 
-#: ../data/org.gnome.taquin.desktop.in.h:1 ../src/taquin-main.vala:76
-#: ../src/taquin-main.vala:133 ../src/taquin-main.vala:237
+#. Translators: Do NOT translate or transliterate this text (this is an icon file name)!
+#: data/org.gnome.Taquin.desktop.in:4
+msgid "org.gnome.Taquin"
+msgstr "org.gnome.Taquin"
+
+#. Translators: application name, as used in the window manager, the window title, the about dialog...
+#: data/org.gnome.Taquin.desktop.in:5 src/taquin-main.vala:26
 msgid "Taquin"
 msgstr "Taquin"
 
-#: ../data/org.gnome.taquin.desktop.in.h:2
+#. Translators: a GenericName that gives the application goal, as defined in the desktop file spec
+#: data/org.gnome.Taquin.desktop.in:7
 msgid "15-puzzle"
 msgstr "15-galvosūkis"
 
-#: ../data/org.gnome.taquin.desktop.in.h:4
+#. Translators: some search Keywords to find this application, as defined in the desktop file spec. Do NOT translate or localize the semicolons! The list MUST also end with a semicolon!
+#: data/org.gnome.Taquin.desktop.in:11
 msgid "puzzle;"
 msgstr "galvosūkis;"
 
-#: ../data/org.gnome.taquin.gschema.xml.h:1
+#. Translators: an action Name, as defined in the desktop file spec; name of the traditional Taquin game
+#. Translators: when configuring a new game, label of the first big button; name of the traditional Taquin game
+#: data/org.gnome.Taquin.desktop.in:21 data/taquin-screens.ui:92
+msgid "15-Puzzle"
+msgstr "15-galvosūkis"
+
+#. Translators: an action Name, as defined in the desktop file spec; name of the alternative game
+#. Translators: when configuring a new game, label of the second big button; name of the non-traditional game
+#: data/org.gnome.Taquin.desktop.in:26 data/taquin-screens.ui:109
+msgid "16-Puzzle"
+msgstr "16-galvosūkis"
+
+#. Translators: summary of a settings key, see 'dconf-editor /org/gnome/taquin/size'
+#: data/org.gnome.Taquin.gschema.xml:16
 msgid "Number of tiles on each edge."
 msgstr "Koklių skaičius kiekviename pakraštyje."
 
-#: ../data/org.gnome.taquin.gschema.xml.h:2
+#. Translators: description of a settings key, see 'dconf-editor /org/gnome/taquin/size'
+#: data/org.gnome.Taquin.gschema.xml:18
 msgid ""
 "The game offers to play with a board size from 3 to 5. The setting could be "
 "set from 2 (good for testing) to 9, limited by the way files are selected."
@@ -137,100 +97,446 @@ msgstr ""
 "Žaidimas siūlo žaisti lentoje nuo 3 iki 5. Nustatymas gali būti nuo 2 (gerai "
 "testavimui) iki 9, ribojant pagal failų pasirinkimą."
 
-#: ../data/org.gnome.taquin.gschema.xml.h:3
+#. Translators: summary of a settings key, see 'dconf-editor /org/gnome/taquin/theme'
+#: data/org.gnome.Taquin.gschema.xml:23
 msgid "Name of the theme folder."
 msgstr "Temos aplanko pavadinimas."
 
-#: ../data/org.gnome.taquin.gschema.xml.h:4
+#. Translators: description of a settings key, see 'dconf-editor /org/gnome/taquin/theme'; TODO the themes names are translated in the UI, but not in the settings; not sure what to do for now
+#: data/org.gnome.Taquin.gschema.xml:25
 msgid "Taquin has two default themes: 'cats' and 'numbers'."
 msgstr "Taquin turi dvi numatytasias temas: „katinai“ ir „skaičiai“."
 
-#: ../data/org.gnome.taquin.gschema.xml.h:5
+#. Translators: summary of a settings key, see 'dconf-editor /org/gnome/taquin/sound'
+#: data/org.gnome.Taquin.gschema.xml:30
 msgid "Sound"
 msgstr "Garsas"
 
-#: ../data/org.gnome.taquin.gschema.xml.h:6
+#. Translators: description of a settings key, see 'dconf-editor /org/gnome/taquin/sound'
+#: data/org.gnome.Taquin.gschema.xml:32
 msgid "Whether or not to play event sounds."
 msgstr "Ar groti įvykių garsus."
 
-#: ../data/org.gnome.taquin.gschema.xml.h:7
+#. Translators: summary of a settings key, see 'dconf-editor /org/gnome/taquin/window-width'
+#: data/org.gnome.Taquin.gschema.xml:37
 msgid "Width of the window in pixels."
 msgstr "Lango plotis pikseliais."
 
-#: ../data/org.gnome.taquin.gschema.xml.h:8
+#. Translators: summary of a settings key, see 'dconf-editor /org/gnome/taquin/window-height'
+#: data/org.gnome.Taquin.gschema.xml:43
 msgid "Height of the window in pixels."
 msgstr "Lango aukštis pikseliais."
 
-#: ../data/org.gnome.taquin.gschema.xml.h:9
+#. Translators: summary of a settings key, see 'dconf-editor /org/gnome/taquin/window-is-maximized'
+#: data/org.gnome.Taquin.gschema.xml:49
 msgid "true if the window is maximized."
 msgstr "Teigiama, jei langas yra išdidintas."
 
-#: ../src/game-window.vala:128
+#. Translators: summary of a settings key, see 'dconf-editor /org/gnome/taquin/automatic-night-mode'
+#: data/org.gnome.Taquin.gschema.xml:57
+msgid "Follow system night light"
+msgstr "Pagal sistemos naktinį apšvietimą"
+
+#. Translators: description of a settings key, see 'dconf-editor /org/gnome/taquin/automatic-night-mode'
+#: data/org.gnome.Taquin.gschema.xml:59
+msgid "Use GNOME night light setting to activate night-mode."
+msgstr ""
+"Naudoti GNOME naktinio apšvietimo nustatymą naktiniam apšvietimui aktyvinti."
+
+#. Translators: accessible name of the hamburger menu
+#: data/base-headerbar.ui:112
+msgid "Actions"
+msgstr "Veiksmai"
+
+#. Translators: accessible description of the hamburger menu
+#: data/base-headerbar.ui:114
+msgid "Current view actions"
+msgstr "Rodyti dabartinius veiksmus"
+
+#. Translators: accessible name of the history menubutton
+#: data/game-headerbar.ui:32
+msgid "History"
+msgstr "Istorija"
+
+#. Translators: accessible description of the history menubutton
+#: data/game-headerbar.ui:34
+msgid "Game history menu"
+msgstr "Žaidimo istorijos meniu"
+
+#. Translators: when configuring a new game, if the user has a started game, tooltip text of the Go back button
+#: data/game-headerbar.ui:49
+msgid "Go back to the current game"
+msgstr "Grįžti į dabartinį žaidimą"
+
+#. Translators: during a game, tooltip text of the New Game button
+#: data/game-headerbar.ui:69
+msgid "Start a new game"
+msgstr "Pradėti naują žaidimą"
+
+#. Translators: during a game, label of the New Game button (with a mnemonic that appears pressing Alt)
+#: data/game-headerbar.ui:78
+#| msgid "_Start Game"
+msgid "_New Game"
+msgstr "_Naujas žaidimas"
+
+#: data/help-overlay.ui:28
+msgctxt "shortcut window"
+msgid "During game selection"
+msgstr "Renkantis žaidimą"
+
+#: data/help-overlay.ui:32
+#| msgid "Start a new game"
+msgctxt "shortcut window"
+msgid "Start new game"
+msgstr "Pradėti naują žaidimą"
+
+#: data/help-overlay.ui:39
+msgctxt "shortcut window"
+msgid "Go back"
+msgstr "Grįžti"
+
+#: data/help-overlay.ui:48
+msgctxt "shortcut window"
+msgid "During a game"
+msgstr "Žaidimo metu"
+
+#: data/help-overlay.ui:52
+msgctxt "shortcut window"
+msgid "New game"
+msgstr "Naujas žaidimas"
+
+#: data/help-overlay.ui:59
+#| msgid "_Start Game"
+msgctxt "shortcut window"
+msgid "Restart game"
+msgstr "Žaisti iš naujo"
+
+#: data/help-overlay.ui:66
+#| msgid "Undo your most recent move"
+msgctxt "shortcut window"
+msgid "Undo last move"
+msgstr "Atšaukti paskutinį ėjimą"
+
+#: data/help-overlay.ui:75
+#| msgid "15-Puzzle"
+msgctxt "shortcut window"
+msgid "15-Puzzle"
+msgstr "15-galvosūkis"
+
+#: data/help-overlay.ui:79
+msgctxt "shortcut window"
+msgid "Select tile to push on"
+msgstr "Pasirinkite plytelę paspaudimui"
+
+#: data/help-overlay.ui:86
+msgctxt "shortcut window"
+msgid "Push on selected tile"
+msgstr "Paspauskite virš pasirinktos plytelės"
+
+#: data/help-overlay.ui:95
+#| msgid "16-Puzzle"
+msgctxt "shortcut window"
+msgid "16-Puzzle"
+msgstr "16-galvosūkis"
+
+#: data/help-overlay.ui:99
+msgctxt "shortcut window"
+msgid "Change selected column"
+msgstr "Keisti pažymėtą stulpelį"
+
+#: data/help-overlay.ui:106
+msgctxt "shortcut window"
+msgid "Change selected row"
+msgstr "Keisti pažymėtą eilutę"
+
+#: data/help-overlay.ui:113
+msgctxt "shortcut window"
+msgid "Swipe selected row"
+msgstr "Perbraukti pasirinktą eilutę"
+
+#: data/help-overlay.ui:120
+msgctxt "shortcut window"
+msgid "Swipe selected column"
+msgstr "Perbraukti pasirinktą stulpelį"
+
+#: data/help-overlay.ui:129
+msgctxt "shortcut window"
+msgid "Generic"
+msgstr "Bendra"
+
+#: data/help-overlay.ui:133
+msgctxt "shortcut window"
+msgid "Keyboard shortcuts"
+msgstr "Klaviatūros trumpiniai"
+
+#: data/help-overlay.ui:140
+#| msgid "_Help"
+msgctxt "shortcut window"
+msgid "Help"
+msgstr "Žinynas"
+
+#: data/help-overlay.ui:147
+#| msgid "_About"
+msgctxt "shortcut window"
+msgid "About"
+msgstr "Apie"
+
+#: data/help-overlay.ui:154
+#| msgid "_Quit"
+msgctxt "shortcut window"
+msgid "Quit"
+msgstr "Išeiti"
+
+#. Translators: when configuring a new game, entry in the menu of the game size menubutton
+#: data/taquin-screens.ui:24
+msgid "3 × 3"
+msgstr "3 × 3"
+
+#. Translators: when configuring a new game, entry in the menu of the game size menubutton
+#: data/taquin-screens.ui:30
+msgid "4 × 4"
+msgstr "4 × 4"
+
+#. Translators: when configuring a new game, entry in the menu of the game size menubutton
+#: data/taquin-screens.ui:36
+msgid "5 × 5"
+msgstr "5 × 5"
+
+#. Translators: when configuring a new game, entry in the menu of the game theme menubutton; play with cats images
+#: data/taquin-screens.ui:46
+msgid "Cats"
+msgstr "Katinai"
+
+#. Translators: when configuring a new game, entry in the menu of the game theme menubutton; play with numbers
+#: data/taquin-screens.ui:52
+msgid "Numbers"
+msgstr "Skaičiai"
+
+#. Translators: when configuring a new game, header of the game type that appears on small screen
+#: data/taquin-screens.ui:67
+msgid "Game"
+msgstr "Žaidimas"
+
+#. Translators: when configuring a new game, header of the options that appears on small screen
+#: data/taquin-screens.ui:131
+msgid "Options"
+msgstr "Parametrai"
+
+#. Translators: on really small windows, the about dialog is replaced by an in-window view; here is the label of one of two buttons that have the same role as the stack switcher in the usual about dialog, the second is "Credits"
+#. Translators: on really small windows, the about dialog is replaced by an in-window view; here is the name of the view, displayed in the headerbar
+#: src/about-list.vala:44 src/base-headerbar.vala:288
+#| msgid "_About"
+msgid "About"
+msgstr "Apie"
+
+#. Translators: on really small windows, the about dialog is replaced by an in-window view; here is the label of one of two buttons that have the same role as the stack switcher in the usual about dialog, the first is "About"
+#: src/about-list.vala:46
+msgid "Credits"
+msgstr "Kūrėjai ir pagalbininkai"
+
+#. Translators: on really small windows, the about dialog is replaced by an in-window view; here is the label of the link to the GPL license; TODO better text, as in the usual about dialog
+#: src/about-list.vala:135
+msgid ""
+"GNU General Public License\n"
+"version 3 or later"
+msgstr ""
+"GNU Bendroji Vieša Licencija\n"
+"3 arba vėlesnė versija"
+
+#. Translators: on really small windows, the about dialog is replaced by an in-window view; here is the header of the programmers names
+#: src/about-list.vala:154
+msgid "Creators"
+msgstr "Kūrėjai"
+
+#. Translators: on really small windows, the about dialog is replaced by an in-window view; here is the header of the documenters names
+#: src/about-list.vala:161
+msgid "Documenters"
+msgstr "Dokumentuotojai"
+
+#. Translators: on really small windows, the about dialog is replaced by an in-window view; here is the header of the translators names
+#: src/about-list.vala:166
+#| msgid "translator-credits"
+msgid "Translators"
+msgstr "Vertėjai"
+
+#. Translators: on really small windows, the about dialog is replaced by an in-window view; here is the header of the pictural artists names
+#: src/about-list.vala:172
+msgid "Artists"
+msgstr "Menininkai"
+
+#. Translators: there are three related actions: "use", "reuse" and "pause"; displayed in the hamburger menu at night
+#: src/adaptative-window.vala:149
+msgid "Pause night mode"
+msgstr "Pristabdyti nakties veikseną"
+
+#. Translators: there are three related actions: "use", "reuse" and "pause"; displayed in the hamburger menu at night
+#: src/adaptative-window.vala:153
+msgid "Reuse night mode"
+msgstr "Panaudoti nakties veikseną"
+
+#. Translators: there are three related actions: "use", "reuse" and "pause"; displayed in the hamburger menu at night
+#: src/adaptative-window.vala:157
+msgid "Use night mode"
+msgstr "Naudoti nakties veikseną"
+
+#. Translators: usual menu entry of the hamburger menu (with a mnemonic that appears pressing Alt)
+#: src/base-headerbar.vala:116
+msgid "_Keyboard Shortcuts"
+msgstr "_Klaviatūros trumpiniai"
+
+#. Translators: usual menu entry of the hamburger menu (with a mnemonic that appears pressing Alt)
+#: src/base-headerbar.vala:125
+msgid "_Help"
+msgstr "_Žinynas"
+
+#. Translators: hamburger menu entry; sound togglebutton (with a mnemonic that appears pressing Alt)
+#: src/game-headerbar.vala:179
+msgid "_Sound"
+msgstr "_Garsas"
+
+#. Translators: in-window notification; on both games, if the user solved the puzzle more than one time
+#: src/game-headerbar.vala:238
+msgid "Bravo! You improved your best score!"
+msgstr "Puiku! Jūs pagerinote savo geriausią rezultatą!"
+
+#. Translators: in-window notification; on both games, if the user solved the puzzle more than one time
+#: src/game-headerbar.vala:245
+msgid "Bravo! You equalized your best score."
+msgstr "Puiku! Jūs pakartojote savo geriausią rezultatą!"
+
+#. Translators: in-window notification; on both games, if the user solved the puzzle more than one time
+#: src/game-headerbar.vala:252
+#| msgid "Bravo! You finished the game!"
+msgid "Bravo! You finished the game again."
+msgstr "Sveikiname! Jūs vėl užbaigėte žaidimą!"
+
+#. Translators: in-window notification; on both games, if the user solves the puzzle the first time
+#: src/game-headerbar.vala:261
+msgid "Bravo! You finished the game!"
+msgstr "Sveikiname! Jūs užbaigėte žaidimą!"
+
+#. Translators: during a game, entry in the menu of the history menubutton (with a mnemonic that appears pressing Alt)
+#: src/game-headerbar.vala:281
+msgid "_Undo"
+msgstr "_Atšaukti"
+
+#. if (show_redo)
+#. /* Translators: during a game, entry in the menu of the history menubutton (with a mnemonic that appears pressing Alt) */
+#. section.append (_("_Redo"), "ui.redo");
+#. Translators: during a game, entry in the menu of the history menubutton (with a mnemonic that appears pressing Alt)
+#: src/game-headerbar.vala:289
+msgid "_Restart"
+msgstr "_Iš naujo"
+
+#. Translators: during a game that has already been finished (and possibly restarted), entry in the menu of the moves button
+#: src/game-headerbar.vala:300
+#, c-format
+msgid "Best score: %s"
+msgstr "Geriausias rezultatas: %s"
+
+#. Translators: when configuring a new game, label of the blue Start button (with a mnemonic that appears pressing Alt)
+#: src/game-view.vala:57
 msgid "_Start Game"
 msgstr "_Pradėti žaidimą"
 
-#: ../src/game-window.vala:153
-msgid "Undo your most recent move"
-msgstr "Atšaukti paskutinį ėjimą"
+#. Translator: during a game, if the user tries with <Shift><Ctrl>n to restart the game, while already on initial position
+#: src/game-window.vala:201
+msgid "Already on initial position."
+msgstr "Jau pradinėje padėtyje."
 
-#: ../src/taquin-main.vala:45
+#. Translators: when configuring a new game, button label for the size of the game ("3 × 3", or 4, or 5)
+#: src/new-game-screen.vala:36
+#, c-format
+msgid "Size: %d × %d ▾"
+msgstr "Dydis: %d × %d ▾"
+
+#. Translators: when configuring a new game, button label for the theme, if the current theme is Cats
+#: src/new-game-screen.vala:45
+msgid "Theme: Cats ▾"
+msgstr "Tema: katinai ▾"
+
+#. Translators: when configuring a new game, button label for the theme, if the current theme is Numbers
+#: src/new-game-screen.vala:48
+msgid "Theme: Numbers ▾"
+msgstr "Tema: skaičiai ▾"
+
+#. Translators: command-line option description, see 'gnome-taquin --help'
+#: src/taquin-main.vala:48
 msgid "Play the classical 1880s’ 15-puzzle"
 msgstr "Žaisti klasikinį 1880-ųjų 15-galvosūkį"
 
-#: ../src/taquin-main.vala:46
+#. Translators: command-line option description, see 'gnome-taquin --help'
+#: src/taquin-main.vala:51
 msgid "Try this fun alternative 16-puzzle"
 msgstr "Bandyti šį smagų alternatyvų 16-galvosūkį"
 
-#: ../src/taquin-main.vala:47
+#. Translators: command-line option description, see 'gnome-taquin --help'
+#: src/taquin-main.vala:54
 msgid "Sets the puzzle edges’ size (3-5, 2-9 for debug)"
 msgstr "Nustato galvosūkio pakraščių dydį (3-5, 2-9 derinimui)"
 
-#: ../src/taquin-main.vala:48
+#. Translators: command-line option description, see 'gnome-taquin --help'
+#: src/taquin-main.vala:57
 msgid "Turn off the sound"
 msgstr "Išjungti garsą"
 
-#: ../src/taquin-main.vala:49
+#. Translators: command-line option description, see 'gnome-taquin --help'
+#: src/taquin-main.vala:60
 msgid "Turn on the sound"
 msgstr "Įjungti garsą"
 
-#: ../src/taquin-main.vala:50
+#. Translators: command-line option description, see 'gnome-taquin --help'
+#: src/taquin-main.vala:63
 msgid "Print release version and exit"
 msgstr "Atspausdinti leidimo versiją ir išeiti"
 
-#: ../src/taquin-main.vala:233
-msgid "(see COPYING.themes for informations)"
-msgstr "(daugiau informacijos rasite faile COPYING.themes)"
+#: src/taquin-main.vala:153
+#| msgid "Taquin"
+msgid "About Taquin"
+msgstr "Apie taquin"
 
-#: ../src/taquin-main.vala:241
+#. Translators: in-window notification; on the 15-Puzzle game, if the user clicks a tile that cannot move
+#: src/taquin-main.vala:320
+msgid "You can’t move this tile!"
+msgstr "Negalima perkelti šio koklio!"
+
+#. Translators: in-window notification; on the 16-Puzzle game, help for keyboard use, displayed if the user uses an unmeaningful keyboard key
+#: src/taquin-main.vala:329
+msgid "Use Shift and an arrow to move tiles!"
+msgstr "Naudokite Lyg2 ir rodykles plytelėms stumdyti!"
+
+#. Translators: in-window notification; on the 16-Puzzle game, if the user clicks on a tile of the board (the game is played using mouse with arrows around the board)
+#: src/taquin-main.vala:333
+msgid "Click on the arrows to move tiles!"
+msgstr "Spauskite rodykles plytelėms stumdyti!"
+
+#. Translators: about dialog text
+#: src/taquin-main.vala:433
 msgid "A classic 15-puzzle game"
 msgstr "Klasikinis 15-galvosūkio žaidimas"
 
-#: ../src/taquin-main.vala:245
+#. Translators: about dialog text; in the Credits, text at the end of the "Artwork by" section
+#: src/taquin-main.vala:442
+msgid "(see COPYING.themes for informations)"
+msgstr "(daugiau informacijos rasite faile COPYING.themes)"
+
+#. Translators: about dialog text; this string should be replaced by a text crediting yourselves and your translation team, or should be left empty. Do not translate literally!
+#: src/taquin-main.vala:453
 msgid "translator-credits"
 msgstr ""
 "Išvertė:\n"
 "Aurimas Černius <aurisc4@gmail.com>"
 
-#: ../src/taquin-main.vala:286
-msgid "You can’t move this tile!"
-msgstr "Negalima perkelti šio koklio!"
+#. Translators: about dialog text; label of the website link
+#: src/taquin-main.vala:458
+msgid "Page on GNOME wiki"
+msgstr "GNOME wiki puslapis"
 
-#: ../src/taquin-main.vala:292
-msgid "Bravo! You finished the game!"
-msgstr "Sveikiname! Jūs užbaigėte žaidimą!"
+#~ msgid "_Start Over"
+#~ msgstr "Žaisti iš _naujo"
 
-#: ../src/taquin-main.vala:310
-#, c-format
-msgid "Size: %d × %d ▾"
-msgstr "Dydis: %d × %d ▾"
-
-#: ../src/taquin-main.vala:324
-msgid "Theme: Cats ▾"
-msgstr "Tema: katinai ▾"
-
-#: ../src/taquin-main.vala:325
-msgid "Theme: Numbers ▾"
-msgstr "Tema: skaičiai ▾"
+#~ msgid "Configure a new game"
+#~ msgstr "Konfigūruoti naują žaidimą"
 
 #~| msgid "Start a new game"
 #~ msgid "Start a new game as configured"
