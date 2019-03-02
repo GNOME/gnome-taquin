@@ -21,7 +21,7 @@
 using Gtk;
 
 [GtkTemplate (ui = "/org/gnome/Taquin/ui/game-headerbar.ui")]
-private class GameHeaderBar : BaseHeaderBar
+private class GameHeaderBar : BaseHeaderBar, AdaptativeWidget
 {
     [GtkChild] private MenuButton   history_button;
     [GtkChild] private Button       new_game_button;
@@ -49,7 +49,6 @@ private class GameHeaderBar : BaseHeaderBar
                             GameWindowFlags     flags,
                             NightLightMonitor   _night_light_monitor)
     {
-        /* Translators: usual menu entry of the hamburger menu */
         Object (about_action_label:     _about_action_label,
                 night_light_monitor:    _night_light_monitor,
                 has_keyboard_shortcuts: GameWindowFlags.SHORTCUTS in flags,
@@ -95,7 +94,7 @@ private class GameHeaderBar : BaseHeaderBar
     }
 
     /*\
-    * * Showing the Stack
+    * * showing the stack
     \*/
 
     private bool current_view_is_new_game_screen = false;
@@ -103,8 +102,6 @@ private class GameHeaderBar : BaseHeaderBar
     internal /* grabs focus */ bool show_new_game_screen (bool game_finished)
     {
         current_view_is_new_game_screen = true;
-
-        set_subtitle (null);      // TODO save / restore?
 
         history_button.hide ();
 
@@ -135,7 +132,7 @@ private class GameHeaderBar : BaseHeaderBar
     }
 
     /*\
-    * * Switching the Stack
+    * * switching the stack
     \*/
 
     internal void new_game ()
@@ -147,7 +144,7 @@ private class GameHeaderBar : BaseHeaderBar
     }
 
     /*\
-    * * Some public calls
+    * * some public calls
     \*/
 
     internal void new_game_button_grab_focus ()

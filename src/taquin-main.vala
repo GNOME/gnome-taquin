@@ -447,7 +447,7 @@ private class Taquin : Gtk.Application, BaseApplication
         copyright = "Copyright \xc2\xa9 2014-2019 – Arnaud Bonatti";  // TODO translation; autogen, to not change each year?
         documenters = { "Arnaud Bonatti" };
         logo_icon_name = "org.gnome.Taquin";
-        program_name = Taquin.PROGRAM_NAME;
+        program_name = PROGRAM_NAME;
 
         /* Translators: about dialog text; this string should be replaced by a text crediting yourselves and your translation team, or should be left empty. Do not translate literally! */
         translator_credits = _("translator-credits");

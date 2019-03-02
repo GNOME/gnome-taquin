@@ -1,22 +1,22 @@
-/* -*- Mode: vala; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*-
- *
- * Copyright (C) 2019 – Arnaud Bonatti <arnaud.bonatti@gmail.com>
- *
- * This file is part of a GNOME game.
- *
- * This application is free software: you can redistribute it and/or modify
- * it under the terms of the GNU General Public License as published by
- * the Free Software Foundation, either version 3 of the License, or
- * (at your option) any later version.
- *
- * This application is distributed in the hope that it will be useful,
- * but WITHOUT ANY WARRANTY; without even the implied warranty of
- * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
- * GNU General Public License for more details.
- *
- * You should have received a copy of the GNU General Public License along
- * with this application. If not, see <http://www.gnu.org/licenses/>.
- */
+/* -*- Mode: vala; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- */
+/*
+   This file is part of a GNOME game.
+
+   Copyright 2019 Arnaud Bonatti
+
+   This game is free software: you can redistribute it and/or modify
+   it under the terms of the GNU General Public License as published by
+   the Free Software Foundation, either version 3 of the License, or
+   (at your option) any later version.
+
+   This game is distributed in the hope that it will be useful,
+   but WITHOUT ANY WARRANTY; without even the implied warranty of
+   MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+   GNU General Public License for more details.
+
+   You should have received a copy of the GNU General Public License
+   along with this game.  If not, see <https://www.gnu.org/licenses/>.
+*/
 
 using Gtk;
 
@@ -54,15 +54,18 @@ private class GameView : BaseView, AdaptativeWidget
         if (GameWindowFlags.SHOW_START_BUTTON in flags)
         {
             /* Translators: when configuring a new game, label of the blue Start button (with a mnemonic that appears pressing Alt) */
-            start_game_button = new Button.with_mnemonic (_("_Start Game"));
-            ((!) start_game_button).get_style_context ().add_class ("start-game-button");
-            ((!) start_game_button).halign = Align.CENTER;
-            ((!) start_game_button).set_action_name ("ui.start-or-restart");
+            Button _start_game_button = new Button.with_mnemonic (_("_Start Game"));
+            _start_game_button.halign = Align.CENTER;
+            _start_game_button.set_action_name ("ui.start-or-restart");
+
+            StyleContext context = _start_game_button.get_style_context ();
+            context.add_class ("start-game-button");
+            context.add_class ("suggested-action");
             /* Translators: when configuring a new game, tooltip text of the blue Start button */
-            // start_game_button.set_tooltip_text (_("Start a new game as configured"));
-            ((StyleContext) ((!) start_game_button).get_style_context ()).add_class ("suggested-action");
-            ((!) start_game_button).show ();
-            new_game_box.pack_end ((!) start_game_button, false, false, 0);
+            // _start_game_button.set_tooltip_text (_("Start a new game as configured"));
+            _start_game_button.show ();
+            new_game_box.pack_end (_start_game_button, false, false, 0);
+            start_game_button = _start_game_button;
         }
 
         game_content = content;
@@ -88,7 +91,10 @@ private class GameView : BaseView, AdaptativeWidget
 
     internal bool game_content_visible_if_true ()
     {
-        return game_stack.get_visible_child () == game_content;
+        Widget? visible_child = game_stack.get_visible_child ();
+        if (visible_child == null)
+            assert_not_reached ();
+        return (!) visible_child == game_content;
     }
 
     internal void configure_transition (StackTransitionType transition_type,
