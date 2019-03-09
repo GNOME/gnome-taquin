@@ -119,8 +119,7 @@ msgid "_Start Game"
 msgstr "_Startigi ludon"
 
 #: ../data/taquin.ui.h:12
-#, fuzzy
-msgid "_Start Over"
+msgid "_New Game"
 msgstr "_Komenci denove"
 
 #: ../data/taquin.ui.h:13
