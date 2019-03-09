@@ -105,7 +105,7 @@ msgid "Go back to the current game"
 msgstr "Uneko jokora itzultzen da"
 
 #: ../data/taquin.ui.h:2
-msgid "_Start Over"
+msgid "_New Game"
 msgstr "_Hasi berriro"
 
 #: ../data/taquin.ui.h:3
