@@ -104,7 +104,7 @@ msgid "Go back to the current game"
 msgstr "برگشت به بازی فعلی"
 
 #: ../data/taquin.ui.h:2
-msgid "_Start Over"
+msgid "_New Game"
 msgstr "_شروع دوباره"
 
 #: ../data/taquin.ui.h:3
