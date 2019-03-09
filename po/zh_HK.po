@@ -111,8 +111,8 @@ msgid "_Start Game"
 msgstr "開始遊戲(_S)"
 
 #: ../data/taquin.ui.h:12
-msgid "_Start Over"
-msgstr "重新開始(_S)"
+msgid "_New Game"
+msgstr "重新開始(_N)"
 
 #: ../data/taquin.ui.h:13
 msgid "Start a new game"
