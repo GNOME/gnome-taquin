@@ -344,9 +344,7 @@ msgstr "문서화 작업한 사람"
 #. Translators: on really small windows, the about dialog is replaced by an in-window view; here is the header of the translators names
 #: src/about-list.vala:166
 msgid "Translators"
-msgstr ""
-"류창우 <cwryu@debian.org>\n"
-"성대현 <sungdh86@gmail.com>"
+msgstr "번역"
 
 #. Translators: on really small windows, the about dialog is replaced by an in-window view; here is the header of the pictural artists names
 #: src/about-list.vala:172
