@@ -536,7 +536,7 @@ msgstr ""
 " Δημήτρης Σπίγγος <dmtrs32@gmail.com>\n"
 "\n"
 "Για περισσότερες πληροφορίες, επισκεφθείτε τη σελίδα\n"
-"http://gnome.gr/"
+"https://gnome.gr/"
 
 #. Translators: about dialog text; label of the website link
 #: src/taquin-main.vala:458
