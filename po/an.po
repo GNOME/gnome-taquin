@@ -100,7 +100,7 @@ msgid "Go back to the current game"
 msgstr "Tornar a o chuego actual"
 
 #: ../data/taquin.ui.h:2
-msgid "_Start Over"
+msgid "_New Game"
 msgstr "_Encetar"
 
 #: ../data/taquin.ui.h:3
