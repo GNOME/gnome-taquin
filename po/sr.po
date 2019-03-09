@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: gnome-taquin master\n"
 "Report-Msgid-Bugs-To: https://gitlab.gnome.org/GNOME/gnome-taquin/issues\n"
-"POT-Creation-Date: 2019-02-18 14:23+0000\n"
+"POT-Creation-Date: 2019-02-28 22:14+0000\n"
 "PO-Revision-Date: 2019-02-28 23:13+0100\n"
 "Last-Translator: Марко М. Костић <marko.m.kostic@gmail.com>\n"
 "Language-Team: српски <gnome-sr@googlegroups.org>\n"
@@ -343,11 +343,7 @@ msgstr "Документатори"
 #. Translators: on really small windows, the about dialog is replaced by an in-window view; here is the header of the translators names
 #: src/about-list.vala:166
 msgid "Translators"
-msgstr ""
-"  Мирослав Николић <miroslavnikolic@rocketmail.com>\n"
-"  Марко М. Костић <marko.m.kostic@gmail.com>\n"
-"\n"
-"http://prevod.org — превод на српски језик"
+msgstr "Преводиоци"
 
 #. Translators: on really small windows, the about dialog is replaced by an in-window view; here is the header of the pictural artists names
 #: src/about-list.vala:172
@@ -413,12 +409,12 @@ msgstr "Опо_зови"
 #. /* Translators: during a game, entry in the menu of the history menubutton (with a mnemonic that appears pressing Alt) */
 #. section.append (_("_Redo"), "ui.redo");
 #. Translators: during a game, entry in the menu of the history menubutton (with a mnemonic that appears pressing Alt)
-#: src/game-headerbar.vala:289
+#: src/game-headerbar.vala:290
 msgid "_Restart"
 msgstr "Поново пок_рени"
 
 #. Translators: during a game that has already been finished (and possibly restarted), entry in the menu of the moves button
-#: src/game-headerbar.vala:300
+#: src/game-headerbar.vala:301
 #, c-format
 msgid "Best score: %s"
 msgstr "Најбољи резултат: %s"
@@ -513,6 +509,7 @@ msgstr "(за податке погледајте „COPYING.themes“)"
 msgid "translator-credits"
 msgstr ""
 "  Мирослав Николић <miroslavnikolic@rocketmail.com>\n"
+"  Марко М. Костић <marko.m.kostic@gmail.com>\n"
 "\n"
 "http://prevod.org — превод на српски језик"
 
