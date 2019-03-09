@@ -103,8 +103,8 @@ msgid "Go back to the current game"
 msgstr "回到目前的遊戲"
 
 #: ../data/taquin.ui.h:2
-msgid "_Start Over"
-msgstr "重新開始(_S)"
+msgid "_New Game"
+msgstr "重新開始(_N)"
 
 #: ../data/taquin.ui.h:3
 msgid "Configure a new game"
