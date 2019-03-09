@@ -104,7 +104,7 @@ msgid "Go back to the current game"
 msgstr "हालको खेलमा फर्कनुहोस्"
 
 #: ../data/taquin.ui.h:2
-msgid "_Start Over"
+msgid "_New Game"
 msgstr "सुरुआत गर्नुहोस्"
 
 #: ../data/taquin.ui.h:3
