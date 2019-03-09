@@ -109,7 +109,7 @@ msgid "Start a new game as configured"
 msgstr "Započnite novu igru kako je konfigurisano"
 
 #: ../data/taquin.ui.h:4
-msgid "_Start Over"
+msgid "_New Game"
 msgstr "Počni _opet"
 
 #: ../data/taquin.ui.h:5
