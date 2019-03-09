@@ -106,7 +106,7 @@ msgid "Go back to the current game"
 msgstr "Tornar al jòc en cors"
 
 #: ../data/taquin.ui.h:2
-msgid "_Start Over"
+msgid "_New Game"
 msgstr "_Recomençar"
 
 #: ../data/taquin.ui.h:3
