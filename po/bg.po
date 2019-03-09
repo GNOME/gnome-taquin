@@ -101,7 +101,7 @@ msgid "Go back to the current game"
 msgstr "Към текущата игра"
 
 #: ../data/taquin.ui.h:2
-msgid "_Start Over"
+msgid "_New Game"
 msgstr "Отна_чало"
 
 #: ../data/taquin.ui.h:3
