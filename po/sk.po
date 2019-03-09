@@ -104,7 +104,7 @@ msgid "Go back to the current game"
 msgstr "Prejde späť na aktuálnu hru"
 
 #: ../data/taquin.ui.h:2
-msgid "_Start Over"
+msgid "_New Game"
 msgstr "_Začať odznovu"
 
 # tooltip
