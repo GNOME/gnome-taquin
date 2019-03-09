@@ -349,9 +349,7 @@ msgstr "Belgeleyenler"
 #. Translators: on really small windows, the about dialog is replaced by an in-window view; here is the header of the translators names
 #: src/about-list.vala:166
 msgid "Translators"
-msgstr ""
-"Muhammet Kara <muhammetk@gmail.com>\n"
-"Sabri Ünal <libreajans@gmail.com>"
+msgstr "Çeviren"
 
 #. Translators: on really small windows, the about dialog is replaced by an in-window view; here is the header of the pictural artists names
 #: src/about-list.vala:172
