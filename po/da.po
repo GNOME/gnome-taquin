@@ -514,7 +514,7 @@ msgstr ""
 "\n"
 "Dansk-gruppen <dansk@dansk-gruppen.dk>\n"
 "\n"
-"Mere info: http://www.dansk-gruppen.dk"
+"Mere info:\nhttp://www.dansk-gruppen.dk"
 
 #. Translators: about dialog text; label of the website link
 #: src/taquin-main.vala:458
