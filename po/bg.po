@@ -203,13 +203,7 @@ msgstr "Класическата игра с 15 плочки"
 #: ../src/taquin-main.vala:245
 msgid "translator-credits"
 msgstr ""
-"Александър Шопов <ash@kambanaria.org>\n"
-"\n"
-"Проектът за превод на GNOME има нужда от подкрепа.\n"
-"Научете повече за нас на <a href=\"http://gnome.cult.bg\">http://gnome.cult."
-"bg</a>\n"
-"Докладвайте за грешки на <a href=\"http://gnome.cult.bg/bugs\">http://gnome."
-"cult.bg/bugs</a>"
+"Александър Шопов <ash@kambanaria.org>"
 
 #: ../src/taquin-main.vala:286
 msgid "You can’t move this tile!"
