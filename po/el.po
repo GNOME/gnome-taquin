@@ -359,13 +359,7 @@ msgstr "Συγγραφείς τεκμηρίωσης"
 #: src/about-list.vala:166
 #| msgid "translator-credits"
 msgid "Translators"
-msgstr ""
-"Ελληνική μεταφραστική ομάδα του GNOME\n"
-" Δημήτρης Σπίγγος <dmtrs32@gmail.com>\n"
-" Ευστάθιος Ιωσηφίδης <iosifidis@opensuse.org>\n"
-"\n"
-"Για περισσότερες πληροφορίες, επισκεφθείτε τη σελίδα\n"
-"http://gnome.gr/"
+msgstr "Μετάφραση από"
 
 #. Translators: on really small windows, the about dialog is replaced by an in-window view; here is the header of the pictural artists names
 #: src/about-list.vala:172
