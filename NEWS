@@ -1,3 +1,35 @@
+3.32.0 – March 11, 2019
+=============================
+
+New stable release! Since the last one, many changes happened: the game
+layout has evolved a bit and now allows to restart the play, a new icon
+was designed by Jakub Steiner, and the game should be playable when you
+are on a phone-sized screen. Taquin now also uses Meson, and Gitlab-CI.
+
+Since last unstable release, an unfullscreen button has been added (the
+game was not prepared at all to fullscreen), and nothing else. Perfect!
+
+Translations updated:
+  Czech: Marek Cernocky
+  Danish: Ask Hjorth Larsen and Alan Mortensen
+  Dutch: Nathan Follens
+  Finnish: Jiri Grönroos
+  French: Julien Humbert
+  Friulian: Fabio Tomat
+  Galician: Fran Dieguez
+  German: Tim Sabsch
+  Greek: Efstathios Iosifidis
+  Italian: Milo Casagrande
+  Korean: DaeHyun Sung
+  Latvian: Rūdolfs Mazurs
+  Lithuanian: Aurimas Černius
+  Brazilian Portuguese: Rafael Fontenelle
+  Romanian: Daniel Șerbănescu
+  Serbian: Марко Костић
+  Slovenian: Matej Urbančič
+  Spanish: Daniel Mustieles
+  Swedish: Anders Jonsson
+
 3.31.91 – February 19, 2019
 =============================
 
