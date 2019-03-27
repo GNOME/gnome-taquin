@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: gnome-taquin master\n"
 "Report-Msgid-Bugs-To: https://gitlab.gnome.org/GNOME/gnome-taquin/issues\n"
 "POT-Creation-Date: 2019-03-12 15:50+0000\n"
-"PO-Revision-Date: 2019-03-26 19:17+0100\n"
+"PO-Revision-Date: 2019-03-27 10:42+0100\n"
 "Last-Translator: \n"
 "Language-Team: Croatian <hr@li.org>\n"
 "Language: hr\n"
@@ -344,9 +344,7 @@ msgstr "Autori dokumentacije"
 #. Translators: on really small windows, the about dialog is replaced by an in-window view; here is the header of the translators names
 #: src/about-list.vala:166
 msgid "Translators"
-msgstr ""
-"Launchpad Contributions:\n"
-"  gogo https://launchpad.net/~trebelnik-stefina"
+msgstr "Preveli"
 
 #. Translators: on really small windows, the about dialog is replaced by an in-window view; here is the header of the pictural artists names
 #: src/about-list.vala:172
