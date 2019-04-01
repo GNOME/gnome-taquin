@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: gnome-taquin master\n"
 "Report-Msgid-Bugs-To: https://gitlab.gnome.org/GNOME/gnome-taquin/issues\n"
 "POT-Creation-Date: 2019-03-12 15:50+0000\n"
-"PO-Revision-Date: 2019-03-27 10:42+0100\n"
+"PO-Revision-Date: 2019-04-01 14:48+0200\n"
 "Last-Translator: \n"
 "Language-Team: Croatian <hr@li.org>\n"
 "Language: hr\n"
@@ -134,12 +134,13 @@ msgstr "istinito ako je prozor uvećan."
 #. Translators: summary of a settings key, see 'dconf-editor /org/gnome/taquin/automatic-night-mode'
 #: data/org.gnome.Taquin.gschema.xml:57
 msgid "Follow system night light"
-msgstr "Slijedi noćni rad sustava"
+msgstr "Slijedi noćno svijetlo sustava"
 
 #. Translators: description of a settings key, see 'dconf-editor /org/gnome/taquin/automatic-night-mode'
 #: data/org.gnome.Taquin.gschema.xml:59
 msgid "Use GNOME night light setting to activate night-mode."
-msgstr "Koristi postavke GNOME noćnog rada za aktiviranje noćnog načina rada."
+msgstr ""
+"Koristi postavke GNOME noćnog svijetla za aktiviranje noćnog načina rada."
 
 #. Translators: accessible name of the hamburger menu
 #: data/base-headerbar.ui:112
@@ -478,7 +479,7 @@ msgstr "Prikaži inačicu izdanja i zatvori"
 
 #: src/taquin-main.vala:153
 msgid "About Taquin"
-msgstr "O Taquin"
+msgstr "O Taquinu"
 
 #. Translators: in-window notification; on the 15-Puzzle game, if the user clicks a tile that cannot move
 #: src/taquin-main.vala:320
@@ -493,7 +494,7 @@ msgstr "Koristite Shift i strelicu za pomicanje pločice!"
 #. Translators: in-window notification; on the 16-Puzzle game, if the user clicks on a tile of the board (the game is played using mouse with arrows around the board)
 #: src/taquin-main.vala:333
 msgid "Click on the arrows to move tiles!"
-msgstr "Klikni na strelicu za pomak pločice!"
+msgstr "Kliknite na strelicu za pomak pločice!"
 
 #. Translators: about dialog text
 #: src/taquin-main.vala:433
