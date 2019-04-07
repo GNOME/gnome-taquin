@@ -8,8 +8,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: gnome-taquin master\n"
 "Report-Msgid-Bugs-To: https://gitlab.gnome.org/GNOME/gnome-taquin/issues\n"
-"POT-Creation-Date: 2019-02-21 12:31+0000\n"
-"PO-Revision-Date: 2019-02-21 12:09+0100\n"
+"POT-Creation-Date: 2019-03-26 18:18+0000\n"
+"PO-Revision-Date: 2019-04-07 03:04+0200\n"
 "Last-Translator: Ask Hjorth Larsen <asklarsen@gmail.com>\n"
 "Language-Team: Danish <dansk@dansk-gruppen.dk>\n"
 "Language: da\n"
@@ -47,11 +47,6 @@ msgstr "Smugkig på et spil GNOME taquin"
 #: data/org.gnome.Taquin.appdata.xml.in:37
 msgid "The GNOME Project"
 msgstr "GNOME-projektet"
-
-#. Translators: Do NOT translate or transliterate this text (this is an icon file name)!
-#: data/org.gnome.Taquin.desktop.in:4
-msgid "org.gnome.Taquin"
-msgstr "org.gnome.Taquin"
 
 #. Translators: application name, as used in the window manager, the window title, the about dialog...
 #: data/org.gnome.Taquin.desktop.in:5 src/taquin-main.vala:26
@@ -378,32 +373,32 @@ msgid "_Help"
 msgstr "_Hjælp"
 
 #. Translators: hamburger menu entry; sound togglebutton (with a mnemonic that appears pressing Alt)
-#: src/game-headerbar.vala:179
+#: src/game-headerbar.vala:176
 msgid "_Sound"
 msgstr "_Lyd"
 
 #. Translators: in-window notification; on both games, if the user solved the puzzle more than one time
-#: src/game-headerbar.vala:238
+#: src/game-headerbar.vala:235
 msgid "Bravo! You improved your best score!"
 msgstr "Bravo! Du har slået din tidligere rekord!"
 
 #. Translators: in-window notification; on both games, if the user solved the puzzle more than one time
-#: src/game-headerbar.vala:245
+#: src/game-headerbar.vala:242
 msgid "Bravo! You equalized your best score."
 msgstr "Bravo! Du har nået dit bedste resultat igen."
 
 #. Translators: in-window notification; on both games, if the user solved the puzzle more than one time
-#: src/game-headerbar.vala:252
+#: src/game-headerbar.vala:249
 msgid "Bravo! You finished the game again."
 msgstr "Bravo! Du har gennemført spillet igen."
 
 #. Translators: in-window notification; on both games, if the user solves the puzzle the first time
-#: src/game-headerbar.vala:261
+#: src/game-headerbar.vala:258
 msgid "Bravo! You finished the game!"
 msgstr "Bravo! Du har gennemført spillet!"
 
 #. Translators: during a game, entry in the menu of the history menubutton (with a mnemonic that appears pressing Alt)
-#: src/game-headerbar.vala:281
+#: src/game-headerbar.vala:278
 msgid "_Undo"
 msgstr "_Fortryd"
 
@@ -411,12 +406,12 @@ msgstr "_Fortryd"
 #. /* Translators: during a game, entry in the menu of the history menubutton (with a mnemonic that appears pressing Alt) */
 #. section.append (_("_Redo"), "ui.redo");
 #. Translators: during a game, entry in the menu of the history menubutton (with a mnemonic that appears pressing Alt)
-#: src/game-headerbar.vala:290
+#: src/game-headerbar.vala:287
 msgid "_Restart"
 msgstr "_Genstart"
 
 #. Translators: during a game that has already been finished (and possibly restarted), entry in the menu of the moves button
-#: src/game-headerbar.vala:301
+#: src/game-headerbar.vala:298
 #, c-format
 msgid "Best score: %s"
 msgstr "Bedste resultat: %s"
@@ -512,14 +507,17 @@ msgid "translator-credits"
 msgstr ""
 "Ask Hjorth Larsen <asklarsen@gmail.com>\n"
 "\n"
-"Dansk-gruppen <dansk@dansk-gruppen.dk>\n"
-"\n"
-"Mere info: http://www.dansk-gruppen.dk"
+"Dansk-gruppen\n"
+"Websted <http://dansk-gruppen.dk>\n"
+"E-mail <dansk@dansk-gruppen.dk>"
 
 #. Translators: about dialog text; label of the website link
 #: src/taquin-main.vala:458
 msgid "Page on GNOME wiki"
 msgstr "Side på GNOMEs wiki"
+
+#~ msgid "org.gnome.Taquin"
+#~ msgstr "org.gnome.Taquin"
 
 #~ msgid "_Start Over"
 #~ msgstr "_Start forfra"
@@ -529,3 +527,4 @@ msgstr "Side på GNOMEs wiki"
 
 #~ msgid "Start a new game as configured"
 #~ msgstr "Start et nyt spil ifølge opsætning"
+
