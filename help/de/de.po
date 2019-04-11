@@ -1,30 +1,33 @@
 # German translation for gnome-taquin.
 # Copyright (C) 2015 gnome-taquin's COPYRIGHT HOLDER
 # This file is distributed under the same license as the gnome-taquin package.
+#
 # Christian Kirbach <Christian.Kirbach@gmail.com>, 2015.
 # Wolfgang Stöggl <c72578@yahoo.de>, 2015.
-# Mario Blättermann <mario.blaettermann@gmail.com>, 2018.
-#
+# Mario Blättermann <mario.blaettermann@gmail.com>, 2018, 2019.
+# Tim Sabsch <tim@sabsch.com>, 2019.
 msgid ""
 msgstr ""
 "Project-Id-Version: gnome-taquin master\n"
-"POT-Creation-Date: 2018-08-09 13:38+0000\n"
-"PO-Revision-Date: 2018-08-11 18:52+0200\n"
-"Last-Translator: Mario Blättermann <mario.blaettermann@gmail.com>\n"
+"POT-Creation-Date: 2019-04-08 19:20+0000\n"
+"PO-Revision-Date: 2019-04-11 21:09+0200\n"
+"Last-Translator: Tim Sabsch <tim@sabsch.com>\n"
 "Language-Team: German <gnome-de@gnome.org>\n"
 "Language: de\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
-"X-Generator: Poedit 2.1\n"
+"X-Generator: Poedit 2.2.1\n"
 
 #. Put one translator per line, in the form NAME <EMAIL>, YEAR1, YEAR2
 msgctxt "_"
 msgid "translator-credits"
 msgstr ""
 "Christian Kirbach <Christian.Kirbach@gmail.com>, 2015\n"
-"Wolfgang Stöggl <c72578@yahoo.de>, 2015"
+"Wolfgang Stöggl <c72578@yahoo.de>, 2015\n"
+"Mario Blättermann <mario.blaettermann@gmail.com>, 2019\n"
+"Tim Sabsch <tim@sabsch.com>, 2019"
 
 #. (itstool) path: credit/name
 #: C/15-Puzzle.page:10 C/16-Puzzle.page:10 C/beginning.page:10 C/index.page:12
@@ -35,8 +38,8 @@ msgstr "Arnaud Bonatti"
 #. (itstool) path: credit/years
 #: C/15-Puzzle.page:12 C/16-Puzzle.page:12 C/beginning.page:12
 #: C/shortcuts.page:12 C/start-screen.page:12
-msgid "2014"
-msgstr "2014"
+msgid "2014-2019"
+msgstr "2014-2019"
 
 #. (itstool) path: page/title
 #: C/15-Puzzle.page:18
@@ -50,7 +53,10 @@ msgid ""
 "displayed the first time the application is opened. You can start one at any "
 "time from the <link xref=\"start-screen\">Start Screen</link>."
 msgstr ""
-"Das <em>15-teilige Puzzle</em> ist das Standardpuzzle von <app>Taquin</app>."
+"Das <em>15-teilige Puzzle</em> ist das Standardpuzzle von <app>Taquin</app>. "
+"Es wird beim ersten Start der Anwendung angezeigt. Sie können jederzeit eins "
+"starten, indem Sie auf <link xref=\"start-screen\">Neues Spiel</link> "
+"klicken."
 
 #. (itstool) path: section/title
 #: C/15-Puzzle.page:23 C/16-Puzzle.page:23
@@ -90,11 +96,15 @@ msgstr ""
 #. (itstool) path: section/p
 #: C/15-Puzzle.page:33 C/16-Puzzle.page:33
 msgid ""
-"You can click the <gui>Start Over</gui> button to go to the <link xref="
-"\"start-screen\">Start Screen</link>."
+"You can click the <gui>New Game</gui> button in the headerbar to go to the "
+"<link xref=\"start-screen\">Start Screen</link>. Alternatively, you can "
+"restart the game by clicking on the button with a counter of moves done, and "
+"then on the <gui>Restart</gui> entry."
 msgstr ""
-"Sie können auf den Knopf <gui>Neu beginnen</gui> klicken, um zum <link xref="
-"\"start-screen\">Startbildschirm</link> zu gelangen."
+"Sie können auf den Knopf <gui>Neues Spiel</gui> in der Kopfleiste klicken, "
+"um zum <link xref=\"start-screen\">Startbildschirm</link> zu gelangen. "
+"Alternativ können Sie das Spiel neu starten, indem Sie auf den Zähler der "
+"ausgeführten Züge klicken und dann <gui>Neu starten</gui> wählen."
 
 #. (itstool) path: section/title
 #: C/15-Puzzle.page:37 C/16-Puzzle.page:37
@@ -102,20 +112,20 @@ msgid "How to play with a mouse"
 msgstr "So spielen Sie mit einer Maus"
 
 #. (itstool) path: section/p
-#: C/15-Puzzle.page:39 C/15-Puzzle.page:57 C/16-Puzzle.page:39
-#: C/16-Puzzle.page:55
+#: C/15-Puzzle.page:39 C/15-Puzzle.page:68 C/16-Puzzle.page:39
+#: C/16-Puzzle.page:65
 msgid "To make a move:"
 msgstr "Um einen Zug durchzuführen:"
 
 #. (itstool) path: item/p
-#: C/15-Puzzle.page:41 C/beginning.page:25
+#: C/15-Puzzle.page:42 C/beginning.page:26
 msgid "Click on a tile on the same row or column as the empty space."
 msgstr ""
 "Klicken Sie auf eine Kachel in derselben Zeile oder Spalte wie die freie "
 "Position."
 
 #. (itstool) path: note/p
-#: C/15-Puzzle.page:42 C/15-Puzzle.page:61 C/beginning.page:26
+#: C/15-Puzzle.page:44 C/15-Puzzle.page:74 C/beginning.page:28
 msgid ""
 "If you click on a tile that cannot move, the game notifies you that the move "
 "is impossible."
@@ -124,37 +134,56 @@ msgstr ""
 "Sie vom Spiel verständigt, dass dieser Zug nicht möglich ist."
 
 #. (itstool) path: item/p
-#: C/15-Puzzle.page:45 C/16-Puzzle.page:43
+#: C/15-Puzzle.page:48 C/16-Puzzle.page:45 C/beginning.page:32
 msgid ""
-"You can always undo a move by clicking the <gui>Undo</gui> button at the "
-"left of the header bar."
+"You can always undo your move. For that, click on the button with a counter "
+"of moves done in the headerbar, and click the <gui>Undo</gui> entry in the "
+"menu that appears."
 msgstr ""
-"Sie können einen Zug immer zurücknehmen, indem Sie auf den <gui>Rückgängig</"
-"gui>-Knopf links in der Kopfleiste klicken."
-
-#. (itstool) path: item/p
-#: C/15-Puzzle.page:47 C/16-Puzzle.page:45 C/beginning.page:31
-msgid ""
-"At the end of the game, or when you want to switch games, click the "
-"<gui>Start Over</gui> button to go to the <link xref=\"start-screen\">Start "
-"Screen</link>."
-msgstr ""
-"Am Ende des Spiels oder wenn Sie das Spiel ändern möchten, können Sie auf "
-"den Knopf <gui>Neu beginnen</gui> klicken, um zum <link xref=\"start-screen"
-"\">Startbildschirm</link> zu gelangen."
+"Sie können einen Zug immer zurücknehmen. Klicken Sie hierzu in der "
+"Kopfleiste auf den Knopf mit dem Zähler der ausgeführten Züge und "
+"anschließend auf <gui>Rückgängig machen</gui> im erscheinenden Menü."
 
 #. (itstool) path: section/p
-#: C/15-Puzzle.page:51 C/16-Puzzle.page:49
+#: C/15-Puzzle.page:52 C/15-Puzzle.page:82 C/16-Puzzle.page:49
+#: C/16-Puzzle.page:76
+msgid "Whether you finished the current game or not:"
+msgstr "Ganz gleich, ob Sie das aktuelle Spiel beendet haben oder nicht:"
+
+#. (itstool) path: item/p
+#: C/15-Puzzle.page:55 C/16-Puzzle.page:52
+msgid ""
+"To start a new game –possibly with other options–, click the <gui>New Game</"
+"gui> button in the headerbar to go to the <link xref=\"start-screen\">Start "
+"Screen</link>."
+msgstr ""
+"Um ein neues Spiel zu starten – vielleicht mit anderen Optionen – klicken "
+"Sie auf den Knopf <gui>Neues Spiel</gui> in der Kopfleiste, um zum <link "
+"xref=\"start-screen\">Startbildschirm</link> zu gelangen."
+
+#. (itstool) path: item/p
+#: C/15-Puzzle.page:58 C/16-Puzzle.page:55
+msgid ""
+"Alternatively, you may want to restart the game. For that, click in the "
+"headerbar on the button with a counter of moves done, and click the "
+"<gui>Restart</gui> entry in the menu that appears."
+msgstr ""
+"Alternativ können Sie das Spiel neu starten. Klicken Sie hierzu in der "
+"Kopfleiste auf den Knopf mit dem Zähler der ausgeführten Züge und "
+"anschließend auf <gui>Neu starten</gui> im erscheinenden Menü."
+
+#. (itstool) path: section/p
+#: C/15-Puzzle.page:62 C/16-Puzzle.page:59
 msgid "You can also use the keyboard."
 msgstr "Alternativ können Sie die Tastatur verwenden."
 
 #. (itstool) path: section/title
-#: C/15-Puzzle.page:55 C/16-Puzzle.page:53
+#: C/15-Puzzle.page:66 C/16-Puzzle.page:63
 msgid "How to play with the keyboard"
 msgstr "So spielen Sie mit Tastatur"
 
 #. (itstool) path: item/p
-#: C/15-Puzzle.page:59
+#: C/15-Puzzle.page:71
 msgid ""
 "Use the <key>Left</key>, <key>Right</key>, <key>Up</key> and <key>Down</key> "
 "arrows to go at the tile you want to move. The currently selected tile is "
@@ -167,7 +196,7 @@ msgstr ""
 "jeweiligen Zeile und Spalte hervorgehoben."
 
 #. (itstool) path: item/p
-#: C/15-Puzzle.page:60
+#: C/15-Puzzle.page:72
 msgid ""
 "Use the <key>Space</key> key to move the selected tile in the direction of "
 "the empty space."
@@ -176,27 +205,36 @@ msgstr ""
 "freien Position zu bewegen."
 
 #. (itstool) path: item/p
-#: C/15-Puzzle.page:64 C/16-Puzzle.page:60
+#: C/15-Puzzle.page:78 C/16-Puzzle.page:72
 msgid ""
-"You can always undo a move with the <keyseq><key>Ctrl</key><key>Z</key></"
-"keyseq> keys."
+"You can always undo your move. For that, use the <keyseq><key>Ctrl</"
+"key><key>Z</key></keyseq> keys sequence."
 msgstr ""
 "Sie können einen Zug immer mit der Tastenkombination <keyseq><key>Strg</"
 "key><key>Z</key></keyseq> zurücknehmen."
 
 #. (itstool) path: item/p
-#: C/15-Puzzle.page:66 C/16-Puzzle.page:62
+#: C/15-Puzzle.page:85 C/16-Puzzle.page:79
 msgid ""
-"At the end of the game, or when you want to switch games, use the "
-"<keyseq><key>Ctrl</key><key>N</key></keyseq> keys to go to the <link xref="
-"\"start-screen\">Start Screen</link>."
+"To start a new game –possibly with other options–, use the "
+"<keyseq><key>Ctrl</key><key>N</key></keyseq> keys sequence to go to the "
+"<link xref=\"start-screen\">Start Screen</link>."
 msgstr ""
-"Am Ende des Spiels oder wenn Sie das Spiel ändern möchten, können Sie "
+"Um ein neues Spiel zu starten – vielleicht mit anderen Optionen – können Sie "
 "<keyseq><key>Strg</key><key>N</key></keyseq> drücken, um zum <link xref="
 "\"start-screen\">Startbildschirm</link> zu gelangen."
 
+#. (itstool) path: item/p
+#: C/15-Puzzle.page:88 C/16-Puzzle.page:82
+msgid ""
+"Alternatively, you may want to restart the game. For that, use the "
+"<keyseq><key>Shift</key><key>Ctrl</key><key>N</key></keyseq> keys sequence."
+msgstr ""
+"Alternativ können Sie mit der Tastenkombination <keyseq><key>Umschalt</"
+"key><key>Strg</key><key>N</key></keyseq> das Spiel neu starten."
+
 #. (itstool) path: section/p
-#: C/15-Puzzle.page:70 C/16-Puzzle.page:66
+#: C/15-Puzzle.page:92 C/16-Puzzle.page:86
 msgid "You can also use a mouse."
 msgstr "Sie können auch eine Maus verwenden."
 
@@ -228,7 +266,7 @@ msgstr ""
 "gegenüberliegenden Seite der Zeile oder Spalte."
 
 #. (itstool) path: item/p
-#: C/16-Puzzle.page:41
+#: C/16-Puzzle.page:42
 msgid ""
 "Click on one of the arrows displayed around the board. The row or column at "
 "the end of which this arrow is moves in this direction, and the tile that "
@@ -240,29 +278,33 @@ msgstr ""
 "erscheint an der gegenüberliegenden Seite."
 
 #. (itstool) path: item/p
-#: C/16-Puzzle.page:57
+#: C/16-Puzzle.page:68
 msgid ""
-"Use the <key>Left</key>, <key>Right</key>, <key>Up</key> and <key>Down</key> "
-"arrows to go at the row or the column you want to move. The currently "
-"selected row and column are indicated with two lights around the board."
+"Use the <key>Left</key> and <key>Right</key> arrows to change the selected "
+"column, and the <key>Up</key> and <key>Down</key> arrows to change the "
+"selected row. The currently selected row and column are indicated with "
+"lights around the board."
 msgstr ""
-"Verwenden Sie die Pfeile <key>←</key>, <key>→</key>, <key>↑</key> und "
-"<key>↓</key>, um zur Zeile oder Spalte zu gelangen, die Sie bewegen möchten. "
-"Die aktuell gewählte Zeile und Spalte werden durch zwei Lichter rund um das "
-"Spielbrett hervorgehoben."
+"Verwenden Sie die Pfeile <key>←</key> und <key>→</key> für die Spalte, "
+"beziehungsweise <key>↑</key> und <key>↓</key> für die Zeile, zu der Sie "
+"gelangen möchten. Die aktuell gewählte Zeile und Spalte werden durch zwei "
+"Lichter rund um das Spielbrett hervorgehoben."
 
 #. (itstool) path: item/p
-#: C/16-Puzzle.page:58
+#: C/16-Puzzle.page:69
 msgid ""
-"Use the <keyseq><key>Ctrl</key><key>Left</key></keyseq> or "
-"<keyseq><key>Ctrl</key><key>Right</key></keyseq> keys to move a row, or the "
-"<keyseq><key>Ctrl</key><key>Up</key></keyseq> and <keyseq><key>Ctrl</"
-"key><key>Down</key></keyseq> keys to move a column."
+"Use the <keyseq><key>Shift</key><key>Left</key></keyseq> and "
+"<keyseq><key>Shift</key><key>Right</key></keyseq> keys sequences to swipe "
+"the selected row, or the <keyseq><key>Shift</key><key>Up</key></keyseq> and "
+"<keyseq><key>Shift</key><key>Down</key></keyseq> keys sequences to swipe the "
+"selected column."
 msgstr ""
-"Verwenden Sie die Tastenkombination <keyseq><key>Strg</key><key>←</key></"
-"keyseq> und <keyseq><key>Strg</key><key>→</key></keyseq>, um eine Zeile zu "
-"bewegen oder <keyseq><key>Strg</key><key>↑</key></keyseq> bzw. "
-"<keyseq><key>Strg</key><key>↓</key></keyseq>, um eine Spalte zu bewegen."
+"Verwenden Sie die Tastenkombinationen <keyseq><key>Umschalt</key><key>←</"
+"key></keyseq> und <keyseq><key>Umschalt</key><key>→</key></keyseq>, um "
+"die gewählte Zeile zu leeren, oder die Tastenkombinationen "
+"<keyseq><key>Umschalt</key><key>↑</key></keyseq> und "
+"<keyseq><key>Umschalt</key><key>↓</key></keyseq>, um die gewählte Spalte zu "
+"leeren."
 
 #. (itstool) path: page/title
 #: C/beginning.page:18
@@ -284,16 +326,28 @@ msgid "The game is played using the mouse. To make a move:"
 msgstr "Das Spiel wird mit der Maus bedient. So führen Sie einen Zug aus:"
 
 #. (itstool) path: item/p
-#: C/beginning.page:29
+#: C/beginning.page:35
 msgid ""
-"You can always undo a move by clicking the <gui>Undo</gui> button on the "
-"left of the header bar."
+"To start a new game –whether you finished the current game or not–, click "
+"the <gui>New Game</gui> button in the headerbar to go to the <link xref="
+"\"start-screen\">Start Screen</link>."
 msgstr ""
-"Sie können einen Zug immer zurücknehmen, indem Sie auf den <gui>Rückgängig</"
-"gui>-Knopf links in der Kopfleiste klicken."
+"Um ein neues Spiel zu starten – ganz gleich, ob Sie das aktuelle Spiel "
+"beendet haben oder nicht – klicken Sie auf den Knopf <gui>Neues Spiel</gui> "
+"in der Kopfleiste, um zum <link xref=\"start-screen\">Startbildschirm</link> "
+"zu gelangen."
 
 #. (itstool) path: page/p
-#: C/beginning.page:35
+#: C/beginning.page:39
+msgid ""
+"You can also <link xref=\"15-Puzzle#15-keyboard\">play with the keyboard</"
+"link> if you prefer."
+msgstr ""
+"Sie können auch <link xref=\"15-Puzzle#15-keyboard\">mit der Tastatur "
+"spielen</link>, wenn Sie möchten."
+
+#. (itstool) path: page/p
+#: C/beginning.page:41
 msgid ""
 "After the first time it is opened, <app>Taquin</app> displays a puzzle with "
 "the same rules and dimensions as the last one played when it is opened, so "
@@ -486,8 +540,8 @@ msgstr "Tastenkombinationen des Spiels"
 
 #. (itstool) path: td/p
 #: C/shortcuts.page:26
-msgid "Show new-game screen"
-msgstr "Bildschirm »Neues Spiel« anzeigen"
+msgid "Show the Start Screen"
+msgstr "Den Startbildschirm anzeigen"
 
 #. (itstool) path: td/p
 #: C/shortcuts.page:27
@@ -496,119 +550,166 @@ msgstr "<keyseq><key>Strg</key><key>N</key></keyseq>"
 
 #. (itstool) path: td/p
 #: C/shortcuts.page:30
+msgid "Restart game"
+msgstr "Spiel neu starten"
+
+#. (itstool) path: td/p
+#: C/shortcuts.page:31 C/shortcuts.page:78
+msgid "<keyseq><key>Shift</key><key>Ctrl</key><key>N</key></keyseq>"
+msgstr "<keyseq><key>Umschalt</key><key>Strg</key><key>N</key></keyseq>"
+
+#. (itstool) path: td/p
+#: C/shortcuts.page:34
 msgid "Undo last move"
 msgstr "Den letzten Zug zurücknehmen"
 
 #. (itstool) path: td/p
-#: C/shortcuts.page:31
+#: C/shortcuts.page:35
 msgid "<keyseq><key>Ctrl</key><key>Z</key></keyseq>"
 msgstr "<keyseq><key>Strg</key><key>Z</key></keyseq>"
 
 #. (itstool) path: section/title
-#: C/shortcuts.page:36
+#: C/shortcuts.page:40
 msgid "15-Puzzle shortcuts"
 msgstr "Tastenkombinationen für 15-teiliges Puzzle"
 
 #. (itstool) path: td/p
-#: C/shortcuts.page:39 C/shortcuts.page:52
-msgid "Change selected tile"
-msgstr "Gewählte Kachel ändern"
+#: C/shortcuts.page:43
+msgid "Select tile to push on"
+msgstr "Zu schiebende Kachel auswählen"
 
 #. (itstool) path: td/p
-#: C/shortcuts.page:40 C/shortcuts.page:53
+#: C/shortcuts.page:44
 msgid "<key>Left</key>, <key>Right</key>, <key>Up</key> and <key>Down</key>"
 msgstr "<key>←</key>, <key>→</key>, <key>↑</key> und <key>↓</key>"
 
 #. (itstool) path: td/p
-#: C/shortcuts.page:43
+#: C/shortcuts.page:47
 msgid "Push tile in empty space’s direction"
 msgstr "Kachel in die Richtung der freien Position bewegen"
 
 #. (itstool) path: td/p
-#: C/shortcuts.page:44
-msgid "<key>Space</key> or <key>KP_Enter</key>"
-msgstr "<key>Leertaste</key> oder <key>Eingabe</key> auf Ziffernblock"
+#: C/shortcuts.page:48
+msgid "<key>Space</key>, <key>Return</key> and <key>KP_Enter</key>"
+msgstr ""
+"<key>Leertaste</key>, <key>Eingabe</key> oder <key>Eingabe</key> auf "
+"Ziffernblock"
 
 #. (itstool) path: section/title
-#: C/shortcuts.page:49
+#: C/shortcuts.page:53
 msgid "16-Puzzle shortcuts"
 msgstr "Tastenkombinationen für 16-teiliges Puzzle"
 
 #. (itstool) path: td/p
 #: C/shortcuts.page:56
-msgid "Move row"
-msgstr "Zeile verschieben"
+msgid "Change selected column"
+msgstr "Gewählte Spalte ändern"
 
 #. (itstool) path: td/p
 #: C/shortcuts.page:57
-msgid ""
-"<keyseq><key>Ctrl</key><key>Left</key></keyseq> and <keyseq><key>Ctrl</"
-"key><key>Right</key></keyseq>"
-msgstr ""
-"<keyseq><key>Strg</key><key>←</key></keyseq> und <keyseq><key>Strg</"
-"key><key>→</key></keyseq>"
+msgid "<key>Left</key> and <key>Right</key>"
+msgstr "<key>←</key> und <key>→</key>"
 
 #. (itstool) path: td/p
 #: C/shortcuts.page:60
-msgid "Move column"
-msgstr "Spalte verschieben"
+msgid "Change selected row"
+msgstr "Gewählte Zeile ändern"
 
 #. (itstool) path: td/p
 #: C/shortcuts.page:61
+msgid "<key>Up</key> and <key>Down</key>"
+msgstr "<key>↑</key> und <key>↓</key>"
+
+#. (itstool) path: td/p
+#: C/shortcuts.page:64
+msgid "Swipe selected row"
+msgstr "Gewählte Zeile leeren"
+
+#. (itstool) path: td/p
+#: C/shortcuts.page:65
 msgid ""
-"<keyseq><key>Ctrl</key><key>Up</key></keyseq> and <keyseq><key>Ctrl</"
+"<keyseq><key>Shift</key><key>Left</key></keyseq> and <keyseq><key>Shift</"
+"key><key>Right</key></keyseq>"
+msgstr ""
+"<keyseq><key>Umschalt</key><key>←</key></keyseq> und "
+"<keyseq><key>Umschalt</key><key>→</key></keyseq>"
+
+#. (itstool) path: td/p
+#: C/shortcuts.page:68
+msgid "Swipe selected column"
+msgstr "Gewählte Spalte leeren"
+
+#. (itstool) path: td/p
+#: C/shortcuts.page:69
+msgid ""
+"<keyseq><key>Shift</key><key>Up</key></keyseq> and <keyseq><key>Shift</"
 "key><key>Down</key></keyseq>"
 msgstr ""
-"<keyseq><key>Strg</key><key>↑</key></keyseq> und <keyseq><key>Strg</"
-"key><key>↓</key></keyseq>"
+"<keyseq><key>Umschalt</key><key>↑</key></keyseq> und "
+"<keyseq><key>Umschalt</key><key>↓</key></keyseq>"
 
 #. (itstool) path: section/title
-#: C/shortcuts.page:66
+#: C/shortcuts.page:74
 msgid "Start Screen shortcuts"
 msgstr "Tastenkombinationen des Startbildschirms"
 
 #. (itstool) path: td/p
-#: C/shortcuts.page:69
-msgid "New Game"
-msgstr "Neues Spiel"
+#: C/shortcuts.page:77
+msgid "Start new game"
+msgstr "Ein neues Spiel starten"
 
 #. (itstool) path: td/p
-#: C/shortcuts.page:70
-msgid "<keyseq><key>Ctrl</key><key>Shift</key><key>N</key></keyseq>"
-msgstr "<keyseq><key>Strg</key><key>Umschalt</key><key>N</key></keyseq>"
-
-#. (itstool) path: td/p
-#: C/shortcuts.page:73
+#: C/shortcuts.page:81
 msgid "Back to previous game (if any)"
 msgstr "Zum vorherigen Spiel zurückkehren"
 
 #. (itstool) path: td/p
-#: C/shortcuts.page:74
+#: C/shortcuts.page:82
 msgid "<key>Escape</key>"
 msgstr "<key>Esc</key>"
 
 #. (itstool) path: section/title
-#: C/shortcuts.page:79
+#: C/shortcuts.page:87
 msgid "General shortcuts"
 msgstr "Allgemeine Tastenkombinationen"
 
 #. (itstool) path: td/p
-#: C/shortcuts.page:82
+#: C/shortcuts.page:90
+msgid "Keyboard shortcuts"
+msgstr "Tastenkombinationen"
+
+#. (itstool) path: td/p
+#: C/shortcuts.page:91
+msgid "<keyseq><key>Ctrl</key><key>F1</key></keyseq>"
+msgstr "<keyseq><key>Strg</key><key>F1</key></keyseq>"
+
+#. (itstool) path: td/p
+#: C/shortcuts.page:94
 msgid "Help"
 msgstr "Hilfe"
 
 #. (itstool) path: td/p
-#: C/shortcuts.page:83
+#: C/shortcuts.page:95
 msgid "<key>F1</key>"
 msgstr "<key>F1</key>"
 
 #. (itstool) path: td/p
-#: C/shortcuts.page:86
+#: C/shortcuts.page:98
+msgid "About"
+msgstr "Info"
+
+#. (itstool) path: td/p
+#: C/shortcuts.page:99
+msgid "<keyseq><key>Shift</key><key>F1</key></keyseq>"
+msgstr "<keyseq><key>Umschalt</key><key>F1</key></keyseq>"
+
+#. (itstool) path: td/p
+#: C/shortcuts.page:102
 msgid "Quit"
 msgstr "Verlassen"
 
 #. (itstool) path: td/p
-#: C/shortcuts.page:87
+#: C/shortcuts.page:103
 msgid "<keyseq><key>Ctrl</key><key>Q</key></keyseq>"
 msgstr "<keyseq><key>Strg</key><key>Q</key></keyseq>"
 
@@ -631,8 +732,8 @@ msgstr ""
 #. (itstool) path: page/p
 #: C/start-screen.page:20
 msgid ""
-"It can be accessed at any time from a game by pressing the <gui>Start Over</"
+"It can be accessed at any time from a game by pressing the <gui>New Game</"
 "gui> button."
 msgstr ""
-"Sie können während eines Spiels jederzeit dorthin gelangen, indem Sie den "
-"<gui>Neu beginnen</gui>-Knopf drücken."
+"Sie können während eines Spiels jederzeit dorthin gelangen, indem Sie auf "
+"den Knopf <gui>Neues Spiel</gui> klicken."
