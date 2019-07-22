@@ -48,6 +48,7 @@ executable(meson.project_name(),[
         rsvg_dependency,
         canberra_dependency,
         canberra_gtk3_dependency,
-        posix_dependency
+        posix_dependency,
+        libm_dependency
     ]
 )

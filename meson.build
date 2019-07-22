@@ -7,13 +7,17 @@ gnome = import('gnome')
 i18n = import('i18n')
 python3 = import('python3')
 
+cc = meson.get_compiler('c')
+valac = meson.get_compiler('vala')
+
 gio_dependency = dependency('gio-2.0', version: '>= 2.40.0')
 glib_dependency = dependency('glib-2.0', version: '>= 2.40.0')
 gtk_dependency = dependency('gtk+-3.0', version: '>= 3.22.23')
 rsvg_dependency = dependency('librsvg-2.0', version: '>= 2.32.0')
 canberra_dependency = dependency('libcanberra')
 canberra_gtk3_dependency = dependency('libcanberra-gtk3', version: '>= 0.26')
-posix_dependency = meson.get_compiler('vala').find_library('posix')
+posix_dependency = valac.find_library('posix')
+libm_dependency = cc.find_library('m', required: false) # some platforms do not have libm separated from libc
 
 desktop_file_validate = find_program('desktop-file-validate', required: false)
 appstream_util = find_program('appstream-util', required: false)
