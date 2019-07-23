@@ -1,3 +1,19 @@
+3.33.4 – July 23, 2019
+=============================
+
+Specify libm as a dependency, for platforms that separated it from libc
+(initial patch by Jan Tojnar, for 2048). And some translations updated.
+
+Translations updated:
+  Basque: Asier Sarasua Garmendia
+  Catalan: Jordi Mas
+  Croatian: Goran Vidović
+  Danish: Ask Hjorth Larsen
+  British English: Bruce Cowan
+  German: Mario Blättermann
+  Occitan: Cédric Valmary
+  Turkish: Sabri Ünal
+
 3.32.0 – March 11, 2019
 =============================
 
