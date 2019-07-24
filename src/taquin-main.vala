@@ -206,6 +206,9 @@ private class Taquin : Gtk.Application, BaseApplication
         // TODO window.add_action (settings.create_action ("size"));        // Problem: cannot use this way for an integer from a menu; works for radiobuttons in Iagno
         // TODO window.add_action (settings.create_action ("theme"));
 
+        if (settings.get_boolean ("sound"))
+            init_sound ();
+
         add_window (window);
         start_game ();
     }
@@ -282,7 +285,7 @@ private class Taquin : Gtk.Application, BaseApplication
         requires (game != null)
     {
         ((!) game).restart ();
-        play_sound ("sliding-n");
+        play_sound (Sound.SLIDING_N);
         move_done = false;
     }
 
@@ -290,7 +293,7 @@ private class Taquin : Gtk.Application, BaseApplication
         requires (game != null)
     {
         ((!) game).undo ();
-        play_sound ("sliding-1");
+        play_sound (Sound.SLIDING_1);
     }
 
     /*\
@@ -300,14 +303,14 @@ private class Taquin : Gtk.Application, BaseApplication
     private void move_cb (bool x_axis, int8 number, int8 x_gap, int8 y_gap, uint moves_count, bool disable_animation)
     {
         window.move_done (moves_count);
-        play_sound ("sliding-1");       // TODO sliding-n??
+        play_sound (Sound.SLIDING_1);   // TODO sliding-n??
         move_done = true;
     }
 
     private void game_complete_cb ()
     {
         window.finish_game ();
-        play_sound ("gameover");
+        play_sound (Sound.GAME_OVER);
     }
 
     private bool move_done = false;
@@ -389,14 +392,77 @@ private class Taquin : Gtk.Application, BaseApplication
     * * Sound
     \*/
 
-    private void play_sound (string name)
-    {
-        if (!settings.get_boolean ("sound"))
-            return;
+    private GSound.Context sound_context;
+    private SoundContextState sound_context_state = SoundContextState.INITIAL;
 
-        CanberraGtk.play_for_widget (view, 0,
-                                     Canberra.PROP_MEDIA_NAME, name,
-                                     Canberra.PROP_MEDIA_FILENAME, Path.build_filename (SOUND_DIRECTORY, "%s.ogg".printf (name)));
+    private enum Sound
+    {
+        SLIDING_1,
+        SLIDING_N,
+        GAME_OVER;
+    }
+
+    private enum SoundContextState
+    {
+        INITIAL,
+        WORKING,
+        ERRORED;
+    }
+
+    private void init_sound ()
+     // requires (sound_context_state == SoundContextState.INITIAL)
+    {
+        try
+        {
+            sound_context = new GSound.Context ();
+            sound_context_state = SoundContextState.WORKING;
+        }
+        catch (Error e)
+        {
+            warning (e.message);
+            sound_context_state = SoundContextState.ERRORED;
+        }
+    }
+
+    private void play_sound (Sound sound)
+    {
+        if (settings.get_boolean ("sound"))
+        {
+            if (sound_context_state == SoundContextState.INITIAL)
+                init_sound ();
+            if (sound_context_state == SoundContextState.WORKING)
+                _play_sound (sound, sound_context);
+        }
+    }
+
+    private static void _play_sound (Sound sound, GSound.Context sound_context)
+     // requires (sound_context_state == SoundContextState.WORKING)
+    {
+        string name;
+        switch (sound)
+        {
+            case Sound.SLIDING_1:
+                name = "sliding-1.ogg";
+                break;
+            case Sound.SLIDING_N:
+                name = "sliding-n.ogg";
+                break;
+            case Sound.GAME_OVER:
+                name = "gameover.ogg";
+                break;
+            default:
+                return;
+        }
+        string path = Path.build_filename (SOUND_DIRECTORY, name);
+        try
+        {
+            sound_context.play_simple (null, GSound.Attribute.MEDIA_NAME, name,
+                                             GSound.Attribute.MEDIA_FILENAME, path);
+        }
+        catch (Error e)
+        {
+            warning (e.message);
+        }
     }
 
     /*\

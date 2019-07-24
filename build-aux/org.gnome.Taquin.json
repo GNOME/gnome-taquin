@@ -20,6 +20,16 @@
     "cleanup": ["/share/man"],
     "modules": [
         {
+            "name" : "gsound",
+            "buildsystem" : "autotools",
+            "sources" : [
+                {
+                    "type" : "git",
+                    "url" : "https://gitlab.gnome.org/GNOME/gsound.git"
+                }
+            ]
+        },
+        {
             "name": "gnome-taquin",
             "buildsystem": "meson",
             "sources": [

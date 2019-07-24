@@ -44,11 +44,10 @@ executable(meson.project_name(),[
     ],
     dependencies: [
         glib_dependency,
+        gsound_dependency,
         gtk_dependency,
-        rsvg_dependency,
-        canberra_dependency,
-        canberra_gtk3_dependency,
+        libm_dependency,
         posix_dependency,
-        libm_dependency
+        rsvg_dependency
     ]
 )
