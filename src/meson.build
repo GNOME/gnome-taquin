@@ -15,8 +15,6 @@ test('taquin-tests', taquin_tests)
 resources = gnome.compile_resources (meson.project_name(), 'taquin.gresource.xml')
 
 executable(meson.project_name(),[
-        'config.vapi',
-
         'about-list.vala',
         'adaptative-window.vala',
         'base-headerbar.vala',
@@ -32,7 +30,8 @@ executable(meson.project_name(),[
         'registry-placeholder.vala',
         'taquin-game.vala',
         'taquin-main.vala',
-        'taquin-view.vala'
+        'taquin-view.vala',
+        'vapi/config.vapi'
      ] + resources,
     install: true,
     c_args: [
