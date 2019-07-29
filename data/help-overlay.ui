@@ -84,7 +84,7 @@
               <object class="GtkShortcutsShortcut">
                 <property name="visible">True</property>
                 <property name="title" translatable="yes" context="shortcut window">Push on selected tile</property>
-                <property name="accelerator">Escape Return</property>
+                <property name="accelerator">Return space</property>
               </object>
             </child>
           </object>
