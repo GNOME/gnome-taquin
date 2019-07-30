@@ -158,6 +158,7 @@ private class Taquin : Gtk.Application, BaseApplication
                                  | GameWindowFlags.SHOW_UNDO,
                                  (Box) new_game_screen,
                                  view,
+                                 null,  // appearance menu
                                  night_light_monitor);
         window.play.connect (start_game);
         window.undo.connect (undo_cb);

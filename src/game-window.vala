@@ -39,9 +39,9 @@ private class GameWindow : BaseWindow, AdaptativeWidget
     private GameView        game_view;
     private Box             new_game_screen;
 
-    internal GameWindow (string? css_resource, string name, string about_action_label, bool start_now, GameWindowFlags flags, Box _new_game_screen, Widget view_content, NightLightMonitor night_light_monitor)
+    internal GameWindow (string? css_resource, string name, string about_action_label, bool start_now, GameWindowFlags flags, Box _new_game_screen, Widget view_content, GLib.Menu? appearance_menu, NightLightMonitor night_light_monitor)
     {
-        GameHeaderBar _headerbar = new GameHeaderBar (name, about_action_label, flags, night_light_monitor);
+        GameHeaderBar _headerbar = new GameHeaderBar (name, about_action_label, flags, appearance_menu, night_light_monitor);
         GameView      _game_view = new GameView (flags, _new_game_screen, view_content);
 
         Object (nta_headerbar               : (NightTimeAwareHeaderBar) _headerbar,
@@ -85,7 +85,7 @@ private class GameWindow : BaseWindow, AdaptativeWidget
     }
 
     /*\
-    * * Some public calls
+    * * some public calls
     \*/
 
     internal void move_done (uint moves_count)
@@ -126,7 +126,7 @@ private class GameWindow : BaseWindow, AdaptativeWidget
     }
 
     /*\
-    * * Showing the Stack
+    * * showing the stack
     \*/
 
     private void show_new_game_screen ()
@@ -158,6 +158,7 @@ private class GameWindow : BaseWindow, AdaptativeWidget
     private SimpleAction restart_action;
     private SimpleAction    undo_action;
     private SimpleAction    redo_action;
+ // private SimpleAction    hint_action;
 
     private bool back_action_disabled = true;
 
@@ -170,6 +171,7 @@ private class GameWindow : BaseWindow, AdaptativeWidget
         restart_action = (SimpleAction) action_group.lookup_action ("restart");
            undo_action = (SimpleAction) action_group.lookup_action ("undo");
            redo_action = (SimpleAction) action_group.lookup_action ("redo");
+     //    hint_action = (SimpleAction) action_group.lookup_action ("hint");
 
         restart_action.set_enabled (false);
            undo_action.set_enabled (false);
@@ -229,7 +231,6 @@ private class GameWindow : BaseWindow, AdaptativeWidget
             return;
 
         game_finished = false;
-        hide_notification ();
 
         game_view.show_game_content (/* grab focus */ true);
         redo_action.set_enabled (true);

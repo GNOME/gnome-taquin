@@ -47,6 +47,7 @@ private class GameHeaderBar : BaseHeaderBar, AdaptativeWidget
     internal GameHeaderBar (string              _window_name,
                             string              _about_action_label,
                             GameWindowFlags     flags,
+                            GLib.Menu?          _appearance_menu,
                             NightLightMonitor   _night_light_monitor)
     {
         Object (about_action_label:     _about_action_label,
@@ -56,6 +57,7 @@ private class GameHeaderBar : BaseHeaderBar, AdaptativeWidget
                 show_hint:              GameWindowFlags.SHOW_HINT in flags,
                 show_redo:              GameWindowFlags.SHOW_REDO in flags,
                 show_undo:              GameWindowFlags.SHOW_UNDO in flags,
+                appearance_menu:        _appearance_menu,
                 window_name:            _window_name);
     }
 
@@ -164,16 +166,25 @@ private class GameHeaderBar : BaseHeaderBar, AdaptativeWidget
     * * hamburger menu
     \*/
 
+    public GLib.Menu? appearance_menu { private get; protected construct; default = null; }
     protected override void populate_menu (ref GLib.Menu menu)
     {
-        append_sound_section (ref menu);
+        append_options_section (ref menu, appearance_menu);
     }
 
-    private static inline void append_sound_section (ref GLib.Menu menu)
+    private static inline void append_options_section (ref GLib.Menu menu, GLib.Menu? appearance_menu)
     {
         GLib.Menu section = new GLib.Menu ();
+
+     // if (appearance_menu != null)
+            /* Translators: hamburger menu entry; "Appearance" submenu (with a mnemonic that appears pressing Alt) */
+     //     section.append_submenu (_("A_ppearance"), (!) appearance_menu);
+
+
+
         /* Translators: hamburger menu entry; sound togglebutton (with a mnemonic that appears pressing Alt) */
         section.append (_("_Sound"), "app.sound");
+
         section.freeze ();
         menu.append_section (null, section);
     }
