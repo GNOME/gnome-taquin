@@ -114,15 +114,19 @@ private class GameWindow : BaseWindow, AdaptativeWidget
             return true;
         if (back_action_disabled)
             return true;
+        back_cb ();
+        return true;
+    }
+    private void back_cb ()
+    {
         if (game_view.game_content_visible_if_true ())
-            return true;
+            return;
 
         // TODO change back headerbar subtitle?
         game_view.configure_transition (StackTransitionType.SLIDE_RIGHT, 800);
         show_view ();
 
         back ();
-        return true;
     }
 
     /*\
@@ -228,7 +232,11 @@ private class GameWindow : BaseWindow, AdaptativeWidget
         if (game_view.is_in_in_window_mode ())
             return;
         if (!game_view.game_content_visible_if_true ())
+        {
+            if (!back_action_disabled)
+                back_cb ();     // FIXME not reached if undo_action is disabled, so at game start or finish
             return;
+        }
 
         game_finished = false;
 
