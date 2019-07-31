@@ -37,7 +37,7 @@ private class NightLightMonitor : Object
     "Something went wrong getting GtkSettings default object, doing nothing.";
 
     // schema static things
-    private const string schema_name = "org.gnome.Taquin.NightLight";  // TODO put in a library
+    private const string schema_name = "org.gnome.Taquin.Lib";
     private const string automatic_night_mode_key = "automatic-night-mode";
 
     /*\

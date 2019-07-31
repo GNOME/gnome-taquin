@@ -1,5 +1,12 @@
 <schemalist>
   <schema id="org.gnome.Taquin.Lib">
+    <key name="automatic-night-mode" type="b">
+      <default>false</default>
+      <!-- Translators: summary of a settings key, see 'dconf-editor /org/gnome/taquin/automatic-night-mode' -->
+      <summary>A flag to follow system night light</summary>
+      <!-- Translators: description of a settings key, see 'dconf-editor /org/gnome/taquin/automatic-night-mode' -->
+      <description>Use GNOME night light setting to activate night-mode.</description>
+    </key>
     <key name="window-width" type="i">
       <default>540</default>
       <!-- Translators: summary of a settings key, see 'dconf-editor /org/gnome/taquin/window-width' -->
@@ -54,15 +61,6 @@
       <summary>Sound</summary>
       <!-- Translators: description of a settings key, see 'dconf-editor /org/gnome/taquin/sound' -->
       <description>Whether or not to play event sounds.</description>
-    </key>
-  </schema>
-  <schema id="org.gnome.Taquin.NightLight">
-    <key name="automatic-night-mode" type="b">
-      <default>false</default>
-      <!-- Translators: summary of a settings key, see 'dconf-editor /org/gnome/taquin/automatic-night-mode' -->
-      <summary>Follow system night light</summary>
-      <!-- Translators: description of a settings key, see 'dconf-editor /org/gnome/taquin/automatic-night-mode' -->
-      <description>Use GNOME night light setting to activate night-mode.</description>
     </key>
   </schema>
 </schemalist>
