@@ -48,7 +48,8 @@ private class GameWindow : BaseWindow, AdaptativeWidget
                 base_view                   : (BaseView) _game_view,
                 window_title                : Taquin.PROGRAM_NAME,
                 specific_css_class_or_empty : "",
-                help_string_or_empty        : "help:gnome-taquin");
+                help_string_or_empty        : "help:gnome-taquin",
+                schema_path                 : "/org/gnome/taquin/");
 
         headerbar = _headerbar;
         game_view = _game_view;
