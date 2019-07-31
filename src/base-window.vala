@@ -295,12 +295,14 @@ private class BaseWindow : AdaptativeWindow, AdaptativeWidget
     * * global callbacks
     \*/
 
+    [CCode (notify = false)] public string help_string_or_empty { private get; protected construct; default = ""; }
+
     [GtkCallback]
     protected virtual bool on_key_press_event (Widget widget, Gdk.EventKey event)
     {
-        return _on_key_press_event (widget, event);
+        return _on_key_press_event (widget, event, help_string_or_empty);
     }
-    private static bool _on_key_press_event (Widget widget, Gdk.EventKey event)
+    private static bool _on_key_press_event (Widget widget, Gdk.EventKey event, string help_string_or_empty)
     {
         string name = (!) (Gdk.keyval_name (event.keyval) ?? "");
 
@@ -313,7 +315,7 @@ private class BaseWindow : AdaptativeWindow, AdaptativeWidget
             if ((event.state & Gdk.ModifierType.CONTROL_MASK) != 0)
                 return false;                           // help overlay
             if ((event.state & Gdk.ModifierType.SHIFT_MASK) == 0)
-                return show_application_help (_this);   // fallback on help overlay (TODO test)
+                return show_application_help (_this, help_string_or_empty);   // fallback on help overlay (TODO test)
             _this.about ();
             return true;
         }
@@ -323,15 +325,18 @@ private class BaseWindow : AdaptativeWindow, AdaptativeWidget
 
     private void help (/* SimpleAction action, Variant? variant */)
     {
-        show_application_help (this);
+        show_application_help (this, help_string_or_empty);
     }
 
-    private static inline bool show_application_help (BaseWindow _this)
+    private static inline bool show_application_help (BaseWindow _this, string help_string_or_empty)
     {
+        if (help_string_or_empty == "")
+            return false;
+
         bool success;
         try
         {
-            show_uri (_this.get_screen (), "help:gnome-taquin", get_current_event_time ());
+            show_uri (_this.get_screen (), help_string_or_empty, get_current_event_time ());
             success = true;
         }
         catch (Error e)
