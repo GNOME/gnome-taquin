@@ -30,6 +30,7 @@ private class GameHeaderBar : BaseHeaderBar, AdaptativeWidget
     [CCode (notify = false)] public bool window_has_name { private get; protected construct; default = false; }
     [CCode (notify = false)] public string window_name   { private get; internal  construct; default = ""; }
 
+    [CCode (notify = false)] public bool has_sound { private get; protected construct; default = false; }
     [CCode (notify = false)] public bool show_undo { private get; protected construct; default = false; }
     [CCode (notify = false)] public bool show_redo { private get; protected construct; default = false; }
     [CCode (notify = false)] public bool show_hint { private get; protected construct; default = false; }    // TODO something
@@ -53,6 +54,7 @@ private class GameHeaderBar : BaseHeaderBar, AdaptativeWidget
         Object (about_action_label:     _about_action_label,
                 night_light_monitor:    _night_light_monitor,
                 has_keyboard_shortcuts: GameWindowFlags.SHORTCUTS in flags,
+                has_sound:              GameWindowFlags.HAS_SOUND in flags,
                 has_help:               GameWindowFlags.SHOW_HELP in flags, // TODO rename show_help
                 show_hint:              GameWindowFlags.SHOW_HINT in flags,
                 show_redo:              GameWindowFlags.SHOW_REDO in flags,
@@ -169,10 +171,10 @@ private class GameHeaderBar : BaseHeaderBar, AdaptativeWidget
     public GLib.Menu? appearance_menu { private get; protected construct; default = null; }
     protected override void populate_menu (ref GLib.Menu menu)
     {
-        append_options_section (ref menu, appearance_menu);
+        append_options_section (ref menu, appearance_menu, has_sound);
     }
 
-    private static inline void append_options_section (ref GLib.Menu menu, GLib.Menu? appearance_menu)
+    private static inline void append_options_section (ref GLib.Menu menu, GLib.Menu? appearance_menu, bool has_sound)
     {
         GLib.Menu section = new GLib.Menu ();
 
@@ -180,10 +182,11 @@ private class GameHeaderBar : BaseHeaderBar, AdaptativeWidget
             /* Translators: hamburger menu entry; "Appearance" submenu (with a mnemonic that appears pressing Alt) */
      //     section.append_submenu (_("A_ppearance"), (!) appearance_menu);
 
-
-
-        /* Translators: hamburger menu entry; sound togglebutton (with a mnemonic that appears pressing Alt) */
-        section.append (_("_Sound"), "app.sound");
+        if (has_sound)
+        {
+            /* Translators: hamburger menu entry; sound togglebutton (with a mnemonic that appears pressing Alt) */
+            section.append (_("_Sound"), "app.sound");
+        }
 
         section.freeze ();
         menu.append_section (null, section);

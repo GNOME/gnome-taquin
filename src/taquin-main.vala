@@ -153,6 +153,7 @@ private class Taquin : Gtk.Application, BaseApplication
                                  _("About Taquin"),
                                  /* start now */ true,     // TODO add an option to go to new-game screen?
                                  GameWindowFlags.SHOW_START_BUTTON
+                                 | GameWindowFlags.HAS_SOUND
                                  | GameWindowFlags.SHORTCUTS
                                  | GameWindowFlags.SHOW_HELP
                                  | GameWindowFlags.SHOW_UNDO,
