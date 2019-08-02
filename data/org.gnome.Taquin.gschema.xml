@@ -10,7 +10,7 @@
     <key name="window-width" type="i">
       <default>540</default>
       <!-- see AdaptativeWindow.width-request at data/ui/adaptative-window.ui:22 -->
-      <range min="350"/>
+      <!-- range min="350"/ FIXME -->
       <!-- Translators: summary of a settings key, see 'dconf-editor /org/gnome/taquin/window-width' -->
       <summary>The width of the window</summary>
       <!-- Translators: summary of a settings key, see 'dconf-editor /org/gnome/taquin/window-width' -->
@@ -19,7 +19,7 @@
     <key name="window-height" type="i">
       <default>500</default>
       <!-- see AdaptativeWindow.height-request at data/ui/adaptative-window.ui:21 -->
-      <range min="284"/>
+      <!-- range min="284"/ FIXME -->
       <!-- Translators: summary of a settings key, see 'dconf-editor /org/gnome/taquin/window-height' -->
       <summary>The height of the window</summary>
       <!-- Translators: description of a settings key, see 'dconf-editor /org/gnome/taquin/window-height' -->
