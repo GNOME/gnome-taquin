@@ -501,19 +501,24 @@ private class Taquin : Gtk.Application, BaseApplication
         comments = _("A classic 15-puzzle game");
 
         artists = {
-            "Abelard (Wikimedia)",
-            "Alvesgaspar (Wikimedia)",
-            "Mueller-rech.muenchen (Wikimedia)",
-            "Ruskis (Wikimedia)",
-            "Toyah (Wikimedia)",
-            /* Translators: about dialog text; in the Credits, text at the end of the "Artwork by" section */
+        /* Translators: about dialog text crediting an artist (a photograph), with the website where the image was published */
+            _("Abelard (Wikimedia)"), _("Alvesgaspar (Wikimedia)"), _("Mueller-rech.muenchen (Wikimedia)"),
+            _("Ruskis (Wikimedia)"), _("Toyah (Wikimedia)"),
+
+        /* Translators: about dialog text; in the Credits, text at the end of the "Artwork by" section */
             _("(see COPYING.themes for informations)")
         };
-        authors = { "Arnaud Bonatti" };
 
-        /* Translators: about dialog text */
-        copyright = "Copyright \xc2\xa9 2014-2019 – Arnaud Bonatti";  // TODO translation; autogen, to not change each year?
-        documenters = { "Arnaud Bonatti" };
+        /* Translators: about dialog text crediting an author */
+        authors = { _("Arnaud Bonatti") };
+
+
+        /* Translators: about dialog text crediting a maintainer; the %u are replaced with the years of start and end */
+        copyright = _("Copyright \xc2\xa9 %u-%u – Arnaud Bonatti").printf (2014, 2019);
+
+
+        /* Translators: about dialog text crediting a documenter */
+        documenters = { _("Arnaud Bonatti") };
         logo_icon_name = "org.gnome.Taquin";
         program_name = PROGRAM_NAME;
 
