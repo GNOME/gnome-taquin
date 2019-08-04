@@ -23,6 +23,7 @@ using Gtk;
 private class GameView : BaseView, AdaptativeWidget
 {
     private Stack           game_stack;
+    private Box             game_box;
     private Widget          game_content;
     private ScrolledWindow  scrolled;
     private Box             new_game_box;
@@ -69,9 +70,17 @@ private class GameView : BaseView, AdaptativeWidget
         }
 
         game_content = content;
-        game_stack.add (content);
+
+        game_box = new Box (Orientation.HORIZONTAL, 0);
+        game_content.hexpand = true;
+        game_content.vexpand = true;
+        game_content.show ();
+        game_box.add (game_content);
+        game_box.show ();
+        game_box.get_style_context ().add_class ("game-box");
+
+        game_stack.add (game_box);
         content.can_focus = true;
-        content.show ();
     }
 
     internal void show_new_game_box (bool grab_focus)
@@ -84,7 +93,7 @@ private class GameView : BaseView, AdaptativeWidget
 
     internal void show_game_content (bool grab_focus)
     {
-        game_stack.set_visible_child (game_content);
+        game_stack.set_visible_child (game_box);
         if (grab_focus)
             game_content.grab_focus ();
     }
@@ -94,7 +103,7 @@ private class GameView : BaseView, AdaptativeWidget
         Widget? visible_child = game_stack.get_visible_child ();
         if (visible_child == null)
             assert_not_reached ();
-        return (!) visible_child == game_content;
+        return (!) visible_child == game_box;
     }
 
     internal void configure_transition (StackTransitionType transition_type,
