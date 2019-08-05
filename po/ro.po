@@ -7,8 +7,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: gnome-taquin master\n"
 "Report-Msgid-Bugs-To: https://gitlab.gnome.org/GNOME/gnome-taquin/issues\n"
-"POT-Creation-Date: 2019-08-01 15:16+0000\n"
-"PO-Revision-Date: 2019-08-04 14:16+0300\n"
+"POT-Creation-Date: 2019-08-04 14:52+0000\n"
+"PO-Revision-Date: 2019-08-05 13:28+0300\n"
 "Last-Translator: Florentina Mușat <florentina.musat.28 [at] gmail [dot] "
 "com>\n"
 "Language-Team: Gnome Romanian Translation Team\n"
@@ -54,7 +54,7 @@ msgid "The GNOME Project"
 msgstr "Proiectul GNOME"
 
 #. Translators: application name, as used in the window manager, the window title, the about dialog...
-#: data/org.gnome.Taquin.desktop.in:5 src/taquin-main.vala:26
+#: data/org.gnome.Taquin.desktop.in:3 src/taquin-main.vala:26
 msgid "Taquin"
 msgstr "Taquin"
 
@@ -70,13 +70,13 @@ msgstr "puzzle;"
 
 #. Translators: an action Name, as defined in the desktop file spec; name of the traditional Taquin game
 #. Translators: when configuring a new game, label of the first big button; name of the traditional Taquin game
-#: data/org.gnome.Taquin.desktop.in:21 data/ui/taquin-screens.ui:92
+#: data/org.gnome.Taquin.desktop.in:21 data/ui/taquin-screens.ui:95
 msgid "15-Puzzle"
 msgstr "Puzzle-15"
 
 #. Translators: an action Name, as defined in the desktop file spec; name of the alternative game
 #. Translators: when configuring a new game, label of the second big button; name of the non-traditional game
-#: data/org.gnome.Taquin.desktop.in:26 data/ui/taquin-screens.ui:109
+#: data/org.gnome.Taquin.desktop.in:26 data/ui/taquin-screens.ui:112
 msgid "16-Puzzle"
 msgstr "Puzzle-16"
 
@@ -92,6 +92,8 @@ msgstr ""
 "Utilizează configurarea de lumină de noapte GNOME pentru a activa modul "
 "nocturn."
 
+#. see AdaptativeWindow.width-request at data/ui/adaptative-window.ui:22
+#. range min="350"/ FIXME
 #. Translators: summary of a settings key, see 'dconf-editor /org/gnome/taquin/window-width'
 #: data/org.gnome.Taquin.gschema.xml:15
 msgid "The width of the window"
@@ -102,6 +104,8 @@ msgstr "Lățimea ferestrei"
 msgid "The width of the main window in pixels."
 msgstr "Lățimea ferestrei principale în pixeli."
 
+#. see AdaptativeWindow.height-request at data/ui/adaptative-window.ui:21
+#. range min="284"/ FIXME
 #. Translators: summary of a settings key, see 'dconf-editor /org/gnome/taquin/window-height'
 #: data/org.gnome.Taquin.gschema.xml:24
 msgid "The height of the window"
@@ -318,12 +322,12 @@ msgid "Numbers"
 msgstr "Numere"
 
 #. Translators: when configuring a new game, header of the game type that appears on small screen
-#: data/ui/taquin-screens.ui:67
+#: data/ui/taquin-screens.ui:70
 msgid "Game"
 msgstr "Joc"
 
 #. Translators: when configuring a new game, header of the options that appears on small screen
-#: data/ui/taquin-screens.ui:131
+#: data/ui/taquin-screens.ui:134
 msgid "Options"
 msgstr "Opțiuni"
 
@@ -437,7 +441,7 @@ msgid "Best score: %s"
 msgstr "Cel mai bun scor: %s"
 
 #. Translators: when configuring a new game, label of the blue Start button (with a mnemonic that appears pressing Alt)
-#: src/game-view.vala:57
+#: src/game-view.vala:58
 msgid "_Start Game"
 msgstr "Î_ncepe jocul"
 
@@ -517,19 +521,52 @@ msgstr "Clic pe săgeți pentru a muta dalele!"
 msgid "A classic 15-puzzle game"
 msgstr "Un joc puzzle-15 clasic"
 
+#. Translators: about dialog text crediting an artist (a photograph), with the website where the image was published
+#: src/taquin-main.vala:505
+msgid "Abelard (Wikimedia)"
+msgstr "Abelard (Wikimedia)"
+
+#: src/taquin-main.vala:505
+msgid "Alvesgaspar (Wikimedia)"
+msgstr "Alvesgaspar (Wikimedia)"
+
+#: src/taquin-main.vala:505
+msgid "Mueller-rech.muenchen (Wikimedia)"
+msgstr "Mueller-rech.muenchen (Wikimedia)"
+
+#: src/taquin-main.vala:506
+msgid "Ruskis (Wikimedia)"
+msgstr "Ruskis (Wikimedia)"
+
+#: src/taquin-main.vala:506
+msgid "Toyah (Wikimedia)"
+msgstr "Toyah (Wikimedia)"
+
 #. Translators: about dialog text; in the Credits, text at the end of the "Artwork by" section
-#: src/taquin-main.vala:510
+#: src/taquin-main.vala:509
 msgid "(see COPYING.themes for informations)"
 msgstr "(consultați COPYING.themes pentru informații)"
 
+#. Translators: about dialog text crediting an author
+#. Translators: about dialog text crediting a documenter
+#: src/taquin-main.vala:513 src/taquin-main.vala:521
+msgid "Arnaud Bonatti"
+msgstr "Arnaud Bonatti"
+
+#. Translators: about dialog text crediting a maintainer; the %u are replaced with the years of start and end
+#: src/taquin-main.vala:517
+#, c-format
+msgid "Copyright © %u-%u – Arnaud Bonatti"
+msgstr "Copyright © %u-%u – Arnaud Bonatti"
+
 #. Translators: about dialog text; this string should be replaced by a text crediting yourselves and your translation team, or should be left empty. Do not translate literally!
-#: src/taquin-main.vala:521
+#: src/taquin-main.vala:526
 msgid "translator-credits"
 msgstr ""
 "Florentina Mușat <florentina.musat.28 [at] gmail [dot] com>, 2018, 2019"
 
 #. Translators: about dialog text; label of the website link
-#: src/taquin-main.vala:526
+#: src/taquin-main.vala:531
 msgid "Page on GNOME wiki"
 msgstr "Pagină pe wiki GNOME"
 
