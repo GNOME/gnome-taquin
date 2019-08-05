@@ -1,3 +1,13 @@
+3.33.90 – August 5, 2019
+=============================
+
+Many small code changes, and bug fixes, but nothing really interesting.
+Packagers should note that the GSound library has replaced LibCanberra.
+
+Translations updated:
+  Romanian: Florentina Mușat
+  Spanish: Daniel Mustieles
+
 3.33.4 – July 23, 2019
 =============================
 
