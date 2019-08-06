@@ -2,12 +2,13 @@
 # Copyright (C) 2015 gnome-taquin's COPYRIGHT HOLDER
 # This file is distributed under the same license as the gnome-taquin package.
 # Ade Malsasa Akbar <teknoloid@gmail.com>, 2015.
+# Kukuh Syafaat <kukuhsyafaat@gnome.org>, 2017, 2019.
 msgid ""
 msgstr ""
 "Project-Id-Version: gnome-taquin master\n"
 "Report-Msgid-Bugs-To: https://gitlab.gnome.org/GNOME/gnome-taquin/issues\n"
-"POT-Creation-Date: 2019-02-18 14:23+0000\n"
-"PO-Revision-Date: 2019-02-18 22:19+0700\n"
+"POT-Creation-Date: 2019-08-04 14:52+0000\n"
+"PO-Revision-Date: 2019-08-06 17:46+0700\n"
 "Last-Translator: Kukuh Syafaat <kukuhsyafaat@gnome.org>\n"
 "Language-Team: Indonesian\n"
 "Language: id\n"
@@ -15,7 +16,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural= n!=1;\n"
-"X-Generator: Poedit 2.2.1\n"
+"X-Generator: Poedit 2.2.3\n"
 "X-Project-Style: gnome\n"
 
 #: data/org.gnome.Taquin.appdata.xml.in:7
@@ -49,13 +50,8 @@ msgstr "Pratinjau Permainan GNOME Taquin"
 msgid "The GNOME Project"
 msgstr "Proyek GNOME"
 
-#. Translators: Do NOT translate or transliterate this text (this is an icon file name)!
-#: data/org.gnome.Taquin.desktop.in:4
-msgid "org.gnome.Taquin"
-msgstr "org.gnome.Taquin"
-
 #. Translators: application name, as used in the window manager, the window title, the about dialog...
-#: data/org.gnome.Taquin.desktop.in:5 src/taquin-main.vala:26
+#: data/org.gnome.Taquin.desktop.in:3 src/taquin-main.vala:26
 msgid "Taquin"
 msgstr "Taquin"
 
@@ -71,23 +67,67 @@ msgstr "potongan;"
 
 #. Translators: an action Name, as defined in the desktop file spec; name of the traditional Taquin game
 #. Translators: when configuring a new game, label of the first big button; name of the traditional Taquin game
-#: data/org.gnome.Taquin.desktop.in:21 data/taquin-screens.ui:92
+#: data/org.gnome.Taquin.desktop.in:21 data/ui/taquin-screens.ui:95
 msgid "15-Puzzle"
 msgstr "15-Potongan"
 
 #. Translators: an action Name, as defined in the desktop file spec; name of the alternative game
 #. Translators: when configuring a new game, label of the second big button; name of the non-traditional game
-#: data/org.gnome.Taquin.desktop.in:26 data/taquin-screens.ui:109
+#: data/org.gnome.Taquin.desktop.in:26 data/ui/taquin-screens.ui:112
 msgid "16-Puzzle"
 msgstr "16-Potongan"
 
+#. Translators: summary of a settings key, see 'dconf-editor /org/gnome/taquin/automatic-night-mode'
+#: data/org.gnome.Taquin.gschema.xml:6
+msgid "A flag to follow system night light"
+msgstr "Tanda untuk mengikuti cahaya malam sistem"
+
+#. Translators: description of a settings key, see 'dconf-editor /org/gnome/taquin/automatic-night-mode'
+#: data/org.gnome.Taquin.gschema.xml:8
+msgid "Use GNOME night light setting to activate night-mode."
+msgstr "Gunakan pengaturan cahaya malam GNOME untuk mengaktifkan mode malam."
+
+#. see AdaptativeWindow.width-request at data/ui/adaptative-window.ui:22
+#. range min="350"/ FIXME
+#. Translators: summary of a settings key, see 'dconf-editor /org/gnome/taquin/window-width'
+#: data/org.gnome.Taquin.gschema.xml:15
+msgid "The width of the window"
+msgstr "Lebar jendela"
+
+#. Translators: summary of a settings key, see 'dconf-editor /org/gnome/taquin/window-width'
+#: data/org.gnome.Taquin.gschema.xml:17
+msgid "The width of the main window in pixels."
+msgstr "Lebar jendela utama dalam piksel."
+
+#. see AdaptativeWindow.height-request at data/ui/adaptative-window.ui:21
+#. range min="284"/ FIXME
+#. Translators: summary of a settings key, see 'dconf-editor /org/gnome/taquin/window-height'
+#: data/org.gnome.Taquin.gschema.xml:24
+msgid "The height of the window"
+msgstr "Tinggi jendela"
+
+#. Translators: description of a settings key, see 'dconf-editor /org/gnome/taquin/window-height'
+#: data/org.gnome.Taquin.gschema.xml:26
+msgid "The height of the main window in pixels."
+msgstr "Tinggi dari jendela utama dalam piksel."
+
+#. Translators: summary of a settings key, see 'dconf-editor /org/gnome/taquin/window-is-maximized'
+#: data/org.gnome.Taquin.gschema.xml:31
+msgid "A flag to enable maximized mode"
+msgstr "Tanda untuk mengaktifkan mode pemaksimalan"
+
+#. Translators: description of a settings key, see 'dconf-editor /org/gnome/taquin/window-is-maximized'
+#: data/org.gnome.Taquin.gschema.xml:33
+msgid "If “true”, the main window starts in maximized mode."
+msgstr "Jika \"true\", jendela utama mulai dalam mode pemaksimalan."
+
 #. Translators: summary of a settings key, see 'dconf-editor /org/gnome/taquin/size'
-#: data/org.gnome.Taquin.gschema.xml:16
+#: data/org.gnome.Taquin.gschema.xml:51
 msgid "Number of tiles on each edge."
 msgstr "Jumlah ubin pada setiap sisi."
 
 #. Translators: description of a settings key, see 'dconf-editor /org/gnome/taquin/size'
-#: data/org.gnome.Taquin.gschema.xml:18
+#: data/org.gnome.Taquin.gschema.xml:53
 msgid ""
 "The game offers to play with a board size from 3 to 5. The setting could be "
 "set from 2 (good for testing) to 9, limited by the way files are selected."
@@ -97,217 +137,192 @@ msgstr ""
 "dengan cara berkas-berkas dipilih."
 
 #. Translators: summary of a settings key, see 'dconf-editor /org/gnome/taquin/theme'
-#: data/org.gnome.Taquin.gschema.xml:23
+#: data/org.gnome.Taquin.gschema.xml:58
 msgid "Name of the theme folder."
 msgstr "Nama folder tema."
 
 #. Translators: description of a settings key, see 'dconf-editor /org/gnome/taquin/theme'; TODO the themes names are translated in the UI, but not in the settings; not sure what to do for now
-#: data/org.gnome.Taquin.gschema.xml:25
+#: data/org.gnome.Taquin.gschema.xml:60
 msgid "Taquin has two default themes: 'cats' and 'numbers'."
 msgstr "Taquin memiliki dua tema bawaan: 'kucing' dan 'angka'."
 
 #. Translators: summary of a settings key, see 'dconf-editor /org/gnome/taquin/sound'
-#: data/org.gnome.Taquin.gschema.xml:30
+#: data/org.gnome.Taquin.gschema.xml:65
 msgid "Sound"
 msgstr "Suara"
 
 #. Translators: description of a settings key, see 'dconf-editor /org/gnome/taquin/sound'
-#: data/org.gnome.Taquin.gschema.xml:32
+#: data/org.gnome.Taquin.gschema.xml:67
 msgid "Whether or not to play event sounds."
 msgstr "Mainkan suara event atau tidak."
 
-#. Translators: summary of a settings key, see 'dconf-editor /org/gnome/taquin/window-width'
-#: data/org.gnome.Taquin.gschema.xml:37
-msgid "Width of the window in pixels."
-msgstr "Panjang jendela dalam piksel."
-
-#. Translators: summary of a settings key, see 'dconf-editor /org/gnome/taquin/window-height'
-#: data/org.gnome.Taquin.gschema.xml:43
-msgid "Height of the window in pixels."
-msgstr "Lebar jendela dalam piksel."
-
-#. Translators: summary of a settings key, see 'dconf-editor /org/gnome/taquin/window-is-maximized'
-#: data/org.gnome.Taquin.gschema.xml:49
-msgid "true if the window is maximized."
-msgstr "true bahwa jendela ter-maximized."
-
-#. Translators: summary of a settings key, see 'dconf-editor /org/gnome/taquin/automatic-night-mode'
-#: data/org.gnome.Taquin.gschema.xml:57
-msgid "Follow system night light"
-msgstr "Ikuti cahaya malam sistem"
-
-#. Translators: description of a settings key, see 'dconf-editor /org/gnome/taquin/automatic-night-mode'
-#: data/org.gnome.Taquin.gschema.xml:59
-msgid "Use GNOME night light setting to activate night-mode."
-msgstr "Gunakan pengaturan cahaya malam GNOME untuk mengaktifkan mode malam."
-
 #. Translators: accessible name of the hamburger menu
-#: data/base-headerbar.ui:112
+#: data/ui/base-headerbar.ui:113
 msgid "Actions"
 msgstr "Aksi"
 
 #. Translators: accessible description of the hamburger menu
-#: data/base-headerbar.ui:114
+#: data/ui/base-headerbar.ui:115
 msgid "Current view actions"
 msgstr "Aksi tampilan saat ini"
 
 #. Translators: accessible name of the history menubutton
-#: data/game-headerbar.ui:32
+#: data/ui/game-headerbar.ui:32
 msgid "History"
 msgstr "Riwayat"
 
 #. Translators: accessible description of the history menubutton
-#: data/game-headerbar.ui:34
+#: data/ui/game-headerbar.ui:34
 msgid "Game history menu"
 msgstr "Menu riwayat permainan"
 
 #. Translators: when configuring a new game, if the user has a started game, tooltip text of the Go back button
-#: data/game-headerbar.ui:49
+#: data/ui/game-headerbar.ui:49
 msgid "Go back to the current game"
 msgstr "Kembali ke permainan saat ini"
 
 #. Translators: during a game, tooltip text of the New Game button
-#: data/game-headerbar.ui:69
+#: data/ui/game-headerbar.ui:69
 msgid "Start a new game"
 msgstr "Mulai permainan baru"
 
 #. Translators: during a game, label of the New Game button (with a mnemonic that appears pressing Alt)
-#: data/game-headerbar.ui:78
+#: data/ui/game-headerbar.ui:78
 msgid "_New Game"
 msgstr "Permai_nan Baru"
 
-#: data/help-overlay.ui:28
+#: data/ui/help-overlay.ui:28
 msgctxt "shortcut window"
 msgid "During game selection"
 msgstr "Selama pemilihan permainan"
 
-#: data/help-overlay.ui:32
+#: data/ui/help-overlay.ui:32
 msgctxt "shortcut window"
 msgid "Start new game"
 msgstr "Mulai permainan baru"
 
-#: data/help-overlay.ui:39
+#: data/ui/help-overlay.ui:39
 msgctxt "shortcut window"
 msgid "Go back"
 msgstr "Mundur"
 
-#: data/help-overlay.ui:48
+#: data/ui/help-overlay.ui:48
 msgctxt "shortcut window"
 msgid "During a game"
 msgstr "Selama permainan"
 
-#: data/help-overlay.ui:52
+#: data/ui/help-overlay.ui:52
 msgctxt "shortcut window"
 msgid "New game"
 msgstr "Permainan baru"
 
-#: data/help-overlay.ui:59
+#: data/ui/help-overlay.ui:59
 msgctxt "shortcut window"
 msgid "Restart game"
 msgstr "Ulangi permainan"
 
-#: data/help-overlay.ui:66
+#: data/ui/help-overlay.ui:66
 msgctxt "shortcut window"
 msgid "Undo last move"
 msgstr "Batalkan gerakan terakhir"
 
-#: data/help-overlay.ui:75
+#: data/ui/help-overlay.ui:75
 msgctxt "shortcut window"
 msgid "15-Puzzle"
 msgstr "15-Potongan"
 
-#: data/help-overlay.ui:79
+#: data/ui/help-overlay.ui:79
 msgctxt "shortcut window"
 msgid "Select tile to push on"
 msgstr "Pilih ubin untuk mendorong"
 
-#: data/help-overlay.ui:86
+#: data/ui/help-overlay.ui:86
 msgctxt "shortcut window"
 msgid "Push on selected tile"
 msgstr "Dorong ubin yang dipilih"
 
-#: data/help-overlay.ui:95
+#: data/ui/help-overlay.ui:95
 msgctxt "shortcut window"
 msgid "16-Puzzle"
 msgstr "16-Potongan"
 
-#: data/help-overlay.ui:99
+#: data/ui/help-overlay.ui:99
 msgctxt "shortcut window"
 msgid "Change selected column"
 msgstr "Ubah kolom yang dipilih"
 
-#: data/help-overlay.ui:106
+#: data/ui/help-overlay.ui:106
 msgctxt "shortcut window"
 msgid "Change selected row"
 msgstr "Ubah baris yang dipilih"
 
-#: data/help-overlay.ui:113
+#: data/ui/help-overlay.ui:113
 msgctxt "shortcut window"
 msgid "Swipe selected row"
 msgstr "Geser baris yang dipilih"
 
-#: data/help-overlay.ui:120
+#: data/ui/help-overlay.ui:120
 msgctxt "shortcut window"
 msgid "Swipe selected column"
 msgstr "Geser kolom yang dipilih"
 
-#: data/help-overlay.ui:129
+#: data/ui/help-overlay.ui:129
 msgctxt "shortcut window"
 msgid "Generic"
 msgstr "Generik"
 
-#: data/help-overlay.ui:133
+#: data/ui/help-overlay.ui:133
 msgctxt "shortcut window"
 msgid "Keyboard shortcuts"
 msgstr "Pintasan Papan Tik"
 
-#: data/help-overlay.ui:140
+#: data/ui/help-overlay.ui:140
 msgctxt "shortcut window"
 msgid "Help"
 msgstr "Bantuan"
 
-#: data/help-overlay.ui:147
+#: data/ui/help-overlay.ui:147
 msgctxt "shortcut window"
 msgid "About"
 msgstr "Tentang"
 
-#: data/help-overlay.ui:154
+#: data/ui/help-overlay.ui:154
 msgctxt "shortcut window"
 msgid "Quit"
 msgstr "Keluar"
 
 #. Translators: when configuring a new game, entry in the menu of the game size menubutton
-#: data/taquin-screens.ui:24
+#: data/ui/taquin-screens.ui:24
 msgid "3 × 3"
 msgstr "3 x 3"
 
 #. Translators: when configuring a new game, entry in the menu of the game size menubutton
-#: data/taquin-screens.ui:30
+#: data/ui/taquin-screens.ui:30
 msgid "4 × 4"
 msgstr "4 x 4"
 
 #. Translators: when configuring a new game, entry in the menu of the game size menubutton
-#: data/taquin-screens.ui:36
+#: data/ui/taquin-screens.ui:36
 msgid "5 × 5"
 msgstr "5 x 5"
 
 #. Translators: when configuring a new game, entry in the menu of the game theme menubutton; play with cats images
-#: data/taquin-screens.ui:46
+#: data/ui/taquin-screens.ui:46
 msgid "Cats"
 msgstr "Kucing"
 
 #. Translators: when configuring a new game, entry in the menu of the game theme menubutton; play with numbers
-#: data/taquin-screens.ui:52
+#: data/ui/taquin-screens.ui:52
 msgid "Numbers"
 msgstr "Angka"
 
 #. Translators: when configuring a new game, header of the game type that appears on small screen
-#: data/taquin-screens.ui:67
+#: data/ui/taquin-screens.ui:70
 msgid "Game"
 msgstr "Permainan"
 
 #. Translators: when configuring a new game, header of the options that appears on small screen
-#: data/taquin-screens.ui:131
+#: data/ui/taquin-screens.ui:134
 msgid "Options"
 msgstr "Opsi"
 
@@ -377,32 +392,32 @@ msgid "_Help"
 msgstr "Ba_ntuan"
 
 #. Translators: hamburger menu entry; sound togglebutton (with a mnemonic that appears pressing Alt)
-#: src/game-headerbar.vala:179
+#: src/game-headerbar.vala:188
 msgid "_Sound"
 msgstr "_Suara"
 
 #. Translators: in-window notification; on both games, if the user solved the puzzle more than one time
-#: src/game-headerbar.vala:238
+#: src/game-headerbar.vala:249
 msgid "Bravo! You improved your best score!"
 msgstr "Bravo! Anda meningkatkan skor terbaik Anda!"
 
 #. Translators: in-window notification; on both games, if the user solved the puzzle more than one time
-#: src/game-headerbar.vala:245
+#: src/game-headerbar.vala:256
 msgid "Bravo! You equalized your best score."
 msgstr "Bravo! Anda menyamakan skor terbaik Anda."
 
 #. Translators: in-window notification; on both games, if the user solved the puzzle more than one time
-#: src/game-headerbar.vala:252
+#: src/game-headerbar.vala:263
 msgid "Bravo! You finished the game again."
 msgstr "Bravo! Anda telah menyelesaikan permainan."
 
 #. Translators: in-window notification; on both games, if the user solves the puzzle the first time
-#: src/game-headerbar.vala:261
+#: src/game-headerbar.vala:272
 msgid "Bravo! You finished the game!"
 msgstr "Bravo! Anda telah menyelesaikan permainan!"
 
 #. Translators: during a game, entry in the menu of the history menubutton (with a mnemonic that appears pressing Alt)
-#: src/game-headerbar.vala:281
+#: src/game-headerbar.vala:292
 msgid "_Undo"
 msgstr "_Tak Jadi"
 
@@ -410,23 +425,23 @@ msgstr "_Tak Jadi"
 #. /* Translators: during a game, entry in the menu of the history menubutton (with a mnemonic that appears pressing Alt) */
 #. section.append (_("_Redo"), "ui.redo");
 #. Translators: during a game, entry in the menu of the history menubutton (with a mnemonic that appears pressing Alt)
-#: src/game-headerbar.vala:289
+#: src/game-headerbar.vala:301
 msgid "_Restart"
 msgstr "_Ulangi"
 
 #. Translators: during a game that has already been finished (and possibly restarted), entry in the menu of the moves button
-#: src/game-headerbar.vala:300
+#: src/game-headerbar.vala:312
 #, c-format
 msgid "Best score: %s"
 msgstr "Skor terbaik: %s"
 
 #. Translators: when configuring a new game, label of the blue Start button (with a mnemonic that appears pressing Alt)
-#: src/game-view.vala:57
+#: src/game-view.vala:58
 msgid "_Start Game"
 msgstr "M_ulai Permainan"
 
 #. Translator: during a game, if the user tries with <Shift><Ctrl>n to restart the game, while already on initial position
-#: src/game-window.vala:201
+#: src/game-window.vala:210
 msgid "Already on initial position."
 msgstr "Sudah di posisi awal."
 
@@ -481,39 +496,75 @@ msgid "About Taquin"
 msgstr "Tentang Taquin"
 
 #. Translators: in-window notification; on the 15-Puzzle game, if the user clicks a tile that cannot move
-#: src/taquin-main.vala:320
+#: src/taquin-main.vala:325
 msgid "You can’t move this tile!"
 msgstr "Anda tidak dapat memindahkan ubin ini!"
 
 #. Translators: in-window notification; on the 16-Puzzle game, help for keyboard use, displayed if the user uses an unmeaningful keyboard key
-#: src/taquin-main.vala:329
+#: src/taquin-main.vala:334
 msgid "Use Shift and an arrow to move tiles!"
 msgstr "Gunakan Shift dan tanda panah untuk memindahkan ubin!"
 
 #. Translators: in-window notification; on the 16-Puzzle game, if the user clicks on a tile of the board (the game is played using mouse with arrows around the board)
-#: src/taquin-main.vala:333
+#: src/taquin-main.vala:338
 msgid "Click on the arrows to move tiles!"
 msgstr "Klik pada tanda panah untuk memindahkan ubin!"
 
 #. Translators: about dialog text
-#: src/taquin-main.vala:433
+#: src/taquin-main.vala:501
 msgid "A classic 15-puzzle game"
 msgstr "Sebuah permainan 15-potongan klasik"
 
+#. Translators: about dialog text crediting an artist (a photograph), with the website where the image was published
+#: src/taquin-main.vala:505
+msgid "Abelard (Wikimedia)"
+msgstr "Abelard (Wikimedia)"
+
+#: src/taquin-main.vala:505
+msgid "Alvesgaspar (Wikimedia)"
+msgstr "Alvesgaspar (Wikimedia)"
+
+#: src/taquin-main.vala:505
+msgid "Mueller-rech.muenchen (Wikimedia)"
+msgstr "Mueller-rech.muenchen (Wikimedia)"
+
+#: src/taquin-main.vala:506
+msgid "Ruskis (Wikimedia)"
+msgstr "Ruskis (Wikimedia)"
+
+#: src/taquin-main.vala:506
+msgid "Toyah (Wikimedia)"
+msgstr "Toyah (Wikimedia)"
+
 #. Translators: about dialog text; in the Credits, text at the end of the "Artwork by" section
-#: src/taquin-main.vala:442
+#: src/taquin-main.vala:509
 msgid "(see COPYING.themes for informations)"
 msgstr "(Lihat COPYING.themes untuk informasi)"
 
+#. Translators: about dialog text crediting an author
+#. Translators: about dialog text crediting a documenter
+#: src/taquin-main.vala:513 src/taquin-main.vala:521
+msgid "Arnaud Bonatti"
+msgstr "Arnaud Bonatti"
+
+#. Translators: about dialog text crediting a maintainer; the %u are replaced with the years of start and end
+#: src/taquin-main.vala:517
+#, c-format
+msgid "Copyright © %u-%u – Arnaud Bonatti"
+msgstr "Hak Cipta © %u-%u – Arnaud Bonatti"
+
 #. Translators: about dialog text; this string should be replaced by a text crediting yourselves and your translation team, or should be left empty. Do not translate literally!
-#: src/taquin-main.vala:453
+#: src/taquin-main.vala:526
 msgid "translator-credits"
 msgstr "Kukuh Syafaat <kukuhsyafaat@gnome.org>, 2017, 2019."
 
 #. Translators: about dialog text; label of the website link
-#: src/taquin-main.vala:458
+#: src/taquin-main.vala:531
 msgid "Page on GNOME wiki"
 msgstr "Halaman di wiki GNOME"
+
+#~ msgid "org.gnome.Taquin"
+#~ msgstr "org.gnome.Taquin"
 
 #~ msgid "_Start Over"
 #~ msgstr "_Mulai Main"
