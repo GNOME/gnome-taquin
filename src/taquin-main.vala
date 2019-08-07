@@ -151,7 +151,37 @@ private class Taquin : Gtk.Application, BaseApplication
 
         /* UI parts */
         view = new TaquinView ();
-        new_game_screen = new NewGameScreen ();
+
+        GLib.Menu size_menu = new GLib.Menu ();
+        /* Translators: when configuring a new game, entry in the menu of the game size menubutton */
+        size_menu.append (_("3 × 3"), "app.change-size('3')");
+
+        /* Translators: when configuring a new game, entry in the menu of the game size menubutton */
+        size_menu.append (_("4 × 4"), "app.change-size('4')");
+
+        /* Translators: when configuring a new game, entry in the menu of the game size menubutton */
+        size_menu.append (_("5 × 5"), "app.change-size('5')");
+        size_menu.freeze ();
+
+        GLib.Menu theme_menu = new GLib.Menu ();
+        /* Translators: when configuring a new game, entry in the menu of the game theme menubutton; play with cats images */
+        theme_menu.append (_("Cats"), "app.change-theme('cats')");
+
+
+        /* Translators: when configuring a new game, entry in the menu of the game theme menubutton; play with numbers */
+        theme_menu.append (_("Numbers"), "app.change-theme('numbers')");
+        theme_menu.freeze ();
+
+        /* Translators: when configuring a new game, label of the first big button; name of the traditional Taquin game */
+        new_game_screen = new NewGameScreen (_("15-Puzzle"),
+                                             "app.type('fifteen')",
+
+        /* Translators: when configuring a new game, label of the second big button; name of the non-traditional game */
+                                             _("16-Puzzle"),
+                                             "app.type('sixteen')",
+
+                                             size_menu,
+                                             theme_menu);
 
         /* Window */
         init_night_mode ();
@@ -197,10 +227,10 @@ private class Taquin : Gtk.Application, BaseApplication
         /* New-game screen signals */
         settings.changed ["size"].connect (() => {
             if (!size_changed)
-                new_game_screen.update_size_button_label (settings.get_int ("size") /* 2 <= size <= 9 */);
+                update_size_button_label (settings.get_int ("size") /* 2 <= size <= 9 */);
             size_changed = false;
         });
-        new_game_screen.update_size_button_label (settings.get_int ("size") /* 2 <= size <= 9 */);
+        update_size_button_label (settings.get_int ("size") /* 2 <= size <= 9 */);
 
         settings.changed ["theme"].connect (() => {
             if (!theme_changed)
@@ -388,27 +418,43 @@ private class Taquin : Gtk.Application, BaseApplication
     {
         size_changed = true;
         int size = int.parse (((!) variant).get_string ());
-        new_game_screen.update_size_button_label (size /* 3 <= size <= 5 */);
+        update_size_button_label (size /* 3 <= size <= 5 */);
         settings.set_int ("size", size);
+    }
+    private void update_size_button_label (int size)
+    {
+        new_game_screen.update_menubutton_label (NewGameScreen.MenuButton.ONE,
+                                                 NewGameScreen.get_size_button_label (size));
     }
 
     private void change_theme_cb (SimpleAction action, Variant? variant)
         requires (variant != null)
     {
-        theme_changed = true;
-        string name = ((!) variant).get_string ();
-        update_theme (name);
-        settings.set_string ("theme", name);
+        update_theme (((!) variant).get_string ());
     }
-    private void update_theme (string theme)
+    private void update_theme (string theme_id)
     {
-        new_game_screen.update_theme (theme);
+        theme_changed = true;
+        if (_update_theme (theme_id))
+            settings.set_string ("theme", theme_id);
+        else
+        {
+            if (!_update_theme ("cats"))
+                assert_not_reached ();
+            settings.set_string ("theme", "cats");
+        }
+    }
+    private bool _update_theme (string theme_id)
+    {
+        new_game_screen.update_menubutton_label (NewGameScreen.MenuButton.TWO,
+                                                 get_theme_button_label (theme_id));
 
         Dir dir;
         theme_dirlist = new List<string> ();
+        bool success = false;
         try
         {
-            dir = Dir.open (Path.build_filename (DATA_DIRECTORY, "themes", theme));
+            dir = Dir.open (Path.build_filename (DATA_DIRECTORY, "themes", theme_id));
             while (true)
             {
                 string? filename = dir.read_name ();
@@ -416,10 +462,26 @@ private class Taquin : Gtk.Application, BaseApplication
                     break;
                 theme_dirlist.append ((!) filename);
             }
+            success = true;
         }
         catch (FileError e)
         {
             warning ("Failed to load images: %s", e.message);
+        }
+        return success;
+    }
+    private static inline string get_theme_button_label (string theme_id)
+    {
+        switch (theme_id)
+        {
+            /* Translators: when configuring a new game, button label for the theme, if the current theme is Cats */
+            case "cats":    return _("Theme: Cats ▾");
+
+            /* Translators: when configuring a new game, button label for the theme, if the current theme is Numbers */
+            case "numbers": return _("Theme: Numbers ▾");
+
+            /* Translators: when configuring a new game, button label for the theme, if the current theme has been added by the user; the %s is replaced by the theme name */
+            default:        return _("Theme: %s ▾").printf (theme_id);
         }
     }
 

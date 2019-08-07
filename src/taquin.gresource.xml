@@ -11,10 +11,11 @@
     <file alias="base-window.css">../data/base-window.css</file>
     <file preprocess="xml-stripblanks" alias="base-window.ui">../data/ui/base-window.ui</file>
     <file preprocess="xml-stripblanks" alias="game-headerbar.ui">../data/ui/game-headerbar.ui</file>
+    <file alias="new-game-screen.css">../data/new-game-screen.css</file>
+    <file preprocess="xml-stripblanks" alias="new-game-screen.ui">../data/ui/new-game-screen.ui</file>
     <file preprocess="xml-stripblanks" alias="notifications-revealer.ui">../data/ui/notifications-revealer.ui</file>
     <file preprocess="xml-stripblanks" alias="overlayed-list.ui">../data/ui/overlayed-list.ui</file>
     <file preprocess="xml-stripblanks" alias="registry-placeholder.ui">../data/ui/registry-placeholder.ui</file>
-    <file preprocess="xml-stripblanks" alias="taquin-screens.ui">../data/ui/taquin-screens.ui</file>
     <file alias="taquin.css">../data/taquin.css</file>
   </gresource>
   <gresource prefix="/org/gnome/Taquin/gtk">
