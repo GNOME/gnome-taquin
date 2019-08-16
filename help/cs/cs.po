@@ -1,15 +1,15 @@
 # Czech translation for gnome-taquin.
 # Copyright (C) 2015 gnome-taquin's COPYRIGHT HOLDER
 # This file is distributed under the same license as the gnome-taquin package.
-# Marek Černocký <marek@manet.cz>, 2015, 2018.
+# Marek Černocký <marek@manet.cz>, 2015, 2018, 2019.
 #
 msgid ""
 msgstr ""
 "Project-Id-Version: gnome-taquin master\n"
-"POT-Creation-Date: 2018-08-09 13:38+0000\n"
-"PO-Revision-Date: 2018-08-30 17:07+0200\n"
+"POT-Creation-Date: 2019-02-17 12:57+0000\n"
+"PO-Revision-Date: 2019-08-16 12:58+0200\n"
 "Last-Translator: Marek Černocký <marek@manet.cz>\n"
-"Language-Team: Czech <gnome-cs-list@gnome.org>\n"
+"Language-Team: čeština <gnome-cs-list@gnome.org>\n"
 "Language: cs\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -31,8 +31,8 @@ msgstr "Arnaud Bonatti"
 #. (itstool) path: credit/years
 #: C/15-Puzzle.page:12 C/16-Puzzle.page:12 C/beginning.page:12
 #: C/shortcuts.page:12 C/start-screen.page:12
-msgid "2014"
-msgstr "2014"
+msgid "2014-2019"
+msgstr "2014 - 2019"
 
 #. (itstool) path: page/title
 #: C/15-Puzzle.page:18
@@ -88,11 +88,15 @@ msgstr ""
 #. (itstool) path: section/p
 #: C/15-Puzzle.page:33 C/16-Puzzle.page:33
 msgid ""
-"You can click the <gui>Start Over</gui> button to go to the <link xref="
-"\"start-screen\">Start Screen</link>."
+"You can click the <gui>New Game</gui> button in the headerbar to go to the "
+"<link xref=\"start-screen\">Start Screen</link>. Alternatively, you can "
+"restart the game by clicking on the button with a counter of moves done, and "
+"then on the <gui>Restart</gui> entry."
 msgstr ""
-"Můžete kliknout na tlačítko <gui>Začít jinou hru</gui>, abyste přešli na "
-"<link xref=\"start-screen\">spouštěcí obrazovku</link>."
+"Kliknutím na tlačítko <gui>Nová hra</gui> se můžete dostat na <link xref="
+"\"start-screen\">spouštěcí obrazovku</link>. Případně můžete stávající hru "
+"restartovat a začít ji od začátku kliknutím na tlačítko s počitadlem "
+"provedených tahů a pak zvolit <gui>Začít znovu</gui>."
 
 #. (itstool) path: section/title
 #: C/15-Puzzle.page:37 C/16-Puzzle.page:37
@@ -100,18 +104,18 @@ msgid "How to play with a mouse"
 msgstr "Jak hrát myší"
 
 #. (itstool) path: section/p
-#: C/15-Puzzle.page:39 C/15-Puzzle.page:57 C/16-Puzzle.page:39
-#: C/16-Puzzle.page:55
+#: C/15-Puzzle.page:39 C/15-Puzzle.page:68 C/16-Puzzle.page:39
+#: C/16-Puzzle.page:65
 msgid "To make a move:"
 msgstr "Když chcete posunout díl:"
 
 #. (itstool) path: item/p
-#: C/15-Puzzle.page:41 C/beginning.page:25
+#: C/15-Puzzle.page:42 C/beginning.page:26
 msgid "Click on a tile on the same row or column as the empty space."
 msgstr "Klikněte na díl ve stejném řádku nebo sloupci, jako je prázdné místo."
 
 #. (itstool) path: note/p
-#: C/15-Puzzle.page:42 C/15-Puzzle.page:61 C/beginning.page:26
+#: C/15-Puzzle.page:44 C/15-Puzzle.page:74 C/beginning.page:28
 msgid ""
 "If you click on a tile that cannot move, the game notifies you that the move "
 "is impossible."
@@ -120,37 +124,56 @@ msgstr ""
 "možný."
 
 #. (itstool) path: item/p
-#: C/15-Puzzle.page:45 C/16-Puzzle.page:43
+#: C/15-Puzzle.page:48 C/16-Puzzle.page:45 C/beginning.page:32
 msgid ""
-"You can always undo a move by clicking the <gui>Undo</gui> button at the "
-"left of the header bar."
+"You can always undo your move. For that, click on the button with a counter "
+"of moves done in the headerbar, and click the <gui>Undo</gui> entry in the "
+"menu that appears."
 msgstr ""
-"Vždy máte možnost tah vrátit zpět kliknutím na tlačítko <gui>Zpět</gui> "
-"vlevo na hlavičkové liště."
-
-#. (itstool) path: item/p
-#: C/15-Puzzle.page:47 C/16-Puzzle.page:45 C/beginning.page:31
-msgid ""
-"At the end of the game, or when you want to switch games, click the "
-"<gui>Start Over</gui> button to go to the <link xref=\"start-screen\">Start "
-"Screen</link>."
-msgstr ""
-"Když dokončíte hru, nebo když chcete hru změnit, klikněte na tlačítko "
-"<gui>Začít jinou hru</gui>, abyste se dostali na <link xref=\"start-screen"
-"\">spouštěcí obrazovku</link>."
+"Kdykoliv můžete svůj tah vrátit zpět. Stačí kliknout na tlačítko s "
+"počitadlem provedených tahů na hlavičkové liště a pak v nabídce, která se "
+"objeví, zvolit <gui>Zpět</gui>."
 
 #. (itstool) path: section/p
-#: C/15-Puzzle.page:51 C/16-Puzzle.page:49
+#: C/15-Puzzle.page:52 C/15-Puzzle.page:82 C/16-Puzzle.page:49
+#: C/16-Puzzle.page:76
+msgid "Whether you finished the current game or not:"
+msgstr "Ať už stávající hru dokončíte či nikoliv:"
+
+#. (itstool) path: item/p
+#: C/15-Puzzle.page:55 C/16-Puzzle.page:52
+msgid ""
+"To start a new game –possibly with other options–, click the <gui>New Game</"
+"gui> button in the headerbar to go to the <link xref=\"start-screen\">Start "
+"Screen</link>."
+msgstr ""
+"Abyste začali novou hru, s případně jiným nastavením, klikněte na tlačítko "
+"<gui>Nová hra</gui> na hlavičkové liště a dostanete se na <link xref=\"start-"
+"screen\">spouštěcí obrazovku</link>."
+
+#. (itstool) path: item/p
+#: C/15-Puzzle.page:58 C/16-Puzzle.page:55
+msgid ""
+"Alternatively, you may want to restart the game. For that, click in the "
+"headerbar on the button with a counter of moves done, and click the "
+"<gui>Restart</gui> entry in the menu that appears."
+msgstr ""
+"Případně můžete chtít začít stávající hru od začátku. Pak klikněte na "
+"hlavičkové liště na tlačítko s počitadlem provedených tahů a v nabídce, "
+"která se objeví, zvolte <gui>Začít znvou</gui>."
+
+#. (itstool) path: section/p
+#: C/15-Puzzle.page:62 C/16-Puzzle.page:59
 msgid "You can also use the keyboard."
 msgstr "Můžete používat také klávesnici."
 
 #. (itstool) path: section/title
-#: C/15-Puzzle.page:55 C/16-Puzzle.page:53
+#: C/15-Puzzle.page:66 C/16-Puzzle.page:63
 msgid "How to play with the keyboard"
 msgstr "Jak hrát klávesnicí"
 
 #. (itstool) path: item/p
-#: C/15-Puzzle.page:59
+#: C/15-Puzzle.page:71
 msgid ""
 "Use the <key>Left</key>, <key>Right</key>, <key>Up</key> and <key>Down</key> "
 "arrows to go at the tile you want to move. The currently selected tile is "
@@ -162,7 +185,7 @@ msgstr ""
 "čtyřmi šipkami okolo herní desky, na obou stranách řádku a sloupce."
 
 #. (itstool) path: item/p
-#: C/15-Puzzle.page:60
+#: C/15-Puzzle.page:72
 msgid ""
 "Use the <key>Space</key> key to move the selected tile in the direction of "
 "the empty space."
@@ -171,27 +194,37 @@ msgstr ""
 "místu."
 
 #. (itstool) path: item/p
-#: C/15-Puzzle.page:64 C/16-Puzzle.page:60
+#: C/15-Puzzle.page:78 C/16-Puzzle.page:72
 msgid ""
-"You can always undo a move with the <keyseq><key>Ctrl</key><key>Z</key></"
-"keyseq> keys."
+"You can always undo your move. For that, use the <keyseq><key>Ctrl</"
+"key><key>Z</key></keyseq> keys sequence."
 msgstr ""
-"Pomocí kláves <keyseq><key>Ctrl</key><key>Z</key></keyseq> můžete jednotlivé "
-"tahy kdykoliv vrátit."
+"Své jednotlivé tahy můžete kdykoliv vrátit. Použijte k tomu kombinaci kláves "
+"<keyseq><key>Ctrl</key><key>Z</key></keyseq>."
 
 #. (itstool) path: item/p
-#: C/15-Puzzle.page:66 C/16-Puzzle.page:62
+#: C/15-Puzzle.page:85 C/16-Puzzle.page:79
 msgid ""
-"At the end of the game, or when you want to switch games, use the "
-"<keyseq><key>Ctrl</key><key>N</key></keyseq> keys to go to the <link xref="
-"\"start-screen\">Start Screen</link>."
+"To start a new game –possibly with other options–, use the "
+"<keyseq><key>Ctrl</key><key>N</key></keyseq> keys sequence to go to the "
+"<link xref=\"start-screen\">Start Screen</link>."
 msgstr ""
-"Na konci hry, nebo když chcete začít jinou hru, použijte <keyseq><key>Ctrl</"
-"key><key>N</key></keyseq> k zobrazení <link xref=\"start-screen\">spouštěcí "
-"obrazovky</link>."
+"Ke spuštění nové hry, s jiným možným nastavením, použijte kombinaci kláves "
+"<keyseq><key>Ctrl</key><key>N</key></keyseq> a dostanete se na <link xref="
+"\"start-screen\">spouštěcí obrazovku</link>."
+
+#. (itstool) path: item/p
+#: C/15-Puzzle.page:88 C/16-Puzzle.page:82
+msgid ""
+"Alternatively, you may want to restart the game. For that, use the "
+"<keyseq><key>Shift</key><key>Ctrl</key><key>N</key></keyseq> keys sequence."
+msgstr ""
+"Případně můžete chtít začít stejnou hru od začátku. K restartu hry použijte "
+"kombinaci kláves <keyseq><key>Shift</key><key>Ctrl</key><key>N</key></"
+"keyseq>."
 
 #. (itstool) path: section/p
-#: C/15-Puzzle.page:70 C/16-Puzzle.page:66
+#: C/15-Puzzle.page:92 C/16-Puzzle.page:86
 msgid "You can also use a mouse."
 msgstr "Můžete používat také myš."
 
@@ -223,7 +256,7 @@ msgstr ""
 "sloupce."
 
 #. (itstool) path: item/p
-#: C/16-Puzzle.page:41
+#: C/16-Puzzle.page:42
 msgid ""
 "Click on one of the arrows displayed around the board. The row or column at "
 "the end of which this arrow is moves in this direction, and the tile that "
@@ -234,28 +267,30 @@ msgstr ""
 "se přemístí na opačnou stranu."
 
 #. (itstool) path: item/p
-#: C/16-Puzzle.page:57
+#: C/16-Puzzle.page:68
 msgid ""
-"Use the <key>Left</key>, <key>Right</key>, <key>Up</key> and <key>Down</key> "
-"arrows to go at the row or the column you want to move. The currently "
-"selected row and column are indicated with two lights around the board."
+"Use the <key>Left</key> and <key>Right</key> arrows to change the selected "
+"column, and the <key>Up</key> and <key>Down</key> arrows to change the "
+"selected row. The currently selected row and column are indicated with "
+"lights around the board."
 msgstr ""
-"Použijte šipky <key>←</key>, <key>→</key>, <key>↑</key> a <key>↓</key>, "
-"abyste přešli na řádek nebo sloupec, který chcete posunout. Právě vybraný "
-"řádek a sloupec jsou označeny osvětlením okolo herní desky."
+"Ke změně vybraného sloupce použijte šipky <key>←</key> a <key>→</key>, a ke "
+"změně vybraného řádku šipky <key>↑</key> a <key>↓</key>. Právě vybraný řádek "
+"a sloupec jsou označeny osvětlením okolo herní desky."
 
 #. (itstool) path: item/p
-#: C/16-Puzzle.page:58
+#: C/16-Puzzle.page:69
 msgid ""
-"Use the <keyseq><key>Ctrl</key><key>Left</key></keyseq> or "
-"<keyseq><key>Ctrl</key><key>Right</key></keyseq> keys to move a row, or the "
-"<keyseq><key>Ctrl</key><key>Up</key></keyseq> and <keyseq><key>Ctrl</"
-"key><key>Down</key></keyseq> keys to move a column."
+"Use the <keyseq><key>Shift</key><key>Left</key></keyseq> and "
+"<keyseq><key>Shift</key><key>Right</key></keyseq> keys sequences to swipe "
+"the selected row, or the <keyseq><key>Shift</key><key>Up</key></keyseq> and "
+"<keyseq><key>Shift</key><key>Down</key></keyseq> keys sequences to swipe the "
+"selected column."
 msgstr ""
-"Použijte klávesy <keyseq><key>Ctrl</key><key>←</key></keyseq> a "
-"<keyseq><key>Ctrl</key><key>→</key></keyseq> k posunu řádku, nebo klávesy "
-"<keyseq><key>Ctrl</key><key>↑</key></keyseq> a <keyseq><key>Ctrl</"
-"key><key>↓</key></keyseq> k posunu sloupce."
+"Použijte kombinaci kláves <keyseq><key>Shift</key><key>←</key></keyseq> a "
+"<keyseq><key>Shift</key><key>→</key></keyseq> k posunu vybraného řádku, nebo "
+"kombinaci kláves <keyseq><key>Shift</key><key>↑</key></keyseq> a "
+"<keyseq><key>Shift</key><key>↓</key></keyseq> k posunu vybraného sloupce."
 
 #. (itstool) path: page/title
 #: C/beginning.page:18
@@ -277,16 +312,27 @@ msgid "The game is played using the mouse. To make a move:"
 msgstr "Hra se hraje pomocí myši. Abyste provedli tah:"
 
 #. (itstool) path: item/p
-#: C/beginning.page:29
+#: C/beginning.page:35
 msgid ""
-"You can always undo a move by clicking the <gui>Undo</gui> button on the "
-"left of the header bar."
+"To start a new game –whether you finished the current game or not–, click "
+"the <gui>New Game</gui> button in the headerbar to go to the <link xref="
+"\"start-screen\">Start Screen</link>."
 msgstr ""
-"Kliknutím na tlačítko <gui>Zpět</gui> vlevo na hlavičkové liště můžete "
-"jednotlivé tahy kdykoliv vrátit."
+"Ke spuštění nové hry, ať už stávající dokončíte či nikoliv, klikněte na "
+"tlačítko <gui>Nová hra</gui> a dostanete se na <link xref=\"start-screen"
+"\">spouštěcí obrazovku</link>."
 
 #. (itstool) path: page/p
-#: C/beginning.page:35
+#: C/beginning.page:39
+msgid ""
+"You can also <link xref=\"15-Puzzle#15-keyboard\">play with the keyboard</"
+"link> if you prefer."
+msgstr ""
+"Můžete <link xref=\"15-Puzzle#15-keyboard\">hrát i pomocí klávesnice</link>, "
+"pokud klávesnici dáváte přednost."
+
+#. (itstool) path: page/p
+#: C/beginning.page:41
 msgid ""
 "After the first time it is opened, <app>Taquin</app> displays a puzzle with "
 "the same rules and dimensions as the last one played when it is opened, so "
@@ -470,8 +516,8 @@ msgstr "Klávesové zkratky při hraní"
 
 #. (itstool) path: td/p
 #: C/shortcuts.page:26
-msgid "Show new-game screen"
-msgstr "Zobrazit obrazovku pro novou hru"
+msgid "Show the Start Screen"
+msgstr "Zobrazit spouštěcí obrazovku"
 
 #. (itstool) path: td/p
 #: C/shortcuts.page:27
@@ -480,119 +526,166 @@ msgstr "<keyseq><key>Ctrl</key><key>N</key></keyseq>"
 
 #. (itstool) path: td/p
 #: C/shortcuts.page:30
+msgid "Restart game"
+msgstr "Začít hru znovu"
+
+#. (itstool) path: td/p
+#: C/shortcuts.page:31 C/shortcuts.page:78
+msgid "<keyseq><key>Shift</key><key>Ctrl</key><key>N</key></keyseq>"
+msgstr "<keyseq><key>Ctrl</key><key>Shift</key><key>N</key></keyseq>"
+
+#. (itstool) path: td/p
+#: C/shortcuts.page:34
 msgid "Undo last move"
 msgstr "Vrátit zpět poslední tah"
 
 #. (itstool) path: td/p
-#: C/shortcuts.page:31
+#: C/shortcuts.page:35
 msgid "<keyseq><key>Ctrl</key><key>Z</key></keyseq>"
 msgstr "<keyseq><key>Ctrl</key><key>Z</key></keyseq>"
 
 #. (itstool) path: section/title
-#: C/shortcuts.page:36
+#: C/shortcuts.page:40
 msgid "15-Puzzle shortcuts"
 msgstr "Klávesové zkratky skládačky s 15 díly"
 
 #. (itstool) path: td/p
-#: C/shortcuts.page:39 C/shortcuts.page:52
-msgid "Change selected tile"
-msgstr "Změnit vybraný díl"
+#: C/shortcuts.page:43
+msgid "Select tile to push on"
+msgstr "Výběr dílku pro posun"
 
 #. (itstool) path: td/p
-#: C/shortcuts.page:40 C/shortcuts.page:53
+#: C/shortcuts.page:44
 msgid "<key>Left</key>, <key>Right</key>, <key>Up</key> and <key>Down</key>"
 msgstr "<key>←</key>, <key>→</key>, <key>↑</key> a <key>↓</key>"
 
 #. (itstool) path: td/p
-#: C/shortcuts.page:43
+#: C/shortcuts.page:47
 msgid "Push tile in empty space’s direction"
 msgstr "Posunout díl ve směru prázdného místa"
 
 #. (itstool) path: td/p
-#: C/shortcuts.page:44
-msgid "<key>Space</key> or <key>KP_Enter</key>"
-msgstr "<key>mezerník</key> nebo <key>Enter</key> na numerické klávesnici"
+#: C/shortcuts.page:48
+msgid "<key>Space</key>, <key>Return</key> and <key>KP_Enter</key>"
+msgstr ""
+"<key>mezerník</key>, <key>Enter</key> nebo <key>Enter</key> na numerické "
+"klávesnici"
 
 #. (itstool) path: section/title
-#: C/shortcuts.page:49
+#: C/shortcuts.page:53
 msgid "16-Puzzle shortcuts"
 msgstr "Klávesové zkratky skládačky s 16 díly"
 
 #. (itstool) path: td/p
 #: C/shortcuts.page:56
-msgid "Move row"
-msgstr "Posunout řádek"
+msgid "Change selected column"
+msgstr "Změnit vybraný sloupec"
 
 #. (itstool) path: td/p
 #: C/shortcuts.page:57
-msgid ""
-"<keyseq><key>Ctrl</key><key>Left</key></keyseq> and <keyseq><key>Ctrl</"
-"key><key>Right</key></keyseq>"
-msgstr ""
-"<keyseq><key>Ctrl</key><key>←</key></keyseq> a <keyseq><key>Ctrl</"
-"key><key>→</key></keyseq>"
+msgid "<key>Left</key> and <key>Right</key>"
+msgstr "<key>←</key> a <key>→</key>"
 
 #. (itstool) path: td/p
 #: C/shortcuts.page:60
-msgid "Move column"
-msgstr "Posunout sloupec"
+msgid "Change selected row"
+msgstr "Změnit vybraný řádek"
 
 #. (itstool) path: td/p
 #: C/shortcuts.page:61
+msgid "<key>Up</key> and <key>Down</key>"
+msgstr "<key>↑</key> a <key>↓</key>"
+
+#. (itstool) path: td/p
+#: C/shortcuts.page:64
+msgid "Swipe selected row"
+msgstr "Posunout vybraný řádek"
+
+#. (itstool) path: td/p
+#: C/shortcuts.page:65
 msgid ""
-"<keyseq><key>Ctrl</key><key>Up</key></keyseq> and <keyseq><key>Ctrl</"
+"<keyseq><key>Shift</key><key>Left</key></keyseq> and <keyseq><key>Shift</"
+"key><key>Right</key></keyseq>"
+msgstr ""
+"<keyseq><key>Shift</key><key>←</key></keyseq> a <keyseq><key>Shift</"
+"key><key>→</key></keyseq>"
+
+#. (itstool) path: td/p
+#: C/shortcuts.page:68
+msgid "Swipe selected column"
+msgstr "Posunou vybraný sloupec"
+
+#. (itstool) path: td/p
+#: C/shortcuts.page:69
+msgid ""
+"<keyseq><key>Shift</key><key>Up</key></keyseq> and <keyseq><key>Shift</"
 "key><key>Down</key></keyseq>"
 msgstr ""
-"<keyseq><key>Ctrl</key><key>↑</key></keyseq> a <keyseq><key>Ctrl</"
+"<keyseq><key>Shift</key><key>↑</key></keyseq> a <keyseq><key>Shift</"
 "key><key>↓</key></keyseq>"
 
 #. (itstool) path: section/title
-#: C/shortcuts.page:66
+#: C/shortcuts.page:74
 msgid "Start Screen shortcuts"
 msgstr "Klávesové zkratky spouštěcí obrazovky"
 
 #. (itstool) path: td/p
-#: C/shortcuts.page:69
-msgid "New Game"
-msgstr "Nová hra"
+#: C/shortcuts.page:77
+msgid "Start new game"
+msgstr "Začít novou hru"
 
 #. (itstool) path: td/p
-#: C/shortcuts.page:70
-msgid "<keyseq><key>Ctrl</key><key>Shift</key><key>N</key></keyseq>"
-msgstr "<keyseq><key>Ctrl</key><key>Shift</key><key>N</key></keyseq>"
-
-#. (itstool) path: td/p
-#: C/shortcuts.page:73
+#: C/shortcuts.page:81
 msgid "Back to previous game (if any)"
 msgstr "Zpět do předchozí hry (pokud existuje)"
 
 #. (itstool) path: td/p
-#: C/shortcuts.page:74
+#: C/shortcuts.page:82
 msgid "<key>Escape</key>"
 msgstr "<key>Esc</key>"
 
 #. (itstool) path: section/title
-#: C/shortcuts.page:79
+#: C/shortcuts.page:87
 msgid "General shortcuts"
 msgstr "Obecné klávesové zkratky"
 
 #. (itstool) path: td/p
-#: C/shortcuts.page:82
+#: C/shortcuts.page:90
+msgid "Keyboard shortcuts"
+msgstr "Klávesové zkratky"
+
+#. (itstool) path: td/p
+#: C/shortcuts.page:91
+msgid "<keyseq><key>Ctrl</key><key>F1</key></keyseq>"
+msgstr "<keyseq><key>Ctrl</key><key>F1</key></keyseq>"
+
+#. (itstool) path: td/p
+#: C/shortcuts.page:94
 msgid "Help"
 msgstr "Nápověda"
 
 #. (itstool) path: td/p
-#: C/shortcuts.page:83
+#: C/shortcuts.page:95
 msgid "<key>F1</key>"
 msgstr "<key>F1</key>"
 
 #. (itstool) path: td/p
-#: C/shortcuts.page:86
+#: C/shortcuts.page:98
+msgid "About"
+msgstr "O aplikaci"
+
+#. (itstool) path: td/p
+#: C/shortcuts.page:99
+msgid "<keyseq><key>Shift</key><key>F1</key></keyseq>"
+msgstr "<keyseq><key>Shift</key><key>F1</key></keyseq>"
+
+#. (itstool) path: td/p
+#: C/shortcuts.page:102
 msgid "Quit"
 msgstr "Ukončit"
 
 #. (itstool) path: td/p
-#: C/shortcuts.page:87
+#: C/shortcuts.page:103
 msgid "<keyseq><key>Ctrl</key><key>Q</key></keyseq>"
 msgstr "<keyseq><key>Ctrl</key><key>Q</key></keyseq>"
 
@@ -615,8 +708,8 @@ msgstr ""
 #. (itstool) path: page/p
 #: C/start-screen.page:20
 msgid ""
-"It can be accessed at any time from a game by pressing the <gui>Start Over</"
+"It can be accessed at any time from a game by pressing the <gui>New Game</"
 "gui> button."
 msgstr ""
-"Můžete se na ni dostat kdykoliv během hraní zmáčknutím tlačítka <gui>Začít "
-"jinou hru</gui>."
+"Můžete se na ni dostat kdykoliv během hraní zmáčknutím tlačítka <gui>Nová "
+"hra</gui>."
