@@ -8,8 +8,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: 1.0\n"
 "Report-Msgid-Bugs-To: https://gitlab.gnome.org/GNOME/gnome-taquin/issues\n"
-"POT-Creation-Date: 2019-08-01 15:16+0000\n"
-"PO-Revision-Date: 2019-08-02 09:11+0200\n"
+"POT-Creation-Date: 2019-08-04 14:52+0000\n"
+"PO-Revision-Date: 2019-08-20 12:11+0200\n"
 "Last-Translator: Daniel Mustieles <daniel.mustieles@gmail.com>\n"
 "Language-Team: Spanish - Spain <gnome-es-list@gnome.org>\n"
 "Language: es_ES\n"
@@ -51,7 +51,7 @@ msgid "The GNOME Project"
 msgstr "El proyecto GNOME"
 
 #. Translators: application name, as used in the window manager, the window title, the about dialog...
-#: data/org.gnome.Taquin.desktop.in:5 src/taquin-main.vala:26
+#: data/org.gnome.Taquin.desktop.in:3 src/taquin-main.vala:26
 msgid "Taquin"
 msgstr "Taquin"
 
@@ -67,19 +67,18 @@ msgstr "puzle;juego;"
 
 #. Translators: an action Name, as defined in the desktop file spec; name of the traditional Taquin game
 #. Translators: when configuring a new game, label of the first big button; name of the traditional Taquin game
-#: data/org.gnome.Taquin.desktop.in:21 data/ui/taquin-screens.ui:92
+#: data/org.gnome.Taquin.desktop.in:21 data/ui/taquin-screens.ui:95
 msgid "15-Puzzle"
 msgstr "Puzle-15"
 
 #. Translators: an action Name, as defined in the desktop file spec; name of the alternative game
 #. Translators: when configuring a new game, label of the second big button; name of the non-traditional game
-#: data/org.gnome.Taquin.desktop.in:26 data/ui/taquin-screens.ui:109
+#: data/org.gnome.Taquin.desktop.in:26 data/ui/taquin-screens.ui:112
 msgid "16-Puzzle"
 msgstr "Puzle-16"
 
 #. Translators: summary of a settings key, see 'dconf-editor /org/gnome/taquin/automatic-night-mode'
 #: data/org.gnome.Taquin.gschema.xml:6
-#| msgid "Follow system night light"
 msgid "A flag to follow system night light"
 msgstr "Una opción para seguir la luz nocturna del sistema"
 
@@ -88,27 +87,27 @@ msgstr "Una opción para seguir la luz nocturna del sistema"
 msgid "Use GNOME night light setting to activate night-mode."
 msgstr "Usar la luz nocturna de GNOME para activar el modo noche."
 
+#. see AdaptativeWindow.width-request at data/ui/adaptative-window.ui:22
+#. range min="350"/ FIXME
 #. Translators: summary of a settings key, see 'dconf-editor /org/gnome/taquin/window-width'
 #: data/org.gnome.Taquin.gschema.xml:15
-#| msgid "Width of the window in pixels."
 msgid "The width of the window"
 msgstr "La anchura de la ventana"
 
 #. Translators: summary of a settings key, see 'dconf-editor /org/gnome/taquin/window-width'
 #: data/org.gnome.Taquin.gschema.xml:17
-#| msgid "Width of the window in pixels."
 msgid "The width of the main window in pixels."
 msgstr "La anchura de la ventana principal en píxeles."
 
+#. see AdaptativeWindow.height-request at data/ui/adaptative-window.ui:21
+#. range min="284"/ FIXME
 #. Translators: summary of a settings key, see 'dconf-editor /org/gnome/taquin/window-height'
 #: data/org.gnome.Taquin.gschema.xml:24
-#| msgid "Height of the window in pixels."
 msgid "The height of the window"
 msgstr "La altura de la ventana"
 
 #. Translators: description of a settings key, see 'dconf-editor /org/gnome/taquin/window-height'
 #: data/org.gnome.Taquin.gschema.xml:26
-#| msgid "Height of the window in pixels."
 msgid "The height of the main window in pixels."
 msgstr "La altura de la ventana principal en píxeles."
 
@@ -119,7 +118,6 @@ msgstr "Una opción para activar el modo maximizado"
 
 #. Translators: description of a settings key, see 'dconf-editor /org/gnome/taquin/window-is-maximized'
 #: data/org.gnome.Taquin.gschema.xml:33
-#| msgid "true if the window is maximized."
 msgid "If “true”, the main window starts in maximized mode."
 msgstr "Si es cierto la ventana se inicia en modo maximizado."
 
@@ -319,12 +317,12 @@ msgid "Numbers"
 msgstr "Números"
 
 #. Translators: when configuring a new game, header of the game type that appears on small screen
-#: data/ui/taquin-screens.ui:67
+#: data/ui/taquin-screens.ui:70
 msgid "Game"
 msgstr "Juego"
 
 #. Translators: when configuring a new game, header of the options that appears on small screen
-#: data/ui/taquin-screens.ui:131
+#: data/ui/taquin-screens.ui:134
 msgid "Options"
 msgstr "Opciones"
 
@@ -438,7 +436,7 @@ msgid "Best score: %s"
 msgstr "Mejor puntuación: %s"
 
 #. Translators: when configuring a new game, label of the blue Start button (with a mnemonic that appears pressing Alt)
-#: src/game-view.vala:57
+#: src/game-view.vala:58
 msgid "_Start Game"
 msgstr "_Iniciar juego"
 
@@ -518,18 +516,51 @@ msgstr "Pulse sobre las flechas para mover las fichas"
 msgid "A classic 15-puzzle game"
 msgstr "Un juego clásico de puzle-15"
 
+#. Translators: about dialog text crediting an artist (a photograph), with the website where the image was published
+#: src/taquin-main.vala:505
+msgid "Abelard (Wikimedia)"
+msgstr "Abelard (Wikimedia)"
+
+#: src/taquin-main.vala:505
+msgid "Alvesgaspar (Wikimedia)"
+msgstr "Alvesgaspar (Wikimedia)"
+
+#: src/taquin-main.vala:505
+msgid "Mueller-rech.muenchen (Wikimedia)"
+msgstr "Mueller-rech.muenchen (Wikimedia)"
+
+#: src/taquin-main.vala:506
+msgid "Ruskis (Wikimedia)"
+msgstr "Ruskis (Wikimedia)"
+
+#: src/taquin-main.vala:506
+msgid "Toyah (Wikimedia)"
+msgstr "Toyah (Wikimedia)"
+
 #. Translators: about dialog text; in the Credits, text at the end of the "Artwork by" section
-#: src/taquin-main.vala:510
+#: src/taquin-main.vala:509
 msgid "(see COPYING.themes for informations)"
 msgstr "(consulte COPYING.themes para obtener más información)"
 
+#. Translators: about dialog text crediting an author
+#. Translators: about dialog text crediting a documenter
+#: src/taquin-main.vala:513 src/taquin-main.vala:521
+msgid "Arnaud Bonatti"
+msgstr "Arnaud Bonatti"
+
+#. Translators: about dialog text crediting a maintainer; the %u are replaced with the years of start and end
+#: src/taquin-main.vala:517
+#, c-format
+msgid "Copyright © %u-%u – Arnaud Bonatti"
+msgstr "Copyright © %u-%u – Arnaud Bonatti"
+
 #. Translators: about dialog text; this string should be replaced by a text crediting yourselves and your translation team, or should be left empty. Do not translate literally!
-#: src/taquin-main.vala:521
+#: src/taquin-main.vala:526
 msgid "translator-credits"
-msgstr "Daniel Mustieles <daniel.mustieles@gmail.com>, 2015-2016"
+msgstr "Daniel Mustieles <daniel.mustieles@gmail.com>, 2015-2019"
 
 #. Translators: about dialog text; label of the website link
-#: src/taquin-main.vala:526
+#: src/taquin-main.vala:531
 msgid "Page on GNOME wiki"
 msgstr "Página en la wiki de GNOME"
 
