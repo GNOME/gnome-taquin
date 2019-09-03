@@ -7,9 +7,9 @@ msgid ""
 msgstr ""
 "Project-Id-Version: gnome-taquin master\n"
 "Report-Msgid-Bugs-To: https://gitlab.gnome.org/GNOME/gnome-taquin/issues\n"
-"POT-Creation-Date: 2019-03-12 15:50+0000\n"
-"PO-Revision-Date: 2019-04-01 14:48+0200\n"
-"Last-Translator: \n"
+"POT-Creation-Date: 2019-08-04 14:52+0000\n"
+"PO-Revision-Date: 2019-09-03 18:16+0200\n"
+"Last-Translator: gogo <linux.hr@protonmail.com>\n"
 "Language-Team: Croatian <hr@li.org>\n"
 "Language: hr\n"
 "MIME-Version: 1.0\n"
@@ -17,7 +17,7 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=3; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && n"
 "%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2);\n"
-"X-Generator: Poedit 2.0.6\n"
+"X-Generator: Poedit 2.2.1\n"
 
 #: data/org.gnome.Taquin.appdata.xml.in:7
 msgid "GNOME Taquin"
@@ -49,13 +49,8 @@ msgstr "GNOME taquin pregled igre"
 msgid "The GNOME Project"
 msgstr "GNOME projekt"
 
-#. Translators: Do NOT translate or transliterate this text (this is an icon file name)!
-#: data/org.gnome.Taquin.desktop.in:4
-msgid "org.gnome.Taquin"
-msgstr "org.gnome.Taquin"
-
 #. Translators: application name, as used in the window manager, the window title, the about dialog...
-#: data/org.gnome.Taquin.desktop.in:5 src/taquin-main.vala:26
+#: data/org.gnome.Taquin.desktop.in:3 src/taquin-main.vala:26
 msgid "Taquin"
 msgstr "Taquin"
 
@@ -71,23 +66,68 @@ msgstr "slagalica;"
 
 #. Translators: an action Name, as defined in the desktop file spec; name of the traditional Taquin game
 #. Translators: when configuring a new game, label of the first big button; name of the traditional Taquin game
-#: data/org.gnome.Taquin.desktop.in:21 data/taquin-screens.ui:92
+#: data/org.gnome.Taquin.desktop.in:21 data/ui/taquin-screens.ui:95
 msgid "15-Puzzle"
 msgstr "15-slagalica"
 
 #. Translators: an action Name, as defined in the desktop file spec; name of the alternative game
 #. Translators: when configuring a new game, label of the second big button; name of the non-traditional game
-#: data/org.gnome.Taquin.desktop.in:26 data/taquin-screens.ui:109
+#: data/org.gnome.Taquin.desktop.in:26 data/ui/taquin-screens.ui:112
 msgid "16-Puzzle"
 msgstr "16-slagalica"
 
+#. Translators: summary of a settings key, see 'dconf-editor /org/gnome/taquin/automatic-night-mode'
+#: data/org.gnome.Taquin.gschema.xml:6
+msgid "A flag to follow system night light"
+msgstr "Oznaka za praćenje noćnog rada sustava"
+
+#. Translators: description of a settings key, see 'dconf-editor /org/gnome/taquin/automatic-night-mode'
+#: data/org.gnome.Taquin.gschema.xml:8
+msgid "Use GNOME night light setting to activate night-mode."
+msgstr ""
+"Koristi postavke GNOME noćnog svijetla za aktiviranje noćnog načina rada."
+
+#. see AdaptativeWindow.width-request at data/ui/adaptative-window.ui:22
+#. range min="350"/ FIXME
+#. Translators: summary of a settings key, see 'dconf-editor /org/gnome/taquin/window-width'
+#: data/org.gnome.Taquin.gschema.xml:15
+msgid "The width of the window"
+msgstr "Širina prozora"
+
+#. Translators: summary of a settings key, see 'dconf-editor /org/gnome/taquin/window-width'
+#: data/org.gnome.Taquin.gschema.xml:17
+msgid "The width of the main window in pixels."
+msgstr "Širina glavnog prozora u pikselima."
+
+#. see AdaptativeWindow.height-request at data/ui/adaptative-window.ui:21
+#. range min="284"/ FIXME
+#. Translators: summary of a settings key, see 'dconf-editor /org/gnome/taquin/window-height'
+#: data/org.gnome.Taquin.gschema.xml:24
+msgid "The height of the window"
+msgstr "Visina prozora"
+
+#. Translators: description of a settings key, see 'dconf-editor /org/gnome/taquin/window-height'
+#: data/org.gnome.Taquin.gschema.xml:26
+msgid "The height of the main window in pixels."
+msgstr "Visina glavnog prozora u pikselima."
+
+#. Translators: summary of a settings key, see 'dconf-editor /org/gnome/taquin/window-is-maximized'
+#: data/org.gnome.Taquin.gschema.xml:31
+msgid "A flag to enable maximized mode"
+msgstr "Oznaka za omogućavanje uvećanog stanja"
+
+#. Translators: description of a settings key, see 'dconf-editor /org/gnome/taquin/window-is-maximized'
+#: data/org.gnome.Taquin.gschema.xml:33
+msgid "If “true”, the main window starts in maximized mode."
+msgstr "Ako je “true”, glavni prozor se pokreće u smanjenom načinu rada."
+
 #. Translators: summary of a settings key, see 'dconf-editor /org/gnome/taquin/size'
-#: data/org.gnome.Taquin.gschema.xml:16
+#: data/org.gnome.Taquin.gschema.xml:51
 msgid "Number of tiles on each edge."
 msgstr "Broj pločica na svakom rubu."
 
 #. Translators: description of a settings key, see 'dconf-editor /org/gnome/taquin/size'
-#: data/org.gnome.Taquin.gschema.xml:18
+#: data/org.gnome.Taquin.gschema.xml:53
 msgid ""
 "The game offers to play with a board size from 3 to 5. The setting could be "
 "set from 2 (good for testing) to 9, limited by the way files are selected."
@@ -97,218 +137,192 @@ msgstr ""
 "odabrane."
 
 #. Translators: summary of a settings key, see 'dconf-editor /org/gnome/taquin/theme'
-#: data/org.gnome.Taquin.gschema.xml:23
+#: data/org.gnome.Taquin.gschema.xml:58
 msgid "Name of the theme folder."
 msgstr "Naziv teme mape."
 
 #. Translators: description of a settings key, see 'dconf-editor /org/gnome/taquin/theme'; TODO the themes names are translated in the UI, but not in the settings; not sure what to do for now
-#: data/org.gnome.Taquin.gschema.xml:25
+#: data/org.gnome.Taquin.gschema.xml:60
 msgid "Taquin has two default themes: 'cats' and 'numbers'."
 msgstr "Taquin ima dvije zadane teme: 'mačke' i 'brojeve'."
 
 #. Translators: summary of a settings key, see 'dconf-editor /org/gnome/taquin/sound'
-#: data/org.gnome.Taquin.gschema.xml:30
+#: data/org.gnome.Taquin.gschema.xml:65
 msgid "Sound"
 msgstr "Zvuk"
 
 #. Translators: description of a settings key, see 'dconf-editor /org/gnome/taquin/sound'
-#: data/org.gnome.Taquin.gschema.xml:32
+#: data/org.gnome.Taquin.gschema.xml:67
 msgid "Whether or not to play event sounds."
 msgstr "Treba li ili ne reproducirati zvukove događaja."
 
-#. Translators: summary of a settings key, see 'dconf-editor /org/gnome/taquin/window-width'
-#: data/org.gnome.Taquin.gschema.xml:37
-msgid "Width of the window in pixels."
-msgstr "Širina prozora u pikselima."
-
-#. Translators: summary of a settings key, see 'dconf-editor /org/gnome/taquin/window-height'
-#: data/org.gnome.Taquin.gschema.xml:43
-msgid "Height of the window in pixels."
-msgstr "Visina prozora u pikselima."
-
-#. Translators: summary of a settings key, see 'dconf-editor /org/gnome/taquin/window-is-maximized'
-#: data/org.gnome.Taquin.gschema.xml:49
-msgid "true if the window is maximized."
-msgstr "istinito ako je prozor uvećan."
-
-#. Translators: summary of a settings key, see 'dconf-editor /org/gnome/taquin/automatic-night-mode'
-#: data/org.gnome.Taquin.gschema.xml:57
-msgid "Follow system night light"
-msgstr "Slijedi noćno svijetlo sustava"
-
-#. Translators: description of a settings key, see 'dconf-editor /org/gnome/taquin/automatic-night-mode'
-#: data/org.gnome.Taquin.gschema.xml:59
-msgid "Use GNOME night light setting to activate night-mode."
-msgstr ""
-"Koristi postavke GNOME noćnog svijetla za aktiviranje noćnog načina rada."
-
 #. Translators: accessible name of the hamburger menu
-#: data/base-headerbar.ui:112
+#: data/ui/base-headerbar.ui:113
 msgid "Actions"
 msgstr "Radnje"
 
 #. Translators: accessible description of the hamburger menu
-#: data/base-headerbar.ui:114
+#: data/ui/base-headerbar.ui:115
 msgid "Current view actions"
 msgstr "Trenutne radnje prikaza"
 
 #. Translators: accessible name of the history menubutton
-#: data/game-headerbar.ui:32
+#: data/ui/game-headerbar.ui:32
 msgid "History"
 msgstr "Povijest"
 
 #. Translators: accessible description of the history menubutton
-#: data/game-headerbar.ui:34
+#: data/ui/game-headerbar.ui:34
 msgid "Game history menu"
 msgstr "Izbornik povijesti igre"
 
 #. Translators: when configuring a new game, if the user has a started game, tooltip text of the Go back button
-#: data/game-headerbar.ui:49
+#: data/ui/game-headerbar.ui:49
 msgid "Go back to the current game"
 msgstr "Vrati se natrag na trenutnu igru"
 
 #. Translators: during a game, tooltip text of the New Game button
-#: data/game-headerbar.ui:69
+#: data/ui/game-headerbar.ui:69
 msgid "Start a new game"
 msgstr "Pokreni novu igru"
 
 #. Translators: during a game, label of the New Game button (with a mnemonic that appears pressing Alt)
-#: data/game-headerbar.ui:78
+#: data/ui/game-headerbar.ui:78
 msgid "_New Game"
 msgstr "_Nova igra"
 
-#: data/help-overlay.ui:28
+#: data/ui/help-overlay.ui:28
 msgctxt "shortcut window"
 msgid "During game selection"
 msgstr "U tijeku odabira igre"
 
-#: data/help-overlay.ui:32
+#: data/ui/help-overlay.ui:32
 msgctxt "shortcut window"
 msgid "Start new game"
 msgstr "Pokreni novu igru"
 
-#: data/help-overlay.ui:39
+#: data/ui/help-overlay.ui:39
 msgctxt "shortcut window"
 msgid "Go back"
 msgstr "Idi natrag"
 
-#: data/help-overlay.ui:48
+#: data/ui/help-overlay.ui:48
 msgctxt "shortcut window"
 msgid "During a game"
 msgstr "Tijekom igre"
 
-#: data/help-overlay.ui:52
+#: data/ui/help-overlay.ui:52
 msgctxt "shortcut window"
 msgid "New game"
 msgstr "Nova igra"
 
-#: data/help-overlay.ui:59
+#: data/ui/help-overlay.ui:59
 msgctxt "shortcut window"
 msgid "Restart game"
 msgstr "Ponovno pokreni igru"
 
-#: data/help-overlay.ui:66
+#: data/ui/help-overlay.ui:66
 msgctxt "shortcut window"
 msgid "Undo last move"
 msgstr "Poništi posljednji potez"
 
-#: data/help-overlay.ui:75
+#: data/ui/help-overlay.ui:75
 msgctxt "shortcut window"
 msgid "15-Puzzle"
 msgstr "15-slagalica"
 
-#: data/help-overlay.ui:79
+#: data/ui/help-overlay.ui:79
 msgctxt "shortcut window"
 msgid "Select tile to push on"
 msgstr "Odaberi pločicu za pomak"
 
-#: data/help-overlay.ui:86
+#: data/ui/help-overlay.ui:86
 msgctxt "shortcut window"
 msgid "Push on selected tile"
 msgstr "Pomakni odabranu pločicu"
 
-#: data/help-overlay.ui:95
+#: data/ui/help-overlay.ui:95
 msgctxt "shortcut window"
 msgid "16-Puzzle"
 msgstr "16-slagalica"
 
-#: data/help-overlay.ui:99
+#: data/ui/help-overlay.ui:99
 msgctxt "shortcut window"
 msgid "Change selected column"
 msgstr "Promijeni odabrani stupac"
 
-#: data/help-overlay.ui:106
+#: data/ui/help-overlay.ui:106
 msgctxt "shortcut window"
 msgid "Change selected row"
 msgstr "Promijeni odabrani redak"
 
-#: data/help-overlay.ui:113
+#: data/ui/help-overlay.ui:113
 msgctxt "shortcut window"
 msgid "Swipe selected row"
 msgstr "Zamijeni odabrani redak"
 
-#: data/help-overlay.ui:120
+#: data/ui/help-overlay.ui:120
 msgctxt "shortcut window"
 msgid "Swipe selected column"
 msgstr "Zamijeni odabrani stupac"
 
-#: data/help-overlay.ui:129
+#: data/ui/help-overlay.ui:129
 msgctxt "shortcut window"
 msgid "Generic"
 msgstr "Općenito"
 
-#: data/help-overlay.ui:133
+#: data/ui/help-overlay.ui:133
 msgctxt "shortcut window"
 msgid "Keyboard shortcuts"
 msgstr "Prečaci tipkovnice"
 
-#: data/help-overlay.ui:140
+#: data/ui/help-overlay.ui:140
 msgctxt "shortcut window"
 msgid "Help"
 msgstr "Priručnik"
 
-#: data/help-overlay.ui:147
+#: data/ui/help-overlay.ui:147
 msgctxt "shortcut window"
 msgid "About"
 msgstr "O programu"
 
-#: data/help-overlay.ui:154
+#: data/ui/help-overlay.ui:154
 msgctxt "shortcut window"
 msgid "Quit"
 msgstr "Zatvori"
 
 #. Translators: when configuring a new game, entry in the menu of the game size menubutton
-#: data/taquin-screens.ui:24
+#: data/ui/taquin-screens.ui:24
 msgid "3 × 3"
 msgstr "3 × 3"
 
 #. Translators: when configuring a new game, entry in the menu of the game size menubutton
-#: data/taquin-screens.ui:30
+#: data/ui/taquin-screens.ui:30
 msgid "4 × 4"
 msgstr "4 × 4"
 
 #. Translators: when configuring a new game, entry in the menu of the game size menubutton
-#: data/taquin-screens.ui:36
+#: data/ui/taquin-screens.ui:36
 msgid "5 × 5"
 msgstr "5 × 5"
 
 #. Translators: when configuring a new game, entry in the menu of the game theme menubutton; play with cats images
-#: data/taquin-screens.ui:46
+#: data/ui/taquin-screens.ui:46
 msgid "Cats"
 msgstr "Mačke"
 
 #. Translators: when configuring a new game, entry in the menu of the game theme menubutton; play with numbers
-#: data/taquin-screens.ui:52
+#: data/ui/taquin-screens.ui:52
 msgid "Numbers"
 msgstr "Brojevi"
 
 #. Translators: when configuring a new game, header of the game type that appears on small screen
-#: data/taquin-screens.ui:67
+#: data/ui/taquin-screens.ui:70
 msgid "Game"
 msgstr "Igra"
 
 #. Translators: when configuring a new game, header of the options that appears on small screen
-#: data/taquin-screens.ui:131
+#: data/ui/taquin-screens.ui:134
 msgid "Options"
 msgstr "Mogućnosti"
 
@@ -378,32 +392,32 @@ msgid "_Help"
 msgstr "_Priručnik"
 
 #. Translators: hamburger menu entry; sound togglebutton (with a mnemonic that appears pressing Alt)
-#: src/game-headerbar.vala:176
+#: src/game-headerbar.vala:188
 msgid "_Sound"
 msgstr "_Zvuk"
 
 #. Translators: in-window notification; on both games, if the user solved the puzzle more than one time
-#: src/game-headerbar.vala:235
+#: src/game-headerbar.vala:249
 msgid "Bravo! You improved your best score!"
 msgstr "Bravo! Poboljšali ste svoj rezultat!"
 
 #. Translators: in-window notification; on both games, if the user solved the puzzle more than one time
-#: src/game-headerbar.vala:242
+#: src/game-headerbar.vala:256
 msgid "Bravo! You equalized your best score."
 msgstr "Bravo! Izjednačili ste svoj najbolji rezultat."
 
 #. Translators: in-window notification; on both games, if the user solved the puzzle more than one time
-#: src/game-headerbar.vala:249
+#: src/game-headerbar.vala:263
 msgid "Bravo! You finished the game again."
 msgstr "Bravo! Završili ste igru."
 
 #. Translators: in-window notification; on both games, if the user solves the puzzle the first time
-#: src/game-headerbar.vala:258
+#: src/game-headerbar.vala:272
 msgid "Bravo! You finished the game!"
 msgstr "Bravo! Završili ste igru!"
 
 #. Translators: during a game, entry in the menu of the history menubutton (with a mnemonic that appears pressing Alt)
-#: src/game-headerbar.vala:278
+#: src/game-headerbar.vala:292
 msgid "_Undo"
 msgstr "_Poništi"
 
@@ -411,23 +425,23 @@ msgstr "_Poništi"
 #. /* Translators: during a game, entry in the menu of the history menubutton (with a mnemonic that appears pressing Alt) */
 #. section.append (_("_Redo"), "ui.redo");
 #. Translators: during a game, entry in the menu of the history menubutton (with a mnemonic that appears pressing Alt)
-#: src/game-headerbar.vala:287
+#: src/game-headerbar.vala:301
 msgid "_Restart"
 msgstr "_Ponovno pokreni"
 
 #. Translators: during a game that has already been finished (and possibly restarted), entry in the menu of the moves button
-#: src/game-headerbar.vala:298
+#: src/game-headerbar.vala:312
 #, c-format
 msgid "Best score: %s"
 msgstr "Najbolji rezultat: %s"
 
 #. Translators: when configuring a new game, label of the blue Start button (with a mnemonic that appears pressing Alt)
-#: src/game-view.vala:57
+#: src/game-view.vala:58
 msgid "_Start Game"
 msgstr "_Pokreni igru"
 
 #. Translator: during a game, if the user tries with <Shift><Ctrl>n to restart the game, while already on initial position
-#: src/game-window.vala:201
+#: src/game-window.vala:210
 msgid "Already on initial position."
 msgstr "Već je na početnom položaju."
 
@@ -482,41 +496,77 @@ msgid "About Taquin"
 msgstr "O Taquinu"
 
 #. Translators: in-window notification; on the 15-Puzzle game, if the user clicks a tile that cannot move
-#: src/taquin-main.vala:320
+#: src/taquin-main.vala:325
 msgid "You can’t move this tile!"
 msgstr "Ne možete pomaknuti ovu pločicu!"
 
 #. Translators: in-window notification; on the 16-Puzzle game, help for keyboard use, displayed if the user uses an unmeaningful keyboard key
-#: src/taquin-main.vala:329
+#: src/taquin-main.vala:334
 msgid "Use Shift and an arrow to move tiles!"
 msgstr "Koristite Shift i strelicu za pomicanje pločice!"
 
 #. Translators: in-window notification; on the 16-Puzzle game, if the user clicks on a tile of the board (the game is played using mouse with arrows around the board)
-#: src/taquin-main.vala:333
+#: src/taquin-main.vala:338
 msgid "Click on the arrows to move tiles!"
 msgstr "Kliknite na strelicu za pomak pločice!"
 
 #. Translators: about dialog text
-#: src/taquin-main.vala:433
+#: src/taquin-main.vala:501
 msgid "A classic 15-puzzle game"
 msgstr "Klasična igra 15-slagalica"
 
+#. Translators: about dialog text crediting an artist (a photograph), with the website where the image was published
+#: src/taquin-main.vala:505
+msgid "Abelard (Wikimedia)"
+msgstr "Abelard (Wikimedia)"
+
+#: src/taquin-main.vala:505
+msgid "Alvesgaspar (Wikimedia)"
+msgstr "Alvesgaspar (Wikimedia)"
+
+#: src/taquin-main.vala:505
+msgid "Mueller-rech.muenchen (Wikimedia)"
+msgstr "Mueller-rech.muenchen (Wikimedia)"
+
+#: src/taquin-main.vala:506
+msgid "Ruskis (Wikimedia)"
+msgstr "Ruskis (Wikimedia)"
+
+#: src/taquin-main.vala:506
+msgid "Toyah (Wikimedia)"
+msgstr "Toyah (Wikimedia)"
+
 #. Translators: about dialog text; in the Credits, text at the end of the "Artwork by" section
-#: src/taquin-main.vala:442
+#: src/taquin-main.vala:509
 msgid "(see COPYING.themes for informations)"
 msgstr "(pogledajte COPYING.themes za više informacija)"
 
+#. Translators: about dialog text crediting an author
+#. Translators: about dialog text crediting a documenter
+#: src/taquin-main.vala:513 src/taquin-main.vala:521
+msgid "Arnaud Bonatti"
+msgstr "Arnaud Bonatti"
+
+#. Translators: about dialog text crediting a maintainer; the %u are replaced with the years of start and end
+#: src/taquin-main.vala:517
+#, c-format
+msgid "Copyright © %u-%u – Arnaud Bonatti"
+msgstr "Autorsko pravo © %u-%u – Arnaud Bonatti"
+
 #. Translators: about dialog text; this string should be replaced by a text crediting yourselves and your translation team, or should be left empty. Do not translate literally!
-#: src/taquin-main.vala:453
+#: src/taquin-main.vala:526
 msgid "translator-credits"
 msgstr ""
 "Launchpad Contributions:\n"
 "  gogo https://launchpad.net/~trebelnik-stefina"
 
 #. Translators: about dialog text; label of the website link
-#: src/taquin-main.vala:458
+#: src/taquin-main.vala:531
 msgid "Page on GNOME wiki"
 msgstr "Stranica na GNOME wiki"
+
+#~ msgid "org.gnome.Taquin"
+#~ msgstr "org.gnome.Taquin"
 
 #~ msgid "_Start Over"
 #~ msgstr "_Pokreni ponovo"
