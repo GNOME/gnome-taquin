@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: gnome-taquin\n"
 "POT-Creation-Date: 2019-08-16 10:59+0000\n"
-"PO-Revision-Date: 2019-08-16 12:58+0200\n"
+"PO-Revision-Date: 2019-09-09 14:43+0200\n"
 "Last-Translator: Marek Černocký <marek@manet.cz>\n"
 "Language-Team: čeština <gnome-cs-list@gnome.org>\n"
 "Language: cs\n"
@@ -159,8 +159,8 @@ msgid ""
 "<gui>Restart</gui> entry in the menu that appears."
 msgstr ""
 "Případně můžete chtít začít stávající hru od začátku. Pak klikněte na "
-"záhlavní liště na tlačítko s počitadlem provedených tahů a v nabídce, "
-"která se objeví, zvolte <gui>Začít znvou</gui>."
+"záhlavní liště na tlačítko s počitadlem provedených tahů a v nabídce, která "
+"se objeví, zvolte <gui>Začít znvou</gui>."
 
 #. (itstool) path: section/p
 #: C/15-Puzzle.page:62 C/16-Puzzle.page:59
@@ -209,9 +209,9 @@ msgid ""
 "<keyseq><key>Ctrl</key><key>N</key></keyseq> keys sequence to go to the "
 "<link xref=\"start-screen\">Start Screen</link>."
 msgstr ""
-"Ke spuštění nové hry s jiným nastavením, použijte kombinaci kláves <keyseq>"
-"<key>Ctrl</key><key>N</key></keyseq> a dostanete se na <link xref=\"start-"
-"screen\">spouštěcí obrazovku</link>."
+"Ke spuštění nové hry s jiným nastavením, použijte kombinaci kláves "
+"<keyseq><key>Ctrl</key><key>N</key></keyseq> a dostanete se na <link xref="
+"\"start-screen\">spouštěcí obrazovku</link>."
 
 #. (itstool) path: item/p
 #: C/15-Puzzle.page:88 C/16-Puzzle.page:82
@@ -552,7 +552,7 @@ msgstr "Klávesové zkratky skládačky s 15 díly"
 #. (itstool) path: td/p
 #: C/shortcuts.page:43
 msgid "Select tile to push on"
-msgstr "Výběr dílku pro posun"
+msgstr "Vybrat dílek pro posun"
 
 #. (itstool) path: td/p
 #: C/shortcuts.page:44
