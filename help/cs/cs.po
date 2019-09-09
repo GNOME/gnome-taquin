@@ -5,8 +5,8 @@
 #
 msgid ""
 msgstr ""
-"Project-Id-Version: gnome-taquin master\n"
-"POT-Creation-Date: 2019-02-17 12:57+0000\n"
+"Project-Id-Version: gnome-taquin\n"
+"POT-Creation-Date: 2019-08-16 10:59+0000\n"
 "PO-Revision-Date: 2019-08-16 12:58+0200\n"
 "Last-Translator: Marek Černocký <marek@manet.cz>\n"
 "Language-Team: čeština <gnome-cs-list@gnome.org>\n"
@@ -131,7 +131,7 @@ msgid ""
 "menu that appears."
 msgstr ""
 "Kdykoliv můžete svůj tah vrátit zpět. Stačí kliknout na tlačítko s "
-"počitadlem provedených tahů na hlavičkové liště a pak v nabídce, která se "
+"počitadlem provedených tahů na záhlavní liště a pak v nabídce, která se "
 "objeví, zvolit <gui>Zpět</gui>."
 
 #. (itstool) path: section/p
@@ -148,7 +148,7 @@ msgid ""
 "Screen</link>."
 msgstr ""
 "Abyste začali novou hru, s případně jiným nastavením, klikněte na tlačítko "
-"<gui>Nová hra</gui> na hlavičkové liště a dostanete se na <link xref=\"start-"
+"<gui>Nová hra</gui> na záhlavní liště a dostanete se na <link xref=\"start-"
 "screen\">spouštěcí obrazovku</link>."
 
 #. (itstool) path: item/p
@@ -159,7 +159,7 @@ msgid ""
 "<gui>Restart</gui> entry in the menu that appears."
 msgstr ""
 "Případně můžete chtít začít stávající hru od začátku. Pak klikněte na "
-"hlavičkové liště na tlačítko s počitadlem provedených tahů a v nabídce, "
+"záhlavní liště na tlačítko s počitadlem provedených tahů a v nabídce, "
 "která se objeví, zvolte <gui>Začít znvou</gui>."
 
 #. (itstool) path: section/p
@@ -209,9 +209,9 @@ msgid ""
 "<keyseq><key>Ctrl</key><key>N</key></keyseq> keys sequence to go to the "
 "<link xref=\"start-screen\">Start Screen</link>."
 msgstr ""
-"Ke spuštění nové hry, s jiným možným nastavením, použijte kombinaci kláves "
-"<keyseq><key>Ctrl</key><key>N</key></keyseq> a dostanete se na <link xref="
-"\"start-screen\">spouštěcí obrazovku</link>."
+"Ke spuštění nové hry s jiným nastavením, použijte kombinaci kláves <keyseq>"
+"<key>Ctrl</key><key>N</key></keyseq> a dostanete se na <link xref=\"start-"
+"screen\">spouštěcí obrazovku</link>."
 
 #. (itstool) path: item/p
 #: C/15-Puzzle.page:88 C/16-Puzzle.page:82
