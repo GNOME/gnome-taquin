@@ -1,15 +1,15 @@
 # Czech translation for gnome-taquin.
 # Copyright (C) 2015 gnome-taquin's COPYRIGHT HOLDER
 # This file is distributed under the same license as the gnome-taquin package.
-# Marek Černocký <marek@manet.cz>, 2015, 2018.
+# Marek Černocký <marek@manet.cz>, 2015, 2018, 2019.
 #
 msgid ""
 msgstr ""
 "Project-Id-Version: gnome-taquin gnome-3.32\n"
 "POT-Creation-Date: 2019-03-12 15:51+0000\n"
-"PO-Revision-Date: 2018-08-30 17:07+0200\n"
+"PO-Revision-Date: 2019-09-09 14:42+0200\n"
 "Last-Translator: Marek Černocký <marek@manet.cz>\n"
-"Language-Team: Czech <gnome-cs-list@gnome.org>\n"
+"Language-Team: čeština <gnome-cs-list@gnome.org>\n"
 "Language: cs\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -93,6 +93,10 @@ msgid ""
 "restart the game by clicking on the button with a counter of moves done, and "
 "then on the <gui>Restart</gui> entry."
 msgstr ""
+"Kliknutím na tlačítko <gui>Nová hra</gui> se můžete dostat na <link xref="
+"\"start-screen\">spouštěcí obrazovku</link>. Případně můžete stávající hru "
+"restartovat a začít ji od začátku kliknutím na tlačítko s počitadlem "
+"provedených tahů a pak zvolit <gui>Začít znovu</gui>."
 
 #. (itstool) path: section/title
 #: C/15-Puzzle.page:37 C/16-Puzzle.page:37
@@ -126,12 +130,15 @@ msgid ""
 "of moves done in the headerbar, and click the <gui>Undo</gui> entry in the "
 "menu that appears."
 msgstr ""
+"Kdykoliv můžete svůj tah vrátit zpět. Stačí kliknout na tlačítko s "
+"počitadlem provedených tahů na záhlavní liště a pak v nabídce, která se "
+"objeví, zvolit <gui>Zpět</gui>."
 
 #. (itstool) path: section/p
 #: C/15-Puzzle.page:52 C/15-Puzzle.page:82 C/16-Puzzle.page:49
 #: C/16-Puzzle.page:76
 msgid "Whether you finished the current game or not:"
-msgstr ""
+msgstr "Ať už stávající hru dokončíte či nikoliv:"
 
 #. (itstool) path: item/p
 #: C/15-Puzzle.page:55 C/16-Puzzle.page:52
@@ -151,6 +158,9 @@ msgid ""
 "headerbar on the button with a counter of moves done, and click the "
 "<gui>Restart</gui> entry in the menu that appears."
 msgstr ""
+"Případně můžete chtít začít stávající hru od začátku. Pak klikněte na "
+"záhlavní liště na tlačítko s počitadlem provedených tahů a v nabídce, která "
+"se objeví, zvolte <gui>Začít znvou</gui>."
 
 #. (itstool) path: section/p
 #: C/15-Puzzle.page:62 C/16-Puzzle.page:59
@@ -199,9 +209,9 @@ msgid ""
 "<keyseq><key>Ctrl</key><key>N</key></keyseq> keys sequence to go to the "
 "<link xref=\"start-screen\">Start Screen</link>."
 msgstr ""
-"Ke spuštění nové hry s jiným nastavením, použijte kombinaci kláves <keyseq>"
-"<key>Ctrl</key><key>N</key></keyseq> a dostanete se na <link xref=\"start-"
-"screen\">spouštěcí obrazovku</link>."
+"Ke spuštění nové hry s jiným nastavením, použijte kombinaci kláves "
+"<keyseq><key>Ctrl</key><key>N</key></keyseq> a dostanete se na <link xref="
+"\"start-screen\">spouštěcí obrazovku</link>."
 
 #. (itstool) path: item/p
 #: C/15-Puzzle.page:88 C/16-Puzzle.page:82
@@ -318,6 +328,8 @@ msgid ""
 "You can also <link xref=\"15-Puzzle#15-keyboard\">play with the keyboard</"
 "link> if you prefer."
 msgstr ""
+"Můžete <link xref=\"15-Puzzle#15-keyboard\">hrát i pomocí klávesnice</link>, "
+"pokud klávesnici dáváte přednost."
 
 #. (itstool) path: page/p
 #: C/beginning.page:41
@@ -540,7 +552,7 @@ msgstr "Klávesové zkratky skládačky s 15 díly"
 #. (itstool) path: td/p
 #: C/shortcuts.page:43
 msgid "Select tile to push on"
-msgstr ""
+msgstr "Vybrat dílek pro posun"
 
 #. (itstool) path: td/p
 #: C/shortcuts.page:44
