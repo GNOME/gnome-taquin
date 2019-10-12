@@ -45,22 +45,25 @@ private class Taquin : Gtk.Application, BaseApplication
     private const OptionEntry [] option_entries =
     {
         /* Translators: command-line option description, see 'gnome-taquin --help' */
-        { "fifteen", 0, 0,  OptionArg.NONE, null,       N_("Play the classical 1880s’ 15-puzzle"), null},
+        { "fifteen", 0, OptionFlags.NONE, OptionArg.NONE, null,        N_("Play the classical 1880s’ 15-puzzle"), null },
 
         /* Translators: command-line option description, see 'gnome-taquin --help' */
-        { "sixteen", 0, 0, OptionArg.NONE, null,        N_("Try this fun alternative 16-puzzle"), null},
+        { "sixteen", 0, OptionFlags.NONE, OptionArg.NONE, null,        N_("Try this fun alternative 16-puzzle"), null },
 
         /* Translators: command-line option description, see 'gnome-taquin --help' */
-        { "size", 's', 0, OptionArg.INT, ref tmp_size,  N_("Sets the puzzle edges’ size (3-5, 2-9 for debug)"), null},
+        { "size", 's', OptionFlags.NONE, OptionArg.INT, ref tmp_size,  N_("Sets the puzzle edges’ size (3-5, 2-9 for debug)"),
+
+        /* Translators: in the command-line options description, text to indicate the user should specify a size, see 'gnome-taquin --help' */
+                                                                       N_("SIZE") },
 
         /* Translators: command-line option description, see 'gnome-taquin --help' */
-        { "mute", 0, 0, OptionArg.NONE, null,           N_("Turn off the sound"), null},
+        { "mute", 0, OptionFlags.NONE, OptionArg.NONE, null,           N_("Turn off the sound"), null },
 
         /* Translators: command-line option description, see 'gnome-taquin --help' */
-        { "unmute", 0, 0, OptionArg.NONE, null,         N_("Turn on the sound"), null},
+        { "unmute", 0, OptionFlags.NONE, OptionArg.NONE, null,         N_("Turn on the sound"), null },
 
         /* Translators: command-line option description, see 'gnome-taquin --help' */
-        { "version", 'v', 0, OptionArg.NONE, null,      N_("Print release version and exit"), null},
+        { "version", 'v', OptionFlags.NONE, OptionArg.NONE, null,      N_("Print release version and exit"), null },
 
         /* Translators: command-line option description, see 'gnome-taquin --help' */
      /* { "no-gtk", 0, 0, OptionArg.NONE, null,         N_("Begins a console game"), null}, TODO */
