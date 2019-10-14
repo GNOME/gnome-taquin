@@ -8,8 +8,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: 1.0\n"
 "Report-Msgid-Bugs-To: https://gitlab.gnome.org/GNOME/gnome-taquin/issues\n"
-"POT-Creation-Date: 2019-08-04 14:52+0000\n"
-"PO-Revision-Date: 2019-08-20 12:11+0200\n"
+"POT-Creation-Date: 2019-10-12 17:13+0000\n"
+"PO-Revision-Date: 2019-10-14 09:00+0200\n"
 "Last-Translator: Daniel Mustieles <daniel.mustieles@gmail.com>\n"
 "Language-Team: Spanish - Spain <gnome-es-list@gnome.org>\n"
 "Language: es_ES\n"
@@ -17,7 +17,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
-"X-Generator: Gtranslator 3.32.1\n"
+"X-Generator: Gtranslator 3.34.0\n"
 
 #: data/org.gnome.Taquin.appdata.xml.in:7
 msgid "GNOME Taquin"
@@ -477,90 +477,95 @@ msgid "Sets the puzzle edges’ size (3-5, 2-9 for debug)"
 msgstr ""
 "Establece el tamaño de los bordes del puzle (3-5, 2-9 para depuración))"
 
-#. Translators: command-line option description, see 'gnome-taquin --help'
+#. Translators: in the command-line options description, text to indicate the user should specify a size, see 'gnome-taquin --help'
 #: src/taquin-main.vala:57
+msgid "SIZE"
+msgstr "TAMAÑO"
+
+#. Translators: command-line option description, see 'gnome-taquin --help'
+#: src/taquin-main.vala:60
 msgid "Turn off the sound"
 msgstr "Apagar el sonido"
 
 #. Translators: command-line option description, see 'gnome-taquin --help'
-#: src/taquin-main.vala:60
+#: src/taquin-main.vala:63
 msgid "Turn on the sound"
 msgstr "Activar el sonido"
 
 #. Translators: command-line option description, see 'gnome-taquin --help'
-#: src/taquin-main.vala:63
+#: src/taquin-main.vala:66
 msgid "Print release version and exit"
 msgstr "Mostrar información de la versión y salir"
 
-#: src/taquin-main.vala:153
+#: src/taquin-main.vala:156
 msgid "About Taquin"
 msgstr "Acerca de Taquin"
 
 #. Translators: in-window notification; on the 15-Puzzle game, if the user clicks a tile that cannot move
-#: src/taquin-main.vala:325
+#: src/taquin-main.vala:328
 msgid "You can’t move this tile!"
 msgstr "No puede mover esta ficha"
 
 #. Translators: in-window notification; on the 16-Puzzle game, help for keyboard use, displayed if the user uses an unmeaningful keyboard key
-#: src/taquin-main.vala:334
+#: src/taquin-main.vala:337
 msgid "Use Shift and an arrow to move tiles!"
 msgstr "Use Mayús y las flechas para mover las fichas"
 
 #. Translators: in-window notification; on the 16-Puzzle game, if the user clicks on a tile of the board (the game is played using mouse with arrows around the board)
-#: src/taquin-main.vala:338
+#: src/taquin-main.vala:341
 msgid "Click on the arrows to move tiles!"
 msgstr "Pulse sobre las flechas para mover las fichas"
 
 #. Translators: about dialog text
-#: src/taquin-main.vala:501
+#: src/taquin-main.vala:504
 msgid "A classic 15-puzzle game"
 msgstr "Un juego clásico de puzle-15"
 
 #. Translators: about dialog text crediting an artist (a photograph), with the website where the image was published
-#: src/taquin-main.vala:505
+#: src/taquin-main.vala:508
 msgid "Abelard (Wikimedia)"
 msgstr "Abelard (Wikimedia)"
 
-#: src/taquin-main.vala:505
+#: src/taquin-main.vala:508
 msgid "Alvesgaspar (Wikimedia)"
 msgstr "Alvesgaspar (Wikimedia)"
 
-#: src/taquin-main.vala:505
+#: src/taquin-main.vala:508
 msgid "Mueller-rech.muenchen (Wikimedia)"
 msgstr "Mueller-rech.muenchen (Wikimedia)"
 
-#: src/taquin-main.vala:506
+#: src/taquin-main.vala:509
 msgid "Ruskis (Wikimedia)"
 msgstr "Ruskis (Wikimedia)"
 
-#: src/taquin-main.vala:506
+#: src/taquin-main.vala:509
 msgid "Toyah (Wikimedia)"
 msgstr "Toyah (Wikimedia)"
 
 #. Translators: about dialog text; in the Credits, text at the end of the "Artwork by" section
-#: src/taquin-main.vala:509
+#: src/taquin-main.vala:512
 msgid "(see COPYING.themes for informations)"
 msgstr "(consulte COPYING.themes para obtener más información)"
 
 #. Translators: about dialog text crediting an author
 #. Translators: about dialog text crediting a documenter
-#: src/taquin-main.vala:513 src/taquin-main.vala:521
+#: src/taquin-main.vala:516 src/taquin-main.vala:524
 msgid "Arnaud Bonatti"
 msgstr "Arnaud Bonatti"
 
 #. Translators: about dialog text crediting a maintainer; the %u are replaced with the years of start and end
-#: src/taquin-main.vala:517
+#: src/taquin-main.vala:520
 #, c-format
 msgid "Copyright © %u-%u – Arnaud Bonatti"
 msgstr "Copyright © %u-%u – Arnaud Bonatti"
 
 #. Translators: about dialog text; this string should be replaced by a text crediting yourselves and your translation team, or should be left empty. Do not translate literally!
-#: src/taquin-main.vala:526
+#: src/taquin-main.vala:529
 msgid "translator-credits"
 msgstr "Daniel Mustieles <daniel.mustieles@gmail.com>, 2015-2019"
 
 #. Translators: about dialog text; label of the website link
-#: src/taquin-main.vala:531
+#: src/taquin-main.vala:534
 msgid "Page on GNOME wiki"
 msgstr "Página en la wiki de GNOME"
 
