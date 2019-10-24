@@ -1,5 +1,5 @@
-/* -*- Mode: vala; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- */
-/*
+/* -*- Mode: vala; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*-
+
    This file is part of a GNOME game.
 
    Copyright 2019 Arnaud Bonatti
