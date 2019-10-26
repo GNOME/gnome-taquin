@@ -72,6 +72,10 @@ private class Taquin : Gtk.Application, BaseApplication
 
     private const GLib.ActionEntry [] action_entries =
     {
+        /* these two are for actions defined in the desktop file, when using D-Bus activation */
+        {"fifteen", play_fifteen_game},
+        {"sixteen", play_sixteen_game},
+
         /* TODO SimpleActionChangeStateCallback is deprecated...
         {"change-size", null, "s", null, null, change_size_cb},     http://valadoc.org/#!api=gio-2.0/GLib.SimpleActionChangeStateCallback
         {"change-theme", null, "s", null, null, change_theme_cb},   see comments about window.add_action (settings.create_action (…)) */
@@ -215,11 +219,32 @@ private class Taquin : Gtk.Application, BaseApplication
             init_sound ();
 
         add_window (window);
-        start_game ();
     }
 
     protected override void activate ()
     {
+        if (game == null)
+            start_game ();
+        window.present ();
+    }
+
+    private void play_fifteen_game ()
+    {
+        if (game == null)
+        {
+            settings.set_string ("type", "fifteen");
+            start_game ();
+        }
+        window.present ();
+    }
+
+    private void play_sixteen_game ()
+    {
+        if (game == null)
+        {
+            settings.set_string ("type", "sixteen");
+            start_game ();
+        }
         window.present ();
     }
 

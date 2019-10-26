@@ -13,14 +13,15 @@ Terminal=false
 Type=Application
 Categories=GNOME;GTK;Game;LogicGame;
 StartupNotify=true
-Actions=Fifteen;Sixteen;
+DBusActivatable=true
+Actions=fifteen;sixteen;
 
-[Desktop Action Fifteen]
+[Desktop Action fifteen]
 # Translators: an action Name, as defined in the desktop file spec; name of the traditional Taquin game
 Name=15-Puzzle
 Exec=gnome-taquin --fifteen
 
-[Desktop Action Sixteen]
+[Desktop Action sixteen]
 # Translators: an action Name, as defined in the desktop file spec; name of the alternative game
 Name=16-Puzzle
 Exec=gnome-taquin --sixteen

@@ -7,6 +7,20 @@ install_data(
     install_dir: soundsdir
 )
 
+# Make D-Bus activatable
+service_conf = configuration_data()
+service_conf.set('bindir', bindir)
+
+service = project_id + '.service'
+
+configure_file(
+  input: service + '.in',
+  output: service,
+  install: true,
+  install_dir: join_paths(datadir, 'dbus-1', 'services'),
+  configuration: service_conf
+)
+
 # Desktop file
 desktop_file = i18n.merge_file(
     input: '@0@.desktop.in'.format(project_id),

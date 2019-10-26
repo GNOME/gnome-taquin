@@ -27,9 +27,11 @@ glib_compile_schema = find_program('glib-compile-schemas', required: true)
 
 add_global_arguments('-DGETTEXT_PACKAGE="@0@"'.format (meson.project_name()), language: 'c')
 
-pkgdatadir = join_paths(get_option('prefix'), get_option('datadir'), meson.project_name())
-localedir = join_paths(get_option('prefix'), get_option('localedir'))
-soundsdir = join_paths(pkgdatadir, 'sounds')
+localedir   = join_paths(get_option('prefix'), get_option('localedir'))
+datadir     = join_paths(get_option('prefix'), get_option('datadir'))
+bindir      = join_paths(get_option('prefix'), get_option('bindir'))
+pkgdatadir  = join_paths(datadir, meson.project_name())
+soundsdir   = join_paths(pkgdatadir, 'sounds')
 
 conf = configuration_data ()
 conf.set_quoted('VERSION', meson.project_version())
