@@ -10,8 +10,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: taquin master\n"
 "Report-Msgid-Bugs-To: https://gitlab.gnome.org/GNOME/gnome-taquin/issues\n"
-"POT-Creation-Date: 2019-08-04 14:52+0000\n"
-"PO-Revision-Date: 2019-08-26 19:11+0200\n"
+"POT-Creation-Date: 2019-09-25 10:30+0000\n"
+"PO-Revision-Date: 2019-10-28 21:19+0100\n"
 "Last-Translator: Charles Monzat <charles.monzat@free.fr>\n"
 "Language-Team: GNOME French Team <gnomefr@traduc.org>\n"
 "Language: fr\n"
@@ -19,7 +19,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n > 1)\n"
-"X-Generator: Gtranslator 3.32.1\n"
+"X-Generator: Gtranslator 3.34.0\n"
 
 #: data/org.gnome.Taquin.appdata.xml.in:7
 msgid "GNOME Taquin"
@@ -83,7 +83,6 @@ msgstr "Glisse-glisse"
 
 #. Translators: summary of a settings key, see 'dconf-editor /org/gnome/taquin/automatic-night-mode'
 #: data/org.gnome.Taquin.gschema.xml:6
-#| msgid "Follow system night light"
 msgid "A flag to follow system night light"
 msgstr "Un drapeau pour suivre le mode nuit système"
 
@@ -97,13 +96,11 @@ msgstr ""
 #. range min="350"/ FIXME
 #. Translators: summary of a settings key, see 'dconf-editor /org/gnome/taquin/window-width'
 #: data/org.gnome.Taquin.gschema.xml:15
-#| msgid "Width of the window in pixels."
 msgid "The width of the window"
 msgstr "La largeur de la fenêtre"
 
 #. Translators: summary of a settings key, see 'dconf-editor /org/gnome/taquin/window-width'
 #: data/org.gnome.Taquin.gschema.xml:17
-#| msgid "Width of the window in pixels."
 msgid "The width of the main window in pixels."
 msgstr "La largeur de la fenêtre principale en pixels."
 
@@ -111,13 +108,11 @@ msgstr "La largeur de la fenêtre principale en pixels."
 #. range min="284"/ FIXME
 #. Translators: summary of a settings key, see 'dconf-editor /org/gnome/taquin/window-height'
 #: data/org.gnome.Taquin.gschema.xml:24
-#| msgid "Height of the window in pixels."
 msgid "The height of the window"
 msgstr "La hauteur de la fenêtre"
 
 #. Translators: description of a settings key, see 'dconf-editor /org/gnome/taquin/window-height'
 #: data/org.gnome.Taquin.gschema.xml:26
-#| msgid "Height of the window in pixels."
 msgid "The height of the main window in pixels."
 msgstr "La hauteur de la fenêtre principale en pixels."
 
@@ -128,7 +123,6 @@ msgstr "Un drapeau pour activer le mode maximisé"
 
 #. Translators: description of a settings key, see 'dconf-editor /org/gnome/taquin/window-is-maximized'
 #: data/org.gnome.Taquin.gschema.xml:33
-#| msgid "true if the window is maximized."
 msgid "If “true”, the main window starts in maximized mode."
 msgstr "Si vrai, la fenêtre démarre en mode maximisé."
 
@@ -237,7 +231,7 @@ msgstr "Recommencer la partie"
 #: data/ui/help-overlay.ui:66
 msgctxt "shortcut window"
 msgid "Undo last move"
-msgstr "Annule votre dernier déplacement"
+msgstr "Annuler le dernier déplacement"
 
 #: data/ui/help-overlay.ui:75
 msgctxt "shortcut window"
@@ -417,7 +411,7 @@ msgstr "Bravo ! Vous avez amélioré votre meilleur score !"
 #. Translators: in-window notification; on both games, if the user solved the puzzle more than one time
 #: src/game-headerbar.vala:256
 msgid "Bravo! You equalized your best score."
-msgstr "Bravo ! Vous avez égalisé votre meilleur score."
+msgstr "Bravo ! Vous avez égalé votre meilleur score."
 
 #. Translators: in-window notification; on both games, if the user solved the puzzle more than one time
 #: src/game-headerbar.vala:263
