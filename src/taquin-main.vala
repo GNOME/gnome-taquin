@@ -153,14 +153,14 @@ private class Taquin : Gtk.Application, BaseApplication
         view = new TaquinView ();
 
         GLib.Menu size_menu = new GLib.Menu ();
-        /* Translators: when configuring a new game, entry in the menu of the game size menubutton */
-        size_menu.append (_("3 × 3"), "app.change-size('3')");
+        /* Translators: when configuring a new game, entry in the menu of the game size menubutton; the "\t" is a tabulation; after is indicated an estimated time for solving the puzzle (1 minute) */
+        size_menu.append (_("3 × 3\t1 minute"), "app.change-size('3')");
 
-        /* Translators: when configuring a new game, entry in the menu of the game size menubutton */
-        size_menu.append (_("4 × 4"), "app.change-size('4')");
+        /* Translators: when configuring a new game, entry in the menu of the game size menubutton; the "\t" is a tabulation; after is indicated an estimated time for solving the puzzle (5 minutes) */
+        size_menu.append (_("4 × 4\t5 minutes"), "app.change-size('4')");
 
-        /* Translators: when configuring a new game, entry in the menu of the game size menubutton */
-        size_menu.append (_("5 × 5"), "app.change-size('5')");
+        /* Translators: when configuring a new game, entry in the menu of the game size menubutton; the "\t" is a tabulation; after is indicated an estimated time for solving the puzzle (15 minutes) */
+        size_menu.append (_("5 × 5\t15 minutes"), "app.change-size('5')");
         size_menu.freeze ();
 
         GLib.Menu theme_menu = new GLib.Menu ();
