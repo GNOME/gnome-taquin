@@ -27,8 +27,8 @@ private class GameHeaderBar : BaseHeaderBar, AdaptativeWidget
     [GtkChild] private Button       new_game_button;
     [GtkChild] private Button       back_button;
 
-    [CCode (notify = false)] public bool window_has_name { private get; protected construct; default = false; }
-    [CCode (notify = false)] public string window_name   { private get; internal  construct; default = ""; }
+    [CCode (notify = false)] public bool window_has_name { private get; protected construct    ; default = false; }
+    [CCode (notify = false)] public string window_name   { private get; protected construct set; default = ""; }
 
     [CCode (notify = false)] public bool has_sound { private get; protected construct; default = false; }
     [CCode (notify = false)] public bool show_undo { private get; protected construct; default = false; }
@@ -162,6 +162,12 @@ private class GameHeaderBar : BaseHeaderBar, AdaptativeWidget
         history_button.set_label (get_moves_count_string (ref moves_count));
         history_button.set_sensitive ((moves_count != 0) || (best_score != 0));
         last_moves_count = moves_count;
+    }
+
+    internal void update_title (string new_title)
+    {
+        window_name = new_title;
+        set_default_widgets_default_states (this);
     }
 
     /*\

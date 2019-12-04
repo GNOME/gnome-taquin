@@ -286,6 +286,11 @@ private class Taquin : Gtk.Application, BaseApplication
         GameType type = (GameType) settings.get_enum ("type");
         int8 size = (int8) settings.get_int ("size"); /* 2 <= size <= 9 */
         game = new Game (type, size);
+        /* Translators: name of one of the games, as displayed in the headerbar when playing */
+        window.set_title (type == GameType.FIFTEEN ? _("15-Puzzle")
+
+        /* Translators: name of one of the games, as displayed in the headerbar when playing */
+                                                   : _("16-Puzzle"));
         view.game = (!) game;
         window.move_done (0);
         move_done = false;
