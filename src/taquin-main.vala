@@ -317,7 +317,7 @@ private class Taquin : Gtk.Application, BaseApplication
         GameType type = (GameType) settings.get_enum ("type");
         int8 size = (int8) settings.get_int ("size"); /* 2 <= size <= 9 */
         game = new Game (type, size);
-        set_window_title (type == GameType.FIFTEEN);
+        set_window_title ();
         view.game = (!) game;
         window.move_done (0);
         move_done = false;
@@ -339,13 +339,13 @@ private class Taquin : Gtk.Application, BaseApplication
         ((!) game).move.connect (move_cb);
     }
 
-    private void set_window_title (bool fifteen)
+    private void set_window_title ()
     {
         /* Translators: name of one of the games, as displayed in the headerbar when playing */
-        window.update_title (fifteen ? _("15-Puzzle")
+        window.update_title (((!) game).game_type == GameType.FIFTEEN ? _("15-Puzzle")
 
         /* Translators: name of one of the games, as displayed in the headerbar when playing */
-                                     : _("16-Puzzle"));
+                                                                      : _("16-Puzzle"));
     }
 
     /*\
@@ -363,7 +363,7 @@ private class Taquin : Gtk.Application, BaseApplication
     private void back_cb ()
         requires (game != null)
     {
-        set_window_title (((!) game).game_type == GameType.FIFTEEN);
+        set_window_title ();
     }
 
     private void undo_cb ()
