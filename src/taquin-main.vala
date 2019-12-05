@@ -199,6 +199,7 @@ private class Taquin : Gtk.Application, BaseApplication
                                  null,  // appearance menu
                                  night_light_monitor);
         window.play.connect (start_game);
+        window.back.connect (back_cb);
         window.undo.connect (undo_cb);
         window.restart.connect (restart_cb);
 
@@ -316,11 +317,7 @@ private class Taquin : Gtk.Application, BaseApplication
         GameType type = (GameType) settings.get_enum ("type");
         int8 size = (int8) settings.get_int ("size"); /* 2 <= size <= 9 */
         game = new Game (type, size);
-        /* Translators: name of one of the games, as displayed in the headerbar when playing */
-        window.set_title (type == GameType.FIFTEEN ? _("15-Puzzle")
-
-        /* Translators: name of one of the games, as displayed in the headerbar when playing */
-                                                   : _("16-Puzzle"));
+        set_window_title (type == GameType.FIFTEEN);
         view.game = (!) game;
         window.move_done (0);
         move_done = false;
@@ -342,6 +339,15 @@ private class Taquin : Gtk.Application, BaseApplication
         ((!) game).move.connect (move_cb);
     }
 
+    private void set_window_title (bool fifteen)
+    {
+        /* Translators: name of one of the games, as displayed in the headerbar when playing */
+        window.update_title (fifteen ? _("15-Puzzle")
+
+        /* Translators: name of one of the games, as displayed in the headerbar when playing */
+                                     : _("16-Puzzle"));
+    }
+
     /*\
     * * Signals from window
     \*/
@@ -352,6 +358,12 @@ private class Taquin : Gtk.Application, BaseApplication
         ((!) game).restart ();
         play_sound (Sound.SLIDING_N);
         move_done = false;
+    }
+
+    private void back_cb ()
+        requires (game != null)
+    {
+        set_window_title (((!) game).game_type == GameType.FIFTEEN);
     }
 
     private void undo_cb ()

@@ -132,7 +132,7 @@ private class GameWindow : BaseWindow, AdaptativeWidget
         back ();
     }
 
-    internal void set_title (string game_name)
+    internal void update_title (string game_name)
     {
         headerbar.update_title (game_name);
     }
