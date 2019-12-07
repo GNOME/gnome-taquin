@@ -145,6 +145,7 @@ private class GameHeaderBar : BaseHeaderBar, AdaptativeWidget
         new_game_button.hide ();        // TODO transition?
         best_score = 0;
         last_moves_count = 0;
+        generate_moves_menu ();
     }
 
     /*\
