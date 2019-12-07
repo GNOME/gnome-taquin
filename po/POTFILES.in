@@ -13,6 +13,7 @@ src/base-headerbar.vala
 src/game-headerbar.vala
 src/game-view.vala
 src/game-window.vala
+src/history-button.vala
 src/new-game-screen.vala
 src/taquin-game.vala
 src/taquin-main.vala

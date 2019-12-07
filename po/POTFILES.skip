@@ -4,6 +4,7 @@ src/base-headerbar.c
 src/game-headerbar.c
 src/game-view.c
 src/game-window.c
+src/history-button.c
 src/new-game-screen.c
 src/taquin-game.c
 src/taquin-main.c

@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+  This file is part of GNOME Taquin
+
+  GNOME Taquin is free software: you can redistribute it and/or modify
+  it under the terms of the GNU General Public License as published by
+  the Free Software Foundation, either version 3 of the License, or
+  (at your option) any later version.
+
+  GNOME Taquin is distributed in the hope that it will be useful,
+  but WITHOUT ANY WARRANTY; without even the implied warranty of
+  MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+  GNU General Public License for more details.
+
+  You should have received a copy of the GNU General Public License
+  along with GNOME Taquin.  If not, see <https://www.gnu.org/licenses/>.
+-->
+<interface>
+  <requires lib="gtk+" version="3.12"/>
+  <template class="HistoryButton" parent="GtkMenuButton">
+    <property name="valign">center</property>
+    <property name="can-focus">True</property>
+    <property name="focus-on-click">False</property>
+    <style>
+      <class name="history-button"/>
+    </style>
+
+    <child internal-child="accessible">
+      <object class="AtkObject">
+        <!-- Translators: accessible name of the history menubutton -->
+        <property name="AtkObject::accessible-name" translatable="yes">History</property>
+        <!-- Translators: accessible description of the history menubutton -->
+        <property name="AtkObject::accessible-description" translatable="yes">Game history menu</property>
+      </object>
+    </child>
+  </template>
+</interface>

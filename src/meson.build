@@ -23,6 +23,7 @@ executable(meson.project_name(),[
         'game-headerbar.vala',
         'game-view.vala',
         'game-window.vala',
+        'history-button.vala',
         'new-game-screen.vala',
         'night-light-monitor.vala',
         'notifications-revealer.vala',
