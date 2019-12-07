@@ -37,6 +37,7 @@ private class Taquin : Gtk.Application, BaseApplication
     private GameWindow window;
     private TaquinView view;
     private NewGameScreen new_game_screen;
+    private HistoryButton history_button;
 
     /* The game being played */
     private Game? game = null;
@@ -183,6 +184,9 @@ private class Taquin : Gtk.Application, BaseApplication
                                              size_menu,
                                              theme_menu);
 
+        history_button = new HistoryButton ();
+        history_button.show ();
+
         /* Window */
         init_night_mode ();
         window = new GameWindow ("/org/gnome/Taquin/ui/taquin.css",
@@ -196,6 +200,7 @@ private class Taquin : Gtk.Application, BaseApplication
                                  (Box) new_game_screen,
                                  view,
                                  null,  // appearance menu
+                                 history_button,
                                  night_light_monitor);
         window.play.connect (start_game);
         window.back.connect (back_cb);
@@ -313,12 +318,15 @@ private class Taquin : Gtk.Application, BaseApplication
             SignalHandler.disconnect_by_func ((!) game, null, window);
         }
 
+        history_button.new_game ();
+
         GameType type = (GameType) settings.get_enum ("type");
         int8 size = (int8) settings.get_int ("size"); /* 2 <= size <= 9 */
         game = new Game (type, size);
         set_window_title ();
         view.game = (!) game;
         window.move_done (0);
+        history_button.set_moves_count (0);
         move_done = false;
 
         string filename = "";
@@ -379,6 +387,7 @@ private class Taquin : Gtk.Application, BaseApplication
     private void move_cb (bool x_axis, int8 number, int8 x_gap, int8 y_gap, uint moves_count, bool disable_animation)
     {
         window.move_done (moves_count);
+        history_button.set_moves_count (moves_count);
         play_sound (Sound.SLIDING_1);   // TODO sliding-n??
         move_done = true;
     }
@@ -387,6 +396,9 @@ private class Taquin : Gtk.Application, BaseApplication
     {
         window.finish_game ();
         play_sound (Sound.GAME_OVER);
+        string best_score_string;
+        history_button.save_best_score (out best_score_string);
+        window.show_notification (best_score_string);
     }
 
     private bool move_done = false;

@@ -23,7 +23,6 @@ using Gtk;
 [GtkTemplate (ui = "/org/gnome/Taquin/ui/game-headerbar.ui")]
 private class GameHeaderBar : BaseHeaderBar, AdaptativeWidget
 {
-    [GtkChild] private HistoryButton    history_button;
     [GtkChild] private Button           new_game_button;
     [GtkChild] private Button           back_button;
 
@@ -32,18 +31,24 @@ private class GameHeaderBar : BaseHeaderBar, AdaptativeWidget
 
     [CCode (notify = false)] public bool has_sound { private get; protected construct; default = false; }
 
+    [CCode (notify = false)] public Widget? game_widget { private get; protected construct; default = null; }
+
     construct
     {
         init_modes ();
 
         if (window_name != "")
             window_has_name = true;
+
+        if (game_widget != null)
+            pack_end ((!) game_widget);
     }
 
     internal GameHeaderBar (string              _window_name,
                             string              _about_action_label,
                             GameWindowFlags     flags,
                             GLib.Menu?          _appearance_menu,
+                            Widget?             _game_widget,
                             NightLightMonitor   _night_light_monitor)
     {
         Object (about_action_label:     _about_action_label,
@@ -52,6 +57,7 @@ private class GameHeaderBar : BaseHeaderBar, AdaptativeWidget
                 has_sound:              GameWindowFlags.HAS_SOUND in flags,
                 has_help:               GameWindowFlags.SHOW_HELP in flags, // TODO rename show_help
                 appearance_menu:        _appearance_menu,
+                game_widget:            _game_widget,
                 window_name:            _window_name);
     }
 
@@ -63,6 +69,9 @@ private class GameHeaderBar : BaseHeaderBar, AdaptativeWidget
     protected override void set_window_size (AdaptativeWidget.WindowSize new_size)
     {
         base.set_window_size (new_size);
+
+//        if (game_widget != null)
+//            ((AdaptativeWidget) (!) game_widget).set_window_size (new_size);
 
         if (!window_has_name)
             return;
@@ -99,7 +108,8 @@ private class GameHeaderBar : BaseHeaderBar, AdaptativeWidget
     {
         current_view_is_new_game_screen = true;
 
-        history_button.hide ();
+        if (game_widget != null)
+            ((!) game_widget).hide ();
 
         if (!game_finished && back_button.visible)
         {
@@ -116,7 +126,8 @@ private class GameHeaderBar : BaseHeaderBar, AdaptativeWidget
 
         back_button.hide ();        // TODO transition?
         new_game_button.show ();    // TODO transition?
-        history_button.show ();
+        if (game_widget != null)
+            ((!) game_widget).show ();
 
         if (game_finished)
         {
@@ -135,7 +146,6 @@ private class GameHeaderBar : BaseHeaderBar, AdaptativeWidget
     {
         back_button.show ();
         new_game_button.hide ();        // TODO transition?
-        history_button.new_game ();
     }
 
     /*\
@@ -145,11 +155,6 @@ private class GameHeaderBar : BaseHeaderBar, AdaptativeWidget
     internal void new_game_button_grab_focus ()
     {
         new_game_button.grab_focus ();
-    }
-
-    internal void set_moves_count (ref uint moves_count)
-    {
-        history_button.set_moves_count (ref moves_count);
     }
 
     internal void update_title (string new_title)
@@ -204,24 +209,17 @@ private class GameHeaderBar : BaseHeaderBar, AdaptativeWidget
                 real_this.back_button.show ();
             else
             {
-                real_this.history_button.show ();
+                if (real_this.game_widget != null)
+                    ((!) real_this.game_widget).show ();
                 real_this.new_game_button.show ();
             }
         }
         else
         {
             real_this.back_button.hide ();
-            real_this.history_button.hide ();
+            if (real_this.game_widget != null)
+                ((!) real_this.game_widget).hide ();
             real_this.new_game_button.hide ();
         }
-    }
-
-    /*\
-    * * moves menu
-    \*/
-
-    internal void save_best_score (out string best_score_string)
-    {
-        history_button.save_best_score (out best_score_string);
     }
 }

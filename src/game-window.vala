@@ -37,9 +37,9 @@ private class GameWindow : BaseWindow, AdaptativeWidget
     private GameView        game_view;
     private Box             new_game_screen;
 
-    internal GameWindow (string? css_resource, string name, string about_action_label, bool start_now, GameWindowFlags flags, Box _new_game_screen, Widget view_content, GLib.Menu? appearance_menu, NightLightMonitor night_light_monitor)
+    internal GameWindow (string? css_resource, string name, string about_action_label, bool start_now, GameWindowFlags flags, Box _new_game_screen, Widget view_content, GLib.Menu? appearance_menu, Widget? game_widget, NightLightMonitor night_light_monitor)
     {
-        GameHeaderBar _headerbar = new GameHeaderBar (name, about_action_label, flags, appearance_menu, night_light_monitor);
+        GameHeaderBar _headerbar = new GameHeaderBar (name, about_action_label, flags, appearance_menu, game_widget, night_light_monitor);
         GameView      _game_view = new GameView (flags, _new_game_screen, view_content);
 
         Object (nta_headerbar               : (NightTimeAwareHeaderBar) _headerbar,
@@ -90,7 +90,6 @@ private class GameWindow : BaseWindow, AdaptativeWidget
 
     internal void move_done (uint moves_count)
     {
-        headerbar.set_moves_count (ref moves_count);
         hide_notification ();
         bool undo_possible = moves_count != 0;
         restart_action.set_enabled (undo_possible);
@@ -103,9 +102,6 @@ private class GameWindow : BaseWindow, AdaptativeWidget
     {
         game_finished = true;
         headerbar.new_game_button_grab_focus ();
-        string best_score_string;
-        headerbar.save_best_score (out best_score_string);
-        show_notification (best_score_string);
     }
 
     protected override bool escape_pressed ()

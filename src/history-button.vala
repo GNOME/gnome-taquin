@@ -150,7 +150,7 @@ private class HistoryButton : MenuButton
     }
 
     private uint last_moves_count = 0;
-    internal void set_moves_count (ref uint moves_count)
+    internal void set_moves_count (uint moves_count)
     {
         update_state (/* label     */ get_moves_count_string (ref moves_count),
                       /* sensitive */ (moves_count != 0) || (best_score != 0));
