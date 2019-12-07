@@ -39,6 +39,8 @@ private class Taquin : Gtk.Application, BaseApplication
     private NewGameScreen new_game_screen;
     private HistoryButton history_button_1;
     private HistoryButton history_button_2;
+    private GLib.Menu size_menu_fifteen;
+    private GLib.Menu size_menu_sixteen;
 
     /* The game being played */
     private Game? game = null;
@@ -154,16 +156,27 @@ private class Taquin : Gtk.Application, BaseApplication
         /* UI parts */
         view = new TaquinView ();
 
-        GLib.Menu size_menu = new GLib.Menu ();
+        size_menu_fifteen = new GLib.Menu ();
         /* Translators: when configuring a new game, entry in the menu of the game size menubutton; the "\t" is a tabulation; after is indicated an estimated time for solving the puzzle (1 minute) */
-        size_menu.append (_("3 × 3\t1 minute"), "app.change-size('3')");
+        size_menu_fifteen.append (_("3 × 3\t1 minute"), "app.change-size('3')");
 
         /* Translators: when configuring a new game, entry in the menu of the game size menubutton; the "\t" is a tabulation; after is indicated an estimated time for solving the puzzle (5 minutes) */
-        size_menu.append (_("4 × 4\t5 minutes"), "app.change-size('4')");
+        size_menu_fifteen.append (_("4 × 4\t5 minutes"), "app.change-size('4')");
 
         /* Translators: when configuring a new game, entry in the menu of the game size menubutton; the "\t" is a tabulation; after is indicated an estimated time for solving the puzzle (15 minutes) */
-        size_menu.append (_("5 × 5\t15 minutes"), "app.change-size('5')");
-        size_menu.freeze ();
+        size_menu_fifteen.append (_("5 × 5\t15 minutes"), "app.change-size('5')");
+        size_menu_fifteen.freeze ();
+
+        size_menu_sixteen = new GLib.Menu ();
+        /* Translators: when configuring a new game, entry in the menu of the game size menubutton; the "\t" is a tabulation; after is indicated an estimated time for solving the puzzle (1 minute) */
+        size_menu_sixteen.append (_("3 × 3\t1 minute"), "app.change-size('3')");
+
+        /* Translators: when configuring a new game, entry in the menu of the game size menubutton; the "\t" is a tabulation; after is indicated an estimated time for solving the puzzle (5 minutes) */
+        size_menu_sixteen.append (_("4 × 4\t3 minutes"), "app.change-size('4')");
+
+        /* Translators: when configuring a new game, entry in the menu of the game size menubutton; the "\t" is a tabulation; after is indicated an estimated time for solving the puzzle (5 minutes) */
+        size_menu_sixteen.append (_("5 × 5\t5 minutes"), "app.change-size('5')");
+        size_menu_sixteen.freeze ();
 
         GLib.Menu theme_menu = new GLib.Menu ();
         /* Translators: when configuring a new game, entry in the menu of the game theme menubutton; play with cats images */
@@ -180,10 +193,18 @@ private class Taquin : Gtk.Application, BaseApplication
 
         /* Translators: when configuring a new game, label of the second big button; name of the non-traditional game */
                                              _("16-Puzzle"),
-                                             "app.type('sixteen')",
+                                             "app.type('sixteen')");
 
-                                             size_menu,
-                                             theme_menu);
+        settings.changed ["type"].connect (() => {
+                new_game_screen.update_menubutton_menu (NewGameScreen.MenuButton.ONE,
+                                                        (GameType) settings.get_enum ("type") == GameType.FIFTEEN ? size_menu_fifteen :
+                                                                                                                    size_menu_sixteen);
+            });
+        new_game_screen.update_menubutton_menu (NewGameScreen.MenuButton.ONE,
+                                                (GameType) settings.get_enum ("type") == GameType.FIFTEEN ? size_menu_fifteen :
+                                                                                                            size_menu_sixteen);
+        new_game_screen.update_menubutton_menu (NewGameScreen.MenuButton.TWO,
+                                                theme_menu);
 
         history_button_1 = new HistoryButton ();
         history_button_2 = new HistoryButton ();
