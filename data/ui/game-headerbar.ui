@@ -20,13 +20,28 @@
   <template class="GameHeaderBar" parent="BaseHeaderBar">
     <property name="show-close-button">True</property>
     <child>
-      <object class="HistoryButton" id="history_button">
-        <property name="visible">True</property>
+      <object class="GtkButton" id="new_game_button">
+        <property name="halign">center</property>
+        <property name="valign">center</property>
+        <property name="action-name">ui.new-game</property>
+        <property name="can-default">True</property>
+        <!-- Translators: during a game, tooltip text of the New Game button -->
+        <property name="tooltip-text" translatable="yes">Start a new game</property>
+        <style>
+          <class name="text-button"/>
+          <class name="new-game-button"/>
+        </style>
+        <child>
+          <object class="GtkLabel"> <!-- for ellipsizing, if the text shows a moves count that can grow -->
+            <property name="visible">True</property>
+            <!-- Translators: during a game, label of the New Game button (with a mnemonic that appears pressing Alt) -->
+            <property name="label" translatable="yes">_New Game</property>
+            <property name="ellipsize">end</property>
+            <property name="mnemonic-widget">new_game_button</property>
+            <property name="use-underline">True</property>
+          </object>
+        </child>
       </object>
-      <packing>
-        <property name="pack-type">end</property>
-        <property name="position">5</property>
-      </packing>
     </child>
     <child>
       <object class="GtkButton" id="back_button">
@@ -37,7 +52,10 @@
         <property name="tooltip-text" translatable="yes">Go back to the current game</property>
         <property name="use-underline">True</property>
         <property name="action-name">base.escape</property>
-        <style><class name="image-button"/></style>
+        <property name="focus-on-click">False</property>
+        <style>
+          <class name="image-button"/>
+        </style>
         <child>
           <object class="GtkImage">
             <property name="icon-name">go-previous-symbolic</property>
@@ -48,28 +66,13 @@
       </object>
     </child>
     <child>
-      <object class="GtkButton" id="new_game_button">
+      <object class="HistoryButton" id="history_button">
         <property name="visible">True</property>
-        <property name="halign">center</property>
-        <property name="valign">center</property>
-        <property name="action-name">ui.new-game</property>
-        <!-- Translators: during a game, tooltip text of the New Game button -->
-        <property name="tooltip-text" translatable="yes">Start a new game</property>
-        <style>
-          <class name="text-button"/>
-          <class name="new-game-button"/>
-        </style>
-        <child>
-          <object class="GtkLabel">
-            <property name="visible">True</property>
-            <!-- Translators: during a game, label of the New Game button (with a mnemonic that appears pressing Alt) -->
-            <property name="label" translatable="yes">_New Game</property>
-            <property name="ellipsize">end</property> <!-- can happen on small screen with big moves count -->
-            <property name="mnemonic-widget">new_game_button</property>
-            <property name="use-underline">True</property>
-          </object>
-        </child>
       </object>
+      <packing>
+        <property name="pack-type">end</property>
+        <property name="position">5</property>
+      </packing>
     </child>
   </template>
 </interface>
