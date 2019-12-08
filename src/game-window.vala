@@ -2,7 +2,7 @@
 
    This file is part of a GNOME game
 
-   Copyright (C) 2015-2016 – Arnaud Bonatti <arnaud.bonatti@gmail.com>
+   Copyright (C) 2015-2019 – Arnaud Bonatti <arnaud.bonatti@gmail.com>
 
    This application is free software: you can redistribute it and/or modify
    it under the terms of the GNU General Public License as published by
@@ -35,12 +35,14 @@ private class GameWindow : BaseWindow, AdaptativeWidget
     /* private widgets */
     private GameHeaderBar   headerbar;
     private GameView        game_view;
+    private GameActionBar   actionbar;
     private Box             new_game_screen;
 
-    internal GameWindow (string? css_resource, string name, string about_action_label, bool start_now, GameWindowFlags flags, Box _new_game_screen, Widget view_content, GLib.Menu? appearance_menu, Widget? game_widget, NightLightMonitor night_light_monitor)
+    internal GameWindow (string? css_resource, string name, string about_action_label, bool start_now, GameWindowFlags flags, Box _new_game_screen, Widget view_content, GLib.Menu? appearance_menu, Widget? game_widget_1, Widget? game_widget_2, NightLightMonitor night_light_monitor)
     {
-        GameHeaderBar _headerbar = new GameHeaderBar (name, about_action_label, flags, appearance_menu, game_widget, night_light_monitor);
+        GameHeaderBar _headerbar = new GameHeaderBar (name, about_action_label, flags, appearance_menu, game_widget_1, night_light_monitor);
         GameView      _game_view = new GameView (flags, _new_game_screen, view_content);
+        GameActionBar _actionbar = new GameActionBar (name, game_widget_2, /* show actionbar */ start_now);
 
         Object (nta_headerbar               : (NightTimeAwareHeaderBar) _headerbar,
                 base_view                   : (BaseView) _game_view,
@@ -51,7 +53,10 @@ private class GameWindow : BaseWindow, AdaptativeWidget
 
         headerbar = _headerbar;
         game_view = _game_view;
+        actionbar = _actionbar;
         new_game_screen = _new_game_screen;
+
+        add_to_main_grid (actionbar);
 
         /* CSS */
         if (css_resource != null)
@@ -82,6 +87,7 @@ private class GameWindow : BaseWindow, AdaptativeWidget
 
         ((AdaptativeWidget) new_game_screen).set_window_size (new_size);
         ((AdaptativeWidget) game_view).set_window_size (new_size);
+        ((AdaptativeWidget) actionbar).set_window_size (new_size);
     }
 
     /*\
@@ -128,6 +134,8 @@ private class GameWindow : BaseWindow, AdaptativeWidget
     internal void update_title (string game_name)
     {
         headerbar.update_title (game_name);
+        actionbar.update_title (game_name);
+        actionbar.set_visibility (true);
     }
 
     /*\
@@ -138,6 +146,7 @@ private class GameWindow : BaseWindow, AdaptativeWidget
     {
         hide_notification ();
         headerbar.update_title (Taquin.PROGRAM_NAME);
+        actionbar.set_visibility (false);
         bool grabs_focus = headerbar.show_new_game_screen (game_finished);
         game_view.show_new_game_box (/* grab focus */ !grabs_focus);
     }

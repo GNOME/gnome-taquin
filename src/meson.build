@@ -20,6 +20,7 @@ executable(meson.project_name(),[
         'base-headerbar.vala',
         'base-view.vala',
         'base-window.vala',
+        'game-actionbar.vala',
         'game-headerbar.vala',
         'game-view.vala',
         'game-window.vala',

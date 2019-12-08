@@ -21,9 +21,6 @@ button.unfullscreen-button {
   margin:6px;
 }
 
-/* hack: fix the double spacing around the centerwidget box, on extra-thin window (visible with big moves count) */
-.extra-thin-window.thin-window button.new-game-button { margin-right:-6px; }
-
 /*\
 * * board generics; TODO move in game-window.css
 \*/
@@ -54,6 +51,14 @@ button.unfullscreen-button {
 .extra-flat-window.flat-window button.start-game-button { margin-top:  0rem; margin-bottom:0.4rem; }
 
 .extra-thin-window             button.start-game-button { margin-top:1.0rem; }
+
+/* TODO move in game-window.css */
+label.game-name-label:dir(ltr) {
+  margin-left : 12px;
+}
+label.game-name-label:dir(rtl) {
+  margin-right: 12px;
+}
 
 /*\
 * * games buttons
