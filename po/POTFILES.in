@@ -6,6 +6,7 @@ data/org.gnome.Taquin.gschema.xml
 data/ui/base-headerbar.ui
 data/ui/game-headerbar.ui
 data/ui/help-overlay.ui
+data/ui/history-button.ui
 data/ui/new-game-screen.ui
 src/about-list.vala
 src/adaptative-window.vala
