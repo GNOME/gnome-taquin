@@ -43,16 +43,6 @@ private class TaquinView : Gtk.DrawingArea
     [CCode (notify = false)] private int x_offset { get { return (get_allocated_width ()  - board_size) / 2 - grid_border_main; }}
     [CCode (notify = false)] private int y_offset { get { return (get_allocated_height () - board_size) / 2 - grid_border_main; }}
 
-    private void calculate ()
-    {
-        var size = int.min (get_allocated_width (), get_allocated_height ());
-        /* tile_size includes a grid spacing */
-        tile_size = (size * 10 / 12) / game.size;
-        board_size = tile_size * game.size - GRID_SPACING;
-        grid_border_main = (size - board_size) / 2;
-        arrows = size / 100;
-    }
-
     /* Arrows (or lights) place */
     private int8 x_arrow = 0;
     private int8 y_arrow = 0;
@@ -99,6 +89,7 @@ private class TaquinView : Gtk.DrawingArea
             draw_lights = false;
             x_arrow = 0;
             y_arrow = 0;
+            configure ();
             ((!) _game).move.connect (move_cb);
             ((!) _game).complete.connect (complete_cb);
             queue_draw ();
@@ -119,13 +110,24 @@ private class TaquinView : Gtk.DrawingArea
         }
     }
 
+    protected override bool configure_event (Gdk.EventConfigure e)
+    {
+        configure ();
+        return true;
+    }
+
+    private void configure ()
+    {
+        var size = int.min (get_allocated_width (), get_allocated_height ());
+        /* tile_size includes a grid spacing */
+        tile_size = (size * 10 / 12) / game.size;
+        board_size = tile_size * game.size - GRID_SPACING;
+        grid_border_main = (size - board_size) / 2;
+        arrows = size / 100;
+    }
+
     protected override bool draw (Cairo.Context cr)
     {
-//        if (game == null)
-//            return false;
-
-        calculate ();
-
         if (tiles_pattern == null || render_size != tile_size)
         {
             render_size = tile_size;
