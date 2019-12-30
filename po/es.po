@@ -8,8 +8,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: 1.0\n"
 "Report-Msgid-Bugs-To: https://gitlab.gnome.org/GNOME/gnome-taquin/issues\n"
-"POT-Creation-Date: 2019-12-10 12:53+0000\n"
-"PO-Revision-Date: 2019-12-11 09:35+0100\n"
+"POT-Creation-Date: 2019-12-12 16:10+0000\n"
+"PO-Revision-Date: 2019-12-30 12:21+0100\n"
 "Last-Translator: Daniel Mustieles <daniel.mustieles@gmail.com>\n"
 "Language-Team: Spanish - Spain <gnome-es-list@gnome.org>\n"
 "Language: es_ES\n"
@@ -285,6 +285,16 @@ msgctxt "shortcut window"
 msgid "Quit"
 msgstr "Salir"
 
+#. Translators: accessible name of the history menubutton
+#: data/ui/history-button.ui:31
+msgid "History"
+msgstr "Histórico"
+
+#. Translators: accessible description of the history menubutton
+#: data/ui/history-button.ui:33
+msgid "Game history menu"
+msgstr "Menú del histórico de juegos"
+
 #. Translators: when configuring a new game, header of the game type that appears on small screen
 #: data/ui/new-game-screen.ui:32
 msgid "Game"
@@ -520,7 +530,6 @@ msgstr "Tema: números ▾"
 #. Translators: when configuring a new game, button label for the theme, if the current theme has been added by the user; the %s is replaced by the theme name
 #: src/taquin-main.vala:536
 #, c-format
-#| msgid "Theme: Cats ▾"
 msgid "Theme: %s ▾"
 msgstr "Tema: %s ▾"
 
@@ -576,12 +585,6 @@ msgstr "Daniel Mustieles <daniel.mustieles@gmail.com>, 2015-2019"
 #: src/taquin-main.vala:678
 msgid "Page on GNOME wiki"
 msgstr "Página en la wiki de GNOME"
-
-#~ msgid "History"
-#~ msgstr "Histórico"
-
-#~ msgid "Game history menu"
-#~ msgstr "Menú del histórico de juegos"
 
 #~ msgid "3 × 3"
 #~ msgstr "3 × 3"
