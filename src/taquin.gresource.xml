@@ -5,22 +5,23 @@
     <file preprocess="to-pixdata" alias="16-Puzzle.png">../data/schema-16.png</file>
   </gresource>
   <gresource prefix="/org/gnome/Taquin/ui">
-    <file preprocess="xml-stripblanks" alias="adaptative-window.ui">../data/ui/adaptative-window.ui</file>
-    <file preprocess="xml-stripblanks" alias="base-headerbar.ui">../data/ui/base-headerbar.ui</file>
-    <file preprocess="xml-stripblanks" alias="base-view.ui">../data/ui/base-view.ui</file>
+    <file preprocess="xml-stripblanks" alias="adaptative-window.ui"             >../data/ui/adaptative-window.ui</file>
+    <file preprocess="xml-stripblanks" alias="base-headerbar.ui"                >../data/ui/base-headerbar.ui</file>
+    <file preprocess="xml-stripblanks" alias="base-view.ui"                     >../data/ui/base-view.ui</file>
     <file alias="base-window.css">../data/base-window.css</file>
-    <file preprocess="xml-stripblanks" alias="base-window.ui">../data/ui/base-window.ui</file>
-    <file preprocess="xml-stripblanks" compressed="true" alias="game-actionbar.ui">../data/ui/game-actionbar.ui</file>
-    <file preprocess="xml-stripblanks" alias="game-headerbar.ui">../data/ui/game-headerbar.ui</file>
-    <file preprocess="xml-stripblanks" alias="history-button.ui">../data/ui/history-button.ui</file>
+    <file preprocess="xml-stripblanks" alias="base-window.ui"                   >../data/ui/base-window.ui</file>
+    <file preprocess="xml-stripblanks" alias="game-actionbar.ui"                >../data/ui/game-actionbar.ui</file>
+    <file preprocess="xml-stripblanks" alias="game-actionbar-placeholder.ui"    >../data/ui/game-actionbar-placeholder.ui</file>
+    <file preprocess="xml-stripblanks" alias="game-headerbar.ui"                >../data/ui/game-headerbar.ui</file>
+    <file preprocess="xml-stripblanks" alias="history-button.ui"                >../data/ui/history-button.ui</file>
     <file alias="new-game-screen.css">../data/new-game-screen.css</file>
-    <file preprocess="xml-stripblanks" alias="new-game-screen.ui">../data/ui/new-game-screen.ui</file>
-    <file preprocess="xml-stripblanks" alias="notifications-revealer.ui">../data/ui/notifications-revealer.ui</file>
-    <file preprocess="xml-stripblanks" alias="overlayed-list.ui">../data/ui/overlayed-list.ui</file>
-    <file preprocess="xml-stripblanks" alias="registry-placeholder.ui">../data/ui/registry-placeholder.ui</file>
+    <file preprocess="xml-stripblanks" alias="new-game-screen.ui"               >../data/ui/new-game-screen.ui</file>
+    <file preprocess="xml-stripblanks" alias="notifications-revealer.ui"        >../data/ui/notifications-revealer.ui</file>
+    <file preprocess="xml-stripblanks" alias="overlayed-list.ui"                >../data/ui/overlayed-list.ui</file>
+    <file preprocess="xml-stripblanks" alias="registry-placeholder.ui"          >../data/ui/registry-placeholder.ui</file>
     <file alias="taquin.css">../data/taquin.css</file>
   </gresource>
   <gresource prefix="/org/gnome/Taquin/gtk">
-    <file preprocess="xml-stripblanks" alias="help-overlay.ui">../data/ui/help-overlay.ui</file>
+    <file preprocess="xml-stripblanks" compressed="true" alias="help-overlay.ui">../data/ui/help-overlay.ui</file>
   </gresource>
 </gresources>
