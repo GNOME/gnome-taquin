@@ -89,6 +89,7 @@ private class TaquinView : Gtk.DrawingArea
             draw_lights = false;
             x_arrow = 0;
             y_arrow = 0;
+            tiles_pattern = null;
             configure ();
             ((!) _game).move.connect (move_cb);
             ((!) _game).complete.connect (complete_cb);
@@ -96,6 +97,7 @@ private class TaquinView : Gtk.DrawingArea
         }
     }
 
+    private Pixbuf? unscaled_pixbuf = null;
     private string? _theme = null;
     [CCode (notify = false)] internal string theme
     {
@@ -105,6 +107,8 @@ private class TaquinView : Gtk.DrawingArea
             _theme = value;
             if (_theme == null)
                 assert_not_reached ();
+            try { unscaled_pixbuf = new Pixbuf.from_file ((!) _theme); }
+            catch { critical ("failed to load theme: %s", (!) _theme); assert_not_reached (); } // TODO better
             tiles_pattern = null;
             queue_draw ();
         }
@@ -133,7 +137,7 @@ private class TaquinView : Gtk.DrawingArea
             render_size = tile_size;
             var surface = new Cairo.Surface.similar (cr.get_target (), Cairo.Content.COLOR_ALPHA, board_size, board_size);
             var c = new Cairo.Context (surface);
-            _load_image (c, theme, ref board_size);
+            _refresh_pixmaps (c, unscaled_pixbuf, ref board_size);
             tiles_pattern = new Cairo.Pattern.for_surface (surface);
         }
 
@@ -261,34 +265,19 @@ private class TaquinView : Gtk.DrawingArea
         return false;
     }
 
-    private static inline void _load_image (Cairo.Context c, string theme, ref int board_size)
+    private static inline void _refresh_pixmaps (Cairo.Context context, Pixbuf? unscaled_pixbuf, ref int board_size)
     {
-        /* try      // there’s a lag switching ui screen, and I don’t use SVGs…
-        {
-            var h = new Rsvg.Handle.from_file (theme);
-
-            var m = Cairo.Matrix.identity ();
-            m.scale ((double) board_size / h.width, (double) board_size / h.height);
-            c.set_matrix (m);
-            h.render_cairo (c);
-
+        if (unscaled_pixbuf == null)
             return;
-        }
-        catch (Error e)
-        {
-            // Fall through and try loading as a pixbuf
-        }*/
 
-        try
-        {
-            var p = new Pixbuf.from_file_at_scale (theme, board_size, board_size, false);
-            cairo_set_source_pixbuf (c, p, 0, 0);
-            c.paint ();
-        }
-        catch (Error e)
-        {
-            warning ("Failed to load theme %s: %s\n\nIf you were trying to launch an unusual size, retry, it may work. But it probably implies that you have not an image adapted to the requested size in the current theme. If that's not the case, file a bug please.\n", theme, e.message);     // FIXME
-        }
+        Gdk.Pixbuf? tmp_pixbuf;
+
+        tmp_pixbuf = ((!) unscaled_pixbuf).scale_simple (board_size, board_size, Gdk.InterpType.BILINEAR);
+        if (tmp_pixbuf == null)
+            assert_not_reached ();
+
+        cairo_set_source_pixbuf (context, (!) tmp_pixbuf, 0, 0);
+        context.paint ();
     }
 
     private const double half_pi = Math.PI / 2.0;
