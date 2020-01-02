@@ -2,7 +2,7 @@
 
    This file is part of GNOME Taquin.
 
-   Copyright (C) 2014-2016 – Arnaud Bonatti <arnaud.bonatti@gmail.com>
+   Copyright (C) 2014-2020 – Arnaud Bonatti <arnaud.bonatti@gmail.com>
 
    GNOME Taquin is free software: you can redistribute it and/or modify
    it under the terms of the GNU General Public License as published by
@@ -661,7 +661,7 @@ private class Taquin : Gtk.Application, BaseApplication
 
 
         /* Translators: about dialog text crediting a maintainer; the %u are replaced with the years of start and end */
-        copyright = _("Copyright \xc2\xa9 %u-%u – Arnaud Bonatti").printf (2014, 2019);
+        copyright = _("Copyright \xc2\xa9 %u-%u – Arnaud Bonatti").printf (2014, 2020);
 
 
         /* Translators: about dialog text crediting a documenter */
