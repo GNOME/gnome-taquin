@@ -1,3 +1,16 @@
+3.35.3 – January 6, 2020
+=============================
+
+There is now an indication about the estimated time needed to finish a puzzle of
+a given size. Also, the layout has improved on phone-like screens, with the game
+name being displayed in a bottom bar. And the game do not lag anymore on resize.
+
+Translations updated:
+  Friulian: Fabio Tomat
+  Greek: Efstathios Iosifidis
+  Spanish: Daniel Mustieles
+  Swedish: Anders Jonsson
+
 3.35.2 – November 23, 2019
 =============================
 
