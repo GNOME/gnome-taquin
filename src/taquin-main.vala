@@ -514,7 +514,7 @@ private class Taquin : Gtk.Application, BaseApplication
 
 
         /* Translators: about dialog text crediting a maintainer; the %u are replaced with the years of start and end */
-        copyright = _("Copyright \xc2\xa9 %u-%u – Arnaud Bonatti").printf (2014, 2019);
+        copyright = _("Copyright \xc2\xa9 %u-%u – Arnaud Bonatti").printf (2014, 2020);
 
 
         /* Translators: about dialog text crediting a documenter */
