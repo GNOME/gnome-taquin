@@ -248,11 +248,7 @@ private class Taquin : Gtk.Application, BaseApplication
                                                                           "Menu"    });
 //        set_accels_for_action ("app.help",              {                 "F1"      });
 //        set_accels_for_action ("base.about",            {          "<Shift>F1"      });
-        set_accels_for_action ("win.show-help-overlay", {                 "F1", // TODO test: if showing Yelp fails, should fallback there
-                                                                 "<Primary>F1",
-                                                          "<Shift><Primary>F1",
-                                                                 "<Primary>question",
-                                                          "<Shift><Primary>question"});
+        set_accels_for_action ("win.show-help-overlay", { "<Primary>question"       });
 
         /* New-game screen signals */
         settings.changed ["size"].connect (() => {
