@@ -620,12 +620,12 @@ private class Taquin : Gtk.Application, BaseApplication
 
     internal void copy (string text)
     {
-        Gdk.Display? display = Gdk.Display.get_default ();
-        if (display == null)
-            return;
+//        Gdk.Display? display = Gdk.Display.get_default ();
+//        if (display == null)
+//            return;
 
-        Gtk.Clipboard clipboard = Gtk.Clipboard.get_default ((!) display);
-        clipboard.set_text (text, text.length);
+//        Gtk.Clipboard clipboard = Gtk.Clipboard.get_default ((!) display);
+//        clipboard.set_text (text, text.length);
     }
 
     /*\
