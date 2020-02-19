@@ -16,20 +16,17 @@
   along with GNOME Taquin.  If not, see <https://www.gnu.org/licenses/>.
 -->
 <interface domain="gnome-taquin">
-  <requires lib="gtk+" version="3.12"/>
+  <requires lib="gtk+" version="3.99"/>
   <object class="GtkShortcutsWindow" id="help_overlay">
     <child>
       <object class="GtkShortcutsSection">
-        <property name="visible">True</property>
         <property name="max-height">11</property>
         <child>
           <object class="GtkShortcutsGroup">
-            <property name="visible">True</property>
             <!-- Translators: in the Keyboard Shortcuts window, name of a section; contains “Start new game” and “Go back” -->
             <property name="title" translatable="yes" context="shortcut window">During game selection</property>
             <child>
               <object class="GtkShortcutsShortcut">
-                <property name="visible">True</property>
                 <!-- Translators: in the Keyboard Shortcuts window, section "During game selection" -->
                 <property name="title" translatable="yes" context="shortcut window">Start new game</property>
                 <property name="accelerator">&lt;Primary&gt;&lt;Shift&gt;n</property>
@@ -37,7 +34,6 @@
             </child>
             <child>
               <object class="GtkShortcutsShortcut">
-                <property name="visible">True</property>
                 <!-- Translators: in the Keyboard Shortcuts window, section "During game selection" -->
                 <property name="title" translatable="yes" context="shortcut window">Go back</property>
                 <property name="accelerator">Escape</property>
@@ -47,12 +43,10 @@
         </child>
         <child>
           <object class="GtkShortcutsGroup">
-            <property name="visible">True</property>
             <!-- Translators: in the Keyboard Shortcuts window, name of a section; contains “New game”, “Restart game” and “Undo last move” -->
             <property name="title" translatable="yes" context="shortcut window">During a game</property>
             <child>
               <object class="GtkShortcutsShortcut">
-                <property name="visible">True</property>
                 <!-- Translators: in the Keyboard Shortcuts window, section "During a game" -->
                 <property name="title" translatable="yes" context="shortcut window">New game</property>
                 <property name="accelerator">&lt;Primary&gt;n</property>
@@ -60,7 +54,6 @@
             </child>
             <child>
               <object class="GtkShortcutsShortcut">
-                <property name="visible">True</property>
                 <!-- Translators: in the Keyboard Shortcuts window, section "During a game" -->
                 <property name="title" translatable="yes" context="shortcut window">Restart game</property>
                 <property name="accelerator">&lt;Primary&gt;&lt;Shift&gt;n</property>
@@ -68,7 +61,6 @@
             </child>
             <child>
               <object class="GtkShortcutsShortcut">
-                <property name="visible">True</property>
                 <!-- Translators: in the Keyboard Shortcuts window, section "During a game" -->
                 <property name="title" translatable="yes" context="shortcut window">Undo last move</property>
                 <property name="accelerator">&lt;Primary&gt;z</property>
@@ -86,12 +78,10 @@
         </child>
         <child>
           <object class="GtkShortcutsGroup">
-            <property name="visible">True</property>
             <!-- Translators: in the Keyboard Shortcuts window, name of a section; contains shortcuts specific to the 15-Puzzle game -->
             <property name="title" translatable="yes" context="shortcut window">15-Puzzle</property>
             <child>
               <object class="GtkShortcutsShortcut">
-                <property name="visible">True</property>
                 <!-- Translators: in the Keyboard Shortcuts window, section "15-Puzzle" -->
                 <property name="title" translatable="yes" context="shortcut window">Select tile to push on</property>
                 <property name="accelerator">Left Right Up Down</property>
@@ -99,7 +89,6 @@
             </child>
             <child>
               <object class="GtkShortcutsShortcut">
-                <property name="visible">True</property>
                 <!-- Translators: in the Keyboard Shortcuts window, section "15-Puzzle" -->
                 <property name="title" translatable="yes" context="shortcut window">Push on selected tile</property>
                 <property name="accelerator">Return space</property>
@@ -109,12 +98,10 @@
         </child>
         <child>
           <object class="GtkShortcutsGroup">
-            <property name="visible">True</property>
             <!-- Translators: in the Keyboard Shortcuts window, name of a section; contains shortcuts specific to the 16-Puzzle game -->
             <property name="title" translatable="yes" context="shortcut window">16-Puzzle</property>
             <child>
               <object class="GtkShortcutsShortcut">
-                <property name="visible">True</property>
                 <!-- Translators: in the Keyboard Shortcuts window, section "16-Puzzle" -->
                 <property name="title" translatable="yes" context="shortcut window">Change selected column</property>
                 <property name="accelerator">Left Right</property>
@@ -122,7 +109,6 @@
             </child>
             <child>
               <object class="GtkShortcutsShortcut">
-                <property name="visible">True</property>
                 <!-- Translators: in the Keyboard Shortcuts window, section "16-Puzzle" -->
                 <property name="title" translatable="yes" context="shortcut window">Change selected row</property>
                 <property name="accelerator">Up Down</property>
@@ -130,7 +116,6 @@
             </child>
             <child>
               <object class="GtkShortcutsShortcut">
-                <property name="visible">True</property>
                 <!-- Translators: in the Keyboard Shortcuts window, section "16-Puzzle" -->
                 <property name="title" translatable="yes" context="shortcut window">Swipe selected row</property>
                 <property name="accelerator">&lt;Shift&gt;Left &lt;Shift&gt;Right</property>
@@ -138,7 +123,6 @@
             </child>
             <child>
               <object class="GtkShortcutsShortcut">
-                <property name="visible">True</property>
                 <!-- Translators: in the Keyboard Shortcuts window, section "16-Puzzle" -->
                 <property name="title" translatable="yes" context="shortcut window">Swipe selected column</property>
                 <property name="accelerator">&lt;Shift&gt;Up &lt;Shift&gt;Down</property>
@@ -148,12 +132,10 @@
         </child>
         <child>
           <object class="GtkShortcutsGroup">
-            <property name="visible">True</property>
             <!-- Translators: in the Keyboard Shortcuts window, name of a section; contains generic shortcuts like F1, F10, etc. -->
             <property name="title" translatable="yes" context="shortcut window">Generic</property>
             <child>
               <object class="GtkShortcutsShortcut">
-                <property name="visible">True</property>
                 <!-- Translators: in the Keyboard Shortcuts window, section "Generic" -->
                 <property name="title" translatable="yes" context="shortcut window">Toggle main menu</property>
                 <property name="accelerator">F10</property> <!-- “Menu” also work, but not in Reversi; probably better to keep it as an easter egg -->
@@ -161,7 +143,6 @@
             </child>
             <child>
               <object class="GtkShortcutsShortcut">
-                <property name="visible">True</property>
                 <!-- Translators: in the Keyboard Shortcuts window, section "Generic" -->
                 <property name="title" translatable="yes" context="shortcut window">Keyboard shortcuts</property>
                 <property name="accelerator">&lt;Primary&gt;question &lt;Primary&gt;F1</property>
@@ -169,7 +150,6 @@
             </child>
             <child>
               <object class="GtkShortcutsShortcut">
-                <property name="visible">True</property>
                 <!-- Translators: in the Keyboard Shortcuts window, section "Generic" -->
                 <property name="title" translatable="yes" context="shortcut window">Help</property>
                 <property name="accelerator">F1</property>
@@ -177,7 +157,6 @@
             </child>
             <child>
               <object class="GtkShortcutsShortcut">
-                <property name="visible">True</property>
                 <!-- Translators: in the Keyboard Shortcuts window, section "Generic" -->
                 <property name="title" translatable="yes" context="shortcut window">About</property>
                 <property name="accelerator">&lt;Shift&gt;F1</property>
@@ -185,7 +164,6 @@
             </child>
             <child>
               <object class="GtkShortcutsShortcut">
-                <property name="visible">True</property>
                 <!-- Translators: in the Keyboard Shortcuts window, section "Generic" -->
                 <property name="title" translatable="yes" context="shortcut window">Quit</property>
                 <property name="accelerator">&lt;Primary&gt;q</property>
