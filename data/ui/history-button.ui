@@ -16,7 +16,7 @@
   along with GNOME Taquin.  If not, see <https://www.gnu.org/licenses/>.
 -->
 <interface>
-  <requires lib="gtk+" version="3.12"/>
+  <requires lib="gtk+" version="3.96"/>
   <template class="HistoryButton" parent="GtkMenuButton">
     <property name="valign">center</property>
     <property name="can-focus">True</property>
