@@ -249,16 +249,17 @@ private class TaquinView : Gtk.DrawingArea
         if (animate)
         {
             animation_offset += 8;
-            if (x_axis)
-                queue_draw_area (x_offset + grid_border_main + tile_size * int.min (x_gap, x_gap + number),
-                                 y_offset + grid_border_main + tile_size * y_gap,
-                                 tile_size * (number.abs() + 1),
-                                 tile_size);
-            else
-                queue_draw_area (x_offset + grid_border_main + tile_size * x_gap,
-                                 y_offset + grid_border_main + tile_size * int.min (y_gap, y_gap + number),
-                                 tile_size,
-                                 tile_size * (number.abs() + 1));
+            queue_draw ();
+//            if (x_axis)
+//                queue_draw_area (x_offset + grid_border_main + tile_size * int.min (x_gap, x_gap + number),
+//                                 y_offset + grid_border_main + tile_size * y_gap,
+//                                 tile_size * (number.abs() + 1),
+//                                 tile_size);
+//            else
+//                queue_draw_area (x_offset + grid_border_main + tile_size * x_gap,
+//                                 y_offset + grid_border_main + tile_size * int.min (y_gap, y_gap + number),
+//                                 tile_size,
+//                                 tile_size * (number.abs() + 1));
             if (animation_offset > tile_size)
                 animate = false;
         }
