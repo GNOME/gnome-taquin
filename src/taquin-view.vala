@@ -65,15 +65,10 @@ private class TaquinView : Gtk.DrawingArea
 
     construct
     {
+        can_focus = true;
         init_mouse ();
         init_keyboard ();
         size_allocate.connect (on_size_allocate);
-    }
-
-    internal TaquinView ()
-    {
-        can_focus = true;
-        set_events (EventMask.EXPOSURE_MASK | EventMask.BUTTON_PRESS_MASK | EventMask.BUTTON_RELEASE_MASK | EventMask.KEY_PRESS_MASK);
     }
 
     private Game? _game = null;
