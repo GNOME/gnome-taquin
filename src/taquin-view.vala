@@ -65,8 +65,9 @@ private class TaquinView : Gtk.DrawingArea
 
     construct
     {
-        init_keyboard ();
         init_mouse ();
+        init_keyboard ();
+        size_allocate.connect (on_size_allocate);
     }
 
     internal TaquinView ()
@@ -120,10 +121,9 @@ private class TaquinView : Gtk.DrawingArea
         }
     }
 
-    protected override bool configure_event (Gdk.EventConfigure e)
+    private inline void on_size_allocate ()
     {
         configure ();
-        return true;
     }
 
     private void configure ()
