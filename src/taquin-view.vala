@@ -68,6 +68,7 @@ private class TaquinView : Gtk.DrawingArea
         can_focus = true;
         init_mouse ();
         init_keyboard ();
+        set_draw_func (draw);
         size_allocate.connect (on_size_allocate);
     }
 
@@ -131,7 +132,7 @@ private class TaquinView : Gtk.DrawingArea
         arrows = size / 100;
     }
 
-    protected override bool draw (Cairo.Context cr)
+    private void draw (Gtk.DrawingArea _this, Cairo.Context cr, int width, int height)
     {
         if (tiles_pattern == null || render_size != tile_size)
         {
@@ -263,8 +264,6 @@ private class TaquinView : Gtk.DrawingArea
             if (animation_offset > tile_size)
                 animate = false;
         }
-
-        return false;
     }
 
     private static inline void _refresh_pixmaps (Cairo.Context context, Pixbuf? unscaled_pixbuf, ref int board_size)
