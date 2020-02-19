@@ -475,16 +475,17 @@ private class TaquinView : Gtk.DrawingArea
     * * mouse user actions
     \*/
 
-    private Gtk.GestureMultiPress click_controller;   // for keeping in memory
+    private Gtk.GestureClick click_controller;   // for keeping in memory
 
     private void init_mouse ()  // called on construct
     {
-        click_controller = new Gtk.GestureMultiPress (this);
+        click_controller = new Gtk.GestureClick ();
         click_controller.set_button (/* all buttons */ 0);
         click_controller.pressed.connect (on_click);
+        add_controller (click_controller);
     }
 
-    private inline void on_click (Gtk.GestureMultiPress _click_controller, int n_press, double event_x, double event_y)
+    private inline void on_click (Gtk.GestureClick _click_controller, int n_press, double event_x, double event_y)
     {
         if (finished || animate || animate_end)
             return;
@@ -507,8 +508,9 @@ private class TaquinView : Gtk.DrawingArea
 
     private void init_keyboard ()  // called on construct
     {
-        key_controller = new Gtk.EventControllerKey (this);
+        key_controller = new Gtk.EventControllerKey ();
         key_controller.key_pressed.connect (on_key_pressed);
+        add_controller (key_controller);
     }
 
     private inline bool on_key_pressed (Gtk.EventControllerKey _key_controller, uint keyval, uint keycode, Gdk.ModifierType state)

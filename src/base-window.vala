@@ -315,8 +315,9 @@ private class BaseWindow : AdaptativeWindow, AdaptativeWidget
 
     private void init_keyboard ()  // called on construct
     {
-        key_controller = new Gtk.EventControllerKey (this);
+        key_controller = new Gtk.EventControllerKey ();
         key_controller.key_pressed.connect (on_key_pressed);
+        add_controller (key_controller);
     }
 
     protected inline bool on_key_pressed (Gtk.EventControllerKey _key_controller, uint keyval, uint keycode, Gdk.ModifierType state)
@@ -441,8 +442,9 @@ private class BaseWindow : AdaptativeWindow, AdaptativeWidget
         {
             create_about_dialog ();
             about_dialog.response.connect ((_about_dialog, response) => _about_dialog.hide ());
-            about_dialog_key_controller = new Gtk.EventControllerKey (about_dialog);
+            about_dialog_key_controller = new Gtk.EventControllerKey ();
             about_dialog_key_controller.key_pressed.connect (on_about_dialog_key_pressed);
+            about_dialog.add_controller (about_dialog_key_controller);
             about_dialog.set_transient_for (this);
             should_init_about_dialog = false;
         }
