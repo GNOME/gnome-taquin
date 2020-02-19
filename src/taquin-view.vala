@@ -66,6 +66,7 @@ private class TaquinView : Gtk.DrawingArea
     construct
     {
         init_keyboard ();
+        init_mouse ();
     }
 
     internal TaquinView ()
@@ -470,18 +471,27 @@ private class TaquinView : Gtk.DrawingArea
             });
     }
 
-    internal override bool button_press_event (EventButton event)
+    /*\
+    * * mouse user actions
+    \*/
+
+    private Gtk.GestureMultiPress click_controller;   // for keeping in memory
+
+    private void init_mouse ()  // called on construct
+    {
+        click_controller = new Gtk.GestureMultiPress (this);
+        click_controller.pressed.connect (on_click);
+    }
+
+    private inline void on_click (Gtk.GestureMultiPress _click_controller, int n_press, double event_x, double event_y)
     {
         if (finished || animate || animate_end)
-            return true;
-        if (event.button == Gdk.BUTTON_PRIMARY || event.button == Gdk.BUTTON_SECONDARY)
-        {
-            draw_lights = false;
-            game.request_move ((int8) ((int) (event.x - x_offset - grid_border_main + tile_size) / tile_size - 1),
-                               (int8) ((int) (event.y - y_offset - grid_border_main + tile_size) / tile_size - 1),
-                               /* keyboard */ false);
-        }
-        return true;
+            return;
+
+        draw_lights = false;
+        game.request_move ((int8) ((int) (event_x - x_offset - grid_border_main + tile_size) / tile_size - 1),
+                           (int8) ((int) (event_y - y_offset - grid_border_main + tile_size) / tile_size - 1),
+                           /* keyboard */ false);
     }
 
     /*\
