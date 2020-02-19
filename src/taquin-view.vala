@@ -63,6 +63,11 @@ private class TaquinView : Gtk.DrawingArea
     private bool finished = false;
     private double animation_end_offset;
 
+    construct
+    {
+        init_keyboard ();
+    }
+
     internal TaquinView ()
     {
         can_focus = true;
@@ -479,13 +484,25 @@ private class TaquinView : Gtk.DrawingArea
         return true;
     }
 
-    protected override bool key_press_event (Gdk.EventKey event)
+    /*\
+    * * keyboard user actions
+    \*/
+
+    private Gtk.EventControllerKey key_controller;    // for keeping in memory
+
+    private void init_keyboard ()  // called on construct
+    {
+        key_controller = new Gtk.EventControllerKey (this);
+        key_controller.key_pressed.connect (on_key_pressed);
+    }
+
+    private inline bool on_key_pressed (Gtk.EventControllerKey _key_controller, uint keyval, uint keycode, Gdk.ModifierType state)
     {
         if (finished)
             return false;
-        string k_name = (!) (Gdk.keyval_name (event.keyval) ?? "");
+        string k_name = (!) (Gdk.keyval_name (keyval) ?? "");
 
-        if (game.game_type == GameType.SIXTEEN && ((event.state & ModifierType.SHIFT_MASK) > 0 || (event.state & ModifierType.CONTROL_MASK) > 0))
+        if (game.game_type == GameType.SIXTEEN && ((state & ModifierType.SHIFT_MASK) > 0 || (state & ModifierType.CONTROL_MASK) > 0))
         {
             switch (k_name) {
                 case "Left":  game.request_move (- 1,       y_arrow,    /* keyboard */ true); break;
