@@ -23,8 +23,8 @@ using Gtk;
 [GtkTemplate (ui = "/org/gnome/Taquin/ui/new-game-screen.ui")]
 private class NewGameScreen : Box, AdaptativeWidget
 {
-    [GtkChild] private ModelButton modelbutton_one;
-    [GtkChild] private ModelButton modelbutton_two;
+    [GtkChild] private ToggleButton gamebutton_one;
+    [GtkChild] private ToggleButton gamebutton_two;
 
     [GtkChild] private Gtk.MenuButton menubutton_one;
     [GtkChild] private Gtk.MenuButton menubutton_two;
@@ -37,19 +37,24 @@ private class NewGameScreen : Box, AdaptativeWidget
         if (gdk_display != null) // else..?
             StyleContext.add_provider_for_display ((!) gdk_display, css_provider, STYLE_PROVIDER_PRIORITY_APPLICATION);
 
-        fix_race ();
+        Widget? widget = menubutton_one.get_first_child ();
+        if (widget != null && (!) widget is ToggleButton)
+            ((!) widget).get_style_context ().add_class ("flat");
+        widget = menubutton_two.get_first_child ();
+        if (widget != null && (!) widget is ToggleButton)
+            ((!) widget).get_style_context ().add_class ("flat");
     }
 
-    internal NewGameScreen (string modelbutton_one_label,
-                            string modelbutton_one_action,
-                            string modelbutton_two_label,
-                            string modelbutton_two_action)
+    internal NewGameScreen (string gamebutton_one_label,
+                            string gamebutton_one_action,
+                            string gamebutton_two_label,
+                            string gamebutton_two_action)
     {
-        modelbutton_one.text = modelbutton_one_label;
-        modelbutton_two.text = modelbutton_two_label;
+        gamebutton_one.label = gamebutton_one_label;
+        gamebutton_two.label = gamebutton_two_label;
 
-        modelbutton_one.set_detailed_action_name (modelbutton_one_action);
-        modelbutton_two.set_detailed_action_name (modelbutton_two_action);
+        gamebutton_one.set_detailed_action_name (gamebutton_one_action);
+        gamebutton_two.set_detailed_action_name (gamebutton_two_action);
     }
 
     /*\
@@ -63,10 +68,29 @@ private class NewGameScreen : Box, AdaptativeWidget
 
     internal inline void update_menubutton_label (MenuButton button, string label)
     {
+        Widget? widget;
         switch (button)
         {
-            case MenuButton.ONE: menubutton_one.set_label (label); return;
-            case MenuButton.TWO: menubutton_two.set_label (label); return;
+            case MenuButton.ONE:
+                menubutton_one.set_label (label);
+                widget = menubutton_one.get_first_child ();
+                if (widget != null && (!) widget is ToggleButton)
+                {
+                    widget = ((!) widget).get_first_child ();
+                    if (widget != null && (!) widget is Box)
+                        ((!) widget).halign = Align.CENTER;
+                }
+                return;
+
+            case MenuButton.TWO: menubutton_two.set_label (label);
+                widget = menubutton_two.get_first_child ();
+                if (widget != null && (!) widget is ToggleButton)
+                {
+                    widget = ((!) widget).get_first_child ();
+                    if (widget != null && (!) widget is Box)
+                        ((!) widget).halign = Align.CENTER;
+                }
+                return;
         }
     }
 
@@ -99,12 +123,6 @@ private class NewGameScreen : Box, AdaptativeWidget
     /*\
     * * adaptative stuff
     \*/
-
-    private void fix_race ()   // FIXME things are a bit racy between the CSS and the box orientation changes, so delay games_box redraw
-    {
-        size_allocate.connect_after (() => games_box.show ());
-        map.connect (() => games_box.show ());
-    }
 
     [GtkChild] private Box          games_box;
     [GtkChild] private Box          options_box;
@@ -151,7 +169,6 @@ private class NewGameScreen : Box, AdaptativeWidget
                 this.set_orientation (Orientation.VERTICAL);
                 games_box.set_orientation (Orientation.HORIZONTAL);
                 options_box.set_orientation (Orientation.HORIZONTAL);
-                games_box.hide ();
             }
         }
         else if (_phone_size)
