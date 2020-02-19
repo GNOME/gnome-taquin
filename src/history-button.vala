@@ -21,8 +21,11 @@
 using Gtk;
 
 [GtkTemplate (ui = "/org/gnome/Taquin/ui/history-button.ui")]
-private class HistoryButton : MenuButton
+private class HistoryButton : ToggleButton
 {
+    ulong toggled_handler = 0;
+    private PopoverMenu popover;
+
     construct
     {
         update_state (/* label */ "0", /* sensitive */ false);
@@ -60,7 +63,12 @@ private class HistoryButton : MenuButton
         if (best_score != 0)
             generate_best_score_section (ref best_score, ref menu);
         menu.freeze ();
-        set_menu_model (menu);
+
+        if (toggled_handler != 0)
+            disconnect (toggled_handler);
+        popover = new PopoverMenu.from_model (this, menu);
+        popover.set_autohide (false);
+        toggled_handler = toggled.connect (() => { if (get_active ()) popover.popup (); else popover.popdown (); }); // toggled is run-first
     }
 
     private static inline void generate_undo_actions_section (ref GLib.Menu menu)
