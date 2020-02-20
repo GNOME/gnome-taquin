@@ -257,10 +257,10 @@ private class Taquin : Gtk.Application, BaseApplication
         /* New-game screen signals */
         settings.changed ["size"].connect (() => {
             if (!size_changed)
-                update_size_button_label (settings.get_int ("size") /* 2 <= size <= 9 */);
+                update_size_button_label ((uint8) settings.get_int ("size") /* 2 <= size <= 9 */);
             size_changed = false;
         });
-        update_size_button_label (settings.get_int ("size") /* 2 <= size <= 9 */);
+        update_size_button_label ((uint8) settings.get_int ("size") /* 2 <= size <= 9 */);
 
         settings.changed ["theme"].connect (() => {
             if (!theme_changed)
@@ -470,10 +470,10 @@ private class Taquin : Gtk.Application, BaseApplication
     {
         size_changed = true;
         int size = int.parse (((!) variant).get_string ());
-        update_size_button_label (size /* 3 <= size <= 5 */);
+        update_size_button_label ((uint8) size /* 3 <= size <= 5 */);
         settings.set_int ("size", size);
     }
-    private void update_size_button_label (int size)
+    private void update_size_button_label (uint8 size)
     {
         new_game_screen.update_menubutton_label (NewGameScreen.MenuButton.ONE,
                                                  NewGameScreen.get_size_button_label (size));
