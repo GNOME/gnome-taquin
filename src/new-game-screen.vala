@@ -113,11 +113,10 @@ private class NewGameScreen : Box, AdaptativeWidget
     }
 
     // that is a quite usual menubutton label, so put it here
-    internal static inline string get_size_button_label (int size)
+    internal static inline string get_size_button_label (uint8 size)
     {
         /* Translators: when configuring a new game, button label for the size of the game ("3 × 3", or 4, or 5) */
-        return _("Size: %d × %d ▾").printf (size, size);
-     // return _("Size: %hhu × %hhu ▾").printf (size, size));   // TODO uint8
+        return _("Size: %hhu × %hhu").printf (size, size);
     }
 
     /*\
