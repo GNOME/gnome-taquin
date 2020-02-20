@@ -115,12 +115,12 @@ button.menubutton-like-combo {
 button.menubutton-like-combo:checked,
 button.menubutton-like-combo:hover {
   color:#2e3436; /* gtk-contained.css’ theme_fg_color */
-  background:-gtk-gradient (radial, center center, 0, center center, 0.5, from(rgba (255, 255, 255, 1)), to(rgba (255, 255, 255, 0)));
+/*  background:-gtk-gradient (radial, center center, 0, center center, 0.5, from(rgba (255, 255, 255, 1)), to(rgba (255, 255, 255, 0)));*/
 }
 button.menubutton-like-combo:checked:backdrop,
 button.menubutton-like-combo:hover:backdrop {
   color:@theme_unfocused_fg_color;
-  background:-gtk-gradient (radial, center center, 0, center center, 0.5, from(rgba (255, 255, 255, 0.3)), to(rgba (255, 255, 255, 0)));
+/*  background:-gtk-gradient (radial, center center, 0, center center, 0.5, from(rgba (255, 255, 255, 0.3)), to(rgba (255, 255, 255, 0)));*/
 }
 
 /*\
