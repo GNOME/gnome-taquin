@@ -527,13 +527,13 @@ private class Taquin : Gtk.Application, BaseApplication
         switch (theme_id)
         {
             /* Translators: when configuring a new game, button label for the theme, if the current theme is Cats */
-            case "cats":    return _("Theme: Cats ▾");
+            case "cats":    return _("Theme: Cats");
 
             /* Translators: when configuring a new game, button label for the theme, if the current theme is Numbers */
-            case "numbers": return _("Theme: Numbers ▾");
+            case "numbers": return _("Theme: Numbers");
 
             /* Translators: when configuring a new game, button label for the theme, if the current theme has been added by the user; the %s is replaced by the theme name */
-            default:        return _("Theme: %s ▾").printf (theme_id);
+            default:        return _("Theme: %s").printf (theme_id);
         }
     }
 
