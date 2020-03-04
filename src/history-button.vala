@@ -66,7 +66,8 @@ private class HistoryButton : ToggleButton
 
         if (toggled_handler != 0)
             disconnect (toggled_handler);
-        popover = new PopoverMenu.from_model (this, menu);
+        popover = new PopoverMenu.from_model (menu);
+        popover.set_parent (this);
         popover.set_autohide (false);
         toggled_handler = toggled.connect (() => { if (get_active ()) popover.popup (); else popover.popdown (); }); // toggled is run-first
     }
