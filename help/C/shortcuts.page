@@ -45,7 +45,7 @@
       </tr>
       <tr>
         <td><p>Push tile in empty space’s direction</p></td>
-        <td><p><key>Space</key>, <key>Return</key> and <key>KP_Enter</key></p></td>
+        <td><p><key>Space</key>, <key>Return</key> and <key>Enter</key></p></td>
       </tr>
     </table>
   </section>
