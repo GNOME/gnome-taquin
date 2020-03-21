@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: gnome-taquin master\n"
 "Report-Msgid-Bugs-To: https://gitlab.gnome.org/GNOME/gnome-taquin/issues\n"
 "POT-Creation-Date: 2020-03-09 22:20+0000\n"
-"PO-Revision-Date: 2020-03-16 21:35+0200\n"
+"PO-Revision-Date: 2020-03-21 09:59+0200\n"
 "Last-Translator: Yuri Chornoivan <yurchor@ukr.net>\n"
 "Language-Team: Ukrainian <trans-uk@lists.fedoraproject.org>\n"
 "Language: uk\n"
@@ -145,7 +145,7 @@ msgid ""
 "set from 2 (good for testing) to 9, limited by the way files are selected."
 msgstr ""
 "Пропонується зіграти на дошці розміром 3 to 5. Параметри можуть мати від 2 "
-"(добре для тестування) до 9, обмежено способом вибору файлів.  "
+"(добре для тестування) до 9, обмежено способом вибору файлів."
 
 #. Translators: summary of a settings key, see 'dconf-editor /org/gnome/taquin/theme'
 #: data/org.gnome.Taquin.gschema.xml:58
@@ -356,7 +356,7 @@ msgstr "Автори документації"
 #: src/about-list.vala:166
 #| msgid "translator-credits"
 msgid "Translators"
-msgstr "Данило Коростіль <ted.korostiled@gmail.com>"
+msgstr "Перекладачі"
 
 #. Translators: on really small windows, the about dialog is replaced by an in-window view; here is the header of the pictural artists names
 #: src/about-list.vala:172
