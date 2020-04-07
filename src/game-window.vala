@@ -205,7 +205,7 @@ private class GameWindow : BaseWindow, AdaptativeWidget
 
     private const GLib.ActionEntry [] ui_action_entries =
     {
-        { "start-or-restart",   start_or_restart_cb },  // "Start new game" button or <Shift><Primary>n
+        { "start-or-restart",   start_or_restart_cb },  // "Start new game" button or <Shift><Control>n
         { "new-game",           new_game_cb },          // "New game" button or <Shift>n
         { "restart",            restart_cb },           // "Restart" menu entry; keep action to allow disabling menu entry
 

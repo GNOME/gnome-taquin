@@ -232,27 +232,27 @@ private class Taquin : Gtk.Application, BaseApplication
         window.undo.connect (undo_cb);
         window.restart.connect (restart_cb);
 
-        set_accels_for_action ("base.copy",             {        "<Primary>c"       });
-        set_accels_for_action ("base.copy-alt",         { "<Shift><Primary>c"       });
-        set_accels_for_action ("ui.new-game",           {        "<Primary>n"       });
-        set_accels_for_action ("ui.start-or-restart",   { "<Shift><Primary>n"       });
-        set_accels_for_action ("app.quit",              {        "<Primary>q",
-                                                          "<Shift><Primary>q"       });
-        set_accels_for_action ("base.paste",            {        "<Primary>v"       });
-        set_accels_for_action ("base.paste-alt",        { "<Shift><Primary>v"       });
-        set_accels_for_action ("ui.undo",               {        "<Primary>z"       });
+        set_accels_for_action ("base.copy",             {        "<Control>c"       });
+        set_accels_for_action ("base.copy-alt",         { "<Shift><Control>c"       });
+        set_accels_for_action ("ui.new-game",           {        "<Control>n"       });
+        set_accels_for_action ("ui.start-or-restart",   { "<Shift><Control>n"       });
+        set_accels_for_action ("app.quit",              {        "<Control>q",
+                                                          "<Shift><Control>q"       });
+        set_accels_for_action ("base.paste",            {        "<Control>v"       });
+        set_accels_for_action ("base.paste-alt",        { "<Shift><Control>v"       });
+        set_accels_for_action ("ui.undo",               {        "<Control>z"       });
      // set_accels_for_action ("ui.restart" // TODO
-     // set_accels_for_action ("ui.redo",               { "<Shift><Primary>z"       });
+     // set_accels_for_action ("ui.redo",               { "<Shift><Control>z"       });
         set_accels_for_action ("base.escape",           {                 "Escape"  });
         set_accels_for_action ("base.toggle-hamburger", {                 "F10",
                                                                           "Menu"    });
 //        set_accels_for_action ("app.help",              {                 "F1"      });
 //        set_accels_for_action ("base.about",            {          "<Shift>F1"      });
         set_accels_for_action ("win.show-help-overlay", {                 "F1", // TODO test: if showing Yelp fails, should fallback there
-                                                                 "<Primary>F1",
-                                                          "<Shift><Primary>F1",
-                                                                 "<Primary>question",
-                                                          "<Shift><Primary>question"});
+                                                                 "<Control>F1",
+                                                          "<Shift><Control>F1",
+                                                                 "<Control>question",
+                                                          "<Shift><Control>question"});
 
         /* New-game screen signals */
         settings.changed ["size"].connect (() => {

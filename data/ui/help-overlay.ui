@@ -29,7 +29,7 @@
               <object class="GtkShortcutsShortcut">
                 <!-- Translators: in the Keyboard Shortcuts window, section "During game selection" -->
                 <property name="title" translatable="yes" context="shortcut window">Start new game</property>
-                <property name="accelerator">&lt;Primary&gt;&lt;Shift&gt;n</property>
+                <property name="accelerator">&lt;Control&gt;&lt;Shift&gt;n</property>
               </object>
             </child>
             <child>
@@ -49,21 +49,21 @@
               <object class="GtkShortcutsShortcut">
                 <!-- Translators: in the Keyboard Shortcuts window, section "During a game" -->
                 <property name="title" translatable="yes" context="shortcut window">New game</property>
-                <property name="accelerator">&lt;Primary&gt;n</property>
+                <property name="accelerator">&lt;Control&gt;n</property>
               </object>
             </child>
             <child>
               <object class="GtkShortcutsShortcut">
                 <!-- Translators: in the Keyboard Shortcuts window, section "During a game" -->
                 <property name="title" translatable="yes" context="shortcut window">Restart game</property>
-                <property name="accelerator">&lt;Primary&gt;&lt;Shift&gt;n</property>
+                <property name="accelerator">&lt;Control&gt;&lt;Shift&gt;n</property>
               </object>
             </child>
             <child>
               <object class="GtkShortcutsShortcut">
                 <!-- Translators: in the Keyboard Shortcuts window, section "During a game" -->
                 <property name="title" translatable="yes" context="shortcut window">Undo last move</property>
-                <property name="accelerator">&lt;Primary&gt;z</property>
+                <property name="accelerator">&lt;Control&gt;z</property>
               </object>
             </child>
             <child>
@@ -71,7 +71,7 @@
                 <property name="visible">False</property>
                 <!-- Translators: in the Keyboard Shortcuts window, section "During a game" -->
                 <property name="title" translatable="yes" context="shortcut window">Toggle game menu</property>
-                <property name="accelerator">&lt;Primary&gt;F10</property>
+                <property name="accelerator">&lt;Control&gt;F10</property>
               </object>
             </child>
           </object>
@@ -145,7 +145,7 @@
               <object class="GtkShortcutsShortcut">
                 <!-- Translators: in the Keyboard Shortcuts window, section "Generic" -->
                 <property name="title" translatable="yes" context="shortcut window">Keyboard shortcuts</property>
-                <property name="accelerator">&lt;Primary&gt;question &lt;Primary&gt;F1</property>
+                <property name="accelerator">&lt;Control&gt;question &lt;Control&gt;F1</property>
               </object>
             </child>
             <child>
@@ -166,7 +166,7 @@
               <object class="GtkShortcutsShortcut">
                 <!-- Translators: in the Keyboard Shortcuts window, section "Generic" -->
                 <property name="title" translatable="yes" context="shortcut window">Quit</property>
-                <property name="accelerator">&lt;Primary&gt;q</property>
+                <property name="accelerator">&lt;Control&gt;q</property>
               </object>
             </child>
           </object>
