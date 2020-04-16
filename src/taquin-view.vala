@@ -480,12 +480,17 @@ private class TaquinView : Gtk.DrawingArea
     private void init_mouse ()  // called on construct
     {
         click_controller = new Gtk.GestureMultiPress (this);
+        click_controller.set_button (/* all buttons */ 0);
         click_controller.pressed.connect (on_click);
     }
 
     private inline void on_click (Gtk.GestureMultiPress _click_controller, int n_press, double event_x, double event_y)
     {
         if (finished || animate || animate_end)
+            return;
+
+        uint button = _click_controller.get_current_button ();
+        if (button != Gdk.BUTTON_PRIMARY && button != Gdk.BUTTON_SECONDARY)
             return;
 
         draw_lights = false;
