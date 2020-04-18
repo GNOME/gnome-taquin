@@ -65,6 +65,11 @@ private class TaquinView : Gtk.Widget
 
     private Gtk.DrawingArea drawing;
 
+    bool animate_tick_set = false;
+    uint animate_tick_id = 0;
+    bool animate_end_tick_set = false;
+    uint animate_end_tick_id = 0;
+
     protected override void snapshot (Gtk.Snapshot snap)
     {
         drawing.queue_draw ();
@@ -104,7 +109,9 @@ private class TaquinView : Gtk.Widget
             animate = false;
             finished = false;
             animate_end = false;
-            animation_end_offset = 0;
+            animation_end_offset = 0.0;
+            animate_tick_set = false;
+            animate_end_tick_set = false;
             draw_lights = false;
             x_arrow = 0;
             y_arrow = 0;
@@ -112,7 +119,7 @@ private class TaquinView : Gtk.Widget
             configure ();
             ((!) _game).move.connect (move_cb);
             ((!) _game).complete.connect (complete_cb);
-            queue_draw ();
+            drawing.queue_draw ();
         }
     }
 
@@ -129,7 +136,7 @@ private class TaquinView : Gtk.Widget
             try { unscaled_pixbuf = new Pixbuf.from_file ((!) _theme); }
             catch { critical ("failed to load theme: %s", (!) _theme); assert_not_reached (); } // TODO better
             tiles_pattern = null;
-            queue_draw ();
+            drawing.queue_draw ();
         }
     }
 
@@ -252,33 +259,55 @@ private class TaquinView : Gtk.Widget
 
         if (animate_end)
         {
-            animation_end_offset += 0.01;
-            if (animation_end_offset >= 1)
-                animation_end_offset = 1;
-            var matrix = Cairo.Matrix.identity ();
-            ((!) tiles_pattern).set_matrix (matrix);
-            cr.paint_with_alpha (animation_end_offset);
-            if (animation_end_offset != 1)
-                queue_draw ();
+            if (!animate_end_tick_set)
+            {
+                animate_end_tick_set = true;
+                animate_end_tick_id = add_tick_callback (() => {
+                        animation_end_offset += 0.01;
+                        drawing.queue_draw ();
+                        if (animation_end_offset >= 1.0)
+                        {
+                            animation_end_offset = 1.0;
+                            remove_tick_callback (animate_end_tick_id);
+                            return Source.REMOVE;
+                        }
+                        return Source.CONTINUE;
+                    });
+            }
+            else
+            {
+                var matrix = Cairo.Matrix.identity ();
+                ((!) tiles_pattern).set_matrix (matrix);
+                cr.paint_with_alpha (animation_end_offset);
+            }
         }
         cr.restore ();
 
-        if (animate)
+        if (animate && !animate_tick_set)
         {
-            animation_offset += 8;
-            queue_draw ();
-//            if (x_axis)
-//                queue_draw_area (x_offset + grid_border_main + tile_size * int.min (x_gap, x_gap + number),
-//                                 y_offset + grid_border_main + tile_size * y_gap,
-//                                 tile_size * (number.abs() + 1),
-//                                 tile_size);
-//            else
-//                queue_draw_area (x_offset + grid_border_main + tile_size * x_gap,
-//                                 y_offset + grid_border_main + tile_size * int.min (y_gap, y_gap + number),
-//                                 tile_size,
-//                                 tile_size * (number.abs() + 1));
-            if (animation_offset > tile_size)
-                animate = false;
+            animate_tick_set = true;
+            animate_tick_id = add_tick_callback (() => {
+                    animation_offset += 8;
+                    drawing.queue_draw ();
+//                    if (x_axis)
+//                        queue_draw_area (x_offset + grid_border_main + tile_size * int.min (x_gap, x_gap + number),
+//                                         y_offset + grid_border_main + tile_size * y_gap,
+//                                         tile_size * (number.abs() + 1),
+//                                         tile_size);
+//                    else
+//                        queue_draw_area (x_offset + grid_border_main + tile_size * x_gap,
+//                                         y_offset + grid_border_main + tile_size * int.min (y_gap, y_gap + number),
+//                                         tile_size,
+//                                         tile_size * (number.abs() + 1));
+                    if (animation_offset > tile_size)
+                    {
+                        animate = false;
+                        remove_tick_callback (animate_tick_id);
+                        animate_tick_set = false;
+                        return Source.REMOVE;
+                    }
+                    return Source.CONTINUE;
+                });
         }
     }
 
@@ -457,16 +486,23 @@ private class TaquinView : Gtk.Widget
         }
         if (disable_animation)
         {
-            finished = false;
-            animation_end_offset = 0;
+            animate = false;
             animate_end = false;
+            if (animate_end_tick_set)
+                remove_tick_callback (animate_end_tick_id);
+            if (animate_tick_set)
+                remove_tick_callback (animate_tick_id);
+            animate_end_tick_set = false;
+            animate_tick_set = false;
+            finished = false;
+            animation_end_offset = 0.0;
         }
         else
         {
             animation_offset = 0;
             animate = true;
         }
-        queue_draw ();
+        drawing.queue_draw ();
     }
 
     private void complete_cb ()
@@ -474,9 +510,9 @@ private class TaquinView : Gtk.Widget
         finished = true;
         Timeout.add_seconds (1, () =>
             {
-                animation_end_offset = 0;
+                animation_end_offset = 0.0;
                 animate_end = true;
-                queue_draw ();
+                drawing.queue_draw ();
                 /* Disconnect from mainloop */
                 return false;
             });
@@ -553,7 +589,7 @@ private class TaquinView : Gtk.Widget
             default: return false;
         }
         draw_lights = true;
-        queue_draw ();      // TODO animations (light / arrows)
+        drawing.queue_draw ();      // TODO animations (light / arrows)
         return true;
     }
 }
