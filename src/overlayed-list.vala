@@ -68,10 +68,10 @@ private abstract class OverlayedList : Widget, AdaptativeWidget
     {
         construct
         {
-            if (value)
-                scrolled.has_frame = true;
-            else
-                scrolled.has_frame = false;
+//            if (value)
+//                scrolled.has_frame = true;
+//            else
+//                scrolled.has_frame = false;
         }
     }
 
