@@ -29,7 +29,7 @@ private enum Direction
     NONE;
 }
 
-private class TaquinView : Gtk.DrawingArea
+private class TaquinView : Gtk.Widget
 {
     /* Theme */
     private const int GRID_SPACING = 1;
@@ -63,13 +63,29 @@ private class TaquinView : Gtk.DrawingArea
     private bool finished = false;
     private double animation_end_offset;
 
+    private Gtk.DrawingArea drawing;
+
+    protected override void snapshot (Gtk.Snapshot snap)
+    {
+        drawing.queue_draw ();
+        snapshot_child (drawing, snap);
+    }
+
     construct
     {
-        can_focus = true;
+        Gtk.BinLayout layout = new Gtk.BinLayout ();
+        set_layout_manager (layout);
+
+        drawing = new Gtk.DrawingArea ();
+        drawing.hexpand = true;
+        drawing.vexpand = true;
+        drawing.insert_after (this, /* insert first */ null);
+
         init_mouse ();
         init_keyboard ();
-        set_draw_func (draw);
-        size_allocate.connect (on_size_allocate);
+
+        drawing.set_draw_func (draw);
+        drawing.size_allocate.connect (on_size_allocate);
     }
 
     private Game? _game = null;
@@ -124,7 +140,7 @@ private class TaquinView : Gtk.DrawingArea
 
     private void configure ()
     {
-        var size = int.min (get_allocated_width (), get_allocated_height ());
+        var size = int.min (drawing.get_allocated_width (), drawing.get_allocated_height ());
         /* tile_size includes a grid spacing */
         tile_size = (size * 10 / 12) / game.size;
         board_size = tile_size * game.size - GRID_SPACING;
