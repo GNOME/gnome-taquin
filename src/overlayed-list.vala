@@ -69,9 +69,9 @@ private abstract class OverlayedList : Widget, AdaptativeWidget
         construct
         {
             if (value)
-                scrolled.shadow_type = ShadowType.ETCHED_IN;
+                scrolled.has_frame = true;
             else
-                scrolled.shadow_type = ShadowType.NONE;
+                scrolled.has_frame = false;
         }
     }
 
