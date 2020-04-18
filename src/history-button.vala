@@ -24,6 +24,7 @@ using Gtk;
 private class HistoryButton : ToggleButton
 {
     ulong toggled_handler = 0;
+    ulong close_handler = 0;
     private PopoverMenu popover;
 
     construct
@@ -69,10 +70,13 @@ private class HistoryButton : ToggleButton
 
         if (toggled_handler != 0)
             disconnect (toggled_handler);
+        if (close_handler != 0)
+            popover.disconnect (close_handler);
         popover = new PopoverMenu.from_model (menu);
         popover.set_parent (this);
         popover.set_autohide (false);
         toggled_handler = toggled.connect (() => { if (get_active ()) popover.popup (); else popover.popdown (); }); // toggled is run-first
+        close_handler = popover.closed.connect (() => set_active (false));
     }
 
     private static inline void generate_undo_actions_section (ref GLib.Menu menu)
