@@ -28,6 +28,9 @@ private class HistoryButton : ToggleButton
 
     construct
     {
+        BinLayout layout = new BinLayout ();
+        set_layout_manager (layout);
+
         update_state (/* label */ "0", /* sensitive */ false);
         generate_moves_menu ();
     }
