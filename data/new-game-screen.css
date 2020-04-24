@@ -30,8 +30,9 @@ button.menubutton-like-combo {
 * * games buttons
 \*/
 
-                                                       button.radio-like-toggle:backdrop { color: @theme_unfocused_fg_color; }
-                                                       button.radio-like-toggle          { color: @theme_fg_color;
+window:not(.hc-theme)                                  button.radio-like-toggle:backdrop { color: @theme_unfocused_fg_color; }
+window:not(.hc-theme)                                  button.radio-like-toggle          { color: @theme_fg_color; }
+                                                       button.radio-like-toggle          {
 
   background-repeat:no-repeat;
   background-color:transparent;
