@@ -4,6 +4,11 @@
     <file preprocess="to-pixdata" alias="15-Puzzle.png">../data/schema-15.png</file>
     <file preprocess="to-pixdata" alias="16-Puzzle.png">../data/schema-16.png</file>
   </gresource>
+  <gresource prefix="/org/gnome/Taquin/sounds">
+    <file alias="game-over.ogg">../data/game-over.ogg</file>
+    <file alias="sliding-1.ogg">../data/sliding-1.ogg</file>
+    <file alias="sliding-n.ogg">../data/sliding-n.ogg</file>
+  </gresource>
   <gresource prefix="/org/gnome/Taquin/ui">
     <file preprocess="xml-stripblanks" alias="adaptative-window.ui"             >../data/ui/adaptative-window.ui</file>
     <file preprocess="xml-stripblanks" alias="base-headerbar.ui"                >../data/ui/base-headerbar.ui</file>

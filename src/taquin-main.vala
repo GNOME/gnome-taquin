@@ -275,9 +275,6 @@ private class Taquin : Gtk.Application, BaseApplication
         // TODO window.add_action (settings.create_action ("size"));        // Problem: cannot use this way for an integer from a menu; works for radiobuttons in Iagno
         // TODO window.add_action (settings.create_action ("theme"));
 
-        if (settings.get_boolean ("sound"))
-            init_sound ();
-
         add_window (window);
     }
 
@@ -541,9 +538,6 @@ private class Taquin : Gtk.Application, BaseApplication
     * * Sound
     \*/
 
-    private GSound.Context sound_context;
-    private SoundContextState sound_context_state = SoundContextState.INITIAL;
-
     private enum Sound
     {
         SLIDING_1,
@@ -551,67 +545,26 @@ private class Taquin : Gtk.Application, BaseApplication
         GAME_OVER;
     }
 
-    private enum SoundContextState
-    {
-        INITIAL,
-        WORKING,
-        ERRORED;
-    }
-
-    private void init_sound ()
-     // requires (sound_context_state == SoundContextState.INITIAL)
-    {
-        try
-        {
-            sound_context = new GSound.Context ();
-            sound_context_state = SoundContextState.WORKING;
-        }
-        catch (Error e)
-        {
-            warning (e.message);
-            sound_context_state = SoundContextState.ERRORED;
-        }
-    }
-
     private void play_sound (Sound sound)
     {
         if (settings.get_boolean ("sound"))
-        {
-            if (sound_context_state == SoundContextState.INITIAL)
-                init_sound ();
-            if (sound_context_state == SoundContextState.WORKING)
-                _play_sound (sound, sound_context);
-        }
+            _play_sound (sound);
     }
 
-    private static void _play_sound (Sound sound, GSound.Context sound_context)
-     // requires (sound_context_state == SoundContextState.WORKING)
+    private MediaStream stream;     // for keeping in memory
+    private void _play_sound (Sound sound)
     {
         string name;
         switch (sound)
         {
-            case Sound.SLIDING_1:
-                name = "sliding-1.ogg";
-                break;
-            case Sound.SLIDING_N:
-                name = "sliding-n.ogg";
-                break;
-            case Sound.GAME_OVER:
-                name = "gameover.ogg";
-                break;
-            default:
-                return;
+            case Sound.SLIDING_1:   name = "sliding-1"; break;
+            case Sound.SLIDING_N:   name = "sliding-n"; break;
+            case Sound.GAME_OVER:   name = "game-over"; break;
+            default: assert_not_reached ();
         }
-        string path = Path.build_filename (SOUND_DIRECTORY, name);
-        try
-        {
-            sound_context.play_simple (null, GSound.Attribute.MEDIA_NAME, name,
-                                             GSound.Attribute.MEDIA_FILENAME, path);
-        }
-        catch (Error e)
-        {
-            warning (e.message);
-        }
+        stream = MediaFile.for_resource (@"/org/gnome/Taquin/sounds/$name.ogg");
+        stream.set_volume (1.0);
+        stream.play ();
     }
 
     /*\

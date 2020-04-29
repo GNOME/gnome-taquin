@@ -15,7 +15,6 @@ valac = meson.get_compiler('vala')
 
 gio_dependency = dependency('gio-2.0', version: '>= 2.42.0')
 glib_dependency = dependency('glib-2.0', version: '>= 2.42.0')
-gsound_dependency = dependency('gsound', version: '>= 1.0.2')
 gtk_dependency = dependency('gtk4', version: '>= 3.99.1')
 libm_dependency = cc.find_library('m', required: false) # some platforms do not have libm separated from libc
 posix_dependency = valac.find_library('posix')
@@ -31,12 +30,10 @@ localedir   = join_paths(get_option('prefix'), get_option('localedir'))
 datadir     = join_paths(get_option('prefix'), get_option('datadir'))
 bindir      = join_paths(get_option('prefix'), get_option('bindir'))
 pkgdatadir  = join_paths(datadir, meson.project_name())
-soundsdir   = join_paths(pkgdatadir, 'sounds')
 
 conf = configuration_data ()
 conf.set_quoted('VERSION', meson.project_version())
 conf.set_quoted('GETTEXT_PACKAGE', meson.project_name())
-conf.set_quoted('SOUND_DIRECTORY', soundsdir)
 conf.set_quoted('LOCALEDIR', localedir)
 conf.set_quoted('DATA_DIRECTORY', pkgdatadir)
 
