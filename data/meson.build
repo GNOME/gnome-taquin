@@ -1,12 +1,3 @@
-install_data(
-    [
-        'gameover.ogg',
-        'sliding-1.ogg',
-        'sliding-n.ogg'
-    ],
-    install_dir: soundsdir
-)
-
 # Make D-Bus activatable
 service_conf = configuration_data()
 service_conf.set('bindir', bindir)

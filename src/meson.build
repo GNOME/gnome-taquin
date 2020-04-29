@@ -45,7 +45,6 @@ executable(meson.project_name(),[
     ],
     dependencies: [
         glib_dependency,
-        gsound_dependency,
         gtk_dependency,
         libm_dependency,
         posix_dependency,
