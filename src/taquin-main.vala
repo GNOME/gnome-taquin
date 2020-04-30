@@ -208,8 +208,6 @@ private class Taquin : Gtk.Application, BaseApplication
 
         history_button_1 = new HistoryButton ();
         history_button_2 = new HistoryButton ();
-        history_button_1.show ();
-        history_button_2.show ();
 
         /* Window */
         init_night_mode ();
