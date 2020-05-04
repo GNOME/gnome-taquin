@@ -7,8 +7,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: gnome-taquin master\n"
 "Report-Msgid-Bugs-To: https://gitlab.gnome.org/GNOME/gnome-taquin/issues\n"
-"POT-Creation-Date: 2020-03-09 22:20+0000\n"
-"PO-Revision-Date: 2020-03-21 09:59+0200\n"
+"POT-Creation-Date: 2020-05-03 21:00+0000\n"
+"PO-Revision-Date: 2020-05-04 09:12+0300\n"
 "Last-Translator: Yuri Chornoivan <yurchor@ukr.net>\n"
 "Language-Team: Ukrainian <trans-uk@lists.fedoraproject.org>\n"
 "Language: uk\n"
@@ -17,7 +17,7 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=3; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && n%10<"
 "=4 && (n%100<10 || n%100>=20) ? 1 : 2);\n"
-"X-Generator: Lokalize 20.03.70\n"
+"X-Generator: Lokalize 20.07.70\n"
 "X-Project-Style: gnome\n"
 
 #: data/org.gnome.Taquin.appdata.xml.in:7
@@ -91,19 +91,18 @@ msgstr ""
 #: data/org.gnome.Taquin.gschema.xml:8
 msgid "Use GNOME night light setting to activate night-mode."
 msgstr ""
-"Використовувати параметр нічного освітлення GNOME для вмикання нічного режиму."
+"Використовувати параметр нічного освітлення GNOME для вмикання нічного "
+"режиму."
 
 #. see AdaptativeWindow.width-request at data/ui/adaptative-window.ui:22
 #. range min="350"/ FIXME
 #. Translators: summary of a settings key, see 'dconf-editor /org/gnome/taquin/window-width'
 #: data/org.gnome.Taquin.gschema.xml:15
-#| msgid "Width of the window in pixels."
 msgid "The width of the window"
 msgstr "Ширина вікна"
 
 #. Translators: summary of a settings key, see 'dconf-editor /org/gnome/taquin/window-width'
 #: data/org.gnome.Taquin.gschema.xml:17
-#| msgid "Width of the window in pixels."
 msgid "The width of the main window in pixels."
 msgstr "Ширина головного вікна у пікселях."
 
@@ -111,13 +110,11 @@ msgstr "Ширина головного вікна у пікселях."
 #. range min="284"/ FIXME
 #. Translators: summary of a settings key, see 'dconf-editor /org/gnome/taquin/window-height'
 #: data/org.gnome.Taquin.gschema.xml:24
-#| msgid "Height of the window in pixels."
 msgid "The height of the window"
 msgstr "Висота вікна"
 
 #. Translators: description of a settings key, see 'dconf-editor /org/gnome/taquin/window-height'
 #: data/org.gnome.Taquin.gschema.xml:26
-#| msgid "Height of the window in pixels."
 msgid "The height of the main window in pixels."
 msgstr "Висота головного вікна у пікселях."
 
@@ -128,7 +125,6 @@ msgstr "Прапорець для вмикання максимізованог�
 
 #. Translators: description of a settings key, see 'dconf-editor /org/gnome/taquin/window-is-maximized'
 #: data/org.gnome.Taquin.gschema.xml:33
-#| msgid "true if the window is maximized."
 msgid "If “true”, the main window starts in maximized mode."
 msgstr ""
 "Якщо вказано «true», основне вікно відкриватиметься у максимізованому режимі."
@@ -184,7 +180,6 @@ msgstr "Розпочати нову гру"
 
 #. Translators: during a game, label of the New Game button (with a mnemonic that appears pressing Alt)
 #: data/ui/game-headerbar.ui:38
-#| msgid "_Start Game"
 msgid "_New Game"
 msgstr "_Нова гра"
 
@@ -193,110 +188,134 @@ msgstr "_Нова гра"
 msgid "Go back to the current game"
 msgstr "Повернутись до поточної гри"
 
-#: data/ui/help-overlay.ui:28
+#. Translators: in the Keyboard Shortcuts window, name of a section; contains “Start new game” and “Go back”
+#: data/ui/help-overlay.ui:29
 msgctxt "shortcut window"
 msgid "During game selection"
 msgstr "Вибір під час гри"
 
-#: data/ui/help-overlay.ui:32
-#| msgid "Start a new game"
+#. Translators: in the Keyboard Shortcuts window, section "During game selection"
+#: data/ui/help-overlay.ui:34
 msgctxt "shortcut window"
 msgid "Start new game"
 msgstr "Почати нову гру"
 
-#: data/ui/help-overlay.ui:39
+#. Translators: in the Keyboard Shortcuts window, section "During game selection"
+#: data/ui/help-overlay.ui:42
 msgctxt "shortcut window"
 msgid "Go back"
 msgstr "Повернутися"
 
-#: data/ui/help-overlay.ui:48
+#. Translators: in the Keyboard Shortcuts window, name of a section; contains “New game”, “Restart game” and “Undo last move”
+#: data/ui/help-overlay.ui:52
 msgctxt "shortcut window"
 msgid "During a game"
 msgstr "Під час гри"
 
-#: data/ui/help-overlay.ui:52
+#. Translators: in the Keyboard Shortcuts window, section "During a game"
+#: data/ui/help-overlay.ui:57
 msgctxt "shortcut window"
 msgid "New game"
 msgstr "Нова гра"
 
-#: data/ui/help-overlay.ui:59
-#| msgid "_Start Game"
+#. Translators: in the Keyboard Shortcuts window, section "During a game"
+#: data/ui/help-overlay.ui:65
 msgctxt "shortcut window"
 msgid "Restart game"
 msgstr "Перезапустити гру"
 
-#: data/ui/help-overlay.ui:66
-#| msgid "Undo your most recent move"
+#. Translators: in the Keyboard Shortcuts window, section "During a game"
+#: data/ui/help-overlay.ui:73
 msgctxt "shortcut window"
 msgid "Undo last move"
 msgstr "Скасувати останній хід"
 
-#: data/ui/help-overlay.ui:75
-#| msgid "15-Puzzle"
+#. Translators: in the Keyboard Shortcuts window, section "During a game"
+#: data/ui/help-overlay.ui:81
+msgctxt "shortcut window"
+msgid "Toggle game menu"
+msgstr "Перемкнути меню гри"
+
+#. Translators: in the Keyboard Shortcuts window, name of a section; contains shortcuts specific to the 15-Puzzle game
+#: data/ui/help-overlay.ui:91
 msgctxt "shortcut window"
 msgid "15-Puzzle"
 msgstr "Гра «15»"
 
-#: data/ui/help-overlay.ui:79
+#. Translators: in the Keyboard Shortcuts window, section "15-Puzzle"
+#: data/ui/help-overlay.ui:96
 msgctxt "shortcut window"
 msgid "Select tile to push on"
 msgstr "Вибрати плиточку для пересування"
 
-#: data/ui/help-overlay.ui:86
+#. Translators: in the Keyboard Shortcuts window, section "15-Puzzle"
+#: data/ui/help-overlay.ui:104
 msgctxt "shortcut window"
 msgid "Push on selected tile"
 msgstr "Пересунути вибрану плиточку"
 
-#: data/ui/help-overlay.ui:95
-#| msgid "16-Puzzle"
+#. Translators: in the Keyboard Shortcuts window, name of a section; contains shortcuts specific to the 16-Puzzle game
+#: data/ui/help-overlay.ui:114
 msgctxt "shortcut window"
 msgid "16-Puzzle"
 msgstr "Гра «16»"
 
-#: data/ui/help-overlay.ui:99
+#. Translators: in the Keyboard Shortcuts window, section "16-Puzzle"
+#: data/ui/help-overlay.ui:119
 msgctxt "shortcut window"
 msgid "Change selected column"
 msgstr "Змінити вибраний стовпчик"
 
-#: data/ui/help-overlay.ui:106
+#. Translators: in the Keyboard Shortcuts window, section "16-Puzzle"
+#: data/ui/help-overlay.ui:127
 msgctxt "shortcut window"
 msgid "Change selected row"
 msgstr "Змінити вибраний рядок"
 
-#: data/ui/help-overlay.ui:113
+#. Translators: in the Keyboard Shortcuts window, section "16-Puzzle"
+#: data/ui/help-overlay.ui:135
 msgctxt "shortcut window"
 msgid "Swipe selected row"
 msgstr "Пересунути вибраний рядок"
 
-#: data/ui/help-overlay.ui:120
+#. Translators: in the Keyboard Shortcuts window, section "16-Puzzle"
+#: data/ui/help-overlay.ui:143
 msgctxt "shortcut window"
 msgid "Swipe selected column"
 msgstr "Пересунути вибраний стовпчик"
 
-#: data/ui/help-overlay.ui:129
+#. Translators: in the Keyboard Shortcuts window, name of a section; contains generic shortcuts like F1, F10, etc.
+#: data/ui/help-overlay.ui:153
 msgctxt "shortcut window"
 msgid "Generic"
 msgstr "Загальні"
 
-#: data/ui/help-overlay.ui:133
+#. Translators: in the Keyboard Shortcuts window, section "Generic"
+#: data/ui/help-overlay.ui:158
+msgctxt "shortcut window"
+msgid "Toggle main menu"
+msgstr "Перемкнути головне меню"
+
+#. Translators: in the Keyboard Shortcuts window, section "Generic"
+#: data/ui/help-overlay.ui:166
 msgctxt "shortcut window"
 msgid "Keyboard shortcuts"
 msgstr "Клавіатурні скорочення"
 
-#: data/ui/help-overlay.ui:140
-#| msgid "_Help"
+#. Translators: in the Keyboard Shortcuts window, section "Generic"
+#: data/ui/help-overlay.ui:174
 msgctxt "shortcut window"
 msgid "Help"
 msgstr "Довідка"
 
-#: data/ui/help-overlay.ui:147
-#| msgid "_About"
+#. Translators: in the Keyboard Shortcuts window, section "Generic"
+#: data/ui/help-overlay.ui:182
 msgctxt "shortcut window"
 msgid "About"
 msgstr "Про програму"
 
-#: data/ui/help-overlay.ui:154
-#| msgid "_Quit"
+#. Translators: in the Keyboard Shortcuts window, section "Generic"
+#: data/ui/help-overlay.ui:190
 msgctxt "shortcut window"
 msgid "Quit"
 msgstr "Вийти"
@@ -324,7 +343,6 @@ msgstr "Параметри"
 #. Translators: on really small windows, the about dialog is replaced by an in-window view; here is the label of one of two buttons that have the same role as the stack switcher in the usual about dialog, the second is "Credits"
 #. Translators: on really small windows, the about dialog is replaced by an in-window view; here is the name of the view, displayed in the headerbar
 #: src/about-list.vala:44 src/base-headerbar.vala:288
-#| msgid "_About"
 msgid "About"
 msgstr "Про програму"
 
@@ -354,7 +372,6 @@ msgstr "Автори документації"
 
 #. Translators: on really small windows, the about dialog is replaced by an in-window view; here is the header of the translators names
 #: src/about-list.vala:166
-#| msgid "translator-credits"
 msgid "Translators"
 msgstr "Перекладачі"
 
@@ -431,7 +448,6 @@ msgstr "Браво! Ви повторили ваш найкращий резул
 
 #. Translators: in-window notification; on both games, if the user solved the puzzle more than one time
 #: src/history-button.vala:129
-#| msgid "Bravo! You finished the game!"
 msgid "Bravo! You finished the game again."
 msgstr "Браво! Ви знову завершили гру!"
 
@@ -517,7 +533,6 @@ msgid "Numbers"
 msgstr "Кількість"
 
 #: src/taquin-main.vala:218
-#| msgid "Taquin"
 msgid "About Taquin"
 msgstr "Про «Дратун»"
 
@@ -549,7 +564,6 @@ msgstr "Тема: числа ▾"
 #. Translators: when configuring a new game, button label for the theme, if the current theme has been added by the user; the %s is replaced by the theme name
 #: src/taquin-main.vala:536
 #, c-format
-#| msgid "Theme: Cats ▾"
 msgid "Theme: %s ▾"
 msgstr "Тема: %s ▾"
 
