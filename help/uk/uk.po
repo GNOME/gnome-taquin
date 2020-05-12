@@ -1,0 +1,725 @@
+# Ukrainian translation for gnome-taquin.
+# Copyright (C) 2020 gnome-taquin's COPYRIGHT HOLDER
+# This file is distributed under the same license as the gnome-taquin package.
+#
+# Yuri Chornoivan <yurchor@ukr.net>, 2020.
+msgid ""
+msgstr ""
+"Project-Id-Version: gnome-taquin gnome-3-36\n"
+"POT-Creation-Date: 2020-04-24 18:58+0000\n"
+"PO-Revision-Date: 2020-05-12 14:03+0300\n"
+"Last-Translator: Yuri Chornoivan <yurchor@ukr.net>\n"
+"Language-Team: Ukrainian <trans-uk@lists.fedoraproject.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Language: uk\n"
+"Plural-Forms: nplurals=4; plural=n==1 ? 3 : n%10==1 && n%100!=11 ? 0 : n"
+"%10>=2 && n%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2;\n"
+"X-Generator: Lokalize 20.07.70\n"
+
+#. Put one translator per line, in the form NAME <EMAIL>, YEAR1, YEAR2
+msgctxt "_"
+msgid "translator-credits"
+msgstr "Юрій Чорноіван <yurchor@ukr.net>, 2020"
+
+#. (itstool) path: credit/name
+#: C/15-Puzzle.page:10 C/16-Puzzle.page:10 C/beginning.page:10 C/index.page:12
+#: C/shortcuts.page:10 C/start-screen.page:10
+msgid "Arnaud Bonatti"
+msgstr "Arnaud Bonatti"
+
+#. (itstool) path: credit/years
+#: C/15-Puzzle.page:12 C/16-Puzzle.page:12 C/beginning.page:12
+#: C/shortcuts.page:12 C/start-screen.page:12
+msgid "2014-2019"
+msgstr "2014-2019"
+
+#. (itstool) path: page/title
+#: C/15-Puzzle.page:18
+msgid "15-Puzzle"
+msgstr "Гра «15»"
+
+#. (itstool) path: page/p
+#: C/15-Puzzle.page:20
+msgid ""
+"The <em>15-Puzzle</em> is the default puzzle of <app>Taquin</app>. It is "
+"displayed the first time the application is opened. You can start one at any "
+"time from the <link xref=\"start-screen\">Start Screen</link>."
+msgstr ""
+"<em>Гра «15»</em> є типовою грою у <app>Дратуні</app>. Її буде показано після"
+" першого запуску програми. Ви можете будь-коли розпочати гру з <link"
+" xref=\"start-screen\">початкового екрана</link>."
+
+#. (itstool) path: section/title
+#: C/15-Puzzle.page:23 C/16-Puzzle.page:23
+msgid "Gameplay"
+msgstr "Ігровий процес"
+
+#. (itstool) path: section/p
+#: C/15-Puzzle.page:25 C/16-Puzzle.page:25
+msgid "The goal is to move all the tiles to their proper places."
+msgstr "Метою гри є пересування усіх плиток на належні місця."
+
+#. (itstool) path: section/p
+#: C/15-Puzzle.page:27
+msgid ""
+"There’s an empty space where you can move adjacent tiles by pushing them "
+"onto it. You can push more than one tile at the same time in the empty "
+"space’s direction."
+msgstr ""
+"На ігровому полі буде порожня клітинка, на яку ви можете пересувати плитки,"
+" заштовхуючи їх на неї. Ви можете заштовхувати у напрямку порожньої клітинки"
+" одразу декілька плиток."
+
+#. (itstool) path: section/title
+#: C/15-Puzzle.page:31 C/16-Puzzle.page:31
+msgid "End of the game"
+msgstr "Кінець гри"
+
+#. (itstool) path: section/p
+#: C/15-Puzzle.page:32 C/16-Puzzle.page:32
+msgid ""
+"At the end of the game, <app>Taquin</app> notifies you and displays the "
+"complete image."
+msgstr ""
+"Наприкінці гри <app>Дратун</app> сповіщає вас про кінець гри і показує"
+" зображення повністю."
+
+#. (itstool) path: section/p
+#: C/15-Puzzle.page:33 C/16-Puzzle.page:33
+msgid ""
+"You can click the <gui>New Game</gui> button in the headerbar to go to the "
+"<link xref=\"start-screen\">Start Screen</link>. Alternatively, you can "
+"restart the game by clicking on the button with a counter of moves done, and "
+"then on the <gui>Restart</gui> entry."
+msgstr ""
+"Ви можете натиснути кнопку <gui>Нова гра</gui> на панелі заголовка, щоб"
+" перейти до <link xref=\"start-screen\">початкового екрана</link>. Крім того,"
+" ви можете перезапустити гру натисканням кнопки із лічильником ходів із"
+" наступним вибором пункту <gui>Перезапустити</gui>."
+
+#. (itstool) path: section/title
+#: C/15-Puzzle.page:37 C/16-Puzzle.page:37
+msgid "How to play with a mouse"
+msgstr "Як грати за допомогою миші"
+
+#. (itstool) path: section/p
+#: C/15-Puzzle.page:39 C/15-Puzzle.page:68 C/16-Puzzle.page:39
+#: C/16-Puzzle.page:65
+msgid "To make a move:"
+msgstr "Щоб зробити хід, виконайте такі дії:"
+
+#. (itstool) path: item/p
+#: C/15-Puzzle.page:42 C/beginning.page:26
+msgid "Click on a tile on the same row or column as the empty space."
+msgstr ""
+"Клацніть на плитці у тому самому рядку або стовпчику, що і порожнє місце."
+
+#. (itstool) path: note/p
+#: C/15-Puzzle.page:44 C/15-Puzzle.page:74 C/beginning.page:28
+msgid ""
+"If you click on a tile that cannot move, the game notifies you that the move "
+"is impossible."
+msgstr ""
+"Якщо ви клацнете на плитці, яку не можна пересунути, гра повідомить вам, що"
+" хід є неможливим."
+
+#. (itstool) path: item/p
+#: C/15-Puzzle.page:48 C/16-Puzzle.page:45 C/beginning.page:32
+msgid ""
+"You can always undo your move. For that, click on the button with a counter "
+"of moves done in the headerbar, and click the <gui>Undo</gui> entry in the "
+"menu that appears."
+msgstr ""
+"Ви будь-коли можете скасувати ваш хід. Для цього клацніть на кнопці із"
+" лічильником ходів на панелі заголовка і виберіть пункт <gui>Скасувати</gui>"
+" у контекстному меню."
+
+#. (itstool) path: section/p
+#: C/15-Puzzle.page:52 C/15-Puzzle.page:82 C/16-Puzzle.page:49
+#: C/16-Puzzle.page:76
+msgid "Whether you finished the current game or not:"
+msgstr "Незалежно від того, чи завершили ви поточну гру:"
+
+#. (itstool) path: item/p
+#: C/15-Puzzle.page:55 C/16-Puzzle.page:52
+msgid ""
+"To start a new game –possibly with other options–, click the <gui>New Game</"
+"gui> button in the headerbar to go to the <link xref=\"start-screen\">Start "
+"Screen</link>."
+msgstr ""
+"Щоб розпочати нову гру, ймовірно, із іншими параметрами, натисніть кнопку <"
+"gui>Нова гра</gui> на панелі заголовка, щоб перейти до <link"
+" xref=\"start-screen\">початкового екрана</link>."
+
+#. (itstool) path: item/p
+#: C/15-Puzzle.page:58 C/16-Puzzle.page:55
+msgid ""
+"Alternatively, you may want to restart the game. For that, click in the "
+"headerbar on the button with a counter of moves done, and click the "
+"<gui>Restart</gui> entry in the menu that appears."
+msgstr ""
+"Крім того, ви можете перезапустити гру. Для цього натисніть на панелі"
+" заголовка кнопку з лічильником ходів і виберіть пункт <gui>Перезапустити<"
+"/gui> у показаному меню."
+
+#. (itstool) path: section/p
+#: C/15-Puzzle.page:62 C/16-Puzzle.page:59
+msgid "You can also use the keyboard."
+msgstr "Ви також можете скористатися для гри клавіатурою."
+
+#. (itstool) path: section/title
+#: C/15-Puzzle.page:66 C/16-Puzzle.page:63
+msgid "How to play with the keyboard"
+msgstr "Як грати за допомогою клавіатури"
+
+#. (itstool) path: item/p
+#: C/15-Puzzle.page:71
+msgid ""
+"Use the <key>Left</key>, <key>Right</key>, <key>Up</key> and <key>Down</key> "
+"arrows to go at the tile you want to move. The currently selected tile is "
+"indicated with four arrows around the board, on each side of its row and "
+"column."
+msgstr ""
+"Скористайтеся клавішами <key>←</key>, <key>→</key>, <key>↑</key> і <key>↓<"
+"/key>, щоб перейти до плитки, яку ви хочете пересунути. Поточну позначену"
+" плитку буде показано із чотирма стрілочками на краях, по стрілочці на кожен"
+" напрямок рядка та стовпчика."
+
+#. (itstool) path: item/p
+#: C/15-Puzzle.page:72
+msgid ""
+"Use the <key>Space</key> key to move the selected tile in the direction of "
+"the empty space."
+msgstr ""
+"Скористайтеся клавішею <key>Пробіл</key> для пересування позначеної плитки у"
+" напрямку порожнього місця."
+
+#. (itstool) path: item/p
+#: C/15-Puzzle.page:78 C/16-Puzzle.page:72
+msgid ""
+"You can always undo your move. For that, use the <keyseq><key>Ctrl</"
+"key><key>Z</key></keyseq> keys sequence."
+msgstr ""
+"Ви будь-коли можете скасувати ваш хід. Для цього скористайтеся комбінацією"
+" клавіш <keyseq><key>Ctrl</key><key>Z</key></keyseq>."
+
+#. (itstool) path: item/p
+#: C/15-Puzzle.page:85 C/16-Puzzle.page:79
+msgid ""
+"To start a new game –possibly with other options–, use the "
+"<keyseq><key>Ctrl</key><key>N</key></keyseq> keys sequence to go to the "
+"<link xref=\"start-screen\">Start Screen</link>."
+msgstr ""
+"Щоб розпочати нову гру, ймовірно, із іншими параметрами, скористайтеся"
+" комбінацією клавіш <keyseq><key>Ctrl</key><key>N</key></keyseq>, щоб перейти"
+" до <link xref=\"start-screen\">початкового екрана</link>."
+
+#. (itstool) path: item/p
+#: C/15-Puzzle.page:88 C/16-Puzzle.page:82
+msgid ""
+"Alternatively, you may want to restart the game. For that, use the "
+"<keyseq><key>Shift</key><key>Ctrl</key><key>N</key></keyseq> keys sequence."
+msgstr ""
+"Крім того, ви можете перезапустити поточну гру. Для цього скористайтеся"
+" комбінацією клавіш <keyseq><key>Shift</key><key>Ctrl</key><key>N</key><"
+"/keyseq>."
+
+#. (itstool) path: section/p
+#: C/15-Puzzle.page:92 C/16-Puzzle.page:86
+msgid "You can also use a mouse."
+msgstr "Ви також можете скористатися мишею."
+
+#. (itstool) path: page/title
+#: C/16-Puzzle.page:18
+msgid "16-Puzzle"
+msgstr "Гра «16»"
+
+#. (itstool) path: page/p
+#: C/16-Puzzle.page:20
+msgid ""
+"The <em>16-Puzzle</em> is the variant puzzle of <app>Taquin</app>. You can "
+"launch it at any time from the <link xref=\"start-screen\">Start Screen</"
+"link>."
+msgstr ""
+"<em>Гра «16»</em> є варіантом гри у <app>Дратуні</app>. Ви можете будь-коли"
+" розпочати цей варіант гри з <link"
+" xref=\"start-screen\">початкового екрана</"
+"link>."
+
+#. (itstool) path: section/p
+#: C/16-Puzzle.page:27
+msgid ""
+"You move all the tiles of a row or a column in one direction. The tile that "
+"is pushed out of the board is placed at the opposite side of the row or "
+"column."
+msgstr ""
+"Ви пересуваєте усі плитки у рядку або стовпчику у одному напрямку. Плитка,"
+" яка виштовхується з дошки, переходить на протилежний край рядка або"
+" стовпчика."
+
+#. (itstool) path: item/p
+#: C/16-Puzzle.page:42
+msgid ""
+"Click on one of the arrows displayed around the board. The row or column at "
+"the end of which this arrow is moves in this direction, and the tile that "
+"was next to the arrow is placed at the opposite side."
+msgstr ""
+"Клацніть на одній із кнопок зі стрілками, які розташовано навколо дошки."
+" Рядок або стовпчик, наприкінці якого розташовано кнопку зі стрілкою, буде"
+" посунуто у відповідному напрямку, а плитку, яку було розташовано поряд зі"
+" стрілкою, буде перенесено на протилежний бік дошки."
+
+#. (itstool) path: item/p
+#: C/16-Puzzle.page:68
+msgid ""
+"Use the <key>Left</key> and <key>Right</key> arrows to change the selected "
+"column, and the <key>Up</key> and <key>Down</key> arrows to change the "
+"selected row. The currently selected row and column are indicated with "
+"lights around the board."
+msgstr ""
+"Скористайтеся клавішами <key>←</key> і <key>→</key> для зміни позначеного"
+" стовпчика. Клавішами <key>↑</key> і <key>↓</key> можна скористатися для"
+" зміни позначеного рядка. Поточний позначений рядок і стовпчик буде"
+" підсвічено на дошці."
+
+#. (itstool) path: item/p
+#: C/16-Puzzle.page:69
+msgid ""
+"Use the <keyseq><key>Shift</key><key>Left</key></keyseq> and "
+"<keyseq><key>Shift</key><key>Right</key></keyseq> keys sequences to swipe "
+"the selected row, or the <keyseq><key>Shift</key><key>Up</key></keyseq> and "
+"<keyseq><key>Shift</key><key>Down</key></keyseq> keys sequences to swipe the "
+"selected column."
+msgstr ""
+"Скористайтеся комбінаціями клавіш <keyseq><key>Shift</key><key>←</key><"
+"/keyseq> і <keyseq><key>Shift</key><key>→</key></keyseq> для пересування"
+" плиток у позначеному рядку. Комбінаціями клавіш <keyseq><key>Shift</key><key"
+">↑</key></keyseq> і <keyseq><key>Shift</key><key>↓</key></keyseq> можна"
+" скористатися для пересування плиток у позначеному стовпчику."
+
+#. (itstool) path: page/title
+#: C/beginning.page:18
+msgid "Beginning"
+msgstr "Початок гри"
+
+#. (itstool) path: page/p
+#: C/beginning.page:20
+msgid ""
+"When <app>Taquin</app> is opened for the first time, it displays a "
+"traditional <link xref=\"15-Puzzle\">15-Puzzle</link> game."
+msgstr ""
+"Після пешого запуску <app>Дратуна</app> програма покаже традиційну <link"
+" xref=\"15-Puzzle\">гру «15»</link>."
+
+#. (itstool) path: page/p
+#: C/beginning.page:22
+msgid "The game is played using the mouse. To make a move:"
+msgstr "У гру грають за допомогою миші. Щоб зробити хід, виконайте такі дії:"
+
+#. (itstool) path: item/p
+#: C/beginning.page:35
+msgid ""
+"To start a new game –whether you finished the current game or not–, click "
+"the <gui>New Game</gui> button in the headerbar to go to the <link xref="
+"\"start-screen\">Start Screen</link>."
+msgstr ""
+"Щоб розпочати нову гру, завершили ви поточну гру, чи ні, натисніть кнопку <"
+"gui>Нова гра</gui> на панелі заголовка, щоб перейти до <link xref="
+"\"start-screen\">початкового екрана</link>."
+
+#. (itstool) path: page/p
+#: C/beginning.page:39
+msgid ""
+"You can also <link xref=\"15-Puzzle#15-keyboard\">play with the keyboard</"
+"link> if you prefer."
+msgstr ""
+"Ви також можете, якщо хочете, <link xref=\"15-Puzzle#15-keyboard\">грати за"
+" допомогою клавіатури</link>."
+
+#. (itstool) path: page/p
+#: C/beginning.page:41
+msgid ""
+"After the first time it is opened, <app>Taquin</app> displays a puzzle with "
+"the same rules and dimensions as the last one played when it is opened, so "
+"it could be a <link xref=\"16-Puzzle\">16-Puzzle</link> game."
+msgstr ""
+"Після наступних запусків <app>Дратуна</app> програма показуватиме гру із тими"
+" самими правилами і розмірами, що і остання гра, в яку ви грали перед"
+" завершенням роботи програми, тому це може бути і <link xref=\"16-Puzzle\""
+">гра «16»</link>."
+
+#. (itstool) path: info/title
+#: C/index.page:8
+msgctxt "link"
+msgid "Taquin"
+msgstr "Дратун"
+
+#. (itstool) path: info/title
+#: C/index.page:9
+msgctxt "text"
+msgid "Taquin"
+msgstr "Дратун"
+
+#. (itstool) path: license/p
+#: C/index.page:16
+msgid ""
+"Creative Commons Attribution-ShareAlike 4.0 International (CC BY-SA 4.0)"
+msgstr ""
+"Creative Commons Attribution-ShareAlike 4.0 International (CC BY-SA 4.0)"
+
+#. (itstool) path: media/span
+#: C/index.page:20
+msgid "Taquin logo"
+msgstr "Логотип «Дратуна»"
+
+#. (itstool) path: page/title
+#: C/index.page:20
+msgid "<_:media-1/> Taquin"
+msgstr "<_:media-1/> Дратун"
+
+#. (itstool) path: page/p
+#: C/index.page:22
+msgid ""
+"<app>Taquin</app> is a sliding-block puzzle game. It includes the "
+"traditional 15-Puzzle invented in the early 1880s, and the more recent 16-"
+"Puzzle variant."
+msgstr ""
+"<app>Дратун</app> — гра у пересування плиток. До неї включено традиційну гру"
+" «15», яку було винайдено на початку 1880-х років, та новіший варіант гри —"
+" «16»."
+
+#. (itstool) path: section/title
+#: C/index.page:26
+msgid "How to Play"
+msgstr "Як грати"
+
+#. (itstool) path: section/title
+#: C/index.page:38
+msgid "Advanced"
+msgstr "Додатково"
+
+#. (itstool) path: p/link
+#: C/legal.xml:3
+msgid "Creative Commons Attribution-ShareAlike 4.0 International license"
+msgstr "Непортованої ліцензії Creative Commons Attribution-ShareAlike 4.0"
+
+#. (itstool) path: license/p
+#: C/legal.xml:3
+msgid "This work is licensed under a <_:link-1/>."
+msgstr "Ця робота розповсюджується за умов дотримання <_:link-1/>."
+
+#. (itstool) path: info/desc
+#: C/license.page:8
+msgid "Legal information."
+msgstr "Правові відомості."
+
+#. (itstool) path: page/title
+#: C/license.page:11
+msgid "License"
+msgstr "Ліцензування"
+
+#. (itstool) path: page/p
+#: C/license.page:12
+msgid ""
+"This work is distributed under a Creative Commons Attribution-ShareAlike 4.0 "
+"International license."
+msgstr ""
+"Ця робота поширюється за умов дотримання ліцензії Creative Commons"
+" Attribution-ShareAlike 4.0 International."
+
+#. (itstool) path: page/p
+#: C/license.page:20
+msgid "You are free:"
+msgstr "Ви можете:"
+
+#. (itstool) path: item/title
+#: C/license.page:25
+msgid "<em>To share</em>"
+msgstr "<em>Ділитися</em>"
+
+#. (itstool) path: item/p
+#: C/license.page:26
+msgid "To copy, distribute and transmit the work."
+msgstr "Копіювати, поширювати і передавати цю роботу"
+
+#. (itstool) path: item/title
+#: C/license.page:29
+msgid "<em>To remix</em>"
+msgstr "<em>Змінювати</em>"
+
+#. (itstool) path: item/p
+#: C/license.page:30
+msgid "To adapt the work."
+msgstr "Адаптувати цю роботу."
+
+#. (itstool) path: page/p
+#: C/license.page:33
+msgid "Under the following conditions:"
+msgstr "За дотримання таких умов:"
+
+#. (itstool) path: item/title
+#: C/license.page:38
+msgid "<em>Attribution</em>"
+msgstr "<em>Посилання на джерело</em>"
+
+#. (itstool) path: item/p
+#: C/license.page:39
+msgid ""
+"You must attribute the work in the manner specified by the author or "
+"licensor (but not in any way that suggests that they endorse you or your use "
+"of the work)."
+msgstr ""
+"Ви маєте вказати авторство так, як це визначено автором або ліцензіатом (але "
+"не у такий спосіб, наче вони підтримують вас або ваше використання роботи)."
+
+#. (itstool) path: item/title
+#: C/license.page:46
+msgid "<em>Share Alike</em>"
+msgstr "<em>Поширення на тих самих умовах</em>"
+
+#. (itstool) path: item/p
+#: C/license.page:47
+msgid ""
+"If you alter, transform, or build upon this work, you may distribute the "
+"resulting work only under the same, similar or a compatible license."
+msgstr ""
+"Якщо ви змінюєте, перетворюєте або створюєте роботу на основі цієї роботи, "
+"ви можете поширювати результати лише за тих самих, подібних або сумісних "
+"умов ліцензування."
+
+#. (itstool) path: page/p
+#: C/license.page:53
+msgid ""
+"For the full text of the license, see the <link href=\"http://"
+"creativecommons.org/licenses/by-sa/4.0/legalcode\">CreativeCommons website</"
+"link>, or read the full <link href=\"http://creativecommons.org/licenses/by-"
+"sa/4.0/\">Commons Deed</link>."
+msgstr ""
+"Щоб ознайомитися із повним текстом ліцензційних умов, скористайтеся <link "
+"href=\"http://creativecommons.org/licenses/by-sa/4.0/legalcode\">сайтом "
+"CreativeCommons</link> або прочитайте повністю <link href=\"http://"
+"creativecommons.org/licenses/by-sa/4.0/\">Commons Deed</link>."
+
+#. (itstool) path: page/title
+#: C/shortcuts.page:18
+msgid "Keyboard Shortcuts"
+msgstr "Клавіатурні скорочення"
+
+#. (itstool) path: page/p
+#: C/shortcuts.page:20
+msgid ""
+"<app>Taquin</app> can easily be used with keyboard. The <link xref=\"15-"
+"Puzzle#15-keyboard\">15-Puzzle</link> and <link xref=\"16-Puzzle#16-keyboard"
+"\">16-Puzzle</link> both have specific shortcuts."
+msgstr ""
+"У <app>Дратуна</app> можна без проблем грати за допомогою клавіатури."
+" Передбачено специфічні комбінації клавіш як для <link xref=\"15-"
+"Puzzle#15-keyboard\">гри «15»</link>, так і для <link"
+" xref=\"16-Puzzle#16-keyboard\">гри «16»</link>."
+
+#. (itstool) path: section/title
+#: C/shortcuts.page:23
+msgid "In-game shortcuts"
+msgstr "Клавіатурні комбінації у грі"
+
+#. (itstool) path: td/p
+#: C/shortcuts.page:26
+msgid "Show the Start Screen"
+msgstr "Показати початковий екран"
+
+#. (itstool) path: td/p
+#: C/shortcuts.page:27
+msgid "<keyseq><key>Ctrl</key><key>N</key></keyseq>"
+msgstr "<keyseq><key>Ctrl</key><key>N</key></keyseq>"
+
+#. (itstool) path: td/p
+#: C/shortcuts.page:30
+msgid "Restart game"
+msgstr "Перезапустити гру"
+
+#. (itstool) path: td/p
+#: C/shortcuts.page:31 C/shortcuts.page:78
+msgid "<keyseq><key>Shift</key><key>Ctrl</key><key>N</key></keyseq>"
+msgstr "<keyseq><key>Shift</key><key>Ctrl</key><key>N</key></keyseq>"
+
+#. (itstool) path: td/p
+#: C/shortcuts.page:34
+msgid "Undo last move"
+msgstr "Скасувати останній хід"
+
+#. (itstool) path: td/p
+#: C/shortcuts.page:35
+msgid "<keyseq><key>Ctrl</key><key>Z</key></keyseq>"
+msgstr "<keyseq><key>Ctrl</key><key>Z</key></keyseq>"
+
+#. (itstool) path: section/title
+#: C/shortcuts.page:40
+msgid "15-Puzzle shortcuts"
+msgstr "Скорочення гри «15»"
+
+#. (itstool) path: td/p
+#: C/shortcuts.page:43
+msgid "Select tile to push on"
+msgstr "Вибрати плиточку для пересування"
+
+#. (itstool) path: td/p
+#: C/shortcuts.page:44
+msgid "<key>Left</key>, <key>Right</key>, <key>Up</key> and <key>Down</key>"
+msgstr "<key>←</key>, <key>→</key>, <key>↑</key> і <key>↓</key>"
+
+#. (itstool) path: td/p
+#: C/shortcuts.page:47
+msgid "Push tile in empty space’s direction"
+msgstr "Пересунути плитку у напрямку порожнього місця"
+
+#. (itstool) path: td/p
+#: C/shortcuts.page:48
+msgid "<key>Space</key>, <key>Return</key> and <key>KP_Enter</key>"
+msgstr ""
+"<key>Пробіл</key>, <key>Enter</key> і <key>Enter на цифровому блоці</key>"
+
+#. (itstool) path: section/title
+#: C/shortcuts.page:53
+msgid "16-Puzzle shortcuts"
+msgstr "Скорочення гри «16»"
+
+#. (itstool) path: td/p
+#: C/shortcuts.page:56
+msgid "Change selected column"
+msgstr "Змінити вибраний стовпчик"
+
+#. (itstool) path: td/p
+#: C/shortcuts.page:57
+msgid "<key>Left</key> and <key>Right</key>"
+msgstr "<key>←</key> і <key>→</key>"
+
+#. (itstool) path: td/p
+#: C/shortcuts.page:60
+msgid "Change selected row"
+msgstr "Змінити вибраний рядок"
+
+#. (itstool) path: td/p
+#: C/shortcuts.page:61
+msgid "<key>Up</key> and <key>Down</key>"
+msgstr "<key>↑</key> і <key>↓</key>"
+
+#. (itstool) path: td/p
+#: C/shortcuts.page:64
+msgid "Swipe selected row"
+msgstr "Пересунути вибраний рядок"
+
+#. (itstool) path: td/p
+#: C/shortcuts.page:65
+msgid ""
+"<keyseq><key>Shift</key><key>Left</key></keyseq> and <keyseq><key>Shift</"
+"key><key>Right</key></keyseq>"
+msgstr ""
+"<keyseq><key>Shift</key><key>←</key></keyseq> і <keyseq><key>Shift</key><key"
+">→</key></keyseq>"
+
+#. (itstool) path: td/p
+#: C/shortcuts.page:68
+msgid "Swipe selected column"
+msgstr "Пересунути вибраний стовпчик"
+
+#. (itstool) path: td/p
+#: C/shortcuts.page:69
+msgid ""
+"<keyseq><key>Shift</key><key>Up</key></keyseq> and <keyseq><key>Shift</"
+"key><key>Down</key></keyseq>"
+msgstr ""
+"<keyseq><key>Shift</key><key>↑</key></keyseq> і <keyseq><key>Shift</key><key"
+">↓</key></keyseq>"
+
+#. (itstool) path: section/title
+#: C/shortcuts.page:74
+msgid "Start Screen shortcuts"
+msgstr "Скорочення початкового екрана"
+
+#. (itstool) path: td/p
+#: C/shortcuts.page:77
+msgid "Start new game"
+msgstr "Почати нову гру"
+
+#. (itstool) path: td/p
+#: C/shortcuts.page:81
+msgid "Back to previous game (if any)"
+msgstr "Повернутися до попередньої гри (якщо така була)"
+
+#. (itstool) path: td/p
+#: C/shortcuts.page:82
+msgid "<key>Escape</key>"
+msgstr "<key>Escape</key>"
+
+#. (itstool) path: section/title
+#: C/shortcuts.page:87
+msgid "General shortcuts"
+msgstr "Загальні скорочення"
+
+#. (itstool) path: td/p
+#: C/shortcuts.page:90
+msgid "Keyboard shortcuts"
+msgstr "Клавіатурні скорочення"
+
+#. (itstool) path: td/p
+#: C/shortcuts.page:91
+msgid "<keyseq><key>Ctrl</key><key>F1</key></keyseq>"
+msgstr "<keyseq><key>Ctrl</key><key>F1</key></keyseq>"
+
+#. (itstool) path: td/p
+#: C/shortcuts.page:94
+msgid "Help"
+msgstr "Довідка"
+
+#. (itstool) path: td/p
+#: C/shortcuts.page:95
+msgid "<key>F1</key>"
+msgstr "<key>F1</key>"
+
+#. (itstool) path: td/p
+#: C/shortcuts.page:98
+msgid "About"
+msgstr "Про програму"
+
+#. (itstool) path: td/p
+#: C/shortcuts.page:99
+msgid "<keyseq><key>Shift</key><key>F1</key></keyseq>"
+msgstr "<keyseq><key>Shift</key><key>F1</key></keyseq>"
+
+#. (itstool) path: td/p
+#: C/shortcuts.page:102
+msgid "Quit"
+msgstr "Вийти"
+
+#. (itstool) path: td/p
+#: C/shortcuts.page:103
+msgid "<keyseq><key>Ctrl</key><key>Q</key></keyseq>"
+msgstr "<keyseq><key>Ctrl</key><key>Q</key></keyseq>"
+
+#. (itstool) path: page/title
+#: C/start-screen.page:18
+msgid "Start Screen"
+msgstr "Початковий екран"
+
+#. (itstool) path: page/p
+#: C/start-screen.page:19
+msgid ""
+"The <em>Start Screen</em> is the place to select your options and launch a "
+"new game, either a <link xref=\"15-Puzzle\">15-Puzzle</link> or a <link xref="
+"\"16-Puzzle\">16-Puzzle</link>."
+msgstr ""
+"<em>Початковий екран</em> — місце, за допомогою якого ви можете визначити"
+" параметри гри і розпочати нову гру — <link xref=\"15-Puzzle\">гру «15»</link"
+"> або <link xref="
+"\"16-Puzzle\">гру «16»</link>."
+
+#. (itstool) path: page/p
+#: C/start-screen.page:20
+msgid ""
+"It can be accessed at any time from a game by pressing the <gui>New Game</"
+"gui> button."
+msgstr ""
+"Початковий екран можна будь-коли відкрити натисканням кнопки <gui>Нова гра<"
+"/gui>."
