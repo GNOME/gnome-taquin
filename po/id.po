@@ -7,8 +7,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: gnome-taquin master\n"
 "Report-Msgid-Bugs-To: https://gitlab.gnome.org/GNOME/gnome-taquin/issues\n"
-"POT-Creation-Date: 2019-12-12 16:10+0000\n"
-"PO-Revision-Date: 2020-01-13 19:32+0700\n"
+"POT-Creation-Date: 2020-05-19 15:01+0000\n"
+"PO-Revision-Date: 2020-05-31 13:35+0700\n"
 "Last-Translator: Kukuh Syafaat <kukuhsyafaat@gnome.org>\n"
 "Language-Team: Indonesian\n"
 "Language: id\n"
@@ -16,7 +16,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural= n!=1;\n"
-"X-Generator: Poedit 2.2.4\n"
+"X-Generator: Poedit 2.3.1\n"
 "X-Project-Style: gnome\n"
 
 #: data/org.gnome.Taquin.appdata.xml.in:7
@@ -185,102 +185,134 @@ msgstr "Permai_nan Baru"
 msgid "Go back to the current game"
 msgstr "Kembali ke permainan saat ini"
 
-#: data/ui/help-overlay.ui:28
+#. Translators: in the Keyboard Shortcuts window, name of a section; contains “Start new game” and “Go back”
+#: data/ui/help-overlay.ui:29
 msgctxt "shortcut window"
 msgid "During game selection"
 msgstr "Selama pemilihan permainan"
 
-#: data/ui/help-overlay.ui:32
+#. Translators: in the Keyboard Shortcuts window, section "During game selection"
+#: data/ui/help-overlay.ui:34
 msgctxt "shortcut window"
 msgid "Start new game"
 msgstr "Mulai permainan baru"
 
-#: data/ui/help-overlay.ui:39
+#. Translators: in the Keyboard Shortcuts window, section "During game selection"
+#: data/ui/help-overlay.ui:42
 msgctxt "shortcut window"
 msgid "Go back"
 msgstr "Mundur"
 
-#: data/ui/help-overlay.ui:48
+#. Translators: in the Keyboard Shortcuts window, name of a section; contains “New game”, “Restart game” and “Undo last move”
+#: data/ui/help-overlay.ui:52
 msgctxt "shortcut window"
 msgid "During a game"
 msgstr "Selama permainan"
 
-#: data/ui/help-overlay.ui:52
+#. Translators: in the Keyboard Shortcuts window, section "During a game"
+#: data/ui/help-overlay.ui:57
 msgctxt "shortcut window"
 msgid "New game"
 msgstr "Permainan baru"
 
-#: data/ui/help-overlay.ui:59
+#. Translators: in the Keyboard Shortcuts window, section "During a game"
+#: data/ui/help-overlay.ui:65
 msgctxt "shortcut window"
 msgid "Restart game"
 msgstr "Ulangi permainan"
 
-#: data/ui/help-overlay.ui:66
+#. Translators: in the Keyboard Shortcuts window, section "During a game"
+#: data/ui/help-overlay.ui:73
 msgctxt "shortcut window"
 msgid "Undo last move"
 msgstr "Batalkan gerakan terakhir"
 
-#: data/ui/help-overlay.ui:75
+#. Translators: in the Keyboard Shortcuts window, section "During a game"
+#: data/ui/help-overlay.ui:81
+msgctxt "shortcut window"
+msgid "Toggle game menu"
+msgstr "Jungkitkan menu permainan"
+
+#. Translators: in the Keyboard Shortcuts window, name of a section; contains shortcuts specific to the 15-Puzzle game
+#: data/ui/help-overlay.ui:91
 msgctxt "shortcut window"
 msgid "15-Puzzle"
 msgstr "15-Potongan"
 
-#: data/ui/help-overlay.ui:79
+#. Translators: in the Keyboard Shortcuts window, section "15-Puzzle"
+#: data/ui/help-overlay.ui:96
 msgctxt "shortcut window"
 msgid "Select tile to push on"
 msgstr "Pilih ubin untuk mendorong"
 
-#: data/ui/help-overlay.ui:86
+#. Translators: in the Keyboard Shortcuts window, section "15-Puzzle"
+#: data/ui/help-overlay.ui:104
 msgctxt "shortcut window"
 msgid "Push on selected tile"
 msgstr "Dorong ubin yang dipilih"
 
-#: data/ui/help-overlay.ui:95
+#. Translators: in the Keyboard Shortcuts window, name of a section; contains shortcuts specific to the 16-Puzzle game
+#: data/ui/help-overlay.ui:114
 msgctxt "shortcut window"
 msgid "16-Puzzle"
 msgstr "16-Potongan"
 
-#: data/ui/help-overlay.ui:99
+#. Translators: in the Keyboard Shortcuts window, section "16-Puzzle"
+#: data/ui/help-overlay.ui:119
 msgctxt "shortcut window"
 msgid "Change selected column"
 msgstr "Ubah kolom yang dipilih"
 
-#: data/ui/help-overlay.ui:106
+#. Translators: in the Keyboard Shortcuts window, section "16-Puzzle"
+#: data/ui/help-overlay.ui:127
 msgctxt "shortcut window"
 msgid "Change selected row"
 msgstr "Ubah baris yang dipilih"
 
-#: data/ui/help-overlay.ui:113
+#. Translators: in the Keyboard Shortcuts window, section "16-Puzzle"
+#: data/ui/help-overlay.ui:135
 msgctxt "shortcut window"
 msgid "Swipe selected row"
 msgstr "Geser baris yang dipilih"
 
-#: data/ui/help-overlay.ui:120
+#. Translators: in the Keyboard Shortcuts window, section "16-Puzzle"
+#: data/ui/help-overlay.ui:143
 msgctxt "shortcut window"
 msgid "Swipe selected column"
 msgstr "Geser kolom yang dipilih"
 
-#: data/ui/help-overlay.ui:129
+#. Translators: in the Keyboard Shortcuts window, name of a section; contains generic shortcuts like F1, F10, etc.
+#: data/ui/help-overlay.ui:153
 msgctxt "shortcut window"
 msgid "Generic"
 msgstr "Generik"
 
-#: data/ui/help-overlay.ui:133
+#. Translators: in the Keyboard Shortcuts window, section "Generic"
+#: data/ui/help-overlay.ui:158
+msgctxt "shortcut window"
+msgid "Toggle main menu"
+msgstr "Jungkitkan menu utama"
+
+#. Translators: in the Keyboard Shortcuts window, section "Generic"
+#: data/ui/help-overlay.ui:166
 msgctxt "shortcut window"
 msgid "Keyboard shortcuts"
 msgstr "Pintasan Papan Tik"
 
-#: data/ui/help-overlay.ui:140
+#. Translators: in the Keyboard Shortcuts window, section "Generic"
+#: data/ui/help-overlay.ui:174
 msgctxt "shortcut window"
 msgid "Help"
 msgstr "Bantuan"
 
-#: data/ui/help-overlay.ui:147
+#. Translators: in the Keyboard Shortcuts window, section "Generic"
+#: data/ui/help-overlay.ui:182
 msgctxt "shortcut window"
 msgid "About"
 msgstr "Tentang"
 
-#: data/ui/help-overlay.ui:154
+#. Translators: in the Keyboard Shortcuts window, section "Generic"
+#: data/ui/help-overlay.ui:190
 msgctxt "shortcut window"
 msgid "Quit"
 msgstr "Keluar"
@@ -381,7 +413,7 @@ msgid "_Start Game"
 msgstr "M_ulai Permainan"
 
 #. Translator: during a game, if the user tries with <Shift><Ctrl>n to restart the game, while already on initial position
-#: src/game-window.vala:218
+#: src/game-window.vala:228
 msgid "Already on initial position."
 msgstr "Sudah di posisi awal."
 
