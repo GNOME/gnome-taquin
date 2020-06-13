@@ -653,7 +653,7 @@ private class Taquin : Gtk.Application, BaseApplication
             _("Ruskis (Wikimedia)"), _("Toyah (Wikimedia)"),
 
         /* Translators: about dialog text; in the Credits, text at the end of the "Artwork by" section */
-            _("(see COPYING.themes for informations)")
+            _("(see COPYING.themes for information)")
         };
 
         /* Translators: about dialog text crediting an author */
