@@ -7,8 +7,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: gnome-taquin master\n"
 "Report-Msgid-Bugs-To: https://gitlab.gnome.org/GNOME/gnome-taquin/issues\n"
-"POT-Creation-Date: 2020-05-03 21:00+0000\n"
-"PO-Revision-Date: 2020-05-04 09:12+0300\n"
+"POT-Creation-Date: 2020-06-13 18:47+0000\n"
+"PO-Revision-Date: 2020-06-14 09:55+0300\n"
 "Last-Translator: Yuri Chornoivan <yurchor@ukr.net>\n"
 "Language-Team: Ukrainian <trans-uk@lists.fedoraproject.org>\n"
 "Language: uk\n"
@@ -595,8 +595,9 @@ msgstr "Toyah (Вікісховище)"
 
 #. Translators: about dialog text; in the Credits, text at the end of the "Artwork by" section
 #: src/taquin-main.vala:656
-msgid "(see COPYING.themes for informations)"
-msgstr "(докладніше дивіться у COPYING.themes)"
+#| msgid "(see COPYING.themes for informations)"
+msgid "(see COPYING.themes for information)"
+msgstr "(докладніший опис наведено у COPYING.themes)"
 
 #. Translators: about dialog text crediting an author
 #. Translators: about dialog text crediting a documenter
