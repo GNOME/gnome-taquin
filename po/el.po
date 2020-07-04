@@ -9,8 +9,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: gnome-taquin master\n"
 "Report-Msgid-Bugs-To: https://gitlab.gnome.org/GNOME/gnome-taquin/issues\n"
-"POT-Creation-Date: 2019-10-12 17:13+0000\n"
-"PO-Revision-Date: 2019-11-26 22:59+0200\n"
+"POT-Creation-Date: 2020-05-30 09:57+0000\n"
+"PO-Revision-Date: 2020-07-04 09:02+0300\n"
 "Last-Translator: Efstathios Iosifidis <iosifidis@opensuse.org>\n"
 "Language-Team: Greek, Modern (1453-) <gnome-el-list@gnome.org>\n"
 "Language: el\n"
@@ -18,7 +18,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
-"X-Generator: Poedit 2.2.4\n"
+"X-Generator: Poedit 2.3\n"
 "X-Project-Style: gnome\n"
 
 #: data/org.gnome.Taquin.appdata.xml.in:7
@@ -71,13 +71,17 @@ msgstr "γρίφος;puzzle;"
 
 #. Translators: an action Name, as defined in the desktop file spec; name of the traditional Taquin game
 #. Translators: when configuring a new game, label of the first big button; name of the traditional Taquin game
-#: data/org.gnome.Taquin.desktop.in:21 data/ui/taquin-screens.ui:95
+#. Translators: name of one of the games, as displayed in the headerbar when playing
+#: data/org.gnome.Taquin.desktop.in:22 src/taquin-main.vala:191
+#: src/taquin-main.vala:379
 msgid "15-Puzzle"
 msgstr "Γρίφος 15"
 
 #. Translators: an action Name, as defined in the desktop file spec; name of the alternative game
 #. Translators: when configuring a new game, label of the second big button; name of the non-traditional game
-#: data/org.gnome.Taquin.desktop.in:26 data/ui/taquin-screens.ui:112
+#. Translators: name of one of the games, as displayed in the headerbar when playing
+#: data/org.gnome.Taquin.desktop.in:27 src/taquin-main.vala:195
+#: src/taquin-main.vala:382
 msgid "16-Puzzle"
 msgstr "Γρίφος 16"
 
@@ -90,6 +94,8 @@ msgstr "Σημαία για ακολουθία φωτισμού νυκτός τ�
 #: data/org.gnome.Taquin.gschema.xml:8
 msgid "Use GNOME night light setting to activate night-mode."
 msgstr ""
+"Χρησιμοποιήστε τις ρυθμίσεις νυχτερινού φωτός του GNOME για να "
+"ενεργοποιήσετε τη νυχτερινή λειτουργία."
 
 #. see AdaptativeWindow.width-request at data/ui/adaptative-window.ui:22
 #. range min="350"/ FIXME
@@ -170,35 +176,25 @@ msgstr "Ενέργειες"
 msgid "Current view actions"
 msgstr "Τρέχουσες ενέργειες προβολής"
 
-#. Translators: accessible name of the history menubutton
-#: data/ui/game-headerbar.ui:32
-msgid "History"
-msgstr "Ιστορικό"
-
-#. Translators: accessible description of the history menubutton
-#: data/ui/game-headerbar.ui:34
-msgid "Game history menu"
-msgstr ""
-
-#. Translators: when configuring a new game, if the user has a started game, tooltip text of the Go back button
-#: data/ui/game-headerbar.ui:49
-msgid "Go back to the current game"
-msgstr "Επιστροφή στο τρέχον παιχνίδι"
-
 #. Translators: during a game, tooltip text of the New Game button
-#: data/ui/game-headerbar.ui:69
+#: data/ui/game-headerbar.ui:29
 msgid "Start a new game"
 msgstr "Έναρξη ενός νέου παιχνιδιού"
 
 #. Translators: during a game, label of the New Game button (with a mnemonic that appears pressing Alt)
-#: data/ui/game-headerbar.ui:78
+#: data/ui/game-headerbar.ui:38
 msgid "_New Game"
 msgstr "Νέο παιχνίδι"
+
+#. Translators: when configuring a new game, if the user has a started game, tooltip text of the Go back button
+#: data/ui/game-headerbar.ui:52
+msgid "Go back to the current game"
+msgstr "Επιστροφή στο τρέχον παιχνίδι"
 
 #: data/ui/help-overlay.ui:28
 msgctxt "shortcut window"
 msgid "During game selection"
-msgstr ""
+msgstr "Κατά τη διάρκεια επιλογής παιχνιδιού"
 
 #: data/ui/help-overlay.ui:32
 msgctxt "shortcut window"
@@ -238,12 +234,12 @@ msgstr "Γρίφος 15"
 #: data/ui/help-overlay.ui:79
 msgctxt "shortcut window"
 msgid "Select tile to push on"
-msgstr ""
+msgstr "Επιλογή πλακιδίου προς ώθηση"
 
 #: data/ui/help-overlay.ui:86
 msgctxt "shortcut window"
 msgid "Push on selected tile"
-msgstr ""
+msgstr "Ώθηση επιλεγμένου πλακιδίου"
 
 #: data/ui/help-overlay.ui:95
 msgctxt "shortcut window"
@@ -253,22 +249,22 @@ msgstr "Γρίφος 16"
 #: data/ui/help-overlay.ui:99
 msgctxt "shortcut window"
 msgid "Change selected column"
-msgstr ""
+msgstr "Αλλαγή επιλεγμένης στήλης"
 
 #: data/ui/help-overlay.ui:106
 msgctxt "shortcut window"
 msgid "Change selected row"
-msgstr ""
+msgstr "Αλλαγή επιλεγμένης γραμμής"
 
 #: data/ui/help-overlay.ui:113
 msgctxt "shortcut window"
 msgid "Swipe selected row"
-msgstr ""
+msgstr "Σύρσιμο επιλεγμένης σειράς"
 
 #: data/ui/help-overlay.ui:120
 msgctxt "shortcut window"
 msgid "Swipe selected column"
-msgstr ""
+msgstr "Σύρσιμο επιλεγμένης στήλης"
 
 #: data/ui/help-overlay.ui:129
 msgctxt "shortcut window"
@@ -295,38 +291,23 @@ msgctxt "shortcut window"
 msgid "Quit"
 msgstr "Έξοδος"
 
-#. Translators: when configuring a new game, entry in the menu of the game size menubutton
-#: data/ui/taquin-screens.ui:24
-msgid "3 × 3"
-msgstr "3 × 3"
+#. Translators: accessible name of the history menubutton
+#: data/ui/history-button.ui:31
+msgid "History"
+msgstr "Ιστορικό"
 
-#. Translators: when configuring a new game, entry in the menu of the game size menubutton
-#: data/ui/taquin-screens.ui:30
-msgid "4 × 4"
-msgstr "4 × 4"
-
-#. Translators: when configuring a new game, entry in the menu of the game size menubutton
-#: data/ui/taquin-screens.ui:36
-msgid "5 × 5"
-msgstr "5 × 5"
-
-#. Translators: when configuring a new game, entry in the menu of the game theme menubutton; play with cats images
-#: data/ui/taquin-screens.ui:46
-msgid "Cats"
-msgstr "Γάτες"
-
-#. Translators: when configuring a new game, entry in the menu of the game theme menubutton; play with numbers
-#: data/ui/taquin-screens.ui:52
-msgid "Numbers"
-msgstr "Αριθμοί"
+#. Translators: accessible description of the history menubutton
+#: data/ui/history-button.ui:33
+msgid "Game history menu"
+msgstr "Μενού ιστορικού παιχνιδιού"
 
 #. Translators: when configuring a new game, header of the game type that appears on small screen
-#: data/ui/taquin-screens.ui:70
+#: data/ui/new-game-screen.ui:32
 msgid "Game"
 msgstr "Παιχνίδι"
 
 #. Translators: when configuring a new game, header of the options that appears on small screen
-#: data/ui/taquin-screens.ui:134
+#: data/ui/new-game-screen.ui:88
 msgid "Options"
 msgstr "Επιλογές"
 
@@ -402,48 +383,9 @@ msgid "_Help"
 msgstr "_Βοήθεια"
 
 #. Translators: hamburger menu entry; sound togglebutton (with a mnemonic that appears pressing Alt)
-#: src/game-headerbar.vala:188
+#: src/game-headerbar.vala:193
 msgid "_Sound"
 msgstr "Ή_χος"
-
-#. Translators: in-window notification; on both games, if the user solved the puzzle more than one time
-#: src/game-headerbar.vala:249
-msgid "Bravo! You improved your best score!"
-msgstr ""
-
-#. Translators: in-window notification; on both games, if the user solved the puzzle more than one time
-#: src/game-headerbar.vala:256
-msgid "Bravo! You equalized your best score."
-msgstr ""
-
-#. Translators: in-window notification; on both games, if the user solved the puzzle more than one time
-#: src/game-headerbar.vala:263
-msgid "Bravo! You finished the game again."
-msgstr "Μπράβο! Τελειώσατε το παιχνίδι."
-
-#. Translators: in-window notification; on both games, if the user solves the puzzle the first time
-#: src/game-headerbar.vala:272
-msgid "Bravo! You finished the game!"
-msgstr "Μπράβο! Τελειώσατε το παιχνίδι!"
-
-#. Translators: during a game, entry in the menu of the history menubutton (with a mnemonic that appears pressing Alt)
-#: src/game-headerbar.vala:292
-msgid "_Undo"
-msgstr "_Αναίρεση"
-
-#. if (show_redo)
-#. /* Translators: during a game, entry in the menu of the history menubutton (with a mnemonic that appears pressing Alt) */
-#. section.append (_("_Redo"), "ui.redo");
-#. Translators: during a game, entry in the menu of the history menubutton (with a mnemonic that appears pressing Alt)
-#: src/game-headerbar.vala:301
-msgid "_Restart"
-msgstr "_Επανεκκίνηση"
-
-#. Translators: during a game that has already been finished (and possibly restarted), entry in the menu of the moves button
-#: src/game-headerbar.vala:312
-#, c-format
-msgid "Best score: %s"
-msgstr "Καλύτερες βαθμολογίες: %s"
 
 #. Translators: when configuring a new game, label of the blue Start button (with a mnemonic that appears pressing Alt)
 #: src/game-view.vala:58
@@ -451,125 +393,203 @@ msgid "_Start Game"
 msgstr "Ένα_ρξη παιχνιδιού"
 
 #. Translator: during a game, if the user tries with <Shift><Ctrl>n to restart the game, while already on initial position
-#: src/game-window.vala:210
+#: src/game-window.vala:228
 msgid "Already on initial position."
 msgstr "Είναι ήδη στην αρχική θέση."
 
+#. Translators: during a game, entry in the menu of the history menubutton (with a mnemonic that appears pressing Alt)
+#: src/history-button.vala:70
+msgid "_Undo"
+msgstr "_Αναίρεση"
+
+#. Translators: during a game, entry in the menu of the history menubutton (with a mnemonic that appears pressing Alt)
+#: src/history-button.vala:73
+msgid "_Restart"
+msgstr "_Επανεκκίνηση"
+
+#. Translators: during a game that has already been finished (and possibly restarted), entry in the menu of the moves button
+#: src/history-button.vala:84
+#, c-format
+msgid "Best score: %s"
+msgstr "Καλύτερες βαθμολογίες: %s"
+
+#. Translators: in-window notification; on both games, if the user solved the puzzle more than one time
+#: src/history-button.vala:115
+msgid "Bravo! You improved your best score!"
+msgstr "Μπράβο! Βελτιώσατε την καλύτερή σας βαθμολογία!"
+
+#. Translators: in-window notification; on both games, if the user solved the puzzle more than one time
+#: src/history-button.vala:122
+msgid "Bravo! You equalized your best score."
+msgstr "Μπράβο! Ισοφαρίσατε την καλύτερή σας βαθμολογία."
+
+#. Translators: in-window notification; on both games, if the user solved the puzzle more than one time
+#: src/history-button.vala:129
+msgid "Bravo! You finished the game again."
+msgstr "Μπράβο! Τελειώσατε το παιχνίδι."
+
+#. Translators: in-window notification; on both games, if the user solves the puzzle the first time
+#: src/history-button.vala:138
+msgid "Bravo! You finished the game!"
+msgstr "Μπράβο! Τελειώσατε το παιχνίδι!"
+
 #. Translators: when configuring a new game, button label for the size of the game ("3 × 3", or 4, or 5)
-#: src/new-game-screen.vala:36
+#: src/new-game-screen.vala:95
 #, c-format
 msgid "Size: %d × %d ▾"
 msgstr "Μέγεθος: %d × %d ▾"
 
-#. Translators: when configuring a new game, button label for the theme, if the current theme is Cats
-#: src/new-game-screen.vala:45
-msgid "Theme: Cats ▾"
-msgstr "Θέμα: Γάτες ▾"
-
-#. Translators: when configuring a new game, button label for the theme, if the current theme is Numbers
-#: src/new-game-screen.vala:48
-msgid "Theme: Numbers ▾"
-msgstr "Θέμα: Αριθμοί ▾"
-
 #. Translators: command-line option description, see 'gnome-taquin --help'
-#: src/taquin-main.vala:48
+#: src/taquin-main.vala:52
 msgid "Play the classical 1880s’ 15-puzzle"
 msgstr "Παίξτε τον κλασικό γρίφο 15 του 1880"
 
 #. Translators: command-line option description, see 'gnome-taquin --help'
-#: src/taquin-main.vala:51
+#: src/taquin-main.vala:55
 msgid "Try this fun alternative 16-puzzle"
 msgstr "Δοκιμάστε αυτόν τον διασκεδαστικό εναλλακτικό γρίφο 16"
 
 #. Translators: command-line option description, see 'gnome-taquin --help'
-#: src/taquin-main.vala:54
+#: src/taquin-main.vala:58
 msgid "Sets the puzzle edges’ size (3-5, 2-9 for debug)"
 msgstr "Ορίζει το μέγεθος των άκρων του γρίφου (3-5, 2-9 για αποσφαλμάτωση)"
 
 #. Translators: in the command-line options description, text to indicate the user should specify a size, see 'gnome-taquin --help'
-#: src/taquin-main.vala:57
+#: src/taquin-main.vala:61
 msgid "SIZE"
 msgstr "ΜΕΓΕΘΟΣ"
 
 #. Translators: command-line option description, see 'gnome-taquin --help'
-#: src/taquin-main.vala:60
+#: src/taquin-main.vala:64
 msgid "Turn off the sound"
 msgstr "Απενεργοποίηση του ήχου"
 
 #. Translators: command-line option description, see 'gnome-taquin --help'
-#: src/taquin-main.vala:63
+#: src/taquin-main.vala:67
 msgid "Turn on the sound"
 msgstr "Ενεργοποίηση του ήχου"
 
 #. Translators: command-line option description, see 'gnome-taquin --help'
-#: src/taquin-main.vala:66
+#: src/taquin-main.vala:70
 msgid "Print release version and exit"
 msgstr "Εμφάνιση της έκδοσης και έξοδος"
 
-#: src/taquin-main.vala:156
+#. Translators: when configuring a new game, entry in the menu of the game size menubutton; the "\t" is a tabulation; after is indicated an estimated time for solving the puzzle (1 minute)
+#: src/taquin-main.vala:161 src/taquin-main.vala:172
+msgid "3 × 3\t1 minute"
+msgstr "3 × 3\t1 λεπτό"
+
+#. Translators: when configuring a new game, entry in the menu of the game size menubutton; the "\t" is a tabulation; after is indicated an estimated time for solving the puzzle (5 minutes)
+#: src/taquin-main.vala:164
+msgid "4 × 4\t5 minutes"
+msgstr "4 × 4\t5 λεπτά"
+
+#. Translators: when configuring a new game, entry in the menu of the game size menubutton; the "\t" is a tabulation; after is indicated an estimated time for solving the puzzle (15 minutes)
+#: src/taquin-main.vala:167
+msgid "5 × 5\t15 minutes"
+msgstr "5 × 5\t15 λεπτά"
+
+#. Translators: when configuring a new game, entry in the menu of the game size menubutton; the "\t" is a tabulation; after is indicated an estimated time for solving the puzzle (5 minutes)
+#: src/taquin-main.vala:175
+msgid "4 × 4\t3 minutes"
+msgstr "4 × 4\t3 λεπτά"
+
+#. Translators: when configuring a new game, entry in the menu of the game size menubutton; the "\t" is a tabulation; after is indicated an estimated time for solving the puzzle (5 minutes)
+#: src/taquin-main.vala:178
+msgid "5 × 5\t5 minutes"
+msgstr "5 × 5\t5 λεπτά"
+
+#. Translators: when configuring a new game, entry in the menu of the game theme menubutton; play with cats images
+#: src/taquin-main.vala:183
+msgid "Cats"
+msgstr "Γάτες"
+
+#. Translators: when configuring a new game, entry in the menu of the game theme menubutton; play with numbers
+#: src/taquin-main.vala:187
+msgid "Numbers"
+msgstr "Αριθμοί"
+
+#: src/taquin-main.vala:218
 msgid "About Taquin"
 msgstr "Περί του Taquin"
 
 #. Translators: in-window notification; on the 15-Puzzle game, if the user clicks a tile that cannot move
-#: src/taquin-main.vala:328
+#: src/taquin-main.vala:440
 msgid "You can’t move this tile!"
 msgstr "Δεν μπορείτε να μετακινήσετε αυτό το πλακίδιο!"
 
 #. Translators: in-window notification; on the 16-Puzzle game, help for keyboard use, displayed if the user uses an unmeaningful keyboard key
-#: src/taquin-main.vala:337
+#: src/taquin-main.vala:449
 msgid "Use Shift and an arrow to move tiles!"
-msgstr ""
+msgstr "Χρησιμοποιήστε Shift και ένα βέλος για να μετακινήσετε τα πλακίδια!"
 
 #. Translators: in-window notification; on the 16-Puzzle game, if the user clicks on a tile of the board (the game is played using mouse with arrows around the board)
-#: src/taquin-main.vala:341
+#: src/taquin-main.vala:453
 msgid "Click on the arrows to move tiles!"
-msgstr ""
+msgstr "Κάντε κλικ πάνω στα βέλη για να μετακινήσετε τα πλακίδια!"
+
+#. Translators: when configuring a new game, button label for the theme, if the current theme is Cats
+#: src/taquin-main.vala:530
+msgid "Theme: Cats ▾"
+msgstr "Θέμα: Γάτες ▾"
+
+#. Translators: when configuring a new game, button label for the theme, if the current theme is Numbers
+#: src/taquin-main.vala:533
+msgid "Theme: Numbers ▾"
+msgstr "Θέμα: Αριθμοί ▾"
+
+#. Translators: when configuring a new game, button label for the theme, if the current theme has been added by the user; the %s is replaced by the theme name
+#: src/taquin-main.vala:536
+#, fuzzy, c-format
+#| msgid "Theme: Cats ▾"
+msgid "Theme: %s ▾"
+msgstr "Θέμα: Γάτες ▾"
 
 #. Translators: about dialog text
-#: src/taquin-main.vala:504
+#: src/taquin-main.vala:648
 msgid "A classic 15-puzzle game"
 msgstr "Ένα κλασικό παιχνίδι γρίφου 15"
 
 #. Translators: about dialog text crediting an artist (a photograph), with the website where the image was published
-#: src/taquin-main.vala:508
+#: src/taquin-main.vala:652
 msgid "Abelard (Wikimedia)"
-msgstr ""
+msgstr "Abelard (Wikimedia)"
 
-#: src/taquin-main.vala:508
+#: src/taquin-main.vala:652
 msgid "Alvesgaspar (Wikimedia)"
-msgstr ""
+msgstr "Alvesgaspar (Wikimedia)"
 
-#: src/taquin-main.vala:508
+#: src/taquin-main.vala:652
 msgid "Mueller-rech.muenchen (Wikimedia)"
-msgstr ""
+msgstr "Mueller-rech.muenchen (Wikimedia)"
 
-#: src/taquin-main.vala:509
+#: src/taquin-main.vala:653
 msgid "Ruskis (Wikimedia)"
-msgstr ""
+msgstr "Ruskis (Wikimedia)"
 
-#: src/taquin-main.vala:509
+#: src/taquin-main.vala:653
 msgid "Toyah (Wikimedia)"
-msgstr ""
+msgstr "Toyah (Wikimedia)"
 
 #. Translators: about dialog text; in the Credits, text at the end of the "Artwork by" section
-#: src/taquin-main.vala:512
+#: src/taquin-main.vala:656
 msgid "(see COPYING.themes for informations)"
 msgstr "(δείτε COPYING.themes για πληροφορίες)"
 
 #. Translators: about dialog text crediting an author
 #. Translators: about dialog text crediting a documenter
-#: src/taquin-main.vala:516 src/taquin-main.vala:524
+#: src/taquin-main.vala:660 src/taquin-main.vala:668
 msgid "Arnaud Bonatti"
 msgstr "Arnaud Bonatti"
 
 #. Translators: about dialog text crediting a maintainer; the %u are replaced with the years of start and end
-#: src/taquin-main.vala:520
+#: src/taquin-main.vala:664
 #, c-format
 msgid "Copyright © %u-%u – Arnaud Bonatti"
 msgstr "Πνευματική ιδιοκτησία © %u-%u – Arnaud Bonatti"
 
 #. Translators: about dialog text; this string should be replaced by a text crediting yourselves and your translation team, or should be left empty. Do not translate literally!
-#: src/taquin-main.vala:529
+#: src/taquin-main.vala:673
 msgid "translator-credits"
 msgstr ""
 "Ελληνική μεταφραστική ομάδα του GNOME\n"
@@ -580,9 +600,18 @@ msgstr ""
 "http://gnome.gr/"
 
 #. Translators: about dialog text; label of the website link
-#: src/taquin-main.vala:534
+#: src/taquin-main.vala:678
 msgid "Page on GNOME wiki"
 msgstr "Σελίδα στο wiki του GNOME"
+
+#~ msgid "3 × 3"
+#~ msgstr "3 × 3"
+
+#~ msgid "4 × 4"
+#~ msgstr "4 × 4"
+
+#~ msgid "5 × 5"
+#~ msgstr "5 × 5"
 
 #~ msgid "org.gnome.Taquin"
 #~ msgstr "org.gnome.Taquin"
