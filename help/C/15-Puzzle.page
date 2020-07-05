@@ -75,17 +75,17 @@
       </note>
       </item>
       <item>
-        <p>You can always undo your move. For that, use the <keyseq><key>Ctrl</key><key>Z</key></keyseq> keys sequence.</p>
+        <p>You can always undo your move. For that, use <keyseq><key>Ctrl</key><key>Z</key></keyseq>.</p>
       </item>
     </steps>
 
     <p>Whether you finished the current game or not:</p>
     <steps>
       <item>
-        <p>To start a new game –possibly with other options–, use the <keyseq><key>Ctrl</key><key>N</key></keyseq> keys sequence to go to the <link xref="start-screen">Start Screen</link>.</p>
+        <p>To start a new game –possibly with other options–, use <keyseq><key>Ctrl</key><key>N</key></keyseq> to go to the <link xref="start-screen">Start Screen</link>.</p>
       </item>
       <item>
-        <p>Alternatively, you may want to restart the game. For that, use the <keyseq><key>Shift</key><key>Ctrl</key><key>N</key></keyseq> keys sequence.</p>
+        <p>Alternatively, you may want to restart the game. For that, use <keyseq><key>Shift</key><key>Ctrl</key><key>N</key></keyseq>.</p>
       </item>
     </steps>
 
