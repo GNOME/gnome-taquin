@@ -66,20 +66,20 @@
     <steps>
       <item>
         <p>Use the <key>Left</key> and <key>Right</key> arrows to change the selected column, and the <key>Up</key> and <key>Down</key> arrows to change the selected row. The currently selected row and column are indicated with lights around the board.</p>
-        <p>Use the <keyseq><key>Shift</key><key>Left</key></keyseq> and <keyseq><key>Shift</key><key>Right</key></keyseq> keys sequences to swipe the selected row, or the <keyseq><key>Shift</key><key>Up</key></keyseq> and <keyseq><key>Shift</key><key>Down</key></keyseq> keys sequences to swipe the selected column.</p>
+        <p>Use <keyseq><key>Shift</key><key>Left</key></keyseq> and <keyseq><key>Shift</key><key>Right</key></keyseq> to swipe the selected row, or <keyseq><key>Shift</key><key>Up</key></keyseq> and <keyseq><key>Shift</key><key>Down</key></keyseq> to swipe the selected column.</p>
       </item>
       <item>
-        <p>You can always undo your move. For that, use the <keyseq><key>Ctrl</key><key>Z</key></keyseq> keys sequence.</p>
+        <p>You can always undo your move. For that, use <keyseq><key>Ctrl</key><key>Z</key></keyseq>.</p>
       </item>
     </steps>
 
     <p>Whether you finished the current game or not:</p>
     <steps>
       <item>
-        <p>To start a new game –possibly with other options–, use the <keyseq><key>Ctrl</key><key>N</key></keyseq> keys sequence to go to the <link xref="start-screen">Start Screen</link>.</p>
+        <p>To start a new game –possibly with other options–, use <keyseq><key>Ctrl</key><key>N</key></keyseq> to go to the <link xref="start-screen">Start Screen</link>.</p>
       </item>
       <item>
-        <p>Alternatively, you may want to restart the game. For that, use the <keyseq><key>Shift</key><key>Ctrl</key><key>N</key></keyseq> keys sequence.</p>
+        <p>Alternatively, you may want to restart the game. For that, use <keyseq><key>Shift</key><key>Ctrl</key><key>N</key></keyseq>.</p>
       </item>
     </steps>
 
