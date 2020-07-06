@@ -6,8 +6,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: gnome-taquin gnome-3-36\n"
-"POT-Creation-Date: 2020-05-12 11:06+0000\n"
-"PO-Revision-Date: 2020-05-12 14:10+0300\n"
+"POT-Creation-Date: 2020-07-05 21:02+0000\n"
+"PO-Revision-Date: 2020-07-06 08:38+0300\n"
 "Last-Translator: Yuri Chornoivan <yurchor@ukr.net>\n"
 "Language-Team: Ukrainian <trans-uk@lists.fedoraproject.org>\n"
 "Language: uk\n"
@@ -198,19 +198,26 @@ msgstr ""
 
 #. (itstool) path: item/p
 #: C/15-Puzzle.page:78 C/16-Puzzle.page:72
+#| msgid ""
+#| "You can always undo your move. For that, use the <keyseq><key>Ctrl</"
+#| "key><key>Z</key></keyseq> keys sequence."
 msgid ""
-"You can always undo your move. For that, use the <keyseq><key>Ctrl</"
-"key><key>Z</key></keyseq> keys sequence."
+"You can always undo your move. For that, use <keyseq><key>Ctrl</key><key>Z</"
+"key></keyseq>."
 msgstr ""
 "Ви будь-коли можете скасувати ваш хід. Для цього скористайтеся комбінацією "
 "клавіш <keyseq><key>Ctrl</key><key>Z</key></keyseq>."
 
 #. (itstool) path: item/p
 #: C/15-Puzzle.page:85 C/16-Puzzle.page:79
+#| msgid ""
+#| "To start a new game –possibly with other options–, use the "
+#| "<keyseq><key>Ctrl</key><key>N</key></keyseq> keys sequence to go to the "
+#| "<link xref=\"start-screen\">Start Screen</link>."
 msgid ""
-"To start a new game –possibly with other options–, use the "
-"<keyseq><key>Ctrl</key><key>N</key></keyseq> keys sequence to go to the "
-"<link xref=\"start-screen\">Start Screen</link>."
+"To start a new game –possibly with other options–, use <keyseq><key>Ctrl</"
+"key><key>N</key></keyseq> to go to the <link xref=\"start-screen\">Start "
+"Screen</link>."
 msgstr ""
 "Щоб розпочати нову гру, ймовірно, із іншими параметрами, скористайтеся "
 "комбінацією клавіш <keyseq><key>Ctrl</key><key>N</key></keyseq>, щоб перейти "
@@ -218,9 +225,13 @@ msgstr ""
 
 #. (itstool) path: item/p
 #: C/15-Puzzle.page:88 C/16-Puzzle.page:82
+#| msgid ""
+#| "Alternatively, you may want to restart the game. For that, use the "
+#| "<keyseq><key>Shift</key><key>Ctrl</key><key>N</key></keyseq> keys "
+#| "sequence."
 msgid ""
-"Alternatively, you may want to restart the game. For that, use the "
-"<keyseq><key>Shift</key><key>Ctrl</key><key>N</key></keyseq> keys sequence."
+"Alternatively, you may want to restart the game. For that, use "
+"<keyseq><key>Shift</key><key>Ctrl</key><key>N</key></keyseq>."
 msgstr ""
 "Крім того, ви можете перезапустити поточну гру. Для цього скористайтеся "
 "комбінацією клавіш <keyseq><key>Shift</key><key>Ctrl</key><key>N</key></"
@@ -285,12 +296,17 @@ msgstr ""
 
 #. (itstool) path: item/p
 #: C/16-Puzzle.page:69
+#| msgid ""
+#| "Use the <keyseq><key>Shift</key><key>Left</key></keyseq> and "
+#| "<keyseq><key>Shift</key><key>Right</key></keyseq> keys sequences to swipe "
+#| "the selected row, or the <keyseq><key>Shift</key><key>Up</key></keyseq> "
+#| "and <keyseq><key>Shift</key><key>Down</key></keyseq> keys sequences to "
+#| "swipe the selected column."
 msgid ""
-"Use the <keyseq><key>Shift</key><key>Left</key></keyseq> and "
-"<keyseq><key>Shift</key><key>Right</key></keyseq> keys sequences to swipe "
-"the selected row, or the <keyseq><key>Shift</key><key>Up</key></keyseq> and "
-"<keyseq><key>Shift</key><key>Down</key></keyseq> keys sequences to swipe the "
-"selected column."
+"Use <keyseq><key>Shift</key><key>Left</key></keyseq> and <keyseq><key>Shift</"
+"key><key>Right</key></keyseq> to swipe the selected row, or "
+"<keyseq><key>Shift</key><key>Up</key></keyseq> and <keyseq><key>Shift</"
+"key><key>Down</key></keyseq> to swipe the selected column."
 msgstr ""
 "Скористайтеся комбінаціями клавіш <keyseq><key>Shift</key><key>←</key></"
 "keyseq> і <keyseq><key>Shift</key><key>→</key></keyseq> для пересування "
@@ -575,7 +591,6 @@ msgstr "Пересунути плитку у напрямку порожньог
 
 #. (itstool) path: td/p
 #: C/shortcuts.page:48
-#| msgid "<key>Space</key>, <key>Return</key> and <key>KP_Enter</key>"
 msgid "<key>Space</key>, <key>Return</key> and <key>Enter</key>"
 msgstr "<key>Пробіл</key>, <key>Return</key> і <key>Enter</key>"
 
