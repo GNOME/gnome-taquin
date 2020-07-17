@@ -7,14 +7,14 @@ msgid ""
 msgstr ""
 "Project-Id-Version: gnome-taquin master\n"
 "Report-Msgid-Bugs-To: https://gitlab.gnome.org/GNOME/gnome-taquin/issues\n"
-"POT-Creation-Date: 2020-07-06 05:39+0000\n"
-"PO-Revision-Date: 2020-07-07 00:34+0500\n"
+"POT-Creation-Date: 2020-07-06 19:35+0000\n"
+"PO-Revision-Date: 2020-07-17 14:37+0500\n"
+"Last-Translator: Baurzhan Muftakhidinov <baurthefirst@gmail.com>\n"
 "Language-Team: Kazakh <kk_KZ@googlegroups.com>\n"
 "Language: kk\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Last-Translator: Baurzhan Muftakhidinov <baurthefirst@gmail.com>\n"
 "X-Generator: Poedit 2.3.1\n"
 
 #: data/org.gnome.Taquin.appdata.xml.in:7
@@ -30,16 +30,20 @@ msgstr "Плиткаларды олардың дұрыс орындарына ж
 msgid ""
 "Taquin is a computer version of the 15-puzzle and other sliding puzzles."
 msgstr ""
+"Taquin — 15-ойжұмбақ пен басқа да жылжымалы ойжұмбақтардың компьютерлік "
+"нұсқасы."
 
 #: data/org.gnome.Taquin.appdata.xml.in:13
 msgid ""
 "The object of Taquin is to move tiles so that they reach their places, "
 "either indicated with numbers, or with parts of a great image."
 msgstr ""
+"Taquin ойынының мақсаты — плиткаларды сандармен немесе үлкен суреттің "
+"бөліктерімен көрсетілген орындарына жететіндей етіп жылжыту."
 
 #: data/org.gnome.Taquin.appdata.xml.in:21
 msgid "A GNOME taquin game preview"
-msgstr ""
+msgstr "GNOME taquin ойынын алдын ала қарау"
 
 #: data/org.gnome.Taquin.appdata.xml.in:37
 msgid "The GNOME Project"
@@ -134,6 +138,8 @@ msgid ""
 "The game offers to play with a board size from 3 to 5. The setting could be "
 "set from 2 (good for testing) to 9, limited by the way files are selected."
 msgstr ""
+"Ойын 3-тен 5-ке дейін тақта өлшемімен ойнауды ұсынады. Параметрді файлдарды "
+"таңдау тәсілімен шектелген 2-ден 9-ға дейін орнатуға болады."
 
 #. Translators: summary of a settings key, see 'dconf-editor /org/gnome/taquin/theme'
 #: data/org.gnome.Taquin.gschema.xml:58
@@ -232,49 +238,49 @@ msgstr "Ойын мәзірін көрсету/жасыру"
 #: data/ui/help-overlay.ui:91
 msgctxt "shortcut window"
 msgid "15-Puzzle"
-msgstr ""
+msgstr "15-ойжұмбақ"
 
 #. Translators: in the Keyboard Shortcuts window, section "15-Puzzle"
 #: data/ui/help-overlay.ui:96
 msgctxt "shortcut window"
 msgid "Select tile to push on"
-msgstr ""
+msgstr "Жылжыту үшін плитканы таңдау"
 
 #. Translators: in the Keyboard Shortcuts window, section "15-Puzzle"
 #: data/ui/help-overlay.ui:104
 msgctxt "shortcut window"
 msgid "Push on selected tile"
-msgstr ""
+msgstr "Таңдалған плитканы жылжыту"
 
 #. Translators: in the Keyboard Shortcuts window, name of a section; contains shortcuts specific to the 16-Puzzle game
 #: data/ui/help-overlay.ui:114
 msgctxt "shortcut window"
 msgid "16-Puzzle"
-msgstr ""
+msgstr "16-ойжұмбақ"
 
 #. Translators: in the Keyboard Shortcuts window, section "16-Puzzle"
 #: data/ui/help-overlay.ui:119
 msgctxt "shortcut window"
 msgid "Change selected column"
-msgstr ""
+msgstr "Таңдалған бағанды өзгерту"
 
 #. Translators: in the Keyboard Shortcuts window, section "16-Puzzle"
 #: data/ui/help-overlay.ui:127
 msgctxt "shortcut window"
 msgid "Change selected row"
-msgstr ""
+msgstr "Таңдалған жолды өзгерту"
 
 #. Translators: in the Keyboard Shortcuts window, section "16-Puzzle"
 #: data/ui/help-overlay.ui:135
 msgctxt "shortcut window"
 msgid "Swipe selected row"
-msgstr ""
+msgstr "Таңдалған жолды айналдыру"
 
 #. Translators: in the Keyboard Shortcuts window, section "16-Puzzle"
 #: data/ui/help-overlay.ui:143
 msgctxt "shortcut window"
 msgid "Swipe selected column"
-msgstr ""
+msgstr "Таңдалған бағанды айналдыру"
 
 #. Translators: in the Keyboard Shortcuts window, name of a section; contains generic shortcuts like F1, F10, etc.
 #: data/ui/help-overlay.ui:153
@@ -410,7 +416,7 @@ msgstr "Ба_стау"
 #. Translator: during a game, if the user tries with <Shift><Ctrl>n to restart the game, while already on initial position
 #: src/game-window.vala:228
 msgid "Already on initial position."
-msgstr ""
+msgstr "Бастапқы позицияда болып тұр."
 
 #. Translators: during a game, entry in the menu of the history menubutton (with a mnemonic that appears pressing Alt)
 #: src/history-button.vala:70
@@ -431,22 +437,22 @@ msgstr "Ең жақсы ұпай: %s"
 #. Translators: in-window notification; on both games, if the user solved the puzzle more than one time
 #: src/history-button.vala:115
 msgid "Bravo! You improved your best score!"
-msgstr ""
+msgstr "Бәрекелді! Сіз ең жақсы ұпайыңызды жақсарттыңыз!"
 
 #. Translators: in-window notification; on both games, if the user solved the puzzle more than one time
 #: src/history-button.vala:122
 msgid "Bravo! You equalized your best score."
-msgstr ""
+msgstr "Бәрекелді! Сіз ең жақсы ұпайыңызға жеттіңіз."
 
 #. Translators: in-window notification; on both games, if the user solved the puzzle more than one time
 #: src/history-button.vala:129
 msgid "Bravo! You finished the game again."
-msgstr ""
+msgstr "Бәрекелді! Ойынды қайтадан аяқтадыңыз."
 
 #. Translators: in-window notification; on both games, if the user solves the puzzle the first time
 #: src/history-button.vala:138
 msgid "Bravo! You finished the game!"
-msgstr ""
+msgstr "Бәрекелді! Ойынды аяқтадыңыз."
 
 #. Translators: when configuring a new game, button label for the size of the game ("3 × 3", or 4, or 5)
 #: src/new-game-screen.vala:95
@@ -457,17 +463,17 @@ msgstr "Өлшемі: %d × %d ▾"
 #. Translators: command-line option description, see 'gnome-taquin --help'
 #: src/taquin-main.vala:52
 msgid "Play the classical 1880s’ 15-puzzle"
-msgstr ""
+msgstr "Классикалық 1880 жж. 15-ойжұмбақ ойының ойнау"
 
 #. Translators: command-line option description, see 'gnome-taquin --help'
 #: src/taquin-main.vala:55
 msgid "Try this fun alternative 16-puzzle"
-msgstr ""
+msgstr "Бұл қызық балама 16-ойжұмбақ ойынын ойнап көріңіз"
 
 #. Translators: command-line option description, see 'gnome-taquin --help'
 #: src/taquin-main.vala:58
 msgid "Sets the puzzle edges’ size (3-5, 2-9 for debug)"
-msgstr ""
+msgstr "Ойжұмбақ жақтарының өлшемін орнатады (3-5, жөндеу үшін 2-9)"
 
 #. Translators: in the command-line options description, text to indicate the user should specify a size, see 'gnome-taquin --help'
 #: src/taquin-main.vala:61
@@ -536,28 +542,28 @@ msgstr "Бұл плитканы жылжыта алмайсыз!"
 #. Translators: in-window notification; on the 16-Puzzle game, help for keyboard use, displayed if the user uses an unmeaningful keyboard key
 #: src/taquin-main.vala:449
 msgid "Use Shift and an arrow to move tiles!"
-msgstr ""
+msgstr "Плиткаларды жылжыту үшін Shift және бағдарша пернелерін қолданыңыз!"
 
 #. Translators: in-window notification; on the 16-Puzzle game, if the user clicks on a tile of the board (the game is played using mouse with arrows around the board)
 #: src/taquin-main.vala:453
 msgid "Click on the arrows to move tiles!"
-msgstr ""
+msgstr "Плиткаларды жылжыту үшін бағдаршаларға басыңыз!"
 
 #. Translators: when configuring a new game, button label for the theme, if the current theme is Cats
 #: src/taquin-main.vala:530
 msgid "Theme: Cats ▾"
-msgstr ""
+msgstr "Тема: Мысықтар ▾"
 
 #. Translators: when configuring a new game, button label for the theme, if the current theme is Numbers
 #: src/taquin-main.vala:533
 msgid "Theme: Numbers ▾"
-msgstr ""
+msgstr "Тема: Сандар ▾"
 
 #. Translators: when configuring a new game, button label for the theme, if the current theme has been added by the user; the %s is replaced by the theme name
 #: src/taquin-main.vala:536
 #, c-format
 msgid "Theme: %s ▾"
-msgstr ""
+msgstr "Тема: %s ▾"
 
 #. Translators: about dialog text
 #: src/taquin-main.vala:648
@@ -567,28 +573,28 @@ msgstr "Классикалық 15-жұмбақ ойыны"
 #. Translators: about dialog text crediting an artist (a photograph), with the website where the image was published
 #: src/taquin-main.vala:652
 msgid "Abelard (Wikimedia)"
-msgstr ""
+msgstr "Abelard (Wikimedia)"
 
 #: src/taquin-main.vala:652
 msgid "Alvesgaspar (Wikimedia)"
-msgstr ""
+msgstr "Alvesgaspar (Wikimedia)"
 
 #: src/taquin-main.vala:652
 msgid "Mueller-rech.muenchen (Wikimedia)"
-msgstr ""
+msgstr "Mueller-rech.muenchen (Wikimedia)"
 
 #: src/taquin-main.vala:653
 msgid "Ruskis (Wikimedia)"
-msgstr ""
+msgstr "Ruskis (Wikimedia)"
 
 #: src/taquin-main.vala:653
 msgid "Toyah (Wikimedia)"
-msgstr ""
+msgstr "Toyah (Wikimedia)"
 
 #. Translators: about dialog text; in the Credits, text at the end of the "Artwork by" section
 #: src/taquin-main.vala:656
 msgid "(see COPYING.themes for information)"
-msgstr ""
+msgstr "(ақпарат алу үшін COPYING.themes қараңыз)"
 
 #. Translators: about dialog text crediting an author
 #. Translators: about dialog text crediting a documenter
