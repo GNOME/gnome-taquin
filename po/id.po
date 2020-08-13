@@ -7,8 +7,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: gnome-taquin master\n"
 "Report-Msgid-Bugs-To: https://gitlab.gnome.org/GNOME/gnome-taquin/issues\n"
-"POT-Creation-Date: 2020-05-19 15:01+0000\n"
-"PO-Revision-Date: 2020-05-31 13:35+0700\n"
+"POT-Creation-Date: 2020-06-13 18:47+0000\n"
+"PO-Revision-Date: 2020-06-20 18:29+0700\n"
 "Last-Translator: Kukuh Syafaat <kukuhsyafaat@gnome.org>\n"
 "Language-Team: Indonesian\n"
 "Language: id\n"
@@ -592,8 +592,8 @@ msgstr "Toyah (Wikimedia)"
 
 #. Translators: about dialog text; in the Credits, text at the end of the "Artwork by" section
 #: src/taquin-main.vala:656
-msgid "(see COPYING.themes for informations)"
-msgstr "(Lihat COPYING.themes untuk informasi)"
+msgid "(see COPYING.themes for information)"
+msgstr "(lihat COPYING.themes untuk informasi)"
 
 #. Translators: about dialog text crediting an author
 #. Translators: about dialog text crediting a documenter
