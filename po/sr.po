@@ -2,22 +2,24 @@
 # Courtesy of Prevod.org team (http://prevod.org/) -- 2014—2016.
 # This file is distributed under the same license as the gnome-taquin package.
 # Мирослав Николић <miroslavnikolic@rocketmail.com>, 2014—2016.
+# Марко М. Костић <marko.m.kostic@gmail.com>, 2020.
+#
 msgid ""
 msgstr ""
 "Project-Id-Version: gnome-taquin master\n"
 "Report-Msgid-Bugs-To: https://gitlab.gnome.org/GNOME/gnome-taquin/issues\n"
-"POT-Creation-Date: 2019-12-12 16:10+0000\n"
-"PO-Revision-Date: 2020-02-09 11:49+0100\n"
+"POT-Creation-Date: 2020-06-13 18:47+0000\n"
+"PO-Revision-Date: 2020-08-19 07:34+0200\n"
 "Last-Translator: Марко М. Костић <marko.m.kostic@gmail.com>\n"
-"Language-Team: српски <gnome-sr@googlegroups.org>\n"
+"Language-Team: Serbian <gnome-sr@googlegroups.org>\n"
 "Language: sr\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=4; plural=n==1? 3 : n%10==1 && n%100!=11 ? 0 : n"
-"%10>=2 && n%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2;\n"
+"%10>=2 && n%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2\n"
 "X-Project-Style: gnome\n"
-"X-Generator: Poedit 2.2.4\n"
+"X-Generator: Gtranslator 3.36.0\n"
 
 #: data/org.gnome.Taquin.appdata.xml.in:7
 msgid "GNOME Taquin"
@@ -183,102 +185,134 @@ msgstr "_Нова игра"
 msgid "Go back to the current game"
 msgstr "Вратите се на текућу игру"
 
-#: data/ui/help-overlay.ui:28
+#. Translators: in the Keyboard Shortcuts window, name of a section; contains “Start new game” and “Go back”
+#: data/ui/help-overlay.ui:29
 msgctxt "shortcut window"
 msgid "During game selection"
 msgstr "Током одабира игре"
 
-#: data/ui/help-overlay.ui:32
+#. Translators: in the Keyboard Shortcuts window, section "During game selection"
+#: data/ui/help-overlay.ui:34
 msgctxt "shortcut window"
 msgid "Start new game"
 msgstr "Почетак нове игре"
 
-#: data/ui/help-overlay.ui:39
+#. Translators: in the Keyboard Shortcuts window, section "During game selection"
+#: data/ui/help-overlay.ui:42
 msgctxt "shortcut window"
 msgid "Go back"
 msgstr "Корак назад"
 
-#: data/ui/help-overlay.ui:48
+#. Translators: in the Keyboard Shortcuts window, name of a section; contains “New game”, “Restart game” and “Undo last move”
+#: data/ui/help-overlay.ui:52
 msgctxt "shortcut window"
 msgid "During a game"
 msgstr "Током игре"
 
-#: data/ui/help-overlay.ui:52
+#. Translators: in the Keyboard Shortcuts window, section "During a game"
+#: data/ui/help-overlay.ui:57
 msgctxt "shortcut window"
 msgid "New game"
 msgstr "Нова игра"
 
-#: data/ui/help-overlay.ui:59
+#. Translators: in the Keyboard Shortcuts window, section "During a game"
+#: data/ui/help-overlay.ui:65
 msgctxt "shortcut window"
 msgid "Restart game"
 msgstr "Поновно покретање игре"
 
-#: data/ui/help-overlay.ui:66
+#. Translators: in the Keyboard Shortcuts window, section "During a game"
+#: data/ui/help-overlay.ui:73
 msgctxt "shortcut window"
 msgid "Undo last move"
 msgstr "Опозив претходног потеза"
 
-#: data/ui/help-overlay.ui:75
+#. Translators: in the Keyboard Shortcuts window, section "During a game"
+#: data/ui/help-overlay.ui:81
+msgctxt "shortcut window"
+msgid "Toggle game menu"
+msgstr "Промени стање менија игре"
+
+#. Translators: in the Keyboard Shortcuts window, name of a section; contains shortcuts specific to the 15-Puzzle game
+#: data/ui/help-overlay.ui:91
 msgctxt "shortcut window"
 msgid "15-Puzzle"
 msgstr "15-слагалица"
 
-#: data/ui/help-overlay.ui:79
+#. Translators: in the Keyboard Shortcuts window, section "15-Puzzle"
+#: data/ui/help-overlay.ui:96
 msgctxt "shortcut window"
 msgid "Select tile to push on"
 msgstr "Одабир плочице за гурање"
 
-#: data/ui/help-overlay.ui:86
+#. Translators: in the Keyboard Shortcuts window, section "15-Puzzle"
+#: data/ui/help-overlay.ui:104
 msgctxt "shortcut window"
 msgid "Push on selected tile"
 msgstr "Гурање одабране плочице"
 
-#: data/ui/help-overlay.ui:95
+#. Translators: in the Keyboard Shortcuts window, name of a section; contains shortcuts specific to the 16-Puzzle game
+#: data/ui/help-overlay.ui:114
 msgctxt "shortcut window"
 msgid "16-Puzzle"
 msgstr "16-слагалица"
 
-#: data/ui/help-overlay.ui:99
+#. Translators: in the Keyboard Shortcuts window, section "16-Puzzle"
+#: data/ui/help-overlay.ui:119
 msgctxt "shortcut window"
 msgid "Change selected column"
 msgstr "Промена одабране колоне"
 
-#: data/ui/help-overlay.ui:106
+#. Translators: in the Keyboard Shortcuts window, section "16-Puzzle"
+#: data/ui/help-overlay.ui:127
 msgctxt "shortcut window"
 msgid "Change selected row"
 msgstr "Промена одабраног реда"
 
-#: data/ui/help-overlay.ui:113
+#. Translators: in the Keyboard Shortcuts window, section "16-Puzzle"
+#: data/ui/help-overlay.ui:135
 msgctxt "shortcut window"
 msgid "Swipe selected row"
 msgstr "Повлачење одабраног реда"
 
-#: data/ui/help-overlay.ui:120
+#. Translators: in the Keyboard Shortcuts window, section "16-Puzzle"
+#: data/ui/help-overlay.ui:143
 msgctxt "shortcut window"
 msgid "Swipe selected column"
 msgstr "Повлачење одабране колоне"
 
-#: data/ui/help-overlay.ui:129
+#. Translators: in the Keyboard Shortcuts window, name of a section; contains generic shortcuts like F1, F10, etc.
+#: data/ui/help-overlay.ui:153
 msgctxt "shortcut window"
 msgid "Generic"
 msgstr "Опште"
 
-#: data/ui/help-overlay.ui:133
+#. Translators: in the Keyboard Shortcuts window, section "Generic"
+#: data/ui/help-overlay.ui:158
+msgctxt "shortcut window"
+msgid "Toggle main menu"
+msgstr "Промени стање главног менија"
+
+#. Translators: in the Keyboard Shortcuts window, section "Generic"
+#: data/ui/help-overlay.ui:166
 msgctxt "shortcut window"
 msgid "Keyboard shortcuts"
 msgstr "Пречице тастатуре"
 
-#: data/ui/help-overlay.ui:140
+#. Translators: in the Keyboard Shortcuts window, section "Generic"
+#: data/ui/help-overlay.ui:174
 msgctxt "shortcut window"
 msgid "Help"
 msgstr "Помоћ"
 
-#: data/ui/help-overlay.ui:147
+#. Translators: in the Keyboard Shortcuts window, section "Generic"
+#: data/ui/help-overlay.ui:182
 msgctxt "shortcut window"
 msgid "About"
 msgstr "О програму"
 
-#: data/ui/help-overlay.ui:154
+#. Translators: in the Keyboard Shortcuts window, section "Generic"
+#: data/ui/help-overlay.ui:190
 msgctxt "shortcut window"
 msgid "Quit"
 msgstr "Излазак"
@@ -379,7 +413,7 @@ msgid "_Start Game"
 msgstr "Почни _игру"
 
 #. Translator: during a game, if the user tries with <Shift><Ctrl>n to restart the game, while already on initial position
-#: src/game-window.vala:218
+#: src/game-window.vala:228
 msgid "Already on initial position."
 msgstr "Већ сте на почетном положају."
 
@@ -558,8 +592,9 @@ msgstr "Toyah (Викимедија)"
 
 #. Translators: about dialog text; in the Credits, text at the end of the "Artwork by" section
 #: src/taquin-main.vala:656
-msgid "(see COPYING.themes for informations)"
-msgstr "(за податке погледајте „COPYING.themes“)"
+#| msgid "(see COPYING.themes for informations)"
+msgid "(see COPYING.themes for information)"
+msgstr "(за податке погледајте „COPYING.themes“ датотеку)"
 
 #. Translators: about dialog text crediting an author
 #. Translators: about dialog text crediting a documenter
