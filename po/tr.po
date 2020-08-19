@@ -4,15 +4,15 @@
 # Muhammet Kara <muhammetk@gmail.com>, 2014, 2015.
 # Furkan Ahmet Kara <furkanahmetkara.fk@gmail.com>, 2017.
 # Sabri Ünal <libreajans@gmail.com>, 2019.
-# Emin Tufan Çetin <etcetin@gmail.com>, 2017-2019.
+# Emin Tufan Çetin <etcetin@gmail.com>, 2017-2020.
 #
 msgid ""
 msgstr ""
 "Project-Id-Version: gnome-taquin master\n"
 "Report-Msgid-Bugs-To: https://gitlab.gnome.org/GNOME/gnome-taquin/issues\n"
-"POT-Creation-Date: 2020-01-30 15:17+0000\n"
-"PO-Revision-Date: 2019-12-20 23:49+0300\n"
-"Last-Translator: Sabri Ünal <libreajans@gmail.com>\n"
+"POT-Creation-Date: 2020-06-13 18:47+0000\n"
+"PO-Revision-Date: 2020-08-19 12:58+0300\n"
+"Last-Translator: Emin Tufan Çetin <etcetin@gmail.com>\n"
 "Language-Team: Türkçe <gnome-turk@gnome.org>\n"
 "Language: tr\n"
 "MIME-Version: 1.0\n"
@@ -190,102 +190,134 @@ msgstr "Yeni _Oyun"
 msgid "Go back to the current game"
 msgstr "Şimdiki oyuna geri dön"
 
-#: data/ui/help-overlay.ui:28
+#. Translators: in the Keyboard Shortcuts window, name of a section; contains “Start new game” and “Go back”
+#: data/ui/help-overlay.ui:29
 msgctxt "shortcut window"
 msgid "During game selection"
 msgstr "Oyun seçimi sırasında"
 
-#: data/ui/help-overlay.ui:32
+#. Translators: in the Keyboard Shortcuts window, section "During game selection"
+#: data/ui/help-overlay.ui:34
 msgctxt "shortcut window"
 msgid "Start new game"
 msgstr "Yeni oyun başlat"
 
-#: data/ui/help-overlay.ui:39
+#. Translators: in the Keyboard Shortcuts window, section "During game selection"
+#: data/ui/help-overlay.ui:42
 msgctxt "shortcut window"
 msgid "Go back"
 msgstr "Geri git"
 
-#: data/ui/help-overlay.ui:48
+#. Translators: in the Keyboard Shortcuts window, name of a section; contains “New game”, “Restart game” and “Undo last move”
+#: data/ui/help-overlay.ui:52
 msgctxt "shortcut window"
 msgid "During a game"
 msgstr "Oyun sırasında"
 
-#: data/ui/help-overlay.ui:52
+#. Translators: in the Keyboard Shortcuts window, section "During a game"
+#: data/ui/help-overlay.ui:57
 msgctxt "shortcut window"
 msgid "New game"
 msgstr "Yeni oyun"
 
-#: data/ui/help-overlay.ui:59
+#. Translators: in the Keyboard Shortcuts window, section "During a game"
+#: data/ui/help-overlay.ui:65
 msgctxt "shortcut window"
 msgid "Restart game"
 msgstr "Oyunu yeniden başlat"
 
-#: data/ui/help-overlay.ui:66
+#. Translators: in the Keyboard Shortcuts window, section "During a game"
+#: data/ui/help-overlay.ui:73
 msgctxt "shortcut window"
 msgid "Undo last move"
 msgstr "Son hareketi geri al"
 
-#: data/ui/help-overlay.ui:75
+#. Translators: in the Keyboard Shortcuts window, section "During a game"
+#: data/ui/help-overlay.ui:81
+msgctxt "shortcut window"
+msgid "Toggle game menu"
+msgstr "Oyun menüsünü aç veya kapat"
+
+#. Translators: in the Keyboard Shortcuts window, name of a section; contains shortcuts specific to the 15-Puzzle game
+#: data/ui/help-overlay.ui:91
 msgctxt "shortcut window"
 msgid "15-Puzzle"
 msgstr "15-Bulmaca"
 
-#: data/ui/help-overlay.ui:79
+#. Translators: in the Keyboard Shortcuts window, section "15-Puzzle"
+#: data/ui/help-overlay.ui:96
 msgctxt "shortcut window"
 msgid "Select tile to push on"
 msgstr "Basmak için karoyu seç"
 
-#: data/ui/help-overlay.ui:86
+#. Translators: in the Keyboard Shortcuts window, section "15-Puzzle"
+#: data/ui/help-overlay.ui:104
 msgctxt "shortcut window"
 msgid "Push on selected tile"
 msgstr "Seçili karoya bas"
 
-#: data/ui/help-overlay.ui:95
+#. Translators: in the Keyboard Shortcuts window, name of a section; contains shortcuts specific to the 16-Puzzle game
+#: data/ui/help-overlay.ui:114
 msgctxt "shortcut window"
 msgid "16-Puzzle"
 msgstr "16-Bulmaca"
 
-#: data/ui/help-overlay.ui:99
+#. Translators: in the Keyboard Shortcuts window, section "16-Puzzle"
+#: data/ui/help-overlay.ui:119
 msgctxt "shortcut window"
 msgid "Change selected column"
 msgstr "Seçili sütunu değiştir"
 
-#: data/ui/help-overlay.ui:106
+#. Translators: in the Keyboard Shortcuts window, section "16-Puzzle"
+#: data/ui/help-overlay.ui:127
 msgctxt "shortcut window"
 msgid "Change selected row"
 msgstr "Seçili satırı değiştir"
 
-#: data/ui/help-overlay.ui:113
+#. Translators: in the Keyboard Shortcuts window, section "16-Puzzle"
+#: data/ui/help-overlay.ui:135
 msgctxt "shortcut window"
 msgid "Swipe selected row"
 msgstr "Seçili satırı kaydır"
 
-#: data/ui/help-overlay.ui:120
+#. Translators: in the Keyboard Shortcuts window, section "16-Puzzle"
+#: data/ui/help-overlay.ui:143
 msgctxt "shortcut window"
 msgid "Swipe selected column"
 msgstr "Seçili sütunu kaydır"
 
-#: data/ui/help-overlay.ui:129
+#. Translators: in the Keyboard Shortcuts window, name of a section; contains generic shortcuts like F1, F10, etc.
+#: data/ui/help-overlay.ui:153
 msgctxt "shortcut window"
 msgid "Generic"
 msgstr "Genel"
 
-#: data/ui/help-overlay.ui:133
+#. Translators: in the Keyboard Shortcuts window, section "Generic"
+#: data/ui/help-overlay.ui:158
+msgctxt "shortcut window"
+msgid "Toggle main menu"
+msgstr "Ana menüyü aç veya kapat"
+
+#. Translators: in the Keyboard Shortcuts window, section "Generic"
+#: data/ui/help-overlay.ui:166
 msgctxt "shortcut window"
 msgid "Keyboard shortcuts"
 msgstr "Klavye kısayolları"
 
-#: data/ui/help-overlay.ui:140
+#. Translators: in the Keyboard Shortcuts window, section "Generic"
+#: data/ui/help-overlay.ui:174
 msgctxt "shortcut window"
 msgid "Help"
 msgstr "Yardım"
 
-#: data/ui/help-overlay.ui:147
+#. Translators: in the Keyboard Shortcuts window, section "Generic"
+#: data/ui/help-overlay.ui:182
 msgctxt "shortcut window"
 msgid "About"
 msgstr "Hakkında"
 
-#: data/ui/help-overlay.ui:154
+#. Translators: in the Keyboard Shortcuts window, section "Generic"
+#: data/ui/help-overlay.ui:190
 msgctxt "shortcut window"
 msgid "Quit"
 msgstr "Çıkış"
@@ -386,7 +418,7 @@ msgid "_Start Game"
 msgstr "_Oynu Başlat"
 
 #. Translator: during a game, if the user tries with <Shift><Ctrl>n to restart the game, while already on initial position
-#: src/game-window.vala:227
+#: src/game-window.vala:228
 msgid "Already on initial position."
 msgstr "Şu an başlangıç konumunda."
 
@@ -565,8 +597,8 @@ msgstr "Toyah (Wikimedia)"
 
 #. Translators: about dialog text; in the Credits, text at the end of the "Artwork by" section
 #: src/taquin-main.vala:656
-msgid "(see COPYING.themes for informations)"
-msgstr "(ilgili bilgiler için COPYING.themes dosyasına bakınız)"
+msgid "(see COPYING.themes for information)"
+msgstr "(bilgi için COPYING.themes dosyasına bakınız)"
 
 #. Translators: about dialog text crediting an author
 #. Translators: about dialog text crediting a documenter
