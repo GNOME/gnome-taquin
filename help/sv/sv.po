@@ -1,14 +1,14 @@
 # Swedish translation for gnome-taquin.
-# Copyright © 2015-2019 gnome-taquin's COPYRIGHT HOLDER
+# Copyright © 2015-2020 gnome-taquin's COPYRIGHT HOLDER
 # This file is distributed under the same license as the gnome-taquin package.
 # Sebastian Rasmussen <sebras@gmail.com>, 2015, 2016.
-# Anders Jonsson <anders.jonsson@norsjovallen.se>, 2018, 2019.
+# Anders Jonsson <anders.jonsson@norsjovallen.se>, 2018, 2019. 2020.
 #
 msgid ""
 msgstr ""
 "Project-Id-Version: gnome-taquin master\n"
-"POT-Creation-Date: 2019-02-12 19:24+0000\n"
-"PO-Revision-Date: 2019-02-24 16:24+0100\n"
+"POT-Creation-Date: 2020-07-05 21:02+0000\n"
+"PO-Revision-Date: 2020-08-22 13:46+0200\n"
 "Last-Translator: Anders Jonsson <anders.jonsson@norsjovallen.se>\n"
 "Language-Team: Swedish <tp-sv@listor.tp-sv.se>\n"
 "Language: sv\n"
@@ -16,7 +16,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
-"X-Generator: Poedit 2.2.1\n"
+"X-Generator: Poedit 2.4.1\n"
 
 #. Put one translator per line, in the form NAME <EMAIL>, YEAR1, YEAR2
 msgctxt "_"
@@ -198,31 +198,31 @@ msgstr ""
 #. (itstool) path: item/p
 #: C/15-Puzzle.page:78 C/16-Puzzle.page:72
 msgid ""
-"You can always undo your move. For that, use the <keyseq><key>Ctrl</"
-"key><key>Z</key></keyseq> keys sequence."
+"You can always undo your move. For that, use <keyseq><key>Ctrl</key><key>Z</"
+"key></keyseq>."
 msgstr ""
-"Du kan alltid ångra ditt drag. Använd tangentkombinationen "
-"<keyseq><key>Ctrl</key><key>Z</key></keyseq> för det."
+"Du kan alltid ångra ditt drag. Använd <keyseq><key>Ctrl</key><key>Z</key></"
+"keyseq> för detta."
 
 #. (itstool) path: item/p
 #: C/15-Puzzle.page:85 C/16-Puzzle.page:79
 msgid ""
-"To start a new game –possibly with other options–, use the "
-"<keyseq><key>Ctrl</key><key>N</key></keyseq> keys sequence to go to the "
-"<link xref=\"start-screen\">Start Screen</link>."
+"To start a new game –possibly with other options–, use <keyseq><key>Ctrl</"
+"key><key>N</key></keyseq> to go to the <link xref=\"start-screen\">Start "
+"Screen</link>."
 msgstr ""
 "För att starta ett nytt spel, möjligen med andra alternativ, använd "
-"tangentkombinationen <keyseq><key>Ctrl</key><key>N</key></keyseq> för att gå "
-"till <link xref=\"start-screen\">startskärmen</link>."
+"<keyseq><key>Ctrl</key><key>N</key></keyseq> för att gå till <link xref="
+"\"start-screen\">startskärmen</link>."
 
 #. (itstool) path: item/p
 #: C/15-Puzzle.page:88 C/16-Puzzle.page:82
 msgid ""
-"Alternatively, you may want to restart the game. For that, use the "
-"<keyseq><key>Shift</key><key>Ctrl</key><key>N</key></keyseq> keys sequence."
+"Alternatively, you may want to restart the game. For that, use "
+"<keyseq><key>Shift</key><key>Ctrl</key><key>N</key></keyseq>."
 msgstr ""
-"Alternativt kan du vilja starta om spelet. Använd tangentkombinationen "
-"<keyseq><key>Skift</key><key>Ctrl</key><key>N</key></keyseq> för detta."
+"Alternativt kan du vilja starta om spelet. Använd <keyseq><key>Skift</"
+"key><key>Ctrl</key><key>N</key></keyseq> för detta."
 
 #. (itstool) path: section/p
 #: C/15-Puzzle.page:92 C/16-Puzzle.page:86
@@ -281,17 +281,16 @@ msgstr ""
 #. (itstool) path: item/p
 #: C/16-Puzzle.page:69
 msgid ""
-"Use the <keyseq><key>Shift</key><key>Left</key></keyseq> and "
-"<keyseq><key>Shift</key><key>Right</key></keyseq> keys sequences to swipe "
-"the selected row, or the <keyseq><key>Shift</key><key>Up</key></keyseq> and "
-"<keyseq><key>Shift</key><key>Down</key></keyseq> keys sequences to swipe the "
-"selected column."
+"Use <keyseq><key>Shift</key><key>Left</key></keyseq> and <keyseq><key>Shift</"
+"key><key>Right</key></keyseq> to swipe the selected row, or "
+"<keyseq><key>Shift</key><key>Up</key></keyseq> and <keyseq><key>Shift</"
+"key><key>Down</key></keyseq> to swipe the selected column."
 msgstr ""
-"Använd tangentkombinationerna <keyseq><key>Skift</key><key>Vänster</key></"
-"keyseq> eller <keyseq><key>Skift</key><key>Höger</key></keyseq> för att "
-"flytta den markerade raden, eller tangentkombinationerna <keyseq><key>Skift</"
-"key><key>Upp</key></keyseq> och <keyseq><key>Skifta</key><key>Ned</key></"
-"keyseq> för att flytta den markerade kolumnen."
+"Använd <keyseq><key>Skift</key><key>Vänster</key></keyseq> och "
+"<keyseq><key>Skift</key><key>Höger</key></keyseq> för att flytta den "
+"markerade raden, eller <keyseq><key>Skift</key><key>Upp</key></keyseq> och "
+"<keyseq><key>Skift</key><key>Ned</key></keyseq> för att flytta den markerade "
+"kolumnen."
 
 #. (itstool) path: page/title
 #: C/beginning.page:18
@@ -570,10 +569,8 @@ msgstr "Skjut brickan i den riktning som den tomma platsen finns"
 
 #. (itstool) path: td/p
 #: C/shortcuts.page:48
-msgid "<key>Space</key>, <key>Return</key> and <key>KP_Enter</key>"
-msgstr ""
-"<key>Blanksteg</key>, <key>retur</key> eller <key>retur</key> på numeriska "
-"tangentbordet"
+msgid "<key>Space</key>, <key>Return</key> and <key>Enter</key>"
+msgstr "<key>Blanksteg</key>, <key>Retur</key> eller <key>Enter</key>"
 
 #. (itstool) path: section/title
 #: C/shortcuts.page:53
