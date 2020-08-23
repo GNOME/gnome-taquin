@@ -10,7 +10,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: gnome-taquin\n"
 "Report-Msgid-Bugs-To: https://gitlab.gnome.org/GNOME/gnome-taquin/issues\n"
-"POT-Creation-Date: 2020-06-13 18:47+0000\n"
+"POT-Creation-Date: 2020-07-31 21:33+0000\n"
 "PO-Revision-Date: 2019-08-18 07:25+0200\n"
 "Last-Translator: Jordi Mas i Hernàndez <jmas@softcatala.org>\n"
 "Language-Team: ca_ES <tradgnome@softcatala.net>\n"
@@ -25,7 +25,8 @@ msgstr ""
 msgid "GNOME Taquin"
 msgstr "GNOME Taquin"
 
-#. Translators: a Comment that gives the application function, as defined in the desktop file spec
+#. Translators: a Comment that gives the application function, as defined in
+#. the desktop file spec
 #: data/org.gnome.Taquin.appdata.xml.in:8 data/org.gnome.Taquin.desktop.in:9
 msgid "Slide tiles to their correct places"
 msgstr "Llisca les fitxes als llocs correctes"
@@ -53,43 +54,55 @@ msgstr "Una vista prèvia del joc GNOME Taquin"
 msgid "The GNOME Project"
 msgstr "El projecte GNOME"
 
-#. Translators: application name, as used in the window manager, the window title, the about dialog...
+#. Translators: application name, as used in the window manager, the window
+#. title, the about dialog...
 #: data/org.gnome.Taquin.desktop.in:3 src/taquin-main.vala:26
 msgid "Taquin"
 msgstr "Taquin"
 
-#. Translators: a GenericName that gives the application goal, as defined in the desktop file spec
+#. Translators: a GenericName that gives the application goal, as defined in
+#. the desktop file spec
 #: data/org.gnome.Taquin.desktop.in:7
 msgid "15-puzzle"
 msgstr "Trencaclosques de 15 fitxes"
 
-#. Translators: some search Keywords to find this application, as defined in the desktop file spec. Do NOT translate or localize the semicolons! The list MUST also end with a semicolon!
+#. Translators: some search Keywords to find this application, as defined in
+#. the desktop file spec. Do NOT translate or localize the semicolons! The
+#. list MUST also end with a semicolon!
 #: data/org.gnome.Taquin.desktop.in:11
 msgid "puzzle;"
 msgstr "trencaclosques;"
 
-#. Translators: an action Name, as defined in the desktop file spec; name of the traditional Taquin game
-#. Translators: when configuring a new game, label of the first big button; name of the traditional Taquin game
-#. Translators: name of one of the games, as displayed in the headerbar when playing
+#. Translators: an action Name, as defined in the desktop file spec; name of
+#. the traditional Taquin game
+#. Translators: when configuring a new game, label of the first big button;
+#. name of the traditional Taquin game
+#. Translators: name of one of the games, as displayed in the headerbar when
+#. playing
 #: data/org.gnome.Taquin.desktop.in:22 src/taquin-main.vala:191
 #: src/taquin-main.vala:379
 msgid "15-Puzzle"
 msgstr "Trencaclosques de 15 fitxes"
 
-#. Translators: an action Name, as defined in the desktop file spec; name of the alternative game
-#. Translators: when configuring a new game, label of the second big button; name of the non-traditional game
-#. Translators: name of one of the games, as displayed in the headerbar when playing
+#. Translators: an action Name, as defined in the desktop file spec; name of
+#. the alternative game
+#. Translators: when configuring a new game, label of the second big button;
+#. name of the non-traditional game
+#. Translators: name of one of the games, as displayed in the headerbar when
+#. playing
 #: data/org.gnome.Taquin.desktop.in:27 src/taquin-main.vala:195
 #: src/taquin-main.vala:382
 msgid "16-Puzzle"
 msgstr "Trencaclosques de 16 fitxes"
 
-#. Translators: summary of a settings key, see 'dconf-editor /org/gnome/taquin/automatic-night-mode'
+#. Translators: summary of a settings key, see 'dconf-editor
+#. /org/gnome/taquin/automatic-night-mode'
 #: data/org.gnome.Taquin.gschema.xml:6
 msgid "A flag to follow system night light"
 msgstr "Un senyalador per a seguir la llum nocturna del sistema"
 
-#. Translators: description of a settings key, see 'dconf-editor /org/gnome/taquin/automatic-night-mode'
+#. Translators: description of a settings key, see 'dconf-editor
+#. /org/gnome/taquin/automatic-night-mode'
 #: data/org.gnome.Taquin.gschema.xml:8
 msgid "Use GNOME night light setting to activate night-mode."
 msgstr ""
@@ -98,69 +111,82 @@ msgstr ""
 
 #. see AdaptativeWindow.width-request at data/ui/adaptative-window.ui:22
 #. range min="350"/ FIXME
-#. Translators: summary of a settings key, see 'dconf-editor /org/gnome/taquin/window-width'
+#. Translators: summary of a settings key, see 'dconf-editor
+#. /org/gnome/taquin/window-width'
 #: data/org.gnome.Taquin.gschema.xml:15
 msgid "The width of the window"
 msgstr "L'amplada de la finestra"
 
-#. Translators: summary of a settings key, see 'dconf-editor /org/gnome/taquin/window-width'
+#. Translators: summary of a settings key, see 'dconf-editor
+#. /org/gnome/taquin/window-width'
 #: data/org.gnome.Taquin.gschema.xml:17
 msgid "The width of the main window in pixels."
 msgstr "L'amplada de la finestra principal en píxels."
 
 #. see AdaptativeWindow.height-request at data/ui/adaptative-window.ui:21
 #. range min="284"/ FIXME
-#. Translators: summary of a settings key, see 'dconf-editor /org/gnome/taquin/window-height'
+#. Translators: summary of a settings key, see 'dconf-editor
+#. /org/gnome/taquin/window-height'
 #: data/org.gnome.Taquin.gschema.xml:24
 msgid "The height of the window"
 msgstr "L'alçada de la finestra"
 
-#. Translators: description of a settings key, see 'dconf-editor /org/gnome/taquin/window-height'
+#. Translators: description of a settings key, see 'dconf-editor
+#. /org/gnome/taquin/window-height'
 #: data/org.gnome.Taquin.gschema.xml:26
 msgid "The height of the main window in pixels."
 msgstr "L'alçada de la finestra principal en píxels."
 
-#. Translators: summary of a settings key, see 'dconf-editor /org/gnome/taquin/window-is-maximized'
+#. Translators: summary of a settings key, see 'dconf-editor
+#. /org/gnome/taquin/window-is-maximized'
 #: data/org.gnome.Taquin.gschema.xml:31
 msgid "A flag to enable maximized mode"
 msgstr "Un senyalador per habilitar el mode maximitzat"
 
-#. Translators: description of a settings key, see 'dconf-editor /org/gnome/taquin/window-is-maximized'
+#. Translators: description of a settings key, see 'dconf-editor
+#. /org/gnome/taquin/window-is-maximized'
 #: data/org.gnome.Taquin.gschema.xml:33
 msgid "If “true”, the main window starts in maximized mode."
 msgstr "Si és «true» (cert), la finestra principal s'inicia maximitzada."
 
-#. Translators: summary of a settings key, see 'dconf-editor /org/gnome/taquin/size'
+#. Translators: summary of a settings key, see 'dconf-editor
+#. /org/gnome/taquin/size'
 #: data/org.gnome.Taquin.gschema.xml:51
 msgid "Number of tiles on each edge."
 msgstr "Nombre de fitxes a cada cantonada."
 
-#. Translators: description of a settings key, see 'dconf-editor /org/gnome/taquin/size'
+#. Translators: description of a settings key, see 'dconf-editor
+#. /org/gnome/taquin/size'
 #: data/org.gnome.Taquin.gschema.xml:53
 msgid ""
 "The game offers to play with a board size from 3 to 5. The setting could be "
 "set from 2 (good for testing) to 9, limited by the way files are selected."
 msgstr ""
-"El joc ofereix jugar amb un tauler de mida 3 a 5. Es pot configurar des de 2 "
-"(per fer proves) fins a 9, limitat per la manera que se seleccionen els "
+"El joc ofereix jugar amb un tauler de mida 3 a 5. Es pot configurar des de 2"
+" (per fer proves) fins a 9, limitat per la manera que se seleccionen els "
 "fitxers."
 
-#. Translators: summary of a settings key, see 'dconf-editor /org/gnome/taquin/theme'
+#. Translators: summary of a settings key, see 'dconf-editor
+#. /org/gnome/taquin/theme'
 #: data/org.gnome.Taquin.gschema.xml:58
 msgid "Name of the theme folder."
 msgstr "Nom de la carpeta del tema."
 
-#. Translators: description of a settings key, see 'dconf-editor /org/gnome/taquin/theme'; TODO the themes names are translated in the UI, but not in the settings; not sure what to do for now
+#. Translators: description of a settings key, see 'dconf-editor
+#. /org/gnome/taquin/theme'; TODO the themes names are translated in the UI,
+#. but not in the settings; not sure what to do for now
 #: data/org.gnome.Taquin.gschema.xml:60
 msgid "Taquin has two default themes: 'cats' and 'numbers'."
 msgstr "El Taquin té dos temes per defecte: «gats» i «nombres»."
 
-#. Translators: summary of a settings key, see 'dconf-editor /org/gnome/taquin/sound'
+#. Translators: summary of a settings key, see 'dconf-editor
+#. /org/gnome/taquin/sound'
 #: data/org.gnome.Taquin.gschema.xml:65
 msgid "Sound"
 msgstr "So"
 
-#. Translators: description of a settings key, see 'dconf-editor /org/gnome/taquin/sound'
+#. Translators: description of a settings key, see 'dconf-editor
+#. /org/gnome/taquin/sound'
 #: data/org.gnome.Taquin.gschema.xml:67
 msgid "Whether or not to play event sounds."
 msgstr "Si s'han de reproduir els esdeveniments de so."
@@ -180,35 +206,41 @@ msgstr "Accions de la vista actual"
 msgid "Start a new game"
 msgstr "Comença una partida nova"
 
-#. Translators: during a game, label of the New Game button (with a mnemonic that appears pressing Alt)
+#. Translators: during a game, label of the New Game button (with a mnemonic
+#. that appears pressing Alt)
 #: data/ui/game-headerbar.ui:38
 msgid "_New Game"
 msgstr "_Partida nova"
 
-#. Translators: when configuring a new game, if the user has a started game, tooltip text of the Go back button
+#. Translators: when configuring a new game, if the user has a started game,
+#. tooltip text of the Go back button
 #: data/ui/game-headerbar.ui:52
 msgid "Go back to the current game"
 msgstr "Torna al joc actual"
 
-#. Translators: in the Keyboard Shortcuts window, name of a section; contains “Start new game” and “Go back”
+#. Translators: in the Keyboard Shortcuts window, name of a section; contains
+#. “Start new game” and “Go back”
 #: data/ui/help-overlay.ui:29
 msgctxt "shortcut window"
 msgid "During game selection"
 msgstr "Durant la selecció del joc"
 
-#. Translators: in the Keyboard Shortcuts window, section "During game selection"
+#. Translators: in the Keyboard Shortcuts window, section "During game
+#. selection"
 #: data/ui/help-overlay.ui:34
 msgctxt "shortcut window"
 msgid "Start new game"
 msgstr "Comença una partida nova"
 
-#. Translators: in the Keyboard Shortcuts window, section "During game selection"
+#. Translators: in the Keyboard Shortcuts window, section "During game
+#. selection"
 #: data/ui/help-overlay.ui:42
 msgctxt "shortcut window"
 msgid "Go back"
 msgstr "Torna enrere"
 
-#. Translators: in the Keyboard Shortcuts window, name of a section; contains “New game”, “Restart game” and “Undo last move”
+#. Translators: in the Keyboard Shortcuts window, name of a section; contains
+#. “New game”, “Restart game” and “Undo last move”
 #: data/ui/help-overlay.ui:52
 msgctxt "shortcut window"
 msgid "During a game"
@@ -236,9 +268,10 @@ msgstr "Desfés l'última jugada"
 #: data/ui/help-overlay.ui:81
 msgctxt "shortcut window"
 msgid "Toggle game menu"
-msgstr ""
+msgstr "Commuta el menú de la partida"
 
-#. Translators: in the Keyboard Shortcuts window, name of a section; contains shortcuts specific to the 15-Puzzle game
+#. Translators: in the Keyboard Shortcuts window, name of a section; contains
+#. shortcuts specific to the 15-Puzzle game
 #: data/ui/help-overlay.ui:91
 msgctxt "shortcut window"
 msgid "15-Puzzle"
@@ -256,7 +289,8 @@ msgctxt "shortcut window"
 msgid "Push on selected tile"
 msgstr "Empeny el mosaic seleccionat"
 
-#. Translators: in the Keyboard Shortcuts window, name of a section; contains shortcuts specific to the 16-Puzzle game
+#. Translators: in the Keyboard Shortcuts window, name of a section; contains
+#. shortcuts specific to the 16-Puzzle game
 #: data/ui/help-overlay.ui:114
 msgctxt "shortcut window"
 msgid "16-Puzzle"
@@ -286,7 +320,8 @@ msgctxt "shortcut window"
 msgid "Swipe selected column"
 msgstr "Llisca la columna seleccionada"
 
-#. Translators: in the Keyboard Shortcuts window, name of a section; contains generic shortcuts like F1, F10, etc.
+#. Translators: in the Keyboard Shortcuts window, name of a section; contains
+#. generic shortcuts like F1, F10, etc.
 #: data/ui/help-overlay.ui:153
 msgctxt "shortcut window"
 msgid "Generic"
@@ -296,7 +331,7 @@ msgstr "Genèric"
 #: data/ui/help-overlay.ui:158
 msgctxt "shortcut window"
 msgid "Toggle main menu"
-msgstr ""
+msgstr "Commuta el menú principal"
 
 #. Translators: in the Keyboard Shortcuts window, section "Generic"
 #: data/ui/help-overlay.ui:166
@@ -332,28 +367,38 @@ msgstr "Històric"
 msgid "Game history menu"
 msgstr "Menú de partides històriques"
 
-#. Translators: when configuring a new game, header of the game type that appears on small screen
+#. Translators: when configuring a new game, header of the game type that
+#. appears on small screen
 #: data/ui/new-game-screen.ui:32
 msgid "Game"
 msgstr "Partida"
 
-#. Translators: when configuring a new game, header of the options that appears on small screen
+#. Translators: when configuring a new game, header of the options that
+#. appears on small screen
 #: data/ui/new-game-screen.ui:88
 msgid "Options"
 msgstr "Opcions"
 
-#. Translators: on really small windows, the about dialog is replaced by an in-window view; here is the label of one of two buttons that have the same role as the stack switcher in the usual about dialog, the second is "Credits"
-#. Translators: on really small windows, the about dialog is replaced by an in-window view; here is the name of the view, displayed in the headerbar
+#. Translators: on really small windows, the about dialog is replaced by an
+#. in-window view; here is the label of one of two buttons that have the same
+#. role as the stack switcher in the usual about dialog, the second is
+#. "Credits"
+#. Translators: on really small windows, the about dialog is replaced by an
+#. in-window view; here is the name of the view, displayed in the headerbar
 #: src/about-list.vala:44 src/base-headerbar.vala:288
 msgid "About"
 msgstr "Quant a"
 
-#. Translators: on really small windows, the about dialog is replaced by an in-window view; here is the label of one of two buttons that have the same role as the stack switcher in the usual about dialog, the first is "About"
+#. Translators: on really small windows, the about dialog is replaced by an
+#. in-window view; here is the label of one of two buttons that have the same
+#. role as the stack switcher in the usual about dialog, the first is "About"
 #: src/about-list.vala:46
 msgid "Credits"
 msgstr "Crèdits"
 
-#. Translators: on really small windows, the about dialog is replaced by an in-window view; here is the label of the link to the GPL license; TODO better text, as in the usual about dialog
+#. Translators: on really small windows, the about dialog is replaced by an
+#. in-window view; here is the label of the link to the GPL license; TODO
+#. better text, as in the usual about dialog
 #: src/about-list.vala:135
 msgid ""
 "GNU General Public License\n"
@@ -362,103 +407,123 @@ msgstr ""
 "Llicència Pública General GNU\n"
 "versió 3 o posterior"
 
-#. Translators: on really small windows, the about dialog is replaced by an in-window view; here is the header of the programmers names
+#. Translators: on really small windows, the about dialog is replaced by an
+#. in-window view; here is the header of the programmers names
 #: src/about-list.vala:154
 msgid "Creators"
 msgstr "Creadors"
 
-#. Translators: on really small windows, the about dialog is replaced by an in-window view; here is the header of the documenters names
+#. Translators: on really small windows, the about dialog is replaced by an
+#. in-window view; here is the header of the documenters names
 #: src/about-list.vala:161
 msgid "Documenters"
 msgstr "Documentadors"
 
-#. Translators: on really small windows, the about dialog is replaced by an in-window view; here is the header of the translators names
+#. Translators: on really small windows, the about dialog is replaced by an
+#. in-window view; here is the header of the translators names
 #: src/about-list.vala:166
 msgid "Translators"
 msgstr "Equip de traducció"
 
-#. Translators: on really small windows, the about dialog is replaced by an in-window view; here is the header of the pictural artists names
+#. Translators: on really small windows, the about dialog is replaced by an
+#. in-window view; here is the header of the pictural artists names
 #: src/about-list.vala:172
 msgid "Artists"
 msgstr "Artistes"
 
-#. Translators: there are three related actions: "use", "reuse" and "pause"; displayed in the hamburger menu at night
+#. Translators: there are three related actions: "use", "reuse" and "pause";
+#. displayed in the hamburger menu at night
 #: src/adaptative-window.vala:149
 msgid "Pause night mode"
 msgstr "Posa en pausa el mode nocturn"
 
-#. Translators: there are three related actions: "use", "reuse" and "pause"; displayed in the hamburger menu at night
+#. Translators: there are three related actions: "use", "reuse" and "pause";
+#. displayed in the hamburger menu at night
 #: src/adaptative-window.vala:153
 msgid "Reuse night mode"
 msgstr "Torna a usar el mode nocturn"
 
-#. Translators: there are three related actions: "use", "reuse" and "pause"; displayed in the hamburger menu at night
+#. Translators: there are three related actions: "use", "reuse" and "pause";
+#. displayed in the hamburger menu at night
 #: src/adaptative-window.vala:157
 msgid "Use night mode"
 msgstr "Usa el mode nocturn"
 
-#. Translators: usual menu entry of the hamburger menu (with a mnemonic that appears pressing Alt)
+#. Translators: usual menu entry of the hamburger menu (with a mnemonic that
+#. appears pressing Alt)
 #: src/base-headerbar.vala:116
 msgid "_Keyboard Shortcuts"
 msgstr "_Dreceres de teclat"
 
-#. Translators: usual menu entry of the hamburger menu (with a mnemonic that appears pressing Alt)
+#. Translators: usual menu entry of the hamburger menu (with a mnemonic that
+#. appears pressing Alt)
 #: src/base-headerbar.vala:125
 msgid "_Help"
 msgstr "A_juda"
 
-#. Translators: hamburger menu entry; sound togglebutton (with a mnemonic that appears pressing Alt)
+#. Translators: hamburger menu entry; sound togglebutton (with a mnemonic that
+#. appears pressing Alt)
 #: src/game-headerbar.vala:193
 msgid "_Sound"
 msgstr "_So"
 
-#. Translators: when configuring a new game, label of the blue Start button (with a mnemonic that appears pressing Alt)
+#. Translators: when configuring a new game, label of the blue Start button
+#. (with a mnemonic that appears pressing Alt)
 #: src/game-view.vala:58
 msgid "_Start Game"
 msgstr "_Inicia la partida"
 
-#. Translator: during a game, if the user tries with <Shift><Ctrl>n to restart the game, while already on initial position
+#. Translator: during a game, if the user tries with <Shift><Ctrl>n to restart
+#. the game, while already on initial position
 #: src/game-window.vala:228
 msgid "Already on initial position."
 msgstr "Ja esteu en la posició inicial."
 
-#. Translators: during a game, entry in the menu of the history menubutton (with a mnemonic that appears pressing Alt)
+#. Translators: during a game, entry in the menu of the history menubutton
+#. (with a mnemonic that appears pressing Alt)
 #: src/history-button.vala:70
 msgid "_Undo"
 msgstr "_Desfés"
 
-#. Translators: during a game, entry in the menu of the history menubutton (with a mnemonic that appears pressing Alt)
+#. Translators: during a game, entry in the menu of the history menubutton
+#. (with a mnemonic that appears pressing Alt)
 #: src/history-button.vala:73
 msgid "_Restart"
 msgstr "_Reinicia"
 
-#. Translators: during a game that has already been finished (and possibly restarted), entry in the menu of the moves button
+#. Translators: during a game that has already been finished (and possibly
+#. restarted), entry in the menu of the moves button
 #: src/history-button.vala:84
 #, c-format
 msgid "Best score: %s"
 msgstr "Millor puntuació: %s"
 
-#. Translators: in-window notification; on both games, if the user solved the puzzle more than one time
+#. Translators: in-window notification; on both games, if the user solved the
+#. puzzle more than one time
 #: src/history-button.vala:115
 msgid "Bravo! You improved your best score!"
 msgstr "Enhorabona. Heu millorat el vostre millor resultat."
 
-#. Translators: in-window notification; on both games, if the user solved the puzzle more than one time
+#. Translators: in-window notification; on both games, if the user solved the
+#. puzzle more than one time
 #: src/history-button.vala:122
 msgid "Bravo! You equalized your best score."
 msgstr "Enhorabona. Heu aconseguit el vostre millor resultat."
 
-#. Translators: in-window notification; on both games, if the user solved the puzzle more than one time
+#. Translators: in-window notification; on both games, if the user solved the
+#. puzzle more than one time
 #: src/history-button.vala:129
 msgid "Bravo! You finished the game again."
 msgstr "Enhorabona. Heu acabat el joc un altre cop."
 
-#. Translators: in-window notification; on both games, if the user solves the puzzle the first time
+#. Translators: in-window notification; on both games, if the user solves the
+#. puzzle the first time
 #: src/history-button.vala:138
 msgid "Bravo! You finished the game!"
 msgstr "Enhorabona. Heu acabat el joc!"
 
-#. Translators: when configuring a new game, button label for the size of the game ("3 × 3", or 4, or 5)
+#. Translators: when configuring a new game, button label for the size of the
+#. game ("3 × 3", or 4, or 5)
 #: src/new-game-screen.vala:95
 #, c-format
 msgid "Size: %d × %d ▾"
@@ -481,7 +546,8 @@ msgstr ""
 "Estableix la mida de les cantonades del trencaclosques (3-5, 2-9 per "
 "depuració)"
 
-#. Translators: in the command-line options description, text to indicate the user should specify a size, see 'gnome-taquin --help'
+#. Translators: in the command-line options description, text to indicate the
+#. user should specify a size, see 'gnome-taquin --help'
 #: src/taquin-main.vala:61
 msgid "SIZE"
 msgstr "MIDA"
@@ -501,37 +567,49 @@ msgstr "Activa el so"
 msgid "Print release version and exit"
 msgstr "Mostra la informació de la versió i surt"
 
-#. Translators: when configuring a new game, entry in the menu of the game size menubutton; the "\t" is a tabulation; after is indicated an estimated time for solving the puzzle (1 minute)
+#. Translators: when configuring a new game, entry in the menu of the game
+#. size menubutton; the "\t" is a tabulation; after is indicated an estimated
+#. time for solving the puzzle (1 minute)
 #: src/taquin-main.vala:161 src/taquin-main.vala:172
 msgid "3 × 3\t1 minute"
 msgstr "3 × 3\t1 minut"
 
-#. Translators: when configuring a new game, entry in the menu of the game size menubutton; the "\t" is a tabulation; after is indicated an estimated time for solving the puzzle (5 minutes)
+#. Translators: when configuring a new game, entry in the menu of the game
+#. size menubutton; the "\t" is a tabulation; after is indicated an estimated
+#. time for solving the puzzle (5 minutes)
 #: src/taquin-main.vala:164
 msgid "4 × 4\t5 minutes"
 msgstr "4 × 4\t5 minuts"
 
-#. Translators: when configuring a new game, entry in the menu of the game size menubutton; the "\t" is a tabulation; after is indicated an estimated time for solving the puzzle (15 minutes)
+#. Translators: when configuring a new game, entry in the menu of the game
+#. size menubutton; the "\t" is a tabulation; after is indicated an estimated
+#. time for solving the puzzle (15 minutes)
 #: src/taquin-main.vala:167
 msgid "5 × 5\t15 minutes"
 msgstr "5 × 5\t15 minuts"
 
-#. Translators: when configuring a new game, entry in the menu of the game size menubutton; the "\t" is a tabulation; after is indicated an estimated time for solving the puzzle (5 minutes)
+#. Translators: when configuring a new game, entry in the menu of the game
+#. size menubutton; the "\t" is a tabulation; after is indicated an estimated
+#. time for solving the puzzle (5 minutes)
 #: src/taquin-main.vala:175
 msgid "4 × 4\t3 minutes"
 msgstr "4 × 4\t3 minuts"
 
-#. Translators: when configuring a new game, entry in the menu of the game size menubutton; the "\t" is a tabulation; after is indicated an estimated time for solving the puzzle (5 minutes)
+#. Translators: when configuring a new game, entry in the menu of the game
+#. size menubutton; the "\t" is a tabulation; after is indicated an estimated
+#. time for solving the puzzle (5 minutes)
 #: src/taquin-main.vala:178
 msgid "5 × 5\t5 minutes"
 msgstr "5 × 5\t5 minuts"
 
-#. Translators: when configuring a new game, entry in the menu of the game theme menubutton; play with cats images
+#. Translators: when configuring a new game, entry in the menu of the game
+#. theme menubutton; play with cats images
 #: src/taquin-main.vala:183
 msgid "Cats"
 msgstr "Gats"
 
-#. Translators: when configuring a new game, entry in the menu of the game theme menubutton; play with numbers
+#. Translators: when configuring a new game, entry in the menu of the game
+#. theme menubutton; play with numbers
 #: src/taquin-main.vala:187
 msgid "Numbers"
 msgstr "Nombres"
@@ -540,32 +618,40 @@ msgstr "Nombres"
 msgid "About Taquin"
 msgstr "Quant al Taquin"
 
-#. Translators: in-window notification; on the 15-Puzzle game, if the user clicks a tile that cannot move
+#. Translators: in-window notification; on the 15-Puzzle game, if the user
+#. clicks a tile that cannot move
 #: src/taquin-main.vala:440
 msgid "You can’t move this tile!"
 msgstr "No podeu moure aquesta fitxa"
 
-#. Translators: in-window notification; on the 16-Puzzle game, help for keyboard use, displayed if the user uses an unmeaningful keyboard key
+#. Translators: in-window notification; on the 16-Puzzle game, help for
+#. keyboard use, displayed if the user uses an unmeaningful keyboard key
 #: src/taquin-main.vala:449
 msgid "Use Shift and an arrow to move tiles!"
 msgstr "Useu la tecla de majúscules i les fletxes per moure els mosaics"
 
-#. Translators: in-window notification; on the 16-Puzzle game, if the user clicks on a tile of the board (the game is played using mouse with arrows around the board)
+#. Translators: in-window notification; on the 16-Puzzle game, if the user
+#. clicks on a tile of the board (the game is played using mouse with arrows
+#. around the board)
 #: src/taquin-main.vala:453
 msgid "Click on the arrows to move tiles!"
 msgstr "Feu clic a les fletxes per moure els mosaics"
 
-#. Translators: when configuring a new game, button label for the theme, if the current theme is Cats
+#. Translators: when configuring a new game, button label for the theme, if
+#. the current theme is Cats
 #: src/taquin-main.vala:530
 msgid "Theme: Cats ▾"
 msgstr "Tema: Gats ▾"
 
-#. Translators: when configuring a new game, button label for the theme, if the current theme is Numbers
+#. Translators: when configuring a new game, button label for the theme, if
+#. the current theme is Numbers
 #: src/taquin-main.vala:533
 msgid "Theme: Numbers ▾"
 msgstr "Tema: Nombres ▾"
 
-#. Translators: when configuring a new game, button label for the theme, if the current theme has been added by the user; the %s is replaced by the theme name
+#. Translators: when configuring a new game, button label for the theme, if
+#. the current theme has been added by the user; the %s is replaced by the
+#. theme name
 #: src/taquin-main.vala:536
 #, c-format
 msgid "Theme: %s ▾"
@@ -576,7 +662,8 @@ msgstr "Tema: %s ▾"
 msgid "A classic 15-puzzle game"
 msgstr "Un trencaclosques clàssic de 15 fitxes"
 
-#. Translators: about dialog text crediting an artist (a photograph), with the website where the image was published
+#. Translators: about dialog text crediting an artist (a photograph), with the
+#. website where the image was published
 #: src/taquin-main.vala:652
 msgid "Abelard (Wikimedia)"
 msgstr "Abelard (Wikimedia)"
@@ -597,7 +684,8 @@ msgstr "Ruskis (Wikimedia)"
 msgid "Toyah (Wikimedia)"
 msgstr "Toyah (Wikimedia)"
 
-#. Translators: about dialog text; in the Credits, text at the end of the "Artwork by" section
+#. Translators: about dialog text; in the Credits, text at the end of the
+#. "Artwork by" section
 #: src/taquin-main.vala:656
 msgid "(see COPYING.themes for information)"
 msgstr "(vegeu COPYING.themes per a més informació)"
@@ -608,13 +696,16 @@ msgstr "(vegeu COPYING.themes per a més informació)"
 msgid "Arnaud Bonatti"
 msgstr "Arnaud Bonatti"
 
-#. Translators: about dialog text crediting a maintainer; the %u are replaced with the years of start and end
+#. Translators: about dialog text crediting a maintainer; the %u are replaced
+#. with the years of start and end
 #: src/taquin-main.vala:664
 #, c-format
 msgid "Copyright © %u-%u – Arnaud Bonatti"
 msgstr "Copyright © %u-%u – Arnaud Bonatti"
 
-#. Translators: about dialog text; this string should be replaced by a text crediting yourselves and your translation team, or should be left empty. Do not translate literally!
+#. Translators: about dialog text; this string should be replaced by a text
+#. crediting yourselves and your translation team, or should be left empty. Do
+#. not translate literally!
 #: src/taquin-main.vala:673
 msgid "translator-credits"
 msgstr "Jordi Mas i Hernàndez <jmas@softcatala.org>, 2015-2019"
