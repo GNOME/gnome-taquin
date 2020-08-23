@@ -1,0 +1,716 @@
+# Danish translation for gnome-taquin.
+# Copyright (C) 2020 gnome-taquin's COPYRIGHT HOLDER
+# This file is distributed under the same license as the gnome-taquin package.
+# scootergrisen, 2020.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: gnome-taquin master\n"
+"POT-Creation-Date: 2020-06-17 16:19+0000\n"
+"PO-Revision-Date: 2020-02-26 21:08+0200\n"
+"Last-Translator: scootergrisen\n"
+"Language-Team: Danish <dansk@dansk-gruppen.dk>\n"
+"Language: da\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+
+#. Put one translator per line, in the form NAME <EMAIL>, YEAR1, YEAR2
+msgctxt "_"
+msgid "translator-credits"
+msgstr "scootergrisen <>, 2020"
+
+#. (itstool) path: credit/name
+#: C/15-Puzzle.page:10 C/16-Puzzle.page:10 C/beginning.page:10 C/index.page:12
+#: C/shortcuts.page:10 C/start-screen.page:10
+msgid "Arnaud Bonatti"
+msgstr "Arnaud Bonatti"
+
+#. (itstool) path: credit/years
+#: C/15-Puzzle.page:12 C/16-Puzzle.page:12 C/beginning.page:12
+#: C/shortcuts.page:12 C/start-screen.page:12
+msgid "2014-2019"
+msgstr "2014-2019"
+
+#. (itstool) path: page/title
+#: C/15-Puzzle.page:18
+msgid "15-Puzzle"
+msgstr "15-spil"
+
+#. (itstool) path: page/p
+#: C/15-Puzzle.page:20
+msgid ""
+"The <em>15-Puzzle</em> is the default puzzle of <app>Taquin</app>. It is "
+"displayed the first time the application is opened. You can start one at any "
+"time from the <link xref=\"start-screen\">Start Screen</link>."
+msgstr ""
+"<em>15-spillet</em> er standardopgaven i <app>Taquin</app>. Det vises første "
+"gang programmet åbnes. Du kan når som helst starte et fra <link xref=\"start-"
+"screen\">startskærmen</link>."
+
+#. (itstool) path: section/title
+#: C/15-Puzzle.page:23 C/16-Puzzle.page:23
+msgid "Gameplay"
+msgstr "Gameplay"
+
+#. (itstool) path: section/p
+#: C/15-Puzzle.page:25 C/16-Puzzle.page:25
+msgid "The goal is to move all the tiles to their proper places."
+msgstr "Målet er at flytte alle fliserne til deres rette placering."
+
+#. (itstool) path: section/p
+#: C/15-Puzzle.page:27
+msgid ""
+"There’s an empty space where you can move adjacent tiles by pushing them "
+"onto it. You can push more than one tile at the same time in the empty "
+"space’s direction."
+msgstr ""
+"Der er en tom plads, hvor du kan flytte tilstødende fliser hen ved at "
+"skubbe dem. Du kan skubbe flere end én flise ad gangen i retningen af den "
+"tomme plads."
+
+#. (itstool) path: section/title
+#: C/15-Puzzle.page:31 C/16-Puzzle.page:31
+msgid "End of the game"
+msgstr "Slutningen af spillet"
+
+#. (itstool) path: section/p
+#: C/15-Puzzle.page:32 C/16-Puzzle.page:32
+msgid ""
+"At the end of the game, <app>Taquin</app> notifies you and displays the "
+"complete image."
+msgstr ""
+"Ved spillets slutning giver <app>Taquin</app> dig besked og viser det "
+"færdige billede."
+
+#. (itstool) path: section/p
+#: C/15-Puzzle.page:33 C/16-Puzzle.page:33
+msgid ""
+"You can click the <gui>New Game</gui> button in the headerbar to go to the "
+"<link xref=\"start-screen\">Start Screen</link>. Alternatively, you can "
+"restart the game by clicking on the button with a counter of moves done, and "
+"then on the <gui>Restart</gui> entry."
+msgstr ""
+"Du kan klikke på knappen <gui>Nyt spil</gui> i hovedlinjen for at gå til "
+"<link xref=\"start-screen\">startskærmen</link>. Du kan også genstarte "
+"spillet ved at klikke på knappen med en tæller, der viser antal træk og så "
+"punktet <gui>Genstart</gui>."
+
+#. (itstool) path: section/title
+#: C/15-Puzzle.page:37 C/16-Puzzle.page:37
+msgid "How to play with a mouse"
+msgstr "Sådan spilles med en mus"
+
+#. (itstool) path: section/p
+#: C/15-Puzzle.page:39 C/15-Puzzle.page:68 C/16-Puzzle.page:39
+#: C/16-Puzzle.page:65
+msgid "To make a move:"
+msgstr "Foretag et træk:"
+
+#. (itstool) path: item/p
+#: C/15-Puzzle.page:42 C/beginning.page:26
+msgid "Click on a tile on the same row or column as the empty space."
+msgstr "Klik på en flise på den samme række eller kolonne som den tomme plads."
+
+#. (itstool) path: note/p
+#: C/15-Puzzle.page:44 C/15-Puzzle.page:74 C/beginning.page:28
+msgid ""
+"If you click on a tile that cannot move, the game notifies you that the move "
+"is impossible."
+msgstr ""
+"Hvis du klikker på en flise, der ikke kan flyttes, så giver spillet dig "
+"besked om, at det ikke er muligt."
+
+#. (itstool) path: item/p
+#: C/15-Puzzle.page:48 C/16-Puzzle.page:45 C/beginning.page:32
+msgid ""
+"You can always undo your move. For that, click on the button with a counter "
+"of moves done in the headerbar, and click the <gui>Undo</gui> entry in the "
+"menu that appears."
+msgstr ""
+"Du kan altid fortryde dit træk. For at gøre det klikkes på knappen med en "
+"tæller, der viser antal træk i hovedlinjen og så klikkes på punktet "
+"<gui>Fortryd</gui> i den menu som vises."
+
+#. (itstool) path: section/p
+#: C/15-Puzzle.page:52 C/15-Puzzle.page:82 C/16-Puzzle.page:49
+#: C/16-Puzzle.page:76
+msgid "Whether you finished the current game or not:"
+msgstr "Hvad enten du har gennemført det nuværende spil eller ej:"
+
+#. (itstool) path: item/p
+#: C/15-Puzzle.page:55 C/16-Puzzle.page:52
+msgid ""
+"To start a new game –possibly with other options–, click the <gui>New Game</"
+"gui> button in the headerbar to go to the <link xref=\"start-screen\">Start "
+"Screen</link>."
+msgstr ""
+"For at starte et nyt spil (eventuelt med andre indstillinger) klikkes på "
+"knappen <gui>Nyt spil</gui> i hovedlinjen for at gå til <link xref=\"start-"
+"screen\">startskærmen</link>."
+
+#. (itstool) path: item/p
+#: C/15-Puzzle.page:58 C/16-Puzzle.page:55
+msgid ""
+"Alternatively, you may want to restart the game. For that, click in the "
+"headerbar on the button with a counter of moves done, and click the "
+"<gui>Restart</gui> entry in the menu that appears."
+msgstr ""
+"Ellers kan det være, du vil genstarte spillet. For at gøre det klikkes i "
+"hovedlinjen på knappen med en tæller der viser antal træk som er foretaget, "
+"eller også klikkes på punktet <gui>Genstart</gui> i den menu som vises."
+
+#. (itstool) path: section/p
+#: C/15-Puzzle.page:62 C/16-Puzzle.page:59
+msgid "You can also use the keyboard."
+msgstr "Du kan også bruge tastaturet."
+
+#. (itstool) path: section/title
+#: C/15-Puzzle.page:66 C/16-Puzzle.page:63
+msgid "How to play with the keyboard"
+msgstr "Sådan spilles med tastaturet"
+
+#. (itstool) path: item/p
+#: C/15-Puzzle.page:71
+msgid ""
+"Use the <key>Left</key>, <key>Right</key>, <key>Up</key> and <key>Down</key> "
+"arrows to go at the tile you want to move. The currently selected tile is "
+"indicated with four arrows around the board, on each side of its row and "
+"column."
+msgstr ""
+"Brug pilene <key>Venstre</key>, <key>Højre</key>, <key>Op</key> og <key>Ned</"
+"key> for at gå til den flise du vil flytte. Den valgte flise, angives med 4 "
+"pile rundt om brættet, på hver side af dens række og kolonne."
+
+#. (itstool) path: item/p
+#: C/15-Puzzle.page:72
+msgid ""
+"Use the <key>Space</key> key to move the selected tile in the direction of "
+"the empty space."
+msgstr ""
+"Brug <key>Mellemrum</key>-tasten for at flytte den valgte flise i retningen "
+"af den tomme plads."
+
+#. (itstool) path: item/p
+#: C/15-Puzzle.page:78 C/16-Puzzle.page:72
+msgid ""
+"You can always undo your move. For that, use the <keyseq><key>Ctrl</"
+"key><key>Z</key></keyseq> keys sequence."
+msgstr ""
+"Du kan altid fortryde dit træk. For at gøre det bruges tastesekvensen "
+"<keyseq><key>Ctrl</key><key>Z</key></keyseq>."
+
+#. (itstool) path: item/p
+#: C/15-Puzzle.page:85 C/16-Puzzle.page:79
+msgid ""
+"To start a new game –possibly with other options–, use the "
+"<keyseq><key>Ctrl</key><key>N</key></keyseq> keys sequence to go to the "
+"<link xref=\"start-screen\">Start Screen</link>."
+msgstr ""
+"For at starte et nyt spil (eventuelt med andre indstillinger) bruges "
+"tastesekvensen <keyseq><key>Ctrl</key><key>N</key></keyseq> for at gå til "
+"<link xref=\"start-screen\">startskærmen</link>."
+
+#. (itstool) path: item/p
+#: C/15-Puzzle.page:88 C/16-Puzzle.page:82
+msgid ""
+"Alternatively, you may want to restart the game. For that, use the "
+"<keyseq><key>Shift</key><key>Ctrl</key><key>N</key></keyseq> keys sequence."
+msgstr ""
+"Ellers kan det være, du vil genstarte spillet. For at gøre det bruges "
+"tastesekvensen <keyseq><key>Skift</key><key>Ctrl</key><key>N</key></keyseq>."
+
+#. (itstool) path: section/p
+#: C/15-Puzzle.page:92 C/16-Puzzle.page:86
+msgid "You can also use a mouse."
+msgstr "Du kan også bruge en mus."
+
+#. (itstool) path: page/title
+#: C/16-Puzzle.page:18
+msgid "16-Puzzle"
+msgstr "16-spil"
+
+#. (itstool) path: page/p
+#: C/16-Puzzle.page:20
+msgid ""
+"The <em>16-Puzzle</em> is the variant puzzle of <app>Taquin</app>. You can "
+"launch it at any time from the <link xref=\"start-screen\">Start Screen</"
+"link>."
+msgstr ""
+"<em>16-spillet</em> er variantopgaven af <app>Taquin</app>. Du kan når som "
+"helst starte den fra <link xref=\"start-screen\">startskærmen</link>."
+
+#. (itstool) path: section/p
+#: C/16-Puzzle.page:27
+msgid ""
+"You move all the tiles of a row or a column in one direction. The tile that "
+"is pushed out of the board is placed at the opposite side of the row or "
+"column."
+msgstr ""
+"Du kan flytte alle fliserne på en række eller en kolonne i en retning. "
+"Flisen som skubbes ud af brættet placeres på den modsatte side af rækken "
+"eller kolonnen."
+
+#. (itstool) path: item/p
+#: C/16-Puzzle.page:42
+msgid ""
+"Click on one of the arrows displayed around the board. The row or column at "
+"the end of which this arrow is moves in this direction, and the tile that "
+"was next to the arrow is placed at the opposite side."
+msgstr ""
+"Klik på en af pilene som vises rundt om brættet. Rækken eller kolonnen ved "
+"slutningen af hvor pilen flyttes i denne retning, og flisen som var ved "
+"siden af pilen placeres på den modsatte side."
+
+#. (itstool) path: item/p
+#: C/16-Puzzle.page:68
+msgid ""
+"Use the <key>Left</key> and <key>Right</key> arrows to change the selected "
+"column, and the <key>Up</key> and <key>Down</key> arrows to change the "
+"selected row. The currently selected row and column are indicated with "
+"lights around the board."
+msgstr ""
+"Brug pilene <key>Venstre</key> og <key>Højre</key> til at vælge kolonne og "
+"pilene <key>Op</key> og <key>Ned</key> til at vælge række. Den valgte række "
+"eller kolonne angives med lys rundt om brættet."
+
+#. (itstool) path: item/p
+#: C/16-Puzzle.page:69
+msgid ""
+"Use the <keyseq><key>Shift</key><key>Left</key></keyseq> and "
+"<keyseq><key>Shift</key><key>Right</key></keyseq> keys sequences to swipe "
+"the selected row, or the <keyseq><key>Shift</key><key>Up</key></keyseq> and "
+"<keyseq><key>Shift</key><key>Down</key></keyseq> keys sequences to swipe the "
+"selected column."
+msgstr ""
+"Brug tastesekvenserne <keyseq><key>Skift</key><key>Venstre</key></keyseq> og "
+"<keyseq><key>Skift</key><key>Højre</key></keyseq> for at rykke den valgte "
+"række eller tastesekvenserne <keyseq><key>Skift</key><key>Op</key></keyseq> "
+"og <keyseq><key>Skift</key><key>Ned</key></keyseq> for at rykke den valgte "
+"kolonne."
+
+#. (itstool) path: page/title
+#: C/beginning.page:18
+msgid "Beginning"
+msgstr "Begyndelsen"
+
+#. (itstool) path: page/p
+#: C/beginning.page:20
+msgid ""
+"When <app>Taquin</app> is opened for the first time, it displays a "
+"traditional <link xref=\"15-Puzzle\">15-Puzzle</link> game."
+msgstr ""
+"Når <app>Taquin</app> åbnes for første gang, så vises et traditionelt spil "
+"<link xref=\"15-Puzzle\">15-spil</link>."
+
+#. (itstool) path: page/p
+#: C/beginning.page:22
+msgid "The game is played using the mouse. To make a move:"
+msgstr "Spillet spilles med musen. Foretag et træk:"
+
+#. (itstool) path: item/p
+#: C/beginning.page:35
+msgid ""
+"To start a new game –whether you finished the current game or not–, click "
+"the <gui>New Game</gui> button in the headerbar to go to the <link xref="
+"\"start-screen\">Start Screen</link>."
+msgstr ""
+"For at starte et nyt spil (hvad enten du gennemførte det nuværende spil "
+"eller ej) klikkes på knappen <gui>Nyt spil</gui> i hovedlinjen for at gå til "
+"<link xref=\"start-screen\">startskærmen</link>."
+
+#. (itstool) path: page/p
+#: C/beginning.page:39
+msgid ""
+"You can also <link xref=\"15-Puzzle#15-keyboard\">play with the keyboard</"
+"link> if you prefer."
+msgstr ""
+"Du kan også <link xref=\"15-Puzzle#15-keyboard\">spille med tastaturet</"
+"link> hvis du foretrækker det."
+
+#. (itstool) path: page/p
+#: C/beginning.page:41
+msgid ""
+"After the first time it is opened, <app>Taquin</app> displays a puzzle with "
+"the same rules and dimensions as the last one played when it is opened, so "
+"it could be a <link xref=\"16-Puzzle\">16-Puzzle</link> game."
+msgstr ""
+"Efter den første gang det er åbnet viser <app>Taquin</app> en opgave med de "
+"samme regler og dimensioner som det forrige spil, så det kan være et spil "
+"<link xref=\"16-Puzzle\">16-spil</link>."
+
+#. (itstool) path: info/title
+#: C/index.page:8
+msgctxt "link"
+msgid "Taquin"
+msgstr "Taquin"
+
+#. (itstool) path: info/title
+#: C/index.page:9
+msgctxt "text"
+msgid "Taquin"
+msgstr "Taquin"
+
+#. (itstool) path: license/p
+#: C/index.page:16
+msgid ""
+"Creative Commons Attribution-ShareAlike 4.0 International (CC BY-SA 4.0)"
+msgstr ""
+"Creative Commons Kreditering-Deling på samme vilkår 4.0 International (CC BY-"
+"SA 4.0)"
+
+#. (itstool) path: media/span
+#: C/index.page:20
+msgid "Taquin logo"
+msgstr "Taquin-logo"
+
+#. (itstool) path: page/title
+#: C/index.page:20
+msgid "<_:media-1/> Taquin"
+msgstr "<_:media-1/> Taquin"
+
+#. (itstool) path: page/p
+#: C/index.page:22
+msgid ""
+"<app>Taquin</app> is a sliding-block puzzle game. It includes the "
+"traditional 15-Puzzle invented in the early 1880s, and the more recent 16-"
+"Puzzle variant."
+msgstr ""
+"<app>Taquin</app> er et opgavespil hvor man skubber blokke. Det indeholder "
+"det traditionelle 15-spil som blev opfundet i starten af 1880'erne, og den "
+"senere variant, 16-spil."
+
+#. (itstool) path: section/title
+#: C/index.page:26
+msgid "How to Play"
+msgstr "Sådan spilles spillet"
+
+#. (itstool) path: section/title
+#: C/index.page:38
+msgid "Advanced"
+msgstr "Avanceret"
+
+#. (itstool) path: p/link
+#: C/legal.xml:3
+msgid "Creative Commons Attribution-ShareAlike 4.0 International license"
+msgstr ""
+"Creative Commons Kreditering-Deling på samme vilkår 4.0 International-licens"
+
+#. (itstool) path: license/p
+#: C/legal.xml:3
+msgid "This work is licensed under a <_:link-1/>."
+msgstr "Værket er licenseret under en <_:link-1/>."
+
+#. (itstool) path: info/desc
+#: C/license.page:8
+msgid "Legal information."
+msgstr "Juridisk information."
+
+#. (itstool) path: page/title
+#: C/license.page:11
+msgid "License"
+msgstr "Licens"
+
+#. (itstool) path: page/p
+#: C/license.page:12
+msgid ""
+"This work is distributed under a Creative Commons Attribution-ShareAlike 4.0 "
+"International license."
+msgstr ""
+"Værket distribueres under en Creative Commons Kreditering-Deling på samme "
+"vilkår 4.0 International-licens."
+
+#. (itstool) path: page/p
+#: C/license.page:20
+msgid "You are free:"
+msgstr "Du kan frit:"
+
+#. (itstool) path: item/title
+#: C/license.page:25
+msgid "<em>To share</em>"
+msgstr "<em>Dele</em>"
+
+#. (itstool) path: item/p
+#: C/license.page:26
+msgid "To copy, distribute and transmit the work."
+msgstr "Kopiere, videredistribuere og overføre værket."
+
+#. (itstool) path: item/title
+#: C/license.page:29
+msgid "<em>To remix</em>"
+msgstr "<em>Tilpasse</em>"
+
+#. (itstool) path: item/p
+#: C/license.page:30
+msgid "To adapt the work."
+msgstr "Tilpasse værket."
+
+#. (itstool) path: page/p
+#: C/license.page:33
+msgid "Under the following conditions:"
+msgstr "Under følgende vilkår:"
+
+#. (itstool) path: item/title
+#: C/license.page:38
+msgid "<em>Attribution</em>"
+msgstr "<em>Kreditering</em>"
+
+#. (itstool) path: item/p
+#: C/license.page:39
+msgid ""
+"You must attribute the work in the manner specified by the author or "
+"licensor (but not in any way that suggests that they endorse you or your use "
+"of the work)."
+msgstr ""
+"Du skal kreditere værket på den måde, der er angivet af forfatteren eller "
+"licensgiveren (men ikke på en måde der antyder at de støtter dig eller din "
+"brug af værket)."
+
+#. (itstool) path: item/title
+#: C/license.page:46
+msgid "<em>Share Alike</em>"
+msgstr "<em>Deling på samme vilkår</em>"
+
+#. (itstool) path: item/p
+#: C/license.page:47
+msgid ""
+"If you alter, transform, or build upon this work, you may distribute the "
+"resulting work only under the same, similar or a compatible license."
+msgstr ""
+"Hvis du ændrer, omarbejder eller bygger videre på værket, må du kun "
+"videredistribuere det resulterende værk under en licens, der er identisk, "
+"lignende eller kompatibel."
+
+#. (itstool) path: page/p
+#: C/license.page:53
+msgid ""
+"For the full text of the license, see the <link href=\"http://"
+"creativecommons.org/licenses/by-sa/4.0/legalcode\">CreativeCommons website</"
+"link>, or read the full <link href=\"http://creativecommons.org/licenses/by-"
+"sa/4.0/\">Commons Deed</link>."
+msgstr ""
+"Se licensens fulde tekst på <link href=\"http://creativecommons.org/licenses/"
+"by-sa/4.0/legalcode\">CreativeCommons-webstedet</link> eller læs den fulde "
+"<link href=\"http://creativecommons.org/licenses/by-sa/4.0/\">Commons Deed</"
+"link>."
+
+#. (itstool) path: page/title
+#: C/shortcuts.page:18
+msgid "Keyboard Shortcuts"
+msgstr "Tastaturgenveje"
+
+#. (itstool) path: page/p
+#: C/shortcuts.page:20
+msgid ""
+"<app>Taquin</app> can easily be used with keyboard. The <link xref=\"15-"
+"Puzzle#15-keyboard\">15-Puzzle</link> and <link xref=\"16-Puzzle#16-keyboard"
+"\">16-Puzzle</link> both have specific shortcuts."
+msgstr ""
+"<app>Taquin</app> er let at bruge med tastaturet. <link xref=\"15-Puzzle#15-"
+"keyboard\">15-spillet</link> og <link xref=\"16-Puzzle#16-keyboard\">16-"
+"spillet</link> har begge bestemte genveje."
+
+#. (itstool) path: section/title
+#: C/shortcuts.page:23
+msgid "In-game shortcuts"
+msgstr "Genveje i spillet"
+
+#. (itstool) path: td/p
+#: C/shortcuts.page:26
+msgid "Show the Start Screen"
+msgstr "Vis startskærmen"
+
+#. (itstool) path: td/p
+#: C/shortcuts.page:27
+msgid "<keyseq><key>Ctrl</key><key>N</key></keyseq>"
+msgstr "<keyseq><key>Ctrl</key><key>N</key></keyseq>"
+
+#. (itstool) path: td/p
+#: C/shortcuts.page:30
+msgid "Restart game"
+msgstr "Genstart spillet"
+
+#. (itstool) path: td/p
+#: C/shortcuts.page:31 C/shortcuts.page:78
+msgid "<keyseq><key>Shift</key><key>Ctrl</key><key>N</key></keyseq>"
+msgstr "<keyseq><key>Skift</key><key>Ctrl</key><key>N</key></keyseq>"
+
+#. (itstool) path: td/p
+#: C/shortcuts.page:34
+msgid "Undo last move"
+msgstr "Fortryd sidste træk"
+
+#. (itstool) path: td/p
+#: C/shortcuts.page:35
+msgid "<keyseq><key>Ctrl</key><key>Z</key></keyseq>"
+msgstr "<keyseq><key>Ctrl</key><key>Z</key></keyseq>"
+
+#. (itstool) path: section/title
+#: C/shortcuts.page:40
+msgid "15-Puzzle shortcuts"
+msgstr "Genveje for 15-spil"
+
+#. (itstool) path: td/p
+#: C/shortcuts.page:43
+msgid "Select tile to push on"
+msgstr "Vælg den flise der skal skubbes til"
+
+#. (itstool) path: td/p
+#: C/shortcuts.page:44
+msgid "<key>Left</key>, <key>Right</key>, <key>Up</key> and <key>Down</key>"
+msgstr "<key>Venstre</key>, <key>Højre</key>, <key>Op</key> og <key>Ned</key>"
+
+#. (itstool) path: td/p
+#: C/shortcuts.page:47
+msgid "Push tile in empty space’s direction"
+msgstr "Skub flisen i retningen af den tomme plads"
+
+#. (itstool) path: td/p
+#: C/shortcuts.page:48
+#| msgid "<key>Space</key>, <key>Return</key> and <key>KP_Enter</key>"
+msgid "<key>Space</key>, <key>Return</key> and <key>Enter</key>"
+msgstr "<key>Mellemrum</key>, <key>Retur</key> og <key>Enter</key>"
+
+#. (itstool) path: section/title
+#: C/shortcuts.page:53
+msgid "16-Puzzle shortcuts"
+msgstr "Genveje for 16-spil"
+
+#. (itstool) path: td/p
+#: C/shortcuts.page:56
+msgid "Change selected column"
+msgstr "Vælg kolonne"
+
+#. (itstool) path: td/p
+#: C/shortcuts.page:57
+msgid "<key>Left</key> and <key>Right</key>"
+msgstr "<key>Venstre</key> og <key>Højre</key>"
+
+#. (itstool) path: td/p
+#: C/shortcuts.page:60
+msgid "Change selected row"
+msgstr "Vælg række"
+
+#. (itstool) path: td/p
+#: C/shortcuts.page:61
+msgid "<key>Up</key> and <key>Down</key>"
+msgstr "<key>Op</key> og <key>Ned</key>"
+
+#. (itstool) path: td/p
+#: C/shortcuts.page:64
+msgid "Swipe selected row"
+msgstr "Ryk den valgte række"
+
+#. (itstool) path: td/p
+#: C/shortcuts.page:65
+msgid ""
+"<keyseq><key>Shift</key><key>Left</key></keyseq> and <keyseq><key>Shift</"
+"key><key>Right</key></keyseq>"
+msgstr ""
+"<keyseq><key>Skift</key><key>Venstre</key></keyseq> og <keyseq><key>Skift</"
+"key><key>Højre</key></keyseq>"
+
+#. (itstool) path: td/p
+#: C/shortcuts.page:68
+msgid "Swipe selected column"
+msgstr "Ryk den valgte kolonne"
+
+#. (itstool) path: td/p
+#: C/shortcuts.page:69
+msgid ""
+"<keyseq><key>Shift</key><key>Up</key></keyseq> and <keyseq><key>Shift</"
+"key><key>Down</key></keyseq>"
+msgstr ""
+"<keyseq><key>Skift</key><key>Op</key></keyseq> og <keyseq><key>Skift</"
+"key><key>Ned</key></keyseq>"
+
+#. (itstool) path: section/title
+#: C/shortcuts.page:74
+msgid "Start Screen shortcuts"
+msgstr "Genveje for startskærmen"
+
+#. (itstool) path: td/p
+#: C/shortcuts.page:77
+msgid "Start new game"
+msgstr "Start nyt spil"
+
+#. (itstool) path: td/p
+#: C/shortcuts.page:81
+msgid "Back to previous game (if any)"
+msgstr "Tilbage til tidligere spil (hvis der er et)"
+
+#. (itstool) path: td/p
+#: C/shortcuts.page:82
+msgid "<key>Escape</key>"
+msgstr "<key>Escape</key>"
+
+#. (itstool) path: section/title
+#: C/shortcuts.page:87
+msgid "General shortcuts"
+msgstr "Generelle genveje"
+
+#. (itstool) path: td/p
+#: C/shortcuts.page:90
+msgid "Keyboard shortcuts"
+msgstr "Tastaturgenveje"
+
+#. (itstool) path: td/p
+#: C/shortcuts.page:91
+msgid "<keyseq><key>Ctrl</key><key>F1</key></keyseq>"
+msgstr "<keyseq><key>Ctrl</key><key>F1</key></keyseq>"
+
+#. (itstool) path: td/p
+#: C/shortcuts.page:94
+msgid "Help"
+msgstr "Hjælp"
+
+#. (itstool) path: td/p
+#: C/shortcuts.page:95
+msgid "<key>F1</key>"
+msgstr "<key>F1</key>"
+
+#. (itstool) path: td/p
+#: C/shortcuts.page:98
+msgid "About"
+msgstr "Om"
+
+#. (itstool) path: td/p
+#: C/shortcuts.page:99
+msgid "<keyseq><key>Shift</key><key>F1</key></keyseq>"
+msgstr "<keyseq><key>Skift</key><key>F1</key></keyseq>"
+
+#. (itstool) path: td/p
+#: C/shortcuts.page:102
+msgid "Quit"
+msgstr "Afslut"
+
+#. (itstool) path: td/p
+#: C/shortcuts.page:103
+msgid "<keyseq><key>Ctrl</key><key>Q</key></keyseq>"
+msgstr "<keyseq><key>Ctrl</key><key>Q</key></keyseq>"
+
+#. (itstool) path: page/title
+#: C/start-screen.page:18
+msgid "Start Screen"
+msgstr "Startskærm"
+
+#. (itstool) path: page/p
+#: C/start-screen.page:19
+msgid ""
+"The <em>Start Screen</em> is the place to select your options and launch a "
+"new game, either a <link xref=\"15-Puzzle\">15-Puzzle</link> or a <link xref="
+"\"16-Puzzle\">16-Puzzle</link>."
+msgstr ""
+"På <em>startskærmen</em> kan du vælge dine indstillinger og starte et nyt "
+"spil, enten et <link xref=\"15-Puzzle\">15-spil</link> eller et <link xref="
+"\"16-Puzzle\">16-spil</link>."
+
+#. (itstool) path: page/p
+#: C/start-screen.page:20
+msgid ""
+"It can be accessed at any time from a game by pressing the <gui>New Game</"
+"gui> button."
+msgstr ""
+"Den kan når som helst tilgås fra et spil ved at trykke på knappen <gui>Nyt "
+"spil</gui>."
