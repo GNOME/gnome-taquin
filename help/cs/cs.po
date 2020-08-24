@@ -1,13 +1,13 @@
 # Czech translation for gnome-taquin.
 # Copyright (C) 2015 gnome-taquin's COPYRIGHT HOLDER
 # This file is distributed under the same license as the gnome-taquin package.
-# Marek Černocký <marek@manet.cz>, 2015, 2018, 2019.
+# Marek Černocký <marek@manet.cz>, 2015, 2018, 2019, 2020.
 #
 msgid ""
 msgstr ""
 "Project-Id-Version: gnome-taquin\n"
-"POT-Creation-Date: 2019-08-16 10:59+0000\n"
-"PO-Revision-Date: 2019-09-09 14:43+0200\n"
+"POT-Creation-Date: 2020-07-05 21:02+0000\n"
+"PO-Revision-Date: 2020-08-25 00:07+0200\n"
 "Last-Translator: Marek Černocký <marek@manet.cz>\n"
 "Language-Team: čeština <gnome-cs-list@gnome.org>\n"
 "Language: cs\n"
@@ -196,32 +196,31 @@ msgstr ""
 #. (itstool) path: item/p
 #: C/15-Puzzle.page:78 C/16-Puzzle.page:72
 msgid ""
-"You can always undo your move. For that, use the <keyseq><key>Ctrl</"
-"key><key>Z</key></keyseq> keys sequence."
+"You can always undo your move. For that, use <keyseq><key>Ctrl</key><key>Z</"
+"key></keyseq>."
 msgstr ""
-"Své jednotlivé tahy můžete kdykoliv vrátit. Použijte k tomu kombinaci kláves "
-"<keyseq><key>Ctrl</key><key>Z</key></keyseq>."
+"Své jednotlivé tahy můžete kdykoliv vrátit. Použijte k tomu <keyseq><key>Ctrl"
+"</key><key>Z</key></keyseq>."
 
 #. (itstool) path: item/p
 #: C/15-Puzzle.page:85 C/16-Puzzle.page:79
 msgid ""
-"To start a new game –possibly with other options–, use the "
-"<keyseq><key>Ctrl</key><key>N</key></keyseq> keys sequence to go to the "
-"<link xref=\"start-screen\">Start Screen</link>."
+"To start a new game –possibly with other options–, use <keyseq><key>Ctrl</"
+"key><key>N</key></keyseq> to go to the <link xref=\"start-screen\">Start "
+"Screen</link>."
 msgstr ""
-"Ke spuštění nové hry s jiným nastavením, použijte kombinaci kláves "
-"<keyseq><key>Ctrl</key><key>N</key></keyseq> a dostanete se na <link xref="
-"\"start-screen\">spouštěcí obrazovku</link>."
+"Ke spuštění nové hry s jiným nastavením, použijte <keyseq><key>Ctrl</key><key>"
+"N</key></keyseq> a dostanete se na <link xref=\"start-screen\">spouštěcí "
+"obrazovku</link>."
 
 #. (itstool) path: item/p
 #: C/15-Puzzle.page:88 C/16-Puzzle.page:82
 msgid ""
-"Alternatively, you may want to restart the game. For that, use the "
-"<keyseq><key>Shift</key><key>Ctrl</key><key>N</key></keyseq> keys sequence."
+"Alternatively, you may want to restart the game. For that, use "
+"<keyseq><key>Shift</key><key>Ctrl</key><key>N</key></keyseq>."
 msgstr ""
 "Případně můžete chtít začít stejnou hru od začátku. K restartu hry použijte "
-"kombinaci kláves <keyseq><key>Shift</key><key>Ctrl</key><key>N</key></"
-"keyseq>."
+"<keyseq><key>Shift</key><key>Ctrl</key><key>N</key></keyseq>."
 
 #. (itstool) path: section/p
 #: C/15-Puzzle.page:92 C/16-Puzzle.page:86
@@ -281,16 +280,15 @@ msgstr ""
 #. (itstool) path: item/p
 #: C/16-Puzzle.page:69
 msgid ""
-"Use the <keyseq><key>Shift</key><key>Left</key></keyseq> and "
-"<keyseq><key>Shift</key><key>Right</key></keyseq> keys sequences to swipe "
-"the selected row, or the <keyseq><key>Shift</key><key>Up</key></keyseq> and "
-"<keyseq><key>Shift</key><key>Down</key></keyseq> keys sequences to swipe the "
-"selected column."
+"Use <keyseq><key>Shift</key><key>Left</key></keyseq> and <keyseq><key>Shift</"
+"key><key>Right</key></keyseq> to swipe the selected row, or "
+"<keyseq><key>Shift</key><key>Up</key></keyseq> and <keyseq><key>Shift</"
+"key><key>Down</key></keyseq> to swipe the selected column."
 msgstr ""
-"Použijte kombinaci kláves <keyseq><key>Shift</key><key>←</key></keyseq> a "
-"<keyseq><key>Shift</key><key>→</key></keyseq> k posunu vybraného řádku, nebo "
-"kombinaci kláves <keyseq><key>Shift</key><key>↑</key></keyseq> a "
-"<keyseq><key>Shift</key><key>↓</key></keyseq> k posunu vybraného sloupce."
+"Použijte <keyseq><key>Shift</key><key>←</key></keyseq> a <keyseq><key>Shift"
+"</key><key>→</key></keyseq> k posunu vybraného řádku, nebo <keyseq><key>Shift"
+"</key><key>↑</key></keyseq> a <keyseq><key>Shift</key><key>↓</key></keyseq> k "
+"posunu vybraného sloupce."
 
 #. (itstool) path: page/title
 #: C/beginning.page:18
@@ -566,7 +564,7 @@ msgstr "Posunout díl ve směru prázdného místa"
 
 #. (itstool) path: td/p
 #: C/shortcuts.page:48
-msgid "<key>Space</key>, <key>Return</key> and <key>KP_Enter</key>"
+msgid "<key>Space</key>, <key>Return</key> and <key>Enter</key>"
 msgstr ""
 "<key>mezerník</key>, <key>Enter</key> nebo <key>Enter</key> na numerické "
 "klávesnici"
