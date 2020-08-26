@@ -2,23 +2,23 @@
 # Copyright (C) 2020 gnome-taquin's COPYRIGHT HOLDER
 # This file is distributed under the same license as the gnome-taquin package.
 # Artur de Aquino Morais <artur.morais93@outlook.com>, 2016.
-# Rafael Fontenelle <rafaelff@gnome.org>, 2014-2020.
 # Enrico Nicoletto <liverig@gmail.com>, 2015, 2016, 2020.
+# Rafael Fontenelle <rafaelff@gnome.org>, 2014-2020.
 #
 msgid ""
 msgstr ""
 "Project-Id-Version: gnome-taquin master\n"
 "Report-Msgid-Bugs-To: https://gitlab.gnome.org/GNOME/gnome-taquin/issues\n"
-"POT-Creation-Date: 2020-06-13 18:47+0000\n"
-"PO-Revision-Date: 2020-08-26 09:29-0300\n"
-"Last-Translator: Enrico Nicoletto <liverig@gmail.com>\n"
+"POT-Creation-Date: 2020-08-26 12:30+0000\n"
+"PO-Revision-Date: 2020-08-26 10:33-0300\n"
+"Last-Translator: Rafael Fontenelle <rafaelff@gnome.org>\n"
 "Language-Team: Brazilian Portuguese <gnome-pt_br-list@gnome.org>\n"
 "Language: pt_BR\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Plural-Forms: nplurals=2; plural=(n > 1);\n"
-"X-Generator: Poedit 2.4.1\n"
+"Plural-Forms: nplurals=2; plural=(n > 1)\n"
+"X-Generator: Gtranslator 3.36.0\n"
 
 #: data/org.gnome.Taquin.appdata.xml.in:7
 msgid "GNOME Taquin"
@@ -233,7 +233,7 @@ msgstr "Desfaz o movimento mais recente"
 #: data/ui/help-overlay.ui:81
 msgctxt "shortcut window"
 msgid "Toggle game menu"
-msgstr "Altera o menu do jogo"
+msgstr "Acessa o menu do jogo"
 
 #. Translators: in the Keyboard Shortcuts window, name of a section; contains shortcuts specific to the 15-Puzzle game
 #: data/ui/help-overlay.ui:91
