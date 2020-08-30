@@ -1,14 +1,14 @@
 # Polish translation for gnome-taquin help.
-# Copyright © 2017-2019 the gnome-taquin authors.
+# Copyright © 2017-2020 the gnome-taquin authors.
 # This file is distributed under the same license as the gnome-taquin help.
-# Piotr Drąg <piotrdrag@gmail.com>, 2017-2019.
-# Aviary.pl <community-poland@mozilla.org>, 2017-2019.
+# Piotr Drąg <piotrdrag@gmail.com>, 2017-2020.
+# Aviary.pl <community-poland@mozilla.org>, 2017-2020.
 #
 msgid ""
 msgstr ""
 "Project-Id-Version: gnome-taquin-help\n"
-"POT-Creation-Date: 2019-01-23 15:46+0000\n"
-"PO-Revision-Date: 2019-02-07 17:47+0100\n"
+"POT-Creation-Date: 2020-07-05 21:02+0000\n"
+"PO-Revision-Date: 2020-08-30 14:22+0200\n"
 "Last-Translator: Piotr Drąg <piotrdrag@gmail.com>\n"
 "Language-Team: Polish <community-poland@mozilla.org>\n"
 "Language: pl\n"
@@ -22,8 +22,8 @@ msgstr ""
 msgctxt "_"
 msgid "translator-credits"
 msgstr ""
-"Piotr Drąg <piotrdrag@gmail.com>, 2017-2019\n"
-"Aviary.pl <community-poland@mozilla.org>, 2017-2019"
+"Piotr Drąg <piotrdrag@gmail.com>, 2017-2020\n"
+"Aviary.pl <community-poland@mozilla.org>, 2017-2020"
 
 #. (itstool) path: credit/name
 #: C/15-Puzzle.page:10 C/16-Puzzle.page:10 C/beginning.page:10 C/index.page:12
@@ -200,8 +200,8 @@ msgstr ""
 #. (itstool) path: item/p
 #: C/15-Puzzle.page:78 C/16-Puzzle.page:72
 msgid ""
-"You can always undo your move. For that, use the <keyseq><key>Ctrl</"
-"key><key>Z</key></keyseq> keys sequence."
+"You can always undo your move. For that, use <keyseq><key>Ctrl</key><key>Z</"
+"key></keyseq>."
 msgstr ""
 "Zawsze można cofnąć ruch za pomocą klawiszy <keyseq><key>Ctrl</key><key>Z</"
 "key></keyseq>."
@@ -209,9 +209,9 @@ msgstr ""
 #. (itstool) path: item/p
 #: C/15-Puzzle.page:85 C/16-Puzzle.page:79
 msgid ""
-"To start a new game –possibly with other options–, use the "
-"<keyseq><key>Ctrl</key><key>N</key></keyseq> keys sequence to go to the "
-"<link xref=\"start-screen\">Start Screen</link>."
+"To start a new game –possibly with other options–, use <keyseq><key>Ctrl</"
+"key><key>N</key></keyseq> to go to the <link xref=\"start-screen\">Start "
+"Screen</link>."
 msgstr ""
 "Aby rozpocząć nową grę (być może za pomocą innych opcji), użyj klawiszy "
 "<keyseq><key>Ctrl</key><key>N</key></keyseq>, aby przejść do <link xref="
@@ -220,8 +220,8 @@ msgstr ""
 #. (itstool) path: item/p
 #: C/15-Puzzle.page:88 C/16-Puzzle.page:82
 msgid ""
-"Alternatively, you may want to restart the game. For that, use the "
-"<keyseq><key>Shift</key><key>Ctrl</key><key>N</key></keyseq> keys sequence."
+"Alternatively, you may want to restart the game. For that, use "
+"<keyseq><key>Shift</key><key>Ctrl</key><key>N</key></keyseq>."
 msgstr ""
 "Można także rozpocząć grę od nowa za pomocą klawiszy <keyseq><key>Shift</"
 "key><key>Ctrl</key><key>N</key></keyseq>."
@@ -285,11 +285,10 @@ msgstr ""
 #. (itstool) path: item/p
 #: C/16-Puzzle.page:69
 msgid ""
-"Use the <keyseq><key>Shift</key><key>Left</key></keyseq> and "
-"<keyseq><key>Shift</key><key>Right</key></keyseq> keys sequences to swipe "
-"the selected row, or the <keyseq><key>Shift</key><key>Up</key></keyseq> and "
-"<keyseq><key>Shift</key><key>Down</key></keyseq> keys sequences to swipe the "
-"selected column."
+"Use <keyseq><key>Shift</key><key>Left</key></keyseq> and <keyseq><key>Shift</"
+"key><key>Right</key></keyseq> to swipe the selected row, or "
+"<keyseq><key>Shift</key><key>Up</key></keyseq> and <keyseq><key>Shift</"
+"key><key>Down</key></keyseq> to swipe the selected column."
 msgstr ""
 "Użyj klawiszy <keyseq><key>Shift</key><key>W lewo</key></keyseq> "
 "i <keyseq><key>Shift</key><key>W prawo</key></keyseq>, aby przeciągnąć "
@@ -572,7 +571,7 @@ msgstr "Przesunięcie elementu w kierunku pustego miejsca"
 
 #. (itstool) path: td/p
 #: C/shortcuts.page:48
-msgid "<key>Space</key>, <key>Return</key> and <key>KP_Enter</key>"
+msgid "<key>Space</key>, <key>Return</key> and <key>Enter</key>"
 msgstr ""
 "<key>Spacja</key>, <key>Enter</key> i <key>Enter na klawiaturze numerycznej</"
 "key>"
