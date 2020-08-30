@@ -1,0 +1,721 @@
+# 
+# Translators:
+# Miquel-Àngel Burgos i Fradeja <miquel.angel.burgos@gmail.com>, 2020
+# 
+msgid ""
+msgstr ""
+"Project-Id-Version: gnome-taquin-help\n"
+"POT-Creation-Date: 2020-08-28 14:44+0000\n"
+"PO-Revision-Date: 2020-08-29 09:12+0000\n"
+"Last-Translator: Miquel-Àngel Burgos i Fradeja <miquel.angel.burgos@gmail.com>, 2020\n"
+"Language-Team: Catalan (https://www.transifex.com/softcatala/teams/62837/ca/)\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Language: ca\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+
+#. Put one translator per line, in the form NAME <EMAIL>, YEAR1, YEAR2
+msgctxt "_"
+msgid "translator-credits"
+msgstr "Miquel-Àngel Burgos i Fradeja <miquel.angel.burgos@gmail.com>, 2020"
+
+#. (itstool) path: credit/name
+#: C/15-Puzzle.page:10 C/16-Puzzle.page:10 C/beginning.page:10 C/index.page:12
+#: C/shortcuts.page:10 C/start-screen.page:10
+msgid "Arnaud Bonatti"
+msgstr "Arnaud Bonatti"
+
+#. (itstool) path: credit/years
+#: C/15-Puzzle.page:12 C/16-Puzzle.page:12 C/beginning.page:12
+#: C/shortcuts.page:12 C/start-screen.page:12
+msgid "2014-2019"
+msgstr "2014-2019"
+
+#. (itstool) path: page/title
+#: C/15-Puzzle.page:18
+msgid "15-Puzzle"
+msgstr "Trencaclosques de 15 fitxes"
+
+#. (itstool) path: page/p
+#: C/15-Puzzle.page:20
+msgid ""
+"The <em>15-Puzzle</em> is the default puzzle of <app>Taquin</app>. It is "
+"displayed the first time the application is opened. You can start one at any"
+" time from the <link xref=\"start-screen\">Start Screen</link>."
+msgstr ""
+"El <em>Trencaclosques de 15 fitxes</em> és el trencaclosques oficial del "
+"<app>Taquin</app>. Apareix la primera vegada que s'obre l'aplicació. Podeu "
+"començar-ne un en qualsevol moment des de la <link xref=\"start-"
+"screen\">Pantalla inicial</link>."
+
+#. (itstool) path: section/title
+#: C/15-Puzzle.page:23 C/16-Puzzle.page:23
+msgid "Gameplay"
+msgstr "Instruccions"
+
+#. (itstool) path: section/p
+#: C/15-Puzzle.page:25 C/16-Puzzle.page:25
+msgid "The goal is to move all the tiles to their proper places."
+msgstr "L'objectiu és moure totes les fitxes al seu lloc."
+
+#. (itstool) path: section/p
+#: C/15-Puzzle.page:27
+msgid ""
+"There’s an empty space where you can move adjacent tiles by pushing them "
+"onto it. You can push more than one tile at the same time in the empty "
+"space’s direction."
+msgstr ""
+"Hi ha un espai buit al qual podeu moure les fitxes adjacents empenyent-les. "
+"Podeu empènyer més d'una fitxa alhora en la direcció de l'espai buit."
+
+#. (itstool) path: section/title
+#: C/15-Puzzle.page:31 C/16-Puzzle.page:31
+msgid "End of the game"
+msgstr "Fi de la partida"
+
+#. (itstool) path: section/p
+#: C/15-Puzzle.page:32 C/16-Puzzle.page:32
+msgid ""
+"At the end of the game, <app>Taquin</app> notifies you and displays the "
+"complete image."
+msgstr ""
+"Al final de la partida, el <app>Taquin</app> us avisa i mostra la imatge "
+"completa."
+
+#. (itstool) path: section/p
+#: C/15-Puzzle.page:33 C/16-Puzzle.page:33
+msgid ""
+"You can click the <gui>New Game</gui> button in the headerbar to go to the "
+"<link xref=\"start-screen\">Start Screen</link>. Alternatively, you can "
+"restart the game by clicking on the button with a counter of moves done, and"
+" then on the <gui>Restart</gui> entry."
+msgstr ""
+"Podeu fer clic al botó <gui>Partida nova</gui> de la barra de capçalera per "
+"anar a la <link xref=\"start-screen\">Pantalla inicial</link>. També podeu "
+"reiniciar la partida fent clic al botó del comptador de moviments i "
+"escollint <gui>Reinicia</gui>."
+
+#. (itstool) path: section/title
+#: C/15-Puzzle.page:37 C/16-Puzzle.page:37
+msgid "How to play with a mouse"
+msgstr "Com jugar amb el ratolí"
+
+#. (itstool) path: section/p
+#: C/15-Puzzle.page:39 C/15-Puzzle.page:68 C/16-Puzzle.page:39
+#: C/16-Puzzle.page:65
+msgid "To make a move:"
+msgstr "Per a fer un moviment:"
+
+#. (itstool) path: item/p
+#: C/15-Puzzle.page:42 C/beginning.page:26
+msgid "Click on a tile on the same row or column as the empty space."
+msgstr "Feu clic en una fitxa de la fila o columna de l'espai buit."
+
+#. (itstool) path: note/p
+#: C/15-Puzzle.page:44 C/15-Puzzle.page:74 C/beginning.page:28
+msgid ""
+"If you click on a tile that cannot move, the game notifies you that the move"
+" is impossible."
+msgstr ""
+"Si feu clic en una fitxa que no es pot moure, el joc us avisa que el "
+"moviment no és possible."
+
+#. (itstool) path: item/p
+#: C/15-Puzzle.page:48 C/16-Puzzle.page:45 C/beginning.page:32
+msgid ""
+"You can always undo your move. For that, click on the button with a counter "
+"of moves done in the headerbar, and click the <gui>Undo</gui> entry in the "
+"menu that appears."
+msgstr ""
+"Sempre podeu desfer un moviment: feu clic al botó del comptador de moviments"
+" de la barra de capçalera i seleccioneu <gui>Desfés</gui> al menú "
+"desplegable."
+
+#. (itstool) path: section/p
+#: C/15-Puzzle.page:52 C/15-Puzzle.page:82 C/16-Puzzle.page:49
+#: C/16-Puzzle.page:76
+msgid "Whether you finished the current game or not:"
+msgstr "Tant si heu acabat la partida actual com si no:"
+
+#. (itstool) path: item/p
+#: C/15-Puzzle.page:55 C/16-Puzzle.page:52
+msgid ""
+"To start a new game –possibly with other options–, click the <gui>New "
+"Game</gui> button in the headerbar to go to the <link xref=\"start-"
+"screen\">Start Screen</link>."
+msgstr ""
+"Per a començar una partida nova –potser amb altes opcions–, feu clic al botó"
+" <gui>Partida nova</gui> de la barra de capçalera per anar a la <link xref"
+"=\"start-screen\">Pantalla d'inici</link>."
+
+#. (itstool) path: item/p
+#: C/15-Puzzle.page:58 C/16-Puzzle.page:55
+msgid ""
+"Alternatively, you may want to restart the game. For that, click in the "
+"headerbar on the button with a counter of moves done, and click the "
+"<gui>Restart</gui> entry in the menu that appears."
+msgstr ""
+"També és possible que volgueu reiniciar la partida: cliqueu al botó del "
+"comptador de moviments de la barra de capçalera i seleccioneu "
+"<gui>Reinicia</gui> al menú desplegable."
+
+#. (itstool) path: section/p
+#: C/15-Puzzle.page:62 C/16-Puzzle.page:59
+msgid "You can also use the keyboard."
+msgstr "També podeu utilitzar el teclat."
+
+#. (itstool) path: section/title
+#: C/15-Puzzle.page:66 C/16-Puzzle.page:63
+msgid "How to play with the keyboard"
+msgstr "Com jugar amb el teclat"
+
+#. (itstool) path: item/p
+#: C/15-Puzzle.page:71
+msgid ""
+"Use the <key>Left</key>, <key>Right</key>, <key>Up</key> and <key>Down</key>"
+" arrows to go at the tile you want to move. The currently selected tile is "
+"indicated with four arrows around the board, on each side of its row and "
+"column."
+msgstr ""
+"Utilitzeu les fletxes <key>Esquerra</key>, <key>Dreta</key>, "
+"<key>Amunt</key> i <key>Avall</key> per a anar a la fitxa que voleu moure. "
+"La fitxa seleccionada s'indica amb quatre fletxes al voltant del tauler, a "
+"cada banda de la fila i la columna corresponents."
+
+#. (itstool) path: item/p
+#: C/15-Puzzle.page:72
+msgid ""
+"Use the <key>Space</key> key to move the selected tile in the direction of "
+"the empty space."
+msgstr ""
+"Utilitzeu la tecla <key>Espai</key> per a moure la fitxa seleccionada en la "
+"direcció de l'espai buit."
+
+#. (itstool) path: item/p
+#: C/15-Puzzle.page:78 C/16-Puzzle.page:72
+msgid ""
+"You can always undo your move. For that, use "
+"<keyseq><key>Ctrl</key><key>Z</key></keyseq>."
+msgstr ""
+"Sempre podeu desfer un moviment: utilitzeu "
+"<keyseq><key>Ctrl</key><key>Z</key></keyseq>."
+
+#. (itstool) path: item/p
+#: C/15-Puzzle.page:85 C/16-Puzzle.page:79
+msgid ""
+"To start a new game –possibly with other options–, use "
+"<keyseq><key>Ctrl</key><key>N</key></keyseq> to go to the <link xref"
+"=\"start-screen\">Start Screen</link>."
+msgstr ""
+"Per a començar una nova partida –potser amb altres opcions–, utilitzeu "
+"<keyseq><key>Ctrl</key><key>N</key></keyseq> per a anar a la <link xref"
+"=\"start-screen\">Pantalla inicial</link>."
+
+#. (itstool) path: item/p
+#: C/15-Puzzle.page:88 C/16-Puzzle.page:82
+msgid ""
+"Alternatively, you may want to restart the game. For that, use "
+"<keyseq><key>Shift</key><key>Ctrl</key><key>N</key></keyseq>."
+msgstr ""
+"També es possible que volgueu reiniciar la partida: utilitzeu "
+"<keyseq><key>Shift</key><key>Ctrl</key><key>N</key></keyseq>."
+
+#. (itstool) path: section/p
+#: C/15-Puzzle.page:92 C/16-Puzzle.page:86
+msgid "You can also use a mouse."
+msgstr "També podeu utilitzar el ratolí."
+
+#. (itstool) path: page/title
+#: C/16-Puzzle.page:18
+msgid "16-Puzzle"
+msgstr "Trencaclosques de 16 fitxes"
+
+#. (itstool) path: page/p
+#: C/16-Puzzle.page:20
+msgid ""
+"The <em>16-Puzzle</em> is the variant puzzle of <app>Taquin</app>. You can "
+"launch it at any time from the <link xref=\"start-screen\">Start "
+"Screen</link>."
+msgstr ""
+"El <em>Trencaclosques de 16 fitxes</em> és una variant del trencaclosques "
+"del <app>Taquin</app>. Podeu començar-ne un en qualsevol moment des de la "
+"<link xref=\"start-screen\">Pantalla inicial</link>."
+
+#. (itstool) path: section/p
+#: C/16-Puzzle.page:27
+msgid ""
+"You move all the tiles of a row or a column in one direction. The tile that "
+"is pushed out of the board is placed at the opposite side of the row or "
+"column."
+msgstr ""
+"Totes les fitxes d'una fila o una columna es mouen en una direcció. La fitxa"
+" que surt del tauler entra per la part oposada de la fila o columna."
+
+#. (itstool) path: item/p
+#: C/16-Puzzle.page:42
+msgid ""
+"Click on one of the arrows displayed around the board. The row or column at "
+"the end of which this arrow is moves in this direction, and the tile that "
+"was next to the arrow is placed at the opposite side."
+msgstr ""
+"Feu clic en una de les fletxes del voltant del tauler. La fila o columna a "
+"l'extrem de la qual hi ha la fletxa es mou en la direcció indicada i la "
+"fitxa més propera a la fletxa es col·loca a la banda oposada."
+
+#. (itstool) path: item/p
+#: C/16-Puzzle.page:68
+msgid ""
+"Use the <key>Left</key> and <key>Right</key> arrows to change the selected "
+"column, and the <key>Up</key> and <key>Down</key> arrows to change the "
+"selected row. The currently selected row and column are indicated with "
+"lights around the board."
+msgstr ""
+"Utilitzeu les fletxes <key>Esquerra</key> i <key>Dreta</key> per a canviar "
+"la columna seleccionada, i les fletxes <key>Amunt</key> i <key>Avall</key> "
+"per a canviar la fila seleccionada. La fila i la columna seleccionades es "
+"mostren ressaltades al voltant del tauler."
+
+#. (itstool) path: item/p
+#: C/16-Puzzle.page:69
+msgid ""
+"Use <keyseq><key>Shift</key><key>Left</key></keyseq> and "
+"<keyseq><key>Shift</key><key>Right</key></keyseq> to swipe the selected row,"
+" or <keyseq><key>Shift</key><key>Up</key></keyseq> and "
+"<keyseq><key>Shift</key><key>Down</key></keyseq> to swipe the selected "
+"column."
+msgstr ""
+"Utilitzeu <keyseq><key>Shift</key><key>Esquerra</key></keyseq> i "
+"<keyseq><key>Shift</key><key>Dreta</key></keyseq> per a desplaçar la fila "
+"seleccionada, o <keyseq><key>Shift</key><key>Amunt</key></keyseq> i "
+"<keyseq><key>Shift</key><key>Avall</key></keyseq> per a desplaçar la columna"
+" seleccionada."
+
+#. (itstool) path: page/title
+#: C/beginning.page:18
+msgid "Beginning"
+msgstr "Començament"
+
+#. (itstool) path: page/p
+#: C/beginning.page:20
+msgid ""
+"When <app>Taquin</app> is opened for the first time, it displays a "
+"traditional <link xref=\"15-Puzzle\">15-Puzzle</link> game."
+msgstr ""
+"Quan s'obre el <app>Taquin</app> per primera vegada, mostra una partida de "
+"<link xref=\"15-Puzzle\">trencaclosques de 15 fitxes</link>."
+
+#. (itstool) path: page/p
+#: C/beginning.page:22
+msgid "The game is played using the mouse. To make a move:"
+msgstr "La partida es juga amb el ratolí. Per a fer un moviment:"
+
+#. (itstool) path: item/p
+#: C/beginning.page:35
+msgid ""
+"To start a new game –whether you finished the current game or not–, click "
+"the <gui>New Game</gui> button in the headerbar to go to the <link xref"
+"=\"start-screen\">Start Screen</link>."
+msgstr ""
+"Per a començar una partida nova –tant si heu acabat la partida actual com si"
+" no–, feu clic al botó <gui>Partida nova</gui> de la barra de capçalera per "
+"a anar a la <link xref=\"start-screen\">Pantalla d'inici</link>."
+
+#. (itstool) path: page/p
+#: C/beginning.page:39
+msgid ""
+"You can also <link xref=\"15-Puzzle#15-keyboard\">play with the "
+"keyboard</link> if you prefer."
+msgstr ""
+"També podeu <link xref=\"15-Puzzle#15-keyboard\">jugar amb el teclat</link> "
+"si ho preferiu."
+
+#. (itstool) path: page/p
+#: C/beginning.page:41
+msgid ""
+"After the first time it is opened, <app>Taquin</app> displays a puzzle with "
+"the same rules and dimensions as the last one played when it is opened, so "
+"it could be a <link xref=\"16-Puzzle\">16-Puzzle</link> game."
+msgstr ""
+"A les execucions següents, el <app>Taquin</app> mostrarà un trencaclosques "
+"amb les mateixes regles i dimensions que el darrer a què s'hagi jugat, de "
+"manera que podria ser una partida de <link xref=\"16-Puzzle\">trencaclosques"
+" de 16 fitxes</link>."
+
+#. (itstool) path: info/title
+#: C/index.page:8
+msgctxt "link"
+msgid "Taquin"
+msgstr "Taquin"
+
+#. (itstool) path: info/title
+#: C/index.page:9
+msgctxt "text"
+msgid "Taquin"
+msgstr "Taquin"
+
+#. (itstool) path: license/p
+#: C/index.page:16
+msgid ""
+"Creative Commons Attribution-ShareAlike 4.0 International (CC BY-SA 4.0)"
+msgstr ""
+"Creative Commons Reconeixement-CompartirIgual 4.0 Internacional (CC BY-SA "
+"4.0)"
+
+#. (itstool) path: media/span
+#: C/index.page:20
+msgid "Taquin logo"
+msgstr "Logo del Taquin"
+
+#. (itstool) path: page/title
+#: C/index.page:20
+msgid "<_:media-1/> Taquin"
+msgstr "<_:media-1/> Taquin"
+
+#. (itstool) path: page/p
+#: C/index.page:22
+msgid ""
+"<app>Taquin</app> is a sliding-block puzzle game. It includes the "
+"traditional 15-Puzzle invented in the early 1880s, and the more recent "
+"16-Puzzle variant."
+msgstr ""
+"El <app>Taquin</app> és un joc de trencaclosques de blocs lliscants. Inclou "
+"el trencaclosques de 15 fitxes tradicional inventat a principis de la dècada"
+" de 1880 i la variant més recent de 16 fitxes."
+
+#. (itstool) path: section/title
+#: C/index.page:26
+msgid "How to Play"
+msgstr "Com jugar"
+
+#. (itstool) path: section/title
+#: C/index.page:38
+msgid "Advanced"
+msgstr "Avançat"
+
+#. (itstool) path: p/link
+#: C/legal.xml:3
+msgid "Creative Commons Attribution-ShareAlike 4.0 International license"
+msgstr ""
+"Llicència Creative Commons Reconeixement-CompartirIgual 4.0 Internacional"
+
+#. (itstool) path: license/p
+#: C/legal.xml:3
+msgid "This work is licensed under a <_:link-1/>."
+msgstr "Aquesta obra es troba sota una <_:link-1/>."
+
+#. (itstool) path: info/desc
+#: C/license.page:8
+msgid "Legal information."
+msgstr "Informació legal."
+
+#. (itstool) path: page/title
+#: C/license.page:11
+msgid "License"
+msgstr "Llicència"
+
+#. (itstool) path: page/p
+#: C/license.page:12
+msgid ""
+"This work is distributed under a Creative Commons Attribution-ShareAlike 4.0"
+" International license."
+msgstr ""
+"Aquesta obra es distribueix sota una llicència Creative Commons "
+"Reconeixement-CompartirIgual 4.0 Internacional."
+
+#. (itstool) path: page/p
+#: C/license.page:20
+msgid "You are free:"
+msgstr "Podeu:"
+
+#. (itstool) path: item/title
+#: C/license.page:25
+msgid "<em>To share</em>"
+msgstr "<em>Compartir</em>"
+
+#. (itstool) path: item/p
+#: C/license.page:26
+msgid "To copy, distribute and transmit the work."
+msgstr "Copiar, distribuir i transmetre l'obra."
+
+#. (itstool) path: item/title
+#: C/license.page:29
+msgid "<em>To remix</em>"
+msgstr "<em>Adaptar</em>"
+
+#. (itstool) path: item/p
+#: C/license.page:30
+msgid "To adapt the work."
+msgstr "Adaptar l'obra."
+
+#. (itstool) path: page/p
+#: C/license.page:33
+msgid "Under the following conditions:"
+msgstr "Amb les condicions següents:"
+
+#. (itstool) path: item/title
+#: C/license.page:38
+msgid "<em>Attribution</em>"
+msgstr "<em>Reconeixement</em>"
+
+#. (itstool) path: item/p
+#: C/license.page:39
+msgid ""
+"You must attribute the work in the manner specified by the author or "
+"licensor (but not in any way that suggests that they endorse you or your use"
+" of the work)."
+msgstr ""
+"Heu de reconèixer l'obra de la manera especificada per l'autor o "
+"llicenciador (però no d'una manera que suggereixi que el llicenciador us "
+"patrocina o patrocina l'ús que feu de l'obra)."
+
+#. (itstool) path: item/title
+#: C/license.page:46
+msgid "<em>Share Alike</em>"
+msgstr "<em>Compartir igual</em>"
+
+#. (itstool) path: item/p
+#: C/license.page:47
+msgid ""
+"If you alter, transform, or build upon this work, you may distribute the "
+"resulting work only under the same, similar or a compatible license."
+msgstr ""
+"Si altereu, transformeu o creeu a partir d'aquesta obra, només podeu "
+"distribuir l'obra resultant amb la mateixa llicència, una de similar o una "
+"de compatible."
+
+#. (itstool) path: page/p
+#: C/license.page:53
+msgid ""
+"For the full text of the license, see the <link "
+"href=\"http://creativecommons.org/licenses/by-"
+"sa/4.0/legalcode\">CreativeCommons website</link>, or read the full <link "
+"href=\"http://creativecommons.org/licenses/by-sa/4.0/\">Commons Deed</link>."
+msgstr ""
+"Per al text complet de la llicència, vegeu el <link "
+"href=\"http://creativecommons.org/licenses/by-sa/4.0/legalcode\">lloc web de"
+" CreativeCommons</link> o llegiu el <link "
+"href=\"http://creativecommons.org/licenses/by-sa/4.0/\">document complet de "
+"l'acte</link>."
+
+#. (itstool) path: page/title
+#: C/shortcuts.page:18
+msgid "Keyboard Shortcuts"
+msgstr "Dreceres de teclat"
+
+#. (itstool) path: page/p
+#: C/shortcuts.page:20
+msgid ""
+"<app>Taquin</app> can easily be used with keyboard. The <link "
+"xref=\"15-Puzzle#15-keyboard\">15-Puzzle</link> and <link "
+"xref=\"16-Puzzle#16-keyboard\">16-Puzzle</link> both have specific "
+"shortcuts."
+msgstr ""
+"El <app>Taquin</app> es pot utilitzar fàcilment amb el teclat. Tant el <link"
+" xref=\"15-Puzzle#15-keyboard\">trencaclosques de 15 fitxes</link> com el de"
+" <link xref=\"16-Puzzle#16-keyboard\">16 fitxes</link> tenen dreceres "
+"específiques."
+
+#. (itstool) path: section/title
+#: C/shortcuts.page:23
+msgid "In-game shortcuts"
+msgstr "Dreceres durant la partida"
+
+#. (itstool) path: td/p
+#: C/shortcuts.page:26
+msgid "Show the Start Screen"
+msgstr "Mostra la pantalla inicial"
+
+#. (itstool) path: td/p
+#: C/shortcuts.page:27
+msgid "<keyseq><key>Ctrl</key><key>N</key></keyseq>"
+msgstr "<keyseq><key>Ctrl</key><key>N</key></keyseq>"
+
+#. (itstool) path: td/p
+#: C/shortcuts.page:30
+msgid "Restart game"
+msgstr "Reinicia la partida"
+
+#. (itstool) path: td/p
+#: C/shortcuts.page:31 C/shortcuts.page:78
+msgid "<keyseq><key>Shift</key><key>Ctrl</key><key>N</key></keyseq>"
+msgstr "<keyseq><key>Shift</key><key>Ctrl</key><key>N</key></keyseq>"
+
+#. (itstool) path: td/p
+#: C/shortcuts.page:34
+msgid "Undo last move"
+msgstr "Desfés el darrer moviment"
+
+#. (itstool) path: td/p
+#: C/shortcuts.page:35
+msgid "<keyseq><key>Ctrl</key><key>Z</key></keyseq>"
+msgstr "<keyseq><key>Ctrl</key><key>Z</key></keyseq>"
+
+#. (itstool) path: section/title
+#: C/shortcuts.page:40
+msgid "15-Puzzle shortcuts"
+msgstr "Dreceres del trencaclosques de 15 fitxes"
+
+#. (itstool) path: td/p
+#: C/shortcuts.page:43
+msgid "Select tile to push on"
+msgstr "Selecciona la fitxa a empènyer"
+
+#. (itstool) path: td/p
+#: C/shortcuts.page:44
+msgid "<key>Left</key>, <key>Right</key>, <key>Up</key> and <key>Down</key>"
+msgstr ""
+"<key>Esquerra</key>, <key>Dreta</key>, <key>Amunt</key> i <key>Avall</key>"
+
+#. (itstool) path: td/p
+#: C/shortcuts.page:47
+msgid "Push tile in empty space’s direction"
+msgstr "Empeny la fitxa en la direcció de l'espai buit"
+
+#. (itstool) path: td/p
+#: C/shortcuts.page:48
+msgid "<key>Space</key>, <key>Return</key> and <key>Enter</key>"
+msgstr "<key>Espai</key>, <key>Retorn</key> i <key>Enter</key>"
+
+#. (itstool) path: section/title
+#: C/shortcuts.page:53
+msgid "16-Puzzle shortcuts"
+msgstr "Dreceres del trencaclosques de 16 fitxes"
+
+#. (itstool) path: td/p
+#: C/shortcuts.page:56
+msgid "Change selected column"
+msgstr "Canvia la columna seleccionada"
+
+#. (itstool) path: td/p
+#: C/shortcuts.page:57
+msgid "<key>Left</key> and <key>Right</key>"
+msgstr "<key>Esquerra</key> i <key>Dreta</key>"
+
+#. (itstool) path: td/p
+#: C/shortcuts.page:60
+msgid "Change selected row"
+msgstr "Canvia la fila seleccionada"
+
+#. (itstool) path: td/p
+#: C/shortcuts.page:61
+msgid "<key>Up</key> and <key>Down</key>"
+msgstr "<key>Amunt</key> i <key>Avall</key>"
+
+#. (itstool) path: td/p
+#: C/shortcuts.page:64
+msgid "Swipe selected row"
+msgstr "Desplaça la fila seleccionada"
+
+#. (itstool) path: td/p
+#: C/shortcuts.page:65
+msgid ""
+"<keyseq><key>Shift</key><key>Left</key></keyseq> and "
+"<keyseq><key>Shift</key><key>Right</key></keyseq>"
+msgstr ""
+"<keyseq><key>Shift</key><key>Esquerra</key></keyseq> i "
+"<keyseq><key>Shift</key><key>Dreta</key></keyseq>"
+
+#. (itstool) path: td/p
+#: C/shortcuts.page:68
+msgid "Swipe selected column"
+msgstr "Desplaça la columna seleccionada"
+
+#. (itstool) path: td/p
+#: C/shortcuts.page:69
+msgid ""
+"<keyseq><key>Shift</key><key>Up</key></keyseq> and "
+"<keyseq><key>Shift</key><key>Down</key></keyseq>"
+msgstr ""
+"<keyseq><key>Shift</key><key>Amunt</key></keyseq> i "
+"<keyseq><key>Shift</key><key>Avall</key></keyseq>"
+
+#. (itstool) path: section/title
+#: C/shortcuts.page:74
+msgid "Start Screen shortcuts"
+msgstr "Dreceres de la pantalla inicial"
+
+#. (itstool) path: td/p
+#: C/shortcuts.page:77
+msgid "Start new game"
+msgstr "Comença una partida nova"
+
+#. (itstool) path: td/p
+#: C/shortcuts.page:81
+msgid "Back to previous game (if any)"
+msgstr "Torna a la partida anterior (si n'hi ha cap)"
+
+#. (itstool) path: td/p
+#: C/shortcuts.page:82
+msgid "<key>Escape</key>"
+msgstr "<key>Esc</key>"
+
+#. (itstool) path: section/title
+#: C/shortcuts.page:87
+msgid "General shortcuts"
+msgstr "Dreceres generals"
+
+#. (itstool) path: td/p
+#: C/shortcuts.page:90
+msgid "Keyboard shortcuts"
+msgstr "Dreceres de teclat"
+
+#. (itstool) path: td/p
+#: C/shortcuts.page:91
+msgid "<keyseq><key>Ctrl</key><key>F1</key></keyseq>"
+msgstr "<keyseq><key>Ctrl</key><key>F1</key></keyseq>"
+
+#. (itstool) path: td/p
+#: C/shortcuts.page:94
+msgid "Help"
+msgstr "Ajuda"
+
+#. (itstool) path: td/p
+#: C/shortcuts.page:95
+msgid "<key>F1</key>"
+msgstr "<key>F1</key>"
+
+#. (itstool) path: td/p
+#: C/shortcuts.page:98
+msgid "About"
+msgstr "Quant a"
+
+#. (itstool) path: td/p
+#: C/shortcuts.page:99
+msgid "<keyseq><key>Shift</key><key>F1</key></keyseq>"
+msgstr "<keyseq><key>Shift</key><key>F1</key></keyseq>"
+
+#. (itstool) path: td/p
+#: C/shortcuts.page:102
+msgid "Quit"
+msgstr "Surt"
+
+#. (itstool) path: td/p
+#: C/shortcuts.page:103
+msgid "<keyseq><key>Ctrl</key><key>Q</key></keyseq>"
+msgstr "<keyseq><key>Ctrl</key><key>Q</key></keyseq>"
+
+#. (itstool) path: page/title
+#: C/start-screen.page:18
+msgid "Start Screen"
+msgstr "Pantalla inicial"
+
+#. (itstool) path: page/p
+#: C/start-screen.page:19
+msgid ""
+"The <em>Start Screen</em> is the place to select your options and launch a "
+"new game, either a <link xref=\"15-Puzzle\">15-Puzzle</link> or a <link "
+"xref=\"16-Puzzle\">16-Puzzle</link>."
+msgstr ""
+"La <em>pantalla inicial</em> és on se seleccionen les opcions i es comença "
+"una partida nova, ja sigui un <link xref=\"15-Puzzle\">trencaclosques de 15 "
+"fitxes</link> o <link xref=\"16-Puzzle\">un de 16 fitxes</link>."
+
+#. (itstool) path: page/p
+#: C/start-screen.page:20
+msgid ""
+"It can be accessed at any time from a game by pressing the <gui>New "
+"Game</gui> button."
+msgstr ""
+"S'hi pot accedir en qualsevol moment des d'una partida prement el botó "
+"<gui>Partida nova</gui>."
