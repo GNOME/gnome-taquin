@@ -1,26 +1,26 @@
 # German translation for gnome-taquin.
 # Copyright (C) 2015 gnome-taquin's COPYRIGHT HOLDER
 # This file is distributed under the same license as the gnome-taquin package.
+#
 # Christian Kirbach <Christian.Kirbach@gmail.com>, 2015.
 # Bernd Homuth <dev@hmt.im>, 2015.
-# Mario Blättermann <mario.blaettermann@gmail.com>, 2015, 2016.
+# Mario Blättermann <mario.blaettermann@gmail.com>, 2015, 2016, 2020.
 # Tim Sabsch <tim@sabsch.com>, 2019.
 # Wolfgang Stöggl <c72578@yahoo.de>, 2020.
-#
 msgid ""
 msgstr ""
 "Project-Id-Version: gnome-taquin master\n"
 "Report-Msgid-Bugs-To: https://gitlab.gnome.org/GNOME/gnome-taquin/issues\n"
-"POT-Creation-Date: 2020-03-09 22:20+0000\n"
-"PO-Revision-Date: 2020-03-18 06:23+0100\n"
-"Last-Translator: Wolfgang Stoeggl <c72578@yahoo.de>\n"
+"POT-Creation-Date: 2020-06-13 18:47+0000\n"
+"PO-Revision-Date: 2020-08-31 20:48+0200\n"
+"Last-Translator: Mario Blättermann <mario.blaettermann@gmail.com>\n"
 "Language-Team: Deutsch <gnome-de@gnome.org>\n"
 "Language: de\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
-"X-Generator: Poedit 2.3\n"
+"X-Generator: Lokalize 20.08.0\n"
 
 #: data/org.gnome.Taquin.appdata.xml.in:7
 msgid "GNOME Taquin"
@@ -190,102 +190,134 @@ msgstr "_Neues Spiel"
 msgid "Go back to the current game"
 msgstr "Zum aktuellen Spiel zurückkehren"
 
-#: data/ui/help-overlay.ui:28
+#. Translators: in the Keyboard Shortcuts window, name of a section; contains “Start new game” and “Go back”
+#: data/ui/help-overlay.ui:29
 msgctxt "shortcut window"
 msgid "During game selection"
 msgstr "Während der Spielauswahl"
 
-#: data/ui/help-overlay.ui:32
+#. Translators: in the Keyboard Shortcuts window, section "During game selection"
+#: data/ui/help-overlay.ui:34
 msgctxt "shortcut window"
 msgid "Start new game"
 msgstr "Neues Spiel starten"
 
-#: data/ui/help-overlay.ui:39
+#. Translators: in the Keyboard Shortcuts window, section "During game selection"
+#: data/ui/help-overlay.ui:42
 msgctxt "shortcut window"
 msgid "Go back"
 msgstr "Zurückgehen"
 
-#: data/ui/help-overlay.ui:48
+#. Translators: in the Keyboard Shortcuts window, name of a section; contains “New game”, “Restart game” and “Undo last move”
+#: data/ui/help-overlay.ui:52
 msgctxt "shortcut window"
 msgid "During a game"
 msgstr "Während eines Spiels"
 
-#: data/ui/help-overlay.ui:52
+#. Translators: in the Keyboard Shortcuts window, section "During a game"
+#: data/ui/help-overlay.ui:57
 msgctxt "shortcut window"
 msgid "New game"
 msgstr "Neues Spiel"
 
-#: data/ui/help-overlay.ui:59
+#. Translators: in the Keyboard Shortcuts window, section "During a game"
+#: data/ui/help-overlay.ui:65
 msgctxt "shortcut window"
 msgid "Restart game"
 msgstr "Spiel neustarten"
 
-#: data/ui/help-overlay.ui:66
+#. Translators: in the Keyboard Shortcuts window, section "During a game"
+#: data/ui/help-overlay.ui:73
 msgctxt "shortcut window"
 msgid "Undo last move"
 msgstr "Letzten Zug rückgängig machen"
 
-#: data/ui/help-overlay.ui:75
+#. Translators: in the Keyboard Shortcuts window, section "During a game"
+#: data/ui/help-overlay.ui:81
+msgctxt "shortcut window"
+msgid "Toggle game menu"
+msgstr "Spielmenü ein-/ausblenden"
+
+#. Translators: in the Keyboard Shortcuts window, name of a section; contains shortcuts specific to the 15-Puzzle game
+#: data/ui/help-overlay.ui:91
 msgctxt "shortcut window"
 msgid "15-Puzzle"
 msgstr "15-teiliges Puzzle"
 
-#: data/ui/help-overlay.ui:79
+#. Translators: in the Keyboard Shortcuts window, section "15-Puzzle"
+#: data/ui/help-overlay.ui:96
 msgctxt "shortcut window"
 msgid "Select tile to push on"
 msgstr "Kachel zum Schieben auswählen"
 
-#: data/ui/help-overlay.ui:86
+#. Translators: in the Keyboard Shortcuts window, section "15-Puzzle"
+#: data/ui/help-overlay.ui:104
 msgctxt "shortcut window"
 msgid "Push on selected tile"
 msgstr "Ausgewählte Kachel schieben"
 
-#: data/ui/help-overlay.ui:95
+#. Translators: in the Keyboard Shortcuts window, name of a section; contains shortcuts specific to the 16-Puzzle game
+#: data/ui/help-overlay.ui:114
 msgctxt "shortcut window"
 msgid "16-Puzzle"
 msgstr "16-teiliges Puzzle"
 
-#: data/ui/help-overlay.ui:99
+#. Translators: in the Keyboard Shortcuts window, section "16-Puzzle"
+#: data/ui/help-overlay.ui:119
 msgctxt "shortcut window"
 msgid "Change selected column"
 msgstr "Ausgewählte Spalte ändern"
 
-#: data/ui/help-overlay.ui:106
+#. Translators: in the Keyboard Shortcuts window, section "16-Puzzle"
+#: data/ui/help-overlay.ui:127
 msgctxt "shortcut window"
 msgid "Change selected row"
 msgstr "Ausgewählte Zeile ändern"
 
-#: data/ui/help-overlay.ui:113
+#. Translators: in the Keyboard Shortcuts window, section "16-Puzzle"
+#: data/ui/help-overlay.ui:135
 msgctxt "shortcut window"
 msgid "Swipe selected row"
 msgstr "Ausgewählte Zeile wischen"
 
-#: data/ui/help-overlay.ui:120
+#. Translators: in the Keyboard Shortcuts window, section "16-Puzzle"
+#: data/ui/help-overlay.ui:143
 msgctxt "shortcut window"
 msgid "Swipe selected column"
 msgstr "Ausgewählte Spalte wischen"
 
-#: data/ui/help-overlay.ui:129
+#. Translators: in the Keyboard Shortcuts window, name of a section; contains generic shortcuts like F1, F10, etc.
+#: data/ui/help-overlay.ui:153
 msgctxt "shortcut window"
 msgid "Generic"
 msgstr "Allgemein"
 
-#: data/ui/help-overlay.ui:133
+#. Translators: in the Keyboard Shortcuts window, section "Generic"
+#: data/ui/help-overlay.ui:158
+msgctxt "shortcut window"
+msgid "Toggle main menu"
+msgstr "Hauptmenü ein-/ausblenden"
+
+#. Translators: in the Keyboard Shortcuts window, section "Generic"
+#: data/ui/help-overlay.ui:166
 msgctxt "shortcut window"
 msgid "Keyboard shortcuts"
 msgstr "Tastenkombinationen"
 
-#: data/ui/help-overlay.ui:140
+#. Translators: in the Keyboard Shortcuts window, section "Generic"
+#: data/ui/help-overlay.ui:174
 msgctxt "shortcut window"
 msgid "Help"
 msgstr "Hilfe"
 
-#: data/ui/help-overlay.ui:147
+#. Translators: in the Keyboard Shortcuts window, section "Generic"
+#: data/ui/help-overlay.ui:182
 msgctxt "shortcut window"
 msgid "About"
 msgstr "Info"
 
-#: data/ui/help-overlay.ui:154
+#. Translators: in the Keyboard Shortcuts window, section "Generic"
+#: data/ui/help-overlay.ui:190
 msgctxt "shortcut window"
 msgid "Quit"
 msgstr "Beenden"
@@ -565,7 +597,8 @@ msgstr "Toyah (Wikimedia)"
 
 #. Translators: about dialog text; in the Credits, text at the end of the "Artwork by" section
 #: src/taquin-main.vala:656
-msgid "(see COPYING.themes for informations)"
+#| msgid "(see COPYING.themes for informations)"
+msgid "(see COPYING.themes for information)"
 msgstr "(lesen Sie COPYING.themes für weitere Informationen)"
 
 #. Translators: about dialog text crediting an author
