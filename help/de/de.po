@@ -4,21 +4,21 @@
 #
 # Christian Kirbach <Christian.Kirbach@gmail.com>, 2015.
 # Wolfgang Stöggl <c72578@yahoo.de>, 2015.
-# Mario Blättermann <mario.blaettermann@gmail.com>, 2018, 2019.
+# Mario Blättermann <mario.blaettermann@gmail.com>, 2018, 2019, 2020.
 # Tim Sabsch <tim@sabsch.com>, 2019.
 msgid ""
 msgstr ""
 "Project-Id-Version: gnome-taquin master\n"
-"POT-Creation-Date: 2019-04-08 19:20+0000\n"
-"PO-Revision-Date: 2019-04-11 21:09+0200\n"
-"Last-Translator: Tim Sabsch <tim@sabsch.com>\n"
+"POT-Creation-Date: 2020-07-05 21:02+0000\n"
+"PO-Revision-Date: 2020-09-03 20:19+0200\n"
+"Last-Translator: Mario Blättermann <mario.blaettermann@gmail.com>\n"
 "Language-Team: German <gnome-de@gnome.org>\n"
 "Language: de\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
-"X-Generator: Poedit 2.2.1\n"
+"X-Generator: Lokalize 20.08.0\n"
 
 #. Put one translator per line, in the form NAME <EMAIL>, YEAR1, YEAR2
 msgctxt "_"
@@ -26,7 +26,7 @@ msgid "translator-credits"
 msgstr ""
 "Christian Kirbach <Christian.Kirbach@gmail.com>, 2015\n"
 "Wolfgang Stöggl <c72578@yahoo.de>, 2015\n"
-"Mario Blättermann <mario.blaettermann@gmail.com>, 2019\n"
+"Mario Blättermann <mario.blaettermann@gmail.com>, 2019, 2020\n"
 "Tim Sabsch <tim@sabsch.com>, 2019"
 
 #. (itstool) path: credit/name
@@ -206,32 +206,43 @@ msgstr ""
 
 #. (itstool) path: item/p
 #: C/15-Puzzle.page:78 C/16-Puzzle.page:72
+#| msgid ""
+#| "You can always undo your move. For that, use the <keyseq><key>Ctrl</"
+#| "key><key>Z</key></keyseq> keys sequence."
 msgid ""
-"You can always undo your move. For that, use the <keyseq><key>Ctrl</"
-"key><key>Z</key></keyseq> keys sequence."
+"You can always undo your move. For that, use <keyseq><key>Ctrl</key><key>Z</"
+"key></keyseq>."
 msgstr ""
 "Sie können einen Zug immer mit der Tastenkombination <keyseq><key>Strg</"
 "key><key>Z</key></keyseq> zurücknehmen."
 
 #. (itstool) path: item/p
 #: C/15-Puzzle.page:85 C/16-Puzzle.page:79
+#| msgid ""
+#| "To start a new game –possibly with other options–, use the "
+#| "<keyseq><key>Ctrl</key><key>N</key></keyseq> keys sequence to go to the "
+#| "<link xref=\"start-screen\">Start Screen</link>."
 msgid ""
-"To start a new game –possibly with other options–, use the "
-"<keyseq><key>Ctrl</key><key>N</key></keyseq> keys sequence to go to the "
-"<link xref=\"start-screen\">Start Screen</link>."
+"To start a new game –possibly with other options–, use <keyseq><key>Ctrl</"
+"key><key>N</key></keyseq> to go to the <link xref=\"start-screen\">Start "
+"Screen</link>."
 msgstr ""
-"Um ein neues Spiel zu starten – vielleicht mit anderen Optionen – können Sie "
+"Um ein neues Spiel – vielleicht mit anderen Optionen – zu starten, können Sie "
 "<keyseq><key>Strg</key><key>N</key></keyseq> drücken, um zum <link xref="
 "\"start-screen\">Startbildschirm</link> zu gelangen."
 
 #. (itstool) path: item/p
 #: C/15-Puzzle.page:88 C/16-Puzzle.page:82
+#| msgid ""
+#| "Alternatively, you may want to restart the game. For that, use the "
+#| "<keyseq><key>Shift</key><key>Ctrl</key><key>N</key></keyseq> keys "
+#| "sequence."
 msgid ""
-"Alternatively, you may want to restart the game. For that, use the "
-"<keyseq><key>Shift</key><key>Ctrl</key><key>N</key></keyseq> keys sequence."
+"Alternatively, you may want to restart the game. For that, use "
+"<keyseq><key>Shift</key><key>Ctrl</key><key>N</key></keyseq>."
 msgstr ""
-"Alternativ können Sie mit der Tastenkombination <keyseq><key>Umschalt</"
-"key><key>Strg</key><key>N</key></keyseq> das Spiel neu starten."
+"Alternativ können Sie <keyseq><key>Umschalt</"
+"key><key>Strg</key><key>N</key></keyseq> drücken, um das Spiel neu zu starten."
 
 #. (itstool) path: section/p
 #: C/15-Puzzle.page:92 C/16-Puzzle.page:86
@@ -292,19 +303,23 @@ msgstr ""
 
 #. (itstool) path: item/p
 #: C/16-Puzzle.page:69
+#| msgid ""
+#| "Use the <keyseq><key>Shift</key><key>Left</key></keyseq> and "
+#| "<keyseq><key>Shift</key><key>Right</key></keyseq> keys sequences to swipe "
+#| "the selected row, or the <keyseq><key>Shift</key><key>Up</key></keyseq> "
+#| "and <keyseq><key>Shift</key><key>Down</key></keyseq> keys sequences to "
+#| "swipe the selected column."
 msgid ""
-"Use the <keyseq><key>Shift</key><key>Left</key></keyseq> and "
-"<keyseq><key>Shift</key><key>Right</key></keyseq> keys sequences to swipe "
-"the selected row, or the <keyseq><key>Shift</key><key>Up</key></keyseq> and "
-"<keyseq><key>Shift</key><key>Down</key></keyseq> keys sequences to swipe the "
-"selected column."
+"Use <keyseq><key>Shift</key><key>Left</key></keyseq> and <keyseq><key>Shift</"
+"key><key>Right</key></keyseq> to swipe the selected row, or "
+"<keyseq><key>Shift</key><key>Up</key></keyseq> and <keyseq><key>Shift</"
+"key><key>Down</key></keyseq> to swipe the selected column."
 msgstr ""
-"Verwenden Sie die Tastenkombinationen <keyseq><key>Umschalt</key><key>←</"
-"key></keyseq> und <keyseq><key>Umschalt</key><key>→</key></keyseq>, um "
-"die gewählte Zeile zu leeren, oder die Tastenkombinationen "
-"<keyseq><key>Umschalt</key><key>↑</key></keyseq> und "
-"<keyseq><key>Umschalt</key><key>↓</key></keyseq>, um die gewählte Spalte zu "
-"leeren."
+"Drücken Sie <keyseq><key>Umschalt</key><key>←</"
+"key></keyseq> und <keyseq><key>Umschalt</key><key>→</key></keyseq>, um die "
+"gewählte Zeile zu leeren, oder <keyseq><key>Umschalt</key><key>↑</key><"
+"/keyseq> und <keyseq><key>Umschalt</"
+"key><key>↓</key></keyseq>, um die gewählte Spalte zu leeren."
 
 #. (itstool) path: page/title
 #: C/beginning.page:18
@@ -590,7 +605,8 @@ msgstr "Kachel in die Richtung der freien Position bewegen"
 
 #. (itstool) path: td/p
 #: C/shortcuts.page:48
-msgid "<key>Space</key>, <key>Return</key> and <key>KP_Enter</key>"
+#| msgid "<key>Space</key>, <key>Return</key> and <key>KP_Enter</key>"
+msgid "<key>Space</key>, <key>Return</key> and <key>Enter</key>"
 msgstr ""
 "<key>Leertaste</key>, <key>Eingabe</key> oder <key>Eingabe</key> auf "
 "Ziffernblock"
@@ -631,8 +647,8 @@ msgid ""
 "<keyseq><key>Shift</key><key>Left</key></keyseq> and <keyseq><key>Shift</"
 "key><key>Right</key></keyseq>"
 msgstr ""
-"<keyseq><key>Umschalt</key><key>←</key></keyseq> und "
-"<keyseq><key>Umschalt</key><key>→</key></keyseq>"
+"<keyseq><key>Umschalt</key><key>←</key></keyseq> und <keyseq><key>Umschalt</"
+"key><key>→</key></keyseq>"
 
 #. (itstool) path: td/p
 #: C/shortcuts.page:68
@@ -645,8 +661,8 @@ msgid ""
 "<keyseq><key>Shift</key><key>Up</key></keyseq> and <keyseq><key>Shift</"
 "key><key>Down</key></keyseq>"
 msgstr ""
-"<keyseq><key>Umschalt</key><key>↑</key></keyseq> und "
-"<keyseq><key>Umschalt</key><key>↓</key></keyseq>"
+"<keyseq><key>Umschalt</key><key>↑</key></keyseq> und <keyseq><key>Umschalt</"
+"key><key>↓</key></keyseq>"
 
 #. (itstool) path: section/title
 #: C/shortcuts.page:74
