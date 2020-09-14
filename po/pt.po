@@ -593,7 +593,6 @@ msgstr "Toyah (Wikimedia)"
 
 #. Translators: about dialog text; in the Credits, text at the end of the "Artwork by" section
 #: src/taquin-main.vala:656
-#, fuzzy
 #| msgid "(see COPYING.themes for informations)"
 msgid "(see COPYING.themes for information)"
 msgstr "(veja COPYING.themes para informação)"
