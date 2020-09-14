@@ -9,8 +9,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Taquin\n"
 "Report-Msgid-Bugs-To: https://gitlab.gnome.org/GNOME/gnome-taquin/issues\n"
-"POT-Creation-Date: 2020-05-30 09:57+0000\n"
-"PO-Revision-Date: 2020-09-14 10:15-0300\n"
+"POT-Creation-Date: 2020-09-14 13:16+0000\n"
+"PO-Revision-Date: 2020-09-14 10:22-0300\n"
 "Last-Translator: Juliano de Souza Camargo <julianosc@protonmail.com>\n"
 "Language-Team: Portuguese <>\n"
 "Language: pt\n"
@@ -97,13 +97,11 @@ msgstr "Usar a definição de luz noturna GNOME para ativar o modo noturno."
 #. range min="350"/ FIXME
 #. Translators: summary of a settings key, see 'dconf-editor /org/gnome/taquin/window-width'
 #: data/org.gnome.Taquin.gschema.xml:15
-#| msgid "Width of the window in pixels."
 msgid "The width of the window"
 msgstr "A largura da janela"
 
 #. Translators: summary of a settings key, see 'dconf-editor /org/gnome/taquin/window-width'
 #: data/org.gnome.Taquin.gschema.xml:17
-#| msgid "Width of the window in pixels."
 msgid "The width of the main window in pixels."
 msgstr "A largura da janela principal em pixels."
 
@@ -111,13 +109,11 @@ msgstr "A largura da janela principal em pixels."
 #. range min="284"/ FIXME
 #. Translators: summary of a settings key, see 'dconf-editor /org/gnome/taquin/window-height'
 #: data/org.gnome.Taquin.gschema.xml:24
-#| msgid "Height of the window in pixels."
 msgid "The height of the window"
 msgstr "A altura da janela"
 
 #. Translators: description of a settings key, see 'dconf-editor /org/gnome/taquin/window-height'
 #: data/org.gnome.Taquin.gschema.xml:26
-#| msgid "Height of the window in pixels."
 msgid "The height of the main window in pixels."
 msgstr "A altura da janela principal em pixels."
 
@@ -128,7 +124,6 @@ msgstr "Um parâmetro para ativar o modo maximizado"
 
 #. Translators: description of a settings key, see 'dconf-editor /org/gnome/taquin/window-is-maximized'
 #: data/org.gnome.Taquin.gschema.xml:33
-#| msgid "true if the window is maximized."
 msgid "If “true”, the main window starts in maximized mode."
 msgstr "Se verdadeiro, a janela principal inicia em modo maximizado."
 
@@ -183,7 +178,6 @@ msgstr "Iniciar um novo jogo"
 
 #. Translators: during a game, label of the New Game button (with a mnemonic that appears pressing Alt)
 #: data/ui/game-headerbar.ui:38
-#| msgid "_Start Game"
 msgid "_New Game"
 msgstr "_Novo jogo"
 
@@ -192,110 +186,134 @@ msgstr "_Novo jogo"
 msgid "Go back to the current game"
 msgstr "Voltar ao jogo atual"
 
-#: data/ui/help-overlay.ui:28
+#. Translators: in the Keyboard Shortcuts window, name of a section; contains “Start new game” and “Go back”
+#: data/ui/help-overlay.ui:29
 msgctxt "shortcut window"
 msgid "During game selection"
 msgstr "Seleção em jogo"
 
-#: data/ui/help-overlay.ui:32
-#| msgid "Start a new game"
+#. Translators: in the Keyboard Shortcuts window, section "During game selection"
+#: data/ui/help-overlay.ui:34
 msgctxt "shortcut window"
 msgid "Start new game"
 msgstr "Iniciar um novo jogo"
 
-#: data/ui/help-overlay.ui:39
+#. Translators: in the Keyboard Shortcuts window, section "During game selection"
+#: data/ui/help-overlay.ui:42
 msgctxt "shortcut window"
 msgid "Go back"
 msgstr "Recuar"
 
-#: data/ui/help-overlay.ui:48
+#. Translators: in the Keyboard Shortcuts window, name of a section; contains “New game”, “Restart game” and “Undo last move”
+#: data/ui/help-overlay.ui:52
 msgctxt "shortcut window"
 msgid "During a game"
 msgstr "Em jogo"
 
-#: data/ui/help-overlay.ui:52
+#. Translators: in the Keyboard Shortcuts window, section "During a game"
+#: data/ui/help-overlay.ui:57
 msgctxt "shortcut window"
 msgid "New game"
 msgstr "Novo jogo"
 
-#: data/ui/help-overlay.ui:59
-#| msgid "_Start Game"
+#. Translators: in the Keyboard Shortcuts window, section "During a game"
+#: data/ui/help-overlay.ui:65
 msgctxt "shortcut window"
 msgid "Restart game"
 msgstr "Recomeçar o jogo"
 
-#: data/ui/help-overlay.ui:66
-#| msgid "Undo your most recent move"
+#. Translators: in the Keyboard Shortcuts window, section "During a game"
+#: data/ui/help-overlay.ui:73
 msgctxt "shortcut window"
 msgid "Undo last move"
 msgstr "Desfazer a última jogada"
 
-#: data/ui/help-overlay.ui:75
-#| msgid "15-Puzzle"
+#. Translators: in the Keyboard Shortcuts window, section "During a game"
+#: data/ui/help-overlay.ui:81
+msgctxt "shortcut window"
+msgid "Toggle game menu"
+msgstr "Abrir menu do jogo"
+
+#. Translators: in the Keyboard Shortcuts window, name of a section; contains shortcuts specific to the 15-Puzzle game
+#: data/ui/help-overlay.ui:91
 msgctxt "shortcut window"
 msgid "15-Puzzle"
 msgstr "15-Puzzle"
 
-#: data/ui/help-overlay.ui:79
+#. Translators: in the Keyboard Shortcuts window, section "15-Puzzle"
+#: data/ui/help-overlay.ui:96
 msgctxt "shortcut window"
 msgid "Select tile to push on"
 msgstr "Selecionar a peça para empurrar"
 
-#: data/ui/help-overlay.ui:86
+#. Translators: in the Keyboard Shortcuts window, section "15-Puzzle"
+#: data/ui/help-overlay.ui:104
 msgctxt "shortcut window"
 msgid "Push on selected tile"
 msgstr "Empurrar a peça selecionada"
 
-#: data/ui/help-overlay.ui:95
-#| msgid "16-Puzzle"
+#. Translators: in the Keyboard Shortcuts window, name of a section; contains shortcuts specific to the 16-Puzzle game
+#: data/ui/help-overlay.ui:114
 msgctxt "shortcut window"
 msgid "16-Puzzle"
 msgstr "16-Puzzle"
 
-#: data/ui/help-overlay.ui:99
+#. Translators: in the Keyboard Shortcuts window, section "16-Puzzle"
+#: data/ui/help-overlay.ui:119
 msgctxt "shortcut window"
 msgid "Change selected column"
 msgstr "Alterar a coluna selecionada"
 
-#: data/ui/help-overlay.ui:106
+#. Translators: in the Keyboard Shortcuts window, section "16-Puzzle"
+#: data/ui/help-overlay.ui:127
 msgctxt "shortcut window"
 msgid "Change selected row"
 msgstr "Alterar a linha selecionada"
 
-#: data/ui/help-overlay.ui:113
+#. Translators: in the Keyboard Shortcuts window, section "16-Puzzle"
+#: data/ui/help-overlay.ui:135
 msgctxt "shortcut window"
 msgid "Swipe selected row"
 msgstr "Percorrer a coluna selecionada"
 
-#: data/ui/help-overlay.ui:120
+#. Translators: in the Keyboard Shortcuts window, section "16-Puzzle"
+#: data/ui/help-overlay.ui:143
 msgctxt "shortcut window"
 msgid "Swipe selected column"
 msgstr "Percorrer a linha selecionada"
 
-#: data/ui/help-overlay.ui:129
+#. Translators: in the Keyboard Shortcuts window, name of a section; contains generic shortcuts like F1, F10, etc.
+#: data/ui/help-overlay.ui:153
 msgctxt "shortcut window"
 msgid "Generic"
 msgstr "Geral"
 
-#: data/ui/help-overlay.ui:133
+#. Translators: in the Keyboard Shortcuts window, section "Generic"
+#: data/ui/help-overlay.ui:158
+msgctxt "shortcut window"
+msgid "Toggle main menu"
+msgstr "Abrir menu principal"
+
+#. Translators: in the Keyboard Shortcuts window, section "Generic"
+#: data/ui/help-overlay.ui:166
 msgctxt "shortcut window"
 msgid "Keyboard shortcuts"
 msgstr "Atalhos de teclado"
 
-#: data/ui/help-overlay.ui:140
-#| msgid "_Help"
+#. Translators: in the Keyboard Shortcuts window, section "Generic"
+#: data/ui/help-overlay.ui:174
 msgctxt "shortcut window"
 msgid "Help"
 msgstr "Ajuda"
 
-#: data/ui/help-overlay.ui:147
-#| msgid "_About"
+#. Translators: in the Keyboard Shortcuts window, section "Generic"
+#: data/ui/help-overlay.ui:182
 msgctxt "shortcut window"
 msgid "About"
 msgstr "Sobre"
 
-#: data/ui/help-overlay.ui:154
-#| msgid "_Quit"
+#. Translators: in the Keyboard Shortcuts window, section "Generic"
+#: data/ui/help-overlay.ui:190
 msgctxt "shortcut window"
 msgid "Quit"
 msgstr "Sair"
@@ -323,7 +341,6 @@ msgstr "Opções"
 #. Translators: on really small windows, the about dialog is replaced by an in-window view; here is the label of one of two buttons that have the same role as the stack switcher in the usual about dialog, the second is "Credits"
 #. Translators: on really small windows, the about dialog is replaced by an in-window view; here is the name of the view, displayed in the headerbar
 #: src/about-list.vala:44 src/base-headerbar.vala:288
-#| msgid "_About"
 msgid "About"
 msgstr "Sobre"
 
@@ -353,7 +370,6 @@ msgstr "Documentado por"
 
 #. Translators: on really small windows, the about dialog is replaced by an in-window view; here is the header of the translators names
 #: src/about-list.vala:166
-#| msgid "translator-credits"
 msgid "Translators"
 msgstr "Traduzido por"
 
@@ -430,7 +446,6 @@ msgstr "Bravo! Igualou sua melhor pontuação!"
 
 #. Translators: in-window notification; on both games, if the user solved the puzzle more than one time
 #: src/history-button.vala:129
-#| msgid "Bravo! You finished the game!"
 msgid "Bravo! You finished the game again."
 msgstr "Bravo! Terminou o jogo novamente!"
 
@@ -516,7 +531,6 @@ msgid "Numbers"
 msgstr "Números"
 
 #: src/taquin-main.vala:218
-#| msgid "Taquin"
 msgid "About Taquin"
 msgstr "Sobre o Taquin"
 
@@ -548,7 +562,6 @@ msgstr "Tema: Números ▾"
 #. Translators: when configuring a new game, button label for the theme, if the current theme has been added by the user; the %s is replaced by the theme name
 #: src/taquin-main.vala:536
 #, c-format
-#| msgid "Theme: Cats ▾"
 msgid "Theme: %s ▾"
 msgstr "Tema: %s ▾"
 
@@ -580,7 +593,9 @@ msgstr "Toyah (Wikimedia)"
 
 #. Translators: about dialog text; in the Credits, text at the end of the "Artwork by" section
 #: src/taquin-main.vala:656
-msgid "(see COPYING.themes for informations)"
+#, fuzzy
+#| msgid "(see COPYING.themes for informations)"
+msgid "(see COPYING.themes for information)"
 msgstr "(veja COPYING.themes para informação)"
 
 #. Translators: about dialog text crediting an author
