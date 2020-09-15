@@ -156,7 +156,7 @@ msgid ""
 "headerbar on the button with a counter of moves done, and click the "
 "<gui>Restart</gui> entry in the menu that appears."
 msgstr ""
-"També és possible que volgueu reiniciar la partida: cliqueu al botó del "
+"També és possible que vulgueu reiniciar la partida: cliqueu al botó del "
 "comptador de moviments de la barra de capçalera i seleccioneu "
 "<gui>Reinicia</gui> al menú desplegable."
 
@@ -218,8 +218,8 @@ msgid ""
 "Alternatively, you may want to restart the game. For that, use "
 "<keyseq><key>Shift</key><key>Ctrl</key><key>N</key></keyseq>."
 msgstr ""
-"També es possible que volgueu reiniciar la partida: utilitzeu "
-"<keyseq><key>Shift</key><key>Ctrl</key><key>N</key></keyseq>."
+"També és possible que vulgueu reiniciar la partida: utilitzeu "
+"<keyseq><key>Maj</key><key>Ctrl</key><key>N</key></keyseq>."
 
 #. (itstool) path: section/p
 #: C/15-Puzzle.page:92 C/16-Puzzle.page:86
@@ -285,10 +285,10 @@ msgid ""
 "<keyseq><key>Shift</key><key>Down</key></keyseq> to swipe the selected "
 "column."
 msgstr ""
-"Utilitzeu <keyseq><key>Shift</key><key>Esquerra</key></keyseq> i "
-"<keyseq><key>Shift</key><key>Dreta</key></keyseq> per a desplaçar la fila "
-"seleccionada, o <keyseq><key>Shift</key><key>Amunt</key></keyseq> i "
-"<keyseq><key>Shift</key><key>Avall</key></keyseq> per a desplaçar la columna"
+"Utilitzeu <keyseq><key>Maj</key><key>Esquerra</key></keyseq> i "
+"<keyseq><key>Maj</key><key>Dreta</key></keyseq> per a desplaçar la fila "
+"seleccionada, o <keyseq><key>Maj</key><key>Amunt</key></keyseq> i "
+"<keyseq><key>Maj</key><key>Avall</key></keyseq> per a desplaçar la columna"
 " seleccionada."
 
 #. (itstool) path: page/title
@@ -539,7 +539,7 @@ msgstr "Reinicia la partida"
 #. (itstool) path: td/p
 #: C/shortcuts.page:31 C/shortcuts.page:78
 msgid "<keyseq><key>Shift</key><key>Ctrl</key><key>N</key></keyseq>"
-msgstr "<keyseq><key>Shift</key><key>Ctrl</key><key>N</key></keyseq>"
+msgstr "<keyseq><key>Maj</key><key>Ctrl</key><key>N</key></keyseq>"
 
 #. (itstool) path: td/p
 #: C/shortcuts.page:34
@@ -613,8 +613,8 @@ msgid ""
 "<keyseq><key>Shift</key><key>Left</key></keyseq> and "
 "<keyseq><key>Shift</key><key>Right</key></keyseq>"
 msgstr ""
-"<keyseq><key>Shift</key><key>Esquerra</key></keyseq> i "
-"<keyseq><key>Shift</key><key>Dreta</key></keyseq>"
+"<keyseq><key>Maj</key><key>Esquerra</key></keyseq> i "
+"<keyseq><key>Maj</key><key>Dreta</key></keyseq>"
 
 #. (itstool) path: td/p
 #: C/shortcuts.page:68
@@ -627,8 +627,8 @@ msgid ""
 "<keyseq><key>Shift</key><key>Up</key></keyseq> and "
 "<keyseq><key>Shift</key><key>Down</key></keyseq>"
 msgstr ""
-"<keyseq><key>Shift</key><key>Amunt</key></keyseq> i "
-"<keyseq><key>Shift</key><key>Avall</key></keyseq>"
+"<keyseq><key>Maj</key><key>Amunt</key></keyseq> i "
+"<keyseq><key>Maj</key><key>Avall</key></keyseq>"
 
 #. (itstool) path: section/title
 #: C/shortcuts.page:74
@@ -683,7 +683,7 @@ msgstr "Quant a"
 #. (itstool) path: td/p
 #: C/shortcuts.page:99
 msgid "<keyseq><key>Shift</key><key>F1</key></keyseq>"
-msgstr "<keyseq><key>Shift</key><key>F1</key></keyseq>"
+msgstr "<keyseq><key>Maj</key><key>F1</key></keyseq>"
 
 #. (itstool) path: td/p
 #: C/shortcuts.page:102
