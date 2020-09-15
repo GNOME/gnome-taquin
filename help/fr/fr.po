@@ -8,8 +8,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: gnome-taquin master\n"
-"POT-Creation-Date: 2019-10-26 17:42+0000\n"
-"PO-Revision-Date: 2020-03-03 11:19+0100\n"
+"POT-Creation-Date: 2020-07-05 21:02+0000\n"
+"PO-Revision-Date: 2020-09-14 16:21+0200\n"
 "Last-Translator: Charles Monzat <charles.monzat@free.fr>\n"
 "Language-Team: GNOME French Team <gnomefr@traduc.org>\n"
 "Language: fr\n"
@@ -17,7 +17,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n > 1);\n"
-"X-Generator: Gtranslator 3.34.0\n"
+"X-Generator: Gtranslator 3.36.0\n"
 
 #. Put one translator per line, in the form NAME <EMAIL>, YEAR1, YEAR2
 msgctxt "_"
@@ -25,7 +25,7 @@ msgid "translator-credits"
 msgstr ""
 "Arnaud Outtier <arnoutti@gmail.com>, 2015 \n"
 "Julien Hardelin <jhardlin@orange.fr>, 2016\n"
-"Charles Monzat <charles.monzat@free.fr>, 2018-2019"
+"Charles Monzat <charles.monzat@free.fr>, 2018-2020"
 
 #. (itstool) path: credit/name
 #: C/15-Puzzle.page:10 C/16-Puzzle.page:10 C/beginning.page:10 C/index.page:12
@@ -54,7 +54,7 @@ msgstr ""
 "<em>Pousse-pousse</em> est le puzzle par défaut de <app>Taquin</app>. Il est "
 "affiché lors de la première ouverture de l’application. Vous pouvez "
 "commencer une partie à tout moment à partir de l’<link xref=\"start-screen"
-"\">Écran de démarrage</link>."
+"\">écran de démarrage</link>."
 
 #. (itstool) path: section/title
 #: C/15-Puzzle.page:23 C/16-Puzzle.page:23
@@ -99,7 +99,7 @@ msgid ""
 "then on the <gui>Restart</gui> entry."
 msgstr ""
 "Vous pouvez cliquer sur le bouton <gui>Nouvelle partie</gui> situé dans la "
-"barre d’en-tête pour accéder à l’<link xref=\"start-screen\">Écran de "
+"barre d’en-tête pour accéder à l’<link xref=\"start-screen\">écran de "
 "démarrage</link>. Vous pouvez également recommencer la partie en cliquant "
 "sur le bouton doté d’un compteur de déplacements effectués, puis en cliquant "
 "sur l’entrée <gui>Recommencer</gui>."
@@ -155,7 +155,7 @@ msgid ""
 msgstr ""
 "Pour commencer une nouvelle partie – éventuellement avec d’autres options –, "
 "cliquez sur le bouton <gui>Nouvelle partie</gui> situé dans la barre d’en-"
-"tête pour accéder à l’<link xref=\"start-screen\">Écran de démarrage</link>."
+"tête pour accéder à l’<link xref=\"start-screen\">écran de démarrage</link>."
 
 #. (itstool) path: item/p
 #: C/15-Puzzle.page:58 C/16-Puzzle.page:55
@@ -203,34 +203,43 @@ msgstr ""
 
 #. (itstool) path: item/p
 #: C/15-Puzzle.page:78 C/16-Puzzle.page:72
+#| msgid ""
+#| "You can always undo your move. For that, use the <keyseq><key>Ctrl</"
+#| "key><key>Z</key></keyseq> keys sequence."
 msgid ""
-"You can always undo your move. For that, use the <keyseq><key>Ctrl</"
-"key><key>Z</key></keyseq> keys sequence."
+"You can always undo your move. For that, use <keyseq><key>Ctrl</key><key>Z</"
+"key></keyseq>."
 msgstr ""
-"Vous pouvez toujours annuler votre déplacement. Pour cela, utilisez la "
-"combinaison de touches <keyseq><key>Ctrl</key><key>Z</key></keyseq>."
+"Vous pouvez toujours annuler votre déplacement. Pour cela, utilisez "
+"<keyseq><key>Ctrl</key><key>Z</key></keyseq>."
 
 #. (itstool) path: item/p
 #: C/15-Puzzle.page:85 C/16-Puzzle.page:79
+#| msgid ""
+#| "To start a new game –possibly with other options–, use the "
+#| "<keyseq><key>Ctrl</key><key>N</key></keyseq> keys sequence to go to the "
+#| "<link xref=\"start-screen\">Start Screen</link>."
 msgid ""
-"To start a new game –possibly with other options–, use the "
-"<keyseq><key>Ctrl</key><key>N</key></keyseq> keys sequence to go to the "
-"<link xref=\"start-screen\">Start Screen</link>."
+"To start a new game –possibly with other options–, use <keyseq><key>Ctrl</"
+"key><key>N</key></keyseq> to go to the <link xref=\"start-screen\">Start "
+"Screen</link>."
 msgstr ""
 "Pour commencer une nouvelle partie – éventuellement avec d’autres options –, "
-"utilisez la combinaison de touches <keyseq><key>Ctrl</key><key>N</key></"
-"keyseq> pour accéder à l’<link xref=\"start-screen\">Écran de Démarrage</"
-"link>."
+"utilisez <keyseq><key>Ctrl</key><key>N</key></keyseq> pour accéder à l’<link "
+"xref=\"start-screen\">écran de démarrage</link>."
 
 #. (itstool) path: item/p
 #: C/15-Puzzle.page:88 C/16-Puzzle.page:82
+#| msgid ""
+#| "Alternatively, you may want to restart the game. For that, use the "
+#| "<keyseq><key>Shift</key><key>Ctrl</key><key>N</key></keyseq> keys "
+#| "sequence."
 msgid ""
-"Alternatively, you may want to restart the game. For that, use the "
-"<keyseq><key>Shift</key><key>Ctrl</key><key>N</key></keyseq> keys sequence."
+"Alternatively, you may want to restart the game. For that, use "
+"<keyseq><key>Shift</key><key>Ctrl</key><key>N</key></keyseq>."
 msgstr ""
 "Vous pouvez également souhaiter recommencer la partie. Pour cela, utilisez "
-"la combinaison de touches <keyseq><key>Maj</key><key>Ctrl</key><key>N</key></"
-"keyseq>."
+"<keyseq><key>Maj</key><key>Ctrl</key><key>N</key></keyseq>."
 
 #. (itstool) path: section/p
 #: C/15-Puzzle.page:92 C/16-Puzzle.page:86
@@ -250,7 +259,7 @@ msgid ""
 "link>."
 msgstr ""
 "<em>Glisse-glisse</em> est une variante du puzzle <app>Taquin</app>. Vous "
-"pouvez la lancer depuis l’<link xref=\"start-screen\">Écran de Démarrage</"
+"pouvez la lancer depuis l’<link xref=\"start-screen\">écran de démarrage</"
 "link>."
 
 #. (itstool) path: section/p
@@ -292,19 +301,23 @@ msgstr ""
 
 #. (itstool) path: item/p
 #: C/16-Puzzle.page:69
+#| msgid ""
+#| "Use the <keyseq><key>Shift</key><key>Left</key></keyseq> and "
+#| "<keyseq><key>Shift</key><key>Right</key></keyseq> keys sequences to swipe "
+#| "the selected row, or the <keyseq><key>Shift</key><key>Up</key></keyseq> "
+#| "and <keyseq><key>Shift</key><key>Down</key></keyseq> keys sequences to "
+#| "swipe the selected column."
 msgid ""
-"Use the <keyseq><key>Shift</key><key>Left</key></keyseq> and "
-"<keyseq><key>Shift</key><key>Right</key></keyseq> keys sequences to swipe "
-"the selected row, or the <keyseq><key>Shift</key><key>Up</key></keyseq> and "
-"<keyseq><key>Shift</key><key>Down</key></keyseq> keys sequences to swipe the "
-"selected column."
+"Use <keyseq><key>Shift</key><key>Left</key></keyseq> and <keyseq><key>Shift</"
+"key><key>Right</key></keyseq> to swipe the selected row, or "
+"<keyseq><key>Shift</key><key>Up</key></keyseq> and <keyseq><key>Shift</"
+"key><key>Down</key></keyseq> to swipe the selected column."
 msgstr ""
-"Utilisez la combinaison de touches <keyseq><key>Maj</key><key>Flèche gauche</"
-"key></keyseq> et <keyseq><key>Maj</key><key>Flèche droite</key></keyseq> "
-"pour faire glisser la ligne sélectionnée, ou la combinaison de touches "
-"<keyseq><key>Maj</key><key>Flèche haut</key></keyseq> et <keyseq><key>Maj</"
-"key><key>Flèche bas</key></keyseq> pour faire glisser la colonne "
-"sélectionnée."
+"Utilisez <keyseq><key>Maj</key><key>Flèche gauche</key></keyseq> et "
+"<keyseq><key>Maj</key><key>Flèche droite</key></keyseq> pour faire glisser "
+"la ligne sélectionnée, ou <keyseq><key>Maj</key><key>Flèche haut</key></"
+"keyseq> et <keyseq><key>Maj</key><key>Flèche bas</key></keyseq> pour faire "
+"glisser la colonne sélectionnée."
 
 #. (itstool) path: page/title
 #: C/beginning.page:18
@@ -334,7 +347,7 @@ msgid ""
 msgstr ""
 "Pour commencer une nouvelle partie – que vous ayez terminé ou non la partie "
 "en cours –, cliquez sur le bouton <gui>Nouvelle partie</gui> situé dans la "
-"barre d’en-tête pour accéder à l’<link xref=\"start-screen\">Écran de "
+"barre d’en-tête pour accéder à l’<link xref=\"start-screen\">écran de "
 "démarrage</link>."
 
 #. (itstool) path: page/p
@@ -589,7 +602,8 @@ msgstr "Pousser la pièce en direction de l’espace vide"
 
 #. (itstool) path: td/p
 #: C/shortcuts.page:48
-msgid "<key>Space</key>, <key>Return</key> and <key>KP_Enter</key>"
+#| msgid "<key>Space</key>, <key>Return</key> and <key>KP_Enter</key>"
+msgid "<key>Space</key>, <key>Return</key> and <key>Enter</key>"
 msgstr ""
 "<key>Espace</key>, <key>Entrée</key> et <key>Entrée</key> du clavier "
 "numérique"
@@ -724,7 +738,7 @@ msgid ""
 "new game, either a <link xref=\"15-Puzzle\">15-Puzzle</link> or a <link xref="
 "\"16-Puzzle\">16-Puzzle</link>."
 msgstr ""
-"L’<em>Écran de démarrage</em> permet de sélectionner les options et de "
+"L’<em>écran de démarrage</em> permet de sélectionner les options et de "
 "lancer un nouveau jeu, soit un <link xref=\"15-Puzzle\">Pousse-pousse</"
 "link>, soit un <link xref=\"16-Puzzle\">Glisse-glisse</link>."
 
