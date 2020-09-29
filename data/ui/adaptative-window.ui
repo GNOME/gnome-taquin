@@ -22,6 +22,5 @@
     <property name="width-request">350</property>   <!-- 360px max for Purism Librem 5 portrait, for 648px height; update gschema also -->
     <signal name="map"                  handler="init_state_watcher"/>
     <signal name="size-allocate"        handler="on_size_allocate"/>
-    <signal name="destroy"              handler="on_destroy"/>
   </template>
 </interface>
