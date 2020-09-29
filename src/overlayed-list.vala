@@ -147,7 +147,7 @@ private abstract class OverlayedList : Widget, AdaptativeWidget
     }
     private static inline bool _previous_match (ref ListBox main_list_box)
     {
-        uint n_items = main_list_box.get_children ().length ();  // FIXME OverlayedList.n_items is unreliable
+        uint n_items = main_list_box.observe_children ().get_n_items ();  // FIXME using observe_children() is a bad idea, see docs
         if (n_items == 0)
             return false;
 
