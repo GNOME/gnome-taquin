@@ -110,23 +110,23 @@ private class GameActionBarPlaceHolder : Widget, AdaptativeWidget
     internal GameActionBarPlaceHolder (GameActionBar _actionbar)
     {
         actionbar = _actionbar;
-        actionbar.size_allocate.connect (set_height);
-        set_height ();
+//        actionbar.size_allocate.connect (set_height);
+//        set_height ();
         revealer.set_reveal_child (true);    // seems like setting it in the UI file does not work, while it is OK for GameActionBar...
     }
 
-    private void set_height ()
-    {
-        Requisition natural_size;
-        Widget? widget = actionbar.get_first_child ();
-        if (widget == null || !(widget is Revealer))
-            assert_not_reached ();
-        widget = ((Revealer) (!) widget).get_child ();
-        if (widget == null)
-            return;
-        ((!) widget).get_preferred_size (/* minimum size */ null, out natural_size);
-        placeholder_child.height_request = natural_size.height;
-    }
+//    private void set_height ()
+//    {
+//        Requisition natural_size;
+//        Widget? widget = actionbar.get_first_child ();
+//        if (widget == null || !(widget is Revealer))
+//            assert_not_reached ();
+//        widget = ((Revealer) (!) widget).get_child ();
+//        if (widget == null)
+//            return;
+//        ((!) widget).get_preferred_size (/* minimum size */ null, out natural_size);
+//        placeholder_child.height_request = natural_size.height;
+//    }
 
     /*\
     * * adaptative stuff
