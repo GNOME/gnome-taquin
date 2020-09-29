@@ -229,6 +229,7 @@ private abstract class AdaptativeWindow : ApplicationWindow
             assert_not_reached ();
         surface = (Gdk.Toplevel) (!) nullable_surface;
         surface.notify ["state"].connect (on_window_state_event);
+        surface.size_changed.connect (on_size_changed);
     }
 
     private Gdk.Toplevel surface;
@@ -259,8 +260,7 @@ private abstract class AdaptativeWindow : ApplicationWindow
     protected abstract void on_fullscreen ();
     protected abstract void on_unfullscreen ();
 
-    [GtkCallback]
-    private void on_size_allocate (int width, int height)
+    private inline void on_size_changed (Gdk.Surface _surface, int width, int height)
     {
         update_adaptative_children (ref width, ref height);
         update_window_state ();
