@@ -90,7 +90,6 @@ private class TaquinView : Gtk.Widget
         init_keyboard ();
 
         drawing.set_draw_func (draw);
-        drawing.size_allocate.connect (on_size_allocate);
     }
 
     private Game? _game = null;
@@ -116,7 +115,6 @@ private class TaquinView : Gtk.Widget
             x_arrow = 0;
             y_arrow = 0;
             tiles_pattern = null;
-            configure ();
             ((!) _game).move.connect (move_cb);
             ((!) _game).complete.connect (complete_cb);
             drawing.queue_draw ();
@@ -140,14 +138,17 @@ private class TaquinView : Gtk.Widget
         }
     }
 
-    private inline void on_size_allocate ()
+    private int old_width  = 0;
+    private int old_height = 0;
+    private inline void configure (int new_width, int new_height)
     {
-        configure ();
-    }
+        if (old_width  == new_width
+         && old_height == new_height)
+            return;
+        old_width  = new_width;
+        old_height = new_height;
 
-    private void configure ()
-    {
-        var size = int.min (drawing.get_allocated_width (), drawing.get_allocated_height ());
+        var size = int.min (new_width, new_height);
         /* tile_size includes a grid spacing */
         tile_size = (size * 10 / 12) / game.size;
         board_size = tile_size * game.size - GRID_SPACING;
@@ -157,6 +158,7 @@ private class TaquinView : Gtk.Widget
 
     private void draw (Gtk.DrawingArea _this, Cairo.Context cr, int width, int height)
     {
+        configure (width, height);
         if (tiles_pattern == null || render_size != tile_size)
         {
             render_size = tile_size;
