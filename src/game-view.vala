@@ -36,7 +36,7 @@ private class GameView : BaseView, AdaptativeWidget
         game_stack.vexpand = true;
         main_grid.add (game_stack);
 
-        scrolled = new ScrolledWindow (null, null);
+        scrolled = new ScrolledWindow ();
         scrolled.visible = true;
         game_stack.add (scrolled);
 
