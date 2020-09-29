@@ -448,7 +448,7 @@ private class BaseWindow : AdaptativeWindow, AdaptativeWidget
             about_dialog.set_transient_for (this);
             should_init_about_dialog = false;
         }
-        about_dialog.run ();
+        about_dialog.present ();
     }
     private inline bool on_about_dialog_key_pressed (Gtk.EventControllerKey _about_dialog_key_controller, uint keyval, uint keycode, Gdk.ModifierType state)
     {
