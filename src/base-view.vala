@@ -21,7 +21,7 @@ using Gtk;
 private class BaseView : Widget, AdaptativeWidget
 {
     [GtkChild] private Stack stack;
-    [GtkChild] protected Grid main_grid;
+    [GtkChild] protected Box main_box;
 
     internal virtual bool handle_copy_text (out string copy_text)
     {
@@ -98,7 +98,7 @@ private class BaseView : Widget, AdaptativeWidget
                                     /* big placeholder */ true,
                                     ref artists, ref authors, ref comments, ref copyright, ref documenters, ref logo_icon_name, ref program_name, ref translator_credits, ref version, ref website, ref website_label);
         about_list.set_window_size (saved_window_size);
-        stack.add (about_list);
+        stack.add_child (about_list);
         about_list_created = true;
     }
 

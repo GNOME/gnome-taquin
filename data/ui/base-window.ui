@@ -22,7 +22,7 @@
     <child>
       <object class="GtkOverlay" id="main_overlay">
         <child>
-          <object class="GtkGrid" id="main_grid">
+          <object class="GtkBox" id="main_box">
             <property name="orientation">vertical</property>
           </object>
         </child>

@@ -34,21 +34,21 @@ private class GameView : BaseView, AdaptativeWidget
         game_stack = new Stack ();
         game_stack.hexpand = true;
         game_stack.vexpand = true;
-        main_grid.add (game_stack);
+        main_box.append (game_stack);
 
         scrolled = new ScrolledWindow ();
         scrolled.visible = true;
-        game_stack.add (scrolled);
+        game_stack.add_child (scrolled);
 
         new_game_box = new Box (Orientation.VERTICAL, /* spacing */ 0);
         new_game_box.halign = Align.CENTER;
         new_game_box.valign = Align.CENTER;
-        scrolled.add (new_game_box);
+        scrolled.set_child (new_game_box);
     }
 
     internal GameView (GameWindowFlags flags, Box new_game_screen, Widget content, GameActionBarPlaceHolder actionbar_placeholder)
     {
-        new_game_box.add (new_game_screen);
+        new_game_box.append (new_game_screen);
 
         if (GameWindowFlags.SHOW_START_BUTTON in flags)
         {
@@ -62,7 +62,7 @@ private class GameView : BaseView, AdaptativeWidget
             context.add_class ("suggested-action");
             /* Translators: when configuring a new game, tooltip text of the blue Start button */
             // _start_game_button.set_tooltip_text (_("Start a new game as configured"));
-            new_game_box.add (_start_game_button);
+            new_game_box.append (_start_game_button);
             start_game_button = _start_game_button;
         }
 
@@ -75,14 +75,14 @@ private class GameView : BaseView, AdaptativeWidget
         // during a transition, Stack doesn’t apply correctly its child CSS padding or margin; so add padding/margin to a box inside a box
         Box game_box_2 = new Box (Orientation.HORIZONTAL, 0);
         game_box_2.get_style_context ().add_class ("game-box");
-        game_box_2.add (game_content);
+        game_box_2.append (game_content);
 
-        game_box_1.add (game_box_2);
-        game_box_1.add (actionbar_placeholder);
+        game_box_1.append (game_box_2);
+        game_box_1.append (actionbar_placeholder);
 
         // for the new-game-screen-to-game animation, it is probably better to have the game under ("uncovered")
 //        game_box.insert_before (game_stack, game_stack.get_first_child ());
-        game_stack.add (game_box_1);
+        game_stack.add_child (game_box_1);
         content.can_focus = true;
     }
 
