@@ -23,6 +23,11 @@ using Gtk;
 [GtkTemplate (ui = "/org/gnome/Taquin/ui/history-button.ui")]
 private class HistoryButton : ToggleButton
 {
+    /* Translators: accessible name of the history menubutton */
+    private const string str1 = _("History");
+    /* Translators: accessible description of the history menubutton */
+    private const string str2 = _("Game history menu");
+
     ulong toggled_handler = 0;
     ulong close_handler = 0;
     private PopoverMenu popover;
