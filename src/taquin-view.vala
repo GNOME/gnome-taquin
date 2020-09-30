@@ -81,6 +81,8 @@ private class TaquinView : Gtk.Widget
         Gtk.BinLayout layout = new Gtk.BinLayout ();
         set_layout_manager (layout);
 
+        focusable = true;
+
         drawing = new Gtk.DrawingArea ();
         drawing.hexpand = true;
         drawing.vexpand = true;
