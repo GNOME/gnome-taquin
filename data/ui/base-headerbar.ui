@@ -21,7 +21,7 @@
     <child>
       <object class="GtkHeaderBar" id="headerbar">
         <property name="show-title-buttons">True</property>
-        <property name="has-subtitle">False</property>
+<!--        <property name="has-subtitle">False</property>-->
         <child type="start">
           <object class="GtkButton" id="go_back_button">
             <property name="visible">False</property>
