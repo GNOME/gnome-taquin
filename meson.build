@@ -1,5 +1,5 @@
 project('gnome-taquin', 'vala', 'c',
-    version: '3.38.0')
+    version: '3.38.1')
 
 project_id = 'org.gnome.Taquin'
 
