@@ -271,8 +271,8 @@ msgid ""
 "selected row. The currently selected row and column are indicated with "
 "lights around the board."
 msgstr ""
-"Utilitzeu les fletxes <key>Esquerra</key> i <key>Dreta</key> per a canviar "
-"la columna seleccionada, i les fletxes <key>Amunt</key> i <key>Avall</key> "
+"Utilitzeu les fletxes <key>Fletxa esquerra</key> i <key>Fletxa dreta</key> per a canviar "
+"la columna seleccionada, i les fletxes <key>Fletxa amunt</key> i <key>Fletxa avall</key> "
 "per a canviar la fila seleccionada. La fila i la columna seleccionades es "
 "mostren ressaltades al voltant del tauler."
 
@@ -285,10 +285,10 @@ msgid ""
 "<keyseq><key>Shift</key><key>Down</key></keyseq> to swipe the selected "
 "column."
 msgstr ""
-"Utilitzeu <keyseq><key>Maj</key><key>Esquerra</key></keyseq> i "
-"<keyseq><key>Maj</key><key>Dreta</key></keyseq> per a desplaçar la fila "
-"seleccionada, o <keyseq><key>Maj</key><key>Amunt</key></keyseq> i "
-"<keyseq><key>Maj</key><key>Avall</key></keyseq> per a desplaçar la columna"
+"Utilitzeu <keyseq><key>Maj</key><key>Fletxa esquerra</key></keyseq> i "
+"<keyseq><key>Maj</key><key>Fletxa dreta</key></keyseq> per a desplaçar la fila "
+"seleccionada, o <keyseq><key>Maj</key><key>Fletxa amunt</key></keyseq> i "
+"<keyseq><key>Maj</key><key>Fletxa avall</key></keyseq> per a desplaçar la columna"
 " seleccionada."
 
 #. (itstool) path: page/title
@@ -590,7 +590,7 @@ msgstr "Canvia la columna seleccionada"
 #. (itstool) path: td/p
 #: C/shortcuts.page:57
 msgid "<key>Left</key> and <key>Right</key>"
-msgstr "<key>Esquerra</key> i <key>Dreta</key>"
+msgstr "<key>Fletxa esquerra</key> i <key>Fletxa dreta</key>"
 
 #. (itstool) path: td/p
 #: C/shortcuts.page:60
@@ -613,8 +613,8 @@ msgid ""
 "<keyseq><key>Shift</key><key>Left</key></keyseq> and "
 "<keyseq><key>Shift</key><key>Right</key></keyseq>"
 msgstr ""
-"<keyseq><key>Maj</key><key>Esquerra</key></keyseq> i "
-"<keyseq><key>Maj</key><key>Dreta</key></keyseq>"
+"<keyseq><key>Maj</key><key>Fletxa esquerra</key></keyseq> i "
+"<keyseq><key>Maj</key><key>Fletxa dreta</key></keyseq>"
 
 #. (itstool) path: td/p
 #: C/shortcuts.page:68
