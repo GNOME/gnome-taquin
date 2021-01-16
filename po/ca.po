@@ -44,7 +44,7 @@ msgid ""
 "either indicated with numbers, or with parts of a great image."
 msgstr ""
 "L'objectiu del Taquin és moure les fitxes perquè arribin als seus llocs, "
-"indicat per nombres o bé per ser parts d'una imatge més gran."
+"indicat per nombres o bé per a ser parts d'una imatge més gran."
 
 #: data/org.gnome.Taquin.appdata.xml.in:21
 msgid "A GNOME taquin game preview"
@@ -106,7 +106,7 @@ msgstr "Un senyalador per a seguir la llum nocturna del sistema"
 #: data/org.gnome.Taquin.gschema.xml:8
 msgid "Use GNOME night light setting to activate night-mode."
 msgstr ""
-"Usa la configuració de la llum nocturna del GNOME per activar el mode "
+"Usa la configuració de la llum nocturna del GNOME per a activar el mode "
 "nocturn."
 
 #. see AdaptativeWindow.width-request at data/ui/adaptative-window.ui:22
@@ -141,7 +141,7 @@ msgstr "L'alçada de la finestra principal en píxels."
 #. /org/gnome/taquin/window-is-maximized'
 #: data/org.gnome.Taquin.gschema.xml:31
 msgid "A flag to enable maximized mode"
-msgstr "Un senyalador per habilitar el mode maximitzat"
+msgstr "Un senyalador per a habilitar el mode maximitzat"
 
 #. Translators: description of a settings key, see 'dconf-editor
 #. /org/gnome/taquin/window-is-maximized'
@@ -162,8 +162,8 @@ msgid ""
 "The game offers to play with a board size from 3 to 5. The setting could be "
 "set from 2 (good for testing) to 9, limited by the way files are selected."
 msgstr ""
-"El joc ofereix jugar amb un tauler de mida 3 a 5. Es pot configurar des de 2"
-" (per fer proves) fins a 9, limitat per la manera que se seleccionen els "
+"El joc ofereix jugar amb un tauler de mida 3 a 5. Es pot configurar des de 2 "
+"(per a fer proves) fins a 9, limitat per la manera que se seleccionen els "
 "fitxers."
 
 #. Translators: summary of a settings key, see 'dconf-editor
@@ -628,14 +628,14 @@ msgstr "No podeu moure aquesta fitxa"
 #. keyboard use, displayed if the user uses an unmeaningful keyboard key
 #: src/taquin-main.vala:449
 msgid "Use Shift and an arrow to move tiles!"
-msgstr "Useu la tecla de majúscules i les fletxes per moure els mosaics"
+msgstr "Useu la tecla de majúscules i les fletxes per a moure els mosaics"
 
 #. Translators: in-window notification; on the 16-Puzzle game, if the user
 #. clicks on a tile of the board (the game is played using mouse with arrows
 #. around the board)
 #: src/taquin-main.vala:453
 msgid "Click on the arrows to move tiles!"
-msgstr "Feu clic a les fletxes per moure els mosaics"
+msgstr "Feu clic a les fletxes per a moure els mosaics"
 
 #. Translators: when configuring a new game, button label for the theme, if
 #. the current theme is Cats
