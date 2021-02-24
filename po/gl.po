@@ -2,22 +2,22 @@
 # English (United Kingdom) translations for PACKAGE package.
 # Copyright (C) 2015 THE PACKAGE'S COPYRIGHT HOLDER
 # This file is distributed under the same license as the PACKAGE package.
-# Fran Dieguez <frandieguez@gnome.org>, 2015-2020.
 #
+# Fran Dieguez <frandieguez@gnome.org>, 2015-2020, 2021.
 msgid ""
 msgstr ""
 "Project-Id-Version: unnamed project\n"
 "Report-Msgid-Bugs-To: https://gitlab.gnome.org/GNOME/gnome-taquin/issues\n"
-"POT-Creation-Date: 2020-06-13 18:47+0000\n"
-"PO-Revision-Date: 2020-08-13 00:51+0200\n"
-"Last-Translator: Fran Dieguez <frandieguez@gnome.org>\n"
-"Language-Team: Galician <proxecto@trasno.gal>\n"
+"POT-Creation-Date: 2020-10-03 15:21+0000\n"
+"PO-Revision-Date: 2021-02-24 20:00+0100\n"
+"Last-Translator: Fran Diéguez <frandieguez@gnome.org>\n"
+"Language-Team: Proxecto Trasno <proxecto@trasno.gal>\n"
 "Language: gl\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n != 1)\n"
-"X-Generator: Gtranslator 3.36.0\n"
+"X-Generator: Gtranslator 3.38.0\n"
 
 #: data/org.gnome.Taquin.appdata.xml.in:7
 msgid "GNOME Taquin"
@@ -124,7 +124,7 @@ msgstr "Unha bandeira para activar o modo maximizado"
 #. Translators: description of a settings key, see 'dconf-editor /org/gnome/taquin/window-is-maximized'
 #: data/org.gnome.Taquin.gschema.xml:33
 msgid "If “true”, the main window starts in maximized mode."
-msgstr "Se é «verdadeiro», a xanela principa iniciarase maximizada."
+msgstr "Se é «verdadeiro», a xanela principal iniciarase maximizada."
 
 #. Translators: summary of a settings key, see 'dconf-editor /org/gnome/taquin/size'
 #: data/org.gnome.Taquin.gschema.xml:51
@@ -244,7 +244,7 @@ msgstr "Quebracabezas 15"
 #: data/ui/help-overlay.ui:96
 msgctxt "shortcut window"
 msgid "Select tile to push on"
-msgstr "Seleccione a tesela que empurar"
+msgstr "Seleccione a tesela que empurrar"
 
 #. Translators: in the Keyboard Shortcuts window, section "15-Puzzle"
 #: data/ui/help-overlay.ui:104
@@ -355,7 +355,7 @@ msgid ""
 "GNU General Public License\n"
 "version 3 or later"
 msgstr ""
-"Licenza Públixa Xeral de GNU\n"
+"Licenza Pública Xeral de GNU\n"
 "versión 3 e posterior"
 
 #. Translators: on really small windows, the about dialog is replaced by an in-window view; here is the header of the programmers names
@@ -463,7 +463,7 @@ msgstr "Tamaño: %d × %d ▾"
 #. Translators: command-line option description, see 'gnome-taquin --help'
 #: src/taquin-main.vala:52
 msgid "Play the classical 1880s’ 15-puzzle"
-msgstr "Xogue o quebracabezas clasico do 1880"
+msgstr "Xogue o quebracabezas clásico do 1880"
 
 #. Translators: command-line option description, see 'gnome-taquin --help'
 #: src/taquin-main.vala:55
@@ -499,7 +499,7 @@ msgstr "Mostra a versión de publicación e sae"
 #. Translators: when configuring a new game, entry in the menu of the game size menubutton; the "\t" is a tabulation; after is indicated an estimated time for solving the puzzle (1 minute)
 #: src/taquin-main.vala:161 src/taquin-main.vala:172
 msgid "3 × 3\t1 minute"
-msgstr "3 × 3\t1 minutO"
+msgstr "3 × 3\t1 minuto"
 
 #. Translators: when configuring a new game, entry in the menu of the game size menubutton; the "\t" is a tabulation; after is indicated an estimated time for solving the puzzle (5 minutes)
 #: src/taquin-main.vala:164
@@ -543,7 +543,7 @@ msgstr "Pode mover esta tesela!"
 #. Translators: in-window notification; on the 16-Puzzle game, help for keyboard use, displayed if the user uses an unmeaningful keyboard key
 #: src/taquin-main.vala:449
 msgid "Use Shift and an arrow to move tiles!"
-msgstr "Use Maiús e unnha fercha para mover as teselas!"
+msgstr "Use Maiús e unha frecha para mover as teselas!"
 
 #. Translators: in-window notification; on the 16-Puzzle game, if the user clicks on a tile of the board (the game is played using mouse with arrows around the board)
 #: src/taquin-main.vala:453
@@ -594,7 +594,6 @@ msgstr "Toyah (Wikimedia)"
 
 #. Translators: about dialog text; in the Credits, text at the end of the "Artwork by" section
 #: src/taquin-main.vala:656
-#| msgid "(see COPYING.themes for informations)"
 msgid "(see COPYING.themes for information)"
 msgstr "(vexa COPYING.themes para obter máis información)"
 
@@ -613,7 +612,7 @@ msgstr "Copyright © %u-%u – Arnaud Bonatti"
 #. Translators: about dialog text; this string should be replaced by a text crediting yourselves and your translation team, or should be left empty. Do not translate literally!
 #: src/taquin-main.vala:673
 msgid "translator-credits"
-msgstr "Fran Dieguez <frandieguez@gnome.org>, 2017-2020"
+msgstr "Fran Diéguez <frandieguez@gnome.org>, 2017-2021"
 
 #. Translators: about dialog text; label of the website link
 #: src/taquin-main.vala:678
