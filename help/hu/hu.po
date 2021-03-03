@@ -1,29 +1,29 @@
 # Hungarian translation for gnome-taquin help.
-# Copyright (C) 2016, 2018, 2019. Free Software Foundation, Inc.
+# Copyright (C) 2016, 2018, 2019, 2021. Free Software Foundation, Inc.
 # This file is distributed under the same license as the user help.
 #
 # Gabor Kelemen <kelemeng at ubuntu dot com>, 2016.
-# Balázs Úr <ur.balazs at fsf dot hu>, 2018, 2019.
+# Balázs Úr <ur.balazs at fsf dot hu>, 2018, 2019, 2021.
 msgid ""
 msgstr ""
 "Project-Id-Version: gnome-taquin_help master\n"
-"POT-Creation-Date: 2019-02-06 14:13+0000\n"
-"PO-Revision-Date: 2019-02-06 21:34+0100\n"
-"Last-Translator: Balázs Úr <ur.balazs@fsf.hu>\n"
+"POT-Creation-Date: 2020-07-05 21:02+0000\n"
+"PO-Revision-Date: 2021-03-03 00:58+0100\n"
+"Last-Translator: Balázs Úr <ur.balazs at fsf dot hu>\n"
 "Language-Team: Hungarian <gnome-hu-list at gnome dot org>\n"
 "Language: hu\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
-"X-Generator: Lokalize 2.0\n"
+"X-Generator: Lokalize 19.12.3\n"
 
 #. Put one translator per line, in the form NAME <EMAIL>, YEAR1, YEAR2
 msgctxt "_"
 msgid "translator-credits"
 msgstr ""
 "Kelemen Gábor <kelemeng at ubuntu dot com>, 2016.\n"
-"Úr Balázs <ur.balazs at fsf dot hu>, 2019."
+"Úr Balázs <ur.balazs at fsf dot hu>, 2019, 2021."
 
 #. (itstool) path: credit/name
 #: C/15-Puzzle.page:10 C/16-Puzzle.page:10 C/beginning.page:10 C/index.page:12
@@ -199,19 +199,26 @@ msgstr ""
 
 #. (itstool) path: item/p
 #: C/15-Puzzle.page:78 C/16-Puzzle.page:72
+#| msgid ""
+#| "You can always undo your move. For that, use the <keyseq><key>Ctrl</"
+#| "key><key>Z</key></keyseq> keys sequence."
 msgid ""
-"You can always undo your move. For that, use the <keyseq><key>Ctrl</"
-"key><key>Z</key></keyseq> keys sequence."
+"You can always undo your move. For that, use <keyseq><key>Ctrl</key><key>Z</"
+"key></keyseq>."
 msgstr ""
 "Bármikor visszavonhatja a lépését. Ehhez használja a <keyseq><key>Ctrl</"
 "key><key>Z</key></keyseq> billentyűkombinációt."
 
 #. (itstool) path: item/p
 #: C/15-Puzzle.page:85 C/16-Puzzle.page:79
+#| msgid ""
+#| "To start a new game –possibly with other options–, use the "
+#| "<keyseq><key>Ctrl</key><key>N</key></keyseq> keys sequence to go to the "
+#| "<link xref=\"start-screen\">Start Screen</link>."
 msgid ""
-"To start a new game –possibly with other options–, use the "
-"<keyseq><key>Ctrl</key><key>N</key></keyseq> keys sequence to go to the "
-"<link xref=\"start-screen\">Start Screen</link>."
+"To start a new game –possibly with other options–, use <keyseq><key>Ctrl</"
+"key><key>N</key></keyseq> to go to the <link xref=\"start-screen\">Start "
+"Screen</link>."
 msgstr ""
 "Új játék indításához – esetleg eltérő beállításokkal – használja a "
 "<keyseq><key>Ctrl</key><key>N</key></keyseq> billentyűkombinációt a <link "
@@ -219,9 +226,13 @@ msgstr ""
 
 #. (itstool) path: item/p
 #: C/15-Puzzle.page:88 C/16-Puzzle.page:82
+#| msgid ""
+#| "Alternatively, you may want to restart the game. For that, use the "
+#| "<keyseq><key>Shift</key><key>Ctrl</key><key>N</key></keyseq> keys "
+#| "sequence."
 msgid ""
-"Alternatively, you may want to restart the game. For that, use the "
-"<keyseq><key>Shift</key><key>Ctrl</key><key>N</key></keyseq> keys sequence."
+"Alternatively, you may want to restart the game. For that, use "
+"<keyseq><key>Shift</key><key>Ctrl</key><key>N</key></keyseq>."
 msgstr ""
 "Alternatív megoldásként újraindíthatja a játékot. Ehhez használja a "
 "<keyseq><key>Shift</key><key>Ctrl</key><key>N</key></keyseq> "
@@ -282,12 +293,17 @@ msgstr ""
 
 #. (itstool) path: item/p
 #: C/16-Puzzle.page:69
+#| msgid ""
+#| "Use the <keyseq><key>Shift</key><key>Left</key></keyseq> and "
+#| "<keyseq><key>Shift</key><key>Right</key></keyseq> keys sequences to swipe "
+#| "the selected row, or the <keyseq><key>Shift</key><key>Up</key></keyseq> "
+#| "and <keyseq><key>Shift</key><key>Down</key></keyseq> keys sequences to "
+#| "swipe the selected column."
 msgid ""
-"Use the <keyseq><key>Shift</key><key>Left</key></keyseq> and "
-"<keyseq><key>Shift</key><key>Right</key></keyseq> keys sequences to swipe "
-"the selected row, or the <keyseq><key>Shift</key><key>Up</key></keyseq> and "
-"<keyseq><key>Shift</key><key>Down</key></keyseq> keys sequences to swipe the "
-"selected column."
+"Use <keyseq><key>Shift</key><key>Left</key></keyseq> and <keyseq><key>Shift</"
+"key><key>Right</key></keyseq> to swipe the selected row, or "
+"<keyseq><key>Shift</key><key>Up</key></keyseq> and <keyseq><key>Shift</"
+"key><key>Down</key></keyseq> to swipe the selected column."
 msgstr ""
 "Használja a <keyseq><key>Shift</key><key>Balra</key></keyseq> és "
 "<keyseq><key>Shift</key><key>Jobbra</key></keyseq> billentyűkombinációt a "
@@ -331,8 +347,8 @@ msgid ""
 "You can also <link xref=\"15-Puzzle#15-keyboard\">play with the keyboard</"
 "link> if you prefer."
 msgstr ""
-"<link xref=\"15-Puzzle#15-keyboard\">Játszhat a billentyűzettel</link> is, ha "
-"azt részesíti előnyben."
+"<link xref=\"15-Puzzle#15-keyboard\">Játszhat a billentyűzettel</link> is, "
+"ha azt részesíti előnyben."
 
 #. (itstool) path: page/p
 #: C/beginning.page:41
@@ -570,7 +586,8 @@ msgstr "Csempe eltolása az üres hely felé"
 
 #. (itstool) path: td/p
 #: C/shortcuts.page:48
-msgid "<key>Space</key>, <key>Return</key> and <key>KP_Enter</key>"
+#| msgid "<key>Space</key>, <key>Return</key> and <key>KP_Enter</key>"
+msgid "<key>Space</key>, <key>Return</key> and <key>Enter</key>"
 msgstr "<key>Szóköz</key>, <key>Enter</key> és a <key>numerikus Enter</key>"
 
 #. (itstool) path: section/title
