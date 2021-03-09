@@ -7,8 +7,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: gnome-taquin master\n"
-"POT-Creation-Date: 2020-07-05 21:02+0000\n"
-"PO-Revision-Date: 2020-08-22 13:46+0200\n"
+"POT-Creation-Date: 2020-10-03 15:21+0000\n"
+"PO-Revision-Date: 2021-03-09 22:33+0100\n"
 "Last-Translator: Anders Jonsson <anders.jonsson@norsjovallen.se>\n"
 "Language-Team: Swedish <tp-sv@listor.tp-sv.se>\n"
 "Language: sv\n"
@@ -16,7 +16,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
-"X-Generator: Poedit 2.4.1\n"
+"X-Generator: Poedit 2.4.2\n"
 
 #. Put one translator per line, in the form NAME <EMAIL>, YEAR1, YEAR2
 msgctxt "_"
@@ -444,7 +444,7 @@ msgstr "<em>Förändra</em>"
 #. (itstool) path: item/p
 #: C/license.page:30
 msgid "To adapt the work."
-msgstr "Anpassa verket."
+msgstr "Att anpassa verket."
 
 #. (itstool) path: page/p
 #: C/license.page:33
@@ -479,7 +479,7 @@ msgid ""
 "resulting work only under the same, similar or a compatible license."
 msgstr ""
 "Om du förändrar, transformerar eller bygger vidare på detta verk, så får du "
-"distribuera det resulterande verkar under samma, liknande eller en "
+"distribuera det resulterande verket endast under samma, liknande eller en "
 "kompatibel licens."
 
 #. (itstool) path: page/p
@@ -493,7 +493,7 @@ msgstr ""
 "För den fullständiga texten för licensen, se vidare på <link href=\"http://"
 "creativecommons.org/licenses/by-sa/4.0/legalcode\">CreativeCommons "
 "webbplats</link>, eller läs det fullständiga <link href=\"http://"
-"creativecommons.org/licenses/by-sa/4.0/\">Commons-kontraktet</link>."
+"creativecommons.org/licenses/by-sa/4.0/\">Commons Deed</link>."
 
 #. (itstool) path: page/title
 #: C/shortcuts.page:18
