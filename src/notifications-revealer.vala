@@ -20,7 +20,7 @@ using Gtk;
 [GtkTemplate (ui = "/org/gnome/Taquin/ui/notifications-revealer.ui")]
 private class NotificationsRevealer : Revealer, AdaptativeWidget
 {
-    [GtkChild] private Label notification_label;
+    [GtkChild] private unowned Label notification_label;
 
     construct
     {
