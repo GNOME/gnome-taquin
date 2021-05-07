@@ -178,8 +178,8 @@ msgid ""
 "indicated with four arrows around the board, on each side of its row and "
 "column."
 msgstr ""
-"Utilitzeu les fletxes <key>Esquerra</key>, <key>Dreta</key>, "
-"<key>Amunt</key> i <key>Avall</key> per a anar a la fitxa que voleu moure. "
+"Utilitzeu les fletxes <key>Fletxa esquerra</key>, <key>Fletxa dreta</key>, "
+"<key>Fletxa amunt</key> i <key>Fletxa avall</key> per a anar a la fitxa que voleu moure. "
 "La fitxa seleccionada s'indica amb quatre fletxes al voltant del tauler, a "
 "cada banda de la fila i la columna corresponents."
 
@@ -565,7 +565,7 @@ msgstr "Selecciona la fitxa a empènyer"
 #: C/shortcuts.page:44
 msgid "<key>Left</key>, <key>Right</key>, <key>Up</key> and <key>Down</key>"
 msgstr ""
-"<key>Esquerra</key>, <key>Dreta</key>, <key>Amunt</key> i <key>Avall</key>"
+"<key>Fletxa esquerra</key>, <key>Fletxa dreta</key>, <key>Fletxa amunt</key> i <key>Fletxa avall</key>"
 
 #. (itstool) path: td/p
 #: C/shortcuts.page:47
@@ -600,7 +600,7 @@ msgstr "Canvia la fila seleccionada"
 #. (itstool) path: td/p
 #: C/shortcuts.page:61
 msgid "<key>Up</key> and <key>Down</key>"
-msgstr "<key>Amunt</key> i <key>Avall</key>"
+msgstr "<key>Fletxa amunt</key> i <key>Fletxa avall</key>"
 
 #. (itstool) path: td/p
 #: C/shortcuts.page:64
@@ -627,8 +627,8 @@ msgid ""
 "<keyseq><key>Shift</key><key>Up</key></keyseq> and "
 "<keyseq><key>Shift</key><key>Down</key></keyseq>"
 msgstr ""
-"<keyseq><key>Maj</key><key>Amunt</key></keyseq> i "
-"<keyseq><key>Maj</key><key>Avall</key></keyseq>"
+"<keyseq><key>Maj</key><key>Fletxa amunt</key></keyseq> i "
+"<keyseq><key>Maj</key><key>Fletxa avall</key></keyseq>"
 
 #. (itstool) path: section/title
 #: C/shortcuts.page:74
