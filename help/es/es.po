@@ -4,8 +4,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: 1\n"
-"POT-Creation-Date: 2019-10-02 03:24+0000\n"
-"PO-Revision-Date: 2019-11-25 15:23+0100\n"
+"POT-Creation-Date: 2020-07-05 21:02+0000\n"
+"PO-Revision-Date: 2021-09-10 17:29+0200\n"
 "Last-Translator: Daniel Mustieles <daniel.mustieles@gmail.com>\n"
 "Language-Team: Spanish - Spain <gnome-es-list@gnome.org>\n"
 "Language: es_ES\n"
@@ -13,7 +13,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
-"X-Generator: Gtranslator 3.34.0\n"
+"X-Generator: Poedit 3.0\n"
 
 #. Put one translator per line, in the form NAME <EMAIL>, YEAR1, YEAR2
 msgctxt "_"
@@ -62,9 +62,9 @@ msgstr "El objetivo es mover todas las fichas a sus lugares correspondientes."
 #. (itstool) path: section/p
 #: C/15-Puzzle.page:27
 msgid ""
-"There’s an empty space where you can move adjacent tiles by pushing them "
-"onto it. You can push more than one tile at the same time in the empty "
-"space’s direction."
+"There’s an empty space where you can move adjacent tiles by pushing them onto "
+"it. You can push more than one tile at the same time in the empty space’s "
+"direction."
 msgstr ""
 "Hay un espacio vacío al que puede mover las fichas adyacentes empujándolas. "
 "Puede empujar una o más fichas a la vez en la dirección del espacio vacío."
@@ -120,8 +120,8 @@ msgid ""
 "If you click on a tile that cannot move, the game notifies you that the move "
 "is impossible."
 msgstr ""
-"Si pulsa sobre una ficha que no se puede mover, el juego le informa de que "
-"el movimiento no es posible."
+"Si pulsa sobre una ficha que no se puede mover, el juego le informa de que el "
+"movimiento no es posible."
 
 #. (itstool) path: item/p
 #: C/15-Puzzle.page:48 C/16-Puzzle.page:45 C/beginning.page:32
@@ -142,10 +142,6 @@ msgstr "Cuando finalice (o no) la partida actual:"
 
 #. (itstool) path: item/p
 #: C/15-Puzzle.page:55 C/16-Puzzle.page:52
-#| msgid ""
-#| "At the end of the game, or when you want to switch games, click the "
-#| "<gui>Start Over</gui> button to go to the <link xref=\"start-screen"
-#| "\">Start Screen</link>."
 msgid ""
 "To start a new game –possibly with other options–, click the <gui>New Game</"
 "gui> button in the headerbar to go to the <link xref=\"start-screen\">Start "
@@ -162,8 +158,8 @@ msgid ""
 "headerbar on the button with a counter of moves done, and click the "
 "<gui>Restart</gui> entry in the menu that appears."
 msgstr ""
-"También puede querer reiniciar la partida. Para hacerlo pulse el botón con "
-"un contador de movimientos realizados en la barra de cabecera y pulse "
+"También puede querer reiniciar la partida. Para hacerlo pulse el botón con un "
+"contador de movimientos realizados en la barra de cabecera y pulse "
 "<gui>Reiniciar</gui> en el menú que aparecerá."
 
 #. (itstool) path: section/p
@@ -184,10 +180,10 @@ msgid ""
 "indicated with four arrows around the board, on each side of its row and "
 "column."
 msgstr ""
-"Use las flechas <key>Izquierda</key>, <key>Derecha</key>, <key>Arriba</key> "
-"y <key>Abajo</key> para ir a la ficha que quiere mover. La ficha "
-"seleccionada actualmente se indica con cuatro flechas alrededor del teclado, "
-"una en cada lado de su fila y columna."
+"Use las flechas <key>Izquierda</key>, <key>Derecha</key>, <key>Arriba</key> y "
+"<key>Abajo</key> para ir a la ficha que quiere mover. La ficha seleccionada "
+"actualmente se indica con cuatro flechas alrededor del teclado, una en cada "
+"lado de su fila y columna."
 
 #. (itstool) path: item/p
 #: C/15-Puzzle.page:72
@@ -201,40 +197,36 @@ msgstr ""
 #. (itstool) path: item/p
 #: C/15-Puzzle.page:78 C/16-Puzzle.page:72
 msgid ""
-"You can always undo your move. For that, use the <keyseq><key>Ctrl</"
-"key><key>Z</key></keyseq> keys sequence."
+"You can always undo your move. For that, use <keyseq><key>Ctrl</key><key>Z</"
+"key></keyseq>."
 msgstr ""
-"Siempre puede deshacer un movimiento, usando la combinación de teclas "
-"<keyseq><key>Ctrl</key><key>Z</key></keyseq>."
+"Siempre puede deshacer un movimiento. Para ello, use <keyseq><key>Ctrl</"
+"key><key>Z</key></keyseq>."
 
 #. (itstool) path: item/p
 #: C/15-Puzzle.page:85 C/16-Puzzle.page:79
-#| msgid ""
-#| "At the end of the game, or when you want to switch games, use the "
-#| "<keyseq><key>Ctrl</key><key>N</key></keyseq> keys to go to the <link xref="
-#| "\"start-screen\">Start Screen</link>."
 msgid ""
-"To start a new game –possibly with other options–, use the "
-"<keyseq><key>Ctrl</key><key>N</key></keyseq> keys sequence to go to the "
-"<link xref=\"start-screen\">Start Screen</link>."
+"To start a new game –possibly with other options–, use <keyseq><key>Ctrl</"
+"key><key>N</key></keyseq> to go to the <link xref=\"start-screen\">Start "
+"Screen</link>."
 msgstr ""
-"Para empezar una partida nueva (posiblemente con otras opciones) use la "
-"combinación de teclas <keyseq><key>Ctrl</key><key>N</key></keyseq> para ir a "
-"la <link xref=\"start-screen\">Pantalla de inicio</link>."
+"Para empezar una partida nueva (posiblemente con otras opciones), use "
+"<keyseq><key>Ctrl</key><key>N</key></keyseq> para ir a la <link xref=\"start-"
+"screen\">Pantalla de inicio</link>."
 
 #. (itstool) path: item/p
 #: C/15-Puzzle.page:88 C/16-Puzzle.page:82
 msgid ""
-"Alternatively, you may want to restart the game. For that, use the "
-"<keyseq><key>Shift</key><key>Ctrl</key><key>N</key></keyseq> keys sequence."
+"Alternatively, you may want to restart the game. For that, use "
+"<keyseq><key>Shift</key><key>Ctrl</key><key>N</key></keyseq>."
 msgstr ""
-"También puede querer reiniciar la partida. Para ello, use la combinación de "
-"teclas <keyseq><key>Mayús</key><key>Ctrl</key><key>N</key></keyseq>."
+"También puede querer reiniciar la partida. Para ello, use <keyseq><key>Mayús</"
+"key><key>Ctrl</key><key>N</key></keyseq>."
 
 #. (itstool) path: section/p
 #: C/15-Puzzle.page:92 C/16-Puzzle.page:86
 msgid "You can also use a mouse."
-msgstr "También puede usar el ratón"
+msgstr "También puede usar el ratón."
 
 #. (itstool) path: page/title
 #: C/16-Puzzle.page:18
@@ -267,8 +259,8 @@ msgstr ""
 #: C/16-Puzzle.page:42
 msgid ""
 "Click on one of the arrows displayed around the board. The row or column at "
-"the end of which this arrow is moves in this direction, and the tile that "
-"was next to the arrow is placed at the opposite side."
+"the end of which this arrow is moves in this direction, and the tile that was "
+"next to the arrow is placed at the opposite side."
 msgstr ""
 "Pulse en una de las flechas mostradas alrededor del teclado. La fila o la "
 "columna en la que está la flecha se mueve en esta dirección, y la ficha que "
@@ -279,8 +271,8 @@ msgstr ""
 msgid ""
 "Use the <key>Left</key> and <key>Right</key> arrows to change the selected "
 "column, and the <key>Up</key> and <key>Down</key> arrows to change the "
-"selected row. The currently selected row and column are indicated with "
-"lights around the board."
+"selected row. The currently selected row and column are indicated with lights "
+"around the board."
 msgstr ""
 "Use las flechas <key>Izquierda</key> y <key>Derecha</key> para cambiar la "
 "columna seleccionada y las flechas <key>Arriba</key> y <key>Abajo</key> para "
@@ -289,23 +281,17 @@ msgstr ""
 
 #. (itstool) path: item/p
 #: C/16-Puzzle.page:69
-#| msgid ""
-#| "Use the <keyseq><key>Ctrl</key><key>Left</key></keyseq> or "
-#| "<keyseq><key>Ctrl</key><key>Right</key></keyseq> keys to move a row, or "
-#| "the <keyseq><key>Ctrl</key><key>Up</key></keyseq> and <keyseq><key>Ctrl</"
-#| "key><key>Down</key></keyseq> keys to move a column."
 msgid ""
-"Use the <keyseq><key>Shift</key><key>Left</key></keyseq> and "
-"<keyseq><key>Shift</key><key>Right</key></keyseq> keys sequences to swipe "
-"the selected row, or the <keyseq><key>Shift</key><key>Up</key></keyseq> and "
-"<keyseq><key>Shift</key><key>Down</key></keyseq> keys sequences to swipe the "
-"selected column."
+"Use <keyseq><key>Shift</key><key>Left</key></keyseq> and <keyseq><key>Shift</"
+"key><key>Right</key></keyseq> to swipe the selected row, or "
+"<keyseq><key>Shift</key><key>Up</key></keyseq> and <keyseq><key>Shift</"
+"key><key>Down</key></keyseq> to swipe the selected column."
 msgstr ""
-"Use las combinaciones de teclas <keyseq><key>Mayús</key><key>Izquierda</"
-"key></keyseq> y <keyseq><key>Mayús</key><key>Derecha</key></keyseq> para "
-"mover la fila seleccionada o <keyseq><key>Mayús</key><key>Arriba</key></"
-"keyseq> y <keyseq><key>Mayús</key><key>Abajo</key></keyseq> para mover la "
-"columna seleccionada."
+"Use <keyseq><key>Mayús</key><key>Izquierda</key></keyseq> y "
+"<keyseq><key>Mayús</key><key>Derecha</key></keyseq> para mover la fila "
+"seleccionada o <keyseq><key>Mayús</key><key>Arriba</key></keyseq> y "
+"<keyseq><key>Mayús</key><key>Abajo</key></keyseq> para mover la columna "
+"seleccionada."
 
 #. (itstool) path: page/title
 #: C/beginning.page:18
@@ -328,18 +314,14 @@ msgstr "Se juega usando el ratón. Para hacer un movimiento:"
 
 #. (itstool) path: item/p
 #: C/beginning.page:35
-#| msgid ""
-#| "At the end of the game, or when you want to switch games, click the "
-#| "<gui>Start Over</gui> button to go to the <link xref=\"start-screen"
-#| "\">Start Screen</link>."
 msgid ""
-"To start a new game –whether you finished the current game or not–, click "
-"the <gui>New Game</gui> button in the headerbar to go to the <link xref="
-"\"start-screen\">Start Screen</link>."
+"To start a new game –whether you finished the current game or not–, click the "
+"<gui>New Game</gui> button in the headerbar to go to the <link xref=\"start-"
+"screen\">Start Screen</link>."
 msgstr ""
-"Para empezar una partida nueva (cuando termine la partida actual, o no) "
-"pulse el botón <gui>Juego nuevo</gui> en la barra de cabecera para ir a la "
-"<link xref=\"start-screen\">Pantalla de inicio</link>."
+"Para empezar una partida nueva (cuando termine la partida actual, o no) pulse "
+"el botón <gui>Juego nuevo</gui> en la barra de cabecera para ir a la <link "
+"xref=\"start-screen\">Pantalla de inicio</link>."
 
 #. (itstool) path: page/p
 #: C/beginning.page:39
@@ -354,13 +336,13 @@ msgstr ""
 #: C/beginning.page:41
 msgid ""
 "After the first time it is opened, <app>Taquin</app> displays a puzzle with "
-"the same rules and dimensions as the last one played when it is opened, so "
-"it could be a <link xref=\"16-Puzzle\">16-Puzzle</link> game."
+"the same rules and dimensions as the last one played when it is opened, so it "
+"could be a <link xref=\"16-Puzzle\">16-Puzzle</link> game."
 msgstr ""
 "Después de abrirlo por primera vez, <app>Taquin</app> muestra un puzle con "
-"las mismas reglas y las mismas dimensiones que el jugado la última vez "
-"cuando se abrió, por lo que podría ser una partida de <link xref=\"16-Puzzle"
-"\">Puzle 16</link>."
+"las mismas reglas y las mismas dimensiones que el jugado la última vez cuando "
+"se abrió, por lo que podría ser una partida de <link xref=\"16-Puzzle\">Puzle "
+"16</link>."
 
 #. (itstool) path: info/title
 #: C/index.page:8
@@ -376,8 +358,7 @@ msgstr "Taquin"
 
 #. (itstool) path: license/p
 #: C/index.page:16
-msgid ""
-"Creative Commons Attribution-ShareAlike 4.0 International (CC BY-SA 4.0)"
+msgid "Creative Commons Attribution-ShareAlike 4.0 International (CC BY-SA 4.0)"
 msgstr ""
 "Liencia Creative Commons Compartir Igual-Atribución 4.0 internacional (CC BY-"
 "SA 4.0)"
@@ -395,9 +376,8 @@ msgstr "<_:media-1/> Taquin"
 #. (itstool) path: page/p
 #: C/index.page:22
 msgid ""
-"<app>Taquin</app> is a sliding-block puzzle game. It includes the "
-"traditional 15-Puzzle invented in the early 1880s, and the more recent 16-"
-"Puzzle variant."
+"<app>Taquin</app> is a sliding-block puzzle game. It includes the traditional "
+"15-Puzzle invented in the early 1880s, and the more recent 16-Puzzle variant."
 msgstr ""
 "<app>Taquin</app> es un juego de puzle deslizante. Incluye el juego Puzle 15 "
 "tradicional, inventado a principios de 1880, y su variante más reciente, "
@@ -416,7 +396,7 @@ msgstr "Avanzado"
 #. (itstool) path: p/link
 #: C/legal.xml:3
 msgid "Creative Commons Attribution-ShareAlike 4.0 International license"
-msgstr "licencia Creative Commons Compartir Igual-Atribución 4.0 internacional"
+msgstr "Licencia Creative Commons Compartir Igual-Atribución 4.0 internacional"
 
 #. (itstool) path: license/p
 #: C/legal.xml:3
@@ -480,13 +460,13 @@ msgstr "<em>Atribución</em>"
 #. (itstool) path: item/p
 #: C/license.page:39
 msgid ""
-"You must attribute the work in the manner specified by the author or "
-"licensor (but not in any way that suggests that they endorse you or your use "
-"of the work)."
+"You must attribute the work in the manner specified by the author or licensor "
+"(but not in any way that suggests that they endorse you or your use of the "
+"work)."
 msgstr ""
-"Debe reconocer los créditos de la obra de la manera especificada por el "
-"autor o el licenciador (pero no de una manera que sugiera que tiene su apoyo "
-"o apoyan el uso que hace de su obra)."
+"Debe reconocer los créditos de la obra de la manera especificada por el autor "
+"o el licenciador (pero no de una manera que sugiera que tiene su apoyo o "
+"apoyan el uso que hace de su obra)."
 
 #. (itstool) path: item/title
 #: C/license.page:46
@@ -500,16 +480,16 @@ msgid ""
 "resulting work only under the same, similar or a compatible license."
 msgstr ""
 "Si altera, transforma o amplía esta obra para crear una obra derivada, sólo "
-"puede distribuir la obra resultante bajo la misma licencia, una similar o "
-"una compatible."
+"puede distribuir la obra resultante bajo la misma licencia, una similar o una "
+"compatible."
 
 #. (itstool) path: page/p
 #: C/license.page:53
 msgid ""
-"For the full text of the license, see the <link href=\"http://"
-"creativecommons.org/licenses/by-sa/4.0/legalcode\">CreativeCommons website</"
-"link>, or read the full <link href=\"http://creativecommons.org/licenses/by-"
-"sa/4.0/\">Commons Deed</link>."
+"For the full text of the license, see the <link href=\"http://creativecommons."
+"org/licenses/by-sa/4.0/legalcode\">CreativeCommons website</link>, or read "
+"the full <link href=\"http://creativecommons.org/licenses/by-sa/4.0/"
+"\">Commons Deed</link>."
 msgstr ""
 "Para ver el texto completo de la licencia consulte la <link href=\"http://"
 "creativecommons.org/licenses/by-sa/4.0/legalcode\">página web de Creative "
@@ -581,8 +561,7 @@ msgstr "Seleccionar la casilla que empujar"
 #: C/shortcuts.page:44
 msgid "<key>Left</key>, <key>Right</key>, <key>Up</key> and <key>Down</key>"
 msgstr ""
-"<key>Izquierda</key>, <key>Derecha</key>, <key>Arriba</key> y <key>Abajo</"
-"key>"
+"<key>Izquierda</key>, <key>Derecha</key>, <key>Arriba</key> y <key>Abajo</key>"
 
 #. (itstool) path: td/p
 #: C/shortcuts.page:47
@@ -591,8 +570,8 @@ msgstr "Empujar una ficha en la dirección del espacio vacío"
 
 #. (itstool) path: td/p
 #: C/shortcuts.page:48
-msgid "<key>Space</key>, <key>Return</key> and <key>KP_Enter</key>"
-msgstr "<key>Espacio</key> <key>Intro</key> y <key>TN_Intro</key>"
+msgid "<key>Space</key>, <key>Return</key> and <key>Enter</key>"
+msgstr "<key>Espacio</key>, <key>Retorno</key> e <key>Intro</key>"
 
 #. (itstool) path: section/title
 #: C/shortcuts.page:53
@@ -748,15 +727,15 @@ msgstr ""
 #~ "You can always undo a move by clicking the <gui>Undo</gui> button at the "
 #~ "left of the header bar."
 #~ msgstr ""
-#~ "Siempre puede deshacer un movimiento pulsando el botón <gui>Deshacer</"
-#~ "gui> en la parte izquierda de la barra de cabecera."
+#~ "Siempre puede deshacer un movimiento pulsando el botón <gui>Deshacer</gui> "
+#~ "en la parte izquierda de la barra de cabecera."
 
 #~ msgid ""
 #~ "You can always undo a move by clicking the <gui>Undo</gui> button on the "
 #~ "left of the header bar."
 #~ msgstr ""
-#~ "Siempre puede deshacer un movimiento pulsando el botón <gui>Deshacer</"
-#~ "gui> en la parte izquierda de la barra de cabecera."
+#~ "Siempre puede deshacer un movimiento pulsando el botón <gui>Deshacer</gui> "
+#~ "en la parte izquierda de la barra de cabecera."
 
 #~ msgid "Show new-game screen"
 #~ msgstr "Mostrar la pantalla de partida nueva"
