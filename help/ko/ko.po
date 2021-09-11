@@ -1,0 +1,697 @@
+# Korean translation for gnome-taquin.
+# Copyright (C) 2021 gnome-taquin's COPYRIGHT HOLDER
+# This file is distributed under the same license as the gnome-taquin package.
+# Seong-ho Cho <shcho@gnome.org>, 2021.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: gnome-taquin master\n"
+"POT-Creation-Date: 2021-08-07 21:20+0000\n"
+"PO-Revision-Date: 2021-09-10 13:24+0900\n"
+"Language-Team: Korean <gnome-kr@googlegroups.com>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Language: ko\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"Last-Translator: Seong-ho Cho <darkcircle.0426@gmail.com>\n"
+"X-Generator: Poedit 2.3.1\n"
+
+#. Put one translator per line, in the form NAME <EMAIL>, YEAR1, YEAR2
+msgctxt "_"
+msgid "translator-credits"
+msgstr "조성호 <shcho@gnome.org>, 2021"
+
+#. (itstool) path: credit/name
+#: C/15-Puzzle.page:10 C/16-Puzzle.page:10 C/beginning.page:10 C/index.page:12
+#: C/shortcuts.page:10 C/start-screen.page:10
+msgid "Arnaud Bonatti"
+msgstr "Arnaud Bonatti"
+
+#. (itstool) path: credit/years
+#: C/15-Puzzle.page:12 C/16-Puzzle.page:12 C/beginning.page:12
+#: C/shortcuts.page:12 C/start-screen.page:12
+msgid "2014-2019"
+msgstr "2014-2019"
+
+#. (itstool) path: page/title
+#: C/15-Puzzle.page:18
+msgid "15-Puzzle"
+msgstr "15-퍼즐"
+
+#. (itstool) path: page/p
+#: C/15-Puzzle.page:20
+msgid ""
+"The <em>15-Puzzle</em> is the default puzzle of <app>Taquin</app>. It is "
+"displayed the first time the application is opened. You can start one at any "
+"time from the <link xref=\"start-screen\">Start Screen</link>."
+msgstr ""
+"<em>15-퍼즐</em>은 <app>타킨</app>의 기본 퍼즐입니다. 프로그램을 처음 열었을 "
+"때 나타납니다. <link xref=\"start-screen\">시작 화면</link>으로 언제든 시작"
+"할 수 있습니다."
+
+#. (itstool) path: section/title
+#: C/15-Puzzle.page:23 C/16-Puzzle.page:23
+msgid "Gameplay"
+msgstr "게임 플레이"
+
+#. (itstool) path: section/p
+#: C/15-Puzzle.page:25 C/16-Puzzle.page:25
+msgid "The goal is to move all the tiles to their proper places."
+msgstr "모든 타일을 적당한 위치에 옮기는 게임입니다."
+
+#. (itstool) path: section/p
+#: C/15-Puzzle.page:27
+msgid ""
+"There’s an empty space where you can move adjacent tiles by pushing them "
+"onto it. You can push more than one tile at the same time in the empty "
+"space’s direction."
+msgstr ""
+"인접 타일을 밀어넣을 수 있는 빈 공간이 있습니다. 빈 공간 방향으로 타일 하나 "
+"이상을 밀어 움직일 수 있습니다."
+
+#. (itstool) path: section/title
+#: C/15-Puzzle.page:31 C/16-Puzzle.page:31
+msgid "End of the game"
+msgstr "게임 끝내기"
+
+#. (itstool) path: section/p
+#: C/15-Puzzle.page:32 C/16-Puzzle.page:32
+msgid ""
+"At the end of the game, <app>Taquin</app> notifies you and displays the "
+"complete image."
+msgstr ""
+"게임이 끝나면 <app>타킨</app>에서는 게임이 끝났음을 알리며 완성 그림을 나타냅"
+"니다."
+
+#. (itstool) path: section/p
+#: C/15-Puzzle.page:33 C/16-Puzzle.page:33
+msgid ""
+"You can click the <gui>New Game</gui> button in the headerbar to go to the "
+"<link xref=\"start-screen\">Start Screen</link>. Alternatively, you can "
+"restart the game by clicking on the button with a counter of moves done, and "
+"then on the <gui>Restart</gui> entry."
+msgstr ""
+"헤더 모음의 <gui>새 게임</gui> 단추를 눌러 <link xref=\"start-screen\">시"
+"작 화면</link>으로 갈 수 있습니다. 대신 움직임 횟수 단추를 누른 후 <gui>다시 "
+"시작</gui> 항목을 선택하여 게임을 다시 시작할 수 있습니다."
+
+#. (itstool) path: section/title
+#: C/15-Puzzle.page:37 C/16-Puzzle.page:37
+msgid "How to play with a mouse"
+msgstr "마우스로 플레이하기"
+
+#. (itstool) path: section/p
+#: C/15-Puzzle.page:39 C/15-Puzzle.page:68 C/16-Puzzle.page:39
+#: C/16-Puzzle.page:65
+msgid "To make a move:"
+msgstr "타일을 움직이려면:"
+
+#. (itstool) path: item/p
+#: C/15-Puzzle.page:42 C/beginning.page:26
+msgid "Click on a tile on the same row or column as the empty space."
+msgstr "동일한 행 열의 타일을 빈 공간으로 움직이도록 누릅니다."
+
+#. (itstool) path: note/p
+#: C/15-Puzzle.page:44 C/15-Puzzle.page:74 C/beginning.page:28
+msgid ""
+"If you click on a tile that cannot move, the game notifies you that the move "
+"is impossible."
+msgstr ""
+"움직일 수 없는 타일을 누르면 게임에서 해당 타일을 움직일 수 없음을 알립니다."
+
+#. (itstool) path: item/p
+#: C/15-Puzzle.page:48 C/16-Puzzle.page:45 C/beginning.page:32
+msgid ""
+"You can always undo your move. For that, click on the button with a counter "
+"of moves done in the headerbar, and click the <gui>Undo</gui> entry in the "
+"menu that appears."
+msgstr ""
+"항상 움직임을 되돌릴 수 있습니다. 이 때, 헤더 모음의 움직임 횟수 단추를 누"
+"른 다음, 메뉴에 나타난 <gui>실행 취소</gui>를 누릅니다."
+
+#. (itstool) path: section/p
+#: C/15-Puzzle.page:52 C/15-Puzzle.page:82 C/16-Puzzle.page:49
+#: C/16-Puzzle.page:76
+msgid "Whether you finished the current game or not:"
+msgstr "현재 게임을 끝냈는지 여부와는 상관 없이:"
+
+#. (itstool) path: item/p
+#: C/15-Puzzle.page:55 C/16-Puzzle.page:52
+msgid ""
+"To start a new game –possibly with other options–, click the <gui>New Game</"
+"gui> button in the headerbar to go to the <link xref=\"start-screen\">Start "
+"Screen</link>."
+msgstr ""
+"가능한 다른 옵션으로 새 게임을 시작하고자 한다면, <gui>새 게임</gui> 단추를 "
+"눌러 <link xref=\"start-screen\">시작 화면</link>으로 갑니다."
+
+#. (itstool) path: item/p
+#: C/15-Puzzle.page:58 C/16-Puzzle.page:55
+msgid ""
+"Alternatively, you may want to restart the game. For that, click in the "
+"headerbar on the button with a counter of moves done, and click the "
+"<gui>Restart</gui> entry in the menu that appears."
+msgstr ""
+"대신 게임을 다시 시작할 수도 있습니다. 이 때, 헤더 모음의 움직임 횟수 단추"
+"를 누른 후, 메뉴에 나타난 <gui>다시 시작</gui> 항목을 누릅니다."
+
+#. (itstool) path: section/p
+#: C/15-Puzzle.page:62 C/16-Puzzle.page:59
+msgid "You can also use the keyboard."
+msgstr "키보드를 사용할 수도 있습니다."
+
+#. (itstool) path: section/title
+#: C/15-Puzzle.page:66 C/16-Puzzle.page:63
+msgid "How to play with the keyboard"
+msgstr "키보드로 플레이하기"
+
+#. (itstool) path: item/p
+#: C/15-Puzzle.page:71
+msgid ""
+"Use the <key>Left</key>, <key>Right</key>, <key>Up</key> and <key>Down</key> "
+"arrows to go at the tile you want to move. The currently selected tile is "
+"indicated with four arrows around the board, on each side of its row and "
+"column."
+msgstr ""
+"원하는 타일을 움직일 때 <key>Left</key>, <key>Right</key>, <key>Up</key>,"
+"<key>Down</key> 화살표 키를 사용합니다. 현재 선택한 타일은 게임판 주변 각 행"
+"열 구석의 화살표 네개가 가리켜 나타냅니다."
+
+#. (itstool) path: item/p
+#: C/15-Puzzle.page:72
+msgid ""
+"Use the <key>Space</key> key to move the selected tile in the direction of "
+"the empty space."
+msgstr "<key>Space</key>키로 빈 공간 방향으로 선택한 타일을 움직입니다."
+
+#. (itstool) path: item/p
+#: C/15-Puzzle.page:78 C/16-Puzzle.page:72
+msgid ""
+"You can always undo your move. For that, use <keyseq><key>Ctrl</key><key>Z</"
+"key></keyseq>."
+msgstr ""
+"움직임을 되돌릴 수 있습니다. 이 때, <keyseq><key>Ctrl</key><key>Z</key></"
+"keyseq> 키를 사용합니다."
+
+#. (itstool) path: item/p
+#: C/15-Puzzle.page:85 C/16-Puzzle.page:79
+msgid ""
+"To start a new game –possibly with other options–, use <keyseq><key>Ctrl</"
+"key><key>N</key></keyseq> to go to the <link xref=\"start-screen\">Start "
+"Screen</link>."
+msgstr ""
+"아마도 다른 옵션으로 새 게임을 시작하고자 한다면, <keyseq><key>Ctrl</"
+"key><key>N</key></keyseq> 키를 사용하여 <link xref=\"start-screen\">시작 화면"
+"</link>으로 갑니다."
+
+#. (itstool) path: item/p
+#: C/15-Puzzle.page:88 C/16-Puzzle.page:82
+msgid ""
+"Alternatively, you may want to restart the game. For that, use "
+"<keyseq><key>Shift</key><key>Ctrl</key><key>N</key></keyseq>."
+msgstr ""
+"대신 게임을 다시 시작할 수도 있습니다. 이 때, <keyseq><key>Shift</"
+"key><key>Ctrl</key><key>N</key></keyseq> 키를 사용합니다."
+
+#. (itstool) path: section/p
+#: C/15-Puzzle.page:92 C/16-Puzzle.page:86
+msgid "You can also use a mouse."
+msgstr "마우스를 사용할 수도 있습니다."
+
+#. (itstool) path: page/title
+#: C/16-Puzzle.page:18
+msgid "16-Puzzle"
+msgstr "16-퍼즐"
+
+#. (itstool) path: page/p
+#: C/16-Puzzle.page:20
+msgid ""
+"The <em>16-Puzzle</em> is the variant puzzle of <app>Taquin</app>. You can "
+"launch it at any time from the <link xref=\"start-screen\">Start Screen</"
+"link>."
+msgstr ""
+"<em>16-퍼즐</em>은 <app>타킨</app>의 변형 퍼즐입니다. <link xref=\"start-"
+"screen\">시작 화면</link>에서 얼마든지 실행할 수 있습니다."
+
+#. (itstool) path: section/p
+#: C/16-Puzzle.page:27
+msgid ""
+"You move all the tiles of a row or a column in one direction. The tile that "
+"is pushed out of the board is placed at the opposite side of the row or "
+"column."
+msgstr ""
+"모든 타일을 행 또는 열 방향으로 움직입니다. 게임판 밖으로 밀려난 타일은 행 또"
+"는 열의 반대쪽으로 들어갑니다."
+
+#. (itstool) path: item/p
+#: C/16-Puzzle.page:42
+msgid ""
+"Click on one of the arrows displayed around the board. The row or column at "
+"the end of which this arrow is moves in this direction, and the tile that "
+"was next to the arrow is placed at the opposite side."
+msgstr ""
+"게임판 주변에 표시한 화살표 중 하나를 누릅니다. 행 또는 열 끝에 있는 화살표"
+"로 해당 방향으로 타일을 옮기며, 화살표 옆에 있는 타일은 반대쪽으로 들어갑니"
+"다."
+
+#. (itstool) path: item/p
+#: C/16-Puzzle.page:68
+msgid ""
+"Use the <key>Left</key> and <key>Right</key> arrows to change the selected "
+"column, and the <key>Up</key> and <key>Down</key> arrows to change the "
+"selected row. The currently selected row and column are indicated with "
+"lights around the board."
+msgstr ""
+"<key>Left</key>, <key>Right</key> 화살표 키로 선택 열을 바꾸며, <key>Up</"
+"key>, <key>Down</key> 키로 선택 행을 바꿉니다. 현재 선택한 행열은 게임판 주변"
+"에 밝게 나타납니다."
+
+#. (itstool) path: item/p
+#: C/16-Puzzle.page:69
+msgid ""
+"Use <keyseq><key>Shift</key><key>Left</key></keyseq> and <keyseq><key>Shift</"
+"key><key>Right</key></keyseq> to swipe the selected row, or "
+"<keyseq><key>Shift</key><key>Up</key></keyseq> and <keyseq><key>Shift</"
+"key><key>Down</key></keyseq> to swipe the selected column."
+msgstr ""
+"<keyseq><key>Shift</key><key>Left</key></keyseq>, <keyseq><key>Shift</"
+"key><key>Right</key></keyseq>키로 선택한 행을 밀어내거나, "
+"<keyseq><key>Shift</key><key>Up</key></keyseq>, <keyseq><key>Shift</"
+"key><key>Down</key></keyseq> 키로 선택한 열을 밀어냅니다."
+
+#. (itstool) path: page/title
+#: C/beginning.page:18
+msgid "Beginning"
+msgstr "시작하기"
+
+#. (itstool) path: page/p
+#: C/beginning.page:20
+msgid ""
+"When <app>Taquin</app> is opened for the first time, it displays a "
+"traditional <link xref=\"15-Puzzle\">15-Puzzle</link> game."
+msgstr ""
+"<app>타킨</app>을 처음 열면, 전통 <link xref=\"15-Puzzle\">15-퍼즐</link> 게"
+"임을 나타냅니다."
+
+#. (itstool) path: page/p
+#: C/beginning.page:22
+msgid "The game is played using the mouse. To make a move:"
+msgstr "게임은 마우스를 사용하여 플레이합니다. 타일을 움직이려면:"
+
+#. (itstool) path: item/p
+#: C/beginning.page:35
+msgid ""
+"To start a new game –whether you finished the current game or not–, click "
+"the <gui>New Game</gui> button in the headerbar to go to the <link xref="
+"\"start-screen\">Start Screen</link>."
+msgstr ""
+"현재 게임의 클리어 여부와는 상관 없이 새 게임을 시작하고자 한다면, <gui>새 게"
+"임</gui> 단추를 눌러 <link xref=\"start-screen\">시작 화면</link>으로 갑니다."
+
+#. (itstool) path: page/p
+#: C/beginning.page:39
+msgid ""
+"You can also <link xref=\"15-Puzzle#15-keyboard\">play with the keyboard</"
+"link> if you prefer."
+msgstr ""
+"원한다면 <link xref=\"15-Puzzle#15-keyboard\">키보드로 플레이</link>할 수 있"
+"습니다."
+
+#. (itstool) path: page/p
+#: C/beginning.page:41
+msgid ""
+"After the first time it is opened, <app>Taquin</app> displays a puzzle with "
+"the same rules and dimensions as the last one played when it is opened, so "
+"it could be a <link xref=\"16-Puzzle\">16-Puzzle</link> game."
+msgstr ""
+"처음에 <app>타킨</app>을 열면, 이전에 열어 플레이한 게임과 동일한 규칙과 크기"
+"를 지닌 퍼즐을 나타내기에 <link xref=\"16-Puzzle\">16-퍼즐</link> 게임이 될 "
+"수도 있습니다."
+
+#. (itstool) path: info/title
+#: C/index.page:8
+msgctxt "link"
+msgid "Taquin"
+msgstr "타킨"
+
+#. (itstool) path: info/title
+#: C/index.page:9
+msgctxt "text"
+msgid "Taquin"
+msgstr "타킨"
+
+#. (itstool) path: license/p
+#: C/index.page:16
+msgid ""
+"Creative Commons Attribution-ShareAlike 4.0 International (CC BY-SA 4.0)"
+msgstr ""
+"크리에이티브 커먼즈 저작자표시-동일조건변경허락 4.0 국제 (CC BY-SA 4.0)"
+
+#. (itstool) path: media/span
+#: C/index.page:20
+msgid "Taquin logo"
+msgstr "타킨 로고"
+
+#. (itstool) path: page/title
+#: C/index.page:20
+msgid "<_:media-1/> Taquin"
+msgstr "<_:media-1/> 타킨"
+
+#. (itstool) path: page/p
+#: C/index.page:22
+msgid ""
+"<app>Taquin</app> is a sliding-block puzzle game. It includes the "
+"traditional 15-Puzzle invented in the early 1880s, and the more recent 16-"
+"Puzzle variant."
+msgstr ""
+"<app>타킨</app>은 블록 밀어내기 퍼즐 게임입니다. 1880년대에 고안한 전통 15-퍼"
+"즐 게임과 최신 16-퍼즐이 들어있습니다."
+
+#. (itstool) path: section/title
+#: C/index.page:26
+msgid "How to Play"
+msgstr "플레이 방법"
+
+#. (itstool) path: section/title
+#: C/index.page:38
+msgid "Advanced"
+msgstr "고급"
+
+#. (itstool) path: p/link
+#: C/legal.xml:3
+msgid "Creative Commons Attribution-ShareAlike 4.0 International license"
+msgstr "크리에이티브 커먼즈 저작자표시-동일조건변경허락 4.0 국제 라이선스"
+
+#. (itstool) path: license/p
+#: C/legal.xml:3
+msgid "This work is licensed under a <_:link-1/>."
+msgstr "이 문서는 <_:link-1/>를 따릅니다."
+
+#. (itstool) path: info/desc
+#: C/license.page:8
+msgid "Legal information."
+msgstr "법적 정보."
+
+#. (itstool) path: page/title
+#: C/license.page:11
+msgid "License"
+msgstr "라이선스"
+
+#. (itstool) path: page/p
+#: C/license.page:12
+msgid ""
+"This work is distributed under a Creative Commons Attribution-ShareAlike 4.0 "
+"International license."
+msgstr ""
+"이 문서는 크리에이티브 커먼즈 저작자표시-동일조건변경허락 4.0 국제 라이선스"
+"로 배포합니다."
+
+#. (itstool) path: page/p
+#: C/license.page:20
+msgid "You are free:"
+msgstr "이용자는 다음 권리가 있습니다:"
+
+#. (itstool) path: item/title
+#: C/license.page:25
+msgid "<em>To share</em>"
+msgstr "<em>공유</em>"
+
+#. (itstool) path: item/p
+#: C/license.page:26
+msgid "To copy, distribute and transmit the work."
+msgstr "저작물을 복제, 배포, 전송합니다."
+
+#. (itstool) path: item/title
+#: C/license.page:29
+msgid "<em>To remix</em>"
+msgstr "<em>변경</em>"
+
+#. (itstool) path: item/p
+#: C/license.page:30
+msgid "To adapt the work."
+msgstr "저작물을 적용합니다."
+
+#. (itstool) path: page/p
+#: C/license.page:33
+msgid "Under the following conditions:"
+msgstr "다음 조건을 따라야 합니다:"
+
+#. (itstool) path: item/title
+#: C/license.page:38
+msgid "<em>Attribution</em>"
+msgstr "<em>저작자 표시</em>"
+
+#. (itstool) path: item/p
+#: C/license.page:39
+msgid ""
+"You must attribute the work in the manner specified by the author or "
+"licensor (but not in any way that suggests that they endorse you or your use "
+"of the work)."
+msgstr ""
+"저작자 또는 저작권자가 지정한 방법으로 표시해야 합니다. 하지만 저작자나 저작"
+"권자가 귀하에게 권리를 부여한다거나 귀하의 사용을 허가한다는 내용을 나타내서"
+"는 안 됩니다."
+
+#. (itstool) path: item/title
+#: C/license.page:46
+msgid "<em>Share Alike</em>"
+msgstr "<em>동일 조건</em>"
+
+#. (itstool) path: item/p
+#: C/license.page:47
+msgid ""
+"If you alter, transform, or build upon this work, you may distribute the "
+"resulting work only under the same, similar or a compatible license."
+msgstr ""
+"이 저작물을 개작, 변형, 이 저작물을 기반으로 또 다른 저작물을 만든다면, 동"
+"일, 유사 또는 호환 라이선스에 따라 저작물을 배포해야 함."
+
+#. (itstool) path: page/p
+#: C/license.page:53
+msgid ""
+"For the full text of the license, see the <link href=\"http://"
+"creativecommons.org/licenses/by-sa/4.0/legalcode\">CreativeCommons website</"
+"link>, or read the full <link href=\"http://creativecommons.org/licenses/by-"
+"sa/4.0/\">Commons Deed</link>."
+msgstr ""
+"라이선스 전문을 보려면, <link href=\"http://creativecommons.org/licenses/by-"
+"sa/3.0/legalcode\">크리에이티브 커먼즈 웹사이트 </link> 또는 <link href="
+"\"http://creativecommons.org/licenses/by-sa/3.0/\">일반 권리 증서</link>를 참"
+"조합니다."
+
+#. (itstool) path: page/title
+#: C/shortcuts.page:18
+msgid "Keyboard Shortcuts"
+msgstr "키보드 바로 가기 키"
+
+#. (itstool) path: page/p
+#: C/shortcuts.page:20
+msgid ""
+"<app>Taquin</app> can easily be used with keyboard. The <link xref=\"15-"
+"Puzzle#15-keyboard\">15-Puzzle</link> and <link xref=\"16-Puzzle#16-keyboard"
+"\">16-Puzzle</link> both have specific shortcuts."
+msgstr ""
+"<app>타킨</app>은 키보드를 쉽게 사용할 수 있습니다. <link xref=\"15-"
+"Puzzle#15-keyboard\">15-퍼즐</link>과 <link xref=\"16-Puzzle#16-keyboard"
+"\">16-퍼즐</link>의 지정 바로 가기 키가 있습니다."
+
+#. (itstool) path: section/title
+#: C/shortcuts.page:23
+msgid "In-game shortcuts"
+msgstr "게임 중 바로 가기 키"
+
+#. (itstool) path: td/p
+#: C/shortcuts.page:26
+msgid "Show the Start Screen"
+msgstr "시작 화면 표시"
+
+#. (itstool) path: td/p
+#: C/shortcuts.page:27
+msgid "<keyseq><key>Ctrl</key><key>N</key></keyseq>"
+msgstr "<keyseq><key>Ctrl</key><key>N</key></keyseq>"
+
+#. (itstool) path: td/p
+#: C/shortcuts.page:30
+msgid "Restart game"
+msgstr "게임 다시 시작"
+
+#. (itstool) path: td/p
+#: C/shortcuts.page:31 C/shortcuts.page:78
+msgid "<keyseq><key>Shift</key><key>Ctrl</key><key>N</key></keyseq>"
+msgstr "<keyseq><key>Shift</key><key>Ctrl</key><key>N</key></keyseq>"
+
+#. (itstool) path: td/p
+#: C/shortcuts.page:34
+msgid "Undo last move"
+msgstr "최근 움직임 취소"
+
+#. (itstool) path: td/p
+#: C/shortcuts.page:35
+msgid "<keyseq><key>Ctrl</key><key>Z</key></keyseq>"
+msgstr "<keyseq><key>Ctrl</key><key>Z</key></keyseq>"
+
+#. (itstool) path: section/title
+#: C/shortcuts.page:40
+msgid "15-Puzzle shortcuts"
+msgstr "15-퍼즐 바로 가기 키"
+
+#. (itstool) path: td/p
+#: C/shortcuts.page:43
+msgid "Select tile to push on"
+msgstr "밀어낼 타일 선택"
+
+#. (itstool) path: td/p
+#: C/shortcuts.page:44
+msgid "<key>Left</key>, <key>Right</key>, <key>Up</key> and <key>Down</key>"
+msgstr "<key>Left</key>, <key>Right</key>, <key>Up</key>, <key>Down</key>"
+
+#. (itstool) path: td/p
+#: C/shortcuts.page:47
+msgid "Push tile in empty space’s direction"
+msgstr "빈 공간 방향으로 타일 밀기"
+
+#. (itstool) path: td/p
+#: C/shortcuts.page:48
+msgid "<key>Space</key>, <key>Return</key> and <key>Enter</key>"
+msgstr "<key>Space</key>, <key>Return</key>, <key>Enter</key>"
+
+#. (itstool) path: section/title
+#: C/shortcuts.page:53
+msgid "16-Puzzle shortcuts"
+msgstr "16-퍼즐 바로 가기 키"
+
+#. (itstool) path: td/p
+#: C/shortcuts.page:56
+msgid "Change selected column"
+msgstr "선택한 열 바꾸기"
+
+#. (itstool) path: td/p
+#: C/shortcuts.page:57
+msgid "<key>Left</key> and <key>Right</key>"
+msgstr "<key>Left</key> and <key>Right</key>"
+
+#. (itstool) path: td/p
+#: C/shortcuts.page:60
+msgid "Change selected row"
+msgstr "선택한 행 바꾸기"
+
+#. (itstool) path: td/p
+#: C/shortcuts.page:61
+msgid "<key>Up</key> and <key>Down</key>"
+msgstr "<key>Up</key> and <key>Down</key>"
+
+#. (itstool) path: td/p
+#: C/shortcuts.page:64
+msgid "Swipe selected row"
+msgstr "선택한 행 밀어내기"
+
+#. (itstool) path: td/p
+#: C/shortcuts.page:65
+msgid ""
+"<keyseq><key>Shift</key><key>Left</key></keyseq> and <keyseq><key>Shift</"
+"key><key>Right</key></keyseq>"
+msgstr ""
+"<keyseq><key>Shift</key><key>Left</key></keyseq>, <keyseq><key>Shift</"
+"key><key>Right</key></keyseq>"
+
+#. (itstool) path: td/p
+#: C/shortcuts.page:68
+msgid "Swipe selected column"
+msgstr "선택한 열 밀어내기"
+
+#. (itstool) path: td/p
+#: C/shortcuts.page:69
+msgid ""
+"<keyseq><key>Shift</key><key>Up</key></keyseq> and <keyseq><key>Shift</"
+"key><key>Down</key></keyseq>"
+msgstr ""
+"<keyseq><key>Shift</key><key>Up</key></keyseq>, <keyseq><key>Shift</"
+"key><key>Down</key></keyseq>"
+
+#. (itstool) path: section/title
+#: C/shortcuts.page:74
+msgid "Start Screen shortcuts"
+msgstr "화면 바로 가기 시작"
+
+#. (itstool) path: td/p
+#: C/shortcuts.page:77
+msgid "Start new game"
+msgstr "새 게임 시작"
+
+#. (itstool) path: td/p
+#: C/shortcuts.page:81
+msgid "Back to previous game (if any)"
+msgstr "이전 게임으로 (가능하다면) 돌아가기"
+
+#. (itstool) path: td/p
+#: C/shortcuts.page:82
+msgid "<key>Escape</key>"
+msgstr "<key>Escape</key>"
+
+#. (itstool) path: section/title
+#: C/shortcuts.page:87
+msgid "General shortcuts"
+msgstr "일반 바로 가기 키"
+
+#. (itstool) path: td/p
+#: C/shortcuts.page:90
+msgid "Keyboard shortcuts"
+msgstr "키보드 바로 가기 키"
+
+#. (itstool) path: td/p
+#: C/shortcuts.page:91
+msgid "<keyseq><key>Ctrl</key><key>F1</key></keyseq>"
+msgstr "<keyseq><key>Ctrl</key><key>F1</key></keyseq>"
+
+#. (itstool) path: td/p
+#: C/shortcuts.page:94
+msgid "Help"
+msgstr "도움말"
+
+#. (itstool) path: td/p
+#: C/shortcuts.page:95
+msgid "<key>F1</key>"
+msgstr "<key>F1</key>"
+
+#. (itstool) path: td/p
+#: C/shortcuts.page:98
+msgid "About"
+msgstr "정보"
+
+#. (itstool) path: td/p
+#: C/shortcuts.page:99
+msgid "<keyseq><key>Shift</key><key>F1</key></keyseq>"
+msgstr "<keyseq><key>Shift</key><key>F1</key></keyseq>"
+
+#. (itstool) path: td/p
+#: C/shortcuts.page:102
+msgid "Quit"
+msgstr "끝내기"
+
+#. (itstool) path: td/p
+#: C/shortcuts.page:103
+msgid "<keyseq><key>Ctrl</key><key>Q</key></keyseq>"
+msgstr "<keyseq><key>Ctrl</key><key>Q</key></keyseq>"
+
+#. (itstool) path: page/title
+#: C/start-screen.page:18
+msgid "Start Screen"
+msgstr "시작 화면"
+
+#. (itstool) path: page/p
+#: C/start-screen.page:19
+msgid ""
+"The <em>Start Screen</em> is the place to select your options and launch a "
+"new game, either a <link xref=\"15-Puzzle\">15-Puzzle</link> or a <link xref="
+"\"16-Puzzle\">16-Puzzle</link>."
+msgstr ""
+"<em>시작 화면</em>은 옵션을 선택하여 <link xref=\"15-Puzzle\">15-퍼즐</link> "
+"또는 <link xref=\"16-Puzzle\">16-퍼즐</link>새 게임을 실행하는 화면입니다."
+
+#. (itstool) path: page/p
+#: C/start-screen.page:20
+msgid ""
+"It can be accessed at any time from a game by pressing the <gui>New Game</"
+"gui> button."
+msgstr "게임에서 언제든 <gui>새 게임</gui> 단추를 눌러 띄울 수 있습니다."
