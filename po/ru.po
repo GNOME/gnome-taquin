@@ -8,130 +8,134 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: gnome-taquin master\n"
-"Report-Msgid-Bugs-To: http://bugzilla.gnome.org/enter_bug.cgi?product=gnome-"
-"taquin&keywords=I18N+L10N&component=general\n"
-"POT-Creation-Date: 2016-08-13 20:10+0000\n"
-"PO-Revision-Date: 2016-09-16 12:47+0300\n"
-"Last-Translator: Stas Solovey <whats_up@tut.by>\n"
+"Report-Msgid-Bugs-To: https://gitlab.gnome.org/GNOME/gnome-taquin/issues\n"
+"POT-Creation-Date: 2020-06-13 18:47+0000\n"
+"PO-Revision-Date: 2022-01-08 11:22+1000\n"
+"Last-Translator: Ser82-png\n"
 "Language-Team: Русский <gnome-cyr@gnome.org>\n"
 "Language: ru\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=3; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && n"
-"%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2)\n"
-"X-Generator: Gtranslator 2.91.7\n"
+"%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2);\n"
+"X-Generator: Poedit 2.3\n"
 
-#: ../data/taquin-menus.ui.h:1
-msgid "_Sound"
-msgstr "З_вук"
-
-#: ../data/taquin-menus.ui.h:2
-msgid "_Help"
-msgstr "_Справка"
-
-#: ../data/taquin-menus.ui.h:3
-msgid "_About"
-msgstr "_О приложении"
-
-#: ../data/taquin-menus.ui.h:4
-msgid "_Quit"
-msgstr "_Завершить"
-
-#: ../data/taquin-screens.ui.h:1
-msgid "3 × 3"
-msgstr "3 × 3"
-
-#: ../data/taquin-screens.ui.h:2
-msgid "4 × 4"
-msgstr "4 × 4"
-
-#: ../data/taquin-screens.ui.h:3
-msgid "5 × 5"
-msgstr "5 × 5"
-
-#: ../data/taquin-screens.ui.h:4
-msgid "Cats"
-msgstr "Кошки"
-
-#: ../data/taquin-screens.ui.h:5
-msgid "Numbers"
-msgstr "Числа"
-
-#: ../data/taquin-screens.ui.h:6 ../data/org.gnome.taquin.desktop.in.h:5
-msgid "15-Puzzle"
-msgstr "Пятнашки (15-фишек)"
-
-#: ../data/taquin-screens.ui.h:7 ../data/org.gnome.taquin.desktop.in.h:6
-msgid "16-Puzzle"
-msgstr "16-фишек"
-
-#: ../data/taquin.ui.h:1
-msgid "Go back to the current game"
-msgstr "Вернуться к текущей игре"
-
-#: ../data/taquin.ui.h:2
-msgid "_Start Over"
-msgstr "_Начать заново"
-
-#: ../data/taquin.ui.h:3
-msgid "Configure a new game"
-msgstr "Настроить новую игру"
-
-#: ../data/taquin.ui.h:4
-msgid "Start a new game"
-msgstr "Начать новую игру"
-
-#: ../data/org.gnome.taquin.appdata.xml.in.h:1
+#: data/org.gnome.Taquin.appdata.xml.in:7
 msgid "GNOME Taquin"
-msgstr "GNOME Taquin"
+msgstr "Пятнашки GNOME"
 
-#: ../data/org.gnome.taquin.appdata.xml.in.h:2
-#: ../data/org.gnome.taquin.desktop.in.h:3
+#. Translators: a Comment that gives the application function, as defined in the desktop file spec
+#: data/org.gnome.Taquin.appdata.xml.in:8 data/org.gnome.Taquin.desktop.in:9
 msgid "Slide tiles to their correct places"
-msgstr "Передвиньте фишки на правильные места"
+msgstr "Передвиньте костяшки на свои места"
 
-#: ../data/org.gnome.taquin.appdata.xml.in.h:3
+#: data/org.gnome.Taquin.appdata.xml.in:10
 msgid ""
 "Taquin is a computer version of the 15-puzzle and other sliding puzzles."
 msgstr ""
-"Taquin — компьютерная версия игры в пятнашки и других механических "
-"головоломок."
+"Пятнашки — компьютерная версия игры с 15 и более скользящими костяшками."
 
-#: ../data/org.gnome.taquin.appdata.xml.in.h:4
+#: data/org.gnome.Taquin.appdata.xml.in:13
 msgid ""
 "The object of Taquin is to move tiles so that they reach their places, "
 "either indicated with numbers, or with parts of a great image."
 msgstr ""
-"Цель игры — передвинуть фишки так, чтобы они заняли свои места, сложив "
+"Цель игры — передвинуть костяшки так, чтобы они заняли свои места, сложив "
 "последовательность чисел или целое изображение."
 
-#: ../data/org.gnome.taquin.appdata.xml.in.h:5
+#: data/org.gnome.Taquin.appdata.xml.in:21
 msgid "A GNOME taquin game preview"
-msgstr "Предварительный просмотр игры Taquin GNOME"
+msgstr "Предварительный просмотр игры Пятнашки GNOME"
 
-#: ../data/org.gnome.taquin.appdata.xml.in.h:6
+#: data/org.gnome.Taquin.appdata.xml.in:37
 msgid "The GNOME Project"
 msgstr "Проект GNOME"
 
-#: ../data/org.gnome.taquin.desktop.in.h:1 ../src/taquin-main.vala:76
-#: ../src/taquin-main.vala:133 ../src/taquin-main.vala:237
+#. Translators: application name, as used in the window manager, the window title, the about dialog...
+#: data/org.gnome.Taquin.desktop.in:3 src/taquin-main.vala:26
 msgid "Taquin"
-msgstr "Taquin"
+msgstr "Пятнашки"
 
-#: ../data/org.gnome.taquin.desktop.in.h:2
+#. Translators: a GenericName that gives the application goal, as defined in the desktop file spec
+#: data/org.gnome.Taquin.desktop.in:7
 msgid "15-puzzle"
-msgstr "Пятнашки (15-фишек)"
+msgstr "15-костяшек"
 
-#: ../data/org.gnome.taquin.desktop.in.h:4
+#. Translators: some search Keywords to find this application, as defined in the desktop file spec. Do NOT translate or localize the semicolons! The list MUST also end with a semicolon!
+#: data/org.gnome.Taquin.desktop.in:11
 msgid "puzzle;"
-msgstr "головоломка;пятнашки;"
+msgstr "puzzle;головоломка;пятнашки;пазлы;"
 
-#: ../data/org.gnome.taquin.gschema.xml.h:1
+#. Translators: an action Name, as defined in the desktop file spec; name of the traditional Taquin game
+#. Translators: when configuring a new game, label of the first big button; name of the traditional Taquin game
+#. Translators: name of one of the games, as displayed in the headerbar when playing
+#: data/org.gnome.Taquin.desktop.in:22 src/taquin-main.vala:191
+#: src/taquin-main.vala:379
+msgid "15-Puzzle"
+msgstr "15-костяшек"
+
+#. Translators: an action Name, as defined in the desktop file spec; name of the alternative game
+#. Translators: when configuring a new game, label of the second big button; name of the non-traditional game
+#. Translators: name of one of the games, as displayed in the headerbar when playing
+#: data/org.gnome.Taquin.desktop.in:27 src/taquin-main.vala:195
+#: src/taquin-main.vala:382
+msgid "16-Puzzle"
+msgstr "16-костяшек"
+
+#. Translators: summary of a settings key, see 'dconf-editor /org/gnome/taquin/automatic-night-mode'
+#: data/org.gnome.Taquin.gschema.xml:6
+msgid "A flag to follow system night light"
+msgstr "Флаг для системного ночного освещения"
+
+#. Translators: description of a settings key, see 'dconf-editor /org/gnome/taquin/automatic-night-mode'
+#: data/org.gnome.Taquin.gschema.xml:8
+msgid "Use GNOME night light setting to activate night-mode."
+msgstr ""
+"Используйте настройки ночного освещения GNOME, чтобы активировать ночной "
+"режим."
+
+#. see AdaptativeWindow.width-request at data/ui/adaptative-window.ui:22
+#. range min="350"/ FIXME
+#. Translators: summary of a settings key, see 'dconf-editor /org/gnome/taquin/window-width'
+#: data/org.gnome.Taquin.gschema.xml:15
+msgid "The width of the window"
+msgstr "Ширина окна"
+
+#. Translators: summary of a settings key, see 'dconf-editor /org/gnome/taquin/window-width'
+#: data/org.gnome.Taquin.gschema.xml:17
+msgid "The width of the main window in pixels."
+msgstr "Требуемая ширина основного окна, в пикселях."
+
+#. see AdaptativeWindow.height-request at data/ui/adaptative-window.ui:21
+#. range min="284"/ FIXME
+#. Translators: summary of a settings key, see 'dconf-editor /org/gnome/taquin/window-height'
+#: data/org.gnome.Taquin.gschema.xml:24
+msgid "The height of the window"
+msgstr "Высота окна"
+
+#. Translators: description of a settings key, see 'dconf-editor /org/gnome/taquin/window-height'
+#: data/org.gnome.Taquin.gschema.xml:26
+msgid "The height of the main window in pixels."
+msgstr "Требуемая высота основного, в пикселах."
+
+#. Translators: summary of a settings key, see 'dconf-editor /org/gnome/taquin/window-is-maximized'
+#: data/org.gnome.Taquin.gschema.xml:31
+msgid "A flag to enable maximized mode"
+msgstr "Флаг для включения развернутого режима"
+
+#. Translators: description of a settings key, see 'dconf-editor /org/gnome/taquin/window-is-maximized'
+#: data/org.gnome.Taquin.gschema.xml:33
+msgid "If “true”, the main window starts in maximized mode."
+msgstr "Если “true”, главное окно запускается в развернутом режиме."
+
+#. Translators: summary of a settings key, see 'dconf-editor /org/gnome/taquin/size'
+#: data/org.gnome.Taquin.gschema.xml:51
 msgid "Number of tiles on each edge."
-msgstr "Количество фишек по каждой стороне."
+msgstr "Количество костяшек по каждой стороне."
 
-#: ../data/org.gnome.taquin.gschema.xml.h:2
+#. Translators: description of a settings key, see 'dconf-editor /org/gnome/taquin/size'
+#: data/org.gnome.Taquin.gschema.xml:53
 msgid ""
 "The game offers to play with a board size from 3 to 5. The setting could be "
 "set from 2 (good for testing) to 9, limited by the way files are selected."
@@ -139,100 +143,501 @@ msgstr ""
 "Игра предлагает сыграть с размером поля от 3 до 5. Можно установить от 2 "
 "(хорошо для тестирования) до 9, ограничено по методу выбора файлов."
 
-#: ../data/org.gnome.taquin.gschema.xml.h:3
+#. Translators: summary of a settings key, see 'dconf-editor /org/gnome/taquin/theme'
+#: data/org.gnome.Taquin.gschema.xml:58
 msgid "Name of the theme folder."
 msgstr "Имя папки с темами."
 
-#: ../data/org.gnome.taquin.gschema.xml.h:4
+#. Translators: description of a settings key, see 'dconf-editor /org/gnome/taquin/theme'; TODO the themes names are translated in the UI, but not in the settings; not sure what to do for now
+#: data/org.gnome.Taquin.gschema.xml:60
 msgid "Taquin has two default themes: 'cats' and 'numbers'."
 msgstr "В Taquin есть две темы по умолчанию: «кошки» и «числа»."
 
-#: ../data/org.gnome.taquin.gschema.xml.h:5
+#. Translators: summary of a settings key, see 'dconf-editor /org/gnome/taquin/sound'
+#: data/org.gnome.Taquin.gschema.xml:65
 msgid "Sound"
 msgstr "Звук"
 
-#: ../data/org.gnome.taquin.gschema.xml.h:6
+#. Translators: description of a settings key, see 'dconf-editor /org/gnome/taquin/sound'
+#: data/org.gnome.Taquin.gschema.xml:67
 msgid "Whether or not to play event sounds."
 msgstr "Определяет озвучивать события или нет."
 
-#: ../data/org.gnome.taquin.gschema.xml.h:7
-msgid "Width of the window in pixels."
-msgstr "Ширина окна в пикселях."
+#. Translators: accessible name of the hamburger menu
+#: data/ui/base-headerbar.ui:113
+msgid "Actions"
+msgstr "Действия"
 
-#: ../data/org.gnome.taquin.gschema.xml.h:8
-msgid "Height of the window in pixels."
-msgstr "Высота окна в пикселях."
+#. Translators: accessible description of the hamburger menu
+#: data/ui/base-headerbar.ui:115
+msgid "Current view actions"
+msgstr "Действия с текущей панелью просмотра"
 
-#: ../data/org.gnome.taquin.gschema.xml.h:9
-msgid "true if the window is maximized."
-msgstr "значение «true», если окно развернуто."
+#. Translators: during a game, tooltip text of the New Game button
+#: data/ui/game-headerbar.ui:29
+msgid "Start a new game"
+msgstr "Начать новую игру"
 
-#: ../src/game-window.vala:128
+#. Translators: during a game, label of the New Game button (with a mnemonic that appears pressing Alt)
+#: data/ui/game-headerbar.ui:38
+msgid "_New Game"
+msgstr "_Новая игра"
+
+#. Translators: when configuring a new game, if the user has a started game, tooltip text of the Go back button
+#: data/ui/game-headerbar.ui:52
+msgid "Go back to the current game"
+msgstr "Вернуться к текущей игре"
+
+#. Translators: in the Keyboard Shortcuts window, name of a section; contains “Start new game” and “Go back”
+#: data/ui/help-overlay.ui:29
+msgctxt "shortcut window"
+msgid "During game selection"
+msgstr "Во время выбора игры"
+
+#. Translators: in the Keyboard Shortcuts window, section "During game selection"
+#: data/ui/help-overlay.ui:34
+msgctxt "shortcut window"
+msgid "Start new game"
+msgstr "Начать новую игру"
+
+#. Translators: in the Keyboard Shortcuts window, section "During game selection"
+#: data/ui/help-overlay.ui:42
+msgctxt "shortcut window"
+msgid "Go back"
+msgstr "Вернуться"
+
+#. Translators: in the Keyboard Shortcuts window, name of a section; contains “New game”, “Restart game” and “Undo last move”
+#: data/ui/help-overlay.ui:52
+msgctxt "shortcut window"
+msgid "During a game"
+msgstr "Во время игры"
+
+#. Translators: in the Keyboard Shortcuts window, section "During a game"
+#: data/ui/help-overlay.ui:57
+msgctxt "shortcut window"
+msgid "New game"
+msgstr "Новая игра"
+
+#. Translators: in the Keyboard Shortcuts window, section "During a game"
+#: data/ui/help-overlay.ui:65
+msgctxt "shortcut window"
+msgid "Restart game"
+msgstr "_Начать игру заново"
+
+#. Translators: in the Keyboard Shortcuts window, section "During a game"
+#: data/ui/help-overlay.ui:73
+msgctxt "shortcut window"
+msgid "Undo last move"
+msgstr "Отменить последний ход"
+
+#. Translators: in the Keyboard Shortcuts window, section "During a game"
+#: data/ui/help-overlay.ui:81
+msgctxt "shortcut window"
+msgid "Toggle game menu"
+msgstr "Переключить меню игры"
+
+#. Translators: in the Keyboard Shortcuts window, name of a section; contains shortcuts specific to the 15-Puzzle game
+#: data/ui/help-overlay.ui:91
+msgctxt "shortcut window"
+msgid "15-Puzzle"
+msgstr "15-костяшек"
+
+#. Translators: in the Keyboard Shortcuts window, section "15-Puzzle"
+#: data/ui/help-overlay.ui:96
+msgctxt "shortcut window"
+msgid "Select tile to push on"
+msgstr "Выбрать костяшку для нажатия"
+
+#. Translators: in the Keyboard Shortcuts window, section "15-Puzzle"
+#: data/ui/help-overlay.ui:104
+msgctxt "shortcut window"
+msgid "Push on selected tile"
+msgstr "Нажать на выбранную костяшку"
+
+#. Translators: in the Keyboard Shortcuts window, name of a section; contains shortcuts specific to the 16-Puzzle game
+#: data/ui/help-overlay.ui:114
+msgctxt "shortcut window"
+msgid "16-Puzzle"
+msgstr "16-костяшек"
+
+#. Translators: in the Keyboard Shortcuts window, section "16-Puzzle"
+#: data/ui/help-overlay.ui:119
+msgctxt "shortcut window"
+msgid "Change selected column"
+msgstr "Изменить выбранный столбец"
+
+#. Translators: in the Keyboard Shortcuts window, section "16-Puzzle"
+#: data/ui/help-overlay.ui:127
+msgctxt "shortcut window"
+msgid "Change selected row"
+msgstr "Изменить выбранный ряд"
+
+#. Translators: in the Keyboard Shortcuts window, section "16-Puzzle"
+#: data/ui/help-overlay.ui:135
+msgctxt "shortcut window"
+msgid "Swipe selected row"
+msgstr "Переместить выбранный ряд"
+
+#. Translators: in the Keyboard Shortcuts window, section "16-Puzzle"
+#: data/ui/help-overlay.ui:143
+msgctxt "shortcut window"
+msgid "Swipe selected column"
+msgstr "Переместить выбранный столбец"
+
+#. Translators: in the Keyboard Shortcuts window, name of a section; contains generic shortcuts like F1, F10, etc.
+#: data/ui/help-overlay.ui:153
+msgctxt "shortcut window"
+msgid "Generic"
+msgstr "Общее"
+
+#. Translators: in the Keyboard Shortcuts window, section "Generic"
+#: data/ui/help-overlay.ui:158
+msgctxt "shortcut window"
+msgid "Toggle main menu"
+msgstr "Переключить главное меню"
+
+#. Translators: in the Keyboard Shortcuts window, section "Generic"
+#: data/ui/help-overlay.ui:166
+msgctxt "shortcut window"
+msgid "Keyboard shortcuts"
+msgstr "Комбинации клавиш"
+
+#. Translators: in the Keyboard Shortcuts window, section "Generic"
+#: data/ui/help-overlay.ui:174
+msgctxt "shortcut window"
+msgid "Help"
+msgstr "Справка"
+
+#. Translators: in the Keyboard Shortcuts window, section "Generic"
+#: data/ui/help-overlay.ui:182
+msgctxt "shortcut window"
+msgid "About"
+msgstr "О приложении"
+
+#. Translators: in the Keyboard Shortcuts window, section "Generic"
+#: data/ui/help-overlay.ui:190
+msgctxt "shortcut window"
+msgid "Quit"
+msgstr "Выход"
+
+#. Translators: accessible name of the history menubutton
+#: data/ui/history-button.ui:31
+msgid "History"
+msgstr "Журнал"
+
+#. Translators: accessible description of the history menubutton
+#: data/ui/history-button.ui:33
+msgid "Game history menu"
+msgstr "Меню игрового журнала"
+
+#. Translators: when configuring a new game, header of the game type that appears on small screen
+#: data/ui/new-game-screen.ui:32
+msgid "Game"
+msgstr "Игра"
+
+#. Translators: when configuring a new game, header of the options that appears on small screen
+#: data/ui/new-game-screen.ui:88
+msgid "Options"
+msgstr "Параметры"
+
+#. Translators: on really small windows, the about dialog is replaced by an in-window view; here is the label of one of two buttons that have the same role as the stack switcher in the usual about dialog, the second is "Credits"
+#. Translators: on really small windows, the about dialog is replaced by an in-window view; here is the name of the view, displayed in the headerbar
+#: src/about-list.vala:44 src/base-headerbar.vala:288
+msgid "About"
+msgstr "О приложении"
+
+#. Translators: on really small windows, the about dialog is replaced by an in-window view; here is the label of one of two buttons that have the same role as the stack switcher in the usual about dialog, the first is "About"
+#: src/about-list.vala:46
+msgid "Credits"
+msgstr "Благодарности"
+
+#. Translators: on really small windows, the about dialog is replaced by an in-window view; here is the label of the link to the GPL license; TODO better text, as in the usual about dialog
+#: src/about-list.vala:135
+msgid ""
+"GNU General Public License\n"
+"version 3 or later"
+msgstr ""
+"GNU General Public License\n"
+"вестия 3 или более новая"
+
+#. Translators: on really small windows, the about dialog is replaced by an in-window view; here is the header of the programmers names
+#: src/about-list.vala:154
+msgid "Creators"
+msgstr "Авторы"
+
+#. Translators: on really small windows, the about dialog is replaced by an in-window view; here is the header of the documenters names
+#: src/about-list.vala:161
+msgid "Documenters"
+msgstr "Авторы документации"
+
+#. Translators: on really small windows, the about dialog is replaced by an in-window view; here is the header of the translators names
+#: src/about-list.vala:166
+msgid "Translators"
+msgstr "Переводчики"
+
+#. Translators: on really small windows, the about dialog is replaced by an in-window view; here is the header of the pictural artists names
+#: src/about-list.vala:172
+msgid "Artists"
+msgstr "Художники"
+
+#. Translators: there are three related actions: "use", "reuse" and "pause"; displayed in the hamburger menu at night
+#: src/adaptative-window.vala:149
+msgid "Pause night mode"
+msgstr "Преостановить ночной режим"
+
+#. Translators: there are three related actions: "use", "reuse" and "pause"; displayed in the hamburger menu at night
+#: src/adaptative-window.vala:153
+msgid "Reuse night mode"
+msgstr "Повторно использовать ночной режим"
+
+#. Translators: there are three related actions: "use", "reuse" and "pause"; displayed in the hamburger menu at night
+#: src/adaptative-window.vala:157
+msgid "Use night mode"
+msgstr "Использовать ночной режим"
+
+#. Translators: usual menu entry of the hamburger menu (with a mnemonic that appears pressing Alt)
+#: src/base-headerbar.vala:116
+msgid "_Keyboard Shortcuts"
+msgstr "_Комбинации клавиш"
+
+#. Translators: usual menu entry of the hamburger menu (with a mnemonic that appears pressing Alt)
+#: src/base-headerbar.vala:125
+msgid "_Help"
+msgstr "_Справка"
+
+#. Translators: hamburger menu entry; sound togglebutton (with a mnemonic that appears pressing Alt)
+#: src/game-headerbar.vala:193
+msgid "_Sound"
+msgstr "З_вук"
+
+#. Translators: when configuring a new game, label of the blue Start button (with a mnemonic that appears pressing Alt)
+#: src/game-view.vala:58
 msgid "_Start Game"
 msgstr "_Начать игру"
 
-#: ../src/game-window.vala:153
-msgid "Undo your most recent move"
-msgstr "Отменить последний ход"
+#. Translator: during a game, if the user tries with <Shift><Ctrl>n to restart the game, while already on initial position
+#: src/game-window.vala:228
+msgid "Already on initial position."
+msgstr "Уже в исходном положении."
 
-#: ../src/taquin-main.vala:45
-msgid "Play the classical 1880s’ 15-puzzle"
-msgstr "Играть в классическую игру в пятнашки 1880-ых годов."
+#. Translators: during a game, entry in the menu of the history menubutton (with a mnemonic that appears pressing Alt)
+#: src/history-button.vala:70
+msgid "_Undo"
+msgstr "_Отменить"
 
-#: ../src/taquin-main.vala:46
-msgid "Try this fun alternative 16-puzzle"
-msgstr "Попробуйте забавную альтернативу: 16-фишек"
+#. Translators: during a game, entry in the menu of the history menubutton (with a mnemonic that appears pressing Alt)
+#: src/history-button.vala:73
+msgid "_Restart"
+msgstr "_Начать заново"
 
-#: ../src/taquin-main.vala:47
-msgid "Sets the puzzle edges’ size (3-5, 2-9 for debug)"
-msgstr "Задаёт соотношение сторон головоломки (3-5, 2-9 для отладки)"
+#. Translators: during a game that has already been finished (and possibly restarted), entry in the menu of the moves button
+#: src/history-button.vala:84
+#, c-format
+msgid "Best score: %s"
+msgstr "Лучший результат: %s"
 
-#: ../src/taquin-main.vala:48
-msgid "Turn off the sound"
-msgstr "Выключить звук"
+#. Translators: in-window notification; on both games, if the user solved the puzzle more than one time
+#: src/history-button.vala:115
+msgid "Bravo! You improved your best score!"
+msgstr "Браво! Вы улучшили свой лучший результат!"
 
-#: ../src/taquin-main.vala:49
-msgid "Turn on the sound"
-msgstr "Включить звук"
+#. Translators: in-window notification; on both games, if the user solved the puzzle more than one time
+#: src/history-button.vala:122
+msgid "Bravo! You equalized your best score."
+msgstr "Браво! Вы сравняли свой лучший результат."
 
-#: ../src/taquin-main.vala:50
-msgid "Print release version and exit"
-msgstr "Показать версию и выйти"
+#. Translators: in-window notification; on both games, if the user solved the puzzle more than one time
+#: src/history-button.vala:129
+msgid "Bravo! You finished the game again."
+msgstr "Браво! Вы снова прошли игру."
 
-#: ../src/taquin-main.vala:233
-msgid "(see COPYING.themes for informations)"
-msgstr "(смотрите COPYING.themes для информации)"
-
-#: ../src/taquin-main.vala:241
-msgid "A classic 15-puzzle game"
-msgstr "Классическая игра в пятнашки (15-фишек)"
-
-#: ../src/taquin-main.vala:245
-msgid "translator-credits"
-msgstr ""
-"Ivan Komaritsyn <vantu5z@mail.ru>, 2015.\n"
-"Stas Solovey <whats_up@tut.by>, 2015-2016."
-
-#: ../src/taquin-main.vala:286
-msgid "You can’t move this tile!"
-msgstr "Вы не можете подвинуть эту фишку!"
-
-#: ../src/taquin-main.vala:292
+#. Translators: in-window notification; on both games, if the user solves the puzzle the first time
+#: src/history-button.vala:138
 msgid "Bravo! You finished the game!"
 msgstr "Браво! Вы закончили игру!"
 
-#: ../src/taquin-main.vala:310
+#. Translators: when configuring a new game, button label for the size of the game ("3 × 3", or 4, or 5)
+#: src/new-game-screen.vala:95
 #, c-format
 msgid "Size: %d × %d ▾"
 msgstr "Размер: %d × %d ▾"
 
-#: ../src/taquin-main.vala:324
+#. Translators: command-line option description, see 'gnome-taquin --help'
+#: src/taquin-main.vala:52
+msgid "Play the classical 1880s’ 15-puzzle"
+msgstr "Играть в классическую игру Пятнашки 1880-ых годов"
+
+#. Translators: command-line option description, see 'gnome-taquin --help'
+#: src/taquin-main.vala:55
+msgid "Try this fun alternative 16-puzzle"
+msgstr "Попробуйте забавную альтернативу - 16-костяшек"
+
+#. Translators: command-line option description, see 'gnome-taquin --help'
+#: src/taquin-main.vala:58
+msgid "Sets the puzzle edges’ size (3-5, 2-9 for debug)"
+msgstr "Задаёт соотношение сторон головоломки (3-5, 2-9 для отладки)"
+
+#. Translators: in the command-line options description, text to indicate the user should specify a size, see 'gnome-taquin --help'
+#: src/taquin-main.vala:61
+msgid "SIZE"
+msgstr "РАЗМЕР"
+
+#. Translators: command-line option description, see 'gnome-taquin --help'
+#: src/taquin-main.vala:64
+msgid "Turn off the sound"
+msgstr "Выключить звук"
+
+#. Translators: command-line option description, see 'gnome-taquin --help'
+#: src/taquin-main.vala:67
+msgid "Turn on the sound"
+msgstr "Включить звук"
+
+#. Translators: command-line option description, see 'gnome-taquin --help'
+#: src/taquin-main.vala:70
+msgid "Print release version and exit"
+msgstr "Показать номер версии и выйти"
+
+#. Translators: when configuring a new game, entry in the menu of the game size menubutton; the "\t" is a tabulation; after is indicated an estimated time for solving the puzzle (1 minute)
+#: src/taquin-main.vala:161 src/taquin-main.vala:172
+msgid "3 × 3\t1 minute"
+msgstr "3 × 3\t1 минута"
+
+#. Translators: when configuring a new game, entry in the menu of the game size menubutton; the "\t" is a tabulation; after is indicated an estimated time for solving the puzzle (5 minutes)
+#: src/taquin-main.vala:164
+msgid "4 × 4\t5 minutes"
+msgstr "4 × 4\t5 минут"
+
+#. Translators: when configuring a new game, entry in the menu of the game size menubutton; the "\t" is a tabulation; after is indicated an estimated time for solving the puzzle (15 minutes)
+#: src/taquin-main.vala:167
+msgid "5 × 5\t15 minutes"
+msgstr "5 × 5\t15 минут"
+
+#. Translators: when configuring a new game, entry in the menu of the game size menubutton; the "\t" is a tabulation; after is indicated an estimated time for solving the puzzle (5 minutes)
+#: src/taquin-main.vala:175
+msgid "4 × 4\t3 minutes"
+msgstr "4 × 4\t3 минут"
+
+#. Translators: when configuring a new game, entry in the menu of the game size menubutton; the "\t" is a tabulation; after is indicated an estimated time for solving the puzzle (5 minutes)
+#: src/taquin-main.vala:178
+msgid "5 × 5\t5 minutes"
+msgstr "5 × 5\t5 минут"
+
+#. Translators: when configuring a new game, entry in the menu of the game theme menubutton; play with cats images
+#: src/taquin-main.vala:183
+msgid "Cats"
+msgstr "Кошки"
+
+#. Translators: when configuring a new game, entry in the menu of the game theme menubutton; play with numbers
+#: src/taquin-main.vala:187
+msgid "Numbers"
+msgstr "Числа"
+
+#: src/taquin-main.vala:218
+msgid "About Taquin"
+msgstr "О приложении Пятнашки"
+
+#. Translators: in-window notification; on the 15-Puzzle game, if the user clicks a tile that cannot move
+#: src/taquin-main.vala:440
+msgid "You can’t move this tile!"
+msgstr "Вы не можете подвинуть эту костяшку!"
+
+#. Translators: in-window notification; on the 16-Puzzle game, help for keyboard use, displayed if the user uses an unmeaningful keyboard key
+#: src/taquin-main.vala:449
+msgid "Use Shift and an arrow to move tiles!"
+msgstr "Используйте Shift и стрелку для перемещения костяшки!"
+
+#. Translators: in-window notification; on the 16-Puzzle game, if the user clicks on a tile of the board (the game is played using mouse with arrows around the board)
+#: src/taquin-main.vala:453
+msgid "Click on the arrows to move tiles!"
+msgstr "Нажимайте на стрелки, чтобы перемещать костяшки!"
+
+#. Translators: when configuring a new game, button label for the theme, if the current theme is Cats
+#: src/taquin-main.vala:530
 msgid "Theme: Cats ▾"
 msgstr "Тема: Кошки ▾"
 
-#: ../src/taquin-main.vala:325
+#. Translators: when configuring a new game, button label for the theme, if the current theme is Numbers
+#: src/taquin-main.vala:533
 msgid "Theme: Numbers ▾"
 msgstr "Тема: Числа ▾"
+
+#. Translators: when configuring a new game, button label for the theme, if the current theme has been added by the user; the %s is replaced by the theme name
+#: src/taquin-main.vala:536
+#, c-format
+#| msgid "Theme: Cats ▾"
+msgid "Theme: %s ▾"
+msgstr "Тема: %s ▾"
+
+#. Translators: about dialog text
+#: src/taquin-main.vala:648
+msgid "A classic 15-puzzle game"
+msgstr "Классическая игра в пятнашки (15-костяшек)"
+
+#. Translators: about dialog text crediting an artist (a photograph), with the website where the image was published
+#: src/taquin-main.vala:652
+msgid "Abelard (Wikimedia)"
+msgstr "Abelard (Wikimedia)"
+
+#: src/taquin-main.vala:652
+msgid "Alvesgaspar (Wikimedia)"
+msgstr "Alvesgaspar (Wikimedia)"
+
+#: src/taquin-main.vala:652
+msgid "Mueller-rech.muenchen (Wikimedia)"
+msgstr "Mueller-rech.muenchen (Wikimedia)"
+
+#: src/taquin-main.vala:653
+msgid "Ruskis (Wikimedia)"
+msgstr "Ruskis (Wikimedia)"
+
+#: src/taquin-main.vala:653
+msgid "Toyah (Wikimedia)"
+msgstr "Toyah (Wikimedia)"
+
+#. Translators: about dialog text; in the Credits, text at the end of the "Artwork by" section
+#: src/taquin-main.vala:656
+msgid "(see COPYING.themes for information)"
+msgstr "(смотрите COPYING.themes для информации)"
+
+#. Translators: about dialog text crediting an author
+#. Translators: about dialog text crediting a documenter
+#: src/taquin-main.vala:660 src/taquin-main.vala:668
+msgid "Arnaud Bonatti"
+msgstr "Arnaud Bonatti"
+
+#. Translators: about dialog text crediting a maintainer; the %u are replaced with the years of start and end
+#: src/taquin-main.vala:664
+#, c-format
+msgid "Copyright © %u-%u – Arnaud Bonatti"
+msgstr "Copyright © %u-%u – Arnaud Bonatti"
+
+#. Translators: about dialog text; this string should be replaced by a text crediting yourselves and your translation team, or should be left empty. Do not translate literally!
+#: src/taquin-main.vala:673
+msgid "translator-credits"
+msgstr ""
+"Ivan Komaritsyn <vantu5z@mail.ru>, 2015.\n"
+"Stas Solovey <whats_up@tut.by>, 2015-2016.\n"
+"Ser82-png"
+
+#. Translators: about dialog text; label of the website link
+#: src/taquin-main.vala:678
+msgid "Page on GNOME wiki"
+msgstr "Страница на GNOME wiki"
+
+#~ msgid "3 × 3"
+#~ msgstr "3 × 3"
+
+#~ msgid "4 × 4"
+#~ msgstr "4 × 4"
+
+#~ msgid "5 × 5"
+#~ msgstr "5 × 5"
+
+#~ msgid "_Start Over"
+#~ msgstr "_Начать заново"
+
+#~ msgid "Configure a new game"
+#~ msgstr "Настроить новую игру"
 
 #~ msgid "15-Puzzle with hole"
 #~ msgstr "15-фишек с одним пустым сектором"
