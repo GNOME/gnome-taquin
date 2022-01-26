@@ -6,15 +6,16 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: gnome-taquin master\n"
-"POT-Creation-Date: 2020-06-17 16:19+0000\n"
-"PO-Revision-Date: 2020-02-26 21:08+0200\n"
-"Last-Translator: scootergrisen\n"
+"POT-Creation-Date: 2020-10-03 15:21+0000\n"
+"PO-Revision-Date: 2022-01-25 19:39+0100\n"
+"Last-Translator: Alan Mortensen <alanmortensen.am@gmail.com>\n"
 "Language-Team: Danish <dansk@dansk-gruppen.dk>\n"
 "Language: da\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"X-Generator: Poedit 2.3\n"
 
 #. Put one translator per line, in the form NAME <EMAIL>, YEAR1, YEAR2
 msgctxt "_"
@@ -66,9 +67,9 @@ msgid ""
 "onto it. You can push more than one tile at the same time in the empty "
 "space’s direction."
 msgstr ""
-"Der er en tom plads, hvor du kan flytte tilstødende fliser hen ved at "
-"skubbe dem. Du kan skubbe flere end én flise ad gangen i retningen af den "
-"tomme plads."
+"Der er en tom plads, hvor du kan flytte tilstødende fliser hen ved at skubbe "
+"dem. Du kan skubbe flere end én flise ad gangen i retningen af den tomme "
+"plads."
 
 #. (itstool) path: section/title
 #: C/15-Puzzle.page:31 C/16-Puzzle.page:31
@@ -195,31 +196,31 @@ msgstr ""
 #. (itstool) path: item/p
 #: C/15-Puzzle.page:78 C/16-Puzzle.page:72
 msgid ""
-"You can always undo your move. For that, use the <keyseq><key>Ctrl</"
-"key><key>Z</key></keyseq> keys sequence."
+"You can always undo your move. For that, use <keyseq><key>Ctrl</key><key>Z</"
+"key></keyseq>."
 msgstr ""
-"Du kan altid fortryde dit træk. For at gøre det bruges tastesekvensen "
-"<keyseq><key>Ctrl</key><key>Z</key></keyseq>."
+"Du kan altid fortryde dit træk. For at gøre det trykkes <keyseq><key>Ctrl</"
+"key><key>Z</key></keyseq>."
 
 #. (itstool) path: item/p
 #: C/15-Puzzle.page:85 C/16-Puzzle.page:79
 msgid ""
-"To start a new game –possibly with other options–, use the "
-"<keyseq><key>Ctrl</key><key>N</key></keyseq> keys sequence to go to the "
-"<link xref=\"start-screen\">Start Screen</link>."
+"To start a new game –possibly with other options–, use <keyseq><key>Ctrl</"
+"key><key>N</key></keyseq> to go to the <link xref=\"start-screen\">Start "
+"Screen</link>."
 msgstr ""
-"For at starte et nyt spil (eventuelt med andre indstillinger) bruges "
-"tastesekvensen <keyseq><key>Ctrl</key><key>N</key></keyseq> for at gå til "
-"<link xref=\"start-screen\">startskærmen</link>."
+"For at starte et nyt spil (eventuelt med andre indstillinger) trykkes "
+"<keyseq><key>Ctrl</key><key>N</key></keyseq> for at gå til <link xref="
+"\"start-screen\">startskærmen</link>."
 
 #. (itstool) path: item/p
 #: C/15-Puzzle.page:88 C/16-Puzzle.page:82
 msgid ""
-"Alternatively, you may want to restart the game. For that, use the "
-"<keyseq><key>Shift</key><key>Ctrl</key><key>N</key></keyseq> keys sequence."
+"Alternatively, you may want to restart the game. For that, use "
+"<keyseq><key>Shift</key><key>Ctrl</key><key>N</key></keyseq>."
 msgstr ""
-"Ellers kan det være, du vil genstarte spillet. For at gøre det bruges "
-"tastesekvensen <keyseq><key>Skift</key><key>Ctrl</key><key>N</key></keyseq>."
+"Ellers kan det være, du vil genstarte spillet. For at gøre det trykkes "
+"<keyseq><key>Skift</key><key>Ctrl</key><key>N</key></keyseq>."
 
 #. (itstool) path: section/p
 #: C/15-Puzzle.page:92 C/16-Puzzle.page:86
@@ -278,16 +279,15 @@ msgstr ""
 #. (itstool) path: item/p
 #: C/16-Puzzle.page:69
 msgid ""
-"Use the <keyseq><key>Shift</key><key>Left</key></keyseq> and "
-"<keyseq><key>Shift</key><key>Right</key></keyseq> keys sequences to swipe "
-"the selected row, or the <keyseq><key>Shift</key><key>Up</key></keyseq> and "
-"<keyseq><key>Shift</key><key>Down</key></keyseq> keys sequences to swipe the "
-"selected column."
+"Use <keyseq><key>Shift</key><key>Left</key></keyseq> and <keyseq><key>Shift</"
+"key><key>Right</key></keyseq> to swipe the selected row, or "
+"<keyseq><key>Shift</key><key>Up</key></keyseq> and <keyseq><key>Shift</"
+"key><key>Down</key></keyseq> to swipe the selected column."
 msgstr ""
-"Brug tastesekvenserne <keyseq><key>Skift</key><key>Venstre</key></keyseq> og "
+"Tryk <keyseq><key>Skift</key><key>Venstre</key></keyseq> og "
 "<keyseq><key>Skift</key><key>Højre</key></keyseq> for at rykke den valgte "
-"række eller tastesekvenserne <keyseq><key>Skift</key><key>Op</key></keyseq> "
-"og <keyseq><key>Skift</key><key>Ned</key></keyseq> for at rykke den valgte "
+"række eller <keyseq><key>Skift</key><key>Op</key></keyseq> og "
+"<keyseq><key>Skift</key><key>Ned</key></keyseq> for at rykke den valgte "
 "kolonne."
 
 #. (itstool) path: page/title
@@ -568,7 +568,6 @@ msgstr "Skub flisen i retningen af den tomme plads"
 
 #. (itstool) path: td/p
 #: C/shortcuts.page:48
-#| msgid "<key>Space</key>, <key>Return</key> and <key>KP_Enter</key>"
 msgid "<key>Space</key>, <key>Return</key> and <key>Enter</key>"
 msgstr "<key>Mellemrum</key>, <key>Retur</key> og <key>Enter</key>"
 
