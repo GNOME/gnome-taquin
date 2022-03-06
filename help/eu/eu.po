@@ -1,18 +1,18 @@
 # Basque translation for gnome-taquin.
 # Copyright (C) 2021 gnome-taquin's COPYRIGHT HOLDER
 # This file is distributed under the same license as the gnome-taquin package.
-# Asier Sarasua Garmendia <asiersarasua@ni.eus>, 2021.
+# Asier Sarasua Garmendia <asiersarasua@ni.eus>, 2021, 2022.
 #
 msgid ""
 msgstr "Project-Id-Version: gnome-taquin master\n"
-"POT-Creation-Date: 2021-03-17 10:40+0000\n"
-"PO-Revision-Date: 2021-04-23 20:06+0000\n"
+"POT-Creation-Date: 2021-04-23 19:44+0000\n"
+"PO-Revision-Date: 2021-03-06 20:06+0000\n"
 "Last-Translator: Asier Sarasua Garmendia <asiersarasua@ni.eus>\n"
 "Language-Team: Basque <librezale@librezale.eus>\n"
+"Language: eu\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Language: eu\n"
 
 #. Put one translator per line, in the form NAME <EMAIL>, YEAR1, YEAR2
 msgctxt "_"
@@ -81,7 +81,7 @@ msgid ""
 "<link xref=\"start-screen\">Start Screen</link>. Alternatively, you can "
 "restart the game by clicking on the button with a counter of moves done, and "
 "then on the <gui>Restart</gui> entry."
-msgstr ""
+msgstr "Goiburu-barrako <gui>Joko berria</gui> botoian sakatuta,<link xref=\"start-screen\">hasierako pantailara</link> joan daiteke. Bestela, jokoa berrabiarazi daiteke egindako mugimenduen zenbagailua duen botoian sakatuta eta <gui>Berrabiarazi</gui> sarrera aukeratuta."
 
 #. (itstool) path: section/title
 #: C/15-Puzzle.page:37 C/16-Puzzle.page:37
@@ -126,7 +126,7 @@ msgid ""
 "To start a new game –possibly with other options–, click the <gui>New Game</"
 "gui> button in the headerbar to go to the <link xref=\"start-screen\">Start "
 "Screen</link>."
-msgstr ""
+msgstr "Joko berria hasteko –beste aukera batzuekin, nahi bada–, egin klik goiburu-barrako <gui>Joko berria</gui> botoian <link xref=\"start-screen\">hasierako pantailara</link> joateko."
 
 #. (itstool) path: item/p
 #: C/15-Puzzle.page:58 C/16-Puzzle.page:55
@@ -134,7 +134,7 @@ msgid ""
 "Alternatively, you may want to restart the game. For that, click in the "
 "headerbar on the button with a counter of moves done, and click the "
 "<gui>Restart</gui> entry in the menu that appears."
-msgstr ""
+msgstr "Bestela, egin klik mugimenduen zenbaketa daukan botoian (goiburu-barran dago) eta egin klik agertuko den menuko <gui>Berrabiarazi</gui> sarreran."
 
 #. (itstool) path: section/p
 #: C/15-Puzzle.page:62 C/16-Puzzle.page:59
@@ -153,14 +153,14 @@ msgid ""
 "arrows to go at the tile you want to move. The currently selected tile is "
 "indicated with four arrows around the board, on each side of its row and "
 "column."
-msgstr ""
+msgstr "Erabili <key>←</key>, <key>→</key>, <key>↑</key> eta <key>↓</key> geziak lekuz aldatu nahi den lauzara joateko. Unean hautatutako lauza taularen inguruko lau gezirekin adierazten da, bere errenkadaren eta zutabearen albo bakoitzean."
 
 #. (itstool) path: item/p
 #: C/15-Puzzle.page:72
 msgid ""
 "Use the <key>Space</key> key to move the selected tile in the direction of "
 "the empty space."
-msgstr ""
+msgstr "Erabili <key>Zuriunea</key> tekla hautatutako lauza hutsik dagoen espazioaren norabidean mugitzeko."
 
 #. (itstool) path: item/p
 #: C/15-Puzzle.page:78 C/16-Puzzle.page:72
@@ -175,14 +175,14 @@ msgid ""
 "To start a new game –possibly with other options–, use <keyseq><key>Ctrl</"
 "key><key>N</key></keyseq> to go to the <link xref=\"start-screen\">Start "
 "Screen</link>."
-msgstr ""
+msgstr "Joko berria hasteko –beste aukera batzuekin, nahi bada–, erabili <keyseq><key>Ctrl</key><key>N</key></keyseq> <link xref=\"start-screen\">hasierako pantailara</link> joateko."
 
 #. (itstool) path: item/p
 #: C/15-Puzzle.page:88 C/16-Puzzle.page:82
 msgid ""
 "Alternatively, you may want to restart the game. For that, use "
 "<keyseq><key>Shift</key><key>Ctrl</key><key>N</key></keyseq>."
-msgstr ""
+msgstr "Bestela, jokoa berrabiaraztea ere aukeratu daiteke. Horretarako, erabili <keyseq><key>Shift</key><key>Ctrl</key><key>N</key></keyseq>."
 
 #. (itstool) path: section/p
 #: C/15-Puzzle.page:92 C/16-Puzzle.page:86
@@ -225,7 +225,7 @@ msgid ""
 "column, and the <key>Up</key> and <key>Down</key> arrows to change the "
 "selected row. The currently selected row and column are indicated with "
 "lights around the board."
-msgstr ""
+msgstr "Erabili <key>←</key> eta <key>→</key> geziak hautatutako zutabea aldatzeko eta <key>↑</key> eta <key>↓</key> geziak hautatutako errenkada aldatzeko. Unean hautatutako errenkada eta zutabea taularen inguruko argiekin adierazten da."
 
 #. (itstool) path: item/p
 #: C/16-Puzzle.page:69
@@ -234,7 +234,7 @@ msgid ""
 "key><key>Right</key></keyseq> to swipe the selected row, or "
 "<keyseq><key>Shift</key><key>Up</key></keyseq> and <keyseq><key>Shift</"
 "key><key>Down</key></keyseq> to swipe the selected column."
-msgstr ""
+msgstr "Use <keyseq><key>Shift</key><key>←</key></keyseq> eta<keyseq><key>Shift</key><key>→</key></keyseq> hautatutako errenkada alboratzeko edo <keyseq><key>Shift</key><key>↑</key></keyseq> eta <keyseq><key>Shift</key><key>↓</key></keyseq> hautatutako zutabea alboratzeko."
 
 #. (itstool) path: page/title
 #: C/beginning.page:18
@@ -259,7 +259,7 @@ msgid ""
 "To start a new game –whether you finished the current game or not–, click "
 "the <gui>New Game</gui> button in the headerbar to go to the <link xref="
 "\"start-screen\">Start Screen</link>."
-msgstr ""
+msgstr "Joko berria hasteko –uneko jokoa bukatuta egon zein ez–, egin klik goiburu-barrako <gui>Joko berria</gui> botoian <link xref=\"start-screen\">hasierako pantailara</link> joateko."
 
 #. (itstool) path: page/p
 #: C/beginning.page:39
@@ -274,7 +274,7 @@ msgid ""
 "After the first time it is opened, <app>Taquin</app> displays a puzzle with "
 "the same rules and dimensions as the last one played when it is opened, so "
 "it could be a <link xref=\"16-Puzzle\">16-Puzzle</link> game."
-msgstr ""
+msgstr "<app>Taquin</app> lehen aldiz ireki ondoren, ireki zen azken aldian jokatu zen arauak eta tamaina dituen puzzle bat bistaratzen du, beraz <link xref=\"16-Puzzle\">16-Puzzle</link> joko bat izan daiteke."
 
 #. (itstool) path: info/title
 #: C/index.page:8
@@ -310,7 +310,7 @@ msgid ""
 "<app>Taquin</app> is a sliding-block puzzle game. It includes the "
 "traditional 15-Puzzle invented in the early 1880s, and the more recent 16-"
 "Puzzle variant."
-msgstr ""
+msgstr "<app>Taquin</app>  blokeak lekuz aldatzeko puzzle bat da. 1880ko hamarkadan asmatutako 15-Puzzle tradizionala du, bai eta 16-Puzzle aldaera berriagoa ere."
 
 #. (itstool) path: section/title
 #: C/index.page:26
@@ -424,7 +424,7 @@ msgid ""
 "<app>Taquin</app> can easily be used with keyboard. The <link xref=\"15-"
 "Puzzle#15-keyboard\">15-Puzzle</link> and <link xref=\"16-Puzzle#16-keyboard"
 "\">16-Puzzle</link> both have specific shortcuts."
-msgstr ""
+msgstr "<app>Taquin</app> erraz erabili daiteke teklatuarekin. <link xref=\"15-Puzzle#15-keyboard\">15-Puzzle</link> eta <link xref=\"16-Puzzle#16-keyboard\">16-Puzzle</link> aldaerek, biek dituzte lasterbide espezifikoak."
 
 #. (itstool) path: section/title
 #: C/shortcuts.page:23
@@ -474,7 +474,7 @@ msgstr "Hautatu bultzatuko den lauza"
 #. (itstool) path: td/p
 #: C/shortcuts.page:44
 msgid "<key>Left</key>, <key>Right</key>, <key>Up</key> and <key>Down</key>"
-msgstr ""
+msgstr "<key>←</key>, <key>→</key>, <key>↑</key> eta <key>↓</key>"
 
 #. (itstool) path: td/p
 #: C/shortcuts.page:47
@@ -499,7 +499,7 @@ msgstr "Aldatu hautatutako zutabea"
 #. (itstool) path: td/p
 #: C/shortcuts.page:57
 msgid "<key>Left</key> and <key>Right</key>"
-msgstr ""
+msgstr "<key>←</key> eta <key>→</key>"
 
 #. (itstool) path: td/p
 #: C/shortcuts.page:60
@@ -509,7 +509,7 @@ msgstr "Aldatu hautatutako errenkada"
 #. (itstool) path: td/p
 #: C/shortcuts.page:61
 msgid "<key>Up</key> and <key>Down</key>"
-msgstr ""
+msgstr "<key>↑</key> eta <key>↓</key>"
 
 #. (itstool) path: td/p
 #: C/shortcuts.page:64
@@ -521,7 +521,7 @@ msgstr "Alboratu hautatutako errenkada"
 msgid ""
 "<keyseq><key>Shift</key><key>Left</key></keyseq> and <keyseq><key>Shift</"
 "key><key>Right</key></keyseq>"
-msgstr ""
+msgstr "<keyseq><key>Shift</key><key>←</key></keyseq> eta <keyseq><key>Shift</key><key>→</key></keyseq>"
 
 #. (itstool) path: td/p
 #: C/shortcuts.page:68
@@ -533,7 +533,7 @@ msgstr "Alboratu hautatutako zutabea"
 msgid ""
 "<keyseq><key>Shift</key><key>Up</key></keyseq> and <keyseq><key>Shift</"
 "key><key>Down</key></keyseq>"
-msgstr ""
+msgstr "<keyseq><key>Shift</key><key>↑</key></keyseq> eta <keyseq><key>Shift</key><key>↓</key></keyseq>"
 
 #. (itstool) path: section/title
 #: C/shortcuts.page:74
@@ -588,7 +588,7 @@ msgstr "Honi buruz"
 #. (itstool) path: td/p
 #: C/shortcuts.page:99
 msgid "<keyseq><key>Shift</key><key>F1</key></keyseq>"
-msgstr "<keyseq><key>Shift</key><key>F1</key></keyseq>"
+msgstr "<keyseq><key>⇧</key><key>F1</key></keyseq>"
 
 #. (itstool) path: td/p
 #: C/shortcuts.page:102
@@ -611,7 +611,7 @@ msgid ""
 "The <em>Start Screen</em> is the place to select your options and launch a "
 "new game, either a <link xref=\"15-Puzzle\">15-Puzzle</link> or a <link xref="
 "\"16-Puzzle\">16-Puzzle</link>."
-msgstr ""
+msgstr "<em>Hasierako pantailan</em> aukerak hautatzen dira eta joko berria abiarazten da, bai <link xref=\"15-Puzzle\">15-Puzzle</link> bat bai <link xref=\"16-Puzzle\">16-Puzzle</link> bat."
 
 #. (itstool) path: page/p
 #: C/start-screen.page:20
