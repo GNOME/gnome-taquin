@@ -3,13 +3,13 @@
 # This file is distributed under the same license as the gnome-taquin package.
 #
 # Julien Hardelin <jhardlin@orange.fr>, 2016.
-# Charles Monzat <charles.monzat@free.fr>, 2018-2020.
+# Charles Monzat <charles.monzat@free.fr>, 2018-2022.
 #
 msgid ""
 msgstr ""
 "Project-Id-Version: gnome-taquin master\n"
-"POT-Creation-Date: 2020-07-05 21:02+0000\n"
-"PO-Revision-Date: 2020-09-14 16:21+0200\n"
+"POT-Creation-Date: 2020-10-03 15:21+0000\n"
+"PO-Revision-Date: 2022-04-10 23:23+0200\n"
 "Last-Translator: Charles Monzat <charles.monzat@free.fr>\n"
 "Language-Team: GNOME French Team <gnomefr@traduc.org>\n"
 "Language: fr\n"
@@ -17,7 +17,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n > 1);\n"
-"X-Generator: Gtranslator 3.36.0\n"
+"X-Generator: Gtranslator 40.0\n"
 
 #. Put one translator per line, in the form NAME <EMAIL>, YEAR1, YEAR2
 msgctxt "_"
@@ -203,9 +203,6 @@ msgstr ""
 
 #. (itstool) path: item/p
 #: C/15-Puzzle.page:78 C/16-Puzzle.page:72
-#| msgid ""
-#| "You can always undo your move. For that, use the <keyseq><key>Ctrl</"
-#| "key><key>Z</key></keyseq> keys sequence."
 msgid ""
 "You can always undo your move. For that, use <keyseq><key>Ctrl</key><key>Z</"
 "key></keyseq>."
@@ -215,10 +212,6 @@ msgstr ""
 
 #. (itstool) path: item/p
 #: C/15-Puzzle.page:85 C/16-Puzzle.page:79
-#| msgid ""
-#| "To start a new game –possibly with other options–, use the "
-#| "<keyseq><key>Ctrl</key><key>N</key></keyseq> keys sequence to go to the "
-#| "<link xref=\"start-screen\">Start Screen</link>."
 msgid ""
 "To start a new game –possibly with other options–, use <keyseq><key>Ctrl</"
 "key><key>N</key></keyseq> to go to the <link xref=\"start-screen\">Start "
@@ -230,10 +223,6 @@ msgstr ""
 
 #. (itstool) path: item/p
 #: C/15-Puzzle.page:88 C/16-Puzzle.page:82
-#| msgid ""
-#| "Alternatively, you may want to restart the game. For that, use the "
-#| "<keyseq><key>Shift</key><key>Ctrl</key><key>N</key></keyseq> keys "
-#| "sequence."
 msgid ""
 "Alternatively, you may want to restart the game. For that, use "
 "<keyseq><key>Shift</key><key>Ctrl</key><key>N</key></keyseq>."
@@ -301,12 +290,6 @@ msgstr ""
 
 #. (itstool) path: item/p
 #: C/16-Puzzle.page:69
-#| msgid ""
-#| "Use the <keyseq><key>Shift</key><key>Left</key></keyseq> and "
-#| "<keyseq><key>Shift</key><key>Right</key></keyseq> keys sequences to swipe "
-#| "the selected row, or the <keyseq><key>Shift</key><key>Up</key></keyseq> "
-#| "and <keyseq><key>Shift</key><key>Down</key></keyseq> keys sequences to "
-#| "swipe the selected column."
 msgid ""
 "Use <keyseq><key>Shift</key><key>Left</key></keyseq> and <keyseq><key>Shift</"
 "key><key>Right</key></keyseq> to swipe the selected row, or "
@@ -387,7 +370,7 @@ msgstr "Taquin"
 msgid ""
 "Creative Commons Attribution-ShareAlike 4.0 International (CC BY-SA 4.0)"
 msgstr ""
-"Creative Commons Paternité-Partage dans des conditions identiques à "
+"Creative Commons Attribution - Partage dans des conditions identiques à "
 "l’Internationale 4.0 (CC BY-SA 4.0)"
 
 #. (itstool) path: media/span
@@ -425,7 +408,7 @@ msgstr "À propos"
 #: C/legal.xml:3
 msgid "Creative Commons Attribution-ShareAlike 4.0 International license"
 msgstr ""
-"Creative Commons Paternité-Partage dans des conditions identiques à la "
+"Creative Commons Attribution - Partage dans des conditions identiques à la "
 "licence internationale 4.0"
 
 #. (itstool) path: license/p
@@ -449,7 +432,7 @@ msgid ""
 "This work is distributed under a Creative Commons Attribution-ShareAlike 4.0 "
 "International license."
 msgstr ""
-"Ce travail est distribué sous licence Creative Commons Paternité-Partage "
+"Ce travail est distribué sous licence Creative Commons Attribution - Partage "
 "dans des conditions identiques à la licence internationale 4.0."
 
 #. (itstool) path: page/p
@@ -522,7 +505,7 @@ msgid ""
 "sa/4.0/\">Commons Deed</link>."
 msgstr ""
 "Pour connaître l’intégralité de la licence, reportez-vous au <link href="
-"\"http://creativecommons.org/licenses/by-sa/4.0/legalcode\">site Web de "
+"\"http://creativecommons.org/licenses/by-sa/4.0/legalcode\">site web de "
 "Creative Commons</link>, ou lisez la section <link href=\"http://"
 "creativecommons.org/licenses/by-sa/4.0/\">Commons Deed</link>."
 
@@ -602,7 +585,6 @@ msgstr "Pousser la pièce en direction de l’espace vide"
 
 #. (itstool) path: td/p
 #: C/shortcuts.page:48
-#| msgid "<key>Space</key>, <key>Return</key> and <key>KP_Enter</key>"
 msgid "<key>Space</key>, <key>Return</key> and <key>Enter</key>"
 msgstr ""
 "<key>Espace</key>, <key>Entrée</key> et <key>Entrée</key> du clavier "
