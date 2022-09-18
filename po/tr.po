@@ -1,6 +1,7 @@
 # Turkish translation for gnome-taquin.
-# Copyright (C) 2014 gnome-taquin's COPYRIGHT HOLDER
+# Copyright (C) 2014-2022 gnome-taquin's COPYRIGHT HOLDER
 # This file is distributed under the same license as the gnome-taquin package.
+#
 # Muhammet Kara <muhammetk@gmail.com>, 2014, 2015.
 # Furkan Ahmet Kara <furkanahmetkara.fk@gmail.com>, 2017.
 # Sabri Ünal <libreajans@gmail.com>, 2019.
@@ -10,7 +11,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: gnome-taquin master\n"
 "Report-Msgid-Bugs-To: https://gitlab.gnome.org/GNOME/gnome-taquin/issues\n"
-"POT-Creation-Date: 2020-06-13 18:47+0000\n"
+"POT-Creation-Date: 2022-07-26 10:56+0000\n"
 "PO-Revision-Date: 2020-08-19 12:58+0300\n"
 "Last-Translator: Emin Tufan Çetin <etcetin@gmail.com>\n"
 "Language-Team: Türkçe <gnome-turk@gnome.org>\n"
@@ -70,7 +71,7 @@ msgstr "bulmaca;"
 #. Translators: an action Name, as defined in the desktop file spec; name of the traditional Taquin game
 #. Translators: when configuring a new game, label of the first big button; name of the traditional Taquin game
 #. Translators: name of one of the games, as displayed in the headerbar when playing
-#: data/org.gnome.Taquin.desktop.in:22 src/taquin-main.vala:191
+#: data/org.gnome.Taquin.desktop.in:24 src/taquin-main.vala:191
 #: src/taquin-main.vala:379
 msgid "15-Puzzle"
 msgstr "15-Bulmaca"
@@ -78,7 +79,7 @@ msgstr "15-Bulmaca"
 #. Translators: an action Name, as defined in the desktop file spec; name of the alternative game
 #. Translators: when configuring a new game, label of the second big button; name of the non-traditional game
 #. Translators: name of one of the games, as displayed in the headerbar when playing
-#: data/org.gnome.Taquin.desktop.in:27 src/taquin-main.vala:195
+#: data/org.gnome.Taquin.desktop.in:29 src/taquin-main.vala:195
 #: src/taquin-main.vala:382
 msgid "16-Puzzle"
 msgstr "16-Bulmaca"
@@ -623,9 +624,3 @@ msgstr ""
 #: src/taquin-main.vala:678
 msgid "Page on GNOME wiki"
 msgstr "GNOME wikiʼdeki sayfası"
-
-#~ msgid "_Start Over"
-#~ msgstr "_Baştan Başla"
-
-#~ msgid "Configure a new game"
-#~ msgstr "Yeni bir oyun yapılandır"
