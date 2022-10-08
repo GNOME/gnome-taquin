@@ -1,5 +1,5 @@
 project('gnome-taquin', 'vala', 'c',
-    version: '3.38.1')
+    version: '3.38.1', meson_version: '>= 0.59.0',)
 
 project_id = 'org.gnome.Taquin'
 
@@ -48,6 +48,8 @@ subdir('help')
 subdir('po')
 subdir('src')
 
-meson.add_install_script(python3.find_python().path(), join_paths(meson.source_root(),
-                                                                  'build-aux',
-                                                                  'meson_post_install.py'))
+gnome.post_install(
+  glib_compile_schemas: true,
+  gtk_update_icon_cache: true,
+  update_desktop_database: true,
+)
