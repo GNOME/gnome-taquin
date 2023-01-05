@@ -340,6 +340,8 @@ msgid ""
 "GNU General Public License\n"
 "version 3 or later"
 msgstr ""
+"GNU General Public License\n"
+"аверсиа 3 мамзар еиҳа иҿыцу "
 
 #. Translators: on really small windows, the about dialog is replaced by an in-window view; here is the header of the programmers names
 #: src/about-list.vala:154
@@ -481,27 +483,27 @@ msgstr "Апрограмма аверсиа кьыԥхьны аҭыҵра"
 #. Translators: when configuring a new game, entry in the menu of the game size menubutton; the "\t" is a tabulation; after is indicated an estimated time for solving the puzzle (1 minute)
 #: src/taquin-main.vala:161 src/taquin-main.vala:172
 msgid "3 × 3\t1 minute"
-msgstr ""
+msgstr "3 × 3        1 минуҭк"
 
 #. Translators: when configuring a new game, entry in the menu of the game size menubutton; the "\t" is a tabulation; after is indicated an estimated time for solving the puzzle (5 minutes)
 #: src/taquin-main.vala:164
 msgid "4 × 4\t5 minutes"
-msgstr ""
+msgstr "4 × 4        5 минуҭк"
 
 #. Translators: when configuring a new game, entry in the menu of the game size menubutton; the "\t" is a tabulation; after is indicated an estimated time for solving the puzzle (15 minutes)
 #: src/taquin-main.vala:167
 msgid "5 × 5\t15 minutes"
-msgstr ""
+msgstr "5 × 5        15 минуҭ"
 
 #. Translators: when configuring a new game, entry in the menu of the game size menubutton; the "\t" is a tabulation; after is indicated an estimated time for solving the puzzle (5 minutes)
 #: src/taquin-main.vala:175
 msgid "4 × 4\t3 minutes"
-msgstr ""
+msgstr "4 × 4        3 минуҭк"
 
 #. Translators: when configuring a new game, entry in the menu of the game size menubutton; the "\t" is a tabulation; after is indicated an estimated time for solving the puzzle (5 minutes)
 #: src/taquin-main.vala:178
 msgid "5 × 5\t5 minutes"
-msgstr ""
+msgstr "5 × 5        5 минуҭк"
 
 #. Translators: when configuring a new game, entry in the menu of the game theme menubutton; play with cats images
 #: src/taquin-main.vala:183
