@@ -28,7 +28,7 @@ desktop_file = i18n.merge_file(
     po_dir: join_paths(meson.source_root(), 'po'),
     type: 'desktop',
     install: true,
-    install_dir: join_paths(get_option('datadir'), 'applications')
+    install_dir: join_paths(datadir, 'applications')
 )
 
 # Validate desktop file
