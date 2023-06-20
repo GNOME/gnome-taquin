@@ -5,7 +5,6 @@ help_pages = [
     'index.page',
     'legal.xml',
     'license.page',
-    'shortcuts.page',
     'start-screen.page',
 ]
 help_media = [
