@@ -34,6 +34,11 @@
     <kudo>ModernToolkit</kudo>
     <kudo>UserDocs</kudo>
   </kudos>
+  <supports>
+    <control>keyboard</control>
+    <control>pointing</control>
+    <control>touch</control>
+  </supports>
   <translation type="gettext">gnome-taquin</translation>
   <developer_name>The GNOME Project</developer_name>
   <content_rating type="oars-1.0">
@@ -58,10 +63,6 @@
     <content_attribute id="money-purchasing">none</content_attribute>
     <content_attribute id="money-gambling">none</content_attribute>
   </content_rating>
-  <custom>
-    <value key="Purism::form_factor">workstation</value>
-    <value key="Purism::form_factor">mobile</value>
-  </custom>
 
   ​<releases>
     <!-- should be kept in versioning inverted order -->

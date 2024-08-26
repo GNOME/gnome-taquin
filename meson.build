@@ -22,7 +22,7 @@ posix_dependency = valac.find_library('posix')
 rsvg_dependency = dependency('librsvg-2.0', version: '>= 2.32.0')
 
 desktop_file_validate = find_program('desktop-file-validate', required: false)
-appstream_util = find_program('appstream-util', required: false)
+appstreamcli = find_program('appstreamcli', required: false)
 glib_compile_schema = find_program('glib-compile-schemas', required: true)
 
 add_global_arguments('-DGETTEXT_PACKAGE="@0@"'.format (meson.project_name()), language: 'c')
