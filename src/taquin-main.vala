@@ -99,6 +99,7 @@ private class Taquin : Gtk.Application, BaseApplication
         Intl.textdomain (GETTEXT_PACKAGE);
 
         Environment.set_application_name (PROGRAM_NAME);
+        Environment.set_prgname ("org.gnome.Taquin");
         Window.set_default_icon_name ("org.gnome.Taquin");
 
         return new Taquin ().run (args);
