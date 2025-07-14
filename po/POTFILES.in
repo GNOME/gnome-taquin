@@ -1,8 +1,8 @@
 # List of source files containing translatable strings.
 # Please keep this file in alphabetical order.
-data/org.gnome.Taquin.appdata.xml.in
 data/org.gnome.Taquin.desktop.in
 data/org.gnome.Taquin.gschema.xml
+data/org.gnome.Taquin.metainfo.xml.in
 data/ui/base-headerbar.ui
 data/ui/game-headerbar.ui
 data/ui/help-overlay.ui
