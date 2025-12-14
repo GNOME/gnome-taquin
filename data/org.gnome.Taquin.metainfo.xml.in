@@ -26,6 +26,7 @@
   <url type="bugtracker">https://gitlab.gnome.org/GNOME/gnome-taquin/issues/</url>
   <url type="donation">https://www.gnome.org/friends/</url>
   <url type="translate">https://wiki.gnome.org/TranslationProject</url>
+  <url type="help">https://help.gnome.org/gnome-taquin/</url>
   <update_contact>arnaud.bonatti_at_gmail.com</update_contact>
   <project_group>GNOME</project_group>
   <kudos>
