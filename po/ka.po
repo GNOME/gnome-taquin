@@ -1,81 +1,58 @@
-# SOME DESCRIPTIVE TITLE.
-# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
-# This file is distributed under the same license as the PACKAGE package.
-# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+# Georgian translation for welcome-gnome-org.
+# Copyright (C) 2026 welcome-gnome-org's authors
+# This file is distributed under the same license as the welcome-gnome-org package.
+# Ekaterine Papava <papava.e@gtu.ge>,  2026.
 #
 msgid ""
 msgstr ""
-"Project-Id-Version: \n"
+"Project-Id-Version: gnome-taquin\n"
 "Report-Msgid-Bugs-To: https://gitlab.gnome.org/GNOME/gnome-taquin/issues\n"
-"POT-Creation-Date: 2022-07-29 08:10+0000\n"
-"PO-Revision-Date: 2022-07-30 16:33+0200\n"
-"Last-Translator: Temuri Doghonadze <temuri.doghonadze@gmail.com>\n"
-"Language-Team: \n"
+"POT-Creation-Date: 2025-07-14 15:14+0000\n"
+"PO-Revision-Date: 2026-01-20 13:54+0100\n"
+"Last-Translator: Ekaterine Papava <papava.e@gtu.ge>\n"
+"Language-Team: Georgian <(nothing)>\n"
 "Language: ka\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
-"X-Generator: Poedit 3.1.1\n"
-
-#: data/org.gnome.Taquin.appdata.xml.in:7
-msgid "GNOME Taquin"
-msgstr ""
-
-#. Translators: a Comment that gives the application function, as defined in the desktop file spec
-#: data/org.gnome.Taquin.appdata.xml.in:8 data/org.gnome.Taquin.desktop.in:9
-msgid "Slide tiles to their correct places"
-msgstr ""
-
-#: data/org.gnome.Taquin.appdata.xml.in:10
-msgid ""
-"Taquin is a computer version of the 15-puzzle and other sliding puzzles."
-msgstr ""
-
-#: data/org.gnome.Taquin.appdata.xml.in:13
-msgid ""
-"The object of Taquin is to move tiles so that they reach their places, "
-"either indicated with numbers, or with parts of a great image."
-msgstr ""
-
-#: data/org.gnome.Taquin.appdata.xml.in:21
-msgid "A GNOME taquin game preview"
-msgstr ""
-
-#: data/org.gnome.Taquin.appdata.xml.in:37
-msgid "The GNOME Project"
-msgstr "პროექტი \"GNOME\""
+"X-Generator: Poedit 3.8\n"
 
 #. Translators: application name, as used in the window manager, the window title, the about dialog...
-#: data/org.gnome.Taquin.desktop.in:3 src/taquin-main.vala:26
+#: data/org.gnome.Taquin.desktop.in:2 src/taquin-main.vala:26
 msgid "Taquin"
-msgstr ""
+msgstr "Taquin"
 
 #. Translators: a GenericName that gives the application goal, as defined in the desktop file spec
-#: data/org.gnome.Taquin.desktop.in:7
+#: data/org.gnome.Taquin.desktop.in:6
 msgid "15-puzzle"
-msgstr ""
+msgstr "15-პაზლი"
+
+#. Translators: a Comment that gives the application function, as defined in the desktop file spec
+#: data/org.gnome.Taquin.desktop.in:8 data/org.gnome.Taquin.metainfo.xml.in:8
+msgid "Slide tiles to their correct places"
+msgstr "გადაიტანეთ ფილები სწორ ადგილებში"
 
 #. Translators: some search Keywords to find this application, as defined in the desktop file spec. Do NOT translate or localize the semicolons! The list MUST also end with a semicolon!
-#: data/org.gnome.Taquin.desktop.in:11
+#: data/org.gnome.Taquin.desktop.in:10
 msgid "puzzle;"
-msgstr ""
+msgstr "პაზლი;თავსატეხი;"
 
 #. Translators: an action Name, as defined in the desktop file spec; name of the traditional Taquin game
 #. Translators: when configuring a new game, label of the first big button; name of the traditional Taquin game
 #. Translators: name of one of the games, as displayed in the headerbar when playing
-#: data/org.gnome.Taquin.desktop.in:24 src/taquin-main.vala:191
+#: data/org.gnome.Taquin.desktop.in:23 src/taquin-main.vala:191
 #: src/taquin-main.vala:379
 msgid "15-Puzzle"
-msgstr ""
+msgstr "15-თავსატეხი"
 
 #. Translators: an action Name, as defined in the desktop file spec; name of the alternative game
 #. Translators: when configuring a new game, label of the second big button; name of the non-traditional game
 #. Translators: name of one of the games, as displayed in the headerbar when playing
-#: data/org.gnome.Taquin.desktop.in:29 src/taquin-main.vala:195
+#: data/org.gnome.Taquin.desktop.in:28 src/taquin-main.vala:195
 #: src/taquin-main.vala:382
 msgid "16-Puzzle"
-msgstr ""
+msgstr "16-თავსატეხი"
 
 #. Translators: summary of a settings key, see 'dconf-editor /org/gnome/taquin/automatic-night-mode'
 #: data/org.gnome.Taquin.gschema.xml:6
@@ -136,7 +113,7 @@ msgstr ""
 #. Translators: summary of a settings key, see 'dconf-editor /org/gnome/taquin/theme'
 #: data/org.gnome.Taquin.gschema.xml:58
 msgid "Name of the theme folder."
-msgstr ""
+msgstr "თემის საქაღალდის სახელი."
 
 #. Translators: description of a settings key, see 'dconf-editor /org/gnome/taquin/theme'; TODO the themes names are translated in the UI, but not in the settings; not sure what to do for now
 #: data/org.gnome.Taquin.gschema.xml:60
@@ -152,6 +129,29 @@ msgstr "ხმა"
 #: data/org.gnome.Taquin.gschema.xml:67
 msgid "Whether or not to play event sounds."
 msgstr ""
+
+#: data/org.gnome.Taquin.metainfo.xml.in:7
+msgid "GNOME Taquin"
+msgstr "GNOME Taquin"
+
+#: data/org.gnome.Taquin.metainfo.xml.in:10
+msgid ""
+"Taquin is a computer version of the 15-puzzle and other sliding puzzles."
+msgstr ""
+
+#: data/org.gnome.Taquin.metainfo.xml.in:13
+msgid ""
+"The object of Taquin is to move tiles so that they reach their places, "
+"either indicated with numbers, or with parts of a great image."
+msgstr ""
+
+#: data/org.gnome.Taquin.metainfo.xml.in:21
+msgid "A GNOME taquin game preview"
+msgstr ""
+
+#: data/org.gnome.Taquin.metainfo.xml.in:37
+msgid "The GNOME Project"
+msgstr "პროექტი \"GNOME\""
 
 #. Translators: accessible name of the hamburger menu
 #: data/ui/base-headerbar.ui:113
@@ -212,7 +212,7 @@ msgstr "ახალი თამაში"
 #: data/ui/help-overlay.ui:65
 msgctxt "shortcut window"
 msgid "Restart game"
-msgstr ""
+msgstr "თამაშის გადატვირთვა"
 
 #. Translators: in the Keyboard Shortcuts window, section "During a game"
 #: data/ui/help-overlay.ui:73
@@ -230,49 +230,49 @@ msgstr "თამაშის მენიუს ჩართ/გამორთ
 #: data/ui/help-overlay.ui:91
 msgctxt "shortcut window"
 msgid "15-Puzzle"
-msgstr ""
+msgstr "15-თავსატეხი"
 
 #. Translators: in the Keyboard Shortcuts window, section "15-Puzzle"
 #: data/ui/help-overlay.ui:96
 msgctxt "shortcut window"
 msgid "Select tile to push on"
-msgstr ""
+msgstr "აირჩიეთ ფილა დასაჭერად"
 
 #. Translators: in the Keyboard Shortcuts window, section "15-Puzzle"
 #: data/ui/help-overlay.ui:104
 msgctxt "shortcut window"
 msgid "Push on selected tile"
-msgstr ""
+msgstr "არჩეული ფილის დაჭერა"
 
 #. Translators: in the Keyboard Shortcuts window, name of a section; contains shortcuts specific to the 16-Puzzle game
 #: data/ui/help-overlay.ui:114
 msgctxt "shortcut window"
 msgid "16-Puzzle"
-msgstr ""
+msgstr "16-თავსატეხი"
 
 #. Translators: in the Keyboard Shortcuts window, section "16-Puzzle"
 #: data/ui/help-overlay.ui:119
 msgctxt "shortcut window"
 msgid "Change selected column"
-msgstr ""
+msgstr "მონიშნული სვეტის შეცვლა"
 
 #. Translators: in the Keyboard Shortcuts window, section "16-Puzzle"
 #: data/ui/help-overlay.ui:127
 msgctxt "shortcut window"
 msgid "Change selected row"
-msgstr ""
+msgstr "მონიშნული მწკრივის შეცვლა"
 
 #. Translators: in the Keyboard Shortcuts window, section "16-Puzzle"
 #: data/ui/help-overlay.ui:135
 msgctxt "shortcut window"
 msgid "Swipe selected row"
-msgstr ""
+msgstr "მონიშნული მწკრივის გადასმა"
 
 #. Translators: in the Keyboard Shortcuts window, section "16-Puzzle"
 #: data/ui/help-overlay.ui:143
 msgctxt "shortcut window"
 msgid "Swipe selected column"
-msgstr ""
+msgstr "მონიშნული სვეტის გადასმა"
 
 #. Translators: in the Keyboard Shortcuts window, name of a section; contains generic shortcuts like F1, F10, etc.
 #: data/ui/help-overlay.ui:153
@@ -296,7 +296,7 @@ msgstr "კლავიატურის მალსახმობები"
 #: data/ui/help-overlay.ui:174
 msgctxt "shortcut window"
 msgid "Help"
-msgstr ""
+msgstr "დახმარება"
 
 #. Translators: in the Keyboard Shortcuts window, section "Generic"
 #: data/ui/help-overlay.ui:182
@@ -318,7 +318,7 @@ msgstr "ისტორია"
 #. Translators: accessible description of the history menubutton
 #: data/ui/history-button.ui:33
 msgid "Game history menu"
-msgstr ""
+msgstr "თამაშის ისტორიის მენიუ"
 
 #. Translators: when configuring a new game, header of the game type that appears on small screen
 #: data/ui/new-game-screen.ui:32
@@ -347,6 +347,8 @@ msgid ""
 "GNU General Public License\n"
 "version 3 or later"
 msgstr ""
+"GNU General Public License\n"
+"ვერსია 3 ან უფრო ახალი"
 
 #. Translators: on really small windows, the about dialog is replaced by an in-window view; here is the header of the programmers names
 #: src/about-list.vala:154
@@ -356,7 +358,7 @@ msgstr "შემქმნელები"
 #. Translators: on really small windows, the about dialog is replaced by an in-window view; here is the header of the documenters names
 #: src/about-list.vala:161
 msgid "Documenters"
-msgstr ""
+msgstr "დოკუმენტატორები"
 
 #. Translators: on really small windows, the about dialog is replaced by an in-window view; here is the header of the translators names
 #: src/about-list.vala:166
@@ -406,7 +408,7 @@ msgstr "_ახალი თამაშის დაწყება"
 #. Translator: during a game, if the user tries with <Shift><Ctrl>n to restart the game, while already on initial position
 #: src/game-window.vala:228
 msgid "Already on initial position."
-msgstr ""
+msgstr "უკვე საწყის პოზიციაზეა."
 
 #. Translators: during a game, entry in the menu of the history menubutton (with a mnemonic that appears pressing Alt)
 #: src/history-button.vala:70
@@ -422,7 +424,7 @@ msgstr "გადატვირთვა"
 #: src/history-button.vala:84
 #, c-format
 msgid "Best score: %s"
-msgstr ""
+msgstr "საუკეთესო ქულა: %s"
 
 #. Translators: in-window notification; on both games, if the user solved the puzzle more than one time
 #: src/history-button.vala:115
@@ -473,47 +475,47 @@ msgstr "ზომა"
 #. Translators: command-line option description, see 'gnome-taquin --help'
 #: src/taquin-main.vala:64
 msgid "Turn off the sound"
-msgstr ""
+msgstr "ხმის დატესტვის გამორთვა"
 
 #. Translators: command-line option description, see 'gnome-taquin --help'
 #: src/taquin-main.vala:67
 msgid "Turn on the sound"
-msgstr ""
+msgstr "ხმის დატესტვის ჩართვა"
 
 #. Translators: command-line option description, see 'gnome-taquin --help'
 #: src/taquin-main.vala:70
 msgid "Print release version and exit"
-msgstr ""
+msgstr "რელიზის ვერსიის გამოტანა და გასვლა"
 
 #. Translators: when configuring a new game, entry in the menu of the game size menubutton; the "\t" is a tabulation; after is indicated an estimated time for solving the puzzle (1 minute)
 #: src/taquin-main.vala:161 src/taquin-main.vala:172
 msgid "3 × 3\t1 minute"
-msgstr ""
+msgstr "3 × 3\t1 წუთი"
 
 #. Translators: when configuring a new game, entry in the menu of the game size menubutton; the "\t" is a tabulation; after is indicated an estimated time for solving the puzzle (5 minutes)
 #: src/taquin-main.vala:164
 msgid "4 × 4\t5 minutes"
-msgstr ""
+msgstr "4 × 4\t5 წუთი"
 
 #. Translators: when configuring a new game, entry in the menu of the game size menubutton; the "\t" is a tabulation; after is indicated an estimated time for solving the puzzle (15 minutes)
 #: src/taquin-main.vala:167
 msgid "5 × 5\t15 minutes"
-msgstr ""
+msgstr "5 × 5\t15 წუთი"
 
 #. Translators: when configuring a new game, entry in the menu of the game size menubutton; the "\t" is a tabulation; after is indicated an estimated time for solving the puzzle (5 minutes)
 #: src/taquin-main.vala:175
 msgid "4 × 4\t3 minutes"
-msgstr ""
+msgstr "4 × 4\t3 წუთი"
 
 #. Translators: when configuring a new game, entry in the menu of the game size menubutton; the "\t" is a tabulation; after is indicated an estimated time for solving the puzzle (5 minutes)
 #: src/taquin-main.vala:178
 msgid "5 × 5\t5 minutes"
-msgstr ""
+msgstr "5 × 5\t5 წუთი"
 
 #. Translators: when configuring a new game, entry in the menu of the game theme menubutton; play with cats images
 #: src/taquin-main.vala:183
 msgid "Cats"
-msgstr ""
+msgstr "კატები"
 
 #. Translators: when configuring a new game, entry in the menu of the game theme menubutton; play with numbers
 #: src/taquin-main.vala:187
@@ -522,7 +524,7 @@ msgstr "რიცხვები"
 
 #: src/taquin-main.vala:218
 msgid "About Taquin"
-msgstr ""
+msgstr "Taquin-ის შესახებ"
 
 #. Translators: in-window notification; on the 15-Puzzle game, if the user clicks a tile that cannot move
 #: src/taquin-main.vala:440
@@ -542,32 +544,32 @@ msgstr ""
 #. Translators: when configuring a new game, button label for the theme, if the current theme is Cats
 #: src/taquin-main.vala:530
 msgid "Theme: Cats ▾"
-msgstr ""
+msgstr "თემა: კატები ▾"
 
 #. Translators: when configuring a new game, button label for the theme, if the current theme is Numbers
 #: src/taquin-main.vala:533
 msgid "Theme: Numbers ▾"
-msgstr ""
+msgstr "თემა: რიცხვები ▾"
 
 #. Translators: when configuring a new game, button label for the theme, if the current theme has been added by the user; the %s is replaced by the theme name
 #: src/taquin-main.vala:536
 #, c-format
 msgid "Theme: %s ▾"
-msgstr ""
+msgstr "თემა: %s ▾"
 
 #. Translators: about dialog text
 #: src/taquin-main.vala:648
 msgid "A classic 15-puzzle game"
-msgstr ""
+msgstr "კლასიკური 15 თავსატეხი"
 
 #. Translators: about dialog text crediting an artist (a photograph), with the website where the image was published
 #: src/taquin-main.vala:652
 msgid "Abelard (Wikimedia)"
-msgstr ""
+msgstr "აბელარდი (Wikimedia)"
 
 #: src/taquin-main.vala:652
 msgid "Alvesgaspar (Wikimedia)"
-msgstr ""
+msgstr "ალვესგასპარი (Wikimedia)"
 
 #: src/taquin-main.vala:652
 msgid "Mueller-rech.muenchen (Wikimedia)"
@@ -575,11 +577,11 @@ msgstr ""
 
 #: src/taquin-main.vala:653
 msgid "Ruskis (Wikimedia)"
-msgstr ""
+msgstr "რუსკისი (Wikimedia)"
 
 #: src/taquin-main.vala:653
 msgid "Toyah (Wikimedia)"
-msgstr ""
+msgstr "ტოია (Wikimedia)"
 
 #. Translators: about dialog text; in the Credits, text at the end of the "Artwork by" section
 #: src/taquin-main.vala:656
@@ -596,7 +598,7 @@ msgstr "Arnaud Bonatti"
 #: src/taquin-main.vala:664
 #, c-format
 msgid "Copyright © %u-%u – Arnaud Bonatti"
-msgstr ""
+msgstr "საავტორო უფლებები © %u-%u – Arnaud Bonatti"
 
 #. Translators: about dialog text; this string should be replaced by a text crediting yourselves and your translation team, or should be left empty. Do not translate literally!
 #: src/taquin-main.vala:673
