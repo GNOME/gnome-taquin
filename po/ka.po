@@ -1,14 +1,14 @@
-# Georgian translation for welcome-gnome-org.
-# Copyright (C) 2026 welcome-gnome-org's authors
-# This file is distributed under the same license as the welcome-gnome-org package.
-# Ekaterine Papava <papava.e@gtu.ge>,  2026.
+# Georgian translation for gnome-taquin.
+# Copyright (C) 2026 gnome-taquin's authors
+# This file is distributed under the same license as the gnome-taquin package.
+# Ekaterine Papava <papava.e@gtu.ge>, 2026.
 #
 msgid ""
 msgstr ""
 "Project-Id-Version: gnome-taquin\n"
 "Report-Msgid-Bugs-To: https://gitlab.gnome.org/GNOME/gnome-taquin/issues\n"
 "POT-Creation-Date: 2025-07-14 15:14+0000\n"
-"PO-Revision-Date: 2026-01-20 13:54+0100\n"
+"PO-Revision-Date: 2026-02-10 16:43+0100\n"
 "Last-Translator: Ekaterine Papava <papava.e@gtu.ge>\n"
 "Language-Team: Georgian <(nothing)>\n"
 "Language: ka\n"
@@ -57,12 +57,13 @@ msgstr "16-თავსატეხი"
 #. Translators: summary of a settings key, see 'dconf-editor /org/gnome/taquin/automatic-night-mode'
 #: data/org.gnome.Taquin.gschema.xml:6
 msgid "A flag to follow system night light"
-msgstr ""
+msgstr "ალამი, რომელიც სისტემის ღამის სინათლეს მიჰყვება"
 
 #. Translators: description of a settings key, see 'dconf-editor /org/gnome/taquin/automatic-night-mode'
 #: data/org.gnome.Taquin.gschema.xml:8
 msgid "Use GNOME night light setting to activate night-mode."
 msgstr ""
+"GNOME-ის ღამის სინათლის პარამეტრის გამოყენება ღამის რეჟიმის გასააქტიურებლად."
 
 #. see AdaptativeWindow.width-request at data/ui/adaptative-window.ui:22
 #. range min="350"/ FIXME
@@ -101,7 +102,7 @@ msgstr "თუ ჩართულია, ფანჯარა გაშლი�
 #. Translators: summary of a settings key, see 'dconf-editor /org/gnome/taquin/size'
 #: data/org.gnome.Taquin.gschema.xml:51
 msgid "Number of tiles on each edge."
-msgstr ""
+msgstr "ფილების რაოდენობა თითოეულ წიბოზე."
 
 #. Translators: description of a settings key, see 'dconf-editor /org/gnome/taquin/size'
 #: data/org.gnome.Taquin.gschema.xml:53
@@ -109,6 +110,9 @@ msgid ""
 "The game offers to play with a board size from 3 to 5. The setting could be "
 "set from 2 (good for testing) to 9, limited by the way files are selected."
 msgstr ""
+"თამაში გთავაზობთ, ითამაშოთ დაფაზე ზომებით 3-დან 5-მდე. პარამეტრი შეგიძლიათ, "
+"დააყენოთ 2-დან (კარგია შესამოწმებლად) 9-მდე. შეზღუდულია ფაილების არჩევის "
+"ფზით."
 
 #. Translators: summary of a settings key, see 'dconf-editor /org/gnome/taquin/theme'
 #: data/org.gnome.Taquin.gschema.xml:58
@@ -118,7 +122,7 @@ msgstr "თემის საქაღალდის სახელი."
 #. Translators: description of a settings key, see 'dconf-editor /org/gnome/taquin/theme'; TODO the themes names are translated in the UI, but not in the settings; not sure what to do for now
 #: data/org.gnome.Taquin.gschema.xml:60
 msgid "Taquin has two default themes: 'cats' and 'numbers'."
-msgstr ""
+msgstr "Taquin-ს აქვს ორი ნაგულისხმევი თემა: 'კატები' და 'ნომრები'."
 
 #. Translators: summary of a settings key, see 'dconf-editor /org/gnome/taquin/sound'
 #: data/org.gnome.Taquin.gschema.xml:65
@@ -128,7 +132,7 @@ msgstr "ხმა"
 #. Translators: description of a settings key, see 'dconf-editor /org/gnome/taquin/sound'
 #: data/org.gnome.Taquin.gschema.xml:67
 msgid "Whether or not to play event sounds."
-msgstr ""
+msgstr "იქნება, თუ არა დაკრული მოვლენის ხმები."
 
 #: data/org.gnome.Taquin.metainfo.xml.in:7
 msgid "GNOME Taquin"
@@ -137,17 +141,20 @@ msgstr "GNOME Taquin"
 #: data/org.gnome.Taquin.metainfo.xml.in:10
 msgid ""
 "Taquin is a computer version of the 15-puzzle and other sliding puzzles."
-msgstr ""
+msgstr "Taquin 15-პაზლის და სხვა მცურავი პაზლების კომპიუტერული ვერსიაა."
 
 #: data/org.gnome.Taquin.metainfo.xml.in:13
 msgid ""
 "The object of Taquin is to move tiles so that they reach their places, "
 "either indicated with numbers, or with parts of a great image."
 msgstr ""
+"Taquin-ის დანიშნულებაა, ისე გადაალაგოთ ფილები, რომ მათ თავიანთ ადგილებს "
+"მიაღწიონ, რომლებიც ან რიცხვებითაა მითითებული, ან დიდი გამოსახულების "
+"ნაწილებით."
 
 #: data/org.gnome.Taquin.metainfo.xml.in:21
 msgid "A GNOME taquin game preview"
-msgstr ""
+msgstr "თამაშის GNOME taquin მიმოხილვა"
 
 #: data/org.gnome.Taquin.metainfo.xml.in:37
 msgid "The GNOME Project"
@@ -429,22 +436,22 @@ msgstr "საუკეთესო ქულა: %s"
 #. Translators: in-window notification; on both games, if the user solved the puzzle more than one time
 #: src/history-button.vala:115
 msgid "Bravo! You improved your best score!"
-msgstr ""
+msgstr "ბრავო! თქვენ გააუმჯობესეთ თქვენი რეკორდი!"
 
 #. Translators: in-window notification; on both games, if the user solved the puzzle more than one time
 #: src/history-button.vala:122
 msgid "Bravo! You equalized your best score."
-msgstr ""
+msgstr "ბრავო! თქვენ გაუტოლდით თქვენს პირად რეკორდს."
 
 #. Translators: in-window notification; on both games, if the user solved the puzzle more than one time
 #: src/history-button.vala:129
 msgid "Bravo! You finished the game again."
-msgstr ""
+msgstr "ბრავო! თქვენ კიდევ ერთხელ დაასრულეთ თამაში."
 
 #. Translators: in-window notification; on both games, if the user solves the puzzle the first time
 #: src/history-button.vala:138
 msgid "Bravo! You finished the game!"
-msgstr ""
+msgstr "ბრავო! თქვენ დაასრულეთ თამაში!"
 
 #. Translators: when configuring a new game, button label for the size of the game ("3 × 3", or 4, or 5)
 #: src/new-game-screen.vala:95
@@ -455,17 +462,17 @@ msgstr "ზომა: %d × %d ▾"
 #. Translators: command-line option description, see 'gnome-taquin --help'
 #: src/taquin-main.vala:52
 msgid "Play the classical 1880s’ 15-puzzle"
-msgstr ""
+msgstr "კლასიკური 1880-იანი წლების 15-პაზლის თამაში"
 
 #. Translators: command-line option description, see 'gnome-taquin --help'
 #: src/taquin-main.vala:55
 msgid "Try this fun alternative 16-puzzle"
-msgstr ""
+msgstr "სცადეთ ეს სასაცილო ალტერნატიული 16-თავსატეხი"
 
 #. Translators: command-line option description, see 'gnome-taquin --help'
 #: src/taquin-main.vala:58
 msgid "Sets the puzzle edges’ size (3-5, 2-9 for debug)"
-msgstr ""
+msgstr "თავსატეხის წიბოს ზომის დაყენება (3-5, 2-9 გასამართად)"
 
 #. Translators: in the command-line options description, text to indicate the user should specify a size, see 'gnome-taquin --help'
 #: src/taquin-main.vala:61
@@ -529,17 +536,17 @@ msgstr "Taquin-ის შესახებ"
 #. Translators: in-window notification; on the 15-Puzzle game, if the user clicks a tile that cannot move
 #: src/taquin-main.vala:440
 msgid "You can’t move this tile!"
-msgstr ""
+msgstr "ამ ფილას ვერ გადააადგილებთ!"
 
 #. Translators: in-window notification; on the 16-Puzzle game, help for keyboard use, displayed if the user uses an unmeaningful keyboard key
 #: src/taquin-main.vala:449
 msgid "Use Shift and an arrow to move tiles!"
-msgstr ""
+msgstr "ფილების გადაადგილებისთვის გამოიყენეთ Shift და ისრები!"
 
 #. Translators: in-window notification; on the 16-Puzzle game, if the user clicks on a tile of the board (the game is played using mouse with arrows around the board)
 #: src/taquin-main.vala:453
 msgid "Click on the arrows to move tiles!"
-msgstr ""
+msgstr "ფილებსი გადასაადგილებლად დააწკაპუნეთ ისრებზე!"
 
 #. Translators: when configuring a new game, button label for the theme, if the current theme is Cats
 #: src/taquin-main.vala:530
@@ -573,7 +580,7 @@ msgstr "ალვესგასპარი (Wikimedia)"
 
 #: src/taquin-main.vala:652
 msgid "Mueller-rech.muenchen (Wikimedia)"
-msgstr ""
+msgstr "Mueller-rech.muenchen (Wikimedia)"
 
 #: src/taquin-main.vala:653
 msgid "Ruskis (Wikimedia)"
@@ -586,7 +593,7 @@ msgstr "ტოია (Wikimedia)"
 #. Translators: about dialog text; in the Credits, text at the end of the "Artwork by" section
 #: src/taquin-main.vala:656
 msgid "(see COPYING.themes for information)"
-msgstr ""
+msgstr "(ინფორმაციისთვის იხილეთ COPYING.themes)"
 
 #. Translators: about dialog text crediting an author
 #. Translators: about dialog text crediting a documenter
