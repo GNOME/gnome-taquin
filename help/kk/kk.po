@@ -1,0 +1,521 @@
+# Kazakh translation for gnome-taquin.
+# Copyright (C) 2026 gnome-taquin's COPYRIGHT HOLDER
+# This file is distributed under the same license as the gnome-taquin package.
+# Baurzhan Muftakhidinov <baurthefirst@gmail.com>,  2026.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: gnome-taquin master\n"
+"POT-Creation-Date: 2026-03-10 18:18+0000\n"
+"PO-Revision-Date: 2026-03-17 23:37+0500\n"
+"Last-Translator: Baurzhan Muftakhidinov <baurthefirst@gmail.com>\n"
+"Language-Team: Kazakh <Kazakh>\n"
+"Language: kk\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Poedit 3.9\n"
+
+#. Put one translator per line, in the form NAME <EMAIL>, YEAR1, YEAR2
+msgctxt "_"
+msgid "translator-credits"
+msgstr "Baurzhan Muftakhidinov <baurthefirst@gmail.com>"
+
+#. (itstool) path: credit/name
+#: C/15-Puzzle.page:10 C/16-Puzzle.page:10 C/beginning.page:10 C/index.page:12
+#: C/start-screen.page:10
+msgid "Arnaud Bonatti"
+msgstr "Arnaud Bonatti"
+
+#. (itstool) path: credit/years
+#: C/15-Puzzle.page:12 C/16-Puzzle.page:12 C/beginning.page:12
+#: C/start-screen.page:12
+msgid "2014-2019"
+msgstr "2014-2019"
+
+#. (itstool) path: page/title
+#: C/15-Puzzle.page:18
+msgid "15-Puzzle"
+msgstr "15-Puzzle"
+
+#. (itstool) path: page/p
+#: C/15-Puzzle.page:20
+msgid ""
+"The <em>15-Puzzle</em> is the default puzzle of <app>Taquin</app>. It is "
+"displayed the first time the application is opened. You can start one at "
+"any time from the <link xref=\"start-screen\">Start Screen</link>."
+msgstr ""
+"<em>15-Puzzle</em> — бұл <app>Taquin</app> бағдарламасының бастапқы пазлы. "
+"Ол бағдарлама бірінші рет ашылғанда көрсетіледі. Оны кез келген уақытта "
+"<link xref=\"start-screen\">Бастау экранынан</link> бастауға болады."
+
+#. (itstool) path: section/title
+#: C/15-Puzzle.page:23 C/16-Puzzle.page:23
+msgid "Gameplay"
+msgstr "Ойын барысы"
+
+#. (itstool) path: section/p
+#: C/15-Puzzle.page:25 C/16-Puzzle.page:25
+msgid "The goal is to move all the tiles to their proper places."
+msgstr "Мақсат — барлық плиткаларды өз орындарына жылжыту."
+
+#. (itstool) path: section/p
+#: C/15-Puzzle.page:27
+msgid ""
+"There’s an empty space where you can move adjacent tiles by pushing them "
+"onto it. You can push more than one tile at the same time in the empty "
+"space’s direction."
+msgstr ""
+"Ойын алаңында бос орын бар, оған іргелес плиткаларды итеру арқылы жылжытуға "
+"болады. Бос орын бағытында бір уақытта бірнеше плитканы итеруге болады."
+
+#. (itstool) path: section/title
+#: C/15-Puzzle.page:31 C/16-Puzzle.page:31
+msgid "End of the game"
+msgstr "Ойынның аяқталуы"
+
+#. (itstool) path: section/p
+#: C/15-Puzzle.page:32 C/16-Puzzle.page:32
+msgid ""
+"At the end of the game, <app>Taquin</app> notifies you and displays the "
+"complete image."
+msgstr ""
+"Ойын аяқталғанда <app>Taquin</app> сізге хабарлайды және толық суретті "
+"көрсетеді."
+
+#. (itstool) path: section/p
+#: C/15-Puzzle.page:33 C/16-Puzzle.page:33
+msgid ""
+"You can click the <gui>New Game</gui> button in the headerbar to go to the "
+"<link xref=\"start-screen\">Start Screen</link>. Alternatively, you can "
+"restart the game by clicking on the button with a counter of moves done, "
+"and then on the <gui>Restart</gui> entry."
+msgstr ""
+"<link xref=\"start-screen\">Бастау экранына</link> өту үшін тақырыптама "
+"жолағындағы <gui>Жаңа ойын</gui> батырмасын шертуге болады. Сондай-ақ, "
+"жасалған әрекеттер саны бар батырманы, содан кейін <gui>Қайта бастау</gui> "
+"тармағын шерту арқылы ойынды қайта бастауға болады."
+
+#. (itstool) path: section/title
+#: C/15-Puzzle.page:37 C/16-Puzzle.page:37
+msgid "How to play with a mouse"
+msgstr "Тышқанмен қалай ойнауға болады"
+
+#. (itstool) path: section/p
+#: C/15-Puzzle.page:39 C/15-Puzzle.page:68 C/16-Puzzle.page:39
+#: C/16-Puzzle.page:65
+msgid "To make a move:"
+msgstr "Жүріс жасау үшін:"
+
+#. (itstool) path: item/p
+#: C/15-Puzzle.page:42 C/beginning.page:26
+msgid "Click on a tile on the same row or column as the empty space."
+msgstr "Бос орынмен бір қатарда немесе бағанда орналасқан плитканы шертіңіз."
+
+#. (itstool) path: note/p
+#: C/15-Puzzle.page:44 C/15-Puzzle.page:74 C/beginning.page:28
+msgid ""
+"If you click on a tile that cannot move, the game notifies you that the "
+"move is impossible."
+msgstr ""
+"Егер сіз жылжытуға келмейтін плитканы шертсеңіз, бағдарлама жүрістің мүмкін "
+"еместігін хабарлайды."
+
+#. (itstool) path: item/p
+#: C/15-Puzzle.page:48 C/16-Puzzle.page:45 C/beginning.page:32
+msgid ""
+"You can always undo your move. For that, click on the button with a counter "
+"of moves done in the headerbar, and click the <gui>Undo</gui> entry in the "
+"menu that appears."
+msgstr ""
+"Жүрісті әрқашан болдырмауға болады. Ол үшін тақырыптама жолағындағы "
+"жасалған әрекеттер саны бар батырманы шертіп, ашылған мәзірдегі "
+"<gui>Болдырмау</gui> тармағын шертіңіз."
+
+#. (itstool) path: section/p
+#: C/15-Puzzle.page:52 C/15-Puzzle.page:82 C/16-Puzzle.page:49
+#: C/16-Puzzle.page:76
+msgid "Whether you finished the current game or not:"
+msgstr "Ағымдағы ойынды аяқтаған-аяқтамағаныңызға қарамастан:"
+
+#. (itstool) path: item/p
+#: C/15-Puzzle.page:55 C/16-Puzzle.page:52
+msgid ""
+"To start a new game –possibly with other options–, click the <gui>New Game</"
+"gui> button in the headerbar to go to the <link xref=\"start-screen\">Start "
+"Screen</link>."
+msgstr ""
+"Жаңа ойынды (басқа опциялармен болуы мүмкін) бастау үшін <link xref=\"start-"
+"screen\">Бастау экранына</link> өту мақсатында тақырыптама жолағындағы "
+"<gui>Жаңа ойын</gui> батырмасын шертіңіз."
+
+#. (itstool) path: item/p
+#: C/15-Puzzle.page:58 C/16-Puzzle.page:55
+msgid ""
+"Alternatively, you may want to restart the game. For that, click in the "
+"headerbar on the button with a counter of moves done, and click the "
+"<gui>Restart</gui> entry in the menu that appears."
+msgstr ""
+"Сонымен қатар, ойынды қайта бастауға болады. Ол үшін тақырыптама "
+"жолағындағы жасалған әрекеттер саны бар батырманы шертіп, ашылған мәзірдегі "
+"<gui>Қайта бастау</gui> тармағын шертіңіз."
+
+#. (itstool) path: section/p
+#: C/15-Puzzle.page:62 C/16-Puzzle.page:59
+msgid "You can also use the keyboard."
+msgstr "Сондай-ақ пернетақтаны қолдануға болады."
+
+#. (itstool) path: section/title
+#: C/15-Puzzle.page:66 C/16-Puzzle.page:63
+msgid "How to play with the keyboard"
+msgstr "Пернетақтамен қалай ойнауға болады"
+
+#. (itstool) path: item/p
+#: C/15-Puzzle.page:71
+msgid ""
+"Use the <key>Left</key>, <key>Right</key>, <key>Up</key> and <key>Down</"
+"key> arrows to go at the tile you want to move. The currently selected tile "
+"is indicated with four arrows around the board, on each side of its row and "
+"column."
+msgstr ""
+"Жылжытқыңыз келетін плиткаға өту үшін <key>Солға</key>, <key>Оңға</key>, "
+"<key>Жоғары</key> және <key>Төмен</key> бағдаршаларын қолданыңыз. Қазір "
+"таңдалған плитка ойын алаңының айналасындағы, оның қатары мен бағанының әр "
+"жағындағы төрт бағдаршамен көрсетіледі."
+
+#. (itstool) path: item/p
+#: C/15-Puzzle.page:72
+msgid ""
+"Use the <key>Space</key> key to move the selected tile in the direction of "
+"the empty space."
+msgstr ""
+"Таңдалған плитканы бос орын бағытына жылжыту үшін <key>Бос орын</key> "
+"пернесін қолданыңыз."
+
+#. (itstool) path: item/p
+#: C/15-Puzzle.page:78 C/16-Puzzle.page:72
+msgid ""
+"You can always undo your move. For that, use <keyseq><key>Ctrl</key><key>Z</"
+"key></keyseq>."
+msgstr ""
+"Жүрісті әрқашан болдырмауға болады. Ол үшін <keyseq><key>Ctrl</key><key>Z</"
+"key></keyseq> тіркесін қолданыңыз."
+
+#. (itstool) path: item/p
+#: C/15-Puzzle.page:85 C/16-Puzzle.page:79
+msgid ""
+"To start a new game –possibly with other options–, use <keyseq><key>Ctrl</"
+"key><key>N</key></keyseq> to go to the <link xref=\"start-screen\">Start "
+"Screen</link>."
+msgstr ""
+"Жаңа ойынды (басқа опциялармен болуы мүмкін) бастау үшін <link xref=\"start-"
+"screen\">Бастау экранына</link> өту мақсатында <keyseq><key>Ctrl</"
+"key><key>N</key></keyseq> тіркесін қолданыңыз."
+
+#. (itstool) path: item/p
+#: C/15-Puzzle.page:88 C/16-Puzzle.page:82
+msgid ""
+"Alternatively, you may want to restart the game. For that, use "
+"<keyseq><key>Shift</key><key>Ctrl</key><key>N</key></keyseq>."
+msgstr ""
+"Сонымен қатар, ойынды қайта бастауға болады. Ол үшін <keyseq><key>Shift</"
+"key><key>Ctrl</key><key>N</key></keyseq> тіркесін қолданыңыз."
+
+#. (itstool) path: section/p
+#: C/15-Puzzle.page:92 C/16-Puzzle.page:86
+msgid "You can also use a mouse."
+msgstr "Сондай-ақ тышқанды қолдануға болады."
+
+#. (itstool) path: page/title
+#: C/16-Puzzle.page:18
+msgid "16-Puzzle"
+msgstr "16-Puzzle"
+
+#. (itstool) path: page/p
+#: C/16-Puzzle.page:20
+msgid ""
+"The <em>16-Puzzle</em> is the variant puzzle of <app>Taquin</app>. You can "
+"launch it at any time from the <link xref=\"start-screen\">Start Screen</"
+"link>."
+msgstr ""
+"<em>16-Puzzle</em> — бұл <app>Taquin</app> бағдарламасының пазл нұсқасы. "
+"Оны кез келген уақытта <link xref=\"start-screen\">Бастау экранынан</link> "
+"бастауға болады."
+
+#. (itstool) path: section/p
+#: C/16-Puzzle.page:27
+msgid ""
+"You move all the tiles of a row or a column in one direction. The tile that "
+"is pushed out of the board is placed at the opposite side of the row or "
+"column."
+msgstr ""
+"Сіз қатардың немесе бағанның барлық плиткаларын бір бағытта жылжытасыз. "
+"Ойын алаңынан итеріп шығарылған плитка қатардың немесе бағанның қарама-"
+"қарсы жағына орналастырылады."
+
+#. (itstool) path: item/p
+#: C/16-Puzzle.page:42
+msgid ""
+"Click on one of the arrows displayed around the board. The row or column at "
+"the end of which this arrow is moves in this direction, and the tile that "
+"was next to the arrow is placed at the opposite side."
+msgstr ""
+"Ойын алаңының айналасында көрсетілген бағдаршалардың бірін шертіңіз. "
+"Соңында осы бағдарша тұрған қатар немесе баған сол бағытқа жылжиды, ал "
+"бағдаршаның қасында болған плитка қарама-қарсы жаққа орналастырылады."
+
+#. (itstool) path: item/p
+#: C/16-Puzzle.page:68
+msgid ""
+"Use the <key>Left</key> and <key>Right</key> arrows to change the selected "
+"column, and the <key>Up</key> and <key>Down</key> arrows to change the "
+"selected row. The currently selected row and column are indicated with "
+"lights around the board."
+msgstr ""
+"Таңдалған бағанды өзгерту үшін <key>Солға</key> және <key>Оңға</key> "
+"бағдаршаларын, ал таңдалған қатарды өзгерту үшін <key>Жоғары</key> және "
+"<key>Төмен</key> бағдаршаларын қолданыңыз. Қазіргі таңдалған қатар мен "
+"баған ойын алаңының айналасындағы шамдармен көрсетіледі."
+
+#. (itstool) path: item/p
+#: C/16-Puzzle.page:69
+msgid ""
+"Use <keyseq><key>Shift</key><key>Left</key></keyseq> and "
+"<keyseq><key>Shift</key><key>Right</key></keyseq> to swipe the selected "
+"row, or <keyseq><key>Shift</key><key>Up</key></keyseq> and "
+"<keyseq><key>Shift</key><key>Down</key></keyseq> to swipe the selected "
+"column."
+msgstr ""
+"Таңдалған қатарды айналдыру үшін <keyseq><key>Shift</key><key>Солға</key></"
+"keyseq> және <keyseq><key>Shift</key><key>Оңға</key></keyseq> тіркесін, "
+"немесе таңдалған бағанды айналдыру үшін <keyseq><key>Shift</"
+"key><key>Жоғары</key></keyseq> және <keyseq><key>Shift</key><key>Төмен</"
+"key></keyseq> тіркесін қолданыңыз."
+
+#. (itstool) path: page/title
+#: C/beginning.page:18
+msgid "Beginning"
+msgstr "Бастау"
+
+#. (itstool) path: page/p
+#: C/beginning.page:20
+msgid ""
+"When <app>Taquin</app> is opened for the first time, it displays a "
+"traditional <link xref=\"15-Puzzle\">15-Puzzle</link> game."
+msgstr ""
+"<app>Taquin</app> бірінші рет ашылғанда, ол дәстүрлі <link xref=\"15-"
+"Puzzle\">15-Puzzle</link> ойынын көрсетеді."
+
+#. (itstool) path: page/p
+#: C/beginning.page:22
+msgid "The game is played using the mouse. To make a move:"
+msgstr "Ойын тышқан көмегімен ойналады. Жүріс жасау үшін:"
+
+#. (itstool) path: item/p
+#: C/beginning.page:35
+msgid ""
+"To start a new game –whether you finished the current game or not–, click "
+"the <gui>New Game</gui> button in the headerbar to go to the <link "
+"xref=\"start-screen\">Start Screen</link>."
+msgstr ""
+"Ағымдағы ойынды аяқтаған-аяқтамағаныңызға қарамастан, жаңа ойынды бастау "
+"үшін <link xref=\"start-screen\">Бастау экранына</link> өту мақсатында "
+"тақырыптама жолағындағы <gui>Жаңа ойын</gui> батырмасын шертіңіз."
+
+#. (itstool) path: page/p
+#: C/beginning.page:39
+msgid ""
+"You can also <link xref=\"15-Puzzle#15-keyboard\">play with the keyboard</"
+"link> if you prefer."
+msgstr ""
+"Егер қаласаңыз, <link xref=\"15-Puzzle#15-keyboard\">пернетақтамен де "
+"ойнай</link> аласыз."
+
+#. (itstool) path: page/p
+#: C/beginning.page:41
+msgid ""
+"After the first time it is opened, <app>Taquin</app> displays a puzzle with "
+"the same rules and dimensions as the last one played when it is opened, so "
+"it could be a <link xref=\"16-Puzzle\">16-Puzzle</link> game."
+msgstr ""
+"Бірінші рет ашылғаннан кейін, <app>Taquin</app> келесі ашылғанда соңғы "
+"ойналған ойынның ережелері мен өлшемдері бар пазлды көрсетеді, сондықтан "
+"бұл <link xref=\"16-Puzzle\">16-Puzzle</link> ойыны болуы мүмкін."
+
+#. (itstool) path: info/title
+#: C/index.page:8
+msgctxt "link"
+msgid "Taquin"
+msgstr "Taquin"
+
+#. (itstool) path: info/title
+#: C/index.page:9
+msgctxt "text"
+msgid "Taquin"
+msgstr "Taquin"
+
+#. (itstool) path: license/p
+#: C/index.page:16
+msgid ""
+"Creative Commons Attribution-ShareAlike 4.0 International (CC BY-SA 4.0)"
+msgstr ""
+"Creative Commons Attribution-ShareAlike 4.0 International (CC BY-SA 4.0)"
+
+#. (itstool) path: media/span
+#: C/index.page:20
+msgid "Taquin logo"
+msgstr "Taquin логотипі"
+
+#. (itstool) path: page/title
+#: C/index.page:20
+msgid "<_:media-1/> Taquin"
+msgstr "<_:media-1/> Taquin"
+
+#. (itstool) path: page/p
+#: C/index.page:22
+msgid ""
+"<app>Taquin</app> is a sliding-block puzzle game. It includes the "
+"traditional 15-Puzzle invented in the early 1880s, and the more recent 16-"
+"Puzzle variant."
+msgstr ""
+"<app>Taquin</app> — блокты жылжыту пазл ойыны. Ол 1880 жылдардың басында "
+"ойлап табылған дәстүрлі 15-Puzzle және жақында пайда болған 16-Puzzle "
+"нұсқасын қамтиды."
+
+#. (itstool) path: section/title
+#: C/index.page:26
+msgid "How to Play"
+msgstr "Қалай ойнау керек"
+
+#. (itstool) path: section/title
+#: C/index.page:38
+msgid "Advanced"
+msgstr "Қосымша"
+
+#. (itstool) path: p/link
+#: C/legal.xml:3
+msgid "Creative Commons Attribution-ShareAlike 4.0 International license"
+msgstr "Creative Commons Attribution-ShareAlike 4.0 International лицензиясы"
+
+#. (itstool) path: license/p
+#: C/legal.xml:3
+msgid "This work is licensed under a <_:link-1/>."
+msgstr "Бұл жұмыс келесі лицензия бойынша қолжетімді: <_:link-1/>."
+
+#. (itstool) path: info/desc
+#: C/license.page:8
+msgid "Legal information."
+msgstr "Құқықтық ақпарат."
+
+#. (itstool) path: page/title
+#: C/license.page:11
+msgid "License"
+msgstr "Лицензия"
+
+#. (itstool) path: page/p
+#: C/license.page:12
+msgid ""
+"This work is distributed under a Creative Commons Attribution-ShareAlike "
+"4.0 International license."
+msgstr ""
+"Бұл жұмыс Creative Commons Attribution-ShareAlike 4.0 International "
+"лицензиясы бойынша таратылады."
+
+#. (itstool) path: page/p
+#: C/license.page:20
+msgid "You are free:"
+msgstr "Сізге рұқсат етіледі:"
+
+#. (itstool) path: item/title
+#: C/license.page:25
+msgid "<em>To share</em>"
+msgstr "<em>Бөлісу</em>"
+
+#. (itstool) path: item/p
+#: C/license.page:26
+msgid "To copy, distribute and transmit the work."
+msgstr "Жұмысты көшіру, тарату және жеткізу."
+
+#. (itstool) path: item/title
+#: C/license.page:29
+msgid "<em>To remix</em>"
+msgstr "<em>Өзгерту</em>"
+
+#. (itstool) path: item/p
+#: C/license.page:30
+msgid "To adapt the work."
+msgstr "Жұмысты бейімдеу."
+
+#. (itstool) path: page/p
+#: C/license.page:33
+msgid "Under the following conditions:"
+msgstr "Келесі шарттарды орындау керек:"
+
+#. (itstool) path: item/title
+#: C/license.page:38
+msgid "<em>Attribution</em>"
+msgstr "<em>Авторлықты көрсету</em>"
+
+#. (itstool) path: item/p
+#: C/license.page:39
+msgid ""
+"You must attribute the work in the manner specified by the author or "
+"licensor (but not in any way that suggests that they endorse you or your "
+"use of the work)."
+msgstr ""
+"Сіз жұмыстың авторы немесе лицензиар көрсеткен тәсілмен авторлықты "
+"көрсетуіңіз керек (бірақ олар сізді немесе жұмысты пайдалануыңызды "
+"қолдайтындай етіп емес)."
+
+#. (itstool) path: item/title
+#: C/license.page:46
+msgid "<em>Share Alike</em>"
+msgstr "<em>Сол шарттармен бөлісу</em>"
+
+#. (itstool) path: item/p
+#: C/license.page:47
+msgid ""
+"If you alter, transform, or build upon this work, you may distribute the "
+"resulting work only under the same, similar or a compatible license."
+msgstr ""
+"Егер сіз бұл жұмысты өзгертсеңіз, түрлендірсеңіз немесе оның негізінде жаңа "
+"жұмыс жасасаңыз, нәтижесінде алынған жұмысты тек дәл сол, ұқсас немесе "
+"үйлесімді лицензия бойынша таратуыңызға болады."
+
+#. (itstool) path: page/p
+#: C/license.page:53
+msgid ""
+"For the full text of the license, see the <link href=\"http://"
+"creativecommons.org/licenses/by-sa/4.0/legalcode\">CreativeCommons website</"
+"link>, or read the full <link href=\"http://creativecommons.org/licenses/by-"
+"sa/4.0/\">Commons Deed</link>."
+msgstr ""
+"Лицензияның толық мәтінін <link href=\"http://creativecommons.org/licenses/"
+"by-sa/4.0/legalcode\">CreativeCommons веб-сайтынан</link> көріңіз немесе "
+"толық <link href=\"http://creativecommons.org/licenses/by-sa/4.0/\">Commons "
+"Deed</link> құжатын оқыңыз."
+
+#. (itstool) path: page/title
+#: C/start-screen.page:18
+msgid "Start Screen"
+msgstr "Бастау экраны"
+
+#. (itstool) path: page/p
+#: C/start-screen.page:19
+msgid ""
+"The <em>Start Screen</em> is the place to select your options and launch a "
+"new game, either a <link xref=\"15-Puzzle\">15-Puzzle</link> or a <link "
+"xref=\"16-Puzzle\">16-Puzzle</link>."
+msgstr ""
+"<em>Бастау экраны</em> — опцияларды таңдауға және жаңа ойынды (не <link "
+"xref=\"15-Puzzle\">15-Puzzle</link>, не <link xref=\"16-Puzzle\">16-Puzzle</"
+"link>) бастауға арналған орын."
+
+#. (itstool) path: page/p
+#: C/start-screen.page:20
+msgid ""
+"It can be accessed at any time from a game by pressing the <gui>New Game</"
+"gui> button."
+msgstr ""
+"Оған ойын барысында кез келген уақытта <gui>Жаңа ойын</gui> батырмасын басу "
+"арқылы қол жеткізуге болады."
