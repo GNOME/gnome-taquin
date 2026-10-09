@@ -9,7 +9,7 @@
   <name xml:lang="en">gnome-taquin</name>
   <shortdesc xml:lang="en">Move tiles so that they reach their places.</shortdesc>
   <description xml:lang="en">Move tiles so that they reach their places.</description>
-  <homepage rdf:resource="https://wiki.gnome.org/Apps/Taquin" />
+  <homepage rdf:resource="https://gitlab.gnome.org/GNOME/gnome-taquin" />
   <support-forum rdf:resource="https://discourse.gnome.org/tag/games" />
   <download-page rdf:resource="https://download.gnome.org/sources/gnome-taquin/" />
   <bug-database rdf:resource="https://gitlab.gnome.org/GNOME/gnome-taquin/issues" />

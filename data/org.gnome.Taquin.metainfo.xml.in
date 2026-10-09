@@ -22,7 +22,7 @@
     </screenshot>
   </screenshots>
   <launchable type="desktop-id">org.gnome.Taquin.desktop</launchable>
-  <url type="homepage">https://wiki.gnome.org/Apps/Taquin</url>
+  <url type="homepage">https://gitlab.gnome.org/GNOME/gnome-taquin</url>
   <url type="bugtracker">https://gitlab.gnome.org/GNOME/gnome-taquin/issues/</url>
   <url type="donation">https://donate.gnome.org</url>
   <url type="translate">https://wiki.gnome.org/TranslationProject</url>
